@@ -1,0 +1,76 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Legal Chunk Schema",
+  "description": "Chuẩn dữ liệu đầu ra sau khi cắt chunk văn bản pháp luật (Data Contract)",
+  "type": "object",
+  "properties": {
+    "chunk_id": {
+      "type": "string",
+      "description": "Mã định danh duy nhất của chunk (VD: 168_2024_nd_cp_dieu_7_k1)"
+    },
+    "law_id": {
+      "type": "string",
+      "description": "Số hiệu văn bản pháp luật (VD: 168/2024/NĐ-CP)"
+    },
+    "law_title": {
+      "type": "string",
+      "description": "Tên văn bản pháp luật"
+    },
+    "chapter": {
+      "type": ["string", "null"],
+      "description": "Tên chương (nếu có)"
+    },
+    "article_id": {
+      "type": "string",
+      "description": "Điều số mấy (VD: Điều 7)"
+    },
+    "article_title": {
+      "type": ["string", "null"],
+      "description": "Tiêu đề của Điều (nếu có)"
+    },
+    "clause_id": {
+      "type": ["string", "null"],
+      "description": "Khoản số mấy (nếu có, VD: Khoản 1)"
+    },
+    "point_id": {
+      "type": ["string", "null"],
+      "description": "Điểm chữ gì (nếu có, VD: Điểm a)"
+    },
+    "citation_path": {
+      "type": "string",
+      "description": "Đường dẫn trích dẫn đầy đủ (VD: Nghị định 168/2024/NĐ-CP > Chương II > Điều 7 > Khoản 1)"
+    },
+    "original_text": {
+      "type": "string",
+      "description": "Nội dung gốc để trả về cho UI hiển thị gọn gàng"
+    },
+    "enriched_text": {
+      "type": "string",
+      "description": "Nội dung đã được nối ngữ cảnh (Chương, Điều) để mã hóa Vector và BM25"
+    },
+    "effective_date": {
+      "type": "string",
+      "description": "Ngày có hiệu lực (Định dạng YYYY-MM-DD)"
+    },
+    "expire_date": {
+      "type": ["string", "null"],
+      "description": "Ngày hết hiệu lực (Định dạng YYYY-MM-DD)"
+    },
+    "status": {
+      "type": "string",
+      "enum": ["active", "expired"],
+      "description": "Trạng thái hiệu lực hiện tại của điều luật"
+    }
+  },
+  "required": [
+    "chunk_id",
+    "law_id",
+    "law_title",
+    "article_id",
+    "citation_path",
+    "original_text",
+    "enriched_text",
+    "effective_date",
+    "status"
+  ]
+}

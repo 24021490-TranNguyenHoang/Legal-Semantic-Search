@@ -167,31 +167,28 @@ def parse_and_chunk(file_path: str):
     return chunks
 
 if __name__ == "__main__":
-    cleaned_dir = "cleaned_data"
-    output_jsonl = "corpus_chunks.jsonl"
+    import os
+    import json
+    from src.config import CLEANED_DIR, CHUNKS_FILE
     
-    print(f"[*] Đang kiểm tra thư mục: {os.path.abspath(cleaned_dir)}")
-    if not os.path.exists(cleaned_dir):
-        print(f"[!] Thư mục {cleaned_dir} không tồn tại!")
-        exit(1)
-        
-    all_files = os.listdir(cleaned_dir)
-    print(f"[*] Tìm thấy {len(all_files)} file: {all_files}")
+    # Tự động tạo thư mục processed nếu chưa có
+    CHUNKS_FILE.parent.mkdir(parents=True, exist_ok=True)
     
     all_chunks = []
-    txt_files = [f for f in all_files if f.endswith(".txt")]
-    
-    for f in txt_files:
-        p = os.path.join(cleaned_dir, f)
-        print(f"[*] Đang cắt chunk cho: {f}...")
-        res = parse_and_chunk(p)
-        print(f"    -> Tạo thành công: {len(res)} chunks.")
-        all_chunks.extend(res)
-        
-    with open(output_jsonl, "w", encoding="utf-8") as out:
-        for chk in all_chunks:
-            out.write(json.dumps(chk, ensure_ascii=False) + "\n")
+    if CLEANED_DIR.exists():
+        print(f"[*] Đang đọc thư mục: {CLEANED_DIR}")
+        for filename in os.listdir(CLEANED_DIR):
+            if filename.endswith(".txt"):
+                filepath = CLEANED_DIR / filename
+                print(f"[*] Đang xử lý: {filename}")
+                # Gọi hàm parse_and_chunk của bạn
+                chunks = parse_and_chunk(str(filepath)) 
+                all_chunks.extend(chunks)
+    else:
+        print(f"[!] Thư mục {CLEANED_DIR} không tồn tại!")
+                
+    with open(CHUNKS_FILE, "w", encoding="utf-8") as f:
+        for chunk in all_chunks:
+            f.write(json.dumps(chunk, ensure_ascii=False) + "\n")
             
-    print(f"\n[+] TẤT CẢ HOÀN TẤT!")
-    print(f"[+] Tổng số chunks xuất ra: {len(all_chunks)} chunks.")
-    print(f"[+] Đã lưu tại tệp: '{output_jsonl}'")
+    print(f"[+] Đã tạo {len(all_chunks)} chunks (đủ 2 trường text) tại: {CHUNKS_FILE}")
