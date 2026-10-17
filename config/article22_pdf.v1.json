@@ -1,0 +1,43 @@
+{
+  "policy_version": "article22-pdf.v1",
+  "snapshot_date": "2025-01-01",
+  "law_id": "36/2024/QH15",
+  "source_set_id": "SRC-001-gazette-20240824-977-980",
+  "pdf_parts": [
+    {"artifact_ref": "02/snapshot.pdf", "role": "main", "order": 1, "sha256": "e83b092fd1e93a63d3082424bd63e7ad99afcf39ba3729f6d82ce19fe8b33690"},
+    {"artifact_ref": "03/snapshot.pdf", "role": "continuation", "order": 2, "sha256": "55ba152f3abe925d9a75418c3e61bc0122824db41a0d2352053dbff2c6264f8c"}
+  ],
+  "metadata_ref": "01/snapshot.html",
+  "nodes": [
+    {
+      "key": "document", "parent": null, "unit_type": "document", "designation": "36/2024/QH15", "ordinal": 0,
+      "fields": {
+        "title": [{"page": 1, "start": "LUẬT\n", "end": "\nCăn cứ Hiến pháp"}],
+        "text_original": [{"page": 1, "start": "Căn cứ Hiến pháp", "end": "\nChương I"}]
+      }
+    },
+    {
+      "key": "chapter_ii", "parent": "document", "unit_type": "chapter", "designation": "II", "ordinal": 1,
+      "fields": {"title": [{"page": 10, "start": "\nChương II\n", "after_start": true, "end": "\nĐiều 10."}], "text_original": []}
+    },
+    {
+      "key": "article_22", "parent": "chapter_ii", "unit_type": "article", "designation": "22", "ordinal": 12,
+      "fields": {
+        "title": [{"page": 19, "start": "Điều 22. ", "after_start": true, "end": "\n"}],
+        "text_original": [{"page": 19, "start": "Khi đến gần đường giao nhau,", "end": "\n1. Tại nơi đường giao nhau"}]
+      }
+    },
+    {
+      "key": "clause_1", "parent": "article_22", "unit_type": "clause", "designation": "1", "ordinal": 0,
+      "fields": {"title": [], "text_original": [{"page": 19, "start": "1. Tại nơi đường giao nhau", "end": "\n2. Tại nơi đường giao nhau"}]}
+    },
+    {
+      "key": "clause_2", "parent": "article_22", "unit_type": "clause", "designation": "2", "ordinal": 1,
+      "fields": {"title": [], "text_original": [{"page": 19, "start": "2. Tại nơi đường giao nhau", "end": "\n3. Tại nơi đường giao nhau"}]}
+    },
+    {
+      "key": "clause_3", "parent": "article_22", "unit_type": "clause", "designation": "3", "ordinal": 2,
+      "fields": {"title": [], "text_original": [{"page": 19, "start": "3. Tại nơi đường giao nhau", "end": "đường cho xe đi đến từ bên trái.", "include_end": true}]}
+    }
+  ]
+}

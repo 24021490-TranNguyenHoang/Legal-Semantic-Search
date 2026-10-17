@@ -1,5 +1,13 @@
 # Stage 5A — contract assessment và pilot (assessment-pilot.v1.1)
 
+**Bổ sung sau pilot:** mapping PDF Điều 22 có contract riêng
+`Article22_PDF_Mapping_Contract.md`. Nó không giả làm bundle Stage 4 DOCX hoặc
+tự chuyển quyết định/binding v1.1. Ba chiều vẫn độc lập; bốn đơn vị được chọn
+có proposal và bản ánh xạ unit_assessment pending cho unit/hash PDF mới.
+CLI assessment v1.1 hiện yêu cầu bundle Stage 4; adapter tiếp nhận hồ sơ review
+PDF và promotion có kiểm soát chưa triển khai. Không đổi validator cũ để tự
+chấp nhận PDF hoặc coi source/content matching là quyết định reviewer.
+
 Snapshot cố định **2025-01-01**. Được phép làm assessment thử trong staging,
 chưa mở rộng 4.000 đơn vị, sửa parser, tạo chunk/context truy hồi hoặc phát hành.
 Đã đọc AGENTS, DDD §8/§13, schema/README trong ZIP, contract Stage 2–4 và

@@ -30,6 +30,12 @@ chặn corpus/serving. Không đồng nhất content match với provenance toà
 
 ## Hai đường đề xuất để chọn trước khi chuyển DDD
 
+**Cập nhật lựa chọn thiết kế:** theo yêu cầu tiếp theo của người dùng, đã chọn
+đường 2 cho riêng Điều 22 Luật 36, ba Khoản và hai nút cha cần thiết. Đây là
+quyết định chọn nguồn/phương thức mapping, không phải xác nhận dữ liệu, hiệu
+lực hoặc phê duyệt corpus. Nội dung đề xuất lịch sử phía dưới được giữ để đối
+chiếu. Contract triển khai bổ sung: `Article22_PDF_Mapping_Contract.md`.
+
 1. **Bổ sung hồ sơ gốc đúng DOCX.** Cần bằng chứng tải/thu thập của đúng byte
    file, URL/edition/đủ phần. Thông tin không khôi phục được tiếp tục để trống,
    không tạo lịch sử giả. Khi đủ bằng chứng vẫn cần công đoạn tiếp nhận nguồn

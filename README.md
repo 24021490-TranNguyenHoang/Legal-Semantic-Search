@@ -366,3 +366,48 @@ v1.1 không tự coi bundle/tool hash v1 là bản chạy mới. Xem thêm
 [báo cáo điều chỉnh](docs/reviews/Stage5A_Revision_Verification.md) và
 [đề xuất DOCX legacy](docs/design/data_model_v1/Legacy_DOCX_Content_Comparison_Policy_Proposal.md).
 Không chạy parser PDF, chunk/index hoặc phát hành corpus trong bước này.
+
+### Tiếp nhận PDF hẹp cho Điều 22 Luật 36
+
+Yêu cầu tiếp theo cho phép extraction PDF Stage 3 và mapping hẹp; không xây
+parser PDF tổng quát. Nguồn là hai phần PDF Công báo đã capture, tách khỏi
+DOCX legacy. Xem [contract mapping](docs/design/data_model_v1/Article22_PDF_Mapping_Contract.md).
+Chạy từ thư mục gốc bằng PowerShell; `--run-dir` phải chưa tồn tại:
+
+```powershell
+.\.venv-stage1\Scripts\python.exe -X utf8 -B -m src.article22_pdf prepare --evidence-manifest staging/stage5a-article22-evidence-001/manifest.json --tree-manifest staging/stage4-docx-005/manifest.json --comparison-manifest staging/stage5a-article22-comparison-001/manifest.json --run-dir staging/article22-pdf-local-001
+.\.venv-stage1\Scripts\python.exe -X utf8 -B -m src.article22_pdf validate --manifest staging/article22-pdf-local-001/manifest.json
+# Có chủ ý trả 1: chưa đủ điều kiện corpus, không phải lỗi extraction.
+.\.venv-stage1\Scripts\python.exe -X utf8 -B -m src.article22_pdf validate --manifest staging/article22-pdf-local-001/manifest.json --require-corpus-ready
+.\.venv-stage1\Scripts\python.exe -X utf8 -B -m unittest discover -s tests -v
+```
+
+Lệnh prepare tự chạy Stage 2 vào `source_registration/` và Stage 3 vào
+`extraction/` bên trong run mới. Muốn kiểm riêng hai bundle đã sinh:
+
+```powershell
+.\.venv-stage1\Scripts\python.exe -X utf8 -B -m src.source_registry validate --manifest staging/article22-pdf-local-001/source_registration/manifest.json
+.\.venv-stage1\Scripts\python.exe -X utf8 -B -m src.extraction_pipeline validate --manifest staging/article22-pdf-local-001/extraction/manifest.json
+```
+
+Mở `review.md`/`review.csv` để xem sáu nút, nguyên văn/cha và tám spans;
+`comparison.md` có toàn bộ diff, `identity_crosswalk.jsonl` giải thích ID đổi,
+`source_facts.pending.jsonl` giữ log capture, `effectiveness_basis.jsonl` giữ
+căn cứ. `mapping.pending.jsonl` phân biệt offsets trong field, trong extraction
+và tương đối trong trace page mới. Không dùng offsets trang bằng chứng cũ làm
+spans. Chạy lại cùng lệnh, đổi sang `staging/article22-pdf-local-002` để tái tạo
+SQLite/JSONL; không ghi đè run trước.
+
+`admission.prepared.sqlite` dùng schema DDD nguyên bản với dữ liệu PDF thật;
+corpus, unit_assessment và chunk vẫn rỗng. Extraction và legal units còn pending.
+`assessments.pending.jsonl` là bản chuẩn bị cho binding PDF mới, chưa phải
+submission được CLI assessment DOCX v1.1 tiếp nhận. Cần adapter/promotion có
+kiểm soát và quyết định review thực tế trước khi nhập unit_assessment.
+Không tự sửa raw/parser, mở rộng pilot, tạo index hoặc kích hoạt ứng dụng.
+
+Ba input bundle trên là artifact local bị Git ignore theo quy định. Clone
+chỉ có code không có các snapshot đó thì lệnh sẽ trả lỗi thiếu input; cần khôi
+phục đúng bundle/checksum từ nơi lưu của dự án. Một capture mới có timestamp/
+manifest mới, phải tái tạo comparison/binding bằng quy trình tương ứng, không
+sửa hash input cũ cho qua validator. Kết quả thực tế và giới hạn nằm trong
+[báo cáo mapping](docs/reviews/Article22_PDF_Mapping_Verification.md).
