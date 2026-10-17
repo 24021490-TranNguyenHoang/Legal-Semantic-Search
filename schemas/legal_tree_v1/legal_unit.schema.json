@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "DDD legal_unit fields. Export belongs to a pending bundle, not an official corpus.",
+  "type": "object", "additionalProperties": false,
+  "required": ["unit_id", "law_id", "parent_unit_id", "unit_type", "designation", "canonical_path", "citation_path", "ordinal", "title", "text_original", "text_sha256"],
+  "properties": {
+    "unit_id": {"type": "string", "pattern": "^u_[0-9a-f]{64}$"},
+    "law_id": {"type": "string", "minLength": 1},
+    "parent_unit_id": {"type": ["string", "null"], "pattern": "^u_[0-9a-f]{64}$"},
+    "unit_type": {"enum": ["document", "chapter", "section", "article", "clause", "point"]},
+    "designation": {"type": "string", "minLength": 1},
+    "canonical_path": {"type": "string", "minLength": 1},
+    "citation_path": {"type": "string", "minLength": 1},
+    "ordinal": {"type": "integer", "minimum": 0},
+    "title": {"type": "string"},
+    "text_original": {"type": "string"},
+    "text_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+  }
+}

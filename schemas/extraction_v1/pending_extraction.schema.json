@@ -1,0 +1,108 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "extraction",
+    "law_id",
+    "source_status",
+    "technical_status",
+    "config_sha256",
+    "source_raw_sha256",
+    "trace_ref",
+    "trace_sha256",
+    "trace_content_sha256"
+  ],
+  "properties": {
+    "extraction": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "extraction_id",
+        "file_id",
+        "method",
+        "tool_version",
+        "text_ref",
+        "text_sha256",
+        "char_count",
+        "review_status",
+        "created_at"
+      ],
+      "properties": {
+        "extraction_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "file_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "method": {
+          "enum": [
+            "pdf_text",
+            "html_text",
+            "doc_text",
+            "ocr"
+          ]
+        },
+        "tool_version": {
+          "type": "string",
+          "minLength": 1
+        },
+        "text_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "text_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "char_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "review_status": {
+          "const": "pending"
+        },
+        "created_at": {
+          "type": "string",
+          "format": "date-time",
+          "pattern": "Z$"
+        }
+      }
+    },
+    "law_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_status": {
+      "const": "pending"
+    },
+    "technical_status": {
+      "enum": [
+        "complete",
+        "partial"
+      ]
+    },
+    "config_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "source_raw_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "trace_ref": {
+      "type": "string",
+      "minLength": 1
+    },
+    "trace_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "trace_content_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    }
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:vtls:pending_document:1.0.0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "source_id",
+    "law_id",
+    "declared",
+    "evidence",
+    "status"
+  ],
+  "properties": {
+    "source_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "law_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "declared": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "law_title",
+        "document_type",
+        "scope_note",
+        "source_url_candidate",
+        "issued_date_candidate",
+        "inventory_ref"
+      ],
+      "properties": {
+        "law_title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "document_type": {
+          "enum": [
+            "law",
+            "decree",
+            "circular",
+            "regulation"
+          ]
+        },
+        "scope_note": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source_url_candidate": {
+          "type": "string",
+          "format": "uri",
+          "pattern": "^https?://"
+        },
+        "issued_date_candidate": {
+          "type": "string",
+          "format": "date"
+        },
+        "inventory_ref": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "evidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "issued_date",
+        "source_url",
+        "edition",
+        "verification_ref",
+        "reviewer_ref",
+        "verified_at"
+      ],
+      "properties": {
+        "issued_date": {
+          "type": "null"
+        },
+        "source_url": {
+          "type": "null"
+        },
+        "edition": {
+          "type": "null"
+        },
+        "verification_ref": {
+          "type": "null"
+        },
+        "reviewer_ref": {
+          "type": "null"
+        },
+        "verified_at": {
+          "type": "null"
+        }
+      }
+    },
+    "status": {
+      "const": "pending"
+    }
+  }
+}

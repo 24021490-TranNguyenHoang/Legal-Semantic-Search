@@ -1,0 +1,25 @@
+# Hướng dẫn làm việc
+
+- Snapshot sản phẩm đã chốt: **2025-01-01**. Không dùng ngày hiện tại thay thế.
+- SRS trong `docs/requirements/`, SDD và DDD trong `docs/design/` là yêu cầu và thiết kế đích; không phải bằng chứng đã triển khai hoặc nghiệm thu.
+- `docs/architecture.md` mô tả prototype cũ. `docs/scope.md` cũng có các tiêu chí cũ (bốn nguồn, 1.457 chunks) chưa đồng bộ thiết kế đích.
+- Khi tài liệu mâu thuẫn, báo rõ tài liệu và ảnh hưởng; không âm thầm chọn. SRS/SDD còn để snapshot mở, nhưng Source Inventory và DDD đã ghi quyết định 2025-01-01, được người dùng xác nhận.
+- Bộ mẫu hiện nằm trong `docs/design/data_model_v1/Data_Model_Schema_Examples_v1.0.zip` (khác đường dẫn `data-model-v1` được nhắc trong hội thoại). Fixture là giả lập, không nhập vào corpus thật.
+- Raw bất biến. Mọi đầu ra mới trong giai đoạn sửa pipeline phải ghi vào thư mục chạy mới dưới `staging/`; không ghi đè `data/processed/` hoặc `qdrant_db/` hiện có.
+- Không tự tạo bằng chứng hiệu lực, thời điểm thu thập hoặc kết quả kiểm thử chưa chạy. Thời điểm chạy kỹ thuật không phải thời điểm thu thập nguồn.
+- Corpus hiện tại chưa được xác minh pháp lý. Parser/chunker vẫn gán hiệu lực mặc định; kiểm tra kỹ thuật không xác nhận hiệu lực.
+- Không đưa venv, cache, database và artifact staging vào commit mới. Giữ nguyên thay đổi có sẵn; không reset/clean hoặc xóa dữ liệu để chạy thử.
+- Đợt 1 chỉ chuẩn hóa đường chạy/môi trường: giữ thuật toán parser/chunker, model và retrieval. Chưa sinh embedding, xây lại Qdrant hoặc tự chuyển sang đợt 2.
+- Người dùng đã cho phép Stage 2: hồ sơ nguồn, contract nền và SQLite staging. Giữ nguyên thay đổi Stage 1; dừng sau Stage 2 để xem diff. Chưa sửa extraction/parser/chunker hoặc xây index.
+- Inference bị Windows Application Control chặn DLL PyTorch (WinError 4551); Stage 2 không tải/chạy model.
+- Schema chính thức trong `schemas/data_model_v1/schema.sql` phải giữ nguyên bộ mẫu. Hồ sơ thiếu bằng chứng nằm trong SQLite/JSONL pending riêng; không nới NOT NULL hoặc bịa corpus để nạp chúng vào bảng chính thức.
+- Stage 3 đã được cho phép: extraction kỹ thuật từ nguồn pending trong staging, không làm nguồn/extraction thành verified. Dùng lớp pending riêng, giữ file_id Stage 2; không tạo legal_document/source_file chính thức giả để thỏa FK.
+- Stage 3 tách reader và normalization khỏi cleaner prototype; giữ locator/offset trên artifact NFC/LF bất biến. Không sửa parser/chunker, không OCR, không xác minh hiệu lực hoặc xây index. Dừng sau Stage 3.
+- Người dùng đã cho phép Stage 4: parser cây pháp lý riêng từ bundle Stage 3 hợp lệ kỹ thuật. Quy định dừng Stage 3 ở trên là lịch sử; hiện dừng sau Stage 4 để xem diff. Nguồn, extraction, legal units và spans tiếp tục pending, không đủ điều kiện phát hành.
+- Stage 4 giữ nguyên extraction và parser/chunker prototype; không đánh giá scope/hiệu lực, tạo chunk, chạy model hoặc xây chỉ mục. Cấp không chắc chắn, bảng, field/numbering/revision chưa giải mã phải có coverage/issue và locator; không đoán số hoặc tạo cấp pháp lý giả.
+- Stage 4 tiếp tục theo yêu cầu mới: contract hiện hành là `docs/design/data_model_v1/Stage4_Parser_Contract.md`, policy `legal-tree.v1.1`. Giữ các run v1 cũ nguyên byte; output v1.1 vào run mới, có cây dễ đọc từng văn bản và hai ví dụ Điều 22 Luật 36 / Điều 6 Khoản 1 NĐ168. Dừng sau Stage 4; không tự stage/commit.
+- Người dùng đã cho phép Stage 5A: contract assessment và pilot giới hạn, không mở rộng toàn bộ 4.000 unit. Các mốc dừng Stage 2–4 ở trên là lịch sử; hiện dừng sau pilot Stage 5A, không tự stage/commit.
+- Stage 5A tách technical impacts, đề xuất máy và quyết định rà soát thực tế có hồ sơ. Nguồn/extraction/cây vẫn pending; không tự ghi reviewer/verified hoặc tạo corpus giả. Chưa kích hoạt ứng dụng, tạo chunk/context truy hồi, embedding hoặc index.
+- Được tải nguồn chính thức để lưu bằng chứng trong run staging mới: giữ URL, byte/bản chụp, SHA-256, locator và thời điểm truy cập thực tế. Ngày tải mới không thay retrieved_at lịch sử của DOCX, ngày hiệu lực hoặc chứng minh bản hiện tại tương đương nội dung tại 2025-01-01. Không tự giải quyết issue hoặc sửa raw/cây từ quan sát của máy.
+- Người dùng cho phép điều chỉnh Stage 5A: ba chiều scope/applicability/technical độc lập, supersedes theo unit_id + chiều; reviewer có thể bác proposal bằng bằng chứng và lý do. Không ép ngày reviewer trùng ngày máy. Giữ schema DDD, kiểm binding/ngày/trạng thái và các cổng phục vụ; không thêm phân quyền/chữ ký số làm điều kiện mới.
+- Lượt điều chỉnh chỉ dùng 40 unit pilot cũ, đổi đề xuất scope nhóm NĐ168 A39K9 theo BRD và đối chiếu Điều 22 Luật 36 + ba Khoản. Kết luận agent phải tách khỏi quyết định reviewer. DOCX legacy chưa rõ log tải vẫn pending; khớp một đoạn với Công báo không xác minh provenance toàn file hoặc tự cho vào corpus. Không triển khai parser PDF, chunk/index; dừng sau lượt điều chỉnh.

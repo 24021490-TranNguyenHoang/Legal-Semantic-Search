@@ -1,0 +1,195 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Stage 5A pending assessment, NOT an official unit_assessment",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "assessment_id",
+    "binding",
+    "unit_id",
+    "law_id",
+    "unit_sha256",
+    "snapshot_date",
+    "pilot_group",
+    "technical",
+    "proposal_id",
+    "scope_status",
+    "applicability_status",
+    "release_eligible",
+    "target_eligible",
+    "context_eligible",
+    "blockers",
+    "decision_ids",
+    "dimension_complete",
+    "aggregate_status",
+    "technical_review_status"
+  ],
+  "properties": {
+    "assessment_id": {
+      "type": "string",
+      "pattern": "^as_[a-f0-9]{64}$"
+    },
+    "binding": {
+      "type": "object"
+    },
+    "unit_id": {
+      "type": "string",
+      "pattern": "^u_[a-f0-9]{64}$"
+    },
+    "law_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "unit_sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "snapshot_date": {
+      "const": "2025-01-01"
+    },
+    "pilot_group": {
+      "type": "string",
+      "minLength": 1
+    },
+    "technical": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "own_content_status",
+        "context_status",
+        "impact_ids",
+        "upstream_status"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "needs_review",
+            "no_direct_issue_observed_in_pilot"
+          ]
+        },
+        "own_content_status": {
+          "enum": [
+            "partial_due_to_unparsed_region",
+            "designation_needs_review",
+            "not_observed_affected_in_selected_spans"
+          ]
+        },
+        "context_status": {
+          "enum": [
+            "needs_review",
+            "not_fully_assessed"
+          ]
+        },
+        "impact_ids": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string"
+          }
+        },
+        "upstream_status": {
+          "const": "pending"
+        }
+      }
+    },
+    "proposal_id": {
+      "type": "string",
+      "pattern": "^pr_[a-f0-9]{64}$"
+    },
+    "scope_status": {
+      "enum": [
+        null,
+        "included",
+        "supporting",
+        "excluded"
+      ]
+    },
+    "applicability_status": {
+      "enum": [
+        "pending_review",
+        "verified_at_snapshot",
+        "not_yet_effective",
+        "expired_at_snapshot",
+        "not_applicable"
+      ]
+    },
+    "release_eligible": {
+      "const": false
+    },
+    "target_eligible": {
+      "const": false
+    },
+    "context_eligible": {
+      "const": false
+    },
+    "blockers": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string"
+      }
+    },
+    "decision_ids": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "scope",
+        "applicability",
+        "technical"
+      ],
+      "properties": {
+        "scope": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "applicability": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "technical": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "dimension_complete": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "scope",
+        "applicability",
+        "technical"
+      ],
+      "properties": {
+        "scope": {
+          "type": "boolean"
+        },
+        "applicability": {
+          "type": "boolean"
+        },
+        "technical": {
+          "type": "boolean"
+        }
+      }
+    },
+    "aggregate_status": {
+      "const": "pending"
+    },
+    "technical_review_status": {
+      "enum": [
+        "pending",
+        "accepted",
+        "needs_fix",
+        "rejected"
+      ]
+    }
+  }
+}

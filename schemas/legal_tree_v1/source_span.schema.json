@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object", "additionalProperties": false,
+  "required": ["span_id", "unit_id", "extraction_id", "field_name", "span_order", "char_start", "char_end", "locator_json", "quote_sha256"],
+  "properties": {
+    "span_id": {"type": "string", "pattern": "^s_[0-9a-f]{64}$"},
+    "unit_id": {"type": "string", "pattern": "^u_[0-9a-f]{64}$"},
+    "extraction_id": {"type": "string", "pattern": "^e_[0-9a-f]{64}$"},
+    "field_name": {"enum": ["title", "text_original"]},
+    "span_order": {"type": "integer", "minimum": 0},
+    "char_start": {"type": "integer", "minimum": 0},
+    "char_end": {"type": "integer", "minimum": 1},
+    "locator_json": {"type": "string", "minLength": 2},
+    "quote_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+  }
+}

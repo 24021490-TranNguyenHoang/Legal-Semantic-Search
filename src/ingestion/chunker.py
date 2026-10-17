@@ -166,29 +166,32 @@ def parse_and_chunk(file_path: str):
         
     return chunks
 
+def main(argv=None):
+    from src.config import CLEANED_DIR
+    from src.pipeline_cli import (pipeline_parser, run_cli, staging_path, input_files,
+                                  validate_records, write_jsonl, staged_run, check_message)
+
+    def action(args):
+        staging_path(args.run_dir)
+        files = input_files(args.input_path, (".txt",))
+        chunks = []
+        for path in files:
+            parsed = parse_and_chunk(str(path))
+            if not parsed:
+                raise ValueError(f"Parser produced no chunks: {path}")
+            chunks.extend(parsed)
+        validate_records(chunks)
+        if args.check_only:
+            check_message(len(chunks))
+            return
+        with staged_run(args.run_dir, "chunker", args.input_path) as (run, report):
+            write_jsonl(run / "corpus_chunks.jsonl", chunks)
+            report["chunk_count"] = len(chunks)
+            print(f"OK: {len(chunks)} prototype chunks -> {run}")
+
+    return run_cli(pipeline_parser("Run unchanged prototype chunker into staging", CLEANED_DIR,
+                                   directory=True), action, argv)
+
+
 if __name__ == "__main__":
-    import os
-    import json
-    from src.config import CLEANED_DIR, CHUNKS_FILE
-    
-    # Tự động tạo thư mục processed nếu chưa có
-    CHUNKS_FILE.parent.mkdir(parents=True, exist_ok=True)
-    
-    all_chunks = []
-    if CLEANED_DIR.exists():
-        print(f"[*] Đang đọc thư mục: {CLEANED_DIR}")
-        for filename in os.listdir(CLEANED_DIR):
-            if filename.endswith(".txt"):
-                filepath = CLEANED_DIR / filename
-                print(f"[*] Đang xử lý: {filename}")
-                # Gọi hàm parse_and_chunk của bạn
-                chunks = parse_and_chunk(str(filepath)) 
-                all_chunks.extend(chunks)
-    else:
-        print(f"[!] Thư mục {CLEANED_DIR} không tồn tại!")
-                
-    with open(CHUNKS_FILE, "w", encoding="utf-8") as f:
-        for chunk in all_chunks:
-            f.write(json.dumps(chunk, ensure_ascii=False) + "\n")
-            
-    print(f"[+] Đã tạo {len(all_chunks)} chunks (đủ 2 trường text) tại: {CHUNKS_FILE}")
+    raise SystemExit(main())

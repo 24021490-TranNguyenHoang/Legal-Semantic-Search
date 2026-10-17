@@ -1,0 +1,12 @@
+{
+  "policy_version": "trace-extraction.v1",
+  "normalization": "NFC_LF_ONLY",
+  "block_separator": "\n",
+  "cell_separator": "\t",
+  "docx_ancillary_parts": "append_sorted_after_main_body",
+  "pdf": {
+    "layout": false,
+    "x_tolerance": 3,
+    "y_tolerance": 3
+  }
+}

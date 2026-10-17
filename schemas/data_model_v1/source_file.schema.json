@@ -1,0 +1,76 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:vtls:source_file:1.0.0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "file_id",
+    "law_id",
+    "source_set_id",
+    "file_role",
+    "part_order",
+    "filename",
+    "raw_file_ref",
+    "download_url",
+    "mime_type",
+    "size_bytes",
+    "sha256",
+    "retrieved_at"
+  ],
+  "properties": {
+    "file_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "law_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_set_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "file_role": {
+      "enum": [
+        "main",
+        "continuation",
+        "annex",
+        "alternate"
+      ]
+    },
+    "part_order": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "filename": {
+      "type": "string",
+      "minLength": 1
+    },
+    "raw_file_ref": {
+      "type": "string",
+      "minLength": 1
+    },
+    "download_url": {
+      "type": "string",
+      "format": "uri",
+      "pattern": "^https?://"
+    },
+    "mime_type": {
+      "type": "string",
+      "minLength": 1
+    },
+    "size_bytes": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "retrieved_at": {
+      "type": "string",
+      "format": "date-time",
+      "pattern": "Z$"
+    }
+  }
+}

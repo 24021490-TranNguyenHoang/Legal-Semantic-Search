@@ -1,0 +1,223 @@
+[
+  {
+    "key": "L36_Article22",
+    "law_id": "36/2024/QH15",
+    "pdf_suffix": "36-2024-qh15.pdf",
+    "page": 19,
+    "legal_locator": "L36_Article22",
+    "quote": "Điều 22. Nhường đường tại nơi đường giao nhau\nKhi đến gần đường giao nhau, người điều khiển phương tiện tham gia giao thông\nđường bộ phải quan sát, giảm tốc độ và nhường đường theo quy định sau đây:\n1. Tại nơi đường giao nhau giữa đường không ưu tiên với đường ưu tiên hoặc\ngiữa đường nhánh với đường chính thì xe đi từ đường không ưu tiên hoặc đường\nnhánh phải nhường đường cho xe đi trên đường ưu tiên hoặc đường chính từ bất kỳ\nhướng nào tới;\n2. Tại nơi đường giao nhau không có báo hiệu đi theo vòng xuyến, phải\nnhường đường cho xe đi đến từ bên phải;\n3. Tại nơi đường giao nhau có báo hiệu đi theo vòng xuyến, phải nhường\nđường cho xe đi đến từ bên trái.",
+    "note": "Công báo 977+978 ngày 24-8-2024, trang in 94; có dẫn và ba Khoản. Chưa duyệt tương đương DOCX/bản lịch sử."
+  },
+  {
+    "key": "L36_A10_K3",
+    "law_id": "36/2024/QH15",
+    "pdf_suffix": "36-2024-qh15.pdf",
+    "page": 10,
+    "legal_locator": "L36_A10_K3",
+    "quote": "3. Khi chở trẻ em dưới 10 tuổi và chiều cao dưới 1,35 mét trên xe ô tô không\nđược cho trẻ em ngồi cùng hàng ghế với người lái xe, trừ loại xe ô tô chỉ có một\nhàng ghế; người lái xe phải sử dụng, hướng dẫn sử dụng thiết bị an toàn phù hợp\ncho trẻ em.",
+    "note": "Phải đọc ngoại lệ A88K2, không lấy ngày hiệu lực chung trên metadata."
+  },
+  {
+    "key": "L36_A88_general",
+    "law_id": "36/2024/QH15",
+    "pdf_suffix": "36-2024-qh15_tiep.pdf",
+    "page": 58,
+    "legal_locator": "L36_A88_general",
+    "quote": "Điều 88. Hiệu lực thi hành\n1. Luật này có hiệu lực thi hành từ ngày 01 tháng 01 năm 2025, trừ trường hợp\nquy định tại khoản 2 Điều này.",
+    "note": "Ứng viên ngày chung có ngoại lệ; liệt kê unit pilot, không phải quyết định kế thừa.",
+    "date_rule": {
+      "effective_from": "2025-01-01",
+      "effective_to": null,
+      "priority": 1,
+      "unit_ids": [
+        "u_6a8c7d8846b7b4a85271ac2ddac92baa413919e8bafbb121e835d71f6754ecc1",
+        "u_cd5028d9bcc8882dadd032e208483bb4c251f78722f5397b3f2648272fb670c8",
+        "u_1797ad13ac27294295b0c0b4f34ba3f367e90508fe0f59bbecbb6408cba792a6",
+        "u_4ef7b89d622d28f734243a5052d2b25a7378236252535a29f1affcb356ca0ac3",
+        "u_607a55b5fc634abbdb2b59e3df240a16d64b07bf82f8306b819f6a6372d8f6b6",
+        "u_85d44aafbbad21d38ebffaaa59035bb0ffbed594dc8d3bb979124abb64a078ec",
+        "u_a0936204a8cd8718745bce8fb9e46e3cf05c3debe9c1634baba69dfb0c1bc19a",
+        "u_faded69fe108e519b881f84aad2043e605d26342d5adb0a83e51dbbed5314e8f"
+      ]
+    }
+  },
+  {
+    "key": "L36_A88_K2_exception",
+    "law_id": "36/2024/QH15",
+    "pdf_suffix": "36-2024-qh15_tiep.pdf",
+    "page": 58,
+    "legal_locator": "L36_A88_K2_exception",
+    "quote": "2. Khoản 3 Điều 10 của Luật này có hiệu lực thi hành từ ngày 01 tháng 01 năm 2026.",
+    "note": "Ngoại lệ 01-01-2026 riêng A10K3; đề xuất not_yet_effective, quyết định vẫn pending.",
+    "date_rule": {
+      "effective_from": "2026-01-01",
+      "effective_to": null,
+      "priority": 10,
+      "unit_ids": [
+        "u_607a55b5fc634abbdb2b59e3df240a16d64b07bf82f8306b819f6a6372d8f6b6"
+      ]
+    }
+  },
+  {
+    "key": "L36_transition",
+    "law_id": "36/2024/QH15",
+    "pdf_suffix": "36-2024-qh15_tiep.pdf",
+    "page": 58,
+    "legal_locator": "L36_transition",
+    "quote": "Điều 89. Quy định chuyển tiếp\n1. Giấy phép lái xe được cấp trước ngày Luật này có hiệu lực thi hành được\ntiếp tục sử dụng theo thời hạn ghi trên giấy phép lái xe.\n2. Giấy phép lái xe được cấp trước ngày Luật này có hiệu lực thi hành nếu chưa\nthực hiện đổi, cấp lại theo quy định của Luật này có hiệu lực sử dụng như sau:\na) Giấy phép lái xe hạng A1 được tiếp tục điều khiển xe mô tô hai bánh có\ndung tích xi-lanh từ 50 cm3 đến dưới 175 cm3 hoặc có công suất động cơ điện từ\n04 kW đến dưới 14 kW;\nb) Giấy phép lái xe hạng A2 được tiếp tục điều khiển xe mô tô hai bánh có\ndung tích xi-lanh từ 175 cm3 trở lên hoặc có công suất động cơ điện từ 14 kW trở lên\nvà các loại xe quy định cho giấy phép lái xe hạng A1 quy định tại điểm a khoản này;",
+    "note": "Lát trang 58; chuyển tiếp còn kéo dài các trang sau, chưa chứng minh đã rà hết."
+  },
+  {
+    "key": "L35_A85_general",
+    "law_id": "35/2024/QH15",
+    "pdf_suffix": "35-2024-qh15.pdf",
+    "page": 69,
+    "legal_locator": "L35_A85_general",
+    "quote": "Điều 85. Hiệu lực thi hành\n1. Luật này có hiệu lực thi hành từ ngày 01 tháng 01 năm 2025, trừ trường hợp\nquy định tại khoản 2 Điều này.",
+    "note": "Ngày chung là ứng viên, có ngoại lệ K2.",
+    "date_rule": {
+      "effective_from": "2025-01-01",
+      "effective_to": null,
+      "priority": 1,
+      "unit_ids": [
+        "u_bc96b2b503642f510cc7ddbf76744fc75516b7129c2d48fcb604547a515318c7",
+        "u_bcb0370ed92947ec6fdc05ef76f24385c9123c397ed9f94ebf720d36cfaa716c",
+        "u_0cc1339d65a4fd4f605411bd7b182ea69b2410d2cadc2ab7ad177d6ac8206bd0",
+        "u_56015586709d92d707821ee2e5e86b1dd10d41e2b8ecaaf9b171fe9861aac268",
+        "u_89d6ecc7dec08847b7d58300f3d54ad2693fb9a62d85e432990ada8077a7a86e",
+        "u_57ba19afd3456555c7a388c2fa3f4d94d46500ea52bd433805e5c769c2c4b2e7",
+        "u_7efb798ed0a3303ebda23ed5293bd3ceffcdf4f3591db6f3080112c488f36106",
+        "u_db88e525c187fd4aac9aac0e6c6e0f7a5fa56018003bdca8ac2032ccd31e48f4",
+        "u_baecee77925b3336a1a53425a7ccc90920f91c5d5c738b682003c5fbfd2ab913"
+      ]
+    }
+  },
+  {
+    "key": "L35_A85_K2_exception",
+    "law_id": "35/2024/QH15",
+    "pdf_suffix": "35-2024-qh15.pdf",
+    "page": 69,
+    "legal_locator": "L35_A85_K2_exception",
+    "quote": "2. Điểm a và điểm b khoản 2 Điều 42, Điều 43, Điều 50, khoản 1 Điều 84 của\nLuật này có hiệu lực thi hành từ ngày 01 tháng 10 năm 2024.",
+    "note": "A84K1 có ngày bắt đầu sớm; bảng chưa phân tích vẫn chặn đầy đủ/context.",
+    "date_rule": {
+      "effective_from": "2024-10-01",
+      "effective_to": null,
+      "priority": 10,
+      "unit_ids": [
+        "u_bc96b2b503642f510cc7ddbf76744fc75516b7129c2d48fcb604547a515318c7"
+      ]
+    }
+  },
+  {
+    "key": "L35_transition",
+    "law_id": "35/2024/QH15",
+    "pdf_suffix": "35-2024-qh15.pdf",
+    "page": 69,
+    "legal_locator": "L35_transition",
+    "quote": "Điều 86. Quy định chuyển tiếp\n1. Đối với dự án đường cao tốc đã được quyết định chủ trương đầu tư trước\nngày Luật này có hiệu lực thi hành mà chưa đáp ứng đầy đủ các yêu cầu tại Luật\nnày thì được tiếp tục đầu tư theo quyết định chủ trương đầu tư được cấp có thẩm\nquyền phê duyệt.\n2. Đối với đường cao tốc đưa vào khai thác trước ngày Luật này có hiệu lực thi\nhành mà chưa đáp ứng quy định tại khoản 1 Điều 45, khoản 2 Điều 47 của Luật\nnày và các tuyến đường cao tốc quy định tại khoản 1 Điều này thì lộ trình đầu tư\nxây dựng đáp ứng quy định của Luật này thực hiện theo quy định của Chính phủ./.",
+    "note": "Điều kiện dự án/đường cao tốc có trước; không rút về một nhãn active."
+  },
+  {
+    "key": "L35_tables_A84_K1_K2",
+    "law_id": "35/2024/QH15",
+    "pdf_suffix": "35-2024-qh15.pdf",
+    "page": 67,
+    "legal_locator": "L35_tables_A84_K1_K2",
+    "quote": "Điều 84. Sửa đổi, bổ sung một số điều của các luật có liên quan\n1. Sửa đổi, bổ sung điểm 1.1, bổ sung điểm 1.1a vào sau điểm 1.1, tiểu mục 1\nthuộc phần V- Phí thuộc lĩnh vực giao thông vận tải trong Danh mục phí, lệ phí ban\nhành kèm theo Luật Phí và lệ phí số 97/2015/QH13 đã được sửa đổi, bổ sung một số\nđiều theo Luật số 09/2017/QH14, Luật số 23/2018/QH14, Luật số 72/2020/QH14,\nLuật số 16/2023/QH15, Luật số 20/2023/QH15 và Luật số 24/2023/QH15 như sau:\n1.1 Phí sử dụng đường bộ thu qua đầu phương Chính phủ\ntiện đối với xe ô tô\n1.1a Phí sử dụng đường bộ cao tốc đối với Chính phủ đối với đường bộ\nphương tiện lưu thông trên đường bộ cao tốc cao tốc do Bộ Giao thông vận\nthuộc sở hữu toàn dân do Nhà nước đại diện tải quản lý; Hội đồng nhân\nchủ sở hữu và trực tiếp quản lý, khai thác dân cấp tỉnh đối với đường bộ\ncao tốc do địa phương quản lý\n2. Sửa đổi, bổ sung mục 23 trong Danh mục quy hoạch có tính chất kỹ thuật,\nchuyên ngành thuộc Phụ lục II ban hành kèm theo Luật Quy hoạch số 21/2017/QH14\nđã được sửa đổi, bổ sung một số điều theo Luật số 15/2023/QH15, Luật số\n16/2023/QH15, Luật số 28/2023/QH15 và Luật số 31/2024/QH15 như sau:\nSTT TÊN QUY HOẠCH VĂN BẢN QUY ĐỊNH\n23 Quy hoạch kết cấu hạ tầng đường bộ Luật Đường bộ số 35/2024/QH15",
+    "note": "Công báo trang in 69: hai bảng sửa đổi luật khác; chưa có unit cho ô bảng, cần rà hàng/cột/văn bản đích."
+  },
+  {
+    "key": "L35_planning_A5_K3_K4",
+    "law_id": "35/2024/QH15",
+    "pdf_suffix": "35-2024-qh15.pdf",
+    "page": 4,
+    "legal_locator": "L35_planning_A5_K3_K4",
+    "quote": "3. Thời kỳ quy hoạch kết cấu hạ tầng đường bộ là 10 năm, tầm nhìn từ 20 năm\nđến 30 năm.\nQuy hoạch kết cấu hạ tầng đường bộ được rà soát theo định kỳ 05 năm để điều\nchỉnh phù hợp với tình hình phát triển kinh tế - xã hội trong từng giai đoạn và được\ncông bố công khai.\n4. Ủy ban nhân dân cấp tỉnh tổ chức lập nội dung về phát triển đường bộ trong\nphương án phát triển mạng lưới giao thông trong quy hoạch theo quy định của\npháp luật về quy hoạch và quy định khác của pháp luật có liên quan.\nNội dung về phát triển đường bộ đô thị được xác định trong quy hoạch theo quy\nđịnh của pháp luật về quy hoạch đô thị và quy định khác của pháp luật có liên quan.",
+    "note": "Đề xuất scope theo BRD §3.1/3.3 loại quy hoạch/hạ tầng, chưa có quyết định thực tế."
+  },
+  {
+    "key": "L35_land_A12_K1",
+    "law_id": "35/2024/QH15",
+    "pdf_suffix": "35-2024-qh15.pdf",
+    "page": 8,
+    "legal_locator": "L35_land_A12_K1",
+    "quote": "Điều 12. Quỹ đất dành cho kết cấu hạ tầng đường bộ\n1. Quỹ đất dành cho kết cấu hạ tầng đường bộ phải phù hợp với quy hoạch\nmạng lưới đường bộ; quy hoạch, kế hoạch sử dụng đất cấp tỉnh; quy hoạch sử dụng\nđất cấp huyện và các quy hoạch khác có liên quan.",
+    "note": "Quỹ đất hạ tầng dùng thử ma trận scope; ngoài phạm vi không đồng nghĩa hết hiệu lực."
+  },
+  {
+    "key": "ND168_A6_K1",
+    "law_id": "168/2024/NĐ-CP",
+    "pdf_suffix": "168-nd-cp.signed.pdf",
+    "page": 8,
+    "legal_locator": "Điều 6 khoản 1 a/b/c/d/đ",
+    "visual_observation": "Trang ảnh có dẫn mức phạt 400.000–600.000 đồng; các Điểm a), b), c), d), đ).",
+    "note": "Không OCR, không offsets chữ trên ảnh; rà đầy đủ dẫn chiếu/ngoại lệ; chưa xác minh."
+  },
+  {
+    "key": "ND168_A16_K2_symbols",
+    "law_id": "168/2024/NĐ-CP",
+    "pdf_suffix": "168-nd-cp.signed.pdf",
+    "page": 41,
+    "legal_locator": "Điều 16 khoản 2 hai Điểm cuối",
+    "visual_observation": "Trang ảnh có d) về biển số và đ) về sử dụng giấy chứng nhận không do cơ quan có thẩm quyền cấp; DOCX p[518–519] đều đ).",
+    "note": "Quan sát máy gợi ý lỗi DOCX; chờ rà, không sửa raw/cây cũ."
+  },
+  {
+    "key": "ND168_A39_K9_symbols",
+    "law_id": "168/2024/NĐ-CP",
+    "pdf_suffix": "168-nd-cp.signed.pdf",
+    "page": 85,
+    "legal_locator": "Điều 39 khoản 9 Điểm cuối",
+    "visual_observation": "Trang ảnh có d) về tước giấy phép sát hạch 02–04 tháng; DOCX p[1038] là đ), unit còn trong cây.",
+    "note": "Không tự đổi designation/ID; cảnh báo đơn vị khác với thiếu con."
+  },
+  {
+    "key": "ND168_A40_K3_symbols",
+    "law_id": "168/2024/NĐ-CP",
+    "pdf_suffix": "168-nd-cp.signed.pdf",
+    "page": 86,
+    "legal_locator": "Điều 40 khoản 3 a/b/c/d/đ/e",
+    "visual_observation": "Trang ảnh có a), b), c), d), đ), e); DOCX p[1057–1058] đều đ), p[1059] c).",
+    "note": "Vùng DOCX vẫn cách ly; cha thiếu ba con; ảnh không tự giải quyết issue hoặc sinh cây mới."
+  },
+  {
+    "key": "ND168_A53_A54",
+    "law_id": "168/2024/NĐ-CP",
+    "pdf_suffix": "168-nd-cp.signed.pdf",
+    "page": 110,
+    "legal_locator": "Điều 53 khoản 1–2; Điều 54 khoản 1–2",
+    "visual_observation": "A53K1: từ ngày 01 tháng 01 năm 2025, trừ K2. K2 hoãn điểm m khoản 3 Điều 6, điểm e khoản 4 Điều 26, điểm b khoản 1 Điều 27 đến 01-01-2026; điểm b khoản 1 Điều 32 theo pháp luật môi trường về kiểm định khí thải. A54 chuyển tiếp theo thời điểm hành vi.",
+    "note": "Quan sát ảnh, không phải bản chép text. Ngày chung chỉ ứng viên cho unit pilot; ngoại lệ ngoài pilot chưa đánh giá.",
+    "date_rule": {
+      "effective_from": "2025-01-01",
+      "effective_to": null,
+      "priority": 1,
+      "unit_ids": [
+        "u_c45877c28ba1e64f6bccbefd5e5aa763bbf486ac419426b7891b01f0ad962613",
+        "u_9f51a08b78ae3df2a637f8890523b2e0e2a97f542c32b5e8a1062a320955de9e",
+        "u_e8485e33689979daa0ef767ca770cda5a97c13ae7951303611bd9d650238efa0",
+        "u_78e473c4ac93b5102105ebeb5099fdea4dac39d236a566b43c4ecf02a7d2dfc4",
+        "u_c40a4899cc753e524cdd9596d8d899b17c0b314d0c15080c478d55b97920b9ac",
+        "u_ff3b9522ae006a349e4c7935cc942c18fdf3a711dfa7f8a4ede6b41c129d531d",
+        "u_33c929a3312f451932e4b6f0322f098f06b1b0375cf5c2906dcade9b81471449",
+        "u_2d4ee540e6690a1028c4ed4acf5148e86a1570e2d2c161f75bfba0bc19e58742",
+        "u_e9084b48eb018f93bf3140980951dfc9c2f54bdd53c96af94e8277c64b726edc",
+        "u_92e47a1fc3e109096dc83f842469f9f7cfd2241877b07e631dbf8b2290009c75",
+        "u_726313465179af0292819fe3b60390042875c66ece7e8a3825cdc80491c4c5f4",
+        "u_d1bbd138835911e5ce3232dbc61eefec00db623cec12b12ec90eec58858d70f9",
+        "u_344dba7eb6d7184813b66fffac9145897353391e1405031fd5f6f02a5a718334",
+        "u_513cabd6868c533e0a612637bc491f9455718633714faa0570faf58f9344c62e",
+        "u_b817218b0df793e3bc79b26509377db5c87e8b1d034473f981fad3b14a52065b",
+        "u_56984dad49ccdd3398899132f140dae22552a8a83f8e9b0155ccaf2b5d71d2cc",
+        "u_2540339edb80bd9d0c317ff4b490cd01b7157977dde224bc706f3a4726f4def4",
+        "u_620112d16b4c00c84e7f70e5cccc7fbb40ff3256a58f365e5800d90c5ca9aeb4",
+        "u_2798735e876d913baff3234919311603e62f1a89be29b209cc45c6fa0d443c77",
+        "u_8d74262bc0792a382fab3304519738aaf867693c4ee06dd0919089c029c31411",
+        "u_22ad66a68674599eacf4ca5115900b34b7c94e46667d1b1f123bcc7eb31cddd2",
+        "u_a4f6f393fcb51d6412daace73255d35e834026d49b20fade80d6ee16604314dc",
+        "u_032ba4622dd792521d57a321ecc9002ef91867df5dfdcc254ae1d2125e381a64"
+      ]
+    }
+  }
+]

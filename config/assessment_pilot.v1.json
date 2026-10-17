@@ -1,0 +1,193 @@
+{
+  "policy": "assessment-pilot.v1.1",
+  "snapshot_date": "2025-01-01",
+  "dataset_kind": "legal_sources",
+  "max_units": 60,
+  "groups": [
+    {
+      "group_id": "A_L36_A22",
+      "unit_ids": [
+        "u_6a8c7d8846b7b4a85271ac2ddac92baa413919e8bafbb121e835d71f6754ecc1",
+        "u_cd5028d9bcc8882dadd032e208483bb4c251f78722f5397b3f2648272fb670c8",
+        "u_1797ad13ac27294295b0c0b4f34ba3f367e90508fe0f59bbecbb6408cba792a6",
+        "u_4ef7b89d622d28f734243a5052d2b25a7378236252535a29f1affcb356ca0ac3"
+      ],
+      "scope_candidate": "included",
+      "scope_reason": "Quy tắc nhường đường, đề xuất theo ưu tiên Luật 36 trong inventory; chưa duyệt ma trận scope."
+    },
+    {
+      "group_id": "B_ND168_A6_K1",
+      "unit_ids": [
+        "u_c45877c28ba1e64f6bccbefd5e5aa763bbf486ac419426b7891b01f0ad962613",
+        "u_9f51a08b78ae3df2a637f8890523b2e0e2a97f542c32b5e8a1062a320955de9e",
+        "u_e8485e33689979daa0ef767ca770cda5a97c13ae7951303611bd9d650238efa0",
+        "u_78e473c4ac93b5102105ebeb5099fdea4dac39d236a566b43c4ecf02a7d2dfc4",
+        "u_c40a4899cc753e524cdd9596d8d899b17c0b314d0c15080c478d55b97920b9ac",
+        "u_ff3b9522ae006a349e4c7935cc942c18fdf3a711dfa7f8a4ede6b41c129d531d"
+      ],
+      "scope_candidate": "included",
+      "scope_reason": "Chế tài trực tiếp quy tắc giao thông; phải giữ dẫn mức phạt, ngoại lệ và dẫn chiếu."
+    },
+    {
+      "group_id": "C_L36_A10_K3",
+      "unit_ids": [
+        "u_607a55b5fc634abbdb2b59e3df240a16d64b07bf82f8306b819f6a6372d8f6b6"
+      ],
+      "scope_candidate": "included",
+      "scope_reason": "Liên quan an toàn giao thông; phạm vi không đồng nghĩa đã có hiệu lực tại snapshot."
+    },
+    {
+      "group_id": "D1_ND168_A16_K2",
+      "unit_ids": [
+        "u_33c929a3312f451932e4b6f0322f098f06b1b0375cf5c2906dcade9b81471449",
+        "u_2d4ee540e6690a1028c4ed4acf5148e86a1570e2d2c161f75bfba0bc19e58742",
+        "u_e9084b48eb018f93bf3140980951dfc9c2f54bdd53c96af94e8277c64b726edc",
+        "u_92e47a1fc3e109096dc83f842469f9f7cfd2241877b07e631dbf8b2290009c75"
+      ],
+      "scope_candidate": "included",
+      "scope_reason": "Đối chiếu ký hiệu; giữ vùng cách ly và ảnh hưởng tính đầy đủ của cha, không đổi cây."
+    },
+    {
+      "group_id": "D2_ND168_A39_K9",
+      "unit_ids": [
+        "u_726313465179af0292819fe3b60390042875c66ece7e8a3825cdc80491c4c5f4",
+        "u_d1bbd138835911e5ce3232dbc61eefec00db623cec12b12ec90eec58858d70f9",
+        "u_344dba7eb6d7184813b66fffac9145897353391e1405031fd5f6f02a5a718334",
+        "u_513cabd6868c533e0a612637bc491f9455718633714faa0570faf58f9344c62e",
+        "u_b817218b0df793e3bc79b26509377db5c87e8b1d034473f981fad3b14a52065b"
+      ],
+      "scope_candidate": "excluded",
+      "scope_reason": "BRD §3.1: phạm vi người tham gia giao thông. Các Điểm a/b xử phạt cơ sở đào tạo bằng đình chỉ tuyển sinh; c/đ theo cây hiện tại xử phạt trung tâm sát hạch bằng tước giấy phép sát hạch. Đề xuất excluded khỏi target cho từng nội dung; chỉ cân nhắc supporting khi có dẫn chiếu cụ thể. Cảnh báo ký hiệu d/đ giữ riêng; chưa có quyết định reviewer."
+    },
+    {
+      "group_id": "D3_ND168_A40_K3",
+      "unit_ids": [
+        "u_56984dad49ccdd3398899132f140dae22552a8a83f8e9b0155ccaf2b5d71d2cc",
+        "u_2540339edb80bd9d0c317ff4b490cd01b7157977dde224bc706f3a4726f4def4",
+        "u_620112d16b4c00c84e7f70e5cccc7fbb40ff3256a58f365e5800d90c5ca9aeb4",
+        "u_2798735e876d913baff3234919311603e62f1a89be29b209cc45c6fa0d443c77"
+      ],
+      "scope_candidate": null,
+      "scope_reason": "Đăng kiểm cần rà scope theo nhóm đối tượng; cấu trúc con chưa đủ, không tự quyết included."
+    },
+    {
+      "group_id": "E_L35_A84_tables",
+      "unit_ids": [
+        "u_bc96b2b503642f510cc7ddbf76744fc75516b7129c2d48fcb604547a515318c7",
+        "u_bcb0370ed92947ec6fdc05ef76f24385c9123c397ed9f94ebf720d36cfaa716c"
+      ],
+      "scope_candidate": null,
+      "scope_reason": "Sửa đổi danh mục phí/quy hoạch; bảng chưa thành unit, cần quyết định phạm vi riêng."
+    },
+    {
+      "group_id": "F_L35_planning",
+      "unit_ids": [
+        "u_0cc1339d65a4fd4f605411bd7b182ea69b2410d2cadc2ab7ad177d6ac8206bd0",
+        "u_56015586709d92d707821ee2e5e86b1dd10d41e2b8ecaaf9b171fe9861aac268",
+        "u_89d6ecc7dec08847b7d58300f3d54ad2693fb9a62d85e432990ada8077a7a86e"
+      ],
+      "scope_candidate": "excluded",
+      "scope_reason": "Đề xuất loại các quy định lập quy hoạch/quỹ đất khỏi mục tiêu tra cứu hành vi giao thông của pilot; ma trận chưa được người rà soát duyệt, vẫn có thể đổi thành supporting."
+    },
+    {
+      "group_id": "G_effectiveness_anchors",
+      "unit_ids": [
+        "u_85d44aafbbad21d38ebffaaa59035bb0ffbed594dc8d3bb979124abb64a078ec",
+        "u_a0936204a8cd8718745bce8fb9e46e3cf05c3debe9c1634baba69dfb0c1bc19a",
+        "u_faded69fe108e519b881f84aad2043e605d26342d5adb0a83e51dbbed5314e8f",
+        "u_57ba19afd3456555c7a388c2fa3f4d94d46500ea52bd433805e5c769c2c4b2e7",
+        "u_7efb798ed0a3303ebda23ed5293bd3ceffcdf4f3591db6f3080112c488f36106",
+        "u_db88e525c187fd4aac9aac0e6c6e0f7a5fa56018003bdca8ac2032ccd31e48f4",
+        "u_baecee77925b3336a1a53425a7ccc90920f91c5d5c738b682003c5fbfd2ab913",
+        "u_8d74262bc0792a382fab3304519738aaf867693c4ee06dd0919089c029c31411",
+        "u_22ad66a68674599eacf4ca5115900b34b7c94e46667d1b1f123bcc7eb31cddd2",
+        "u_a4f6f393fcb51d6412daace73255d35e834026d49b20fade80d6ee16604314dc",
+        "u_032ba4622dd792521d57a321ecc9002ef91867df5dfdcc254ae1d2125e381a64"
+      ],
+      "scope_candidate": "supporting",
+      "scope_reason": "Điểm neo đọc căn cứ hiệu lực/chuyển tiếp, không coi đây là toàn bộ chứng cứ cần thiết."
+    }
+  ],
+  "scope_basis": [
+    {
+      "path": "docs/requirements/BRD Vietnamese Traffic Legal Semantic Search_v1.0.docx.md",
+      "sha256": "81b8fba4ab7b9d6e3b9b2dd13dda0c4ac5eade8a474e5e3742b53a13e93f4395",
+      "locator": "§3.1, §3.3; quy hoạch/hạ tầng ngoài phạm vi"
+    },
+    {
+      "path": "docs/design/DDD_Data_Model_Vietnamese_Traffic_Legal_Search_v1.0.docx.md",
+      "sha256": "0d131231b065ac49adf428ed131dcf62324e68ab6db0c1fd2da61051a2171aae",
+      "locator": "§8, §13; scope/applicability và DQ-04"
+    },
+    {
+      "path": "docs/design/Source Inventory v0.1.docx.md",
+      "sha256": "ed366291a7a260fda05650babe33402e3ebda83da519ca80014acdbbd32bbc1a",
+      "locator": "Snapshot và ưu tiên nguồn; chưa phải quyết định scope từng đơn vị"
+    }
+  ],
+  "context_review_links": [
+    {
+      "unit_id": "u_2d4ee540e6690a1028c4ed4acf5148e86a1570e2d2c161f75bfba0bc19e58742",
+      "context_unit_id": "u_33c929a3312f451932e4b6f0322f098f06b1b0375cf5c2906dcade9b81471449",
+      "region_xpaths": [
+        "/w:document/w:body/w:p[518]",
+        "/w:document/w:body/w:p[519]"
+      ],
+      "own_content_impact": "not_observed",
+      "reason": "Điểm a về phạm vi hoạt động có own text và dẫn mức phạt K2 còn nguyên. Chỉ đề xuất rà ranh giới context tối thiểu; không dùng cả K2 làm context khi hai vùng cuối chưa thành unit. Chưa quan sát own text bị ảnh hưởng."
+    },
+    {
+      "unit_id": "u_e9084b48eb018f93bf3140980951dfc9c2f54bdd53c96af94e8277c64b726edc",
+      "context_unit_id": "u_33c929a3312f451932e4b6f0322f098f06b1b0375cf5c2906dcade9b81471449",
+      "region_xpaths": [
+        "/w:document/w:body/w:p[518]",
+        "/w:document/w:body/w:p[519]"
+      ],
+      "own_content_impact": "not_observed",
+      "reason": "Điểm b về giấy/tem kiểm định và thời hạn có own text còn nguyên. Cần rà giữ nguyên điều kiện ngay tại Điểm b và dẫn K2; vùng giấy tờ cuối K2 đang cách ly không được tự ghép làm context. Chưa kết luận nội dung Điểm b thiếu."
+    },
+    {
+      "unit_id": "u_92e47a1fc3e109096dc83f842469f9f7cfd2241877b07e631dbf8b2290009c75",
+      "context_unit_id": "u_33c929a3312f451932e4b6f0322f098f06b1b0375cf5c2906dcade9b81471449",
+      "region_xpaths": [
+        "/w:document/w:body/w:p[518]",
+        "/w:document/w:body/w:p[519]"
+      ],
+      "own_content_impact": "not_observed",
+      "reason": "Điểm c về giấy đăng ký có own text dài được giữ. Hai vùng tiếp cùng chủ đề giấy tờ bị cách ly, nên việc chọn context về giấy tờ phải xem đúng ranh giới c/d/đ; không sửa text c hoặc coi c thiếu chỉ vì cha thiếu con."
+    },
+    {
+      "unit_id": "u_2540339edb80bd9d0c317ff4b490cd01b7157977dde224bc706f3a4726f4def4",
+      "context_unit_id": "u_56984dad49ccdd3398899132f140dae22552a8a83f8e9b0155ccaf2b5d71d2cc",
+      "region_xpaths": [
+        "/w:document/w:body/w:p[1057]",
+        "/w:document/w:body/w:p[1058]",
+        "/w:document/w:body/w:p[1059]"
+      ],
+      "own_content_impact": "not_observed",
+      "reason": "Điểm a về niêm yết quy trình thử nghiệm có own text độc lập còn nguyên. Chưa chốt context dẫn K3 tối thiểu; toàn K3 thiếu vùng d/đ/e, không dùng toàn Khoản như context đã đủ."
+    },
+    {
+      "unit_id": "u_620112d16b4c00c84e7f70e5cccc7fbb40ff3256a58f365e5800d90c5ca9aeb4",
+      "context_unit_id": "u_56984dad49ccdd3398899132f140dae22552a8a83f8e9b0155ccaf2b5d71d2cc",
+      "region_xpaths": [
+        "/w:document/w:body/w:p[1057]",
+        "/w:document/w:body/w:p[1058]",
+        "/w:document/w:body/w:p[1059]"
+      ],
+      "own_content_impact": "not_observed",
+      "reason": "Điểm b về thử nghiệm/chứng nhận không đúng quy định có own text còn nguyên. Rà dẫn mức phạt K3 và đối tượng cơ sở thử nghiệm riêng; ba vùng sau cách ly không được tự thêm vào context."
+    },
+    {
+      "unit_id": "u_2798735e876d913baff3234919311603e62f1a89be29b209cc45c6fa0d443c77",
+      "context_unit_id": "u_56984dad49ccdd3398899132f140dae22552a8a83f8e9b0155ccaf2b5d71d2cc",
+      "region_xpaths": [
+        "/w:document/w:body/w:p[1057]",
+        "/w:document/w:body/w:p[1058]",
+        "/w:document/w:body/w:p[1059]"
+      ],
+      "own_content_impact": "not_observed",
+      "reason": "Điểm c về phân công người thử nghiệm có own text còn nguyên. p[1059] bị lặp c) trong DOCX nên cần rà ranh giới context, phân biệt c đang có với vùng p[1059] chưa thành unit; không tự gộp hai vùng."
+    }
+  ]
+}

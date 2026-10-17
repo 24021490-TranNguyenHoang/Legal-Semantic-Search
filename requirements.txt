@@ -6,3 +6,9 @@ python-dotenv
 fastapi
 uvicorn
 pydantic
+numpy
+torch
+transformers
+python-docx
+pdfplumber
+jsonschema

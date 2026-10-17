@@ -1,61 +1,34 @@
-import json
 import pickle
-import os
-from pathlib import Path
-from rank_bm25 import BM25Okapi
-from src.config import EMBEDDED_FILE, BASE_DIR
 
-# Nơi lưu file BM25 index
-BM25_INDEX_PATH = BASE_DIR / "qdrant_db" / "bm25_index.pkl"
+from src.config import CHUNKS_FILE
+from src.pipeline_cli import (pipeline_parser, run_cli, read_records, search_text,
+                              staging_path, staged_run, check_message)
 
-def build_and_save_bm25():
-    print(f"[*] Đang đọc dữ liệu từ {EMBEDDED_FILE}...")
-    valid_corpus = []
-    valid_chunk_ids = []
-    tokenized_corpus = []
 
-    if not EMBEDDED_FILE.exists():
-        print(f"[!] Lỗi: Không tìm thấy file {EMBEDDED_FILE}")
+def build_and_save_bm25(input_path, run_dir, *, check_only=False):
+    staging_path(run_dir)
+    items = read_records(input_path)
+    corpus = [search_text(item).strip() for item in items]
+    tokens = [text.lower().split() for text in corpus]
+    if check_only:
+        check_message(len(items))
         return
+    with staged_run(run_dir, "bm25", input_path) as (run, report):
+        from rank_bm25 import BM25Okapi
+        data = {"bm25_model": BM25Okapi(tokens),
+                "chunk_ids": [item["chunk_id"] for item in items], "corpus": corpus}
+        with (run / "bm25_index.pkl.partial").open("xb") as output:
+            pickle.dump(data, output)
+        (run / "bm25_index.pkl.partial").rename(run / "bm25_index.pkl")
+        report["record_count"] = len(items)
+        print(f"OK: BM25 prototype index -> {run}")
 
-    with open(EMBEDDED_FILE, "r", encoding="utf-8") as f:
-        for line in f:
-            if not line.strip():
-                continue
-            item = json.loads(line)
-            # Ưu tiên lấy enriched_text, fallback về original_text
-            text = (item.get("enriched_text") or item.get("original_text") or "").strip()
-            
-            # Tách từ cơ bản
-            tokens = text.lower().split()
-            
-            # Chỉ lấy các chunk có từ vựng thực sự để tránh ZeroDivisionError
-            if tokens:
-                valid_corpus.append(text)
-                valid_chunk_ids.append(item.get("chunk_id"))
-                tokenized_corpus.append(tokens)
 
-    print(f"[*] Đã lọc được {len(valid_corpus)} chunks hợp lệ có nội dung.")
-    
-    if not tokenized_corpus:
-        print("[!] Không có văn bản hợp lệ để tạo chỉ mục BM25!")
-        return
+def main(argv=None):
+    def action(args):
+        build_and_save_bm25(args.input_path, args.run_dir, check_only=args.check_only)
+    return run_cli(pipeline_parser("Build prototype BM25 into staging", CHUNKS_FILE), action, argv)
 
-    print("[*] Đang tính toán chỉ mục BM25Okapi...")
-    bm25 = BM25Okapi(tokenized_corpus)
-
-    bm25_data = {
-        "bm25_model": bm25,
-        "chunk_ids": valid_chunk_ids,
-        "corpus": valid_corpus
-    }
-
-    print(f"[*] Đang lưu BM25 Index ra file: {BM25_INDEX_PATH}")
-    BM25_INDEX_PATH.parent.mkdir(parents=True, exist_ok=True)
-    with open(BM25_INDEX_PATH, "wb") as f:
-        pickle.dump(bm25_data, f)
-
-    print("[+] Hoàn tất! Đã lưu trữ Inverted Index cho BM25 thành công.")
 
 if __name__ == "__main__":
-    build_and_save_bm25()
+    raise SystemExit(main())

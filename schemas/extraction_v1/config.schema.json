@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "policy_version",
+    "normalization",
+    "block_separator",
+    "cell_separator",
+    "docx_ancillary_parts",
+    "pdf"
+  ],
+  "properties": {
+    "policy_version": {
+      "const": "trace-extraction.v1"
+    },
+    "normalization": {
+      "const": "NFC_LF_ONLY"
+    },
+    "block_separator": {
+      "const": "\n"
+    },
+    "cell_separator": {
+      "const": "\t"
+    },
+    "docx_ancillary_parts": {
+      "const": "append_sorted_after_main_body"
+    },
+    "pdf": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "layout",
+        "x_tolerance",
+        "y_tolerance"
+      ],
+      "properties": {
+        "layout": {
+          "const": false
+        },
+        "x_tolerance": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "y_tolerance": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        }
+      }
+    }
+  }
+}

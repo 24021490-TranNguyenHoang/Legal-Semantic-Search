@@ -16,3 +16,9 @@ EMBEDDED_FILE = PROCESSED_DIR / "corpus_embedded.jsonl"
 QDRANT_PATH = str(BASE_DIR / "qdrant_db")
 COLLECTION_NAME = "legal_vn_traffic"
 EMBEDDING_MODEL_NAME = "bkai-foundation-models/vietnamese-bi-encoder"
+
+# Prototype parameters retained in stage 1; these are not a validated model release.
+EMBEDDING_MAX_LENGTH = 256
+EMBEDDING_DIMENSION = 768
+SNAPSHOT_DATE = "2025-01-01"
+STAGING_DIR = BASE_DIR / "staging"

@@ -1,53 +1,52 @@
 import json
-import torch
-from transformers import AutoTokenizer, AutoModel
-from src.config import CHUNKS_FILE, EMBEDDED_FILE, EMBEDDING_MODEL_NAME
 
-# Hàm gộp vector (Mean Pooling) chuẩn cho mô hình Bi-Encoder
+from src.config import CHUNKS_FILE, EMBEDDING_MODEL_NAME, EMBEDDING_MAX_LENGTH
+from src.pipeline_cli import (pipeline_parser, run_cli, read_records, search_text,
+                              staging_path, staged_run, validate_records, check_message)
+
+
 def mean_pooling(model_output, attention_mask):
-    token_embeddings = model_output[0] 
+    import torch
+    token_embeddings = model_output[0]
     input_mask_expanded = attention_mask.unsqueeze(-1).expand(token_embeddings.size()).float()
     sum_embeddings = torch.sum(token_embeddings * input_mask_expanded, 1)
     sum_mask = torch.clamp(input_mask_expanded.sum(1), min=1e-9)
     return sum_embeddings / sum_mask
 
-def embed_and_save():
-    print(f"[*] Đang tải mô hình NLP: {EMBEDDING_MODEL_NAME}...")
-    tokenizer = AutoTokenizer.from_pretrained(EMBEDDING_MODEL_NAME)
-    model = AutoModel.from_pretrained(EMBEDDING_MODEL_NAME)
-    
-    if not CHUNKS_FILE.exists():
-        print(f"[!] Lỗi: Không tìm thấy file {CHUNKS_FILE} tại {CHUNKS_FILE.absolute()}")
+
+def embed_and_save(input_path, run_dir, *, check_only=False):
+    staging_path(run_dir)
+    items = read_records(input_path)
+    if check_only:
+        check_message(len(items))
         return
-        
-    print(f"[*] Đang đọc dữ liệu từ {CHUNKS_FILE}...")
-    processed_data = []
-    with open(CHUNKS_FILE, 'r', encoding='utf-8') as f:
-        for line in f:
-            if line.strip():
-                processed_data.append(json.loads(line))
-                
-    print(f"[*] Đang mã hóa vector cho {len(processed_data)} chunks...")
-    EMBEDDED_FILE.parent.mkdir(parents=True, exist_ok=True)
-    
-    with open(EMBEDDED_FILE, 'w', encoding='utf-8') as f_out:
-        for item in processed_data:
-            # Ưu tiên lấy enriched_text, sau đó đến original_text
-            text = item.get("enriched_text") or item.get("original_text") or ""
-            
-            # Mã hóa văn bản sang tensor
-            encoded_input = tokenizer(text, padding=True, truncation=True, max_length=256, return_tensors='pt')
-            with torch.no_grad():
-                model_output = model(**encoded_input)
-            
-            # Tính toán vector trung bình
-            sentence_embedding = mean_pooling(model_output, encoded_input['attention_mask'])
-            vector = sentence_embedding[0].tolist()
-            
-            item['vector'] = vector
-            f_out.write(json.dumps(item, ensure_ascii=False) + '\n')
-            
-    print(f"[+] Hoàn tất! Đã lưu file vector tại: {EMBEDDED_FILE}")
+    # Keep the prototype model, pooling and truncation policy unchanged in stage 1.
+    with staged_run(run_dir, "embedder", input_path) as (run, report):
+        import torch
+        from transformers import AutoTokenizer, AutoModel
+        tokenizer = AutoTokenizer.from_pretrained(EMBEDDING_MODEL_NAME)
+        model = AutoModel.from_pretrained(EMBEDDING_MODEL_NAME)
+        pending = run / "corpus_embedded.jsonl.partial"
+        with pending.open("x", encoding="utf-8", newline="\n") as output:
+            for item in items:
+                encoded = tokenizer(search_text(item), padding=True, truncation=True,
+                                    max_length=EMBEDDING_MAX_LENGTH, return_tensors="pt")
+                with torch.no_grad():
+                    model_output = model(**encoded)
+                result = dict(item, vector=mean_pooling(model_output, encoded["attention_mask"])[0].tolist())
+                validate_records([result], vectors=True)
+                output.write(json.dumps(result, ensure_ascii=False) + "\n")
+        pending.rename(run / "corpus_embedded.jsonl")
+        report["record_count"] = len(items)
+        print(f"OK: embeddings -> {run}")
+
+
+def main(argv=None):
+    def action(args):
+        embed_and_save(args.input_path, args.run_dir, check_only=args.check_only)
+    return run_cli(pipeline_parser("Build prototype embeddings into staging", CHUNKS_FILE),
+                   action, argv)
+
 
 if __name__ == "__main__":
-    embed_and_save()
+    raise SystemExit(main())

@@ -1,68 +1,46 @@
-import json
-import os
-from qdrant_client import QdrantClient
-from qdrant_client.models import Distance, VectorParams, PointStruct
+from src.config import COLLECTION_NAME, EMBEDDED_FILE, EMBEDDING_DIMENSION
+from src.pipeline_cli import (pipeline_parser, run_cli, read_records, staging_path,
+                              staged_run, check_message)
 
-# Import cấu hình từ src.config
-from src.config import QDRANT_PATH, COLLECTION_NAME, EMBEDDED_FILE
 
-# 1. Khởi tạo Qdrant lưu trữ cục bộ (Local Storage)
-print(f"[*] Khởi tạo Qdrant Database tại: {os.path.abspath(QDRANT_PATH)}")
-client = QdrantClient(path=QDRANT_PATH)
+def build_qdrant(input_path, run_dir, *, check_only=False):
+    staging_path(run_dir)
+    items = read_records(input_path, vectors=True)
+    if check_only:
+        check_message(len(items))
+        return
+    # Only write inside an exclusively created run. Never delete a collection.
+    with staged_run(run_dir, "qdrant", input_path) as (run, report):
+        from qdrant_client import QdrantClient
+        from qdrant_client.models import Distance, VectorParams, PointStruct
+        fields = ("chunk_id", "law_id", "law_title", "chapter", "article_id",
+                  "article_title", "clause_id", "citation_path", "original_text",
+                  "enriched_text", "effective_date", "status")
+        points = [PointStruct(id=i, vector=item["vector"],
+                              payload={k: item.get(k) for k in fields})
+                  for i, item in enumerate(items)]
+        client = QdrantClient(path=str(run / "qdrant_db"))
+        try:
+            if client.collection_exists(COLLECTION_NAME):
+                raise ValueError("Collection already exists; refusing to replace it")
+            client.create_collection(collection_name=COLLECTION_NAME,
+                                     vectors_config=VectorParams(size=EMBEDDING_DIMENSION,
+                                                                 distance=Distance.COSINE))
+            for start in range(0, len(points), 100):
+                client.upsert(collection_name=COLLECTION_NAME,
+                              points=points[start:start + 100], wait=True)
+        finally:
+            client.close()
+        report["point_count"] = len(items)
+        print(f"OK: staged Qdrant -> {run}")
 
-# Xóa collection cũ nếu đã tồn tại để tránh nạp trùng dữ liệu
-if client.collection_exists(COLLECTION_NAME):
-    client.delete_collection(COLLECTION_NAME)
 
-# 2. Tạo Collection với kích thước vector 768 chiều
-client.create_collection(
-    collection_name=COLLECTION_NAME,
-    vectors_config=VectorParams(size=768, distance=Distance.COSINE),
-)
+def main(argv=None):
+    def action(args):
+        build_qdrant(args.input_path, args.run_dir, check_only=args.check_only)
+    return run_cli(pipeline_parser("Build isolated prototype Qdrant into staging", EMBEDDED_FILE),
+                   action, argv)
 
-# 3. Đọc dữ liệu từ file corpus_embedded.jsonl trong data/processed/
-print(f"[*] Đang đọc dữ liệu từ {EMBEDDED_FILE}...")
-points = []
 
-with open(EMBEDDED_FILE, "r", encoding="utf-8") as f:
-    for idx, line in enumerate(f):
-        if not line.strip():
-            continue
-        item = json.loads(line)
-        
-        # Tạo payload đẩy đủ các trường phục vụ Retrieval & UI
-        payload = {
-            "chunk_id": item.get("chunk_id"),
-            "law_id": item.get("law_id"),
-            "law_title": item.get("law_title"),
-            "chapter": item.get("chapter"),
-            "article_id": item.get("article_id"),
-            "article_title": item.get("article_title"),
-            "clause_id": item.get("clause_id"),
-            "citation_path": item.get("citation_path"),
-            "original_text": item.get("original_text"),
-            "enriched_text": item.get("enriched_text"),
-            "effective_date": item.get("effective_date"),
-            "status": item.get("status")
-        }
-        
-        point = PointStruct(
-            id=idx,
-            vector=item["vector"],
-            payload=payload
-        )
-        points.append(point)
-
-# 4. Đẩy toàn bộ dữ liệu vào Qdrant theo batch
-batch_size = 100
-total_points = len(points)
-print(f"[*] Đang nạp {total_points} vector vào Qdrant...")
-
-for i in range(0, total_points, batch_size):
-    batch = points[i:i + batch_size]
-    client.upsert(
-        collection_name=COLLECTION_NAME,
-        points=batch
-    )
-
-print(f"[+] Nạp thành công {total_points} vector vào Collection '{COLLECTION_NAME}'!")
+if __name__ == "__main__":
+    raise SystemExit(main())

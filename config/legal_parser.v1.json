@@ -1,0 +1,10 @@
+{
+  "policy_version": "legal-tree.v1",
+  "input_format": "docx_trace",
+  "heading_policy": "anchored_paragraph_sequential_designation",
+  "parent_text": "own_paragraphs_only",
+  "title_policy": "source_slices_trim_edges_join_lf",
+  "table_policy": "inventory_without_legal_inference",
+  "unresolved_content": "quarantine_until_reliable_heading",
+  "source_review_status": "pending"
+}

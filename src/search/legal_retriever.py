@@ -1,13 +1,11 @@
 import re
 import json
-import torch
 from pathlib import Path
 from typing import List, Dict, Any, Tuple, Optional
-from transformers import AutoTokenizer, AutoModel
-from qdrant_client import QdrantClient
-from rank_bm25 import BM25Okapi
 
-from src.config import QDRANT_PATH, COLLECTION_NAME, CHUNKS_FILE, EMBEDDING_MODEL_NAME
+from src.config import (QDRANT_PATH, COLLECTION_NAME, CHUNKS_FILE,
+                        EMBEDDING_MODEL_NAME, EMBEDDING_MAX_LENGTH)
+from src.pipeline_cli import read_records, require_qdrant
 
 def simple_tokenize(text: str) -> List[str]:
     """Tách từ đơn giản bằng regex chuẩn hóa."""
@@ -15,6 +13,7 @@ def simple_tokenize(text: str) -> List[str]:
 
 def mean_pooling(model_output, attention_mask):
     """Mean pooling cho embedding Bi-Encoder."""
+    import torch
     token_embeddings = model_output[0]
     input_mask_expanded = attention_mask.unsqueeze(-1).expand(token_embeddings.size()).float()
     sum_embeddings = torch.sum(token_embeddings * input_mask_expanded, 1)
@@ -127,22 +126,20 @@ VEHICLE_PATTERNS = {
 }
 
 class LegalRetriever:
-    def __init__(self):
-        self.client = QdrantClient(path=QDRANT_PATH)
+    def __init__(self, chunks_file=CHUNKS_FILE, qdrant_path=QDRANT_PATH):
+        # Validate local inputs before loading models or opening the database.
+        self.chunks = read_records(chunks_file)
+        require_qdrant(qdrant_path, COLLECTION_NAME)
+        from transformers import AutoTokenizer, AutoModel
+        from qdrant_client import QdrantClient
+        from rank_bm25 import BM25Okapi
         self.tokenizer = AutoTokenizer.from_pretrained(EMBEDDING_MODEL_NAME)
         self.model = AutoModel.from_pretrained(EMBEDDING_MODEL_NAME)
         self.model.eval()
         
-        # Tải chunks
-        self.chunks = []
-        if CHUNKS_FILE.exists():
-            with open(CHUNKS_FILE, "r", encoding="utf-8") as f:
-                for line in f:
-                    if line.strip():
-                        self.chunks.append(json.loads(line))
-                        
         tokenized_corpus = [simple_tokenize(c.get("enriched_text") or c.get("text", "")) for c in self.chunks]
         self.bm25 = BM25Okapi(tokenized_corpus) if tokenized_corpus else None
+        self.client = QdrantClient(path=str(qdrant_path))
 
     def analyze_query(self, query: str) -> Dict[str, Any]:
         """Phân tích ý định người dùng và ngữ cảnh pháp lý."""
@@ -192,7 +189,8 @@ class LegalRetriever:
 
     def encode_query(self, query_text: str) -> List[float]:
         """Mã hóa truy vấn sang vector chuẩn hóa."""
-        encoded_input = self.tokenizer(query_text, padding=True, truncation=True, max_length=256, return_tensors='pt')
+        import torch
+        encoded_input = self.tokenizer(query_text, padding=True, truncation=True, max_length=EMBEDDING_MAX_LENGTH, return_tensors='pt')
         with torch.no_grad():
             model_output = self.model(**encoded_input)
         embedding = mean_pooling(model_output, encoded_input['attention_mask'])

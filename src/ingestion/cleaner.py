@@ -1,8 +1,6 @@
 import os
 import re
 import unicodedata
-import pdfplumber
-import docx
 
 def clean_text(text: str) -> str:
     """Làm sạch văn bản, chuẩn hóa font và loại bỏ các thành phần rác."""
@@ -42,12 +40,14 @@ def clean_text(text: str) -> str:
 
 def read_docx(file_path: str) -> str:
     """Trích xuất nội dung văn bản từ tệp DOCX."""
+    import docx
     doc = docx.Document(file_path)
     paragraphs = [p.text.strip() for p in doc.paragraphs if p.text.strip()]
     return "\n".join(paragraphs)
 
 def read_pdf(file_path: str) -> str:
     """Trích xuất nội dung văn bản từ tệp PDF."""
+    import pdfplumber
     extracted_pages = []
     with pdfplumber.open(file_path) as pdf:
         for page_idx, page in enumerate(pdf.pages, start=1):
@@ -67,29 +67,40 @@ def extract_and_clean(file_path: str) -> str:
         raise ValueError(f"Định dạng {ext} không được hỗ trợ.")
     return clean_text(raw_text)
 
+def main(argv=None):
+    from src.config import RAW_DIR
+    from src.pipeline_cli import (pipeline_parser, run_cli, staging_path,
+                                  input_files, staged_run, check_message)
+
+    def action(args):
+        staging_path(args.run_dir)
+        files = input_files(args.input_path, (".docx", ".pdf"))
+        names = [f"{p.stem}_cleaned.txt".casefold() for p in files]
+        if len(set(names)) != len(names):
+            raise ValueError("Input filenames would create duplicate cleaned outputs")
+        # Read the entire batch before creating any output.
+        cleaned = []
+        for path in files:
+            text = extract_and_clean(str(path))
+            if not text.strip():
+                raise ValueError(f"No extracted text: {path}")
+            cleaned.append((path, text))
+        if args.check_only:
+            check_message(len(cleaned))
+            return
+        with staged_run(args.run_dir, "cleaner", args.input_path) as (run, report):
+            target = run / "cleaned"
+            target.mkdir()
+            for path, text in cleaned:
+                with (target / f"{path.stem}_cleaned.txt").open(
+                        "x", encoding="utf-8", newline="\n") as output:
+                    output.write(text)
+            report["file_count"] = len(cleaned)
+            print(f"OK: {len(cleaned)} cleaned files -> {target}")
+
+    return run_cli(pipeline_parser("Extract/clean prototype sources into staging", RAW_DIR,
+                                   directory=True), action, argv)
+
+
 if __name__ == "__main__":
-    raw_dir = "raw_data"
-    output_dir = "cleaned_data"
-    os.makedirs(output_dir, exist_ok=True)
-    
-    if not os.path.exists(raw_dir):
-        print(f"[!] Thư mục '{raw_dir}' chưa tồn tại. Vui lòng tạo thư mục và đưa các tệp văn bản vào.")
-    else:
-        files = [f for f in os.listdir(raw_dir) if f.lower().endswith(('.pdf', '.docx'))]
-        if not files:
-            print(f"[!] Không tìm thấy tệp .pdf hoặc .docx nào trong '{raw_dir}'.")
-        else:
-            for filename in files:
-                input_path = os.path.join(raw_dir, filename)
-                base_name = os.path.splitext(filename)[0]
-                output_path = os.path.join(output_dir, f"{base_name}_cleaned.txt")
-                
-                print(f"[*] Đang xử lý: {filename}...")
-                try:
-                    cleaned_content = extract_and_clean(input_path)
-                    with open(output_path, "w", encoding="utf-8") as out_f:
-                        out_f.write(cleaned_content)
-                    print(f"    -> Đã lưu văn bản sạch: {output_path} ({len(cleaned_content)} ký tự)")
-                except Exception as e:
-                    print(f"    [X] Lỗi khi xử lý {filename}: {e}")
-            print("\n[+] Đã hoàn thành xử lý toàn bộ dữ liệu thô!")
+    raise SystemExit(main())

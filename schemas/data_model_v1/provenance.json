@@ -1,0 +1,6 @@
+{
+  "package_ref": "docs/design/data_model_v1/Data_Model_Schema_Examples_v1.0.zip",
+  "package_sha256": "e6fc2c7d43ca35660401e82956fb2ec815dfe85cc956cd4d3712e7633d807c5a",
+  "member": "schema.sql",
+  "member_sha256": "37280458080d308ca5201be78bb1c59d8bcfbc79a424eb833b6efd2de7bff786"
+}

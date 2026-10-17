@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:vtls:legal_document:1.0.0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "law_id",
+    "source_id",
+    "law_title",
+    "document_type",
+    "issued_date",
+    "document_effective_from",
+    "source_url",
+    "scope_note"
+  ],
+  "properties": {
+    "law_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "law_title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "document_type": {
+      "enum": [
+        "law",
+        "decree",
+        "circular",
+        "regulation"
+      ]
+    },
+    "issued_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "document_effective_from": {
+      "anyOf": [
+        {
+          "type": "string",
+          "format": "date"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "source_url": {
+      "type": "string",
+      "format": "uri",
+      "pattern": "^https?://"
+    },
+    "scope_note": {
+      "type": "string",
+      "minLength": 1
+    }
+  }
+}

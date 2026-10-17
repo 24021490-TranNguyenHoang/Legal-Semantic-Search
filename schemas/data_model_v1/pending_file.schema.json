@@ -1,0 +1,106 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:vtls:pending_file:1.0.0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "file_id",
+    "law_id",
+    "source_set_id",
+    "part_order",
+    "file_role",
+    "measured",
+    "evidence",
+    "status"
+  ],
+  "properties": {
+    "file_id": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "law_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_set_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "part_order": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "file_role": {
+      "enum": [
+        "main",
+        "continuation",
+        "annex",
+        "alternate"
+      ]
+    },
+    "measured": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "filename",
+        "raw_file_ref",
+        "mime_type",
+        "size_bytes",
+        "sha256"
+      ],
+      "properties": {
+        "filename": {
+          "type": "string",
+          "minLength": 1
+        },
+        "raw_file_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "mime_type": {
+          "type": "string",
+          "minLength": 1
+        },
+        "size_bytes": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        }
+      }
+    },
+    "evidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "download_url",
+        "retrieved_at",
+        "edition",
+        "verification_ref",
+        "source_set_complete"
+      ],
+      "properties": {
+        "download_url": {
+          "type": "null"
+        },
+        "retrieved_at": {
+          "type": "null"
+        },
+        "edition": {
+          "type": "null"
+        },
+        "verification_ref": {
+          "type": "null"
+        },
+        "source_set_complete": {
+          "type": "null"
+        }
+      }
+    },
+    "status": {
+      "const": "pending"
+    }
+  }
+}
