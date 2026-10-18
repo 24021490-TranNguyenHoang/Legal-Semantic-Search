@@ -1,0 +1,25 @@
+{
+  "version": "chunk-coverage-survey.v1",
+  "snapshot_date": "2025-01-01",
+  "tree_manifest_sha256": "ca30426fea4f39e797ffa0e922010cd507cf131b86df76c9174d2a0518e1c938",
+  "assessment_manifest_sha256": "042fdb9a325a5f9869971f5fac7df328bb7b4bd4893534f35d14251f7b3f7742",
+  "encoder_config_sha256": "dcbc1185040eb99105a2cda209fe72bdca3241048efd46d9d610772d57c15827",
+  "chunk": {
+    "chunk_policy_version": "leaf-clause-point-context.v1",
+    "snapshot_date": "2025-01-01",
+    "token_limit": 256,
+    "required_context_fields": [
+      "title"
+    ],
+    "required_clause_context_fields": [
+      "text_original"
+    ]
+  },
+  "laws": [
+    "35/2024/QH15",
+    "36/2024/QH15",
+    "165/2024/NĐ-CP",
+    "168/2024/NĐ-CP"
+  ],
+  "batch_size": 64
+}

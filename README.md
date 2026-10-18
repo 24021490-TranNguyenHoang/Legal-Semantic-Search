@@ -580,3 +580,49 @@ provenance đã xác minh. Không tạo reviewer event, corpus verified, embeddi
 hoặc index. Chi tiết:
 [contract Điểm](docs/design/data_model_v1/Stage6_Point_Context_Contract.md),
 [báo cáo Điểm](docs/reviews/Stage6_Point_Context_Verification.md).
+
+### Stage 6: khảo sát khả năng chunking trên bốn cây DOCX
+
+`src.coverage_survey` gọi builder Khoản/Điểm lá hiện hành cho toàn bộ bốn
+cây DOCX, cùng logic source/dependency và encoder preprocessing đã chốt.
+Không trộn PDF Điều 22, đổi policy/model/budget 256 hoặc truncate. Chỉ dùng
+tokenizer/PyVi CPU, không encoder inference. Cần các artifact local thật
+Stage4-005 và assessment v1.1 revision-pilot-003; staging không có trong Git.
+
+```powershell
+# Dùng môi trường/dependency Stage 6 đã cài. Run đích phải chưa tồn tại.
+.\.venv-stage1\Scripts\python.exe -X utf8 -B -m src.coverage_survey build --tree-manifest staging/stage4-docx-005/manifest.json --assessment-manifest staging/stage5a-revision-pilot-003/manifest.json --run-dir staging/stage6-coverage-local-001
+.\.venv-stage1\Scripts\python.exe -X utf8 -B -m src.coverage_survey validate --manifest staging/stage6-coverage-local-001/manifest.json
+# Nếu tokenizer không còn ở cache mặc định, thêm vào lệnh build:
+# --tokenizer-dir staging/stage6-points-002/tokenizer_assets
+$env:VTLS_ARTICLE22_MANIFEST = 'staging/article22-pdf-004/manifest.json'
+$env:VTLS_ARTICLE22_PREVIEW_MANIFEST = 'staging/article22-preview-001/manifest.json'
+$env:VTLS_STAGE6_MANIFEST = 'staging/article22-stage6-002/manifest.json'
+$env:VTLS_POINTS_MANIFEST = 'staging/stage6-points-002/manifest.json'
+$env:VTLS_COVERAGE_MANIFEST = 'staging/stage6-coverage-local-001/manifest.json'
+.\.venv-stage1\Scripts\python.exe -X utf8 -B -m unittest discover -s tests -p test_coverage_survey.py -v
+.\.venv-stage1\Scripts\python.exe -X utf8 -B -m unittest discover -s tests -v
+```
+
+Mở `coverage_report.md` để xem số liệu từng văn bản; `samples.md` có citation,
+reason, token và đường dẫn mẫu. `unit_coverage.jsonl`/CSV ghi đủ 4.000 unit,
+phân biệt context-only, preview, bị chặn, vượt budget và chưa hỗ trợ.
+`source_gaps.jsonl` liệt kê parser/coverage/table riêng, có thể trùng vùng
+giữa các lớp, không tạo unit giả. Preview/context/encoder/quarantine nằm ở
+`preview/`. Mẫu số tỷ lệ là các Khoản/Điểm lá builder hỗ trợ; token quantile
+chỉ trên candidate được đo, không phải context-only hoặc bị chặn sớm.
+
+Scope nối từ hồ sơ assessment đúng hash cây/unit, không biến proposal thành
+quyết định. Không có assessment mới, nguồn/extraction/cây vẫn pending,
+origin=agent_review, corpus_version=null, release_eligible=false. Tỷ lệ kỹ
+thuật không chứng minh độ phủ nghiệp vụ, toàn nguồn hoặc hiệu lực.
+
+Validator replay toàn bộ bốn cây bằng builder/tokenizer thật, so output,
+summary và báo cáo. **Exit 0 của survey** nghĩa khảo sát hoàn tất không có
+lỗi thực thi, vẫn có thể có target bị chặn/vượt budget/chưa hỗ trợ; exit 2
+có candidate lỗi thực thi; exit 1 lỗi input/binding hoặc tiến trình. Xem
+`validation_report.json` và bảng trạng thái, không suy mọi candidate pass.
+Chưa triển khai các ưu tiên được đề xuất, tạo corpus, embedding/index hoặc
+kích hoạt ứng dụng. Chi tiết:
+[contract khảo sát](docs/design/data_model_v1/Stage6_Coverage_Survey_Contract.md),
+[báo cáo kiểm chứng](docs/reviews/Stage6_Coverage_Survey_Verification.md).
