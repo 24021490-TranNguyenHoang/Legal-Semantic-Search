@@ -1,0 +1,1954 @@
+{
+  "version": "pilot-field-refinement.v1",
+  "snapshot_date": "2025-01-01",
+  "input_manifest_sha256": "40f791c118527bb680a0a8a8c0d61f70016c6446c91164506ecdae2d29ab2894",
+  "method": "agent_fulltext_review_of_existing_107_targets_and_42_field_dependencies",
+  "scope_reviews": [
+    {
+      "unit_id": "u_032ba4622dd792521d57a321ecc9002ef91867df5dfdcc254ae1d2125e381a64",
+      "unit_sha256": "2af284fb7898f925ef42351dcc77209d69e2fe9090d04228cf8257269536bf63",
+      "previous_proposal_id": "pr_884e6777393e2930a8e5174e247259a4ef8f698b2f5f94add46a177ac701148a",
+      "previous_proposal_sha256": "5fb9d7811dae26779fa92673448d5f0d49f40ea7d214d09a646ba29414b7cafe",
+      "scope_candidate": "pending",
+      "regulated_subject": "Người có hành vi vi phạm và cơ quan xử lý theo tình huống chuyển tiếp",
+      "behavior_right_duty": "Chọn nghị định theo thời điểm phát hiện khi hành vi đang thực hiện",
+      "use_cases": [
+        "UC-01"
+      ],
+      "reason": "Đề xuất hoãn included: Chọn nghị định theo thời điểm phát hiện khi hành vi đang thực hiện. Đây là căn cứ chọn văn bản xử phạt theo tình huống thời gian, chưa có ca target cụ thể hoặc dependency tìm kiếm cần field này trong pilot. Giữ để assessment applicability; chưa gọi supporting khi chưa có target/field dependency, không loại theo ngày hiệu lực chưa xác minh.",
+      "reference_notes": "Giữ nguyên câu và điều kiện; không mở rộng context ngoài cha, không coi đoạn này là toàn bộ căn cứ pháp lý.",
+      "prior_reason_quality": "partial_category_rationale_with_short_quote",
+      "prior_reason_limitation": "Lý do nêu nhóm nghiệp vụ kèm đoạn trích đầu nhưng chưa giải thích đầy đủ hành vi/đối tượng và giới hạn của chính unit.",
+      "review_completed": true
+    },
+    {
+      "unit_id": "u_21cea134afc31232b0e64d34749a3b15b6e6fcc382362c9548ab97486bbfc539",
+      "unit_sha256": "61440cd842eb116f7cfd02d30075ce7b8f2914c48c0709e3b62c8990d23c7aff",
+      "previous_proposal_id": "pr_dd34f38e3d1c93846394ec0aeb417d5c68fad2e79078e3394dba20ffff5babe4",
+      "previous_proposal_sha256": "e988b32695f430c9539d8d6fa4d07d457d89445bf375ccb98267575ea67c929e",
+      "scope_candidate": "included",
+      "regulated_subject": "Người điều khiển mô tô/gắn máy/xe tương tự thuộc Điều 7",
+      "behavior_right_duty": "Chế tài người lái mô tô/gắn máy: dùng còi 22–05 giờ tại khu dân cư/y tế, trừ xe ưu tiên làm nhiệm vụ",
+      "use_cases": [
+        "UC-01"
+      ],
+      "reason": "Đề xuất target trực tiếp cho Người điều khiển mô tô/gắn máy/xe tương tự thuộc Điều 7: Chế tài người lái mô tô/gắn máy: dùng còi 22–05 giờ tại khu dân cư/y tế, trừ xe ưu tiên làm nhiệm vụ. Có quyền/nghĩa vụ/hành vi cụ thể gắn người tham gia theo BRD §3.1, phục vụ UC-01. Giữ đầy đủ điều kiện và các phần dẫn chiếu, không kết luận hiệu lực.",
+      "reference_notes": "Giữ nguyên câu và điều kiện; không mở rộng context ngoài cha, không coi đoạn này là toàn bộ căn cứ pháp lý.",
+      "prior_reason_quality": "partial_category_rationale_with_short_quote",
+      "prior_reason_limitation": "Lý do nêu nhóm nghiệp vụ kèm đoạn trích đầu nhưng chưa giải thích đầy đủ hành vi/đối tượng và giới hạn của chính unit.",
+      "review_completed": true
+    },
+    {
+      "unit_id": "u_2572d2b8347ff0ff03e95343d31e6faad56eb32231b7cbf75f05239b26f9b868",
+      "unit_sha256": "2f4ca08c4805fca4dd61945547fddfd09dd20db21499093da341c92df5f97470",
+      "previous_proposal_id": "pr_0d6b46cf4e7c93e8abf0932649f610018eb13adf6ad67e86280285f4c86ceb8f",
+      "previous_proposal_sha256": "e83144e5e357df1325c99b3865ba3b94a3e5e49232b4230a1cfe3ed0561a3a3f",
+      "scope_candidate": "included",
+      "regulated_subject": "Người đi bộ",
+      "behavior_right_duty": "Chế tài người đi bộ: đi sai phần đường/vượt dải phân cách/qua đường sai hoặc không báo hiệu tay",
+      "use_cases": [
+        "UC-01"
+      ],
+      "reason": "Đề xuất target trực tiếp cho Người đi bộ: Chế tài người đi bộ: đi sai phần đường/vượt dải phân cách/qua đường sai hoặc không báo hiệu tay. Có quyền/nghĩa vụ/hành vi cụ thể gắn người tham gia theo BRD §3.1, phục vụ UC-01. Giữ đầy đủ điều kiện và các phần dẫn chiếu, không kết luận hiệu lực.",
+      "reference_notes": "Giữ nguyên câu và điều kiện; không mở rộng context ngoài cha, không coi đoạn này là toàn bộ căn cứ pháp lý.",
+      "prior_reason_quality": "partial_category_rationale_with_short_quote",
+      "prior_reason_limitation": "Lý do nêu nhóm nghiệp vụ kèm đoạn trích đầu nhưng chưa giải thích đầy đủ hành vi/đối tượng và giới hạn của chính unit.",
+      "review_completed": true
+    },
+    {
+      "unit_id": "u_31e5d3c605a9e5b4c241d3efafc7171974dddfd4b1dcbfcfb6d90a669525998d",
+      "unit_sha256": "db7e1438513d517000a33f4eabb9c1b71879dcae2a74859fa1604b497d911e31",
+      "previous_proposal_id": "pr_fed31a79fb2dc19dd8268c60d44b169cb4479282582ec89e00745b975620c297",
+      "previous_proposal_sha256": "fa47afc9d528f0d8f521c298c3d9a3ab4ac103da60eff5986834b95053c278b4",
+      "scope_candidate": "included",
+      "regulated_subject": "Người điều khiển mô tô/gắn máy/xe tương tự thuộc Điều 7",
+      "behavior_right_duty": "Chế tài người lái mô tô/gắn máy: không chấp hành biển/vạch, giữ danh sách ngoại lệ Điều 7",
+      "use_cases": [
+        "UC-01"
+      ],
+      "reason": "Đề xuất target trực tiếp cho Người điều khiển mô tô/gắn máy/xe tương tự thuộc Điều 7: Chế tài người lái mô tô/gắn máy: không chấp hành biển/vạch, giữ danh sách ngoại lệ Điều 7. Có quyền/nghĩa vụ/hành vi cụ thể gắn người tham gia theo BRD §3.1, phục vụ UC-01. Giữ đầy đủ điều kiện và các phần dẫn chiếu, không kết luận hiệu lực.",
+      "reference_notes": "Danh sách ngoại lệ tại các Khoản/Điểm khác là điều kiện quan trọng để tránh gán sai mức phạt; chưa ghép chúng vào context.",
+      "prior_reason_quality": "partial_category_rationale_with_short_quote",
+      "prior_reason_limitation": "Lý do nêu nhóm nghiệp vụ kèm đoạn trích đầu nhưng chưa giải thích đầy đủ hành vi/đối tượng và giới hạn của chính unit.",
+      "review_completed": true
+    },
+    {
+      "unit_id": "u_4b43f70f442a86c6b55413743dd2c5e8ce6bfac5b251f24923ac7f7ebac5f89c",
+      "unit_sha256": "7f113b60ff0485a3d22d62b1211659cfdc9da261d5d9447ef435724bcde8b46e",
+      "previous_proposal_id": "pr_d0177b875e875bb5d39932b1846e8ee8175c015a73b0fe41c2307ad214cbfb3d",
+      "previous_proposal_sha256": "d3f34f32c8c1d3a3595b71f360df29dee8bc51e08562c65f6126cab0070f4ab4",
+      "scope_candidate": "included",
+      "regulated_subject": "Người đi bộ",
+      "behavior_right_duty": "Chế tài người đi bộ: đu bám xe đang chạy",
+      "use_cases": [
+        "UC-01"
+      ],
+      "reason": "Đề xuất target trực tiếp cho Người đi bộ: Chế tài người đi bộ: đu bám xe đang chạy. Có quyền/nghĩa vụ/hành vi cụ thể gắn người tham gia theo BRD §3.1, phục vụ UC-01. Giữ đầy đủ điều kiện và các phần dẫn chiếu, không kết luận hiệu lực.",
+      "reference_notes": "Giữ nguyên câu và điều kiện; không mở rộng context ngoài cha, không coi đoạn này là toàn bộ căn cứ pháp lý.",
+      "prior_reason_quality": "partial_category_rationale_with_short_quote",
+      "prior_reason_limitation": "Lý do nêu nhóm nghiệp vụ kèm đoạn trích đầu nhưng chưa giải thích đầy đủ hành vi/đối tượng và giới hạn của chính unit.",
+      "review_completed": true
+    },
+    {
+      "unit_id": "u_55a5551992134f121736ccdce2f17ad2c17a507ccecdd62a68a33ae7ae1eda1c",
+      "unit_sha256": "7cb984293aea2257e45ca76469a615e7d0c88ef5a30457278d3754062a487987",
+      "previous_proposal_id": "pr_0e33d98b13ca8e6d04b47da00c043f449d976bc024b12aba3f17b92cbd926dd7",
+      "previous_proposal_sha256": "c156fa2ae831a61aea3597437e50ba0bb1f50510a5f6cd717277ba9b09d97343",
+      "scope_candidate": "included",
+      "regulated_subject": "Người đi bộ",
+      "behavior_right_duty": "Chế tài người đi bộ: không chấp hành người điều khiển/kiểm soát giao thông",
+      "use_cases": [
+        "UC-01"
+      ],
+      "reason": "Đề xuất target trực tiếp cho Người đi bộ: Chế tài người đi bộ: không chấp hành người điều khiển/kiểm soát giao thông. Có quyền/nghĩa vụ/hành vi cụ thể gắn người tham gia theo BRD §3.1, phục vụ UC-01. Giữ đầy đủ điều kiện và các phần dẫn chiếu, không kết luận hiệu lực.",
+      "reference_notes": "Giữ nguyên câu và điều kiện; không mở rộng context ngoài cha, không coi đoạn này là toàn bộ căn cứ pháp lý.",
+      "prior_reason_quality": "partial_category_rationale_with_short_quote",
+      "prior_reason_limitation": "Lý do nêu nhóm nghiệp vụ kèm đoạn trích đầu nhưng chưa giải thích đầy đủ hành vi/đối tượng và giới hạn của chính unit.",
+      "review_completed": true
+    },
+    {
+      "unit_id": "u_568bdf612cb1df2e17b7b443ca9d397e372122e5bea3772d8509439b19696136",
+      "unit_sha256": "c984b452226d30e8644cdb8e0a7b2150fbbfaf55e088288c62a08847117706c2",
+      "previous_proposal_id": "pr_85dd67f08d84add188aa847e2c56144f19ff5baea25fd3e0e57d0285812301a9",
+      "previous_proposal_sha256": "7a65784dd44fd43f4e7193b9868c0f289ff28ee58f547820bba02b909eccb15d",
+      "scope_candidate": "included",
+      "regulated_subject": "Người điều khiển mô tô/gắn máy/xe tương tự thuộc Điều 7",
+      "behavior_right_duty": "Chế tài người lái mô tô/gắn máy: thiếu hoặc không duy trì tín hiệu vượt",
+      "use_cases": [
+        "UC-01"
+      ],
+      "reason": "Đề xuất target trực tiếp cho Người điều khiển mô tô/gắn máy/xe tương tự thuộc Điều 7: Chế tài người lái mô tô/gắn máy: thiếu hoặc không duy trì tín hiệu vượt. Có quyền/nghĩa vụ/hành vi cụ thể gắn người tham gia theo BRD §3.1, phục vụ UC-01. Giữ đầy đủ điều kiện và các phần dẫn chiếu, không kết luận hiệu lực.",
+      "reference_notes": "Giữ nguyên câu và điều kiện; không mở rộng context ngoài cha, không coi đoạn này là toàn bộ căn cứ pháp lý.",
+      "prior_reason_quality": "partial_category_rationale_with_short_quote",
+      "prior_reason_limitation": "Lý do nêu nhóm nghiệp vụ kèm đoạn trích đầu nhưng chưa giải thích đầy đủ hành vi/đối tượng và giới hạn của chính unit.",
+      "review_completed": true
+    },
+    {
+      "unit_id": "u_654843ea12d032adb0f3123b1052ff3cab27de764cdc3bff128aa39933efec4b",
+      "unit_sha256": "965f17cfc4e4f3c4019aaebc2ecbc4eb8b5cd2d1e70421c45a5619e495917109",
+      "previous_proposal_id": "pr_94aafbe158afd2b753f5ed0fe86375b9fb7b416bc647f2b483349a748df226a7",
+      "previous_proposal_sha256": "d637877d1a566553cfb8d990f10236117dd20ac0a58f78244ae6969a407d48b9",
+      "scope_candidate": "pending",
+      "regulated_subject": "Người vi phạm theo các điều khoản Điều 12 được dẫn; lead chứa cả người lái/chủ xe/doanh nghiệp/tổ chức",
+      "behavior_right_duty": "Buộc thu dọn nông sản/máy tuốt/vật cản/hóa chất/phương tiện, biển quảng cáo theo các hành vi Điều 12 được dẫn chiếu",
+      "use_cases": [
+        "UC-01"
+      ],
+      "reason": "Đề xuất hoãn included: Buộc thu dọn nông sản/máy tuốt/vật cản/hóa chất/phương tiện, biển quảng cáo theo các hành vi Điều 12 được dẫn chiếu. Lead liệt kê nhiều nhóm đối tượng, own text chỉ dẫn các điểm/khoản Điều 12; chưa xác định chắc đây là ca người trực tiếp tham gia hay người/tổ chức sử dụng lòng đường. Cần đối chiếu các dẫn chiếu và chốt ca UC-01; không biến việc có chữ đường bộ/thu dọn thành scope trực tiếp.",
+      "reference_notes": "Phải đọc các dẫn chiếu Điều 12 để xác định hành vi/đối tượng thực sự; chưa đọc thêm hoặc ghép chúng trong lượt này, giữ pending.",
+      "prior_reason_quality": "partial_category_rationale_with_short_quote",
+      "prior_reason_limitation": "Lý do nêu nhóm nghiệp vụ kèm đoạn trích đầu nhưng chưa giải thích đầy đủ hành vi/đối tượng và giới hạn của chính unit.",
+      "review_completed": true
+    },
+    {
+      "unit_id": "u_67a64b945b9bdb0b450d087c81c107440034bd5367013850f9e3c21b2416e2d7",
+      "unit_sha256": "c65c30d0d2e54c363f1a2153ef909f65d3ad4373f5505cf21a10fe971409dcf7",
+      "previous_proposal_id": "pr_be7c7be1b6ab4ca53199d022818277d20d33ed72f5aed82d436642ad56885e84",
+      "previous_proposal_sha256": "c85e3fa967dd04b6f97f769c477aa8461437735a167989552058c420e578402e",
+      "scope_candidate": "included",
+      "regulated_subject": "Người điều khiển mô tô/gắn máy/xe tương tự thuộc Điều 7",
+      "behavior_right_duty": "Chế tài người lái mô tô/gắn máy: tránh xe/sử dụng đèn xa/nhường ngược chiều sai, giữ ngoại lệ chống chói",
+      "use_cases": [
+        "UC-01"
+      ],
+      "reason": "Đề xuất target trực tiếp cho Người điều khiển mô tô/gắn máy/xe tương tự thuộc Điều 7: Chế tài người lái mô tô/gắn máy: tránh xe/sử dụng đèn xa/nhường ngược chiều sai, giữ ngoại lệ chống chói. Có quyền/nghĩa vụ/hành vi cụ thể gắn người tham gia theo BRD §3.1, phục vụ UC-01. Giữ đầy đủ điều kiện và các phần dẫn chiếu, không kết luận hiệu lực.",
+      "reference_notes": "Giữ nguyên câu và điều kiện; không mở rộng context ngoài cha, không coi đoạn này là toàn bộ căn cứ pháp lý.",
+      "prior_reason_quality": "partial_category_rationale_with_short_quote",
+      "prior_reason_limitation": "Lý do nêu nhóm nghiệp vụ kèm đoạn trích đầu nhưng chưa giải thích đầy đủ hành vi/đối tượng và giới hạn của chính unit.",
+      "review_completed": true
+    },
+    {
+      "unit_id": "u_78e473c4ac93b5102105ebeb5099fdea4dac39d236a566b43c4ecf02a7d2dfc4",
+      "unit_sha256": "78f7b4d823ba0e19216d0a4a3ff009536ecdb1cc03be7744154207f3510e610e",
+      "previous_proposal_id": "pr_d969240fc65987a01ee3336e3c7c3e99b71e274d09548bfdf050fc372690dfad",
+      "previous_proposal_sha256": "c8f3ac9ec063ce773ee357a977057085107d43fa9472b3dec986de53b655fed2",
+      "scope_candidate": "included",
+      "regulated_subject": "Người điều khiển ô tô/xe bốn bánh/xe tương tự thuộc Điều 6",
+      "behavior_right_duty": "Chế tài người lái ô tô/xe tương tự: không báo hiệu/đặt biển khi sự cố buộc đỗ, giữ ngoại lệ Khoản 7",
+      "use_cases": [
+        "UC-01"
+      ],
+      "reason": "Đề xuất target trực tiếp cho Người điều khiển ô tô/xe bốn bánh/xe tương tự thuộc Điều 6: Chế tài người lái ô tô/xe tương tự: không báo hiệu/đặt biển khi sự cố buộc đỗ, giữ ngoại lệ Khoản 7. Có quyền/nghĩa vụ/hành vi cụ thể gắn người tham gia theo BRD §3.1, phục vụ UC-01. Giữ đầy đủ điều kiện và các phần dẫn chiếu, không kết luận hiệu lực.",
+      "reference_notes": "Giữ nguyên câu và điều kiện; không mở rộng context ngoài cha, không coi đoạn này là toàn bộ căn cứ pháp lý.",
+      "prior_reason_quality": "partial_category_rationale_with_short_quote",
+      "prior_reason_limitation": "Lý do nêu nhóm nghiệp vụ kèm đoạn trích đầu nhưng chưa giải thích đầy đủ hành vi/đối tượng và giới hạn của chính unit.",
+      "review_completed": true
+    },
+    {
+      "unit_id": "u_7dd279f992aced99c55b6a40b51cd6fa619e05598c76e418bb6edfe9d26ee866",
+      "unit_sha256": "f503d7c0fb9a549ba09f4dfce2c29613aa89ca8a5a5876c066905b0babdead89",
+      "previous_proposal_id": "pr_fb9860822a73115a976d8b9fe25b2d0c44f75cd54f97b8e2fdd461e4323d6836",
+      "previous_proposal_sha256": "c4de46d12863feb9ea218a9b42f5fbd6219329a470d07c5e122282b955cb4221",
+      "scope_candidate": "included",
+      "regulated_subject": "Người điều khiển mô tô/gắn máy/xe tương tự thuộc Điều 7",
+      "behavior_right_duty": "Chế tài người lái mô tô/gắn máy: chạy dưới tốc độ tối thiểu",
+      "use_cases": [
+        "UC-01"
+      ],
+      "reason": "Đề xuất target trực tiếp cho Người điều khiển mô tô/gắn máy/xe tương tự thuộc Điều 7: Chế tài người lái mô tô/gắn máy: chạy dưới tốc độ tối thiểu. Có quyền/nghĩa vụ/hành vi cụ thể gắn người tham gia theo BRD §3.1, phục vụ UC-01. Giữ đầy đủ điều kiện và các phần dẫn chiếu, không kết luận hiệu lực.",
+      "reference_notes": "Giữ nguyên câu và điều kiện; không mở rộng context ngoài cha, không coi đoạn này là toàn bộ căn cứ pháp lý.",
+      "prior_reason_quality": "partial_category_rationale_with_short_quote",
+      "prior_reason_limitation": "Lý do nêu nhóm nghiệp vụ kèm đoạn trích đầu nhưng chưa giải thích đầy đủ hành vi/đối tượng và giới hạn của chính unit.",
+      "review_completed": true
+    },
+    {
+      "unit_id": "u_90dd3445c8722a89679b782dd98afc8188449070424e7f152b6cb30855d7e289",
+      "unit_sha256": "d52b9806a0e9e4c46d6b2d3fd297dec74195d52efd058170e30e2c6e9958af3e",
+      "previous_proposal_id": "pr_551ccf46da0ec87473d7c3db560cfd09cbeec2e737f0beedcb967607da789df5",
+      "previous_proposal_sha256": "b3bb628ddc2a0cdb7655e19167e240c9062a474d6045b0c72b975a6ad6e3c92b",
+      "scope_candidate": "included",
+      "regulated_subject": "Người điều khiển mô tô/gắn máy/xe tương tự thuộc Điều 7",
+      "behavior_right_duty": "Chế tài người lái mô tô/gắn máy: lùi mô tô ba bánh không quan sát/báo hiệu",
+      "use_cases": [
+        "UC-01"
+      ],
+      "reason": "Đề xuất target trực tiếp cho Người điều khiển mô tô/gắn máy/xe tương tự thuộc Điều 7: Chế tài người lái mô tô/gắn máy: lùi mô tô ba bánh không quan sát/báo hiệu. Có quyền/nghĩa vụ/hành vi cụ thể gắn người tham gia theo BRD §3.1, phục vụ UC-01. Giữ đầy đủ điều kiện và các phần dẫn chiếu, không kết luận hiệu lực.",
+      "reference_notes": "Giữ nguyên câu và điều kiện; không mở rộng context ngoài cha, không coi đoạn này là toàn bộ căn cứ pháp lý.",
+      "prior_reason_quality": "partial_category_rationale_with_short_quote",
+      "prior_reason_limitation": "Lý do nêu nhóm nghiệp vụ kèm đoạn trích đầu nhưng chưa giải thích đầy đủ hành vi/đối tượng và giới hạn của chính unit.",
+      "review_completed": true
+    },
+    {
+      "unit_id": "u_97a8a707feae3946bd63caab8993f3f37893cbebd2de30d40aa0b6d740f51943",
+      "unit_sha256": "1740fc820516ac26c704249fba4d2d77f4ce5179556c492e4a3ab0d851c95881",
+      "previous_proposal_id": "pr_ad679afc28dc917230a20cc167ed5f101cf3b8b86848c56099787d42ffd4a5d6",
+      "previous_proposal_sha256": "d78e03d62ce05f61dbfcd98888526fc06537aa9ccff49a9838d8c6a353eea31d",
+      "scope_candidate": "included",
+      "regulated_subject": "Người từ đủ 14 đến dưới 16 tuổi điều khiển các xe liệt kê",
+      "behavior_right_duty": "Cảnh cáo người từ đủ 14 đến dưới 16 tuổi điều khiển các phương tiện được liệt kê",
+      "use_cases": [
+        "UC-01"
+      ],
+      "reason": "Đề xuất target trực tiếp cho Người từ đủ 14 đến dưới 16 tuổi điều khiển các xe liệt kê: Cảnh cáo người từ đủ 14 đến dưới 16 tuổi điều khiển các phương tiện được liệt kê. Có quyền/nghĩa vụ/hành vi cụ thể gắn người tham gia theo BRD §3.1, phục vụ UC-01. Giữ đầy đủ điều kiện và các phần dẫn chiếu, không kết luận hiệu lực.",
+      "reference_notes": "Giữ nguyên câu và điều kiện; không mở rộng context ngoài cha, không coi đoạn này là toàn bộ căn cứ pháp lý.",
+      "prior_reason_quality": "partial_category_rationale_with_short_quote",
+      "prior_reason_limitation": "Lý do nêu nhóm nghiệp vụ kèm đoạn trích đầu nhưng chưa giải thích đầy đủ hành vi/đối tượng và giới hạn của chính unit.",
+      "review_completed": true
+    },
+    {
+      "unit_id": "u_9a85d41a526f6612cf03929745066629bb52a4623132ad402abe279790cad317",
+      "unit_sha256": "fc3a9fc72c0e55b904f144ece7bf91deecbc1a0a141e688f2d39f9e287002424",
+      "previous_proposal_id": "pr_53bd04cee3ab528891b842540e6b01b8d7851ab1e68422b0b76001f7567f6952",
+      "previous_proposal_sha256": "c38d733a7dd82dc3353db2d685ed54e10fabb9dee0430c0f1b549418de71a9b6",
+      "scope_candidate": "included",
+      "regulated_subject": "Người điều khiển mô tô/gắn máy/xe tương tự thuộc Điều 7",
+      "behavior_right_duty": "Chế tài người lái mô tô/gắn máy: chuyển làn sai nơi/thiếu tín hiệu/vượt quá một làn mỗi lần",
+      "use_cases": [
+        "UC-01"
+      ],
+      "reason": "Đề xuất target trực tiếp cho Người điều khiển mô tô/gắn máy/xe tương tự thuộc Điều 7: Chế tài người lái mô tô/gắn máy: chuyển làn sai nơi/thiếu tín hiệu/vượt quá một làn mỗi lần. Có quyền/nghĩa vụ/hành vi cụ thể gắn người tham gia theo BRD §3.1, phục vụ UC-01. Giữ đầy đủ điều kiện và các phần dẫn chiếu, không kết luận hiệu lực.",
+      "reference_notes": "Giữ nguyên câu và điều kiện; không mở rộng context ngoài cha, không coi đoạn này là toàn bộ căn cứ pháp lý.",
+      "prior_reason_quality": "partial_category_rationale_with_short_quote",
+      "prior_reason_limitation": "Lý do nêu nhóm nghiệp vụ kèm đoạn trích đầu nhưng chưa giải thích đầy đủ hành vi/đối tượng và giới hạn của chính unit.",
+      "review_completed": true
+    },
+    {
+      "unit_id": "u_9f51a08b78ae3df2a637f8890523b2e0e2a97f542c32b5e8a1062a320955de9e",
+      "unit_sha256": "d23920dd1aff8fa7e4bdcf4b0f76fca7f38b2f1863e44cc950483dd578c03834",
+      "previous_proposal_id": "pr_f9a2e10b46ed4dcdbef94ee189db905c5ae930ddee4cc685bb94cca88c5366c8",
+      "previous_proposal_sha256": "fe41677b317b58755d8efe6ea0d91f80df10b6b9ef79a54c9046e0d4ecdadbe0",
+      "scope_candidate": "included",
+      "regulated_subject": "Người điều khiển ô tô/xe bốn bánh/xe tương tự thuộc Điều 6",
+      "behavior_right_duty": "Chế tài người lái ô tô/xe tương tự: không chấp hành biển/vạch, giữ đầy đủ danh sách ngoại lệ trong Điều 6",
+      "use_cases": [
+        "UC-01"
+      ],
+      "reason": "Đề xuất target trực tiếp cho Người điều khiển ô tô/xe bốn bánh/xe tương tự thuộc Điều 6: Chế tài người lái ô tô/xe tương tự: không chấp hành biển/vạch, giữ đầy đủ danh sách ngoại lệ trong Điều 6. Có quyền/nghĩa vụ/hành vi cụ thể gắn người tham gia theo BRD §3.1, phục vụ UC-01. Giữ đầy đủ điều kiện và các phần dẫn chiếu, không kết luận hiệu lực.",
+      "reference_notes": "Danh sách ngoại lệ tại các Khoản/Điểm khác là điều kiện quan trọng để tránh gán sai mức phạt; chưa ghép chúng vào context.",
+      "prior_reason_quality": "partial_category_rationale_with_short_quote",
+      "prior_reason_limitation": "Lý do nêu nhóm nghiệp vụ kèm đoạn trích đầu nhưng chưa giải thích đầy đủ hành vi/đối tượng và giới hạn của chính unit.",
+      "review_completed": true
+    },
+    {
+      "unit_id": "u_a4f6f393fcb51d6412daace73255d35e834026d49b20fade80d6ee16604314dc",
+      "unit_sha256": "df182d2cd218274984bbf354f5dbe6721fb013708a7d293b635823df7a4e1709",
+      "previous_proposal_id": "pr_64c8be55bad92c8e7f5d4f5cb86bf288627f816ebb24ec9db607e0c3b5ea0937",
+      "previous_proposal_sha256": "edfcf3f6c61e3ac9c82365144359f751c756d8527a970373cf72136da09cb35b",
+      "scope_candidate": "pending",
+      "regulated_subject": "Người có hành vi vi phạm và cơ quan xử lý theo tình huống chuyển tiếp",
+      "behavior_right_duty": "Chọn nghị định theo thời điểm thực hiện đối với hành vi đã xảy ra/kết thúc trước hiệu lực, phát hiện/xử lý sau",
+      "use_cases": [
+        "UC-01"
+      ],
+      "reason": "Đề xuất hoãn included: Chọn nghị định theo thời điểm thực hiện đối với hành vi đã xảy ra/kết thúc trước hiệu lực, phát hiện/xử lý sau. Đây là căn cứ chọn văn bản xử phạt theo tình huống thời gian, chưa có ca target cụ thể hoặc dependency tìm kiếm cần field này trong pilot. Giữ để assessment applicability; chưa gọi supporting khi chưa có target/field dependency, không loại theo ngày hiệu lực chưa xác minh.",
+      "reference_notes": "Giữ nguyên câu và điều kiện; không mở rộng context ngoài cha, không coi đoạn này là toàn bộ căn cứ pháp lý.",
+      "prior_reason_quality": "partial_category_rationale_with_short_quote",
+      "prior_reason_limitation": "Lý do nêu nhóm nghiệp vụ kèm đoạn trích đầu nhưng chưa giải thích đầy đủ hành vi/đối tượng và giới hạn của chính unit.",
+      "review_completed": true
+    },
+    {
+      "unit_id": "u_ad4873133b32838338e57d0838685db9a2affc1e116dad1b471dddb63eab4079",
+      "unit_sha256": "d22f6e6edd50837c0954cbc833b02dcb1eea613cbd5de7ec0de1edeecb904f8a",
+      "previous_proposal_id": "pr_c6bdcd9934fdeefd90c690669284551f6d40a662f3d959620699eec958980245",
+      "previous_proposal_sha256": "cb1314f96ba0e41ae86bb607b28bcfd7379ce420640826b74501a472dd373d79",
+      "scope_candidate": "included",
+      "regulated_subject": "Người đi bộ",
+      "behavior_right_duty": "Chế tài người đi bộ: mang vác cồng kềnh cản trở",
+      "use_cases": [
+        "UC-01"
+      ],
+      "reason": "Đề xuất target trực tiếp cho Người đi bộ: Chế tài người đi bộ: mang vác cồng kềnh cản trở. Có quyền/nghĩa vụ/hành vi cụ thể gắn người tham gia theo BRD §3.1, phục vụ UC-01. Giữ đầy đủ điều kiện và các phần dẫn chiếu, không kết luận hiệu lực.",
+      "reference_notes": "Giữ nguyên câu và điều kiện; không mở rộng context ngoài cha, không coi đoạn này là toàn bộ căn cứ pháp lý.",
+      "prior_reason_quality": "partial_category_rationale_with_short_quote",
+      "prior_reason_limitation": "Lý do nêu nhóm nghiệp vụ kèm đoạn trích đầu nhưng chưa giải thích đầy đủ hành vi/đối tượng và giới hạn của chính unit.",
+      "review_completed": true
+    },
+    {
+      "unit_id": "u_b1e0ff47c4e59cb5a38a4d2bba7b1096a723c4ff7224181cf4281856823b6535",
+      "unit_sha256": "f5c1c3f79bd70038cd4a017076a44bf7a99810903c7bfa3c2adbee7532a7d853",
+      "previous_proposal_id": "pr_06d159afb25c438cd1b2684982fdd4bcf6c5c442e7e39762b64d0a478e162de0",
+      "previous_proposal_sha256": "3b6a5067a13c80e9f8b0eb9e6b6bd80aa820de2a1cbb072d63ba3d0eab63a5c9",
+      "scope_candidate": "included",
+      "regulated_subject": "Người điều khiển mô tô/gắn máy/xe tương tự thuộc Điều 7",
+      "behavior_right_duty": "Chế tài người lái mô tô/gắn máy: không nhường tại giao nhau, giữ ngoại lệ Khoản 6",
+      "use_cases": [
+        "UC-01"
+      ],
+      "reason": "Đề xuất target trực tiếp cho Người điều khiển mô tô/gắn máy/xe tương tự thuộc Điều 7: Chế tài người lái mô tô/gắn máy: không nhường tại giao nhau, giữ ngoại lệ Khoản 6. Có quyền/nghĩa vụ/hành vi cụ thể gắn người tham gia theo BRD §3.1, phục vụ UC-01. Giữ đầy đủ điều kiện và các phần dẫn chiếu, không kết luận hiệu lực.",
+      "reference_notes": "Giữ nguyên câu và điều kiện; không mở rộng context ngoài cha, không coi đoạn này là toàn bộ căn cứ pháp lý.",
+      "prior_reason_quality": "partial_category_rationale_with_short_quote",
+      "prior_reason_limitation": "Lý do nêu nhóm nghiệp vụ kèm đoạn trích đầu nhưng chưa giải thích đầy đủ hành vi/đối tượng và giới hạn của chính unit.",
+      "review_completed": true
+    },
+    {
+      "unit_id": "u_b204bf8dfb945a74a2f51836fac5ece26affef915616801c74d4b820fe9470d5",
+      "unit_sha256": "e5ff8b8188ab0d60a852b76dd7bf47f67057f5f93e9cf0ddca72df9ff28621dc",
+      "previous_proposal_id": "pr_4077576b9ee41757e0e2c95d25dd394413c437e12deaa080f74c61fd6ba94667",
+      "previous_proposal_sha256": "26538fd82e0838823b7abdff21a850982a898e63213629256fc73023544a1412",
+      "scope_candidate": "included",
+      "regulated_subject": "Người điều khiển xe máy chuyên dùng",
+      "behavior_right_duty": "Chế tài dừng đỗ xe máy chuyên dùng tại các vị trí cấm/khoảng cách cụ thể, giữ ngoại lệ điểm b Khoản 6",
+      "use_cases": [
+        "UC-01"
+      ],
+      "reason": "Đề xuất target trực tiếp cho Người điều khiển xe máy chuyên dùng: Chế tài dừng đỗ xe máy chuyên dùng tại các vị trí cấm/khoảng cách cụ thể, giữ ngoại lệ điểm b Khoản 6. Có quyền/nghĩa vụ/hành vi cụ thể gắn người tham gia theo BRD §3.1, phục vụ UC-01. Giữ đầy đủ điều kiện và các phần dẫn chiếu, không kết luận hiệu lực.",
+      "reference_notes": "Giữ mọi vị trí, khoảng cách, điều kiện hoặc ngoại lệ và dẫn chiếu trong câu; chunk vẫn quá dài, chưa tách hoặc bỏ context.",
+      "prior_reason_quality": "partial_category_rationale_with_short_quote",
+      "prior_reason_limitation": "Lý do nêu nhóm nghiệp vụ kèm đoạn trích đầu nhưng chưa giải thích đầy đủ hành vi/đối tượng và giới hạn của chính unit.",
+      "review_completed": true
+    },
+    {
+      "unit_id": "u_c1c082ff91b7b2dba7cb6774352abfccdcaeea18666df07682a684ee9898ec4a",
+      "unit_sha256": "b3bc0b9def6acd127f63445c49d433406c2277063db8d74a12da88d5dd1d16b0",
+      "previous_proposal_id": "pr_bc2918c0f20186f9fd5f033bebc393c90eb88d9626c48e473bb9709f92d6cfd8",
+      "previous_proposal_sha256": "b9f32f3e60d9b9167a239d106686e6f3f3d28f277f7c6437f56cee0cc7c77ade",
+      "scope_candidate": "included",
+      "regulated_subject": "Người điều khiển mô tô/gắn máy/xe tương tự thuộc Điều 7",
+      "behavior_right_duty": "Chế tài người lái mô tô/gắn máy: chở người dùng ô",
+      "use_cases": [
+        "UC-01"
+      ],
+      "reason": "Đề xuất target trực tiếp cho Người điều khiển mô tô/gắn máy/xe tương tự thuộc Điều 7: Chế tài người lái mô tô/gắn máy: chở người dùng ô. Có quyền/nghĩa vụ/hành vi cụ thể gắn người tham gia theo BRD §3.1, phục vụ UC-01. Giữ đầy đủ điều kiện và các phần dẫn chiếu, không kết luận hiệu lực.",
+      "reference_notes": "Giữ nguyên câu và điều kiện; không mở rộng context ngoài cha, không coi đoạn này là toàn bộ căn cứ pháp lý.",
+      "prior_reason_quality": "partial_category_rationale_with_short_quote",
+      "prior_reason_limitation": "Lý do nêu nhóm nghiệp vụ kèm đoạn trích đầu nhưng chưa giải thích đầy đủ hành vi/đối tượng và giới hạn của chính unit.",
+      "review_completed": true
+    },
+    {
+      "unit_id": "u_c40a4899cc753e524cdd9596d8d899b17c0b314d0c15080c478d55b97920b9ac",
+      "unit_sha256": "b9afd4cce5575ceae842dedaeb440cfeea218678dd265d1f17ce6d112966d669",
+      "previous_proposal_id": "pr_d821c749f24821797d93d41a4345b44e40678aa5a325e101a2f46343a6442857",
+      "previous_proposal_sha256": "2750548f6677cff6ad426c0e5a3d12911a01adccca524882b5e4b8a5a499ff88",
+      "scope_candidate": "included",
+      "regulated_subject": "Người điều khiển ô tô/xe bốn bánh/xe tương tự thuộc Điều 6",
+      "behavior_right_duty": "Chế tài người lái ô tô/xe tương tự: thiếu báo hiệu xe kéo/xe được kéo/rơ moóc",
+      "use_cases": [
+        "UC-01"
+      ],
+      "reason": "Đề xuất target trực tiếp cho Người điều khiển ô tô/xe bốn bánh/xe tương tự thuộc Điều 6: Chế tài người lái ô tô/xe tương tự: thiếu báo hiệu xe kéo/xe được kéo/rơ moóc. Có quyền/nghĩa vụ/hành vi cụ thể gắn người tham gia theo BRD §3.1, phục vụ UC-01. Giữ đầy đủ điều kiện và các phần dẫn chiếu, không kết luận hiệu lực.",
+      "reference_notes": "Giữ nguyên câu và điều kiện; không mở rộng context ngoài cha, không coi đoạn này là toàn bộ căn cứ pháp lý.",
+      "prior_reason_quality": "partial_category_rationale_with_short_quote",
+      "prior_reason_limitation": "Lý do nêu nhóm nghiệp vụ kèm đoạn trích đầu nhưng chưa giải thích đầy đủ hành vi/đối tượng và giới hạn của chính unit.",
+      "review_completed": true
+    },
+    {
+      "unit_id": "u_d904a4164bd41620107aa0f0af470c8fd58ff990917779f59242d6603081536a",
+      "unit_sha256": "08a3066212a310ad9a7a3ddc8b5787a45f2f9841f9139fb89fcef567dacd2dce",
+      "previous_proposal_id": "pr_8af4a1b0d98580f8a33cc653a6c1c784d361d9af8a93f133a4a1e14f094adf35",
+      "previous_proposal_sha256": "633c845c2b64d19056d8612657c80a9a43c4aebef84d133b62069172f4a2071c",
+      "scope_candidate": "included",
+      "regulated_subject": "Người điều khiển ô tô/xe bốn bánh/xe tương tự thuộc Điều 6",
+      "behavior_right_duty": "Chế tài dừng xe sai lề/vị trí, rời vị trí lái hoặc không dùng phanh; giữ khoảng cách 0,25 m và toàn bộ ngoại lệ",
+      "use_cases": [
+        "UC-01"
+      ],
+      "reason": "Đề xuất target trực tiếp cho Người điều khiển ô tô/xe bốn bánh/xe tương tự thuộc Điều 6: Chế tài dừng xe sai lề/vị trí, rời vị trí lái hoặc không dùng phanh; giữ khoảng cách 0,25 m và toàn bộ ngoại lệ. Có quyền/nghĩa vụ/hành vi cụ thể gắn người tham gia theo BRD §3.1, phục vụ UC-01. Giữ đầy đủ điều kiện và các phần dẫn chiếu, không kết luận hiệu lực.",
+      "reference_notes": "Giữ mọi vị trí, khoảng cách, điều kiện hoặc ngoại lệ và dẫn chiếu trong câu; chunk vẫn quá dài, chưa tách hoặc bỏ context.",
+      "prior_reason_quality": "partial_category_rationale_with_short_quote",
+      "prior_reason_limitation": "Lý do nêu nhóm nghiệp vụ kèm đoạn trích đầu nhưng chưa giải thích đầy đủ hành vi/đối tượng và giới hạn của chính unit.",
+      "review_completed": true
+    },
+    {
+      "unit_id": "u_e8485e33689979daa0ef767ca770cda5a97c13ae7951303611bd9d650238efa0",
+      "unit_sha256": "ec4967178f3d5d5e9d0906990e2c406be9a1a4de72c0e93a3f9160add9908e5b",
+      "previous_proposal_id": "pr_cbce050111d31c6e10b3c8bc77137709ae92e73068cebde3e84aa6301ddc1787",
+      "previous_proposal_sha256": "847c3f8a2205812b6506db6bd6420929158cbb759f8607e3727b80fedbc84e05",
+      "scope_candidate": "included",
+      "regulated_subject": "Người điều khiển ô tô/xe bốn bánh/xe tương tự thuộc Điều 6",
+      "behavior_right_duty": "Chế tài người lái ô tô/xe tương tự: ra vào nơi dừng/đỗ không báo hiệu",
+      "use_cases": [
+        "UC-01"
+      ],
+      "reason": "Đề xuất target trực tiếp cho Người điều khiển ô tô/xe bốn bánh/xe tương tự thuộc Điều 6: Chế tài người lái ô tô/xe tương tự: ra vào nơi dừng/đỗ không báo hiệu. Có quyền/nghĩa vụ/hành vi cụ thể gắn người tham gia theo BRD §3.1, phục vụ UC-01. Giữ đầy đủ điều kiện và các phần dẫn chiếu, không kết luận hiệu lực.",
+      "reference_notes": "Giữ nguyên câu và điều kiện; không mở rộng context ngoài cha, không coi đoạn này là toàn bộ căn cứ pháp lý.",
+      "prior_reason_quality": "partial_category_rationale_with_short_quote",
+      "prior_reason_limitation": "Lý do nêu nhóm nghiệp vụ kèm đoạn trích đầu nhưng chưa giải thích đầy đủ hành vi/đối tượng và giới hạn của chính unit.",
+      "review_completed": true
+    },
+    {
+      "unit_id": "u_f49a526ba981b271dab60f69e2f2ebdc265c77efb2c2e0d53b71c1a52e2f20fd",
+      "unit_sha256": "5e1dd63196a7893c2a7119986f8cec235db68e3b0bec4c3adfe8586af5866e61",
+      "previous_proposal_id": "pr_5df129d64971818c95fe136d15247be5ad12b8d44e5dd3e4ecd1a4d477f3dfaa",
+      "previous_proposal_sha256": "c8ed9f20bbf204546003491df009ca0f366e11de1c8dab450959504af545ce8c",
+      "scope_candidate": "included",
+      "regulated_subject": "Người đi bộ",
+      "behavior_right_duty": "Chế tài người đi bộ: không chấp hành đèn/biển/vạch, giữ ngoại lệ Khoản 2",
+      "use_cases": [
+        "UC-01"
+      ],
+      "reason": "Đề xuất target trực tiếp cho Người đi bộ: Chế tài người đi bộ: không chấp hành đèn/biển/vạch, giữ ngoại lệ Khoản 2. Có quyền/nghĩa vụ/hành vi cụ thể gắn người tham gia theo BRD §3.1, phục vụ UC-01. Giữ đầy đủ điều kiện và các phần dẫn chiếu, không kết luận hiệu lực.",
+      "reference_notes": "Giữ nguyên câu và điều kiện; không mở rộng context ngoài cha, không coi đoạn này là toàn bộ căn cứ pháp lý.",
+      "prior_reason_quality": "partial_category_rationale_with_short_quote",
+      "prior_reason_limitation": "Lý do nêu nhóm nghiệp vụ kèm đoạn trích đầu nhưng chưa giải thích đầy đủ hành vi/đối tượng và giới hạn của chính unit.",
+      "review_completed": true
+    },
+    {
+      "unit_id": "u_f58d55fc86ec07aa456834169cf554424f6d88541217150abf193113a4db24d3",
+      "unit_sha256": "de69a5e33aed785303cf41ea7036fb26f7eb7c8ad1be6c3e8559d50fd8bfd223",
+      "previous_proposal_id": "pr_0500cc765433e6adb110920db6fe5f99adb65734da7b5a4973fd180e6e94473d",
+      "previous_proposal_sha256": "c55981293ebd49f62842c931b14e836f55cd77faf25f0ab3a45f5a00f276dd50",
+      "scope_candidate": "included",
+      "regulated_subject": "Người điều khiển mô tô/gắn máy/xe tương tự thuộc Điều 7",
+      "behavior_right_duty": "Chế tài người lái mô tô/gắn máy: thiếu đèn 18–06 giờ hoặc khi giảm tầm nhìn",
+      "use_cases": [
+        "UC-01"
+      ],
+      "reason": "Đề xuất target trực tiếp cho Người điều khiển mô tô/gắn máy/xe tương tự thuộc Điều 7: Chế tài người lái mô tô/gắn máy: thiếu đèn 18–06 giờ hoặc khi giảm tầm nhìn. Có quyền/nghĩa vụ/hành vi cụ thể gắn người tham gia theo BRD §3.1, phục vụ UC-01. Giữ đầy đủ điều kiện và các phần dẫn chiếu, không kết luận hiệu lực.",
+      "reference_notes": "Giữ nguyên câu và điều kiện; không mở rộng context ngoài cha, không coi đoạn này là toàn bộ căn cứ pháp lý.",
+      "prior_reason_quality": "partial_category_rationale_with_short_quote",
+      "prior_reason_limitation": "Lý do nêu nhóm nghiệp vụ kèm đoạn trích đầu nhưng chưa giải thích đầy đủ hành vi/đối tượng và giới hạn của chính unit.",
+      "review_completed": true
+    },
+    {
+      "unit_id": "u_fb95216a99e7df5575c3eef944e2abf7e6ed1c05f207c15b73dfa6104cc2a641",
+      "unit_sha256": "7002f4b09b16be6cc1e8ffc16e8dae13374d4909694b0adbb45b0ffd9918079b",
+      "previous_proposal_id": "pr_d37e7ceeca39995732e03e29e742229bf5aded41d84463ce45ac24dd0a71c3e0",
+      "previous_proposal_sha256": "9938bc9d9233a1b10280c935ba76c643c25acbac7f3d3d2234da76b568b925b9",
+      "scope_candidate": "included",
+      "regulated_subject": "Người đi bộ",
+      "behavior_right_duty": "Chế tài người đi bộ: đi vào cao tốc, giữ ngoại lệ phục vụ quản lý/bảo trì",
+      "use_cases": [
+        "UC-01"
+      ],
+      "reason": "Đề xuất target trực tiếp cho Người đi bộ: Chế tài người đi bộ: đi vào cao tốc, giữ ngoại lệ phục vụ quản lý/bảo trì. Có quyền/nghĩa vụ/hành vi cụ thể gắn người tham gia theo BRD §3.1, phục vụ UC-01. Giữ đầy đủ điều kiện và các phần dẫn chiếu, không kết luận hiệu lực.",
+      "reference_notes": "Giữ nguyên câu và điều kiện; không mở rộng context ngoài cha, không coi đoạn này là toàn bộ căn cứ pháp lý.",
+      "prior_reason_quality": "partial_category_rationale_with_short_quote",
+      "prior_reason_limitation": "Lý do nêu nhóm nghiệp vụ kèm đoạn trích đầu nhưng chưa giải thích đầy đủ hành vi/đối tượng và giới hạn của chính unit.",
+      "review_completed": true
+    },
+    {
+      "unit_id": "u_ff3b9522ae006a349e4c7935cc942c18fdf3a711dfa7f8a4ede6b41c129d531d",
+      "unit_sha256": "4a75d48fb054715f52b2acb940e9ab1be3d6b4e10187a95a86043a3bfd303a5f",
+      "previous_proposal_id": "pr_71f54fd0165f546b1c2185801c121c575b587defad7d41e4949cd102d44eda06",
+      "previous_proposal_sha256": "9db5f5361b4df4a455e7598041433f0947b414580b40b42f1d156a09cd67ec3c",
+      "scope_candidate": "included",
+      "regulated_subject": "Người điều khiển ô tô/xe bốn bánh/xe tương tự thuộc Điều 6",
+      "behavior_right_duty": "Chế tài người lái ô tô/xe tương tự: dùng còi 22–05 giờ ở khu dân cư/y tế, trừ xe ưu tiên làm nhiệm vụ",
+      "use_cases": [
+        "UC-01"
+      ],
+      "reason": "Đề xuất target trực tiếp cho Người điều khiển ô tô/xe bốn bánh/xe tương tự thuộc Điều 6: Chế tài người lái ô tô/xe tương tự: dùng còi 22–05 giờ ở khu dân cư/y tế, trừ xe ưu tiên làm nhiệm vụ. Có quyền/nghĩa vụ/hành vi cụ thể gắn người tham gia theo BRD §3.1, phục vụ UC-01. Giữ đầy đủ điều kiện và các phần dẫn chiếu, không kết luận hiệu lực.",
+      "reference_notes": "Giữ nguyên câu và điều kiện; không mở rộng context ngoài cha, không coi đoạn này là toàn bộ căn cứ pháp lý.",
+      "prior_reason_quality": "partial_category_rationale_with_short_quote",
+      "prior_reason_limitation": "Lý do nêu nhóm nghiệp vụ kèm đoạn trích đầu nhưng chưa giải thích đầy đủ hành vi/đối tượng và giới hạn của chính unit.",
+      "review_completed": true
+    },
+    {
+      "unit_id": "u_05f2af33a9d31111a33b8227cecd934680a15f9cca7dd5ae67e60bf270520eb9",
+      "unit_sha256": "18c4f3cb425092891378b81e8e5241d47640a7f2c9901839cab7a79647c04ece",
+      "previous_proposal_id": "pr_aa08d0f54ef4dba330a62bbf4ae87c58fedcce019f82b25f7db75d5985efe9fc",
+      "previous_proposal_sha256": "be6cfc42eeabb1ee46084ce92f8edeac99fe1a4757b8d47a414501d086150776",
+      "scope_candidate": "pending",
+      "regulated_subject": "Người lái/nhân viên phục vụ xe khách",
+      "behavior_right_duty": "Quyền của người lái/nhân viên từ chối chở khách gây rối trên xe",
+      "use_cases": [
+        "UC-02"
+      ],
+      "reason": "Đề xuất hoãn included: Quyền của người lái/nhân viên từ chối chở khách gây rối trên xe. Quan hệ vận tải/dịch vụ hoặc dẫn chiếu rộng có thể liên quan người lái nhưng chưa đủ giới hạn use case BRD §3.1 cho toàn unit; không cắt riêng câu thuận lợi hoặc tự thêm context ngoài cây cha. Cần xác định ca trực tiếp và nội dung được dẫn chiếu trước khi kết luận target.",
+      "reference_notes": "Giữ nguyên câu và điều kiện; không mở rộng context ngoài cha, không coi đoạn này là toàn bộ căn cứ pháp lý.",
+      "prior_reason_quality": "partial_category_rationale_with_short_quote",
+      "prior_reason_limitation": "Lý do nêu nhóm nghiệp vụ kèm đoạn trích đầu nhưng chưa giải thích đầy đủ hành vi/đối tượng và giới hạn của chính unit.",
+      "review_completed": true
+    },
+    {
+      "unit_id": "u_29cd8f1b3ab7e2eacc121220700afb6b657ad0dfafd42baeddaf0083b9f9bad1",
+      "unit_sha256": "48d884215380d25a8dc2e57dbb33c5134d81ad21efb1f473e4b6b4e3fc933792",
+      "previous_proposal_id": "pr_d9c40d19843e19b8db688da674a65d36c405d3e0868c9058a6d67d4162f5a9b7",
+      "previous_proposal_sha256": "d349564b758c38df41501df2e14e7fd83126eb3db4cc21252ad7719589fa6034",
+      "scope_candidate": "pending",
+      "regulated_subject": "Người lái xe ô tô vận tải hàng hóa",
+      "behavior_right_duty": "Yêu cầu người xếp hàng ký giấy vận tải và từ chối chở hàng xếp sai",
+      "use_cases": [
+        "UC-02"
+      ],
+      "reason": "Đề xuất hoãn included: Yêu cầu người xếp hàng ký giấy vận tải và từ chối chở hàng xếp sai. Quan hệ vận tải/dịch vụ hoặc dẫn chiếu rộng có thể liên quan người lái nhưng chưa đủ giới hạn use case BRD §3.1 cho toàn unit; không cắt riêng câu thuận lợi hoặc tự thêm context ngoài cây cha. Cần xác định ca trực tiếp và nội dung được dẫn chiếu trước khi kết luận target.",
+      "reference_notes": "Giữ nguyên câu và điều kiện; không mở rộng context ngoài cha, không coi đoạn này là toàn bộ căn cứ pháp lý.",
+      "prior_reason_quality": "partial_category_rationale_with_short_quote",
+      "prior_reason_limitation": "Lý do nêu nhóm nghiệp vụ kèm đoạn trích đầu nhưng chưa giải thích đầy đủ hành vi/đối tượng và giới hạn của chính unit.",
+      "review_completed": true
+    },
+    {
+      "unit_id": "u_3b86277683fc2f165c52c510fde0749cc7413dd72865a41234478f266d9234e9",
+      "unit_sha256": "baba8009c33c9b6a0da7e5508f5dc19e176be3e6d8801f03c784f4f861500e55",
+      "previous_proposal_id": "pr_c0b0165cddae130ca8cef6a04577579383264572a7697fbd6a86ed042225136f",
+      "previous_proposal_sha256": "a1c9b17d080701b0ba42327e84076d46f48095cf1786fc9ae7f1a425870c8077",
+      "scope_candidate": "included",
+      "regulated_subject": "Người lái xe ô tô vận tải hàng hóa",
+      "behavior_right_duty": "Nghĩa vụ tuân thủ pháp luật trật tự an toàn giao thông của người lái xe hàng",
+      "use_cases": [
+        "UC-02"
+      ],
+      "reason": "Đề xuất target trực tiếp cho Người lái xe ô tô vận tải hàng hóa: Nghĩa vụ tuân thủ pháp luật trật tự an toàn giao thông của người lái xe hàng. Có quyền/nghĩa vụ/hành vi cụ thể gắn người tham gia theo BRD §3.1, phục vụ UC-02. Giữ đầy đủ điều kiện và các phần dẫn chiếu, không kết luận hiệu lực.",
+      "reference_notes": "Giữ nguyên câu và điều kiện; không mở rộng context ngoài cha, không coi đoạn này là toàn bộ căn cứ pháp lý.",
+      "prior_reason_quality": "partial_category_rationale_with_short_quote",
+      "prior_reason_limitation": "Lý do nêu nhóm nghiệp vụ kèm đoạn trích đầu nhưng chưa giải thích đầy đủ hành vi/đối tượng và giới hạn của chính unit.",
+      "review_completed": true
+    },
+    {
+      "unit_id": "u_40ceba16396543aad678e81a89cfc7a57cdeb290c27af623f6a0c41c6966043a",
+      "unit_sha256": "e042b6c1f5bc53555f2d87d92dd36147bc350143c2f1b94614c88a7ae42026d3",
+      "previous_proposal_id": "pr_e724bb33d688e10164a703797db0e54d8404e28bbe959b11a180bd79a8a8216c",
+      "previous_proposal_sha256": "2765d2e14c45af275b2e35c5ee4707c1b1566bd949a893d6cf9938986b632b5b",
+      "scope_candidate": "pending",
+      "regulated_subject": "Người lái/nhân viên phục vụ xe khách",
+      "behavior_right_duty": "Quyền từ chối khách ảnh hưởng tính mạng/sức khỏe/tài sản người khác",
+      "use_cases": [
+        "UC-02"
+      ],
+      "reason": "Đề xuất hoãn included: Quyền từ chối khách ảnh hưởng tính mạng/sức khỏe/tài sản người khác. Quan hệ vận tải/dịch vụ hoặc dẫn chiếu rộng có thể liên quan người lái nhưng chưa đủ giới hạn use case BRD §3.1 cho toàn unit; không cắt riêng câu thuận lợi hoặc tự thêm context ngoài cây cha. Cần xác định ca trực tiếp và nội dung được dẫn chiếu trước khi kết luận target.",
+      "reference_notes": "Giữ nguyên câu và điều kiện; không mở rộng context ngoài cha, không coi đoạn này là toàn bộ căn cứ pháp lý.",
+      "prior_reason_quality": "partial_category_rationale_with_short_quote",
+      "prior_reason_limitation": "Lý do nêu nhóm nghiệp vụ kèm đoạn trích đầu nhưng chưa giải thích đầy đủ hành vi/đối tượng và giới hạn của chính unit.",
+      "review_completed": true
+    },
+    {
+      "unit_id": "u_586afdbf1fc0857a714c076a15dda59cfac9fd5672838c5588fd15fed17d444a",
+      "unit_sha256": "5a944dbd08af080788f11485cc1d22808fedba20a07522a103120bcdc32c9012",
+      "previous_proposal_id": "pr_8c75a57e05b0d37ced514a52060d3d0878c3bb77dcbd6581b41582936ddcc1e6",
+      "previous_proposal_sha256": "c9373d0f36ff8516e39d2a04727cc01d1c0d60e8525066783d885a9198d630a0",
+      "scope_candidate": "pending",
+      "regulated_subject": "Người lái/nhân viên phục vụ xe khách",
+      "behavior_right_duty": "Trách nhiệm chung theo pháp luật giao thông và pháp luật khác của người lái/nhân viên vận tải",
+      "use_cases": [
+        "UC-02"
+      ],
+      "reason": "Đề xuất hoãn included: Trách nhiệm chung theo pháp luật giao thông và pháp luật khác của người lái/nhân viên vận tải. Quan hệ vận tải/dịch vụ hoặc dẫn chiếu rộng có thể liên quan người lái nhưng chưa đủ giới hạn use case BRD §3.1 cho toàn unit; không cắt riêng câu thuận lợi hoặc tự thêm context ngoài cây cha. Cần xác định ca trực tiếp và nội dung được dẫn chiếu trước khi kết luận target.",
+      "reference_notes": "Giữ nguyên câu và điều kiện; không mở rộng context ngoài cha, không coi đoạn này là toàn bộ căn cứ pháp lý.",
+      "prior_reason_quality": "partial_category_rationale_with_short_quote",
+      "prior_reason_limitation": "Lý do nêu nhóm nghiệp vụ kèm đoạn trích đầu nhưng chưa giải thích đầy đủ hành vi/đối tượng và giới hạn của chính unit.",
+      "review_completed": true
+    },
+    {
+      "unit_id": "u_7515d39f72787ee153de2670ea78350df2371dfdcac453d7ef652dcb6099c744",
+      "unit_sha256": "f4497353da768584038204cb35b86b46d182db9877ca20eaeb626844dba2a2be",
+      "previous_proposal_id": "pr_7ca8983449076ef75b0c8bd0bc57c750b04e623ae76b1acebd80982ceb707ab4",
+      "previous_proposal_sha256": "e0e22b62532d77918556921c92f301cd3198d6c316735b1c223f75fdc378fa60",
+      "scope_candidate": "pending",
+      "regulated_subject": "Người lái xe ô tô vận tải hàng hóa",
+      "behavior_right_duty": "Quyền từ chối lái/chở hàng với danh mục điều kiện an toàn, thiết bị, tải/khổ, hàng cấm và giấy vận tải",
+      "use_cases": [
+        "UC-02"
+      ],
+      "reason": "Đề xuất hoãn included: Quyền từ chối lái/chở hàng với danh mục điều kiện an toàn, thiết bị, tải/khổ, hàng cấm và giấy vận tải. Quan hệ vận tải/dịch vụ hoặc dẫn chiếu rộng có thể liên quan người lái nhưng chưa đủ giới hạn use case BRD §3.1 cho toàn unit; không cắt riêng câu thuận lợi hoặc tự thêm context ngoài cây cha. Cần xác định ca trực tiếp và nội dung được dẫn chiếu trước khi kết luận target.",
+      "reference_notes": "Giữ nguyên câu và điều kiện; không mở rộng context ngoài cha, không coi đoạn này là toàn bộ căn cứ pháp lý.",
+      "prior_reason_quality": "partial_category_rationale_with_short_quote",
+      "prior_reason_limitation": "Lý do nêu nhóm nghiệp vụ kèm đoạn trích đầu nhưng chưa giải thích đầy đủ hành vi/đối tượng và giới hạn của chính unit.",
+      "review_completed": true
+    },
+    {
+      "unit_id": "u_78884c2890177cee5c8c245cc16e9571194556b643c522b70f3e810befd7241b",
+      "unit_sha256": "c5d0041bdeabdb2e292e3b09b76a3604cfe0756b7e9005cf80870734a86e0a27",
+      "previous_proposal_id": "pr_50694bf8478816c43c71d04680437cd34884c575f1615a9102c181ff322b678d",
+      "previous_proposal_sha256": "5246e17c39abc36e35972013df95be5ec580277d8139cc5546138074eb411c9c",
+      "scope_candidate": "pending",
+      "regulated_subject": "Người lái/nhân viên phục vụ xe khách",
+      "behavior_right_duty": "Quyền từ chối chở khách cản trở công việc lái xe/nhân viên",
+      "use_cases": [
+        "UC-02"
+      ],
+      "reason": "Đề xuất hoãn included: Quyền từ chối chở khách cản trở công việc lái xe/nhân viên. Quan hệ vận tải/dịch vụ hoặc dẫn chiếu rộng có thể liên quan người lái nhưng chưa đủ giới hạn use case BRD §3.1 cho toàn unit; không cắt riêng câu thuận lợi hoặc tự thêm context ngoài cây cha. Cần xác định ca trực tiếp và nội dung được dẫn chiếu trước khi kết luận target.",
+      "reference_notes": "Giữ nguyên câu và điều kiện; không mở rộng context ngoài cha, không coi đoạn này là toàn bộ căn cứ pháp lý.",
+      "prior_reason_quality": "partial_category_rationale_with_short_quote",
+      "prior_reason_limitation": "Lý do nêu nhóm nghiệp vụ kèm đoạn trích đầu nhưng chưa giải thích đầy đủ hành vi/đối tượng và giới hạn của chính unit.",
+      "review_completed": true
+    },
+    {
+      "unit_id": "u_c13b0eda2b09d3753cfc5a78b078c482a72e6f3817a81550fc7e30624e6e0db6",
+      "unit_sha256": "6f1f86938397d41d55e5b6b9fa5a20526260dcc2b719b3573ae16b8ef83fef0e",
+      "previous_proposal_id": "pr_97f8989a2147c4544aebeddb7df349b5d7802d78729d9b01c857fe2bb68b9adb",
+      "previous_proposal_sha256": "79a772fc69e3f944c785295fbb034d3094bda29b625f7542b12c053f7ba3adfb",
+      "scope_candidate": "pending",
+      "regulated_subject": "Người lái/nhân viên phục vụ xe khách",
+      "behavior_right_duty": "Quyền từ chối khách vi phạm Điểm c Khoản 2 Điều 60, chưa có nội dung được dẫn trong context đang chọn",
+      "use_cases": [
+        "UC-02"
+      ],
+      "reason": "Đề xuất hoãn included: Quyền từ chối khách vi phạm Điểm c Khoản 2 Điều 60, chưa có nội dung được dẫn trong context đang chọn. Quan hệ vận tải/dịch vụ hoặc dẫn chiếu rộng có thể liên quan người lái nhưng chưa đủ giới hạn use case BRD §3.1 cho toàn unit; không cắt riêng câu thuận lợi hoặc tự thêm context ngoài cây cha. Cần xác định ca trực tiếp và nội dung được dẫn chiếu trước khi kết luận target.",
+      "reference_notes": "Context cha không chứa nội dung A60K2c; chỉ giữ câu dẫn chiếu, chưa ghép hoặc giả đã đọc/đối chiếu lại văn bản đích.",
+      "prior_reason_quality": "partial_category_rationale_with_short_quote",
+      "prior_reason_limitation": "Lý do nêu nhóm nghiệp vụ kèm đoạn trích đầu nhưng chưa giải thích đầy đủ hành vi/đối tượng và giới hạn của chính unit.",
+      "review_completed": true
+    },
+    {
+      "unit_id": "u_d55140c194a8be5fd8c1e85bd8d08184e1bb46c2836a41d818d41b03053a34dd",
+      "unit_sha256": "af1ca9b4317a768e87a272172ae201c2e80b3f9bca8451bd8b9b243256ef3a71",
+      "previous_proposal_id": "pr_5448ba7d57e7c17a4fac145ad4519a0e93c2904ccacaf6e4f80bd74aadd1cb28",
+      "previous_proposal_sha256": "d6db371184e74bc2037d1753788aa4698e0ebab4da341c34b7d157b9c9f1c26d",
+      "scope_candidate": "included",
+      "regulated_subject": "Người lái/nhân viên phục vụ xe khách",
+      "behavior_right_duty": "Quyền từ chối điều khiển phương tiện không bảo đảm an toàn của người lái/nhân viên",
+      "use_cases": [
+        "UC-02"
+      ],
+      "reason": "Đề xuất target trực tiếp cho Người lái/nhân viên phục vụ xe khách: Quyền từ chối điều khiển phương tiện không bảo đảm an toàn của người lái/nhân viên. Có quyền/nghĩa vụ/hành vi cụ thể gắn người tham gia theo BRD §3.1, phục vụ UC-02. Giữ đầy đủ điều kiện và các phần dẫn chiếu, không kết luận hiệu lực.",
+      "reference_notes": "Giữ nguyên câu và điều kiện; không mở rộng context ngoài cha, không coi đoạn này là toàn bộ căn cứ pháp lý.",
+      "prior_reason_quality": "partial_category_rationale_with_short_quote",
+      "prior_reason_limitation": "Lý do nêu nhóm nghiệp vụ kèm đoạn trích đầu nhưng chưa giải thích đầy đủ hành vi/đối tượng và giới hạn của chính unit.",
+      "review_completed": true
+    },
+    {
+      "unit_id": "u_004c2afe50678e28a8796b2fa8f2c7dafc0a00444ff43efdaf98cd06e2bb507c",
+      "unit_sha256": "6b2b713a254609aeb2d1faa3e511935f8d257fd41d583286ddefa304df4e18c8",
+      "previous_proposal_id": "pr_488be38d7cccaf914cc75491f4a2d0a8258a98901b3a5f7b173637d09b7b0011",
+      "previous_proposal_sha256": "fc6005d5280e82cc784a761b2da07d43e1917ff3f62cd4ce91680d9bc82c31b8",
+      "scope_candidate": "included",
+      "regulated_subject": "Người điều khiển phương tiện được xác định trong own text và cha",
+      "behavior_right_duty": "Tắt đèn chiếu xa, bật chiếu gần khi khu đông dân có chiếu sáng",
+      "use_cases": [
+        "UC-02"
+      ],
+      "reason": "Đề xuất target trực tiếp cho Người điều khiển phương tiện được xác định trong own text và cha: Tắt đèn chiếu xa, bật chiếu gần khi khu đông dân có chiếu sáng. Có quyền/nghĩa vụ/hành vi cụ thể gắn người tham gia theo BRD §3.1, phục vụ UC-02. Giữ đầy đủ điều kiện và các phần dẫn chiếu, không kết luận hiệu lực.",
+      "reference_notes": "Giữ nguyên câu và điều kiện; không mở rộng context ngoài cha, không coi đoạn này là toàn bộ căn cứ pháp lý.",
+      "prior_reason_quality": "partial_category_rationale_with_short_quote",
+      "prior_reason_limitation": "Lý do nêu nhóm nghiệp vụ kèm đoạn trích đầu nhưng chưa giải thích đầy đủ hành vi/đối tượng và giới hạn của chính unit.",
+      "review_completed": true
+    },
+    {
+      "unit_id": "u_05b8cf54b0a98c30e244ded15b6b5876aeb90245c6c0cc75676efe29dae33b28",
+      "unit_sha256": "ca901dfee1d2e322b96671081cd13ef03fc948906d621dd8fc1e4fd089f1d980",
+      "previous_proposal_id": "pr_9d67cf17c7ec644e00f1b6f19640708a51251e36d1b3964edf8820624d878a14",
+      "previous_proposal_sha256": "1a930c4194ab0d99306d223da6396879b0a20eaf6e01cc217607eb2fc62ecbef",
+      "scope_candidate": "included",
+      "regulated_subject": "Người mở cửa xe (người lái hoặc người được chở)",
+      "behavior_right_duty": "Chỉ mở cửa khi xe đã dừng, đỗ",
+      "use_cases": [
+        "UC-02"
+      ],
+      "reason": "Đề xuất target trực tiếp cho Người mở cửa xe (người lái hoặc người được chở): Chỉ mở cửa khi xe đã dừng, đỗ. Có quyền/nghĩa vụ/hành vi cụ thể gắn người tham gia theo BRD §3.1, phục vụ UC-02. Giữ đầy đủ điều kiện và các phần dẫn chiếu, không kết luận hiệu lực.",
+      "reference_notes": "Giữ nguyên câu và điều kiện; không mở rộng context ngoài cha, không coi đoạn này là toàn bộ căn cứ pháp lý.",
+      "prior_reason_quality": "partial_category_rationale_with_short_quote",
+      "prior_reason_limitation": "Lý do nêu nhóm nghiệp vụ kèm đoạn trích đầu nhưng chưa giải thích đầy đủ hành vi/đối tượng và giới hạn của chính unit.",
+      "review_completed": true
+    },
+    {
+      "unit_id": "u_05e8512f824a13792ec2e7f73e22a87a03cd96eaba7e122d24831a8ffa170172",
+      "unit_sha256": "2580cf714071e495168d4a8da4644fb9c11df49878d2b28b840b95280a644587",
+      "previous_proposal_id": "pr_23e576cdaaef3b949c944abc95167b215d5f10eaad5bcd93c7d78ae38eac4d41",
+      "previous_proposal_sha256": "a51c20b645f561af55a98ea3feda78884d024036929440391e3a34b72c858f5b",
+      "scope_candidate": "included",
+      "regulated_subject": "Người điều khiển phương tiện được xác định trong own text và cha",
+      "behavior_right_duty": "Quan sát, giảm tốc hoặc dừng an toàn theo lead Khoản 3 khi Có cảnh báo nguy hiểm hoặc chướng ngại",
+      "use_cases": [
+        "UC-02"
+      ],
+      "reason": "Đề xuất target trực tiếp cho Người điều khiển phương tiện được xác định trong own text và cha: Quan sát, giảm tốc hoặc dừng an toàn theo lead Khoản 3 khi Có cảnh báo nguy hiểm hoặc chướng ngại. Có quyền/nghĩa vụ/hành vi cụ thể gắn người tham gia theo BRD §3.1, phục vụ UC-02. Giữ đầy đủ điều kiện và các phần dẫn chiếu, không kết luận hiệu lực.",
+      "reference_notes": "Giữ nguyên câu và điều kiện; không mở rộng context ngoài cha, không coi đoạn này là toàn bộ căn cứ pháp lý.",
+      "prior_reason_quality": "partial_category_rationale_with_short_quote",
+      "prior_reason_limitation": "Lý do nêu nhóm nghiệp vụ kèm đoạn trích đầu nhưng chưa giải thích đầy đủ hành vi/đối tượng và giới hạn của chính unit.",
+      "review_completed": true
+    },
+    {
+      "unit_id": "u_0884a74d58c6e53c068d3fdb30fec9a748463c6d40dc4e774339997033edbd2a",
+      "unit_sha256": "896efcbfd1c8d8c340a13f94e5b7d40a09de852514caecce8971ecb8f7d84ed7",
+      "previous_proposal_id": "pr_c057a5e0e152606d110c6e21fd612f98ae2e26d7487030f41f976af92338ce3b",
+      "previous_proposal_sha256": "7d366154e91a94c63615aaa7621d4586baa2a9c7511937e849c27dd645537e7f",
+      "scope_candidate": "included",
+      "regulated_subject": "Người có GPLX chịu quy định điểm, trừ điểm/phục hồi điểm",
+      "behavior_right_duty": "Giữ số điểm GPLX khi đổi/cấp lại/nâng hạng",
+      "use_cases": [
+        "UC-03"
+      ],
+      "reason": "Đề xuất target trực tiếp cho Người có GPLX chịu quy định điểm, trừ điểm/phục hồi điểm: Giữ số điểm GPLX khi đổi/cấp lại/nâng hạng. Có quyền/nghĩa vụ/hành vi cụ thể gắn người tham gia theo BRD §3.1, phục vụ UC-03. Giữ đầy đủ điều kiện và các phần dẫn chiếu, không kết luận hiệu lực.",
+      "reference_notes": "Giữ nguyên câu và điều kiện; không mở rộng context ngoài cha, không coi đoạn này là toàn bộ căn cứ pháp lý.",
+      "prior_reason_quality": "partial_category_rationale_with_short_quote",
+      "prior_reason_limitation": "Lý do nêu nhóm nghiệp vụ kèm đoạn trích đầu nhưng chưa giải thích đầy đủ hành vi/đối tượng và giới hạn của chính unit.",
+      "review_completed": true
+    },
+    {
+      "unit_id": "u_0bfd73ba68a4b36149632bea4cc24d5bf91f50a1315d8757929b4e2d5ffc89f8",
+      "unit_sha256": "ab6059154086c902b3f753fd478b983646331d79d36fdbbbf54e0a512506a7c9",
+      "previous_proposal_id": "pr_87b368c20cf6dcc9e6959b130438c4eaf15dc847cd7921441ad2b88d480d631b",
+      "previous_proposal_sha256": "94d298c04043ba5ea49df37ba69be8550f302055d3e2ed21c4f6aac175655fb6",
+      "scope_candidate": "included",
+      "regulated_subject": "Người điều khiển phương tiện được xác định trong own text và cha",
+      "behavior_right_duty": "Chỉ dùng còi để báo nguy cơ mất an toàn theo lead Khoản 1",
+      "use_cases": [
+        "UC-02"
+      ],
+      "reason": "Đề xuất target trực tiếp cho Người điều khiển phương tiện được xác định trong own text và cha: Chỉ dùng còi để báo nguy cơ mất an toàn theo lead Khoản 1. Có quyền/nghĩa vụ/hành vi cụ thể gắn người tham gia theo BRD §3.1, phục vụ UC-02. Giữ đầy đủ điều kiện và các phần dẫn chiếu, không kết luận hiệu lực.",
+      "reference_notes": "Giữ nguyên câu và điều kiện; không mở rộng context ngoài cha, không coi đoạn này là toàn bộ căn cứ pháp lý.",
+      "prior_reason_quality": "partial_category_rationale_with_short_quote",
+      "prior_reason_limitation": "Lý do nêu nhóm nghiệp vụ kèm đoạn trích đầu nhưng chưa giải thích đầy đủ hành vi/đối tượng và giới hạn của chính unit.",
+      "review_completed": true
+    },
+    {
+      "unit_id": "u_0f41e106e5a97e3ee9cb308f74c915868b9c461ada52a8afa4ec1dfa9d08254f",
+      "unit_sha256": "b731f33e0caf5b3c3b3ac52c6e62406328f29cf6527fc4882980d31f467608f7",
+      "previous_proposal_id": "pr_a5a274cd645725251d847912618c00fd2c56bd33af33b31648340b4b9f48919c",
+      "previous_proposal_sha256": "656ab1881173c405158a420d877f109a625b2ef6ca74a32e0564edbf57ddf220",
+      "scope_candidate": "included",
+      "regulated_subject": "Người điều khiển phương tiện được xác định trong own text và cha",
+      "behavior_right_duty": "Quan sát, giảm tốc hoặc dừng an toàn theo lead Khoản 3 khi Có vạch/báo hiệu người đi bộ hoặc người đi bộ/xe lăn đang qua đường",
+      "use_cases": [
+        "UC-02"
+      ],
+      "reason": "Đề xuất target trực tiếp cho Người điều khiển phương tiện được xác định trong own text và cha: Quan sát, giảm tốc hoặc dừng an toàn theo lead Khoản 3 khi Có vạch/báo hiệu người đi bộ hoặc người đi bộ/xe lăn đang qua đường. Có quyền/nghĩa vụ/hành vi cụ thể gắn người tham gia theo BRD §3.1, phục vụ UC-02. Giữ đầy đủ điều kiện và các phần dẫn chiếu, không kết luận hiệu lực.",
+      "reference_notes": "Giữ nguyên câu và điều kiện; không mở rộng context ngoài cha, không coi đoạn này là toàn bộ căn cứ pháp lý.",
+      "prior_reason_quality": "partial_category_rationale_with_short_quote",
+      "prior_reason_limitation": "Lý do nêu nhóm nghiệp vụ kèm đoạn trích đầu nhưng chưa giải thích đầy đủ hành vi/đối tượng và giới hạn của chính unit.",
+      "review_completed": true
+    },
+    {
+      "unit_id": "u_15aad73f5fcaaede765c3948ebea28b9d3c3252b8ce0a0f7c3e43918c8d50519",
+      "unit_sha256": "827280d3c43d272cbfd758027d2ed35c1584ed481bb08f6b37f7b20d469996db",
+      "previous_proposal_id": "pr_d3916bcf67111613183417878cfff073c623657645bf4024bc402edf45dc0d15",
+      "previous_proposal_sha256": "03ce00ac808128ef8fb099660803c04cb0ec2f146973c5ac878cf656b2173440",
+      "scope_candidate": "included",
+      "regulated_subject": "Người điều khiển phương tiện trong quyền/trách nhiệm ở Khoản cha",
+      "behavior_right_duty": "Quyền điều khiển phương tiện theo Luật, không tự cung cấp đầy đủ mọi điều kiện lái xe",
+      "use_cases": [
+        "UC-02"
+      ],
+      "reason": "Đề xuất target trực tiếp cho Người điều khiển phương tiện trong quyền/trách nhiệm ở Khoản cha: Quyền điều khiển phương tiện theo Luật, không tự cung cấp đầy đủ mọi điều kiện lái xe. Có quyền/nghĩa vụ/hành vi cụ thể gắn người tham gia theo BRD §3.1, phục vụ UC-02. Giữ đầy đủ điều kiện và các phần dẫn chiếu, không kết luận hiệu lực.",
+      "reference_notes": "Giữ nguyên câu và điều kiện; không mở rộng context ngoài cha, không coi đoạn này là toàn bộ căn cứ pháp lý.",
+      "prior_reason_quality": "partial_category_rationale_with_short_quote",
+      "prior_reason_limitation": "Lý do nêu nhóm nghiệp vụ kèm đoạn trích đầu nhưng chưa giải thích đầy đủ hành vi/đối tượng và giới hạn của chính unit.",
+      "review_completed": true
+    },
+    {
+      "unit_id": "u_1797ad13ac27294295b0c0b4f34ba3f367e90508fe0f59bbecbb6408cba792a6",
+      "unit_sha256": "b304404d9b7d27bb14f13f74e285f41d20b782dff463d55ecc78bcf8de2faa16",
+      "previous_proposal_id": "pr_e70960c21b03f1443263fba5372ef2c7f67fc74bf42baf8e044066ba826dc851",
+      "previous_proposal_sha256": "25edc1ff3f56aa0deaef4493ed67a65ffcfd63b25098ca18db7c3073878ec701",
+      "scope_candidate": "included",
+      "regulated_subject": "Người điều khiển phương tiện được xác định trong own text và cha",
+      "behavior_right_duty": "Giao nhau không có báo hiệu vòng xuyến: nhường xe từ bên phải",
+      "use_cases": [
+        "UC-02"
+      ],
+      "reason": "Đề xuất target trực tiếp cho Người điều khiển phương tiện được xác định trong own text và cha: Giao nhau không có báo hiệu vòng xuyến: nhường xe từ bên phải. Có quyền/nghĩa vụ/hành vi cụ thể gắn người tham gia theo BRD §3.1, phục vụ UC-02. Giữ đầy đủ điều kiện và các phần dẫn chiếu, không kết luận hiệu lực.",
+      "reference_notes": "Giữ nguyên câu và điều kiện; không mở rộng context ngoài cha, không coi đoạn này là toàn bộ căn cứ pháp lý.",
+      "prior_reason_quality": "partial_category_rationale_with_short_quote",
+      "prior_reason_limitation": "Lý do nêu nhóm nghiệp vụ kèm đoạn trích đầu nhưng chưa giải thích đầy đủ hành vi/đối tượng và giới hạn của chính unit.",
+      "review_completed": true
+    },
+    {
+      "unit_id": "u_1b84b416f4a6f60d46b405859487c7c53920423c87113c424fe220b6e5ee11c5",
+      "unit_sha256": "de987efe1b0c443ebf1f967cda39cba9ad7bb28c929aba9f38cd57f667606728",
+      "previous_proposal_id": "pr_f494b25084dd9c08ec06a580b6a35fd3ff98c2082bf08b9595f3c58a8ba871ae",
+      "previous_proposal_sha256": "2d32c77c45090a2e9217f8383d3535f95ff184c00ba4f6e811adc2d117d7749c",
+      "scope_candidate": "included",
+      "regulated_subject": "Người mở cửa xe (người lái hoặc người được chở)",
+      "behavior_right_duty": "Quan sát và chỉ mở cửa/ra khỏi xe khi an toàn, không để cửa mở gây nguy hiểm",
+      "use_cases": [
+        "UC-02"
+      ],
+      "reason": "Đề xuất target trực tiếp cho Người mở cửa xe (người lái hoặc người được chở): Quan sát và chỉ mở cửa/ra khỏi xe khi an toàn, không để cửa mở gây nguy hiểm. Có quyền/nghĩa vụ/hành vi cụ thể gắn người tham gia theo BRD §3.1, phục vụ UC-02. Giữ đầy đủ điều kiện và các phần dẫn chiếu, không kết luận hiệu lực.",
+      "reference_notes": "Giữ nguyên câu và điều kiện; không mở rộng context ngoài cha, không coi đoạn này là toàn bộ căn cứ pháp lý.",
+      "prior_reason_quality": "partial_category_rationale_with_short_quote",
+      "prior_reason_limitation": "Lý do nêu nhóm nghiệp vụ kèm đoạn trích đầu nhưng chưa giải thích đầy đủ hành vi/đối tượng và giới hạn của chính unit.",
+      "review_completed": true
+    },
+    {
+      "unit_id": "u_1c96f03c8ab8198e2976360d4093591d09bdf61a1378db0cbcb456f72c6c099c",
+      "unit_sha256": "4425faa79e4579ae2dfc31ffd5894583a20345a7ca717428e2bef75e61e25a64",
+      "previous_proposal_id": "pr_e7164626f9fd6e20c9027e91c939e810f8a29eddcfc9bc9fbca2ee57584ee473",
+      "previous_proposal_sha256": "7c03dbda4c3c58890d644d7be5671b1b0a352036a7983c805963cd9e3a91d3c5",
+      "scope_candidate": "included",
+      "regulated_subject": "Người điều khiển phương tiện được xác định trong own text và cha",
+      "behavior_right_duty": "Tắt đèn chiếu xa, bật chiếu gần khi gặp xe ngược chiều, trừ dải phân cách chống chói",
+      "use_cases": [
+        "UC-02"
+      ],
+      "reason": "Đề xuất target trực tiếp cho Người điều khiển phương tiện được xác định trong own text và cha: Tắt đèn chiếu xa, bật chiếu gần khi gặp xe ngược chiều, trừ dải phân cách chống chói. Có quyền/nghĩa vụ/hành vi cụ thể gắn người tham gia theo BRD §3.1, phục vụ UC-02. Giữ đầy đủ điều kiện và các phần dẫn chiếu, không kết luận hiệu lực.",
+      "reference_notes": "Giữ nguyên câu và điều kiện; không mở rộng context ngoài cha, không coi đoạn này là toàn bộ căn cứ pháp lý.",
+      "prior_reason_quality": "partial_category_rationale_with_short_quote",
+      "prior_reason_limitation": "Lý do nêu nhóm nghiệp vụ kèm đoạn trích đầu nhưng chưa giải thích đầy đủ hành vi/đối tượng và giới hạn của chính unit.",
+      "review_completed": true
+    },
+    {
+      "unit_id": "u_1d7c8dc81bf175be927e2734f4e9c8f0bdc5d29e2cfa6a4a4c94e2611a09d7c1",
+      "unit_sha256": "521001ead93bb8ab7deecf8e52cbad19d8ca057402f2a183dbedc0dee3b91465",
+      "previous_proposal_id": "pr_0acb619f6bd7d6389a07b0783ec25e12cf73a3b5eb3ce776e100ebb8fce9c183",
+      "previous_proposal_sha256": "54f6ef92747e7cd90cd4a309d78a8e8301e72add72089e2660b6ef3cece2ba09",
+      "scope_candidate": "included",
+      "regulated_subject": "Người điều khiển xe máy chuyên dùng tham gia giao thông",
+      "behavior_right_duty": "Mang theo đăng ký/bản sao kèm Giấy biên nhận tín dụng còn hiệu lực khi thế chấp khi tham gia giao thông, theo đối tượng/điều kiện trong lead Khoản 2",
+      "use_cases": [
+        "UC-03"
+      ],
+      "reason": "Đề xuất target trực tiếp cho Người điều khiển xe máy chuyên dùng tham gia giao thông: Mang theo đăng ký/bản sao kèm Giấy biên nhận tín dụng còn hiệu lực khi thế chấp khi tham gia giao thông, theo đối tượng/điều kiện trong lead Khoản 2. Có quyền/nghĩa vụ/hành vi cụ thể gắn người tham gia theo BRD §3.1, phục vụ UC-03. Giữ đầy đủ điều kiện và các phần dẫn chiếu, không kết luận hiệu lực.",
+      "reference_notes": "Giữ nguyên câu và điều kiện; không mở rộng context ngoài cha, không coi đoạn này là toàn bộ căn cứ pháp lý.",
+      "prior_reason_quality": "partial_category_rationale_with_short_quote",
+      "prior_reason_limitation": "Lý do nêu nhóm nghiệp vụ kèm đoạn trích đầu nhưng chưa giải thích đầy đủ hành vi/đối tượng và giới hạn của chính unit.",
+      "review_completed": true
+    },
+    {
+      "unit_id": "u_1f44a1649d0f05c44a2ee360e65222f810dedbb68d4ec73fc9659aa61277fc69",
+      "unit_sha256": "aa2d887f4e111d9fda3c5f265f18f581eead179d32166d836bdd0419a29930c6",
+      "previous_proposal_id": "pr_34ded79ee400176f66ceae589224a066f9c82081d803410b0d621983f3bf7ae4",
+      "previous_proposal_sha256": "29970bb0762ad5d7aaf2f3e0076d8b0c7dfd6407dfd57e8c27da965fe08498ca",
+      "scope_candidate": "included",
+      "regulated_subject": "Người điều khiển xe máy chuyên dùng tham gia giao thông",
+      "behavior_right_duty": "Mang theo GPLX hoặc chứng chỉ bồi dưỡng kiến thức giao thông khi tham gia giao thông, theo đối tượng/điều kiện trong lead Khoản 2",
+      "use_cases": [
+        "UC-03"
+      ],
+      "reason": "Đề xuất target trực tiếp cho Người điều khiển xe máy chuyên dùng tham gia giao thông: Mang theo GPLX hoặc chứng chỉ bồi dưỡng kiến thức giao thông khi tham gia giao thông, theo đối tượng/điều kiện trong lead Khoản 2. Có quyền/nghĩa vụ/hành vi cụ thể gắn người tham gia theo BRD §3.1, phục vụ UC-03. Giữ đầy đủ điều kiện và các phần dẫn chiếu, không kết luận hiệu lực.",
+      "reference_notes": "Giữ nguyên câu và điều kiện; không mở rộng context ngoài cha, không coi đoạn này là toàn bộ căn cứ pháp lý.",
+      "prior_reason_quality": "partial_category_rationale_with_short_quote",
+      "prior_reason_limitation": "Lý do nêu nhóm nghiệp vụ kèm đoạn trích đầu nhưng chưa giải thích đầy đủ hành vi/đối tượng và giới hạn của chính unit.",
+      "review_completed": true
+    },
+    {
+      "unit_id": "u_206963614b65a387cc8f73a5fca3073f717ecbf9a03839a23674043e710947b4",
+      "unit_sha256": "91d7a4f864508468a2d2cafe83f75588563871f69147f78673b7bf3057054034",
+      "previous_proposal_id": "pr_9d8980f7aa19a08b0ac2e9cac41e1b803acdd056784443e8d835c8aa9772c7a6",
+      "previous_proposal_sha256": "d5ac91f732f7a3a17916e93809ca890e3f3e1653c42da0a1e2d4e4b9f606d8c7",
+      "scope_candidate": "included",
+      "regulated_subject": "Người điều khiển phương tiện được xác định trong own text và cha",
+      "behavior_right_duty": "Bật đèn phía trước từ 18 giờ đến 06 giờ hoặc khi thời tiết hạn chế tầm nhìn",
+      "use_cases": [
+        "UC-02"
+      ],
+      "reason": "Đề xuất target trực tiếp cho Người điều khiển phương tiện được xác định trong own text và cha: Bật đèn phía trước từ 18 giờ đến 06 giờ hoặc khi thời tiết hạn chế tầm nhìn. Có quyền/nghĩa vụ/hành vi cụ thể gắn người tham gia theo BRD §3.1, phục vụ UC-02. Giữ đầy đủ điều kiện và các phần dẫn chiếu, không kết luận hiệu lực.",
+      "reference_notes": "Giữ nguyên câu và điều kiện; không mở rộng context ngoài cha, không coi đoạn này là toàn bộ căn cứ pháp lý.",
+      "prior_reason_quality": "partial_category_rationale_with_short_quote",
+      "prior_reason_limitation": "Lý do nêu nhóm nghiệp vụ kèm đoạn trích đầu nhưng chưa giải thích đầy đủ hành vi/đối tượng và giới hạn của chính unit.",
+      "review_completed": true
+    },
+    {
+      "unit_id": "u_252702fc149c3f517a8aef5f5a94ac650102659ddccd0df9a65e80e1dbb38f37",
+      "unit_sha256": "5a28bf1d58c38267f9410c4cd9e5befa2fb861b6d384c61a3501488dad84269f",
+      "previous_proposal_id": "pr_9d82b019ddc44574ea9bac5ec8795a5c9d59371b9aa5f67a83c09980be7f05e0",
+      "previous_proposal_sha256": "ea7ff92542f8c0857506c69b4bed2b1d2119be827c6e6a662c45de228927a0cf",
+      "scope_candidate": "included",
+      "regulated_subject": "Người lái xe tham gia giao thông thuộc Khoản 1, giữ ngoại lệ xe gắn máy",
+      "behavior_right_duty": "Mang theo chứng nhận đăng ký hoặc bản sao kèm giấy xác nhận tín dụng trong trường hợp thế chấp khi tham gia giao thông, theo đối tượng/điều kiện trong lead Khoản 1",
+      "use_cases": [
+        "UC-03"
+      ],
+      "reason": "Đề xuất target trực tiếp cho Người lái xe tham gia giao thông thuộc Khoản 1, giữ ngoại lệ xe gắn máy: Mang theo chứng nhận đăng ký hoặc bản sao kèm giấy xác nhận tín dụng trong trường hợp thế chấp khi tham gia giao thông, theo đối tượng/điều kiện trong lead Khoản 1. Có quyền/nghĩa vụ/hành vi cụ thể gắn người tham gia theo BRD §3.1, phục vụ UC-03. Giữ đầy đủ điều kiện và các phần dẫn chiếu, không kết luận hiệu lực.",
+      "reference_notes": "Giữ nguyên câu và điều kiện; không mở rộng context ngoài cha, không coi đoạn này là toàn bộ căn cứ pháp lý.",
+      "prior_reason_quality": "partial_category_rationale_with_short_quote",
+      "prior_reason_limitation": "Lý do nêu nhóm nghiệp vụ kèm đoạn trích đầu nhưng chưa giải thích đầy đủ hành vi/đối tượng và giới hạn của chính unit.",
+      "review_completed": true
+    },
+    {
+      "unit_id": "u_27b8b4d4ba7a578baa23735ddb6a5e1b5fa1f98ce356e9f0b9da1625846c9435",
+      "unit_sha256": "5e7c566094cbfe994562c61f0dd6f1cc54e3e46b1347c16c19c1710fc350c9c9",
+      "previous_proposal_id": "pr_349313ed246f5447ee75417b844b641b05fb3e7e197b5737bd5d20578d72b1fc",
+      "previous_proposal_sha256": "401264c38a2a5e97fe7375ff5f847ec94c004027dd93ced61583b907bcb1ab9b",
+      "scope_candidate": "included",
+      "regulated_subject": "Người điều khiển phương tiện được xác định trong own text và cha",
+      "behavior_right_duty": "Quan sát, giảm tốc hoặc dừng an toàn theo lead Khoản 3 khi Điểm dừng đỗ có khách lên xuống",
+      "use_cases": [
+        "UC-02"
+      ],
+      "reason": "Đề xuất target trực tiếp cho Người điều khiển phương tiện được xác định trong own text và cha: Quan sát, giảm tốc hoặc dừng an toàn theo lead Khoản 3 khi Điểm dừng đỗ có khách lên xuống. Có quyền/nghĩa vụ/hành vi cụ thể gắn người tham gia theo BRD §3.1, phục vụ UC-02. Giữ đầy đủ điều kiện và các phần dẫn chiếu, không kết luận hiệu lực.",
+      "reference_notes": "Giữ nguyên câu và điều kiện; không mở rộng context ngoài cha, không coi đoạn này là toàn bộ căn cứ pháp lý.",
+      "prior_reason_quality": "partial_category_rationale_with_short_quote",
+      "prior_reason_limitation": "Lý do nêu nhóm nghiệp vụ kèm đoạn trích đầu nhưng chưa giải thích đầy đủ hành vi/đối tượng và giới hạn của chính unit.",
+      "review_completed": true
+    },
+    {
+      "unit_id": "u_2954715949fcb731f4e91b2a49a81a5bac9e56c0faff39dd912f221d3e6d59f7",
+      "unit_sha256": "f7c3b2be523e4f6f0788b0855e3d13aa530c66f2530982af2f68a43760463216",
+      "previous_proposal_id": "pr_7fb339ba8a2a32074942cc4877fa4a184d3ad4b929b357409e04ad4436d2e98c",
+      "previous_proposal_sha256": "8c3aaa78a1e208094ebda417c9b3ccd5899273d291ee663a4c28bce10d2730c9",
+      "scope_candidate": "included",
+      "regulated_subject": "Người điều khiển phương tiện được xác định trong own text và cha",
+      "behavior_right_duty": "Không đi vào làn dành riêng cho loại/nhóm phương tiện khác",
+      "use_cases": [
+        "UC-02"
+      ],
+      "reason": "Đề xuất target trực tiếp cho Người điều khiển phương tiện được xác định trong own text và cha: Không đi vào làn dành riêng cho loại/nhóm phương tiện khác. Có quyền/nghĩa vụ/hành vi cụ thể gắn người tham gia theo BRD §3.1, phục vụ UC-02. Giữ đầy đủ điều kiện và các phần dẫn chiếu, không kết luận hiệu lực.",
+      "reference_notes": "Giữ nguyên câu và điều kiện; không mở rộng context ngoài cha, không coi đoạn này là toàn bộ căn cứ pháp lý.",
+      "prior_reason_quality": "partial_category_rationale_with_short_quote",
+      "prior_reason_limitation": "Lý do nêu nhóm nghiệp vụ kèm đoạn trích đầu nhưng chưa giải thích đầy đủ hành vi/đối tượng và giới hạn của chính unit.",
+      "review_completed": true
+    },
+    {
+      "unit_id": "u_2df33f6289d8c241f6c39023c05f894ff27f25c93f31fd01c10c6167fa5a1a79",
+      "unit_sha256": "d1e5b0658880d359f78194cde66314ad06e7e3e079af054ecc7aece3fb1fed3f",
+      "previous_proposal_id": "pr_6624212c3266ac67898979ef5b230d7b9d4fd381cefff50154ed8ac6c0f52870",
+      "previous_proposal_sha256": "be6f6515e2cb3fef61d6985d0bc9ced86d6386fbd66b4e5c40b5de770955201a",
+      "scope_candidate": "included",
+      "regulated_subject": "Người điều khiển phương tiện được xác định trong own text và cha",
+      "behavior_right_duty": "Quan sát, giảm tốc hoặc dừng an toàn theo lead Khoản 3 khi Xe siêu trường/siêu trọng/hàng nguy hiểm hoặc đoàn người đi bộ",
+      "use_cases": [
+        "UC-02"
+      ],
+      "reason": "Đề xuất target trực tiếp cho Người điều khiển phương tiện được xác định trong own text và cha: Quan sát, giảm tốc hoặc dừng an toàn theo lead Khoản 3 khi Xe siêu trường/siêu trọng/hàng nguy hiểm hoặc đoàn người đi bộ. Có quyền/nghĩa vụ/hành vi cụ thể gắn người tham gia theo BRD §3.1, phục vụ UC-02. Giữ đầy đủ điều kiện và các phần dẫn chiếu, không kết luận hiệu lực.",
+      "reference_notes": "Giữ nguyên câu và điều kiện; không mở rộng context ngoài cha, không coi đoạn này là toàn bộ căn cứ pháp lý.",
+      "prior_reason_quality": "partial_category_rationale_with_short_quote",
+      "prior_reason_limitation": "Lý do nêu nhóm nghiệp vụ kèm đoạn trích đầu nhưng chưa giải thích đầy đủ hành vi/đối tượng và giới hạn của chính unit.",
+      "review_completed": true
+    },
+    {
+      "unit_id": "u_2e06fc8aafda67a490fabcb9ab17cdb880cde2199d091b36e2b06897e1960c83",
+      "unit_sha256": "5337fbb9a01a474753deeb8768181589bdb10ed9cf997a36aede7c3e7d27fbae",
+      "previous_proposal_id": "pr_7e1ddfa3b263f78f4a46ed749bb920b47ab42d2e95b87bd7301f2e86a3e08b06",
+      "previous_proposal_sha256": "a54acae9d8d77b39837ae44af9bb3546f3fd07f3f00dcf1edfe9fb1a38c08265",
+      "scope_candidate": "included",
+      "regulated_subject": "Người điều khiển xe máy chuyên dùng tham gia giao thông",
+      "behavior_right_duty": "Mang theo chứng nhận kiểm định xe máy chuyên dùng khi tham gia giao thông, theo đối tượng/điều kiện trong lead Khoản 2",
+      "use_cases": [
+        "UC-03"
+      ],
+      "reason": "Đề xuất target trực tiếp cho Người điều khiển xe máy chuyên dùng tham gia giao thông: Mang theo chứng nhận kiểm định xe máy chuyên dùng khi tham gia giao thông, theo đối tượng/điều kiện trong lead Khoản 2. Có quyền/nghĩa vụ/hành vi cụ thể gắn người tham gia theo BRD §3.1, phục vụ UC-03. Giữ đầy đủ điều kiện và các phần dẫn chiếu, không kết luận hiệu lực.",
+      "reference_notes": "Giữ nguyên câu và điều kiện; không mở rộng context ngoài cha, không coi đoạn này là toàn bộ căn cứ pháp lý.",
+      "prior_reason_quality": "partial_category_rationale_with_short_quote",
+      "prior_reason_limitation": "Lý do nêu nhóm nghiệp vụ kèm đoạn trích đầu nhưng chưa giải thích đầy đủ hành vi/đối tượng và giới hạn của chính unit.",
+      "review_completed": true
+    },
+    {
+      "unit_id": "u_31f8ec77d0622296d96dee8b538128515dccbe8394859866174a7583d2846dc5",
+      "unit_sha256": "80d001a86168e98daa94e854ca69599ff2c72b917b93ed4354ca441636a809f3",
+      "previous_proposal_id": "pr_204eb714ab29cfe49a4a31d8a3951b3de88d107424621af30b7637f9a25cdb0a",
+      "previous_proposal_sha256": "a4efb0f85312ed17679dabd10ef18cc241014308d67eea32699c4d2d1c4d2b2d",
+      "scope_candidate": "included",
+      "regulated_subject": "Người lái và người được chở trên ô tô tại chỗ có dây đai",
+      "behavior_right_duty": "Thắt dây đai an toàn tại vị trí có trang bị trên xe ô tô",
+      "use_cases": [
+        "UC-02"
+      ],
+      "reason": "Đề xuất target trực tiếp cho Người lái và người được chở trên ô tô tại chỗ có dây đai: Thắt dây đai an toàn tại vị trí có trang bị trên xe ô tô. Có quyền/nghĩa vụ/hành vi cụ thể gắn người tham gia theo BRD §3.1, phục vụ UC-02. Giữ đầy đủ điều kiện và các phần dẫn chiếu, không kết luận hiệu lực.",
+      "reference_notes": "Giữ nguyên câu và điều kiện; không mở rộng context ngoài cha, không coi đoạn này là toàn bộ căn cứ pháp lý.",
+      "prior_reason_quality": "partial_category_rationale_with_short_quote",
+      "prior_reason_limitation": "Lý do nêu nhóm nghiệp vụ kèm đoạn trích đầu nhưng chưa giải thích đầy đủ hành vi/đối tượng và giới hạn của chính unit.",
+      "review_completed": true
+    },
+    {
+      "unit_id": "u_342199dc58177c2f4ae70a680f1e79a9c96600bb039e68e91516e36df987f6af",
+      "unit_sha256": "cdf5d18c114c92bf81fa186981464068021088f56e27816b7ce40025340786ef",
+      "previous_proposal_id": "pr_49a7a6693a6b5286f3fefc6987315ad7ebeaa017bb48a03bd31048cdd5a6aa16",
+      "previous_proposal_sha256": "f0707fdde6588d8c54d8eff69e04e8d06abae29db59d03680094c60469d1704d",
+      "scope_candidate": "included",
+      "regulated_subject": "Người xin cấp GPLX/người lái xe được xác định bởi độ tuổi và hạng/loại xe trong Điểm",
+      "behavior_right_duty": "Điều kiện tuổi: đủ 18 tuổi cấp A1/A/B1/B/C1 hoặc chứng chỉ xe máy chuyên dùng",
+      "use_cases": [
+        "UC-03"
+      ],
+      "reason": "Đề xuất target trực tiếp cho Người xin cấp GPLX/người lái xe được xác định bởi độ tuổi và hạng/loại xe trong Điểm: Điều kiện tuổi: đủ 18 tuổi cấp A1/A/B1/B/C1 hoặc chứng chỉ xe máy chuyên dùng. Có quyền/nghĩa vụ/hành vi cụ thể gắn người tham gia theo BRD §3.1, phục vụ UC-03. Giữ đầy đủ điều kiện và các phần dẫn chiếu, không kết luận hiệu lực.",
+      "reference_notes": "Giữ nguyên câu và điều kiện; không mở rộng context ngoài cha, không coi đoạn này là toàn bộ căn cứ pháp lý.",
+      "prior_reason_quality": "partial_category_rationale_with_short_quote",
+      "prior_reason_limitation": "Lý do nêu nhóm nghiệp vụ kèm đoạn trích đầu nhưng chưa giải thích đầy đủ hành vi/đối tượng và giới hạn của chính unit.",
+      "review_completed": true
+    },
+    {
+      "unit_id": "u_370459338de960cd15e61b0a230f3a8c36522c8170fe0ef21b1a834538c2787c",
+      "unit_sha256": "558c5c3c0091dae7be65876cf6ac436c57ea8d58459530acb726b3fea397c15e",
+      "previous_proposal_id": "pr_f16b58c63d462ec38ef729c8483419cd8dc51da0442ba8a0ec98f49d9ec774db",
+      "previous_proposal_sha256": "9fb3c24ed16c2c038a6b43072e389c02224baff87f1032cb823d7a87a444db8e",
+      "scope_candidate": "included",
+      "regulated_subject": "Người điều khiển phương tiện trong quyền/trách nhiệm ở Khoản cha",
+      "behavior_right_duty": "Quyền tố cáo vi phạm trong tuần tra/kiểm soát theo pháp luật về tố cáo",
+      "use_cases": [
+        "UC-02"
+      ],
+      "reason": "Đề xuất target trực tiếp cho Người điều khiển phương tiện trong quyền/trách nhiệm ở Khoản cha: Quyền tố cáo vi phạm trong tuần tra/kiểm soát theo pháp luật về tố cáo. Có quyền/nghĩa vụ/hành vi cụ thể gắn người tham gia theo BRD §3.1, phục vụ UC-02. Giữ đầy đủ điều kiện và các phần dẫn chiếu, không kết luận hiệu lực.",
+      "reference_notes": "Giữ nguyên câu và điều kiện; không mở rộng context ngoài cha, không coi đoạn này là toàn bộ căn cứ pháp lý.",
+      "prior_reason_quality": "partial_category_rationale_with_short_quote",
+      "prior_reason_limitation": "Lý do nêu nhóm nghiệp vụ kèm đoạn trích đầu nhưng chưa giải thích đầy đủ hành vi/đối tượng và giới hạn của chính unit.",
+      "review_completed": true
+    },
+    {
+      "unit_id": "u_402cb8a204c26b89fa6e20f97a3a114a8cc849836386f845ce80dc1f0a99859f",
+      "unit_sha256": "a843930c5a75b003a9f8acbf386e6312444411cea58c6127ff5a997ebf035b67",
+      "previous_proposal_id": "pr_95388ef0fb600e38c23298810a10a268c9a7d8accdd068bf30834849d27e32fa",
+      "previous_proposal_sha256": "3ac0da59c22004e444788f03f951bcde5dc8ab5c1afbe4e6f5b46a6caf43e8bd",
+      "scope_candidate": "included",
+      "regulated_subject": "Người xuất trình giấy tờ của Khoản 1/2 đã tích hợp định danh điện tử và người kiểm tra",
+      "behavior_right_duty": "Xuất trình/kiểm tra giấy tờ đã tích hợp trong tài khoản định danh điện tử",
+      "use_cases": [
+        "UC-03"
+      ],
+      "reason": "Đề xuất target trực tiếp cho Người xuất trình giấy tờ của Khoản 1/2 đã tích hợp định danh điện tử và người kiểm tra: Xuất trình/kiểm tra giấy tờ đã tích hợp trong tài khoản định danh điện tử. Có quyền/nghĩa vụ/hành vi cụ thể gắn người tham gia theo BRD §3.1, phục vụ UC-03. Giữ đầy đủ điều kiện và các phần dẫn chiếu, không kết luận hiệu lực.",
+      "reference_notes": "Giữ nguyên câu và điều kiện; không mở rộng context ngoài cha, không coi đoạn này là toàn bộ căn cứ pháp lý.",
+      "prior_reason_quality": "partial_category_rationale_with_short_quote",
+      "prior_reason_limitation": "Lý do nêu nhóm nghiệp vụ kèm đoạn trích đầu nhưng chưa giải thích đầy đủ hành vi/đối tượng và giới hạn của chính unit.",
+      "review_completed": true
+    },
+    {
+      "unit_id": "u_4207367ed7d12718066dd503c64ca487fdca9ce2ab4716582dbfbb781c20294a",
+      "unit_sha256": "5fd289d9c22e489b2e47a867f24341910234db3b1b120553e58974ed6571b186",
+      "previous_proposal_id": "pr_d4d4cde5650725838babab062ca1403f6814070a6b1f89031b85ca5cd4db026d",
+      "previous_proposal_sha256": "b4c80f97cd7411db3e4d7c5f803040df986cc265482f8f8316551d58cd2e7394",
+      "scope_candidate": "included",
+      "regulated_subject": "Người lái xe tham gia giao thông thuộc Khoản 1, giữ ngoại lệ xe gắn máy",
+      "behavior_right_duty": "Mang theo GPLX phù hợp xe khi tham gia giao thông, theo đối tượng/điều kiện trong lead Khoản 1",
+      "use_cases": [
+        "UC-03"
+      ],
+      "reason": "Đề xuất target trực tiếp cho Người lái xe tham gia giao thông thuộc Khoản 1, giữ ngoại lệ xe gắn máy: Mang theo GPLX phù hợp xe khi tham gia giao thông, theo đối tượng/điều kiện trong lead Khoản 1. Có quyền/nghĩa vụ/hành vi cụ thể gắn người tham gia theo BRD §3.1, phục vụ UC-03. Giữ đầy đủ điều kiện và các phần dẫn chiếu, không kết luận hiệu lực.",
+      "reference_notes": "Giữ nguyên câu và điều kiện; không mở rộng context ngoài cha, không coi đoạn này là toàn bộ căn cứ pháp lý.",
+      "prior_reason_quality": "partial_category_rationale_with_short_quote",
+      "prior_reason_limitation": "Lý do nêu nhóm nghiệp vụ kèm đoạn trích đầu nhưng chưa giải thích đầy đủ hành vi/đối tượng và giới hạn của chính unit.",
+      "review_completed": true
+    },
+    {
+      "unit_id": "u_424d4294af1754094b0516aba898b4b199835a6fbfaf5e2c419d46ba3da76a7f",
+      "unit_sha256": "637827e768237e37fdd447c1fdac7aafa704ba5c09ed1ba62702e545077dcc25",
+      "previous_proposal_id": "pr_14519f3b8e77a2564a97a0f2916131276a447ea4ffe6e678c41f237e2214c749",
+      "previous_proposal_sha256": "eba80994573c51d5ce54e78b402afcced61cd34de5e046fb04880e9b03c23d70",
+      "scope_candidate": "included",
+      "regulated_subject": "Người điều khiển phương tiện được xác định trong own text và cha",
+      "behavior_right_duty": "Quan sát, giảm tốc hoặc dừng an toàn theo lead Khoản 3 khi Gặp xe ưu tiên",
+      "use_cases": [
+        "UC-02"
+      ],
+      "reason": "Đề xuất target trực tiếp cho Người điều khiển phương tiện được xác định trong own text và cha: Quan sát, giảm tốc hoặc dừng an toàn theo lead Khoản 3 khi Gặp xe ưu tiên. Có quyền/nghĩa vụ/hành vi cụ thể gắn người tham gia theo BRD §3.1, phục vụ UC-02. Giữ đầy đủ điều kiện và các phần dẫn chiếu, không kết luận hiệu lực.",
+      "reference_notes": "Giữ nguyên câu và điều kiện; không mở rộng context ngoài cha, không coi đoạn này là toàn bộ căn cứ pháp lý.",
+      "prior_reason_quality": "partial_category_rationale_with_short_quote",
+      "prior_reason_limitation": "Lý do nêu nhóm nghiệp vụ kèm đoạn trích đầu nhưng chưa giải thích đầy đủ hành vi/đối tượng và giới hạn của chính unit.",
+      "review_completed": true
+    },
+    {
+      "unit_id": "u_4253d374a9e8908df1aa0f1290e0deb94eddb49cf142651367f1dd496e1d564b",
+      "unit_sha256": "b5f19225a1d2abc190fa9ae3d1a4128d780dcfbf834762636ba2c98259c50dce",
+      "previous_proposal_id": "pr_229b356ec7d4771f3ae203ae8244e66671e065887a54ce19f321426f42a6798c",
+      "previous_proposal_sha256": "1b5d39577e01fb066fba5bf7376dc27759ba8080655139e5398019a7bbd88702",
+      "scope_candidate": "included",
+      "regulated_subject": "Người điều khiển phương tiện được xác định trong own text và cha",
+      "behavior_right_duty": "Bật đèn cảnh báo vàng khi thực hiện công việc trên đường",
+      "use_cases": [
+        "UC-02"
+      ],
+      "reason": "Đề xuất target trực tiếp cho Người điều khiển phương tiện được xác định trong own text và cha: Bật đèn cảnh báo vàng khi thực hiện công việc trên đường. Có quyền/nghĩa vụ/hành vi cụ thể gắn người tham gia theo BRD §3.1, phục vụ UC-02. Giữ đầy đủ điều kiện và các phần dẫn chiếu, không kết luận hiệu lực.",
+      "reference_notes": "Giữ nguyên câu và điều kiện; không mở rộng context ngoài cha, không coi đoạn này là toàn bộ căn cứ pháp lý.",
+      "prior_reason_quality": "partial_category_rationale_with_short_quote",
+      "prior_reason_limitation": "Lý do nêu nhóm nghiệp vụ kèm đoạn trích đầu nhưng chưa giải thích đầy đủ hành vi/đối tượng và giới hạn của chính unit.",
+      "review_completed": true
+    },
+    {
+      "unit_id": "u_447fa2beaf2bbf974cf1e61c7ebfae933d171fbae5c1839ec95f7a0b00dd1f53",
+      "unit_sha256": "7eac7c7d39a8f335638efb53985ec4d9a87a541c6c04c68481ea90e70b3c5fc8",
+      "previous_proposal_id": "pr_46d1431b265b7458b440c93af6fe43c028f1f767cf7ea35a67d57bef7168461e",
+      "previous_proposal_sha256": "4c35ad6558c469bc44f503dcb993a2080a24ccf7f4c53ec5ae174d711393b6c0",
+      "scope_candidate": "included",
+      "regulated_subject": "Người điều khiển phương tiện được xác định trong own text và cha",
+      "behavior_right_duty": "Tắt đèn chiếu xa, bật chiếu gần khi chuyển hướng tại nút giao",
+      "use_cases": [
+        "UC-02"
+      ],
+      "reason": "Đề xuất target trực tiếp cho Người điều khiển phương tiện được xác định trong own text và cha: Tắt đèn chiếu xa, bật chiếu gần khi chuyển hướng tại nút giao. Có quyền/nghĩa vụ/hành vi cụ thể gắn người tham gia theo BRD §3.1, phục vụ UC-02. Giữ đầy đủ điều kiện và các phần dẫn chiếu, không kết luận hiệu lực.",
+      "reference_notes": "Giữ nguyên câu và điều kiện; không mở rộng context ngoài cha, không coi đoạn này là toàn bộ căn cứ pháp lý.",
+      "prior_reason_quality": "partial_category_rationale_with_short_quote",
+      "prior_reason_limitation": "Lý do nêu nhóm nghiệp vụ kèm đoạn trích đầu nhưng chưa giải thích đầy đủ hành vi/đối tượng và giới hạn của chính unit.",
+      "review_completed": true
+    },
+    {
+      "unit_id": "u_4775e981808c9b6410c79544d5bee7980bb455653ad9fb9ec3a783dd8ff4bd37",
+      "unit_sha256": "03e97c3b6ab697a4e2641d7a57b27d22b893d22ff05d431a46c8f07dd5a0c683",
+      "previous_proposal_id": "pr_6bf975167a152f75b202ffdc54037ca666d573830599d5333f8da76b58e685c5",
+      "previous_proposal_sha256": "506a048f3b7650c54cb079c6e2d118505f1f27475c1293ac66c635b59f685d83",
+      "scope_candidate": "included",
+      "regulated_subject": "Người điều khiển phương tiện được xác định trong own text và cha",
+      "behavior_right_duty": "Quan sát, giảm tốc hoặc dừng an toàn theo lead Khoản 3 khi Khu trường học/y tế/bến xe/chợ/đông dân/thi công/tai nạn",
+      "use_cases": [
+        "UC-02"
+      ],
+      "reason": "Đề xuất target trực tiếp cho Người điều khiển phương tiện được xác định trong own text và cha: Quan sát, giảm tốc hoặc dừng an toàn theo lead Khoản 3 khi Khu trường học/y tế/bến xe/chợ/đông dân/thi công/tai nạn. Có quyền/nghĩa vụ/hành vi cụ thể gắn người tham gia theo BRD §3.1, phục vụ UC-02. Giữ đầy đủ điều kiện và các phần dẫn chiếu, không kết luận hiệu lực.",
+      "reference_notes": "Giữ nguyên câu và điều kiện; không mở rộng context ngoài cha, không coi đoạn này là toàn bộ căn cứ pháp lý.",
+      "prior_reason_quality": "partial_category_rationale_with_short_quote",
+      "prior_reason_limitation": "Lý do nêu nhóm nghiệp vụ kèm đoạn trích đầu nhưng chưa giải thích đầy đủ hành vi/đối tượng và giới hạn của chính unit.",
+      "review_completed": true
+    },
+    {
+      "unit_id": "u_4ef7b89d622d28f734243a5052d2b25a7378236252535a29f1affcb356ca0ac3",
+      "unit_sha256": "91c273dd57fc307c5b1a774dc4e4111567be410126864cdccd0668a781d3b96e",
+      "previous_proposal_id": "pr_f12efaca275b598e7e6edfde89dc6d5f6ac2471de2e5c41a4c97f7f5631dbab5",
+      "previous_proposal_sha256": "1211f41467b36878c44225c99b9ac9b1203535672eba1bf390f829f1a140f41c",
+      "scope_candidate": "included",
+      "regulated_subject": "Người điều khiển phương tiện được xác định trong own text và cha",
+      "behavior_right_duty": "Giao nhau có báo hiệu vòng xuyến: nhường xe từ bên trái",
+      "use_cases": [
+        "UC-02"
+      ],
+      "reason": "Đề xuất target trực tiếp cho Người điều khiển phương tiện được xác định trong own text và cha: Giao nhau có báo hiệu vòng xuyến: nhường xe từ bên trái. Có quyền/nghĩa vụ/hành vi cụ thể gắn người tham gia theo BRD §3.1, phục vụ UC-02. Giữ đầy đủ điều kiện và các phần dẫn chiếu, không kết luận hiệu lực.",
+      "reference_notes": "Giữ nguyên câu và điều kiện; không mở rộng context ngoài cha, không coi đoạn này là toàn bộ căn cứ pháp lý.",
+      "prior_reason_quality": "partial_category_rationale_with_short_quote",
+      "prior_reason_limitation": "Lý do nêu nhóm nghiệp vụ kèm đoạn trích đầu nhưng chưa giải thích đầy đủ hành vi/đối tượng và giới hạn của chính unit.",
+      "review_completed": true
+    },
+    {
+      "unit_id": "u_5280cfaf373b6a0e233151b345f4f1e39b17e5b0c26074dbfab186cca204b380",
+      "unit_sha256": "33fe2acde01fbe60edf0b197b3b434373fe54db96d06cde1ec4126ab0271d516",
+      "previous_proposal_id": "pr_c800958f830c6702ba435ebc60a5588eed7ceb9b76ff022139416772c3f90d2c",
+      "previous_proposal_sha256": "73593ee032801de104728cd828604916be9396d991f7473405a6999cd405e60d",
+      "scope_candidate": "included",
+      "regulated_subject": "Người điều khiển phương tiện trong quyền/trách nhiệm ở Khoản cha",
+      "behavior_right_duty": "Quyền biết căn cứ dừng xe, nội dung/kết quả kiểm tra và hành vi/biện pháp xử lý",
+      "use_cases": [
+        "UC-02"
+      ],
+      "reason": "Đề xuất target trực tiếp cho Người điều khiển phương tiện trong quyền/trách nhiệm ở Khoản cha: Quyền biết căn cứ dừng xe, nội dung/kết quả kiểm tra và hành vi/biện pháp xử lý. Có quyền/nghĩa vụ/hành vi cụ thể gắn người tham gia theo BRD §3.1, phục vụ UC-02. Giữ đầy đủ điều kiện và các phần dẫn chiếu, không kết luận hiệu lực.",
+      "reference_notes": "Giữ nguyên câu và điều kiện; không mở rộng context ngoài cha, không coi đoạn này là toàn bộ căn cứ pháp lý.",
+      "prior_reason_quality": "partial_category_rationale_with_short_quote",
+      "prior_reason_limitation": "Lý do nêu nhóm nghiệp vụ kèm đoạn trích đầu nhưng chưa giải thích đầy đủ hành vi/đối tượng và giới hạn của chính unit.",
+      "review_completed": true
+    },
+    {
+      "unit_id": "u_544c645d101ab184a14510f3e5311608d6b526a8485ae436bf53e09a0bb6463e",
+      "unit_sha256": "d47a5cd10b047ad95a5230fdb63ad0f9e7f4ca164604c40c9d7ec97e962de5d5",
+      "previous_proposal_id": "pr_27c7d8113795d8aea5de2f7ce5a6e32add3e61d2e8ffde2165c5f43f307a8a42",
+      "previous_proposal_sha256": "9de7f59d61a6940e97773f5e33883d0a00ed66de107b97b0e77c53f8529544f6",
+      "scope_candidate": "included",
+      "regulated_subject": "Người lái xe tham gia giao thông thuộc Khoản 1, giữ ngoại lệ xe gắn máy",
+      "behavior_right_duty": "Mang theo chứng nhận kiểm định theo quy định khi tham gia giao thông, theo đối tượng/điều kiện trong lead Khoản 1",
+      "use_cases": [
+        "UC-03"
+      ],
+      "reason": "Đề xuất target trực tiếp cho Người lái xe tham gia giao thông thuộc Khoản 1, giữ ngoại lệ xe gắn máy: Mang theo chứng nhận kiểm định theo quy định khi tham gia giao thông, theo đối tượng/điều kiện trong lead Khoản 1. Có quyền/nghĩa vụ/hành vi cụ thể gắn người tham gia theo BRD §3.1, phục vụ UC-03. Giữ đầy đủ điều kiện và các phần dẫn chiếu, không kết luận hiệu lực.",
+      "reference_notes": "Giữ nguyên câu và điều kiện; không mở rộng context ngoài cha, không coi đoạn này là toàn bộ căn cứ pháp lý.",
+      "prior_reason_quality": "partial_category_rationale_with_short_quote",
+      "prior_reason_limitation": "Lý do nêu nhóm nghiệp vụ kèm đoạn trích đầu nhưng chưa giải thích đầy đủ hành vi/đối tượng và giới hạn của chính unit.",
+      "review_completed": true
+    },
+    {
+      "unit_id": "u_54a553a04ec5280af100caf2375b03897b00ff4fa367287b98284dff9bc2d10d",
+      "unit_sha256": "bf7b109da27b7bbf81f6faf69b248d398142452d2d9598cd7b269bb4d1e53c78",
+      "previous_proposal_id": "pr_48ad3e4c9fdc292d1955521be5e2988937006e7451e47b9b623a714556e8c5ac",
+      "previous_proposal_sha256": "60de73f1dd725881845002584b76858e493f205324948f112d14089f80de9af0",
+      "scope_candidate": "included",
+      "regulated_subject": "Người điều khiển phương tiện trong quyền/trách nhiệm ở Khoản cha",
+      "behavior_right_duty": "Hợp tác phát hiện/ngăn chặn/xử lý vi phạm; giữ câu có vi phạm pháp luật khác nhưng không mở rộng miền ngành luật khác",
+      "use_cases": [
+        "UC-02"
+      ],
+      "reason": "Đề xuất target trực tiếp cho Người điều khiển phương tiện trong quyền/trách nhiệm ở Khoản cha: Hợp tác phát hiện/ngăn chặn/xử lý vi phạm; giữ câu có vi phạm pháp luật khác nhưng không mở rộng miền ngành luật khác. Có quyền/nghĩa vụ/hành vi cụ thể gắn người tham gia theo BRD §3.1, phục vụ UC-02. Giữ đầy đủ điều kiện và các phần dẫn chiếu, không kết luận hiệu lực.",
+      "reference_notes": "Giữ nguyên câu và điều kiện; không mở rộng context ngoài cha, không coi đoạn này là toàn bộ căn cứ pháp lý.",
+      "prior_reason_quality": "partial_category_rationale_with_short_quote",
+      "prior_reason_limitation": "Lý do nêu nhóm nghiệp vụ kèm đoạn trích đầu nhưng chưa giải thích đầy đủ hành vi/đối tượng và giới hạn của chính unit.",
+      "review_completed": true
+    },
+    {
+      "unit_id": "u_607a55b5fc634abbdb2b59e3df240a16d64b07bf82f8306b819f6a6372d8f6b6",
+      "unit_sha256": "7f741ccea1e14d7a75db1c287e2f16498a100882f27df2bd2bff8f2b647426b6",
+      "previous_proposal_id": "pr_b6510112a61bc16efc6decee93f264fcdedc41a15b0bae9ec163da7aa8278ff1",
+      "previous_proposal_sha256": "ac99727b1931aa0fb45603a5fbefafde96b05524612c0238201a4990f04a2704",
+      "scope_candidate": "included",
+      "regulated_subject": "Người lái xe ô tô chở trẻ thuộc cả hai điều kiện tuổi/chiều cao",
+      "behavior_right_duty": "Chở trẻ dưới 10 tuổi, dưới 1,35 m: vị trí ngồi và thiết bị an toàn, giữ ngoại lệ xe chỉ có một hàng ghế",
+      "use_cases": [
+        "UC-02"
+      ],
+      "reason": "Đề xuất target trực tiếp cho Người lái xe ô tô chở trẻ thuộc cả hai điều kiện tuổi/chiều cao: Chở trẻ dưới 10 tuổi, dưới 1,35 m: vị trí ngồi và thiết bị an toàn, giữ ngoại lệ xe chỉ có một hàng ghế. Có quyền/nghĩa vụ/hành vi cụ thể gắn người tham gia theo BRD §3.1, phục vụ UC-02. Giữ đầy đủ điều kiện và các phần dẫn chiếu, không kết luận hiệu lực.",
+      "reference_notes": "Scope độc lập hiệu lực: hồ sơ cũ có căn cứ ngoại lệ A88K2/ngày ứng viên 2026-01-01; cần quyết định applicability có bằng chứng, không tự điền ngày hoặc cho serving.",
+      "prior_reason_quality": "partial_category_rationale_with_short_quote",
+      "prior_reason_limitation": "Lý do nêu nhóm nghiệp vụ kèm đoạn trích đầu nhưng chưa giải thích đầy đủ hành vi/đối tượng và giới hạn của chính unit.",
+      "review_completed": true
+    },
+    {
+      "unit_id": "u_6d979da929bd7d67e1484f008d21c7e0340cd7dded61d77f47767ffe16c50995",
+      "unit_sha256": "43da376bca78862acd7c04af2ae12ab260bb00142063efbe522f9767be0d9e81",
+      "previous_proposal_id": "pr_21746ab7d310581073a71f3211d049fbeebe80a278e2eae7e2e34291190f393b",
+      "previous_proposal_sha256": "ae7a5e00485023733fe920339937edfae1cdc687f60becabeefbc8f45ca797d9",
+      "scope_candidate": "included",
+      "regulated_subject": "Người điều khiển phương tiện được xác định trong own text và cha",
+      "behavior_right_duty": "Chỉ dùng còi để báo chuẩn bị vượt theo lead Khoản 1",
+      "use_cases": [
+        "UC-02"
+      ],
+      "reason": "Đề xuất target trực tiếp cho Người điều khiển phương tiện được xác định trong own text và cha: Chỉ dùng còi để báo chuẩn bị vượt theo lead Khoản 1. Có quyền/nghĩa vụ/hành vi cụ thể gắn người tham gia theo BRD §3.1, phục vụ UC-02. Giữ đầy đủ điều kiện và các phần dẫn chiếu, không kết luận hiệu lực.",
+      "reference_notes": "Giữ nguyên câu và điều kiện; không mở rộng context ngoài cha, không coi đoạn này là toàn bộ căn cứ pháp lý.",
+      "prior_reason_quality": "partial_category_rationale_with_short_quote",
+      "prior_reason_limitation": "Lý do nêu nhóm nghiệp vụ kèm đoạn trích đầu nhưng chưa giải thích đầy đủ hành vi/đối tượng và giới hạn của chính unit.",
+      "review_completed": true
+    },
+    {
+      "unit_id": "u_6dee38f7d9400d6fd8e19589876e6403e745e1751da473e903dc8bf65dd0770e",
+      "unit_sha256": "3a13b7cfbfb4275f173f7df23170ee7ea56e8f85bc20d9016da75f16d8d8df9b",
+      "previous_proposal_id": "pr_4f0b0d6f0284934f2e788cfbce36e0a69aa7e712445fa1cc7c55923af3fa82ed",
+      "previous_proposal_sha256": "cd135ad043731649ea5336a9a6a63507d4a2e67a56c6778b3314e60614cfa44f",
+      "scope_candidate": "included",
+      "regulated_subject": "Người điều khiển phương tiện trong quyền/trách nhiệm ở Khoản cha",
+      "behavior_right_duty": "Quyền báo tin, tố giác, phản ánh vi phạm",
+      "use_cases": [
+        "UC-02"
+      ],
+      "reason": "Đề xuất target trực tiếp cho Người điều khiển phương tiện trong quyền/trách nhiệm ở Khoản cha: Quyền báo tin, tố giác, phản ánh vi phạm. Có quyền/nghĩa vụ/hành vi cụ thể gắn người tham gia theo BRD §3.1, phục vụ UC-02. Giữ đầy đủ điều kiện và các phần dẫn chiếu, không kết luận hiệu lực.",
+      "reference_notes": "Giữ nguyên câu và điều kiện; không mở rộng context ngoài cha, không coi đoạn này là toàn bộ căn cứ pháp lý.",
+      "prior_reason_quality": "partial_category_rationale_with_short_quote",
+      "prior_reason_limitation": "Lý do nêu nhóm nghiệp vụ kèm đoạn trích đầu nhưng chưa giải thích đầy đủ hành vi/đối tượng và giới hạn của chính unit.",
+      "review_completed": true
+    },
+    {
+      "unit_id": "u_6e2f9916de8a078d6888f0ebc837f529487beb6c652fb76c0cd54b7b21b66981",
+      "unit_sha256": "4e80a14b36d6ffae5e855757f990a451c8c2d93aae00505b15867431cd2bdefa",
+      "previous_proposal_id": "pr_8fee10c1f8bdf5dc0a4d62fd0f66c41c1b7f4882bddf6f7dea4cdf4ca302fe57",
+      "previous_proposal_sha256": "87ddcaf0764f9ed578d20e419b03b7b960b40fadd6a1a1377b76c2adeb96c76f",
+      "scope_candidate": "included",
+      "regulated_subject": "Người điều khiển phương tiện trong quyền/trách nhiệm ở Khoản cha",
+      "behavior_right_duty": "Nghĩa vụ chấp hành quy định trật tự, an toàn giao thông của người điều khiển",
+      "use_cases": [
+        "UC-02"
+      ],
+      "reason": "Đề xuất target trực tiếp cho Người điều khiển phương tiện trong quyền/trách nhiệm ở Khoản cha: Nghĩa vụ chấp hành quy định trật tự, an toàn giao thông của người điều khiển. Có quyền/nghĩa vụ/hành vi cụ thể gắn người tham gia theo BRD §3.1, phục vụ UC-02. Giữ đầy đủ điều kiện và các phần dẫn chiếu, không kết luận hiệu lực.",
+      "reference_notes": "Giữ nguyên câu và điều kiện; không mở rộng context ngoài cha, không coi đoạn này là toàn bộ căn cứ pháp lý.",
+      "prior_reason_quality": "partial_category_rationale_with_short_quote",
+      "prior_reason_limitation": "Lý do nêu nhóm nghiệp vụ kèm đoạn trích đầu nhưng chưa giải thích đầy đủ hành vi/đối tượng và giới hạn của chính unit.",
+      "review_completed": true
+    },
+    {
+      "unit_id": "u_7040c6bcf7885c1f58bb33d21bfadd5d0e6abb36d176964415e43c0c97671652",
+      "unit_sha256": "90ba21d9f056f8fafe79c55e97092d80277020597c04f7fe694f236a0b74a59c",
+      "previous_proposal_id": "pr_d72c6a9cdae1b039100a40eabcb8f0943981aafec9c8612485d15444bb33b986",
+      "previous_proposal_sha256": "4251df47a9280dba2a70e945301337886d28c856bad7656ba3bee41d405d3ff6",
+      "scope_candidate": "included",
+      "regulated_subject": "Người điều khiển phương tiện được xác định trong own text và cha",
+      "behavior_right_duty": "Quan sát, giảm tốc hoặc dừng an toàn theo lead Khoản 3 khi Khu tổ chức kiểm soát giao thông",
+      "use_cases": [
+        "UC-02"
+      ],
+      "reason": "Đề xuất target trực tiếp cho Người điều khiển phương tiện được xác định trong own text và cha: Quan sát, giảm tốc hoặc dừng an toàn theo lead Khoản 3 khi Khu tổ chức kiểm soát giao thông. Có quyền/nghĩa vụ/hành vi cụ thể gắn người tham gia theo BRD §3.1, phục vụ UC-02. Giữ đầy đủ điều kiện và các phần dẫn chiếu, không kết luận hiệu lực.",
+      "reference_notes": "Giữ nguyên câu và điều kiện; không mở rộng context ngoài cha, không coi đoạn này là toàn bộ căn cứ pháp lý.",
+      "prior_reason_quality": "partial_category_rationale_with_short_quote",
+      "prior_reason_limitation": "Lý do nêu nhóm nghiệp vụ kèm đoạn trích đầu nhưng chưa giải thích đầy đủ hành vi/đối tượng và giới hạn của chính unit.",
+      "review_completed": true
+    },
+    {
+      "unit_id": "u_7849f0ddd0aa9728cb7c6b60d2790a570004e66d2f53949e385907e1102e49e5",
+      "unit_sha256": "d68cc865f7e9bff3330ac821fb119763f613e6156d2a008da46457b59cd5cdce",
+      "previous_proposal_id": "pr_6b2a9f5fea9a1b9843a897528c118c8964380ab261264ca94ef0b8baa90fb87f",
+      "previous_proposal_sha256": "4f845e124bfe69187365315fb076ca0eeeabcef20884e1d3514f7c3e4aa772af",
+      "scope_candidate": "included",
+      "regulated_subject": "Người điều khiển phương tiện được xác định trong own text và cha",
+      "behavior_right_duty": "Chọn tốc độ phù hợp cầu đường, mật độ, địa hình và thời tiết",
+      "use_cases": [
+        "UC-02"
+      ],
+      "reason": "Đề xuất target trực tiếp cho Người điều khiển phương tiện được xác định trong own text và cha: Chọn tốc độ phù hợp cầu đường, mật độ, địa hình và thời tiết. Có quyền/nghĩa vụ/hành vi cụ thể gắn người tham gia theo BRD §3.1, phục vụ UC-02. Giữ đầy đủ điều kiện và các phần dẫn chiếu, không kết luận hiệu lực.",
+      "reference_notes": "Giữ nguyên câu và điều kiện; không mở rộng context ngoài cha, không coi đoạn này là toàn bộ căn cứ pháp lý.",
+      "prior_reason_quality": "partial_category_rationale_with_short_quote",
+      "prior_reason_limitation": "Lý do nêu nhóm nghiệp vụ kèm đoạn trích đầu nhưng chưa giải thích đầy đủ hành vi/đối tượng và giới hạn của chính unit.",
+      "review_completed": true
+    },
+    {
+      "unit_id": "u_7cb011d531b974416779ef03d34b60c3dece69045523f9219d4aeb40b5ee7eb4",
+      "unit_sha256": "064c8fa21595c0e158239200729dab1a3b1807c9193ab0d25dbd0a73fa52aa67",
+      "previous_proposal_id": "pr_70cf83dc460130316e566a69b88185f1cbb72efc8f6797d440581be02f4408af",
+      "previous_proposal_sha256": "06c6655b81d6bb189dfb9ea0af485de58d6b6caa3eedccbb467d2783099ebeda",
+      "scope_candidate": "included",
+      "regulated_subject": "Người tập lái/dự sát hạch ô tô cùng giáo viên/sát hạch viên bảo trợ",
+      "behavior_right_duty": "Người tập lái/dự sát hạch ô tô thực hành đúng xe/tuyến, có người bảo trợ tay lái; giáo viên/sát hạch viên mang giấy tờ",
+      "use_cases": [
+        "UC-03"
+      ],
+      "reason": "Đề xuất target trực tiếp cho Người tập lái/dự sát hạch ô tô cùng giáo viên/sát hạch viên bảo trợ: Người tập lái/dự sát hạch ô tô thực hành đúng xe/tuyến, có người bảo trợ tay lái; giáo viên/sát hạch viên mang giấy tờ. Có quyền/nghĩa vụ/hành vi cụ thể gắn người tham gia theo BRD §3.1, phục vụ UC-03. Giữ đầy đủ điều kiện và các phần dẫn chiếu, không kết luận hiệu lực.",
+      "reference_notes": "Giữ nguyên câu và điều kiện; không mở rộng context ngoài cha, không coi đoạn này là toàn bộ căn cứ pháp lý.",
+      "prior_reason_quality": "partial_category_rationale_with_short_quote",
+      "prior_reason_limitation": "Lý do nêu nhóm nghiệp vụ kèm đoạn trích đầu nhưng chưa giải thích đầy đủ hành vi/đối tượng và giới hạn của chính unit.",
+      "review_completed": true
+    },
+    {
+      "unit_id": "u_828f53356d2f9f2d0318ecc227bb4ee30e59493902574bd96132e129c05da14f",
+      "unit_sha256": "22aeeef7178eb5ad83f55b760c159055da3e0f92f48e8548d14e354f497d75c2",
+      "previous_proposal_id": "pr_d9f139b7821dbec18d79fc2b66b21e2fcf1e54ff20c764c9c7e8821b0c2f0fbc",
+      "previous_proposal_sha256": "fd3f41572886fd9e78cb6e15ecfc6f26a3f3649d367523fd31a10f1e7179e20d",
+      "scope_candidate": "included",
+      "regulated_subject": "Người điều khiển phương tiện được xác định trong own text và cha",
+      "behavior_right_duty": "Quan sát, giảm tốc hoặc dừng an toàn theo lead Khoản 3 khi Cầu/cống hẹp, đập tràn, đường ngầm/hầm",
+      "use_cases": [
+        "UC-02"
+      ],
+      "reason": "Đề xuất target trực tiếp cho Người điều khiển phương tiện được xác định trong own text và cha: Quan sát, giảm tốc hoặc dừng an toàn theo lead Khoản 3 khi Cầu/cống hẹp, đập tràn, đường ngầm/hầm. Có quyền/nghĩa vụ/hành vi cụ thể gắn người tham gia theo BRD §3.1, phục vụ UC-02. Giữ đầy đủ điều kiện và các phần dẫn chiếu, không kết luận hiệu lực.",
+      "reference_notes": "Giữ nguyên câu và điều kiện; không mở rộng context ngoài cha, không coi đoạn này là toàn bộ căn cứ pháp lý.",
+      "prior_reason_quality": "partial_category_rationale_with_short_quote",
+      "prior_reason_limitation": "Lý do nêu nhóm nghiệp vụ kèm đoạn trích đầu nhưng chưa giải thích đầy đủ hành vi/đối tượng và giới hạn của chính unit.",
+      "review_completed": true
+    },
+    {
+      "unit_id": "u_8dd76296b41cd32f3576ee0abe43a1d68c80a5b5b717a58c4ac285f0a560031d",
+      "unit_sha256": "f5650c7d68585ac701c9fe9bc9b8f0cf4f12ccf2a6ff350ec10c8e1f8dca8ee4",
+      "previous_proposal_id": "pr_1439741bcca2224f41a4bbc899c346f6333cc9f793fcb05faf70492d84535623",
+      "previous_proposal_sha256": "b2ef3d6a91db2633466b33a3ccd9094dfc65d6a4be0343d17744b92777f8b263",
+      "scope_candidate": "included",
+      "regulated_subject": "Người điều khiển phương tiện được xác định trong own text và cha",
+      "behavior_right_duty": "Chuyển từng làn nơi được phép, có tín hiệu và quan sát khoảng cách an toàn",
+      "use_cases": [
+        "UC-02"
+      ],
+      "reason": "Đề xuất target trực tiếp cho Người điều khiển phương tiện được xác định trong own text và cha: Chuyển từng làn nơi được phép, có tín hiệu và quan sát khoảng cách an toàn. Có quyền/nghĩa vụ/hành vi cụ thể gắn người tham gia theo BRD §3.1, phục vụ UC-02. Giữ đầy đủ điều kiện và các phần dẫn chiếu, không kết luận hiệu lực.",
+      "reference_notes": "Giữ nguyên câu và điều kiện; không mở rộng context ngoài cha, không coi đoạn này là toàn bộ căn cứ pháp lý.",
+      "prior_reason_quality": "partial_category_rationale_with_short_quote",
+      "prior_reason_limitation": "Lý do nêu nhóm nghiệp vụ kèm đoạn trích đầu nhưng chưa giải thích đầy đủ hành vi/đối tượng và giới hạn của chính unit.",
+      "review_completed": true
+    },
+    {
+      "unit_id": "u_8fcda6b46c703aa5f846a70f50e7d3eaf5a70ad062631d2e37489de325cc0f8e",
+      "unit_sha256": "6e1eeacf3c16622845a5438883e45c3890bdf83f77f9d3e5d7f86b88afb6ad2d",
+      "previous_proposal_id": "pr_49fe6898d6b8c7904424a319085f73a2b7fe62614d92b7a619f36fe75d44c9d5",
+      "previous_proposal_sha256": "2f2c95daf99992c5dc75c09c6f3a0cfbe9f30ca7a481d17a0059e68755ba581d",
+      "scope_candidate": "included",
+      "regulated_subject": "Người điều khiển phương tiện trong quyền/trách nhiệm ở Khoản cha",
+      "behavior_right_duty": "Quyền giải trình, khiếu nại, khởi kiện quyết định/hành vi hành chính liên quan quyền lợi của người điều khiển",
+      "use_cases": [
+        "UC-02"
+      ],
+      "reason": "Đề xuất target trực tiếp cho Người điều khiển phương tiện trong quyền/trách nhiệm ở Khoản cha: Quyền giải trình, khiếu nại, khởi kiện quyết định/hành vi hành chính liên quan quyền lợi của người điều khiển. Có quyền/nghĩa vụ/hành vi cụ thể gắn người tham gia theo BRD §3.1, phục vụ UC-02. Giữ đầy đủ điều kiện và các phần dẫn chiếu, không kết luận hiệu lực.",
+      "reference_notes": "Giữ nguyên câu và điều kiện; không mở rộng context ngoài cha, không coi đoạn này là toàn bộ căn cứ pháp lý.",
+      "prior_reason_quality": "partial_category_rationale_with_short_quote",
+      "prior_reason_limitation": "Lý do nêu nhóm nghiệp vụ kèm đoạn trích đầu nhưng chưa giải thích đầy đủ hành vi/đối tượng và giới hạn của chính unit.",
+      "review_completed": true
+    },
+    {
+      "unit_id": "u_92a061b546a81b1061d2584d147f3cae5c2db37a7cfcebedc45da6e3a4c818b8",
+      "unit_sha256": "9af758bfd3a52fd764accba74bfa12447be9543c49e14f2c35af809e51ac8e3b",
+      "previous_proposal_id": "pr_3c542b539dbcbd0bd634d805b37f26f4c7eb796de02d86dbae5ae7114908b6c9",
+      "previous_proposal_sha256": "564998fe72a349c9bc1c8846f768b5aa49490f9cbfa5f47d8da3d875dce7d489",
+      "scope_candidate": "included",
+      "regulated_subject": "Người có GPLX chịu quy định điểm, trừ điểm/phục hồi điểm",
+      "behavior_right_duty": "GPLX có 12 điểm; trừ theo vi phạm, cập nhật và thông báo sau quyết định xử phạt có hiệu lực",
+      "use_cases": [
+        "UC-03"
+      ],
+      "reason": "Đề xuất target trực tiếp cho Người có GPLX chịu quy định điểm, trừ điểm/phục hồi điểm: GPLX có 12 điểm; trừ theo vi phạm, cập nhật và thông báo sau quyết định xử phạt có hiệu lực. Có quyền/nghĩa vụ/hành vi cụ thể gắn người tham gia theo BRD §3.1, phục vụ UC-03. Giữ đầy đủ điều kiện và các phần dẫn chiếu, không kết luận hiệu lực.",
+      "reference_notes": "Giữ nguyên câu và điều kiện; không mở rộng context ngoài cha, không coi đoạn này là toàn bộ căn cứ pháp lý.",
+      "prior_reason_quality": "partial_category_rationale_with_short_quote",
+      "prior_reason_limitation": "Lý do nêu nhóm nghiệp vụ kèm đoạn trích đầu nhưng chưa giải thích đầy đủ hành vi/đối tượng và giới hạn của chính unit.",
+      "review_completed": true
+    },
+    {
+      "unit_id": "u_92ceb2610f9e8a9d6c44feb27b9d7f7589f1f82abba485739fe4c5c883fe4bea",
+      "unit_sha256": "fc764a7737e7f753873cffd61d347aa08a1f62d21161bed77bd09fdd29ed0064",
+      "previous_proposal_id": "pr_5c2e2b266c79561e5b53edfd71f347834781284ce14e962ea585b8a18edfde99",
+      "previous_proposal_sha256": "5f9b23696d676dd2347f724c686028cab34cf95fb28c2f641b7b22734dbea75d",
+      "scope_candidate": "included",
+      "regulated_subject": "Người lái xe khách trên 29 chỗ không kể người lái hoặc xe khách giường nằm",
+      "behavior_right_duty": "Điều kiện tuổi: tuổi tối đa lái xe khách trên 29 chỗ/giường nằm: nam 57, nữ 55",
+      "use_cases": [
+        "UC-03"
+      ],
+      "reason": "Đề xuất target trực tiếp cho Người lái xe khách trên 29 chỗ không kể người lái hoặc xe khách giường nằm: Điều kiện tuổi: tuổi tối đa lái xe khách trên 29 chỗ/giường nằm: nam 57, nữ 55. Có quyền/nghĩa vụ/hành vi cụ thể gắn người tham gia theo BRD §3.1, phục vụ UC-03. Giữ đầy đủ điều kiện và các phần dẫn chiếu, không kết luận hiệu lực.",
+      "reference_notes": "Giữ nguyên câu và điều kiện; không mở rộng context ngoài cha, không coi đoạn này là toàn bộ căn cứ pháp lý.",
+      "prior_reason_quality": "partial_category_rationale_with_short_quote",
+      "prior_reason_limitation": "Lý do nêu nhóm nghiệp vụ kèm đoạn trích đầu nhưng chưa giải thích đầy đủ hành vi/đối tượng và giới hạn của chính unit.",
+      "review_completed": true
+    },
+    {
+      "unit_id": "u_984b5a8cae0537f87905cbf9c928f3e2253c5aff5e68132af0a553a2a8f262d5",
+      "unit_sha256": "1ff8cf69a8bd618c3827c5782ef9cdc64cf7dd5f29b5e849eddd84c9534bb139",
+      "previous_proposal_id": "pr_dd09ab1a0d0d6ca17a1c6a4a91c7ebba534ec2bfa67d3dc9afd8ad5fdb13ff1e",
+      "previous_proposal_sha256": "04ef305412b83d401bb4f807b67942e4e1980a018044a946504581d7d7f74ef4",
+      "scope_candidate": "included",
+      "regulated_subject": "Người có GPLX chịu quy định điểm, trừ điểm/phục hồi điểm",
+      "behavior_right_duty": "Bị trừ hết điểm thì không lái theo GPLX đó; sau ít nhất 06 tháng và kiểm tra đạt mới phục hồi 12 điểm",
+      "use_cases": [
+        "UC-03"
+      ],
+      "reason": "Đề xuất target trực tiếp cho Người có GPLX chịu quy định điểm, trừ điểm/phục hồi điểm: Bị trừ hết điểm thì không lái theo GPLX đó; sau ít nhất 06 tháng và kiểm tra đạt mới phục hồi 12 điểm. Có quyền/nghĩa vụ/hành vi cụ thể gắn người tham gia theo BRD §3.1, phục vụ UC-03. Giữ đầy đủ điều kiện và các phần dẫn chiếu, không kết luận hiệu lực.",
+      "reference_notes": "Giữ nguyên câu và điều kiện; không mở rộng context ngoài cha, không coi đoạn này là toàn bộ căn cứ pháp lý.",
+      "prior_reason_quality": "partial_category_rationale_with_short_quote",
+      "prior_reason_limitation": "Lý do nêu nhóm nghiệp vụ kèm đoạn trích đầu nhưng chưa giải thích đầy đủ hành vi/đối tượng và giới hạn của chính unit.",
+      "review_completed": true
+    },
+    {
+      "unit_id": "u_9a9ca2185d4d88d3dca124218c86336d7de02b635321cb18b28b18ee376a3bc6",
+      "unit_sha256": "c3c14502a7b9b5a46885c07df84ede681398624d1d434b32a7ae9efa649ff19f",
+      "previous_proposal_id": "pr_0c438d16e64f0984d138d666f70738db55d4afd7ca1f3dd825097290f7c2efc4",
+      "previous_proposal_sha256": "f889a9b374a4e8b3399f8b3462204bcf071c074cdd3e7246dbe947595e8291c8",
+      "scope_candidate": "included",
+      "regulated_subject": "Người điều khiển phương tiện được xác định trong own text và cha",
+      "behavior_right_duty": "Chấp hành tốc độ và khoảng cách an toàn tối thiểu với xe phía trước",
+      "use_cases": [
+        "UC-02"
+      ],
+      "reason": "Đề xuất target trực tiếp cho Người điều khiển phương tiện được xác định trong own text và cha: Chấp hành tốc độ và khoảng cách an toàn tối thiểu với xe phía trước. Có quyền/nghĩa vụ/hành vi cụ thể gắn người tham gia theo BRD §3.1, phục vụ UC-02. Giữ đầy đủ điều kiện và các phần dẫn chiếu, không kết luận hiệu lực.",
+      "reference_notes": "Giữ nguyên câu và điều kiện; không mở rộng context ngoài cha, không coi đoạn này là toàn bộ căn cứ pháp lý.",
+      "prior_reason_quality": "partial_category_rationale_with_short_quote",
+      "prior_reason_limitation": "Lý do nêu nhóm nghiệp vụ kèm đoạn trích đầu nhưng chưa giải thích đầy đủ hành vi/đối tượng và giới hạn của chính unit.",
+      "review_completed": true
+    },
+    {
+      "unit_id": "u_9bc7ef1940f822f30000d286375763380c122b8bce9ae57714c1edadf34132de",
+      "unit_sha256": "fbe83a14b9a739811149e5d2b36ded50b9ecde5bb11492d97ae503154f5c0ca0",
+      "previous_proposal_id": "pr_2c6fca627505d6758776cc7aeffd90fde4a4726c5ea80e50a97737aadfaf5401",
+      "previous_proposal_sha256": "25fe9e057b661061f8f0a8e714f48672a676c2dd50d7df8739f29625ed2dd5bd",
+      "scope_candidate": "included",
+      "regulated_subject": "Người điều khiển phương tiện được xác định trong own text và cha",
+      "behavior_right_duty": "Trong hầm bật đèn chiếu gần hoặc đèn/vật phát sáng cho xe thô sơ",
+      "use_cases": [
+        "UC-02"
+      ],
+      "reason": "Đề xuất target trực tiếp cho Người điều khiển phương tiện được xác định trong own text và cha: Trong hầm bật đèn chiếu gần hoặc đèn/vật phát sáng cho xe thô sơ. Có quyền/nghĩa vụ/hành vi cụ thể gắn người tham gia theo BRD §3.1, phục vụ UC-02. Giữ đầy đủ điều kiện và các phần dẫn chiếu, không kết luận hiệu lực.",
+      "reference_notes": "Giữ nguyên câu và điều kiện; không mở rộng context ngoài cha, không coi đoạn này là toàn bộ căn cứ pháp lý.",
+      "prior_reason_quality": "partial_category_rationale_with_short_quote",
+      "prior_reason_limitation": "Lý do nêu nhóm nghiệp vụ kèm đoạn trích đầu nhưng chưa giải thích đầy đủ hành vi/đối tượng và giới hạn của chính unit.",
+      "review_completed": true
+    },
+    {
+      "unit_id": "u_9ea6d35e31396f4d7fa0486bf588962bf4baf1f0c1c97e2ffd01d8cd73b720c1",
+      "unit_sha256": "1ff3cc3643b2607268cc69ba42d745fa9ab5cbeb49cf62d820787079410ca913",
+      "previous_proposal_id": "pr_3f7eb4241090655e269f3f3831a6116ece73dd5cb7ab00c8dc2d3d861627fecb",
+      "previous_proposal_sha256": "810fb63baf35560057248483045ec57018df3f4fbdef105dd23714bb0531f6c5",
+      "scope_candidate": "included",
+      "regulated_subject": "Người xin cấp GPLX/người lái xe được xác định bởi độ tuổi và hạng/loại xe trong Điểm",
+      "behavior_right_duty": "Điều kiện tuổi: đủ 27 tuổi cấp D/D1E/D2E/DE",
+      "use_cases": [
+        "UC-03"
+      ],
+      "reason": "Đề xuất target trực tiếp cho Người xin cấp GPLX/người lái xe được xác định bởi độ tuổi và hạng/loại xe trong Điểm: Điều kiện tuổi: đủ 27 tuổi cấp D/D1E/D2E/DE. Có quyền/nghĩa vụ/hành vi cụ thể gắn người tham gia theo BRD §3.1, phục vụ UC-03. Giữ đầy đủ điều kiện và các phần dẫn chiếu, không kết luận hiệu lực.",
+      "reference_notes": "Giữ nguyên câu và điều kiện; không mở rộng context ngoài cha, không coi đoạn này là toàn bộ căn cứ pháp lý.",
+      "prior_reason_quality": "partial_category_rationale_with_short_quote",
+      "prior_reason_limitation": "Lý do nêu nhóm nghiệp vụ kèm đoạn trích đầu nhưng chưa giải thích đầy đủ hành vi/đối tượng và giới hạn của chính unit.",
+      "review_completed": true
+    },
+    {
+      "unit_id": "u_a292d5593bc9a8f7ccacb3c2433abd790032dde87ade8e16685d68144ece6e1f",
+      "unit_sha256": "5fe5413bc34af7d14099f86341e02f9b1079bf532a82d70f7e954248de37d36d",
+      "previous_proposal_id": "pr_29f9f3f6584e5d34e4cbc95b42276a2fdcca6e3d9c3dac2a8a36c043b0da9723",
+      "previous_proposal_sha256": "ade5651ad1ff85e2f419b9baaf184633052bb670719f594df6d6636218cfa54f",
+      "scope_candidate": "included",
+      "regulated_subject": "Mọi người tham gia giao thông đường bộ, không chỉ người lái xe",
+      "behavior_right_duty": "Đi bên phải, đúng làn/phần đường và chấp hành báo hiệu khi tham gia giao thông",
+      "use_cases": [
+        "UC-02"
+      ],
+      "reason": "Đề xuất target trực tiếp cho Mọi người tham gia giao thông đường bộ, không chỉ người lái xe: Đi bên phải, đúng làn/phần đường và chấp hành báo hiệu khi tham gia giao thông. Có quyền/nghĩa vụ/hành vi cụ thể gắn người tham gia theo BRD §3.1, phục vụ UC-02. Giữ đầy đủ điều kiện và các phần dẫn chiếu, không kết luận hiệu lực.",
+      "reference_notes": "Giữ nguyên câu và điều kiện; không mở rộng context ngoài cha, không coi đoạn này là toàn bộ căn cứ pháp lý.",
+      "prior_reason_quality": "partial_category_rationale_with_short_quote",
+      "prior_reason_limitation": "Lý do nêu nhóm nghiệp vụ kèm đoạn trích đầu nhưng chưa giải thích đầy đủ hành vi/đối tượng và giới hạn của chính unit.",
+      "review_completed": true
+    },
+    {
+      "unit_id": "u_a46f2b7b4eeedc36844a43cdb024ae5c2da447d1ce34ac35a6a1a7e155beda32",
+      "unit_sha256": "6e0b43bc7890773461ba94ebe554693c74b56189a5f70ff276e3334358b61e00",
+      "previous_proposal_id": "pr_741622d9e7d6d148bb4614ced4efe464250445eec46c7b31a48b8b48d9c37128",
+      "previous_proposal_sha256": "88da1972255205f8fa2ffe611fdc34cea6d5f00bec39f1bd57afeb298d027f7e",
+      "scope_candidate": "included",
+      "regulated_subject": "Người có GPLX chịu quy định điểm, trừ điểm/phục hồi điểm",
+      "behavior_right_duty": "Phục hồi đủ điểm nếu chưa bị trừ hết và không bị trừ trong 12 tháng từ lần gần nhất",
+      "use_cases": [
+        "UC-03"
+      ],
+      "reason": "Đề xuất target trực tiếp cho Người có GPLX chịu quy định điểm, trừ điểm/phục hồi điểm: Phục hồi đủ điểm nếu chưa bị trừ hết và không bị trừ trong 12 tháng từ lần gần nhất. Có quyền/nghĩa vụ/hành vi cụ thể gắn người tham gia theo BRD §3.1, phục vụ UC-03. Giữ đầy đủ điều kiện và các phần dẫn chiếu, không kết luận hiệu lực.",
+      "reference_notes": "Giữ nguyên câu và điều kiện; không mở rộng context ngoài cha, không coi đoạn này là toàn bộ căn cứ pháp lý.",
+      "prior_reason_quality": "partial_category_rationale_with_short_quote",
+      "prior_reason_limitation": "Lý do nêu nhóm nghiệp vụ kèm đoạn trích đầu nhưng chưa giải thích đầy đủ hành vi/đối tượng và giới hạn của chính unit.",
+      "review_completed": true
+    },
+    {
+      "unit_id": "u_ae2037a9dbe2bf89461b69999c30a86fc0ea20359af6ef5643fe4ee10e364f22",
+      "unit_sha256": "c87b453b8cffd9901e2027e05412265e95255ebe393c2f53f6c6f53b02d26810",
+      "previous_proposal_id": "pr_6f692cd8076f89196be103857c74ea1cc8cf8983525f423aa3d4d00ad03f7ba6",
+      "previous_proposal_sha256": "41879c15d4b2b3cf979feaf92c0624edf9d5093b6e96e33691e275baf7b1e1ab",
+      "scope_candidate": "included",
+      "regulated_subject": "Người điều khiển phương tiện được xác định trong own text và cha",
+      "behavior_right_duty": "Quan sát, giảm tốc hoặc dừng an toàn theo lead Khoản 3 khi Nút giao đường/đường sắt, đường hẹp/quanh co/đèo/dốc",
+      "use_cases": [
+        "UC-02"
+      ],
+      "reason": "Đề xuất target trực tiếp cho Người điều khiển phương tiện được xác định trong own text và cha: Quan sát, giảm tốc hoặc dừng an toàn theo lead Khoản 3 khi Nút giao đường/đường sắt, đường hẹp/quanh co/đèo/dốc. Có quyền/nghĩa vụ/hành vi cụ thể gắn người tham gia theo BRD §3.1, phục vụ UC-02. Giữ đầy đủ điều kiện và các phần dẫn chiếu, không kết luận hiệu lực.",
+      "reference_notes": "Giữ nguyên câu và điều kiện; không mở rộng context ngoài cha, không coi đoạn này là toàn bộ căn cứ pháp lý.",
+      "prior_reason_quality": "partial_category_rationale_with_short_quote",
+      "prior_reason_limitation": "Lý do nêu nhóm nghiệp vụ kèm đoạn trích đầu nhưng chưa giải thích đầy đủ hành vi/đối tượng và giới hạn của chính unit.",
+      "review_completed": true
+    },
+    {
+      "unit_id": "u_b7932ee5a8ec8b6436af661e59d17f4d8c473cb0fea8490b5553e9ac746f5419",
+      "unit_sha256": "6982339c614acaef45f3df881d663a68c2f42561fd66bb77db3186f1d81569fd",
+      "previous_proposal_id": "pr_610968d4cb28883018db7cf140cee2e8c7c65e0a4d186b56da936b95c79003f3",
+      "previous_proposal_sha256": "9de066c9ca57ff241d545dc35b4848c3ecf7c6b3c40c8cf9f5176c2d89a1f946",
+      "scope_candidate": "included",
+      "regulated_subject": "Người xin cấp GPLX/người lái xe được xác định bởi độ tuổi và hạng/loại xe trong Điểm",
+      "behavior_right_duty": "Điều kiện tuổi: đủ 24 tuổi cấp D1/D2/C1E/CE",
+      "use_cases": [
+        "UC-03"
+      ],
+      "reason": "Đề xuất target trực tiếp cho Người xin cấp GPLX/người lái xe được xác định bởi độ tuổi và hạng/loại xe trong Điểm: Điều kiện tuổi: đủ 24 tuổi cấp D1/D2/C1E/CE. Có quyền/nghĩa vụ/hành vi cụ thể gắn người tham gia theo BRD §3.1, phục vụ UC-03. Giữ đầy đủ điều kiện và các phần dẫn chiếu, không kết luận hiệu lực.",
+      "reference_notes": "Giữ nguyên câu và điều kiện; không mở rộng context ngoài cha, không coi đoạn này là toàn bộ căn cứ pháp lý.",
+      "prior_reason_quality": "partial_category_rationale_with_short_quote",
+      "prior_reason_limitation": "Lý do nêu nhóm nghiệp vụ kèm đoạn trích đầu nhưng chưa giải thích đầy đủ hành vi/đối tượng và giới hạn của chính unit.",
+      "review_completed": true
+    },
+    {
+      "unit_id": "u_bb0fe4e559ff5c373d21ed156ef014a31dbc566a341e9e209dfc3297bdc4217d",
+      "unit_sha256": "828617f2c5528b32a47004e19e79eabeac3de7112d442aa492f62ce4009b4adc",
+      "previous_proposal_id": "pr_cd8ac25a24bda931617d11d69ad1c2c9d58b3061392d0a1c6be212c6972ae4d6",
+      "previous_proposal_sha256": "73b601368e6dac6c6f2fb6f9ae12cdb16599b424832695da6b9e01a08b4fad55",
+      "scope_candidate": "included",
+      "regulated_subject": "Người lái xe tham gia giao thông thuộc Khoản 1, giữ ngoại lệ xe gắn máy",
+      "behavior_right_duty": "Mang theo bảo hiểm bắt buộc trách nhiệm dân sự khi tham gia giao thông, theo đối tượng/điều kiện trong lead Khoản 1",
+      "use_cases": [
+        "UC-03"
+      ],
+      "reason": "Đề xuất target trực tiếp cho Người lái xe tham gia giao thông thuộc Khoản 1, giữ ngoại lệ xe gắn máy: Mang theo bảo hiểm bắt buộc trách nhiệm dân sự khi tham gia giao thông, theo đối tượng/điều kiện trong lead Khoản 1. Có quyền/nghĩa vụ/hành vi cụ thể gắn người tham gia theo BRD §3.1, phục vụ UC-03. Giữ đầy đủ điều kiện và các phần dẫn chiếu, không kết luận hiệu lực.",
+      "reference_notes": "Giữ nguyên câu và điều kiện; không mở rộng context ngoài cha, không coi đoạn này là toàn bộ căn cứ pháp lý.",
+      "prior_reason_quality": "partial_category_rationale_with_short_quote",
+      "prior_reason_limitation": "Lý do nêu nhóm nghiệp vụ kèm đoạn trích đầu nhưng chưa giải thích đầy đủ hành vi/đối tượng và giới hạn của chính unit.",
+      "review_completed": true
+    },
+    {
+      "unit_id": "u_cd5028d9bcc8882dadd032e208483bb4c251f78722f5397b3f2648272fb670c8",
+      "unit_sha256": "1bd7c25c3abdf5938c401cb5a9b6549143336f72986ac990eebc84b861aed7c8",
+      "previous_proposal_id": "pr_b76d85e2ad5761aa058c9f1d7e25197e38799749ad4eee421509352a6d8e3b3e",
+      "previous_proposal_sha256": "c3ad4d79f30ffccde64ddf1f7db5ca147f616abe2c4f57a065c1783d43edb893",
+      "scope_candidate": "included",
+      "regulated_subject": "Người điều khiển phương tiện được xác định trong own text và cha",
+      "behavior_right_duty": "Xe từ đường không ưu tiên/đường nhánh nhường xe trên đường ưu tiên/đường chính từ mọi hướng",
+      "use_cases": [
+        "UC-02"
+      ],
+      "reason": "Đề xuất target trực tiếp cho Người điều khiển phương tiện được xác định trong own text và cha: Xe từ đường không ưu tiên/đường nhánh nhường xe trên đường ưu tiên/đường chính từ mọi hướng. Có quyền/nghĩa vụ/hành vi cụ thể gắn người tham gia theo BRD §3.1, phục vụ UC-02. Giữ đầy đủ điều kiện và các phần dẫn chiếu, không kết luận hiệu lực.",
+      "reference_notes": "Giữ nguyên câu và điều kiện; không mở rộng context ngoài cha, không coi đoạn này là toàn bộ căn cứ pháp lý.",
+      "prior_reason_quality": "partial_category_rationale_with_short_quote",
+      "prior_reason_limitation": "Lý do nêu nhóm nghiệp vụ kèm đoạn trích đầu nhưng chưa giải thích đầy đủ hành vi/đối tượng và giới hạn của chính unit.",
+      "review_completed": true
+    },
+    {
+      "unit_id": "u_cdddc3efd0ac7f8a698f43863622a7bbeccf157f53e180fb11edff17ef895c7b",
+      "unit_sha256": "fe26b5acf017cc618462312b03600223d7162b3c827ee8788db7d9157e06bdcd",
+      "previous_proposal_id": "pr_e27a4f2ad0542bbb9669c6e3fc3c9cf3e48f10dc70a9f986ad1cec9fcc7f4710",
+      "previous_proposal_sha256": "4fe5d48090658a5536d056760fb6650edd833c075b64bbd53004d8a8d321d192",
+      "scope_candidate": "included",
+      "regulated_subject": "Người xin cấp GPLX/người lái xe được xác định bởi độ tuổi và hạng/loại xe trong Điểm",
+      "behavior_right_duty": "Điều kiện tuổi: đủ 21 tuổi cấp C/BE",
+      "use_cases": [
+        "UC-03"
+      ],
+      "reason": "Đề xuất target trực tiếp cho Người xin cấp GPLX/người lái xe được xác định bởi độ tuổi và hạng/loại xe trong Điểm: Điều kiện tuổi: đủ 21 tuổi cấp C/BE. Có quyền/nghĩa vụ/hành vi cụ thể gắn người tham gia theo BRD §3.1, phục vụ UC-03. Giữ đầy đủ điều kiện và các phần dẫn chiếu, không kết luận hiệu lực.",
+      "reference_notes": "Giữ nguyên câu và điều kiện; không mở rộng context ngoài cha, không coi đoạn này là toàn bộ căn cứ pháp lý.",
+      "prior_reason_quality": "partial_category_rationale_with_short_quote",
+      "prior_reason_limitation": "Lý do nêu nhóm nghiệp vụ kèm đoạn trích đầu nhưng chưa giải thích đầy đủ hành vi/đối tượng và giới hạn của chính unit.",
+      "review_completed": true
+    },
+    {
+      "unit_id": "u_ce0dd2f7aaea0b896fc218fdc6bee0f68eb234cdbbd229283fc1980ce67d7d08",
+      "unit_sha256": "f8af3db549546c7a22e5716d5261b9401fff00a3e40479031bfeda54de7572c4",
+      "previous_proposal_id": "pr_9c8336ea70fdd750a4b66e7a6e74f6c7897705a6df32ccc94064dc6f724531e1",
+      "previous_proposal_sha256": "0136f9388b5591bf7f84da7073f17b6a0ebab21710301cbbae1597e73da28874",
+      "scope_candidate": "included",
+      "regulated_subject": "Người điều khiển phương tiện được xác định trong own text và cha",
+      "behavior_right_duty": "Không dùng còi liên tục/sai âm lượng; hạn chế còi 22–05 giờ tại khu dân cư/cơ sở y tế, giữ ngoại lệ xe ưu tiên",
+      "use_cases": [
+        "UC-02"
+      ],
+      "reason": "Đề xuất target trực tiếp cho Người điều khiển phương tiện được xác định trong own text và cha: Không dùng còi liên tục/sai âm lượng; hạn chế còi 22–05 giờ tại khu dân cư/cơ sở y tế, giữ ngoại lệ xe ưu tiên. Có quyền/nghĩa vụ/hành vi cụ thể gắn người tham gia theo BRD §3.1, phục vụ UC-02. Giữ đầy đủ điều kiện và các phần dẫn chiếu, không kết luận hiệu lực.",
+      "reference_notes": "Giữ nguyên câu và điều kiện; không mở rộng context ngoài cha, không coi đoạn này là toàn bộ căn cứ pháp lý.",
+      "prior_reason_quality": "partial_category_rationale_with_short_quote",
+      "prior_reason_limitation": "Lý do nêu nhóm nghiệp vụ kèm đoạn trích đầu nhưng chưa giải thích đầy đủ hành vi/đối tượng và giới hạn của chính unit.",
+      "review_completed": true
+    },
+    {
+      "unit_id": "u_d084857f0d3fea06e5a415e896b53a5f802890c01c05ecbee4b20930097e4349",
+      "unit_sha256": "cf973d8aeab545a97de36822dc0f35b1e72612a5f2c49fe936a538a14a37b790",
+      "previous_proposal_id": "pr_c723efbc6c48d18bcfd18038403374400bebb71d64561d9ca4dc4c4d81533e01",
+      "previous_proposal_sha256": "759893222b99b6062caf97798fd84acac348330987aeb88847eaa66eb27cbc1c",
+      "scope_candidate": "included",
+      "regulated_subject": "Người điều khiển phương tiện được xác định trong own text và cha",
+      "behavior_right_duty": "Quan sát, giảm tốc hoặc dừng an toàn theo lead Khoản 3 khi Mưa/gió/sương/khói/bụi, trơn trượt hoặc vật liệu rơi vãi",
+      "use_cases": [
+        "UC-02"
+      ],
+      "reason": "Đề xuất target trực tiếp cho Người điều khiển phương tiện được xác định trong own text và cha: Quan sát, giảm tốc hoặc dừng an toàn theo lead Khoản 3 khi Mưa/gió/sương/khói/bụi, trơn trượt hoặc vật liệu rơi vãi. Có quyền/nghĩa vụ/hành vi cụ thể gắn người tham gia theo BRD §3.1, phục vụ UC-02. Giữ đầy đủ điều kiện và các phần dẫn chiếu, không kết luận hiệu lực.",
+      "reference_notes": "Giữ nguyên câu và điều kiện; không mở rộng context ngoài cha, không coi đoạn này là toàn bộ căn cứ pháp lý.",
+      "prior_reason_quality": "partial_category_rationale_with_short_quote",
+      "prior_reason_limitation": "Lý do nêu nhóm nghiệp vụ kèm đoạn trích đầu nhưng chưa giải thích đầy đủ hành vi/đối tượng và giới hạn của chính unit.",
+      "review_completed": true
+    },
+    {
+      "unit_id": "u_da8b291ab69817222547f1a1d7498077fa3ad51c4a15d84903ebee339ad2929a",
+      "unit_sha256": "4da516edf60a9d3ecb8fadc640b8ce59d99c1bad9e2510eeaf6e5d23fbc0bf01",
+      "previous_proposal_id": "pr_8d20a72f2fce45b2d15212776d1059caee4e34f0ad4a779286aeb38b2b11a57d",
+      "previous_proposal_sha256": "93e22ccc21ce980b686fee8faa350935eaad7e41a8d7c816c92df582e9a28091",
+      "scope_candidate": "included",
+      "regulated_subject": "Người điều khiển phương tiện được xác định trong own text và cha",
+      "behavior_right_duty": "Quan sát, giảm tốc hoặc dừng an toàn theo lead Khoản 3 khi Chuyển hướng hoặc hạn chế tầm nhìn",
+      "use_cases": [
+        "UC-02"
+      ],
+      "reason": "Đề xuất target trực tiếp cho Người điều khiển phương tiện được xác định trong own text và cha: Quan sát, giảm tốc hoặc dừng an toàn theo lead Khoản 3 khi Chuyển hướng hoặc hạn chế tầm nhìn. Có quyền/nghĩa vụ/hành vi cụ thể gắn người tham gia theo BRD §3.1, phục vụ UC-02. Giữ đầy đủ điều kiện và các phần dẫn chiếu, không kết luận hiệu lực.",
+      "reference_notes": "Giữ nguyên câu và điều kiện; không mở rộng context ngoài cha, không coi đoạn này là toàn bộ căn cứ pháp lý.",
+      "prior_reason_quality": "partial_category_rationale_with_short_quote",
+      "prior_reason_limitation": "Lý do nêu nhóm nghiệp vụ kèm đoạn trích đầu nhưng chưa giải thích đầy đủ hành vi/đối tượng và giới hạn của chính unit.",
+      "review_completed": true
+    },
+    {
+      "unit_id": "u_df026e0cd8f1c997e45c7d8975050a2fa4c6f36e93e66349e21b6d6a51611777",
+      "unit_sha256": "01126ca2dcff8f79dad3946e4dc2d5a39b2acb781b3d0789a00b21f621abfc72",
+      "previous_proposal_id": "pr_3d835e115567bb1aa422a38cf863ec88f4304961aaf24f9eb3faf6b0865ac9b4",
+      "previous_proposal_sha256": "6eb4b02c326cf2965df208d5dea20752bce900af2bb4ce53fb8d07c8f8a23bee",
+      "scope_candidate": "included",
+      "regulated_subject": "Người điều khiển phương tiện được xác định trong own text và cha",
+      "behavior_right_duty": "Áp dụng các quy tắc khác của Chương II trong hầm, nội dung cụ thể nằm ngoài phần trích này",
+      "use_cases": [
+        "UC-02"
+      ],
+      "reason": "Đề xuất target trực tiếp cho Người điều khiển phương tiện được xác định trong own text và cha: Áp dụng các quy tắc khác của Chương II trong hầm, nội dung cụ thể nằm ngoài phần trích này. Có quyền/nghĩa vụ/hành vi cụ thể gắn người tham gia theo BRD §3.1, phục vụ UC-02. Giữ đầy đủ điều kiện và các phần dẫn chiếu, không kết luận hiệu lực.",
+      "reference_notes": "Unit là quy tắc dẫn chiếu toàn Chương II; target giải thích việc áp dụng quy tắc khác trong hầm, không thay thế nội dung từng quy tắc được dẫn.",
+      "prior_reason_quality": "partial_category_rationale_with_short_quote",
+      "prior_reason_limitation": "Lý do nêu nhóm nghiệp vụ kèm đoạn trích đầu nhưng chưa giải thích đầy đủ hành vi/đối tượng và giới hạn của chính unit.",
+      "review_completed": true
+    },
+    {
+      "unit_id": "u_df8c8eda140fcb3bece1109c2c56966c301b22654d7545cbe19ad914f92054cd",
+      "unit_sha256": "413912af2ae3053186203c529141a7fdca4c1ab5da29d1b74eca172a54d4b4c5",
+      "previous_proposal_id": "pr_63461bd08a50f42597b1577bdee2afa7f853daeac407db66dbe5c4a87c759326",
+      "previous_proposal_sha256": "fbeeda52cc15fed8bcafeb7895e1959a0482a8fb5878a4a6fc87945c1a3184d0",
+      "scope_candidate": "included",
+      "regulated_subject": "Người điều khiển xe máy chuyên dùng tham gia giao thông",
+      "behavior_right_duty": "Mang theo chứng nhận bảo hiểm bắt buộc khi tham gia giao thông, theo đối tượng/điều kiện trong lead Khoản 2",
+      "use_cases": [
+        "UC-03"
+      ],
+      "reason": "Đề xuất target trực tiếp cho Người điều khiển xe máy chuyên dùng tham gia giao thông: Mang theo chứng nhận bảo hiểm bắt buộc khi tham gia giao thông, theo đối tượng/điều kiện trong lead Khoản 2. Có quyền/nghĩa vụ/hành vi cụ thể gắn người tham gia theo BRD §3.1, phục vụ UC-03. Giữ đầy đủ điều kiện và các phần dẫn chiếu, không kết luận hiệu lực.",
+      "reference_notes": "Giữ nguyên câu và điều kiện; không mở rộng context ngoài cha, không coi đoạn này là toàn bộ căn cứ pháp lý.",
+      "prior_reason_quality": "partial_category_rationale_with_short_quote",
+      "prior_reason_limitation": "Lý do nêu nhóm nghiệp vụ kèm đoạn trích đầu nhưng chưa giải thích đầy đủ hành vi/đối tượng và giới hạn của chính unit.",
+      "review_completed": true
+    },
+    {
+      "unit_id": "u_dfb4ab21dbc866e0ab1cbb8fa79fbd6b2d9101e8e5c12a797e834289e0051a99",
+      "unit_sha256": "3d029443271e1686193a01f8c2c57ee3ff6e9d87ff59bb36b9ebfe6bf1be7a48",
+      "previous_proposal_id": "pr_ba160fd3a7050f1b75e8c50bc7c445d76804d465a2345fd999d0bc6e5ec8006e",
+      "previous_proposal_sha256": "e9599e1d8a03da1105771dbf7f9ffda0930256db660fde5ea07fdae5a0742c2e",
+      "scope_candidate": "included",
+      "regulated_subject": "Người điều khiển xe máy chuyên dùng tham gia giao thông",
+      "behavior_right_duty": "Mang theo bằng/chứng chỉ điều khiển xe máy chuyên dùng khi tham gia giao thông, theo đối tượng/điều kiện trong lead Khoản 2",
+      "use_cases": [
+        "UC-03"
+      ],
+      "reason": "Đề xuất target trực tiếp cho Người điều khiển xe máy chuyên dùng tham gia giao thông: Mang theo bằng/chứng chỉ điều khiển xe máy chuyên dùng khi tham gia giao thông, theo đối tượng/điều kiện trong lead Khoản 2. Có quyền/nghĩa vụ/hành vi cụ thể gắn người tham gia theo BRD §3.1, phục vụ UC-03. Giữ đầy đủ điều kiện và các phần dẫn chiếu, không kết luận hiệu lực.",
+      "reference_notes": "Giữ nguyên câu và điều kiện; không mở rộng context ngoài cha, không coi đoạn này là toàn bộ căn cứ pháp lý.",
+      "prior_reason_quality": "partial_category_rationale_with_short_quote",
+      "prior_reason_limitation": "Lý do nêu nhóm nghiệp vụ kèm đoạn trích đầu nhưng chưa giải thích đầy đủ hành vi/đối tượng và giới hạn của chính unit.",
+      "review_completed": true
+    },
+    {
+      "unit_id": "u_e05deb3cfa5fec6635c1b88458ad8ac85db80530d5b48a81a86c4a2ffa1ad351",
+      "unit_sha256": "57692cf74fe7dfcb5294c373b87927d755215ebe7bef730da9a741c85b0860fa",
+      "previous_proposal_id": "pr_d7644511650058178937da311b885d6f2cb0a3f18a2168ccdc7d2f6f123a6bbf",
+      "previous_proposal_sha256": "4851b4453ee485d872cf66a033002d4986233fad318a8fdd95353433cf1c8a82",
+      "scope_candidate": "included",
+      "regulated_subject": "Người điều khiển phương tiện được xác định trong own text và cha",
+      "behavior_right_duty": "Không dừng đỗ trong hầm; khi sự cố/bất khả kháng giữ đầy đủ nghĩa vụ đưa xe vào chỗ khẩn cấp, cảnh báo và báo tin",
+      "use_cases": [
+        "UC-02"
+      ],
+      "reason": "Đề xuất target trực tiếp cho Người điều khiển phương tiện được xác định trong own text và cha: Không dừng đỗ trong hầm; khi sự cố/bất khả kháng giữ đầy đủ nghĩa vụ đưa xe vào chỗ khẩn cấp, cảnh báo và báo tin. Có quyền/nghĩa vụ/hành vi cụ thể gắn người tham gia theo BRD §3.1, phục vụ UC-02. Giữ đầy đủ điều kiện và các phần dẫn chiếu, không kết luận hiệu lực.",
+      "reference_notes": "Giữ nguyên câu và điều kiện; không mở rộng context ngoài cha, không coi đoạn này là toàn bộ căn cứ pháp lý.",
+      "prior_reason_quality": "partial_category_rationale_with_short_quote",
+      "prior_reason_limitation": "Lý do nêu nhóm nghiệp vụ kèm đoạn trích đầu nhưng chưa giải thích đầy đủ hành vi/đối tượng và giới hạn của chính unit.",
+      "review_completed": true
+    },
+    {
+      "unit_id": "u_e35a6b26a9b5eb5622b68ef402c1d0977125343941d9367a3ca69f92258fbbb7",
+      "unit_sha256": "4633e309de097a8711de938f46be087c7acb73e0481af5bfe54b3a2db417b4b1",
+      "previous_proposal_id": "pr_c6b6335a584411462fd56a5ad06595204d0b5b69aa648d2197c9f1e089ae7e44",
+      "previous_proposal_sha256": "3ae35b07a65a1703c6d87374a582c1a73241a5e7d1cc89d1599566ce9be02940",
+      "scope_candidate": "included",
+      "regulated_subject": "Người điều khiển phương tiện được xác định trong own text và cha",
+      "behavior_right_duty": "Xe thô sơ đi làn phải trong cùng, xe cơ giới/chuyên dùng đi làn trái trên chiều đường phân làn",
+      "use_cases": [
+        "UC-02"
+      ],
+      "reason": "Đề xuất target trực tiếp cho Người điều khiển phương tiện được xác định trong own text và cha: Xe thô sơ đi làn phải trong cùng, xe cơ giới/chuyên dùng đi làn trái trên chiều đường phân làn. Có quyền/nghĩa vụ/hành vi cụ thể gắn người tham gia theo BRD §3.1, phục vụ UC-02. Giữ đầy đủ điều kiện và các phần dẫn chiếu, không kết luận hiệu lực.",
+      "reference_notes": "Giữ nguyên câu và điều kiện; không mở rộng context ngoài cha, không coi đoạn này là toàn bộ căn cứ pháp lý.",
+      "prior_reason_quality": "partial_category_rationale_with_short_quote",
+      "prior_reason_limitation": "Lý do nêu nhóm nghiệp vụ kèm đoạn trích đầu nhưng chưa giải thích đầy đủ hành vi/đối tượng và giới hạn của chính unit.",
+      "review_completed": true
+    },
+    {
+      "unit_id": "u_e71267f4db143e9abdea730b3a528e95583eb1f4b8b659883542e6afdba32a50",
+      "unit_sha256": "5c280fb4389e249b13e14468e5158c390271d701bb61c3009426e8a968aafcd5",
+      "previous_proposal_id": "pr_a8afee80c5198c3bac214e0c5dcdb608decd2402de5f99a782a3804afe5f60b6",
+      "previous_proposal_sha256": "d791c40ba8625f68853b3559b386869a3b336354a554ad1e2a2abffd99171f37",
+      "scope_candidate": "included",
+      "regulated_subject": "Người lái xe gắn máy",
+      "behavior_right_duty": "Người lái xe gắn máy cần hiểu quy tắc, kỹ năng và điều kiện tuổi/sức khỏe được dẫn chiếu",
+      "use_cases": [
+        "UC-03"
+      ],
+      "reason": "Đề xuất target trực tiếp cho Người lái xe gắn máy: Người lái xe gắn máy cần hiểu quy tắc, kỹ năng và điều kiện tuổi/sức khỏe được dẫn chiếu. Có quyền/nghĩa vụ/hành vi cụ thể gắn người tham gia theo BRD §3.1, phục vụ UC-03. Giữ đầy đủ điều kiện và các phần dẫn chiếu, không kết luận hiệu lực.",
+      "reference_notes": "Giữ nguyên câu và điều kiện; không mở rộng context ngoài cha, không coi đoạn này là toàn bộ căn cứ pháp lý.",
+      "prior_reason_quality": "partial_category_rationale_with_short_quote",
+      "prior_reason_limitation": "Lý do nêu nhóm nghiệp vụ kèm đoạn trích đầu nhưng chưa giải thích đầy đủ hành vi/đối tượng và giới hạn của chính unit.",
+      "review_completed": true
+    },
+    {
+      "unit_id": "u_e74af1cd2a79011fe7b342371409edfb5bbeb317e8ff5be8c73c81a783a4292d",
+      "unit_sha256": "100d2e7a23e3bf0402e1463efe85d9365f07513cc7aafef0dc2de489c6f7a00f",
+      "previous_proposal_id": "pr_e384fabe8bfa5b10ab9d5d73dd91ffef73c9226f471c47b1d782a1da32191fb3",
+      "previous_proposal_sha256": "8dfca6b56512967309f4fb0aacc6b872915c5a1dfb3ee806248c6e08b4e99245",
+      "scope_candidate": "included",
+      "regulated_subject": "Người có GPLX quá hạn tạm giữ/hết thời hiệu và không nhận mà không có lý do chính đáng",
+      "behavior_right_duty": "Thu hồi GPLX quá hạn tạm giữ/hết thời hiệu thi hành xử phạt khi người vi phạm không đến nhận mà không có lý do chính đáng",
+      "use_cases": [
+        "UC-03"
+      ],
+      "reason": "Đề xuất target trực tiếp cho Người có GPLX quá hạn tạm giữ/hết thời hiệu và không nhận mà không có lý do chính đáng: Thu hồi GPLX quá hạn tạm giữ/hết thời hiệu thi hành xử phạt khi người vi phạm không đến nhận mà không có lý do chính đáng. Có quyền/nghĩa vụ/hành vi cụ thể gắn người tham gia theo BRD §3.1, phục vụ UC-03. Giữ đầy đủ điều kiện và các phần dẫn chiếu, không kết luận hiệu lực.",
+      "reference_notes": "Không có lý do chính đáng là điều kiện phủ định cần giữ. Unknown sau segmentation được chẩn đoán riêng, không sửa nguyên văn/nguồn hoặc lấy unknown làm lý do loại scope.",
+      "prior_reason_quality": "partial_category_rationale_with_short_quote",
+      "prior_reason_limitation": "Lý do nêu nhóm nghiệp vụ kèm đoạn trích đầu nhưng chưa giải thích đầy đủ hành vi/đối tượng và giới hạn của chính unit.",
+      "review_completed": true
+    },
+    {
+      "unit_id": "u_ec539eb0b8d683bd213ba1d1c53e7ac49663ebe37242738c24d7e9554bc5bfe0",
+      "unit_sha256": "430d6877f5f56225e80c2a40ec2cc0b5b1f4e7e1553587126167b60af8bb053a",
+      "previous_proposal_id": "pr_b72e8c94533cec43aba5cb440606af29032f6aed90e69c388b149002ef2947bd",
+      "previous_proposal_sha256": "87808eac05a636d2c57bad8ca82540ef76e35f271996f715f7695133cb909802",
+      "scope_candidate": "included",
+      "regulated_subject": "Người đủ 16 tuổi muốn điều khiển xe gắn máy",
+      "behavior_right_duty": "Điều kiện tuổi: đủ 16 tuổi lái xe gắn máy",
+      "use_cases": [
+        "UC-03"
+      ],
+      "reason": "Đề xuất target trực tiếp cho Người đủ 16 tuổi muốn điều khiển xe gắn máy: Điều kiện tuổi: đủ 16 tuổi lái xe gắn máy. Có quyền/nghĩa vụ/hành vi cụ thể gắn người tham gia theo BRD §3.1, phục vụ UC-03. Giữ đầy đủ điều kiện và các phần dẫn chiếu, không kết luận hiệu lực.",
+      "reference_notes": "Giữ nguyên câu và điều kiện; không mở rộng context ngoài cha, không coi đoạn này là toàn bộ căn cứ pháp lý.",
+      "prior_reason_quality": "partial_category_rationale_with_short_quote",
+      "prior_reason_limitation": "Lý do nêu nhóm nghiệp vụ kèm đoạn trích đầu nhưng chưa giải thích đầy đủ hành vi/đối tượng và giới hạn của chính unit.",
+      "review_completed": true
+    },
+    {
+      "unit_id": "u_f19fda0faaba7c2e7398a8de7bd304acc7b9baf969a755470ec5b98480d04ad4",
+      "unit_sha256": "b2430021a3392de73e6fb1e91e0f67f9e930f89447187559a670b0edde2ccfdd",
+      "previous_proposal_id": "pr_6a248b5e5019813cd8934a212f90ffa6660bf2d3a799bd3d817f52c2f52b5631",
+      "previous_proposal_sha256": "7d9ac2293c105c58458782a08f469449979efb63306118355055f8b755665628",
+      "scope_candidate": "included",
+      "regulated_subject": "Người điều khiển phương tiện được xác định trong own text và cha",
+      "behavior_right_duty": "Quan sát, giảm tốc hoặc dừng an toàn theo lead Khoản 3 khi Vật nuôi trên đường hoặc ven đường",
+      "use_cases": [
+        "UC-02"
+      ],
+      "reason": "Đề xuất target trực tiếp cho Người điều khiển phương tiện được xác định trong own text và cha: Quan sát, giảm tốc hoặc dừng an toàn theo lead Khoản 3 khi Vật nuôi trên đường hoặc ven đường. Có quyền/nghĩa vụ/hành vi cụ thể gắn người tham gia theo BRD §3.1, phục vụ UC-02. Giữ đầy đủ điều kiện và các phần dẫn chiếu, không kết luận hiệu lực.",
+      "reference_notes": "Giữ nguyên câu và điều kiện; không mở rộng context ngoài cha, không coi đoạn này là toàn bộ căn cứ pháp lý.",
+      "prior_reason_quality": "partial_category_rationale_with_short_quote",
+      "prior_reason_limitation": "Lý do nêu nhóm nghiệp vụ kèm đoạn trích đầu nhưng chưa giải thích đầy đủ hành vi/đối tượng và giới hạn của chính unit.",
+      "review_completed": true
+    },
+    {
+      "unit_id": "u_f5fd97229cdffc85c539a0c231229f1b8adb9460c0b591bd43d4a59f7152f67c",
+      "unit_sha256": "f50045fbc69bf327c9fcad5ebf937bf09a469f74a3131eb34c9eeeebc0ab52fd",
+      "previous_proposal_id": "pr_cd2cfcf814a896e9cfa390e475c45d3b0e29e04b198de6b2cc82d43b71bff34e",
+      "previous_proposal_sha256": "1a519b0678d83d82c2fc83c590b82c41e53d8a72d1a84645a0f9e8cf6c69f1a0",
+      "scope_candidate": "included",
+      "regulated_subject": "Người điều khiển phương tiện được xác định trong own text và cha",
+      "behavior_right_duty": "Quan sát, giảm tốc hoặc dừng an toàn theo lead Khoản 3 khi Tránh xe ngược chiều/cho xe sau vượt/tín hiệu khẩn cấp",
+      "use_cases": [
+        "UC-02"
+      ],
+      "reason": "Đề xuất target trực tiếp cho Người điều khiển phương tiện được xác định trong own text và cha: Quan sát, giảm tốc hoặc dừng an toàn theo lead Khoản 3 khi Tránh xe ngược chiều/cho xe sau vượt/tín hiệu khẩn cấp. Có quyền/nghĩa vụ/hành vi cụ thể gắn người tham gia theo BRD §3.1, phục vụ UC-02. Giữ đầy đủ điều kiện và các phần dẫn chiếu, không kết luận hiệu lực.",
+      "reference_notes": "Giữ nguyên câu và điều kiện; không mở rộng context ngoài cha, không coi đoạn này là toàn bộ căn cứ pháp lý.",
+      "prior_reason_quality": "partial_category_rationale_with_short_quote",
+      "prior_reason_limitation": "Lý do nêu nhóm nghiệp vụ kèm đoạn trích đầu nhưng chưa giải thích đầy đủ hành vi/đối tượng và giới hạn của chính unit.",
+      "review_completed": true
+    },
+    {
+      "unit_id": "u_f65fe2c95a3ac03962dc688ddcbb719d7310d2cc429a801990f2583b9f4ab98c",
+      "unit_sha256": "064a3568db5c42087656518a147ab6ba14d7c2b9bbd7d1f13c0d681295011f9c",
+      "previous_proposal_id": "pr_0a18faf22db1bf334459c4528fcd0f5efdfd3d34e7e187a161013e0a9dbc4cc6",
+      "previous_proposal_sha256": "c346baafdcf710ab6a33c70afce90b5c33116781fde355c634931d3846b50ae5",
+      "scope_candidate": "included",
+      "regulated_subject": "Người điều khiển phương tiện trong quyền/trách nhiệm ở Khoản cha",
+      "behavior_right_duty": "Chấp hành hiệu lệnh dừng phương tiện và yêu cầu kiểm tra/kiểm soát",
+      "use_cases": [
+        "UC-02"
+      ],
+      "reason": "Đề xuất target trực tiếp cho Người điều khiển phương tiện trong quyền/trách nhiệm ở Khoản cha: Chấp hành hiệu lệnh dừng phương tiện và yêu cầu kiểm tra/kiểm soát. Có quyền/nghĩa vụ/hành vi cụ thể gắn người tham gia theo BRD §3.1, phục vụ UC-02. Giữ đầy đủ điều kiện và các phần dẫn chiếu, không kết luận hiệu lực.",
+      "reference_notes": "Giữ nguyên câu và điều kiện; không mở rộng context ngoài cha, không coi đoạn này là toàn bộ căn cứ pháp lý.",
+      "prior_reason_quality": "partial_category_rationale_with_short_quote",
+      "prior_reason_limitation": "Lý do nêu nhóm nghiệp vụ kèm đoạn trích đầu nhưng chưa giải thích đầy đủ hành vi/đối tượng và giới hạn của chính unit.",
+      "review_completed": true
+    },
+    {
+      "unit_id": "u_f6f4cf2593c141649ccf53e1aebe90893f02b7fdbe275b4e81c432c7a3ac3541",
+      "unit_sha256": "7dbff7f0adb8c4c8c4c330d12424e6bd3052b354c0f5ce6788786706632efd99",
+      "previous_proposal_id": "pr_f4bc9f379c6ed0320fd4e5b82ba3737ffc6065ced65f9d1a62f1291392b3a5a1",
+      "previous_proposal_sha256": "bd87c7bef2da9e34c4c5e0e27e9bedbf87935261b6d6ee3951dda87b8bc18903",
+      "scope_candidate": "included",
+      "regulated_subject": "Người điều khiển phương tiện được xác định trong own text và cha",
+      "behavior_right_duty": "Phương tiện tốc độ thấp đi về bên phải",
+      "use_cases": [
+        "UC-02"
+      ],
+      "reason": "Đề xuất target trực tiếp cho Người điều khiển phương tiện được xác định trong own text và cha: Phương tiện tốc độ thấp đi về bên phải. Có quyền/nghĩa vụ/hành vi cụ thể gắn người tham gia theo BRD §3.1, phục vụ UC-02. Giữ đầy đủ điều kiện và các phần dẫn chiếu, không kết luận hiệu lực.",
+      "reference_notes": "Giữ nguyên câu và điều kiện; không mở rộng context ngoài cha, không coi đoạn này là toàn bộ căn cứ pháp lý.",
+      "prior_reason_quality": "partial_category_rationale_with_short_quote",
+      "prior_reason_limitation": "Lý do nêu nhóm nghiệp vụ kèm đoạn trích đầu nhưng chưa giải thích đầy đủ hành vi/đối tượng và giới hạn của chính unit.",
+      "review_completed": true
+    },
+    {
+      "unit_id": "u_f70df129aadb7b905f106ba465525f013196edc6c6057f62176cf9274cca6779",
+      "unit_sha256": "01458196cb92972948401ee591b91bd08907276daca98f0d1150990dd90b34cc",
+      "previous_proposal_id": "pr_c31ca9e2f91e5e9325ce70b681e8c987aa7a6230fde894dc78ce08575f2e549a",
+      "previous_proposal_sha256": "6162b12e67f2e3a09523b0fc8f67080e91c0cb3aae84f6f0823501f1cd3b8f15",
+      "scope_candidate": "included",
+      "regulated_subject": "Người điều khiển phương tiện được xác định trong own text và cha",
+      "behavior_right_duty": "Tắt đèn chiếu xa, bật chiếu gần khi gặp người đi bộ qua đường",
+      "use_cases": [
+        "UC-02"
+      ],
+      "reason": "Đề xuất target trực tiếp cho Người điều khiển phương tiện được xác định trong own text và cha: Tắt đèn chiếu xa, bật chiếu gần khi gặp người đi bộ qua đường. Có quyền/nghĩa vụ/hành vi cụ thể gắn người tham gia theo BRD §3.1, phục vụ UC-02. Giữ đầy đủ điều kiện và các phần dẫn chiếu, không kết luận hiệu lực.",
+      "reference_notes": "Giữ nguyên câu và điều kiện; không mở rộng context ngoài cha, không coi đoạn này là toàn bộ căn cứ pháp lý.",
+      "prior_reason_quality": "partial_category_rationale_with_short_quote",
+      "prior_reason_limitation": "Lý do nêu nhóm nghiệp vụ kèm đoạn trích đầu nhưng chưa giải thích đầy đủ hành vi/đối tượng và giới hạn của chính unit.",
+      "review_completed": true
+    },
+    {
+      "unit_id": "u_faded69fe108e519b881f84aad2043e605d26342d5adb0a83e51dbbed5314e8f",
+      "unit_sha256": "fc67154701b02e7351b98a2e965a8821ec84c2c16a102ac57fd6cc2b6e498da8",
+      "previous_proposal_id": "pr_0992e1f2b67ad5e6ab3b4b1ee5988bc9de2ccdce6e2fc8feb83c471491e0ae23",
+      "previous_proposal_sha256": "86738f0f7711a0de08fea5074333aadea33a089efd367e29b49f81a297ad7b43",
+      "scope_candidate": "included",
+      "regulated_subject": "Người có GPLX được cấp trước ngày Luật có hiệu lực",
+      "behavior_right_duty": "Tiếp tục sử dụng GPLX cấp trước ngày Luật có hiệu lực theo thời hạn trên giấy phép",
+      "use_cases": [
+        "UC-03"
+      ],
+      "reason": "Đề xuất target trực tiếp cho Người có GPLX được cấp trước ngày Luật có hiệu lực: Tiếp tục sử dụng GPLX cấp trước ngày Luật có hiệu lực theo thời hạn trên giấy phép. Có quyền/nghĩa vụ/hành vi cụ thể gắn người tham gia theo BRD §3.1, phục vụ UC-03. Giữ đầy đủ điều kiện và các phần dẫn chiếu, không kết luận hiệu lực.",
+      "reference_notes": "Giữ nguyên câu và điều kiện; không mở rộng context ngoài cha, không coi đoạn này là toàn bộ căn cứ pháp lý.",
+      "prior_reason_quality": "partial_category_rationale_with_short_quote",
+      "prior_reason_limitation": "Lý do nêu nhóm nghiệp vụ kèm đoạn trích đầu nhưng chưa giải thích đầy đủ hành vi/đối tượng và giới hạn của chính unit.",
+      "review_completed": true
+    }
+  ],
+  "field_reviews": [
+    {
+      "unit_id": "u_101e2f4e7d1f701f1c0b7b2ead28a618aadc68c39c0541849a5a0ece393cc511",
+      "unit_sha256": "af34636fc1409b2e7a9a6166cdbb640f66d7326a38adb33b9c297ac7ac4dfa95",
+      "field_name": "title",
+      "char_start": 0,
+      "char_end": 25,
+      "field_sha256": "9a23f0c6a908b0573caed4d4c7d49837aa84018898921b2db2daa70bfbff86cb",
+      "selection_proposal": "use",
+      "information_roles": [
+        "topic"
+      ],
+      "reason": "Tiêu đề xác định chủ đề điểm GPLX, phù hợp từng Khoản 1–4 đang chọn; các Khoản giao thẩm quyền khác không làm title mất vai trò này."
+    },
+    {
+      "unit_id": "u_1b293a0ff086eadaada153280b8767e4f2a80215700b4a5f981bf2d96e485c81",
+      "unit_sha256": "abf8f332ee8ba1e557b18f8b58b150e7b1172c313e766aef9f10b3d62b59ea02",
+      "field_name": "text_original",
+      "char_start": 0,
+      "char_end": 63,
+      "field_sha256": "c7d089dfc8c899040257c5d35abe3aff43d80f0f266fafd971d952d2f01dccf3",
+      "selection_proposal": "use",
+      "information_roles": [
+        "subject",
+        "legal_effect"
+      ],
+      "reason": "Lead xác định đây là quyền của người lái, không phải nghĩa vụ phải lái hoặc lệnh cấm độc lập; các Điểm quyền từ chối/giấy vận tải vẫn cần scope riêng."
+    },
+    {
+      "unit_id": "u_3fdd29d7059276581549e78f2fe31f20803297608be9e55f0d1c218034174fb9",
+      "unit_sha256": "67cc053c79b3bf5edb9e4308ab61c6c84c258b85fa331be120b0b51d3337ec88",
+      "field_name": "title",
+      "char_start": 0,
+      "char_end": 76,
+      "field_sha256": "4ab35c0a4c2c6941b0de22d501c5c58e6ae7b554a4aed0600a624774b0e77a2b",
+      "selection_proposal": "use",
+      "information_roles": [
+        "subject",
+        "topic"
+      ],
+      "reason": "Tiêu đề xác định tuổi/sức khỏe người điều khiển cho các Điểm tuổi của Khoản 1, không đưa câu phân công Bộ ở Khoản khác vào context."
+    },
+    {
+      "unit_id": "u_47687d749bbe1cd59f1b383025b8d1339addc1a54170f296cfc3c6cd2e326817",
+      "unit_sha256": "243d4c89ba57b650879a4b9736b766bd3b11aa4f31bb0fa5f11d336ec5f879c4",
+      "field_name": "title",
+      "char_start": 0,
+      "char_end": 64,
+      "field_sha256": "b4b15c1faaf6de80f251a6a1a0aa82cc7dcd7fddb5613162575795d14047cd71",
+      "selection_proposal": "use",
+      "information_roles": [
+        "subject",
+        "topic"
+      ],
+      "reason": "Tiêu đề xác định quyền/nghĩa vụ chính người lái xe hàng, không biến nghĩa vụ doanh nghiệp hoặc mọi giấy tờ kinh doanh thành scope trực tiếp."
+    },
+    {
+      "unit_id": "u_863689187f60decf4b6ab634cdca5c545e4d5867965aca7684192f559e7d2b43",
+      "unit_sha256": "fa99bb65cac1d9771941fa53b805b6124ed0db7d1c0df9b788617b9b4562cb96",
+      "field_name": "title",
+      "char_start": 0,
+      "char_end": 55,
+      "field_sha256": "43d181f9f19d6921b1f27abd6e6acb0614ffe343d1a5e96379c9c919b3ac6aa8",
+      "selection_proposal": "use",
+      "information_roles": [
+        "topic"
+      ],
+      "reason": "Tiêu đề tốc độ/khoảng cách phù hợp các quy tắc giảm tốc và tình huống của target; không lấy Khoản giao Bộ quy định chi tiết làm context."
+    },
+    {
+      "unit_id": "u_9bbbdf9acecd751a392b81d72132785fcab6437a3daafbbcb69a45cf5644c693",
+      "unit_sha256": "942858bdf74e533f19ee34d296e51f4f44f11df603724c35fdf0dec6dbd69d46",
+      "field_name": "text_original",
+      "char_start": 0,
+      "char_end": 585,
+      "field_sha256": "a6772cbda59fe9429e101b5df641831b24a2aa1718722c78df1aa3b154228fbd",
+      "selection_proposal": "needs_more_review",
+      "information_roles": [
+        "subject",
+        "condition",
+        "legal_effect"
+      ],
+      "reason": "Lead cần để giữ phạm vi biện pháp buộc chấm dứt, nhưng trộn nhiều Điều và nhóm người/chủ xe/doanh nghiệp/tổ chức. Với Điểm a chưa xác định nhóm thực chịu nghĩa vụ từ các dẫn chiếu Điều 12. Không bỏ field dài này để pass budget; giữ nguyên candidate cần rà."
+    },
+    {
+      "unit_id": "u_a272525d6601e8b9fb8112ed3cdfc8d6ebb8596fe5e3b913399ab6fcd75364de",
+      "unit_sha256": "53467fba07af962a057a60dd06f6b39f07f33d4aa3f721f4faabdafff0c63e12",
+      "field_name": "title",
+      "char_start": 0,
+      "char_end": 183,
+      "field_sha256": "bfef9e48b89f0f308d9128f2af61fedac34b8d88d65c3480f719169f37d2debf",
+      "selection_proposal": "use",
+      "information_roles": [
+        "topic",
+        "subject"
+      ],
+      "reason": "Tiêu đề định vị thủ tục/chủ xe/người điều khiển, không tự chứng minh mọi đối tượng trong lead là người tham gia trực tiếp của use case."
+    },
+    {
+      "unit_id": "u_dc46c261daeae17fab01b70ac79f3f769c1bb6c2386d94bc4d1883e8b6499e8b",
+      "unit_sha256": "7be8fb426450d690f51cf738d80b02dfc5057eb5d72711e09b4997cf24a51370",
+      "field_name": "title",
+      "char_start": 0,
+      "char_end": 96,
+      "field_sha256": "8b8f2c4aa258270f4f88d37dad0ec6a6b1f82740cd81020f5f2cfe49e1f25295",
+      "selection_proposal": "use",
+      "information_roles": [
+        "subject",
+        "topic"
+      ],
+      "reason": "Tiêu đề xác định người lái/nhân viên xe khách; không diễn giải các Điểm hành khách gây rối thành lệnh cấm độc lập hay kết luận scope mọi con."
+    },
+    {
+      "unit_id": "u_f412a893dd2b023f19ff93d1b99782ac278bd42f8f74ffa70694a27b419728a6",
+      "unit_sha256": "32f9f9642181a26e6635506467a4922f869f5ecadcc1490085919e7f70f7603b",
+      "field_name": "text_original",
+      "char_start": 0,
+      "char_end": 63,
+      "field_sha256": "89b841814afc050e1852d44f2c5a8cc2073eee94222568b76ef467daf8874247",
+      "selection_proposal": "use",
+      "information_roles": [
+        "legal_effect",
+        "condition"
+      ],
+      "reason": "Đoạn dẫn cung cấp quyền từ chối chở khách. Bỏ lead sẽ đổi nghĩa các Điểm mô tả hành vi hành khách; giữ cả lead cho từng target, scope của target vẫn xét riêng."
+    }
+  ]
+}

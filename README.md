@@ -626,3 +626,81 @@ Chưa triển khai các ưu tiên được đề xuất, tạo corpus, embedding
 kích hoạt ứng dụng. Chi tiết:
 [contract khảo sát](docs/design/data_model_v1/Stage6_Coverage_Survey_Contract.md),
 [báo cáo kiểm chứng](docs/reviews/Stage6_Coverage_Survey_Verification.md).
+
+### Mở rộng proposal scope từ coverage Stage 6
+
+`src.scope_survey` dùng cây DOCX/coverage đã có, giữ assessment v1.1 và
+schema DDD. `config/scope_curation.v1.json` ghi các unit/hash/quote, đối tượng
+và lý do agent đã đọc; runtime không phân loại bằng keyword hoặc truyền
+nhãn cha xuống con. Các unit chưa xem giữ pending, method=unassessed_inventory.
+Không coi mọi unit trong CSV là đã đánh giá ngữ nghĩa.
+
+```powershell
+# Input staging là artifact local thật; dùng môi trường/dependency Stage 6.
+# Cả build và validate replay coverage/tokenizer offline; không inference.
+# Run đích phải chưa tồn tại và không lồng trong input đã seal.
+.\.venv-stage1\Scripts\python.exe -X utf8 -B -m src.scope_survey build --coverage-manifest staging/stage6-coverage-001/manifest.json --run-dir staging/stage5-scope-survey-local-001
+.\.venv-stage1\Scripts\python.exe -X utf8 -B -m src.scope_survey validate --manifest staging/stage5-scope-survey-local-001/manifest.json
+$env:VTLS_ARTICLE22_MANIFEST = 'staging/article22-pdf-004/manifest.json'
+$env:VTLS_ARTICLE22_PREVIEW_MANIFEST = 'staging/article22-preview-001/manifest.json'
+$env:VTLS_STAGE6_MANIFEST = 'staging/article22-stage6-002/manifest.json'
+$env:VTLS_POINTS_MANIFEST = 'staging/stage6-points-002/manifest.json'
+$env:VTLS_COVERAGE_MANIFEST = 'staging/stage6-coverage-001/manifest.json'
+$env:VTLS_SCOPE_MANIFEST = 'staging/stage5-scope-survey-local-001/manifest.json'
+.\.venv-stage1\Scripts\python.exe -X utf8 -B -m unittest discover -s tests -v
+```
+
+Mở scope_report.md và scope_proposals.csv để lọc theo law/citation/scope/
+coverage/reason; JSONL giữ binding, source spans và evidence_refs. Các nút
+Document/Chương/Mục ở structural_roles.jsonl. Supporting chỉ dùng fields
+cho target cụ thể trong context_dependencies.jsonl; cha mixed pending.
+priority_cases.md trình bày các ca cũ, candidate quá dài và bất đồng với
+proposal trước. Lịch sử và toàn bộ bằng chứng trước giữ nguyên trong
+coverage_snapshot/. Token/unknown lấy từ coverage thật, chưa đo giữ null.
+
+Proposal included không phải corpus duyệt, tỷ lệ không phải Recall.
+pending ở proposal ánh xạ null trong assessment v1.1; scope_status và
+decision_ids vẫn null. Nguồn/hiệu lực là chiều độc lập, chưa có reviewer
+event mới hoặc corpus/index. Exit 0 chỉ là validator hồ sơ kỹ thuật đạt;
+exit 1 lỗi input/binding/evidence/replay. Không có lệnh approve/admit.
+Chi tiết: [contract scope survey](docs/design/data_model_v1/Stage5_Scope_Survey_Contract.md),
+[báo cáo kiểm chứng scope](docs/reviews/Stage5_Scope_Survey_Verification.md).
+
+### Pilot refinement: field context và chất lượng proposal
+
+`src.pilot_refinement` chỉ rà lại 107 target included của scope-survey-001,
+gồm 35 target dùng 42 dependency từ 9 field cha pending. Sidecar đề xuất
+use/needs_more_review/do_not_use cho field cụ thể; scope cha giữ nguyên.
+Proposal mới có đối tượng, hành vi/quyền/nghĩa vụ, use case và giới hạn theo
+từng unit; chưa kết luận thì pending. Không mở rộng phân loại corpus.
+
+```powershell
+# Giữ môi trường/dependency Stage 6; input staging thật cần có tại máy.
+# Run đích chưa tồn tại, không lồng trong input đã seal.
+.\.venv-stage1\Scripts\python.exe -X utf8 -B -m src.pilot_refinement build --scope-manifest staging/stage5-scope-survey-001/manifest.json --run-dir staging/stage5-pilot-refinement-local-001
+.\.venv-stage1\Scripts\python.exe -X utf8 -B -m src.pilot_refinement validate --manifest staging/stage5-pilot-refinement-local-001/manifest.json
+$env:VTLS_ARTICLE22_MANIFEST = 'staging/article22-pdf-004/manifest.json'
+$env:VTLS_ARTICLE22_PREVIEW_MANIFEST = 'staging/article22-preview-001/manifest.json'
+$env:VTLS_STAGE6_MANIFEST = 'staging/article22-stage6-002/manifest.json'
+$env:VTLS_POINTS_MANIFEST = 'staging/stage6-points-002/manifest.json'
+$env:VTLS_COVERAGE_MANIFEST = 'staging/stage6-coverage-001/manifest.json'
+$env:VTLS_SCOPE_MANIFEST = 'staging/stage5-scope-survey-001/manifest.json'
+$env:VTLS_REFINEMENT_MANIFEST = 'staging/stage5-pilot-refinement-local-001/manifest.json'
+.\.venv-stage1\Scripts\python.exe -X utf8 -B -m unittest discover -s tests -v
+```
+
+Build/validate replay scope/coverage và builder hiện hành, không thay config
+encoder. Token cũ lấy đúng evidence đã replay; riêng unknown chạy tokenizer
+thật lại. Không encoder inference, weights, embedding hoặc index mới.
+Exit 0 là nhất quán hồ sơ kỹ thuật, exit 1 là lỗi; không phải xác minh pháp lý.
+
+Mở pilot_refinement_report.md, pilot_candidates.csv và
+priority_cases_fulltext.md (trọn target/context của ca dài, unknown và scope
+cần xem). JSONL giữ binding, history, evidence/locators; context_field_reviews
+chỉ cho target/field cụ thể. unknown_diagnostics.md/JSON tách encoder/search/
+field/extraction offsets và ghi rõ điều kiện mapping, không đoán inverse.
+Nguyên văn/spans/chunk ID/hash và quarantine cũ giữ nguyên; field chưa phù
+hợp không bị xóa để pass budget. Nguồn/hiệu lực/reviewer còn pending/null,
+không thêm cổng duyệt hoặc tạo trạng thái ready. Chi tiết:
+[contract refinement](docs/design/data_model_v1/Stage5_Pilot_Refinement_Contract.md),
+[báo cáo kiểm chứng](docs/reviews/Stage5_Pilot_Refinement_Verification.md).
