@@ -704,3 +704,45 @@ hợp không bị xóa để pass budget. Nguồn/hiệu lực/reviewer còn pen
 không thêm cổng duyệt hoặc tạo trạng thái ready. Chi tiết:
 [contract refinement](docs/design/data_model_v1/Stage5_Pilot_Refinement_Contract.md),
 [báo cáo kiểm chứng](docs/reviews/Stage5_Pilot_Refinement_Verification.md).
+
+### Dataset thử nghiệm dùng chung BM25/Dense
+
+`src.experimental_dataset` đóng gói candidate từ refinement vào dataset
+experimental có version riêng. Chỉ chọn scope proposal included, có preview,
+context phù hợp, không lỗi dependency chặn và không có evidence riêng chỉ
+rõ ngoài snapshot. Scope pending/vượt budget/ngoại lệ hiệu lực nằm trong
+deferred; unknown không tự loại. Nguồn và các review còn pending, không
+phải corpus verified, frozen hoặc serving release.
+
+```powershell
+# Run đích mới, không ghi vào bundle/run cũ.
+.\.venv-stage1\Scripts\python.exe -X utf8 -B -m src.experimental_dataset build --manifest staging/stage5-pilot-refinement-001/manifest.json --run-dir staging/experimental-dataset-v1-local-001
+.\.venv-stage1\Scripts\python.exe -X utf8 -B -m src.experimental_dataset validate --manifest staging/experimental-dataset-v1-local-001/dataset_manifest.json
+# Sau khi copy toàn bộ bundle, Python stdlib là đủ cho kiểm portable:
+python -X utf8 -B staging/experimental-dataset-v1-local-001/runtime/validate_dataset.py validate --manifest staging/experimental-dataset-v1-local-001/dataset_manifest.json
+# Bật thêm integration dataset cùng các biến VTLS_* đã hướng dẫn ở trên:
+$env:VTLS_DATASET_MANIFEST = 'staging/experimental-dataset-v1-local-001/dataset_manifest.json'
+.\.venv-stage1\Scripts\python.exe -X utf8 -B -m unittest discover -s tests -v
+```
+
+Mở README/statistics/targets/deferred/metadata_gaps trong bundle. Chunks và
+contexts giữ nguyên ID/hash/nội dung/source proofs upstream; inputs chứa
+raw/normalized/trace cần truy vết, support chỉ phục vụ kiểm chứng lựa chọn
+và ranh giới cấu trúc. Không copy đệ quy toàn lịch sử staging.
+
+Snapshot 2025-01-01 là ngày tham chiếu dự kiến, chưa bảo đảm mọi unit áp
+dụng vào ngày đó. Dataset_version khác corpus_version (vẫn null).
+BM25/Dense dùng cùng chunk_id và text_for_search nền; PyVi encoder_text
+chỉ dành cho model/config phù hợp, không dùng mặc định cho mọi model.
+BKAI chưa là lựa chọn model cuối cùng. Qrels sau này phải ghi đúng
+dataset_version và dataset_content_sha256; đây là pilot có chọn lọc.
+
+Build chạy full upstream validator; portable validate replay bounded builder,
+source/trace/evidence/CSV/counts bằng stdlib và kiểm cached token evidence,
+không chạy lại tokenizer hoặc inference. Bundle chứa tokenizer assets/config;
+packages PyVi/CRF/Transformers và weights không đóng gói. Muốn tokenize lại
+cần requirements-stage6.txt đúng pins và ghi kết quả sang run mới.
+execution.json tách thời điểm kỹ thuật khỏi content hash ổn định.
+Exit 0 chỉ là nhất quán kỹ thuật, không xác minh pháp lý. Chi tiết:
+[contract dataset](docs/design/data_model_v1/Experimental_Dataset_v1_Contract.md),
+[báo cáo kiểm chứng](docs/reviews/Experimental_Dataset_v1_Verification.md).

@@ -1,0 +1,13 @@
+{
+  "policy_version": "experimental-pilot-packaging.v1",
+  "dataset_version": "vtls-pilot-experimental.v1",
+  "snapshot_date": "2025-01-01",
+  "experimental": true,
+  "required_scope_proposal": "included",
+  "required_chunk_capability": "preview_available",
+  "required_context_selection": "all_fields_proposed_for_use",
+  "negative_applicability": "explicit_unit_date_rule_with_bound_text_slice",
+  "unknown_token_policy": "retain_diagnostic_do_not_exclude",
+  "corpus_version": null,
+  "release_eligible": false
+}
