@@ -1,0 +1,9 @@
+# Optional tokenizer/word-segmentation preview; encoder weights are not needed.
+# Install together with the project's existing requirements/environment.
+pyvi==0.1.1
+sklearn-crfsuite==0.5.0
+python-crfsuite==0.9.12
+scikit-learn==1.9.1
+numpy==2.4.6
+scipy==1.17.1
+transformers==5.20.0

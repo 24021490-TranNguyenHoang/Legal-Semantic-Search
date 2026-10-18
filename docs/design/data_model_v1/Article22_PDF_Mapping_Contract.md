@@ -1,5 +1,11 @@
 # Mapping PDF hẹp Điều 22 Luật 36 — article22-pdf.v1
 
+**Bước tiếp được cho phép:** `Article22_Corpus_Draft_Contract.md` triển khai
+review có phạm vi và adapter draft. Quy định chờ adapter ở cuối tài liệu này
+là trạng thái lịch sử của mapping-004. Không thay bundle hoặc tự chuyển
+extraction sang verified; review một vùng được giữ ở sidecar, DQ-03 vẫn chặn
+phát hành khi file extraction pending.
+
 Snapshot **2025-01-01**. DDD/schema chính thức và assessment v1.1 được giữ.
 Yêu cầu mới của người dùng chọn đường 2 trong chính sách DOCX legacy: dùng
 PDF Công báo đã capture làm nguồn riêng cho phạm vi này. Lựa chọn thiết kế

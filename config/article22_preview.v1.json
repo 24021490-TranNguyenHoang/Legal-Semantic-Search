@@ -1,0 +1,33 @@
+{
+  "policy_version": "article22-context-preview.v1",
+  "snapshot_date": "2025-01-01",
+  "token_limit": 256,
+  "budget_status": "preview_only_not_release_policy",
+  "tokenizer_model_id": "bkai-foundation-models/vietnamese-bi-encoder",
+  "tokenizer_revision": "84f9d9ada0d1a3c37557398b9ae9fcedcdf40be0",
+  "tokenizer_assets": {
+    "bpe.codes": {
+      "sha256": "9dfe53fb8abbddd3387da99641c36e00bee757a3679aad9cf0a7cdc4b30f6ef8",
+      "size_bytes": 1135173
+    },
+    "vocab.txt": {
+      "sha256": "dffd7543c401fb6567253ae7c3313004532c33d062525250049c616544bad777",
+      "size_bytes": 895321
+    },
+    "tokenizer_config.json": {
+      "sha256": "9410af29b3eebbe69a1a0d8f3e1104e131409223cffcec9cf6ee46afd5892b88",
+      "size_bytes": 1172
+    },
+    "special_tokens_map.json": {
+      "sha256": "d05497f1da52c5e09554c0cd874037a083e1dc1b9cfd48034d1c717f1afc07a7",
+      "size_bytes": 167
+    },
+    "config.json": {
+      "sha256": "5f28d12a2d641db00b6dfaff47517b9cf6175437ceb0e18ec0763938ab4b086f",
+      "size_bytes": 777
+    }
+  },
+  "effective_from": null,
+  "effective_to": null,
+  "applicability_status": "pending_review"
+}

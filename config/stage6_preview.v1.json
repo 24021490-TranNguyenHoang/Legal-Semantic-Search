@@ -1,0 +1,72 @@
+{
+  "artifact_version": "article22-stage6-preview.v1",
+  "baseline_manifest_sha256": "f57afc1167e29cde01e0a5c372b9deaee678b4ef07c17a7c4efd601f6ea54141",
+  "chunk": {
+    "snapshot_date": "2025-01-01",
+    "chunk_policy_version": "article22-context-preview.v1",
+    "token_limit": 256,
+    "required_context_fields": [
+      "title",
+      "text_original"
+    ],
+    "target_unit_ids": [
+      "u_0ed1674dbc608dd4262f7e5abfb02e0f8dfde9fdb78c3e770e3be6e84aa4b764",
+      "u_ade6916073e27e73a3cc9380e07468ad9497cd4dddbb2f509440b7b33f1432a5",
+      "u_bbdec27c7d5428d18f016560c623a8b3c7fdb761767ead063989cc7ab914d8c2"
+    ]
+  },
+  "encoder": {
+    "preprocessing_version": "phobert-pyvi-input.v1",
+    "model_id": "bkai-foundation-models/vietnamese-bi-encoder",
+    "model_revision": "84f9d9ada0d1a3c37557398b9ae9fcedcdf40be0",
+    "whitespace": "unicode_whitespace_to_single_space",
+    "segmentation": "pyvi",
+    "normalization": "NFC",
+    "lowercase": false,
+    "add_special_tokens": true,
+    "truncation": false,
+    "model_max_tokens": 256,
+    "roles": [
+      "document",
+      "query"
+    ],
+    "segmenter_binding": {
+      "packages": {
+        "pyvi": "0.1.1",
+        "sklearn-crfsuite": "0.5.0",
+        "python-crfsuite": "0.9.12",
+        "scikit-learn": "1.9.1",
+        "numpy": "2.4.6",
+        "scipy": "1.17.1"
+      },
+      "assets": {
+        "ViTokenizer.py": "ad11cdacf45b5b2801cd97a473f70effb3a36b94779b80c776a11cedaa18e1c1",
+        "models/pyvi3.pkl": "6cdd73aee04b6a4ad7320ca85d27d931a7ef870cfdd41beb148e86bdb8aca134",
+        "models/words.txt": "517743d27e71d43343e4b8e9e89015cdc68d84ebe1d48106449e501d918ece4a"
+      }
+    },
+    "tokenizer_assets": {
+      "bpe.codes": {
+        "sha256": "9dfe53fb8abbddd3387da99641c36e00bee757a3679aad9cf0a7cdc4b30f6ef8",
+        "size_bytes": 1135173
+      },
+      "vocab.txt": {
+        "sha256": "dffd7543c401fb6567253ae7c3313004532c33d062525250049c616544bad777",
+        "size_bytes": 895321
+      },
+      "tokenizer_config.json": {
+        "sha256": "9410af29b3eebbe69a1a0d8f3e1104e131409223cffcec9cf6ee46afd5892b88",
+        "size_bytes": 1172
+      },
+      "special_tokens_map.json": {
+        "sha256": "d05497f1da52c5e09554c0cd874037a083e1dc1b9cfd48034d1c717f1afc07a7",
+        "size_bytes": 167
+      },
+      "config.json": {
+        "sha256": "5f28d12a2d641db00b6dfaff47517b9cf6175437ceb0e18ec0763938ab4b086f",
+        "size_bytes": 777
+      }
+    },
+    "sentence_bert_config_sha256": "fc1993fde0a95c24ec6c022539d41cf6e2f7c9721e5415d6fb6897472a9cd4b7"
+  }
+}

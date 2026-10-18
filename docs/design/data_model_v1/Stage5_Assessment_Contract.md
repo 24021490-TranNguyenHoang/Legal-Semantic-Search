@@ -1,5 +1,11 @@
 # Stage 5A — contract assessment và pilot (assessment-pilot.v1.1)
 
+Bước tiếp theo đã bổ sung adapter PDF hẹp trong
+`Article22_Corpus_Draft_Contract.md`; CLI `src.article22_draft` tái sử dụng
+validator unit decision v1.1, giữ ba chiều/supersedes/override. CLI pilot DOCX
+và các bundle cũ không đổi. Scoped review không làm extraction cấp file
+verified; chỉ cho draft khi có đủ quyết định thật, chưa phát hành.
+
 **Bổ sung sau pilot:** mapping PDF Điều 22 có contract riêng
 `Article22_PDF_Mapping_Contract.md`. Nó không giả làm bundle Stage 4 DOCX hoặc
 tự chuyển quyết định/binding v1.1. Ba chiều vẫn độc lập; bốn đơn vị được chọn

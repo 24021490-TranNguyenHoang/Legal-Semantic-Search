@@ -1,0 +1,140 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:vtls:chunk-preview:1.0.0",
+  "title": "Pending staging PREVIEW only; not a flattened serving corpus chunk",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "chunk_id",
+    "corpus_version",
+    "unit_id",
+    "source_id",
+    "law_id",
+    "law_title",
+    "citation_path",
+    "source_url",
+    "source_locator",
+    "text_original",
+    "text_for_search",
+    "chunk_policy_version",
+    "parent_unit_id",
+    "context_text",
+    "effective_from",
+    "effective_to",
+    "applicability_status",
+    "content_sha256",
+    "segment_no",
+    "unit_char_start",
+    "unit_char_end",
+    "snapshot_date",
+    "preview_only",
+    "release_eligible",
+    "release_blockers"
+  ],
+  "properties": {
+    "chunk_id": {
+      "type": "string",
+      "pattern": "^c_[0-9a-f]{64}$"
+    },
+    "corpus_version": {
+      "type": "null"
+    },
+    "unit_id": {
+      "type": "string",
+      "pattern": "^u_[0-9a-f]{64}$"
+    },
+    "source_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "law_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "law_title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "citation_path": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_url": {
+      "type": "string",
+      "format": "uri",
+      "pattern": "^https?://"
+    },
+    "source_locator": {
+      "type": "string",
+      "minLength": 1
+    },
+    "text_original": {
+      "type": "string",
+      "minLength": 1
+    },
+    "text_for_search": {
+      "type": "string",
+      "minLength": 1
+    },
+    "chunk_policy_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "parent_unit_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "context_text": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "effective_from": {
+      "type": "null"
+    },
+    "effective_to": {
+      "type": "null"
+    },
+    "applicability_status": {
+      "const": "pending_review"
+    },
+    "content_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "segment_no": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "unit_char_start": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "unit_char_end": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "snapshot_date": {
+      "const": "2025-01-01"
+    },
+    "preview_only": {
+      "const": true
+    },
+    "release_eligible": {
+      "const": false
+    },
+    "release_blockers": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    }
+  },
+  "description": "Separate preview contract: DDD chunk.v1 identities with pending applicability, null corpus/effective dates, no release. Official schema remains unchanged."
+}

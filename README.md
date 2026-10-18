@@ -411,3 +411,129 @@ phục đúng bundle/checksum từ nơi lưu của dự án. Một capture mới
 manifest mới, phải tái tạo comparison/binding bằng quy trình tương ứng, không
 sửa hash input cũ cho qua validator. Kết quả thực tế và giới hạn nằm trong
 [báo cáo mapping](docs/reviews/Article22_PDF_Mapping_Verification.md).
+
+### Review có phạm vi và nhập corpus draft Điều 22
+
+Adapter mới giữ extraction cấp file `pending`; kết quả review các spans nằm
+ở sidecar riêng. DDD/schema không đổi. Chỉ tạo **draft** khi có đủ quyết định
+nguồn và ba chiều cho bốn unit; chưa chunk/index/serving. Xem
+[contract draft](docs/design/data_model_v1/Article22_Corpus_Draft_Contract.md).
+
+```powershell
+# Run phải chưa tồn tại. Dùng đúng mapping PDF có sẵn, không chạy lại extraction.
+.\.venv-stage1\Scripts\python.exe -X utf8 -B -m src.article22_draft review-pack --mapping-manifest staging/article22-pdf-004/manifest.json --run-dir staging/article22-review-local-001
+# Mở review.md, decision_template.md và page21.png trong run vừa tạo.
+# Tạo bản làm việc bên ngoài bundle; sau đó tự điền quyết định thực tế vào JSON.
+New-Item -ItemType Directory -Path staging/article22-review-submission-local-001
+Copy-Item -LiteralPath staging/article22-review-local-001/decision_template.json -Destination staging/article22-review-submission-local-001/decisions.json
+# Reviewer_ref/thời gian/status đều còn null. Không đổi submitted trước khi có quyết định thật.
+.\.venv-stage1\Scripts\python.exe -X utf8 -B -m src.article22_draft admit --review-manifest staging/article22-review-local-001/manifest.json --decisions staging/article22-review-submission-local-001/decisions.json --corpus-version traffic-20250101-v0.1.0 --run-dir staging/article22-draft-local-001
+.\.venv-stage1\Scripts\python.exe -X utf8 -B -m src.article22_draft validate --manifest staging/article22-draft-local-001/manifest.json
+```
+
+**Mã trả về:** 0 = draft/hồ sơ review tạo thành công; 2 = hồ sơ hợp lệ kỹ
+thuật nhưng thiếu quyết định/đang deferred/needs_fix; 1 = lỗi input, binding,
+hash, bằng chứng hoặc ràng buộc. Mẫu chưa điền trả 2, ghi đúng 13 ô thiếu,
+không tạo content.sqlite/corpus.jsonl. `pending_work.md` và
+`validation_report.json` chỉ rõ unit/chiều còn thiếu. Một chiều có thể hoàn
+thành trước; quyết định được lưu mà không làm những chiều khác tự hoàn thành.
+
+`decision_template.md` là phiếu dễ đọc/ghi nháp; CLI đọc JSON tương ứng.
+Trong JSON điền reviewer_ref/reviewed_at thật, source_review, các ô cần kết
+luận, note và evidence_refs đã thực tế xem. Suggested evidence/proposals là
+gợi ý, không phải đã rà hoặc phê duyệt. Chỉ đổi record_status=submitted khi
+gửi quyết định thực tế. Có thể bác proposal với lý do/bằng chứng. Applicability
+khác pending_review cần effective dates phù hợp, historical_basis,
+history_note và content_note. Không cần tự tính decision ID/hash.
+
+Khi có quyết định bổ sung/thay thế, truyền
+`--history staging/<run-trước>/decision_history.json`, điền supersedes đúng
+event ID của cùng unit/chiều, và dùng run/corpus-version mới phù hợp. Source
+review có chuỗi supersedes riêng. Bản submission và history cũ không bị sửa.
+
+Khi đủ điều kiện, content.sqlite dùng schema DDD nguyên bản, corpus.status=draft,
+6 unit/8 spans/4 assessment thật, extraction vẫn pending và serving false.
+Document/Chương II chỉ là cha cấu trúc; không có assessment/target/context cho
+hai nút này. Nếu chưa đủ quyết định, không tạo corpus giả chỉ để thử đường nạp.
+
+```powershell
+# Bật 6 test integration mapping đã có; toàn bộ test mới dùng fixture cô lập.
+$env:VTLS_ARTICLE22_MANIFEST = 'staging/article22-pdf-004/manifest.json'
+.\.venv-stage1\Scripts\python.exe -X utf8 -B -m unittest discover -s tests -v
+```
+
+Fixture adapter được ghi nhãn synthetic, dùng FIXTURE/ law ID, fixture- corpus
+version và cờ --allow-fixture riêng; không dùng fixture làm bằng chứng luật thật.
+Không có lệnh freeze/activate. Chi tiết lệnh/kết quả thực tế và phần còn thiếu:
+[báo cáo draft](docs/reviews/Article22_Corpus_Draft_Verification.md).
+
+### Agent review và ba chunk/context PREVIEW
+
+Được phép tạo preview từ mapping pending, độc lập với corpus đã duyệt.
+Không chạy admit hoặc ghi quyết định thay reviewer. Xem
+[contract preview](docs/design/data_model_v1/Article22_Chunk_Preview_Contract.md).
+
+```powershell
+.\.venv-stage1\Scripts\python.exe -X utf8 -B -m src.article22_preview build --mapping-manifest staging/article22-pdf-004/manifest.json --agent-review staging/article22-preview-inspection-001/observations.json --run-dir staging/article22-preview-local-001
+.\.venv-stage1\Scripts\python.exe -X utf8 -B -m src.article22_preview validate --manifest staging/article22-preview-local-001/manifest.json
+$env:VTLS_ARTICLE22_MANIFEST = 'staging/article22-pdf-004/manifest.json'
+$env:VTLS_ARTICLE22_PREVIEW_MANIFEST = 'staging/article22-preview-local-001/manifest.json'
+.\.venv-stage1\Scripts\python.exe -X utf8 -B -m unittest discover -s tests -v
+```
+
+Các input staging là artifact local, không có trong Git. observations.json
+là hồ sơ ảnh agent thực tế đã xem, có source/image hash và thời gian agent;
+không được bịa khi thiếu file. Muốn tái chạy chọn run chưa tồn tại. Tokenizer
+mặc định dùng cache model/revision được khóa trong config/article22_preview.v1.json;
+có thể truyền `--tokenizer-dir staging/article22-preview-001/tokenizer_assets`
+để dùng lại đúng 5 asset đã sao trong run cũ. Không tải/load weights.
+
+Mở chunks_preview.md để xem nguyên văn ba Khoản, context và text_for_search;
+agent_review.md cho kết quả đối chiếu ngắn. JSONL/proofs và token_report.json
+giữ IDs/spans/counts đầy đủ. Preview dùng null corpus/effective dates và
+pending_review, không phải dữ liệu serving, không có unit_assessment verified.
+Vượt ngưỡng token trả 2 và giữ nguyên văn, không tự truncation. Chi tiết:
+[báo cáo preview](docs/reviews/Article22_Chunk_Preview_Verification.md).
+
+### Stage 6: builder dùng chung và đầu vào encoder
+
+Code hiện hành cho preview: `src/chunk_preview.py` tạo Khoản không có con
+và context Điều cha; `src/encoder_input.py` chuẩn bị cùng một cấu hình cho
+document/query và đếm đúng đầu vào encoder. `src.article22_stage6` là CLI
+ví dụ hẹp gọi hai thành phần này. CLI/worker v1 được giữ nguyên để kiểm
+lại code hashes của preview-001 đã seal.
+
+Model/revision không đổi. Model card yêu cầu word segmentation; môi trường
+Stage 6 dùng PyVi CPU CRF, không nạp encoder/PyTorch hoặc chạy inference
+vector. Cài thêm dependency đã pin trong venv dự án:
+
+```powershell
+.\.venv-stage1\Scripts\python.exe -m pip install -r requirements-stage6.txt
+# Input staging là artifact local, không có trong Git. Run đích phải chưa tồn tại.
+# Dùng lại tài liệu model đã capture; không ghi ngày truy cập mới thay capture cũ.
+.\.venv-stage1\Scripts\python.exe -X utf8 -B -m src.article22_stage6 build --baseline-manifest staging/article22-preview-001/manifest.json --model-evidence staging/article22-stage6-002/model_evidence --run-dir staging/article22-stage6-local-001
+.\.venv-stage1\Scripts\python.exe -X utf8 -B -m src.article22_stage6 validate --manifest staging/article22-stage6-local-001/manifest.json
+$env:VTLS_ARTICLE22_MANIFEST = 'staging/article22-pdf-004/manifest.json'
+$env:VTLS_ARTICLE22_PREVIEW_MANIFEST = 'staging/article22-preview-001/manifest.json'
+$env:VTLS_STAGE6_MANIFEST = 'staging/article22-stage6-local-001/manifest.json'
+.\.venv-stage1\Scripts\python.exe -X utf8 -B -m unittest discover -s tests -v
+```
+
+`chunks_preview.md` hiển thị nguyên văn, context, text_for_search và bản sao
+encoder_text; `unknown_diagnostics.md` hiển thị các unknown trước/sau cùng
+component và offsets được chứng minh. JSONL giữ đầy đủ token IDs/pieces,
+source spans và hashes. Config khóa PyVi packages/CRF assets, tokenizer
+assets/revision và policy `phobert-pyvi-input.v1`; thiếu/sai pin trả lỗi,
+không tự đổi model hoặc fallback sang đếm từ.
+
+Nguyên văn/context/search/spans không bị tiền xử lý ghi lại. Token budget
+áp dụng lên encoder_text có special tokens, không truncate. Vượt budget hoặc
+cấu trúc chưa hỗ trợ tạo issue/quarantine; CLI trả 2, không trả chunk như đã
+sẵn sàng. Lỗi binding/input/runtime trả 1; preview thành công trả 0.
+
+Đây vẫn là PREVIEW pending với origin=agent_review, chưa nối vào ứng dụng.
+Khi tích hợp retrieval phải dùng cùng hàm/config cho query và document;
+không được chỉ preprocessing một phía. Không tạo corpus/assessment verified,
+embedding/BM25/Qdrant index. Chi tiết:
+[contract Stage 6](docs/design/data_model_v1/Stage6_Encoder_Chunk_Preview_Contract.md),
+[báo cáo kiểm tra Stage 6](docs/reviews/Stage6_Encoder_Chunk_Preview_Verification.md).
