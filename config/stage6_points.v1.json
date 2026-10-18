@@ -1,0 +1,27 @@
+{
+  "artifact_version": "stage6-points-preview.v1",
+  "snapshot_date": "2025-01-01",
+  "tree_manifest_sha256": "ca30426fea4f39e797ffa0e922010cd507cf131b86df76c9174d2a0518e1c938",
+  "article22_manifest_sha256": "c70a3dec68ce17c9b0b75921d9b4248324b6e8143643c68667f526f15df4838d",
+  "encoder_config_sha256": "dcbc1185040eb99105a2cda209fe72bdca3241048efd46d9d610772d57c15827",
+  "law_id": "168/2024/NĐ-CP",
+  "parent_unit_id": "u_c45877c28ba1e64f6bccbefd5e5aa763bbf486ac419426b7891b01f0ad962613",
+  "chunk": {
+    "chunk_policy_version": "leaf-clause-point-context.v1",
+    "snapshot_date": "2025-01-01",
+    "token_limit": 256,
+    "required_context_fields": [
+      "title"
+    ],
+    "required_clause_context_fields": [
+      "text_original"
+    ],
+    "target_unit_ids": [
+      "u_9f51a08b78ae3df2a637f8890523b2e0e2a97f542c32b5e8a1062a320955de9e",
+      "u_e8485e33689979daa0ef767ca770cda5a97c13ae7951303611bd9d650238efa0",
+      "u_78e473c4ac93b5102105ebeb5099fdea4dac39d236a566b43c4ecf02a7d2dfc4",
+      "u_c40a4899cc753e524cdd9596d8d899b17c0b314d0c15080c478d55b97920b9ac",
+      "u_ff3b9522ae006a349e4c7935cc942c18fdf3a711dfa7f8a4ede6b41c129d531d"
+    ]
+  }
+}

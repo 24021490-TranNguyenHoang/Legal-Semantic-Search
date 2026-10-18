@@ -537,3 +537,46 @@ không được chỉ preprocessing một phía. Không tạo corpus/assessment 
 embedding/BM25/Qdrant index. Chi tiết:
 [contract Stage 6](docs/design/data_model_v1/Stage6_Encoder_Chunk_Preview_Contract.md),
 [báo cáo kiểm tra Stage 6](docs/reviews/Stage6_Encoder_Chunk_Preview_Verification.md).
+
+### Stage 6 tiếp: Điểm thuộc Khoản và context hai cấp
+
+Builder mới `src/chunk_preview_v2.py`, policy `leaf-clause-point-context.v1`,
+hỗ trợ Khoản lá và Điểm lá. Context của Điểm là title Điều, đoạn dẫn riêng
+Điều nếu có, rồi đoạn dẫn riêng Khoản cha; không sao nội dung anh em hoặc
+tự mở rộng dẫn chiếu. Có issue nguồn/parser ảnh hưởng thì chặn, không đoán.
+Builder/CLI v1 giữ nguyên byte để kiểm lại các run đã seal.
+
+```powershell
+# Dùng dependency Stage 6 đã cài; encoder/model/config không đổi.
+# Run đích phải chưa tồn tại; các input staging phải được khôi phục từ artifact thật.
+.\.venv-stage1\Scripts\python.exe -X utf8 -B -m src.points_preview build --tree-manifest staging/stage4-docx-005/manifest.json --article22-manifest staging/article22-stage6-002/manifest.json --run-dir staging/stage6-points-local-001
+.\.venv-stage1\Scripts\python.exe -X utf8 -B -m src.points_preview validate --manifest staging/stage6-points-local-001/manifest.json
+$env:VTLS_ARTICLE22_MANIFEST = 'staging/article22-pdf-004/manifest.json'
+$env:VTLS_ARTICLE22_PREVIEW_MANIFEST = 'staging/article22-preview-001/manifest.json'
+$env:VTLS_STAGE6_MANIFEST = 'staging/article22-stage6-002/manifest.json'
+$env:VTLS_POINTS_MANIFEST = 'staging/stage6-points-local-001/manifest.json'
+.\.venv-stage1\Scripts\python.exe -X utf8 -B -m unittest discover -s tests -v
+```
+
+`config/stage6_points.v1.json` khóa đúng năm Điểm a–đ của Điều 6 Khoản 1
+NĐ168, các input manifests và encoder config cũ. Raw được sao nguyên byte
+vào run mới cùng Source Inventory để upstream validator replay độc lập;
+không sửa raw hoặc tạo hồ sơ document/source đã xác minh.
+
+Mở chunks_preview.md để xem cả nguyên văn, context theo Điều/Khoản, nguồn,
+text_for_search/encoder_text, token/unknown và trạng thái từng candidate.
+chunks.preview.jsonl/contexts.preview.jsonl chỉ chứa candidate dưới budget;
+quarantined.preview.jsonl giữ đủ candidate/context vượt ngưỡng, encoder input
+giữ theo chunk_id. issues.jsonl/dependency_checks.jsonl ghi phần bị chặn.
+
+Trong article22_regression/ có ba chunk Điều 22 dựng bằng policy mới;
+article22_comparison.json chỉ rõ ID đổi vì chunk_policy_version, nội dung/
+context/search/hash không đổi. Snapshot/run/ID cũ được giữ nguyên.
+
+Exit 0 = mọi candidate preview đạt; 2 = có issue/quarantine; 1 = lỗi input,
+binding/runtime. Không truncate hoặc bỏ context để pass. Dữ liệu vẫn pending,
+origin=agent_review; source_url của DOCX là candidate inventory, không phải
+provenance đã xác minh. Không tạo reviewer event, corpus verified, embedding
+hoặc index. Chi tiết:
+[contract Điểm](docs/design/data_model_v1/Stage6_Point_Context_Contract.md),
+[báo cáo Điểm](docs/reviews/Stage6_Point_Context_Verification.md).

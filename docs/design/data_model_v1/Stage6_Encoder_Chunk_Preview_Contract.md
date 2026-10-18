@@ -1,5 +1,11 @@
 # Stage 6 — encoder input và builder chunk/context PREVIEW
 
+**Bổ sung hiện hành:** hỗ trợ Điểm lá ở
+`Stage6_Point_Context_Contract.md`, policy `leaf-clause-point-context.v1`.
+Phần mô tả chưa hỗ trợ Điểm dưới đây là phạm vi builder v1 đã seal; code và
+policy đó không đổi. Builder v2 tái sử dụng identity/source proof và encoder
+v1, không sửa lịch sử hoặc gán verified.
+
 Snapshot **2025-01-01**. Contract bổ sung cho preview Điều 22, không sửa DDD,
 schema phục vụ, parser, corpus hoặc review decisions. Kết quả nguồn kế thừa
 origin=agent_review của preview-001; các trạng thái và blocker giữ nguyên.
