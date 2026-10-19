@@ -4,6 +4,7 @@ from importlib import metadata
 import json
 from pathlib import Path
 import platform
+import re
 import shutil
 import sys
 import time
@@ -17,6 +18,9 @@ from src.experimental_dataset import load, rows, write_json, write_rows, unique
 DEFAULT_CONFIG = BASE_DIR / "config/bm25_baseline.v1.json"
 VERSION = "vtls-bm25s-lucene.v1"
 CONTROL = {"index_manifest.json", "index_manifest.sha256"}
+# The existing v1 index predates this loader-only compatibility change.
+# Do not reseal its manifest or accept arbitrary historical implementations.
+ORIGINAL_V1_LOADER_SHA256 = "93f20a8a66e2d5f61b20b85b6f0199fc598b51bb3422d50598ca0a9700ee893c"
 
 
 def check_config(config):
@@ -101,6 +105,33 @@ def code_binding():
     return {n: digest((BASE_DIR / n).read_bytes()) for n in ["src/bm25_baseline.py", "src/bm25_tokenizer.py"]}
 
 
+def compatible_code_binding(stored):
+    current = code_binding()
+    if stored == current:
+        return "exact"
+    original = {**current, "src/bm25_baseline.py": ORIGINAL_V1_LOADER_SHA256}
+    if stored == original:
+        return "original_v1_loader_handoff_compatibility"
+    raise ValueError("Index source binding mismatch: unknown loader or changed tokenizer")
+
+
+def runtime_compatibility(created, running):
+    """Conservative same-minor CPython compatibility; patch version is provenance."""
+    for key in ["dependencies", "unicode", "engine_source_sha256"]:
+        if created.get(key) != running.get(key):
+            raise ValueError("Index runtime incompatibility: " + key)
+    versions = [re.fullmatch(r"(\d+)\.(\d+)\.(\d+)", str(r.get("python", ""))) for r in [created, running]]
+    if (not all(versions) or versions[0].groups()[:2] != versions[1].groups()[:2]
+            or versions[1].group(1) != "3" or platform.python_implementation() != "CPython"):
+        raise ValueError("Index runtime incompatibility: require same CPython major/minor; patch may differ")
+    notes = []
+    if created["python"] != running["python"]:
+        notes.append("PYTHON_PATCH_DIFFERS: built=" + created["python"] + "; running=" + running["python"])
+    return {"policy": "bm25-runtime-compatibility.v1", "created": created, "running": running,
+            "running_platform": platform.platform(), "running_implementation": platform.python_implementation(),
+            "warnings": notes, "compatible": True}
+
+
 def dataset_files_check(path):
     from src.retrieval_dataset import check_inventory
     path = Path(path); m = load(path)
@@ -149,15 +180,20 @@ def load_index(index_manifest):
     started = time.perf_counter()
     path = Path(index_manifest).resolve(); root = path.parent; m = load(path)
     if (m["index_version"] != VERSION or m["snapshot_date"] != SNAPSHOT_DATE or m["experimental"] is not True
-            or m["release_eligible"] is not False or m["code_sha256"] != code_binding()
+            or m["release_eligible"] is not False
             or m["index_content_sha256"] != digest(canonical(m["files"]).encode())
             or digest(path.read_bytes()) != (root / "index_manifest.sha256").read_text().strip()):
         raise ValueError("Index manifest/version/status/hash mismatch")
+    source_compatibility = compatible_code_binding(m["code_sha256"])
     check_inventory(root, m["files"], CONTROL)
     cfg = load(root / "config.json"); check_config(cfg)
     if (m["config_sha256"] != digest((root / "config.json").read_bytes())
-            or m["runtime"] != runtime() or load(root / "runtime.json") != runtime()):
-        raise ValueError("Index configuration/dependency binding mismatch")
+            or load(root / "runtime.json") != m["runtime"]):
+        raise ValueError("Index configuration/build runtime record binding mismatch")
+    compatibility = runtime_compatibility(m["runtime"], runtime())
+    compatibility["source_binding"] = source_compatibility
+    for note in compatibility["warnings"]:
+        print("WARNING: " + note, file=sys.stderr)
     dataset_path = resolve_ref(root, m["dataset_manifest_ref"])
     dataset = dataset_files_check(dataset_path)
     if (m["dataset_manifest_sha256"] != digest(dataset_path.read_bytes()) or m["dataset_version"] != dataset["dataset_version"]
@@ -183,7 +219,7 @@ def load_index(index_manifest):
         raise ValueError("Saved vocabulary/CSC index inconsistent")
     return {"retriever": retriever, "mapping": mapping, "chunks": by, "metadata": meta,
             "contexts": rows(data / "contexts.jsonl"), "manifest": m, "config": cfg,
-            "load_ms": (time.perf_counter() - started) * 1000}
+            "load_ms": (time.perf_counter() - started) * 1000, "runtime_compatibility": compatibility}
 
 
 def search_loaded(loaded, query, top_k):
@@ -199,7 +235,8 @@ def search_loaded(loaded, query, top_k):
                         "contexts": [x for x in loaded["contexts"] if x["chunk_id"] == cid]})
     return {"query": query, "query_tokens": tokens, "top_k_requested": top_k, "top_k_limit": min(top_k, len(loaded["mapping"])),
             "results": results, "timings_ms": {"load": loaded["load_ms"], "search": (time.perf_counter() - started) * 1000},
-            "experimental": True, "release_eligible": False, "index_version": VERSION, "dataset_version": m["dataset_version"]}
+            "experimental": True, "release_eligible": False, "index_version": VERSION, "dataset_version": m["dataset_version"],
+            "runtime_compatibility": loaded["runtime_compatibility"]}
 
 
 def validate_index(manifest):
@@ -214,7 +251,8 @@ def validate_index(manifest):
         if actual.shape != wanted.shape or not (np.allclose(actual, wanted, rtol=1e-6, atol=1e-7) if key == "data" else np.array_equal(actual, wanted)):
             raise ValueError("Persisted index differs from rebuild: " + key)
     return {"technical_valid": True, "documents": m["documents"], "save_load_replay": True,
-            "score_tolerance": {"rtol": 1e-6, "atol": 1e-7}, "release_eligible": False}
+            "score_tolerance": {"rtol": 1e-6, "atol": 1e-7}, "release_eligible": False,
+            "runtime_compatibility": loaded["runtime_compatibility"]}
 
 
 def main(argv=None):

@@ -16,6 +16,39 @@ from src.source_contracts import canonical, digest
 from src.retrieval_dataset import latest_scope
 
 
+class RuntimeCompatibilityTests(unittest.TestCase):
+    def setUp(self):
+        self.created = {"dependencies": {"bm25s": "0.3.13", "numpy": "2.4.6", "scipy": "1.17.1"},
+                        "python": "3.11.9", "unicode": "14.0.0", "engine_source_sha256": {"scoring.py": "FIXTURE/hash"}}
+
+    def test_patch_difference_allowed_and_environment_recorded(self):
+        running = {**self.created, "python": "3.11.10"}
+        result = bm.runtime_compatibility(self.created, running)
+        self.assertTrue(result["compatible"]); self.assertTrue(result["warnings"])
+        self.assertEqual(result["created"]["python"], "3.11.9")
+        self.assertEqual(result["running"]["python"], "3.11.10")
+        self.assertEqual(bm.runtime_compatibility(self.created, self.created)["warnings"], [])
+
+    def test_minor_unicode_dependency_source_or_invalid_python_rejected(self):
+        for key, value in [("python", "3.12.1"), ("python", "3.11"), ("python", "invalid"),
+                           ("unicode", "15.0.0"), ("dependencies", {"bm25s": "wrong"}),
+                           ("engine_source_sha256", {"scoring.py": "wrong"})]:
+            with self.subTest(key=key, value=value), self.assertRaisesRegex(ValueError, "runtime incompatibility"):
+                bm.runtime_compatibility(self.created, {**self.created, key: value})
+        with patch("platform.python_implementation", return_value="PyPy"), self.assertRaises(ValueError):
+            bm.runtime_compatibility(self.created, self.created)
+
+    def test_original_loader_only_and_exact_tokenizer_required(self):
+        current = bm.code_binding()
+        self.assertEqual(bm.compatible_code_binding(current), "exact")
+        original = {**current, "src/bm25_baseline.py": bm.ORIGINAL_V1_LOADER_SHA256}
+        self.assertEqual(bm.compatible_code_binding(original), "original_v1_loader_handoff_compatibility")
+        for bad in [{**original, "src/bm25_baseline.py": "unknown"},
+                    {**original, "src/bm25_tokenizer.py": "wrong"}, {}]:
+            with self.assertRaisesRegex(ValueError, "source binding mismatch"):
+                bm.compatible_code_binding(bad)
+
+
 def fixture(cid, text):
     return {"chunk_id": "FIXTURE/" + cid, "unit_id": "FIXTURE/u" + cid,
             "text_for_search": text, "content_sha256": digest(text.encode())}
@@ -119,6 +152,19 @@ class SelectionTests(unittest.TestCase):
 
 @unittest.skipUnless(os.getenv("VTLS_BM25_MANIFEST"), "Set VTLS_BM25_MANIFEST for actual saved-index tests")
 class ActualIndexTests(unittest.TestCase):
+    def test_patch_warning_is_reported_without_mutating_artifact(self):
+        from contextlib import redirect_stderr
+        import io
+        path = Path(os.environ["VTLS_BM25_MANIFEST"])
+        before = path.read_bytes(); running = bm.runtime(); running["python"] = "3.11.10"
+        output = io.StringIO()
+        # Policy simulation only: the real interpreter has not changed.
+        with patch.object(bm, "runtime", return_value=running), redirect_stderr(output):
+            loaded = bm.load_index(path)
+        self.assertIn("PYTHON_PATCH_DIFFERS", output.getvalue())
+        self.assertEqual(loaded["runtime_compatibility"]["running"]["python"], "3.11.10")
+        self.assertEqual(path.read_bytes(), before)
+
     def test_actual_validate_search_without_rebuild(self):
         path = Path(os.environ["VTLS_BM25_MANIFEST"])
         self.assertTrue(bm.validate_index(path)["technical_valid"])

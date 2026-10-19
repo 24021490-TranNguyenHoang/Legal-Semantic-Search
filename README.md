@@ -802,3 +802,13 @@ Chunks/context/source proof giữ ID/hash gốc; base proof trong kết quả l�
 
 Chi tiết: [contract BM25](docs/design/data_model_v1/BM25_Experimental_Baseline_Contract.md),
 [báo cáo BM25](docs/reviews/BM25_Experimental_Baseline_Verification.md).
+
+### Bàn giao BM25 experimental
+
+Xem [trạng thái hiện tại](docs/progress/STATUS.md) và
+[Quickstart từ clone, ZIP đến validate/search](docs/handoff/BM25_Quickstart.md).
+Index đã chứa dataset để chạy độc lập với staging lịch sử. ZIP hiện có
+được tái sử dụng, kèm SHA-256; **chưa có URL chia sẻ**. Thay đổi bàn giao
+chưa commit được cung cấp bằng patch riêng, không nằm trong ZIP dữ liệu.
+Loader giữ các kiểm tra toàn vẹn/thuật toán; khác CPython patch trong cùng
+minor được cảnh báo, khác Unicode/dependency/engine source vẫn bị từ chối.

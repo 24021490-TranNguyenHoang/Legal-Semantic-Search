@@ -94,3 +94,24 @@ tokenize/score/rank/ghép kết quả; không tính Python startup. Sáu smoke q
 chạy process mới riêng biệt, cố định trước xem ranking. Lưu tokens/Top-5
 nguyên văn/context MD/JSON. Chưa có qrels hoặc Recall/MRR/nDCG; sáu mẫu
 không chứng minh p95 hệ thống hoặc chất lượng truy hồi đã nghiệm thu.
+
+## Bàn giao loader v1 hiện có
+
+Policy `bm25-runtime-compatibility.v1` giữ nguyên artifact/thuật toán, cho
+phép khác bản vá trong cùng CPython major/minor của môi trường build
+(artifact này: 3.11). Unicode database, dependency pins và hash source
+BM25S phải khớp; khác minor, implementation, Unicode, dependency hoặc
+source engine bị từ chối. Chưa kiểm thực trên Python patch/máy/OS khác;
+đây là policy tương thích thận trọng, không phải chứng nhận mọi môi trường.
+Python patch khác phát cảnh báo stderr và trả cả môi trường tạo/chạy trong
+runtime_compatibility của kết quả search/validate; không sửa runtime.json cũ.
+
+Manifest/runtime.json phải tiếp tục khớp nhau nguyên vẹn. Chỉ chấp nhận
+code binding hiện hành hoặc đúng loader gốc v1 có SHA-256
+`93f20a8a66e2d5f61b20b85b6f0199fc598b51bb3422d50598ca0a9700ee893c`
+cùng tokenizer còn khớp chính xác. Ngoại lệ loader được đặt tên trong
+kết quả; loader không rõ nguồn/tokenizer thay đổi vẫn bị từ chối. Đây là
+compatibility hẹp cho sửa loader, không bỏ code binding hoặc reseal index.
+Hash/config/mapping/vocab/spans/dataset và kiểm matrix vẫn giữ nguyên.
+
+Hướng dẫn bàn giao: [BM25 Quickstart](../../handoff/BM25_Quickstart.md).
