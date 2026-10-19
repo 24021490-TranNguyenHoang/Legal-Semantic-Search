@@ -746,3 +746,59 @@ execution.json tách thời điểm kỹ thuật khỏi content hash ổn địn
 Exit 0 chỉ là nhất quán kỹ thuật, không xác minh pháp lý. Chi tiết:
 [contract dataset](docs/design/data_model_v1/Experimental_Dataset_v1_Contract.md),
 [báo cáo kiểm chứng](docs/reviews/Experimental_Dataset_v1_Verification.md).
+
+### BM25 baseline trên tập kỹ thuật mở rộng
+
+Đường mới dùng BM25S 0.3.13, công thức Lucene, k1=1.2/b=0.75;
+prototype cũ và ứng dụng chưa chuyển artifact. Tập mới lấy toàn coverage,
+không giới hạn 94 chunk hoặc scope included. 3.077 chunk hiện có gồm cả
+scope proposal excluded/pending; 46 ứng viên deferred được báo riêng.
+Nguồn, technical review và applicability vẫn pending; đây là dữ liệu
+thử nghiệm, chưa được dùng để tuyên bố áp dụng pháp luật hoặc phát hành.
+
+```powershell
+# Từ thư mục gốc dự án, Python 3.11. Không cần torch/model weights cho BM25.
+.\.venv-stage1\Scripts\python.exe -m pip install -r requirements-bm25.txt
+.\.venv-stage1\Scripts\python.exe -m pip check
+
+# Tìm ngay trên index đã build; JSON in ra console, không ghi dataset/index.
+.\.venv-stage1\Scripts\python.exe -X utf8 -B -m src.bm25_baseline search --index-manifest staging/bm25-baseline-v1-001/index_manifest.json --query 'Nhường đường tại vòng xuyến' --top-k 5
+.\.venv-stage1\Scripts\python.exe -X utf8 -B -m src.bm25_baseline search --index-manifest staging/bm25-baseline-v1-001/index_manifest.json --query 'Xe máy ra vào vị trí dừng đỗ không báo hiệu' --top-k 5
+.\.venv-stage1\Scripts\python.exe -X utf8 -B -m src.bm25_baseline search --index-manifest staging/bm25-baseline-v1-001/index_manifest.json --query 'zzzxxyybm25oov' --top-k 5
+
+# Kiểm index/dataset, replay source/builder và đối chiếu saved matrix.
+.\.venv-stage1\Scripts\python.exe -X utf8 -B -m src.bm25_baseline validate --index-manifest staging/bm25-baseline-v1-001/index_manifest.json
+
+# Tái tạo: tên run đích phải mới, chưa tồn tại. Build dataset cần môi trường
+# Stage 6 đã hướng dẫn ở trên (requirements-stage6.txt) để validate upstream;
+# BM25 search không import tokenizer encoder/PyVi/PyTorch.
+.\.venv-stage1\Scripts\python.exe -X utf8 -B -m src.retrieval_dataset build --coverage-manifest staging/stage6-coverage-001/manifest.json --scope-manifest staging/stage5-scope-survey-001/manifest.json --refinement-manifest staging/stage5-pilot-refinement-001/manifest.json --config config/retrieval_dataset.v1.json --run-dir staging/retrieval-dataset-local-001
+.\.venv-stage1\Scripts\python.exe -X utf8 -B -m src.retrieval_dataset validate --manifest staging/retrieval-dataset-local-001/dataset_manifest.json
+.\.venv-stage1\Scripts\python.exe -X utf8 -B -m src.bm25_baseline build --dataset-manifest staging/retrieval-dataset-local-001/dataset_manifest.json --config config/bm25_baseline.v1.json --run-dir staging/bm25-baseline-local-001
+.\.venv-stage1\Scripts\python.exe -X utf8 -B -m src.bm25_baseline search --index-manifest staging/bm25-baseline-local-001/index_manifest.json --query 'Điều kiện tuổi lái xe' --top-k 5
+
+# Kiểm thử nhanh; thêm biến môi trường để chạy integration trên index thật.
+$env:VTLS_BM25_MANIFEST = 'staging/bm25-baseline-v1-001/index_manifest.json'
+.\.venv-stage1\Scripts\python.exe -X utf8 -B -m unittest tests.test_bm25_baseline -v
+# Full hồi quy: giữ các VTLS_* ở phần trước, gồm VTLS_DATASET_MANIFEST
+# trỏ dataset pilot 94 chunk cũ; VTLS_BM25_MANIFEST trỏ index mở rộng mới.
+.\.venv-stage1\Scripts\python.exe -X utf8 -B -m unittest discover -s tests -v
+```
+
+Tokenizer lexical chung query/document: NFC/lowercase/whitespace trên bản
+sao, giữ dấu/đ/số/phủ định; không BPE/PyVi/stopword/stemming/boost. Budget
+encoder 256 chỉ giữ tập document dùng chung, không áp lên query BM25.
+Search load saved index, không rebuild; chỉ trả điểm dương, tie theo chunk_id,
+OOV trả rỗng; query rỗng/chỉ dấu câu hoặc top_k không dương báo lỗi khác 0.
+Score là điểm xếp hạng, không phải xác suất/độ tin cậy pháp lý.
+
+Mở `staging/bm25-search-examples-001/search_examples.md` và các JSON cùng
+thư mục để xem đủ tokens/Top-5/text/context/proofs. Timing tách load/search
+trên sáu process; không phải đánh giá p95 hoặc Recall/MRR/nDCG. Query cô đọng
+về còi/điểm GPLX có failure case đã ghi, chưa tinh chỉnh để làm đẹp demo.
+Chunks/context/source proof giữ ID/hash gốc; base proof trong kết quả là
+`dataset/` tính từ index. Các unit còn lại và vùng nguồn chưa parse không
+được suy là đã kiểm/verified. Không Dense/Hybrid/reranker/UI/Qdrant.
+
+Chi tiết: [contract BM25](docs/design/data_model_v1/BM25_Experimental_Baseline_Contract.md),
+[báo cáo BM25](docs/reviews/BM25_Experimental_Baseline_Verification.md).

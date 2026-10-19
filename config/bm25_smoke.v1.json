@@ -1,0 +1,12 @@
+{
+  "suite_version": "bm25-smoke.v1",
+  "purpose": "Functional smoke tests, not qrels or ranking evaluation",
+  "queries": [
+    {"id": "roundabout", "query": "Nhường đường tại vòng xuyến"},
+    {"id": "motorcycle_stop", "query": "Xe máy ra vào vị trí dừng đỗ không báo hiệu"},
+    {"id": "night_horn", "query": "Dùng còi ban đêm"},
+    {"id": "driving_age", "query": "Điều kiện tuổi lái xe"},
+    {"id": "licence_points", "query": "Điểm giấy phép lái xe"},
+    {"id": "oov", "query": "zzzxxyybm25oov"}
+  ]
+}

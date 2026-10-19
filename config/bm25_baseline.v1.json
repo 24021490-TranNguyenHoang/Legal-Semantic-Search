@@ -1,0 +1,22 @@
+{
+  "index_version": "vtls-bm25s-lucene.v1",
+  "engine": "bm25s",
+  "engine_version": "0.3.13",
+  "method": "lucene",
+  "idf_method": "lucene",
+  "k1": 1.2,
+  "b": 0.75,
+  "dtype": "float32",
+  "backend": "numpy",
+  "csc_backend": "numpy",
+  "tokenizer_version": "vi-unicode-lexical.v1",
+  "normalization": "NFC",
+  "lowercase": true,
+  "whitespace": "unicode_to_single_space",
+  "stemming": false,
+  "stopword_removal": false,
+  "token_pattern": "\\d+(?:[.,]\\d+)+|[^\\W_]+(?:[/-][^\\W_]+)*|%",
+  "tie_break": "score_desc_chunk_id_asc",
+  "experimental": true,
+  "release_eligible": false
+}

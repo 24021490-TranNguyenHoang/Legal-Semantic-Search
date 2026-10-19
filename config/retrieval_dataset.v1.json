@@ -1,0 +1,32 @@
+{
+  "policy_version": "coverage-retrieval-dataset.v1",
+  "dataset_version": "vtls-coverage-experimental.v1",
+  "snapshot_date": "2025-01-01",
+  "scope_filter": "none_preserve_all_proposals",
+  "encoder_budget": 256,
+  "experimental": true,
+  "release_eligible": false,
+  "visual_exception_finding_id": "find_45eca769404a319d6c475d398449a3bfbd8172b5feda3c682619e138ce6a27e2",
+  "visual_exception_image": "ND168_A53_A54.png",
+  "visual_exception_image_sha256": "974249930bd6a0a76bae1c82704731c531f895b0bbb97204b55ecdc6f10c1c25",
+  "visual_exceptions": [
+    {
+      "unit_id": "u_70df955a7e673ee199deb430acaa97ba6fb69d7b6892b8aeb1af7013ba305d3d",
+      "unit_sha256": "89d94901be849d7603d85261423cb22f945fdd168bc05e10e7aefea16dd5a7b5",
+      "effective_from_candidate": "2026-01-01",
+      "reason": "Điều 53 khoản 2, trang PDF 110 đã capture: điểm m khoản 3 Điều 6 bắt đầu 01-01-2026; chỉ lọc tập thử nghiệm, không tạo assessment reviewer."
+    },
+    {
+      "unit_id": "u_5c43231b7470a31206d438137b36105f825fcfdb471d6cec76ee281f317a72f7",
+      "unit_sha256": "883b3de2b847797e70e0ebe09ae3ba01b3238d2c9c60200ff1e0d372f3023894",
+      "effective_from_candidate": "2026-01-01",
+      "reason": "Điều 53 khoản 2, trang PDF 110 đã capture: điểm e khoản 4 Điều 26 bắt đầu 01-01-2026; chỉ lọc tập thử nghiệm, không tạo assessment reviewer."
+    },
+    {
+      "unit_id": "u_8b0e281d2fe42a3f7a3eb9f9ee268980f064e7fb401bcf212f51cf3f8c099207",
+      "unit_sha256": "1e6756beabceac8b972b3414be958cab1f69a502fb5653266858354a18f0e94e",
+      "effective_from_candidate": "2026-01-01",
+      "reason": "Điều 53 khoản 2, trang PDF 110 đã capture: điểm b khoản 1 Điều 27 bắt đầu 01-01-2026; chỉ lọc tập thử nghiệm, không tạo assessment reviewer."
+    }
+  ]
+}

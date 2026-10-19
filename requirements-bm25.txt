@@ -1,0 +1,4 @@
+# Experimental sparse retrieval only; Python 3.11 used for verification.
+bm25s==0.3.13
+numpy==2.4.6
+scipy==1.17.1
