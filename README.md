@@ -812,3 +812,9 @@ Index đã chứa dataset để chạy độc lập với staging lịch sử. Z
 chưa commit được cung cấp bằng patch riêng, không nằm trong ZIP dữ liệu.
 Loader giữ các kiểm tra toàn vẹn/thuật toán; khác CPython patch trong cùng
 minor được cảnh báo, khác Unicode/dependency/engine source vẫn bị từ chối.
+
+### Development evaluation BM25
+
+[Evaluation Quickstart](docs/handoff/BM25_Evaluation_Quickstart.md) hướng dẫn
+batch, phiếu annotation và metrics có điều kiện. Xem [STATUS](docs/progress/STATUS.md)
+cho trạng thái nhãn. Proposal agent chưa phải qrels được chấp nhận.

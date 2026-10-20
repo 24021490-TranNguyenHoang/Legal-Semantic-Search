@@ -1,17 +1,17 @@
 # Trạng thái dataset và BM25 experimental
 
-**READY_LOCAL_HANDOFF / SHARE_PENDING** — đã thử chạy độc lập trong clone
+**DEV_RUN_COMPLETE / LABELS_PENDING / SHARE_PENDING** — đã thử chạy độc lập trong clone
 cục bộ và venv sạch trên máy hiện tại; **chưa có URL chia sẻ** artifact.
 Snapshot sản phẩm **2025-01-01**; đây chưa phải corpus phát hành.
 
 ## Source và binding
 
-Commit base đã kiểm: `eec0d0142f55e7eecaf6b936504c8c26f82fb2af`
-(`feat(bm25): add experimental BM25S baseline implementation`). Git sạch
-ở đầu lượt này. Hiện **có thay đổi chưa commit**: loader, tests, contract,
-README và hai tài liệu bàn giao. Patch kèm SHA-256 ngoài Git giữ đúng
-working tree bàn giao; không tự stage/commit/push. Người nhận cần đúng
-commit và patch, không giả định remote đã có sửa đổi.
+Commit đầu lượt evaluation: `1e39d16e0ec776a400474182f907aa2d8d4cba04`;
+Git sạch khi bắt đầu. Bộ bàn giao trước đã nằm trong commit này. Hiện có
+thay đổi evaluation chưa commit; không stage/commit/push. Mốc `eec0d014...`
+và patch trong Quickstart là đường tái tạo bàn giao lịch sử; không áp lại
+patch lên source đã có thay đổi đó. Chưa kiểm remote chứa commit mới.
+Loader/tokenizer/ranking/dataset/index giữ nguyên trong lượt này.
 
 | Artifact | Giá trị đọc từ manifest thực tế |
 |---|---|
@@ -68,15 +68,35 @@ toàn bộ tại snapshot; bốn ngoại lệ có evidence được giữ ngoài
 `experimental=true`, `release_eligible=false`, `corpus_version=null`.
 
 Query còi ban đêm, phân biệt xe máy/chuyên dùng và điểm GPLX còn failure
-case. Chưa có qrels hoặc Recall/MRR/nDCG. Số test/validate kỹ thuật không
+case. Chưa có qrels được chấp nhận hoặc Recall/MRR/nDCG thực. Số test/validate kỹ thuật không
 chứng minh chất lượng pháp lý, nội dung hoặc retrieval đã nghiệm thu.
 Chưa kiểm trên máy khác, OS khác, Python patch khác hoặc remote clone
 qua mạng; thư mục sạch trên máy này không phải kiểm chứng liên máy.
 
 ## Bước tiếp theo
 
-Trưởng nhóm chia sẻ ZIP/SHA và source commit + patch thực tế; người nhận
-làm theo Quickstart. Sau đó **evaluation** có nhãn gắn đúng dataset hash,
-và **Dense trên cùng dataset/chunk_id/text_for_search** để so sánh công bằng.
-Hai việc này mới là kế hoạch, chưa chạy embedding/Qdrant hoặc sửa ứng dụng
-trong lượt bàn giao; không đổi dữ liệu hay ranking để làm đẹp ví dụ.
+Long/nhóm cần rà query, positive ngoài pool, nhãn và độ đầy đủ theo
+[Evaluation Quickstart](../handoff/BM25_Evaluation_Quickstart.md).
+Sau đó mới có metrics development; không coi chúng là test cuối.
+Dense trên cùng dataset/chunk_id/text_for_search vẫn là bước tiếp theo,
+chưa triển khai. Chưa có URL chia sẻ artifact.
+
+## Development evaluation thực chạy
+
+- `staging/bm25-evaluation-dev-001/`: 30 câu/10 intent, mỗi intent có
+  direct/paraphrase/scenario; năm câu smoke nghiệp vụ giữ nguyên. Query
+  cố định trước ranking, không sửa sau xem kết quả.
+- Load index một lần, 30 query thành công, 300 kết quả Top-10, không lỗi.
+  Load 1.658,79 ms; tổng search 100,82 ms, tuần tự, không warmup.
+  Đây là số đo một lần trên máy hiện tại, không phải SLA.
+- Phiếu chứa nguyên văn/context/source spans cho 300 cặp. Submission ở
+  `staging/bm25-evaluation-review-001/` có 5 proposal agent, 295 pending,
+  **0 accepted**. Không ghi người dùng đã duyệt.
+- `staging/bm25-evaluation-labels-001/`: validate/score đạt về cấu trúc;
+  0/30 query đủ điều kiện, 30 loại vì rà độ đầy đủ nhãn pending.
+  **metrics=null**, chưa có corpus coverage gap được kết luận; cả 30 câu
+  cần khảo sát độ đầy đủ. Không nhầm thiếu hit Top-10 với thiếu trong corpus.
+- 18 fixture evaluation + 14 regression BM25 đạt (32 tổng). Kiểm công thức
+  tính tay, graded/multiple positive, cutoff, nhãn thiếu, lỗi, trùng, binding.
+  Không dùng số test làm kết luận pháp lý hoặc chất lượng retrieval.
+- Báo cáo: [BM25 Development Evaluation Verification](../reviews/BM25_Development_Evaluation_Verification.md).

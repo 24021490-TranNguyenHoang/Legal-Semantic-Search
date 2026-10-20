@@ -1,0 +1,30 @@
+{"query_id": "dev-roundabout-1", "intent_group_id": "roundabout", "query": "Nhường đường tại vòng xuyến", "query_type": "direct", "topic": "traffic_rules", "split": "dev"}
+{"query_id": "dev-roundabout-2", "intent_group_id": "roundabout", "query": "Vào bùng binh phải nhường xe bên nào?", "query_type": "paraphrase", "topic": "traffic_rules", "split": "dev"}
+{"query_id": "dev-roundabout-3", "intent_group_id": "roundabout", "query": "Tôi đến giao lộ có vòng xuyến và có xe đi tới từ bên trái, ai được đi trước?", "query_type": "scenario", "topic": "traffic_rules", "split": "dev"}
+{"query_id": "dev-motorcycle_stop-1", "intent_group_id": "motorcycle_stop", "query": "Xe máy ra vào vị trí dừng đỗ không báo hiệu", "query_type": "direct", "topic": "violations", "split": "dev"}
+{"query_id": "dev-motorcycle_stop-2", "intent_group_id": "motorcycle_stop", "query": "Đi xe máy rời chỗ đỗ có phải báo hiệu không?", "query_type": "paraphrase", "topic": "violations", "split": "dev"}
+{"query_id": "dev-motorcycle_stop-3", "intent_group_id": "motorcycle_stop", "query": "Tôi chạy xe máy ra khỏi chỗ đỗ mà không bật tín hiệu, có bị xử phạt không?", "query_type": "scenario", "topic": "violations", "split": "dev"}
+{"query_id": "dev-night_horn-1", "intent_group_id": "night_horn", "query": "Dùng còi ban đêm", "query_type": "direct", "topic": "traffic_rules", "split": "dev"}
+{"query_id": "dev-night_horn-2", "intent_group_id": "night_horn", "query": "Ban đêm có được bấm còi trong khu dân cư không?", "query_type": "paraphrase", "topic": "traffic_rules", "split": "dev"}
+{"query_id": "dev-night_horn-3", "intent_group_id": "night_horn", "query": "Tôi lái ô tô qua khu đông dân lúc 23 giờ và bấm còi, quy định nào áp dụng?", "query_type": "scenario", "topic": "traffic_rules", "split": "dev"}
+{"query_id": "dev-driving_age-1", "intent_group_id": "driving_age", "query": "Điều kiện tuổi lái xe", "query_type": "direct", "topic": "licence", "split": "dev"}
+{"query_id": "dev-driving_age-2", "intent_group_id": "driving_age", "query": "Bao nhiêu tuổi mới được điều khiển xe mô tô?", "query_type": "paraphrase", "topic": "licence", "split": "dev"}
+{"query_id": "dev-driving_age-3", "intent_group_id": "driving_age", "query": "Con tôi 15 tuổi muốn lái xe mô tô 110 phân khối đi học, cần đối chiếu quy định nào?", "query_type": "scenario", "topic": "licence", "split": "dev"}
+{"query_id": "dev-licence_points-1", "intent_group_id": "licence_points", "query": "Điểm giấy phép lái xe", "query_type": "direct", "topic": "licence_points", "split": "dev"}
+{"query_id": "dev-licence_points-2", "intent_group_id": "licence_points", "query": "Bằng lái bị trừ hết điểm thì xử lý thế nào?", "query_type": "paraphrase", "topic": "licence_points", "split": "dev"}
+{"query_id": "dev-licence_points-3", "intent_group_id": "licence_points", "query": "Giấy phép lái xe của tôi không còn điểm, tôi có được tiếp tục lái xe không?", "query_type": "scenario", "topic": "licence_points", "split": "dev"}
+{"query_id": "dev-alcohol-1", "intent_group_id": "alcohol", "query": "Xử phạt người điều khiển xe mô tô có nồng độ cồn", "query_type": "direct", "topic": "violations", "split": "dev"}
+{"query_id": "dev-alcohol-2", "intent_group_id": "alcohol", "query": "Đi xe máy sau khi uống bia bị phạt theo quy định nào?", "query_type": "paraphrase", "topic": "violations", "split": "dev"}
+{"query_id": "dev-alcohol-3", "intent_group_id": "alcohol", "query": "Tôi đi xe máy và bị đo nồng độ cồn 0,3 mg/l khí thở, cần tìm căn cứ xử phạt.", "query_type": "scenario", "topic": "violations", "split": "dev"}
+{"query_id": "dev-red_light-1", "intent_group_id": "red_light", "query": "Ô tô không chấp hành hiệu lệnh đèn tín hiệu giao thông", "query_type": "direct", "topic": "violations", "split": "dev"}
+{"query_id": "dev-red_light-2", "intent_group_id": "red_light", "query": "Lái xe ô tô vượt đèn đỏ bị xử lý ra sao?", "query_type": "paraphrase", "topic": "violations", "split": "dev"}
+{"query_id": "dev-red_light-3", "intent_group_id": "red_light", "query": "Đèn đã chuyển đỏ nhưng tôi vẫn lái ô tô qua giao lộ, điều khoản nào quy định xử phạt?", "query_type": "scenario", "topic": "violations", "split": "dev"}
+{"query_id": "dev-helmet-1", "intent_group_id": "helmet", "query": "Đội mũ bảo hiểm khi đi xe mô tô", "query_type": "direct", "topic": "violations", "split": "dev"}
+{"query_id": "dev-helmet-2", "intent_group_id": "helmet", "query": "Người ngồi sau xe máy có phải cài quai mũ bảo hiểm không?", "query_type": "paraphrase", "topic": "violations", "split": "dev"}
+{"query_id": "dev-helmet-3", "intent_group_id": "helmet", "query": "Tôi chở người lớn ngồi sau xe máy không đội mũ bảo hiểm, cần xem quy định nào?", "query_type": "scenario", "topic": "violations", "split": "dev"}
+{"query_id": "dev-pedestrian-1", "intent_group_id": "pedestrian", "query": "Quy tắc qua đường của người đi bộ", "query_type": "direct", "topic": "traffic_rules", "split": "dev"}
+{"query_id": "dev-pedestrian-2", "intent_group_id": "pedestrian", "query": "Người đi bộ phải sang đường ở đâu?", "query_type": "paraphrase", "topic": "traffic_rules", "split": "dev"}
+{"query_id": "dev-pedestrian-3", "intent_group_id": "pedestrian", "query": "Tôi đi bộ đến đoạn đường có cầu vượt dành cho người đi bộ, tôi có được băng qua lòng đường không?", "query_type": "scenario", "topic": "traffic_rules", "split": "dev"}
+{"query_id": "dev-licence_exchange-1", "intent_group_id": "licence_exchange", "query": "Đổi giấy phép lái xe hết thời hạn sử dụng", "query_type": "direct", "topic": "licence", "split": "dev"}
+{"query_id": "dev-licence_exchange-2", "intent_group_id": "licence_exchange", "query": "Bằng lái hết hạn có được đổi không?", "query_type": "paraphrase", "topic": "licence", "split": "dev"}
+{"query_id": "dev-licence_exchange-3", "intent_group_id": "licence_exchange", "query": "Giấy phép lái xe ô tô của tôi đã hết hạn, cần đối chiếu điều kiện cấp đổi nào?", "query_type": "scenario", "topic": "licence", "split": "dev"}
