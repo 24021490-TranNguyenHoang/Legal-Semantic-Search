@@ -6,12 +6,11 @@ Snapshot sản phẩm **2025-01-01**; đây chưa phải corpus phát hành.
 
 ## Source và binding
 
-Commit đầu lượt evaluation: `1e39d16e0ec776a400474182f907aa2d8d4cba04`;
-Git sạch khi bắt đầu. Bộ bàn giao trước đã nằm trong commit này. Hiện có
-thay đổi evaluation chưa commit; không stage/commit/push. Mốc `eec0d014...`
-và patch trong Quickstart là đường tái tạo bàn giao lịch sử; không áp lại
-patch lên source đã có thay đổi đó. Chưa kiểm remote chứa commit mới.
-Loader/tokenizer/ranking/dataset/index giữ nguyên trong lượt này.
+Commit đầu lượt Điều lá: `b72b9fdac78d549faaa02742321218877737a070`;
+Git sạch khi bắt đầu. Evaluation đã được commit trước lượt này. Thay đổi
+hiện tại chỉ phục vụ preview chín Điều lá và tài liệu; chưa stage/commit/push.
+Các mốc commit/patch bàn giao cũ là lịch sử, không áp lại lên source đã cập nhật.
+Dataset/index/query set, tokenizer, ranking và các builder cũ giữ nguyên.
 
 | Artifact | Giá trị đọc từ manifest thực tế |
 |---|---|
@@ -100,3 +99,19 @@ chưa triển khai. Chưa có URL chia sẻ artifact.
   tính tay, graded/multiple positive, cutoff, nhãn thiếu, lỗi, trùng, binding.
   Không dùng số test làm kết luận pháp lý hoặc chất lượng retrieval.
 - Báo cáo: [BM25 Development Evaluation Verification](../reviews/BM25_Development_Evaluation_Verification.md).
+
+## Chín Điều lá — ứng viên phiên bản dữ liệu tiếp theo
+
+Run đề nghị xem: `staging/leaf-articles-preview-002/`, policy
+`leaf-article-title-context.v1`. Cả 9 Điều có preview kỹ thuật, 0 blocked,
+0 quarantine; token 31–139, unknown=0, budget 256/preprocessing không đổi.
+Title chính Điều là heading context; target giữ trọn nội dung riêng, không
+lặp body thành context. Source spans và paragraph DOCX được đối chiếu.
+
+Proposal scope hiện có: 7 excluded, 2 pending; không có quyết định mới.
+Nguồn/extraction/cây/applicability vẫn pending, release_eligible=false.
+9 preview **chưa nhập dataset 3.077 chunk**, chưa thay index hoặc query set.
+Không xử lý 20 trường hợp dài hoặc 13 lỗi nguồn/context của tập bàn giao.
+Bước evaluation/Dense của nhóm tiếp tục trên dataset đã bàn giao nguyên vẹn.
+
+Chi tiết và kiểm chứng: [Stage6 Leaf Article Verification](../reviews/Stage6_Leaf_Article_Verification.md).

@@ -818,3 +818,23 @@ minor được cảnh báo, khác Unicode/dependency/engine source vẫn bị t�
 [Evaluation Quickstart](docs/handoff/BM25_Evaluation_Quickstart.md) hướng dẫn
 batch, phiếu annotation và metrics có điều kiện. Xem [STATUS](docs/progress/STATUS.md)
 cho trạng thái nhãn. Proposal agent chưa phải qrels được chấp nhận.
+
+### Preview chín Điều lá (ứng viên dataset tiếp theo)
+
+Dùng môi trường pipeline có `requirements-stage6.txt` và các tokenizer assets
+đã capture trong coverage; không tải weights hoặc chạy inference. Bộ bàn giao
+BM25 và query evaluation giữ nguyên. CLI cần cả bundle coverage lẫn dataset.
+
+```powershell
+.\.venv-stage1\Scripts\python.exe -X utf8 -B -m src.leaf_articles_preview build --coverage-manifest staging/stage6-coverage-001/manifest.json --dataset-manifest staging/bm25-baseline-v1-001/dataset/dataset_manifest.json --run-dir staging/leaf-articles-preview-NEW
+.\.venv-stage1\Scripts\python.exe -X utf8 -B -m src.leaf_articles_preview validate --manifest staging/leaf-articles-preview-NEW/manifest.json
+.\.venv-stage1\Scripts\python.exe -X utf8 -B -m unittest tests.test_leaf_articles tests.test_stage6_points.PointBuilderTests
+```
+
+Thay NEW bằng tên chưa tồn tại. Bản hiện có: `staging/leaf-articles-preview-002/articles_preview.md`.
+Manifest ghi input refs/hash, encoder vẫn dùng config coverage. Exit 0 là
+preview kỹ thuật, 2 là có blocked/quarantine, 1 là lỗi input/runtime/binding.
+Đường proof tính từ `inputs/` của coverage, không phải root preview. Đây không
+phải gói portable độc lập hoặc cập nhật dataset đang dùng cho evaluation.
+Xem [contract Điều lá](docs/design/data_model_v1/Stage6_Leaf_Article_Contract.md)
+và [báo cáo](docs/reviews/Stage6_Leaf_Article_Verification.md).
