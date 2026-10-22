@@ -6,11 +6,11 @@ Snapshot sản phẩm **2025-01-01**; đây chưa phải corpus phát hành.
 
 ## Source và binding
 
-Commit đầu lượt Điều lá: `b72b9fdac78d549faaa02742321218877737a070`;
-Git sạch khi bắt đầu. Evaluation đã được commit trước lượt này. Thay đổi
-hiện tại chỉ phục vụ preview chín Điều lá và tài liệu; chưa stage/commit/push.
-Các mốc commit/patch bàn giao cũ là lịch sử, không áp lại lên source đã cập nhật.
-Dataset/index/query set, tokenizer, ranking và các builder cũ giữ nguyên.
+Commit đầu lượt 13 source/context candidate: `cc465dafe7015fe4bb748107b43e5d49e4f91a8c`;
+Git sạch khi bắt đầu. Công việc Điều lá/evaluation đã được commit trước đó.
+Thay đổi hiện tại là hồ sơ đối chiếu và parser disposition layout hẹp;
+chưa stage/commit/push. Dataset/index/query set, tokenizer/ranking và các
+module parser/builder cũ giữ nguyên byte để replay artifact bàn giao.
 
 | Artifact | Giá trị đọc từ manifest thực tế |
 |---|---|
@@ -115,3 +115,24 @@ Không xử lý 20 trường hợp dài hoặc 13 lỗi nguồn/context của t�
 Bước evaluation/Dense của nhóm tiếp tục trên dataset đã bàn giao nguyên vẹn.
 
 Chi tiết và kiểm chứng: [Stage6 Leaf Article Verification](../reviews/Stage6_Leaf_Article_Verification.md).
+
+## 13 candidate source/context — đã đối chiếu, chưa cập nhật dataset
+
+Run cuối đề nghị xem: `staging/blocked-source-repair-003/`.
+13 candidate → 6 nhóm vùng nguồn; 10 issue parser tại 8 locator, thêm một
+paragraph continuation cách ly không có issue riêng. Đã xem tám trang
+ảnh từ hai PDF capture cũ; không tải thêm nguồn, không OCR.
+
+- 10 candidate NĐ168: DOCX khác ký hiệu trên PDF scan, không phải parser
+  cần nới để nhận literal sai. Giữ deferred; cần nguồn text hoặc cơ chế
+  transcription/mapping scan có truy vết trước khi dựng extraction mới.
+- 2 Khoản Luật35 có bảng sửa đổi: giữ deferred, chưa triển khai bảng tổng
+  quát; scope một pending, một excluded proposal.
+- 1 Khoản Luật35 Điều86K2: disposition graphic line rỗng sau thân luật vào
+  layout trong projection mới, units/spans giữ nguyên. Preview 77 token,
+  unknown=0. Scope excluded proposal giữ nguyên; nguồn/hiệu lực pending.
+
+Kết quả: 1 preview kỹ thuật, 12 deferred trong run riêng. Tập bàn giao vẫn
+3.077 chunk; danh sách deferred cũ không bị viết lại. Không tạo reviewer
+quyết định, sửa raw/offset cũ hoặc nhập preview vào dữ liệu evaluation.
+Chi tiết: [Blocked Source Context Verification](../reviews/Blocked_Source_Context_Verification.md).

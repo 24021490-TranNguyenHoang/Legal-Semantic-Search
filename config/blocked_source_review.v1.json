@@ -1,0 +1,64 @@
+{
+  "version": "blocked-source-review.v1",
+  "origin": "agent_review",
+  "reviewed_at": "2026-10-21T10:41:14.564450Z",
+  "human_reviewer_event_count": 0,
+  "coverage_manifest_ref": "staging/stage6-coverage-001/manifest.json",
+  "dataset_manifest_ref": "staging/bm25-baseline-v1-001/dataset/dataset_manifest.json",
+  "review_evidence_ref": "staging/blocked-source-review-002",
+  "evidence_catalog_sha256": "9ecdc43db3a01f866699ffa3dc73754ab8773b07b22d392425cb6285acf82052",
+  "visual_quotes": [
+    {
+      "group": "ND168_A16K2",
+      "page": 41,
+      "quote": "d) Điều khiển xe gắn biển số không đúng với chứng nhận đăng ký xe hoặc gắn biển số không do cơ quan có thẩm quyền cấp (kể cả rơ moóc);",
+      "observation": "DOCX p[518] bắt đầu đ); ảnh chính thức bắt đầu d). p[519] có ngán hàng, ảnh là ngân hàng. Không chỉ thay marker."
+    },
+    {
+      "group": "ND168_A16K2",
+      "page": 41,
+      "quote": "đ) Sử dụng chứng nhận đăng ký xe",
+      "observation": "Điểm tiếp theo trên ảnh là đ), không phải hai đ) như DOCX. Quote chỉ trích phần đầu, không giả toàn Điểm đã phiên âm."
+    },
+    {
+      "group": "ND168_A39K9",
+      "page": 85,
+      "quote": "d) Trung tâm sát hạch lái xe thực hiện hành vi quy định tại điểm k khoản 5, khoản 7 Điều này bị tước quyền sử dụng giấy phép sát hạch từ 02 tháng đến 04 tháng.",
+      "observation": "DOCX p[1038] và unit hiện tại là đ), ảnh là d)."
+    },
+    {
+      "group": "ND168_A40K3",
+      "page": 86,
+      "quote": "d) Sử dụng thiết bị, dụng cụ không đảm bảo theo quy định của pháp luật về đo lường để kiểm tra, thử nghiệm;",
+      "observation": "DOCX p[1057] là đ), ảnh là d)."
+    },
+    {
+      "group": "ND168_A40K3",
+      "page": 86,
+      "quote": "đ) Có từ 02 lượt đăng kiểm viên trở lên bị xử phạt theo quy định tại khoản 1 Điều này trong thời hạn 12 tháng tính từ lần bị xử phạt đầu tiên;",
+      "observation": "DOCX p[1058] vẫn đ); ảnh là Điểm đ thật."
+    },
+    {
+      "group": "ND168_A40K3",
+      "page": 86,
+      "quote": "e) Lưu trữ hồ sơ, tài liệu, dữ liệu chứng nhận không đúng quy định.",
+      "observation": "DOCX p[1059] là c), ảnh là e)."
+    }
+  ],
+  "layout": {
+    "law_id": "35/2024/QH15",
+    "unit_id": "u_baecee77925b3336a1a53425a7ccc90920f91c5d5c738b682003c5fbfd2ab913",
+    "raw_sha256": "44cdabb0a6f5972ffbacd97b8664277f34daa63fb7e673dd4d5b6a8242d930fb",
+    "locator": {
+      "format": "docx",
+      "paragraph_index": 932,
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/w:p[933]"
+    },
+    "char_start": 147382,
+    "char_end": 147382,
+    "evidence_page": 69,
+    "pdf_sha256": "debf33ad3b4781c04c143b3b684aaace3e4ecc24110d87ca551ab1cd0221c9fc",
+    "observation": "Đã xem trang PDF 69/in 71: Khoản 2 Điều 86 kết thúc trước đường kẻ ngang, tiếp theo là câu thông qua và chữ ký. Raw XML p[933] là Choice/Fallback cùng đường thẳng ngang, không có text."
+  }
+}

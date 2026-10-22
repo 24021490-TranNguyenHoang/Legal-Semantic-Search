@@ -838,3 +838,24 @@ preview kỹ thuật, 2 là có blocked/quarantine, 1 là lỗi input/runtime/bi
 phải gói portable độc lập hoặc cập nhật dataset đang dùng cho evaluation.
 Xem [contract Điều lá](docs/design/data_model_v1/Stage6_Leaf_Article_Contract.md)
 và [báo cáo](docs/reviews/Stage6_Leaf_Article_Verification.md).
+
+### Đối chiếu 13 candidate source/context
+
+Dùng môi trường pipeline hiện có và các bundle referenced trong
+`config/blocked_source_review.v1.json` (coverage, dataset, evidence review).
+Nguồn PDF/ảnh được tái sử dụng, không cần tải thêm hoặc chạy OCR.
+
+```powershell
+.\.venv-stage1\Scripts\python.exe -X utf8 -B -m src.blocked_source_review build --run-dir staging/blocked-source-repair-NEW
+.\.venv-stage1\Scripts\python.exe -X utf8 -B -m src.blocked_source_review validate --manifest staging/blocked-source-repair-NEW/manifest.json
+.\.venv-stage1\Scripts\python.exe -X utf8 -B -m unittest tests.test_blocked_source_review
+```
+
+Thay NEW bằng run chưa tồn tại. Bản hiện có:
+`staging/blocked-source-repair-003/review.md`. Exit 0 là triage/replay đạt,
+vẫn có thể còn deferred; không có nghĩa đã xác minh hoặc cập nhật dataset.
+Bản này có 1 preview và 12 deferred; không thay dataset/index/query evaluation.
+Cần giữ `staging/blocked-source-review-002/` (ảnh/page text/hash) cùng hai
+bundle đầu vào để replay. Proof paths tính từ `inputs/` của coverage.
+Xem [contract](docs/design/data_model_v1/Blocked_Source_Context_Contract.md)
+và [báo cáo](docs/reviews/Blocked_Source_Context_Verification.md).
