@@ -6,11 +6,11 @@ Snapshot sản phẩm **2025-01-01**; đây chưa phải corpus phát hành.
 
 ## Source và binding
 
-Commit đầu lượt 13 source/context candidate: `cc465dafe7015fe4bb748107b43e5d49e4f91a8c`;
-Git sạch khi bắt đầu. Công việc Điều lá/evaluation đã được commit trước đó.
-Thay đổi hiện tại là hồ sơ đối chiếu và parser disposition layout hẹp;
-chưa stage/commit/push. Dataset/index/query set, tokenizer/ranking và các
-module parser/builder cũ giữ nguyên byte để replay artifact bàn giao.
+Commit đầu lượt draft: `aee22f0173affc406cfccc443a9132c43c1c98fb`.
+Đầu lượt đã có thay đổi recovery A16K2 chưa commit (README/STATUS và năm
+file config/contract/report/code/test); đã bảo toàn. Lượt này thêm adapter
+composition draft, config/contract/tests/report và hướng dẫn. Chưa stage/
+commit/push. Dataset/index/evaluation/ZIP bàn giao và các module cũ giữ nguyên.
 
 | Artifact | Giá trị đọc từ manifest thực tế |
 |---|---|
@@ -136,3 +136,49 @@ Kết quả: 1 preview kỹ thuật, 12 deferred trong run riêng. Tập bàn gi
 3.077 chunk; danh sách deferred cũ không bị viết lại. Không tạo reviewer
 quyết định, sửa raw/offset cũ hoặc nhập preview vào dữ liệu evaluation.
 Chi tiết: [Blocked Source Context Verification](../reviews/Blocked_Source_Context_Verification.md).
+
+## NĐ168 Điều16 Khoản2 — đã khôi phục experimental riêng
+
+Run cuối: `staging/nd168-a16k2-preview-004/`. Đã capture text chính thức
+trên Cổng Chính phủ và đối chiếu đủ title/lead/năm Điểm với ảnh scan40–41
+đã lưu; không cần phiên âm/OCR. HTML tải 2026-10-22, bài hiển thị2025-04-03;
+không coi đó là bản website lịch sử tại snapshot. Applicability vẫn pending.
+
+10 units/10 spans trong cây chọn lọc, 5 Điểm a/b/c/d/đ có preview, 0 quarantine,
+0 blocked; token101/143/187/121/212, unknown=0. Hai vùng d/đ trước không có
+unit nay có extraction/spans mới; không sửa marker trên DOCX hoặc offsets cũ.
+Bảng comparison/crosswalk giải thích đầy đủ ID đổi do identity của cha/field
+biểu diễn mới, không do ép phiên bản/source ID vào unit identity.
+
+Scope proposal mới: 5 included targets, title/lead supporting đúng dependency;
+không có quyết định reviewer hoặc xác nhận hiệu lực. Chưa nhập dataset3.077,
+chưa sửa index/query/evaluation/ZIP. Không mở rộng Điều39/40 hoặc bảng Luật35.
+Chi tiết: [ND168 A16K2 Recovery Verification](../reviews/ND168_A16K2_Recovery_Verification.md).
+
+## Bản draft tiếp theo — chưa chuyển bản cho nhóm
+
+`staging/dataset-v2-draft-001/dataset_manifest.json`, version
+**vtls-coverage-experimental.v2-draft.1**, policy
+`coverage-source-branches-draft.v1`, status=draft:
+
+- 3.082 chunk/5.381 context; **added5, unchanged3.077, replaced0, removed0,
+  conflicted0**, duplicate0 sau đối chiếu toàn dataset theo vị trí/nội dung/ID.
+- Dataset content SHA: `729bc28b63f773de9d4f5c35c8d77c5f53c5311fa64f7d9c49e8e69496b376be`.
+- Manifest SHA: `42c59623d6d921429cd45f2bdfaab3deabab002efa4f13e8720b9645d8944237`.
+- Hai component nguồn độc lập giữ nguyên cây/proofs. Cha DOCX (document
+  NĐ168 có628 code points own text) không bị own text chưa chọn của HTML đè.
+  Metadata graph/membership là sidecar pending, không sửa schema DDD/ID.
+- a/b/c trước có unit deferred, chưa có chunk; d/đ chưa có unit/chunk.
+  Ba hồ sơ deferred cũ có alternate-source targets trong draft;43 còn lại
+  được giữ. Cả46 hồ sơ và issue DOCX gốc vẫn bất biến trong base component.
+- Scope của năm target chỉ proposed included; source/edition/technical và
+  applicability pending tại2025-01-01. Không reviewer events hoặc corpus
+  verified. Không thêm chín Điều lá, L35 A86K2 hoặc20 trường hợp dài.
+
+Build/validate và30 tests tập trung đạt; đối chiếu exact3077 chunk/5371
+context/3077 metadata cũ đạt. Kiểm kỹ thuật không chứng minh chất lượng
+pháp lý/retrieval. Bản đang dùng của nhóm vẫn **v1 3.077 chunk** cùng index,
+query/evaluation và ZIP cũ; không build index draft hoặc chuyển qrels.
+Evaluation/Dense tiếp tục trên cùng v1; nếu thử draft sau này, phải bind
+version/hash mới và rà coverage/nhãn/ranking, không dùng index v1 cho draft.
+Chi tiết: [Experimental Dataset Draft Verification](../reviews/Experimental_Dataset_Draft_Verification.md).

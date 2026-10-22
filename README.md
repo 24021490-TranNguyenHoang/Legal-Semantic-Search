@@ -859,3 +859,63 @@ Cần giữ `staging/blocked-source-review-002/` (ảnh/page text/hash) cùng ha
 bundle đầu vào để replay. Proof paths tính từ `inputs/` của coverage.
 Xem [contract](docs/design/data_model_v1/Blocked_Source_Context_Contract.md)
 và [báo cáo](docs/reviews/Blocked_Source_Context_Verification.md).
+
+### Khôi phục NĐ168 Điều16 Khoản2 từ HTML chính thức
+
+Config `config/nd168_a16k2.v1.json` khóa HTML đã capture và PDF/ảnh40–41.
+Dùng môi trường pipeline hiện có (lxml + requirements-stage6); build/validate
+chạy offline, không cần tải lại nguồn hoặc OCR. Giữ coverage/tokenizer assets
+referenced để replay. Không thay dữ liệu đang dùng cho mô hình/evaluation.
+
+```powershell
+.\.venv-stage1\Scripts\python.exe -X utf8 -B -m src.nd168_a16k2 build --run-dir staging/nd168-a16k2-preview-NEW
+.\.venv-stage1\Scripts\python.exe -X utf8 -B -m src.nd168_a16k2 validate --manifest staging/nd168-a16k2-preview-NEW/manifest.json
+.\.venv-stage1\Scripts\python.exe -X utf8 -B -m unittest tests.test_nd168_a16k2 tests.test_stage6_points.PointBuilderTests
+```
+
+Thay NEW bằng run chưa tồn tại. Bản cuối hiện có:
+`staging/nd168-a16k2-preview-004/review.md`. Có cây, đủ năm Điểm, bảng DOCX→
+HTML→khôi phục, spans, context, tokens và ID crosswalk. Exit0 là kỹ thuật,
+2 là blocked/quarantine, 1 là lỗi. Scope chỉ proposal, applicability pending.
+Xem [contract](docs/design/data_model_v1/ND168_A16K2_Recovery_Contract.md)
+và [báo cáo/lệnh thực tế](docs/reviews/ND168_A16K2_Recovery_Verification.md).
+
+### Dataset experimental v2 draft — nhánh khôi phục A16K2
+
+**Nhóm tiếp tục dùng v1 / index BM25 v1.** Draft riêng
+`staging/dataset-v2-draft-001/` là `vtls-coverage-experimental.v2-draft.1`:
+3.082 chunk/5.381 context; thêm năm Điểm, giữ nguyên 3.077 chunk cũ.
+Không có index mới hoặc thay đổi evaluation. Source/scope/applicability vẫn
+pending/proposed; đây chưa phải corpus phát hành.
+
+Dùng môi trường pipeline hiện có. Build cần hai bundle theo config (dataset
+v1 và recovery004), cùng coverage/tokenizer assets để validator recovery cũ
+chạy tokenizer-only. Validate draft chỉ cần bundle draft và repository đúng
+version cùng dependency pipeline, không cần staging khác hoặc model weights;
+replay builder bằng token evidence đã đo, không tokenize/inference mới.
+
+```powershell
+.\.venv-stage1\Scripts\python.exe -X utf8 -B -m src.experimental_draft build --config config/experimental_dataset_draft.v1.json --run-dir staging/dataset-v2-draft-NEW
+.\.venv-stage1\Scripts\python.exe -X utf8 -B -m src.experimental_draft validate --manifest staging/dataset-v2-draft-NEW/dataset_manifest.json
+.\.venv-stage1\Scripts\python.exe -X utf8 -B -m unittest tests.test_experimental_draft tests.test_nd168_a16k2 tests.test_stage6_points.PointBuilderTests
+Get-Content staging/dataset-v2-draft-NEW/dataset_manifest.sha256
+Get-FileHash staging/dataset-v2-draft-NEW/dataset_manifest.json -Algorithm SHA256
+```
+
+Thay NEW bằng thư mục chưa tồn tại; để kiểm bản đã tạo, dùng `001` cho lệnh
+validate. Mở `review.md`, `candidate_comparison.jsonl`, `delta.jsonl`,
+`unit_crosswalk.jsonl` và `parent_dependencies.jsonl` để xem tác động.
+`deferred_history.jsonl` giữ đủ46 hồ sơ cũ; root deferred43 không có nghĩa
+issue DOCX đã resolved. d/đ trước chỉ có vùng cách ly, không có old unit ID.
+
+**Đọc nguồn:** lấy graph_id từ `memberships.jsonl` theo chunk_id → lấy
+root_ref trong manifest.components → resolve source_locator raw_file_ref và
+text_ref dưới component root đó. Context dùng cùng graph với target. Không
+resolve proof trực tiếp dưới root draft hoặc union hai cây theo law_id.
+Các cha HTML là sparse projection; own text chưa chọn không đè nội dung
+cha DOCX. Chunk/context upstream giữ nguyên objects, offsets và identity.
+Loader BM25 v1 sẽ từ chối policy draft; chưa yêu cầu nhóm chuyển phiên bản.
+
+Xem [contract draft](docs/design/data_model_v1/Experimental_Dataset_Draft_Contract.md),
+[kiểm chứng](docs/reviews/Experimental_Dataset_Draft_Verification.md) và
+[STATUS](docs/progress/STATUS.md). Exit0 chỉ xác nhận kỹ thuật; exit1 là lỗi.

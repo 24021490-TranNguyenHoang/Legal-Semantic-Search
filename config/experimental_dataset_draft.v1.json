@@ -1,0 +1,14 @@
+{
+  "policy_version": "coverage-source-branches-draft.v1",
+  "dataset_version": "vtls-coverage-experimental.v2-draft.1",
+  "snapshot_date": "2025-01-01",
+  "base_manifest_ref": "staging/bm25-baseline-v1-001/dataset/dataset_manifest.json",
+  "base_dataset_version": "vtls-coverage-experimental.v1",
+  "base_manifest_sha256": "2aa5dc595dab7614920ce94317b85c7b21e188cc35b16b54bef9e81f3ccf1b0a",
+  "base_content_sha256": "2534731881e493a9b1b47b07470cc5d7f4fabbd9553d4e4d6c59e27359b313b5",
+  "recovery_manifest_ref": "staging/nd168-a16k2-preview-004/manifest.json",
+  "recovery_manifest_sha256": "64d71247974bf8973684dabb91abeee4d76eaf34495bf44212c4cf4122a15770",
+  "experimental": true,
+  "release_eligible": false,
+  "corpus_version": null
+}

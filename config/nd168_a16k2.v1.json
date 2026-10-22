@@ -1,0 +1,87 @@
+{
+  "policy_version": "nd168-a16k2-html.v1",
+  "snapshot_date": "2025-01-01",
+  "law_id": "168/2024/NĐ-CP",
+  "html_capture_ref": "staging/nd168-a16k2-source-check-001",
+  "html_sha256": "e3803dd1ddd2a770e5f61a95e54111308c4d7b08c2196fa792ae5fdeeb4a5171",
+  "coverage_manifest_ref": "staging/stage6-coverage-001/manifest.json",
+  "pdf_ref": "staging/bm25-baseline-v1-001/dataset/evidence/captures/05/snapshot.pdf",
+  "pdf_sha256": "7bb11b939d162499ab404aa41a940cce05dbf071d9cbae7a8898b00d4b4a48bd",
+  "pdf_url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2025/01/168-nd-cp.signed.pdf",
+  "pdf_accessed_at": "2026-10-16T14:33:07.439116Z",
+  "pdf_pages": [
+    {
+      "law_id": "168/2024/NĐ-CP",
+      "pdf_ref": "staging/bm25-baseline-v1-001/dataset/evidence/captures/05/snapshot.pdf",
+      "pdf_sha256": "7bb11b939d162499ab404aa41a940cce05dbf071d9cbae7a8898b00d4b4a48bd",
+      "url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2025/01/168-nd-cp.signed.pdf",
+      "accessed_at": "2026-10-16T14:33:07.439116Z",
+      "page": 40,
+      "image_ref": "staging/blocked-source-review-002/evidence_pages/ND168-page-040.png",
+      "image_sha256": "55b1fac46a26dcba3dc34384f4fc7148a42d9a1bfe8d6e5d7ba33f1861bd268a",
+      "page_text_ref": "evidence_pages/ND168-page-040.txt",
+      "rendered_at": "2026-10-21T10:39:03.793364Z",
+      "render_tool": "pypdfium2",
+      "source_text_is_ocr": false,
+      "new_download": false,
+      "page_text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "visually_reviewed_by_agent": true
+    },
+    {
+      "law_id": "168/2024/NĐ-CP",
+      "pdf_ref": "staging/bm25-baseline-v1-001/dataset/evidence/captures/05/snapshot.pdf",
+      "pdf_sha256": "7bb11b939d162499ab404aa41a940cce05dbf071d9cbae7a8898b00d4b4a48bd",
+      "url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2025/01/168-nd-cp.signed.pdf",
+      "accessed_at": "2026-10-16T14:33:07.439116Z",
+      "page": 41,
+      "image_ref": "staging/blocked-source-review-002/evidence_pages/ND168-page-041.png",
+      "image_sha256": "212ac7971c7db858c2a7bb7432225b6582edff792431f03a3e34ed885cc94607",
+      "page_text_ref": "evidence_pages/ND168-page-041.txt",
+      "rendered_at": "2026-10-21T10:39:03.871369Z",
+      "render_tool": "pypdfium2",
+      "source_text_is_ocr": false,
+      "new_download": false,
+      "page_text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "visually_reviewed_by_agent": true
+    }
+  ],
+  "visual_review": {
+    "origin": "agent_review",
+    "reviewed_at": "2026-10-22T09:47:05.589699Z",
+    "human_reviewer_event_count": 0,
+    "unresolved_characters": [],
+    "conclusion": "HTML title, clause lead and all five points compared against PDF images pages 40–41. No unreadable glyph observed in this selected region; not legal verification.",
+    "per_field_pages": {
+      "article_title": [
+        40
+      ],
+      "clause_2": [
+        40
+      ],
+      "point_a": [
+        40
+      ],
+      "point_b": [
+        40
+      ],
+      "point_c": [
+        40,
+        41
+      ],
+      "point_d": [
+        41
+      ],
+      "point_đ": [
+        41
+      ]
+    }
+  },
+  "limitations": [
+    "Current HTML capture does not prove historical website state at 2025-01-01.",
+    "Applicability and amendment history remain pending.",
+    "Document/chapter/section are selected structural dependencies from HTML; own text is intentionally unselected, not a claim of empty source body.",
+    "Cross-references outside ancestor chain are not expanded."
+  ],
+  "file_id_namespace": "6a36999d-9a98-4a12-aed9-fdbea516e54e",
+  "html_capture_record_sha256": "7d35571cc4a2de92c59bda99f20d56e4c7e30c6c7c7616a69b700ad535010451"
+}
