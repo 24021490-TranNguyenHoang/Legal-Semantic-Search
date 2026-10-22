@@ -1,10 +1,37 @@
 # Vietnamese Traffic Legal Semantic Search
 
-Prototype tra cứu pháp luật giao thông tiếng Việt. Snapshot sản phẩm đã chốt là
+Pipeline dữ liệu experimental và ứng dụng prototype tra cứu pháp luật giao thông tiếng Việt. Snapshot sản phẩm đã chốt là
 **2025-01-01**. Corpus hiện có **chưa được xác minh pháp lý**; kiểm tra đường chạy
 hoặc schema không chứng minh nguồn, hiệu lực hay độ bao phủ đúng.
 
-## Tài liệu và phạm vi đợt 1
+## Trạng thái hiện hành — bảy nguồn
+
+Source Inventory đã được đồng bộ qua `config/source_registration.seven.v1.json`:
+**7 văn bản/10 file có hồ sơ pending**. SRC-001…007 lần lượt là Luật36,
+NĐ168, Luật35, NĐ165, TT38, TT51 và TT35; không nhầm Luật35 với TT35.
+
+- **4 văn bản đầu** có dữ liệu trong dataset3.077 chunk/index BM25 bàn giao.
+  Draft3.082 vẫn riêng; ứng dụng prototype chưa chuyển sang các bundle này.
+- **TT38** có extraction8 trang Công báo,59 units/180 spans và38 chunk
+  preview/56 context riêng;4 leaf candidates phụ thuộc bảng/context bị chặn.
+  TT38 chưa thuộc dataset/index hoặc draft3.082.
+- **TT35/TT51** đã đăng ký file chính/phụ lục hoặc QCVN, chưa chạy extraction/
+  parser/chunker. QCVN giữ cảnh báo100 trang text rỗng và khác biệt reader,
+  không tự bỏ trang hoặc triển khai nhận diện biển báo bằng ảnh.
+
+PDF Công báo38 đã lưu bền vững trong `data/raw/official/38-2024-TT-BGTVT/`;
+provenance trong `data/source_evidence/circulars-2024/`. Không cần tải lại
+khi register/extract. File_id/SHA không đổi khi copy; các raw cũ giữ nguyên.
+Metadata observed và kiểm kỹ thuật không thay quyết định scope/applicability.
+
+Đường chạy mới và lệnh tái tạo: **[Ingestion guide](docs/ingestion.md)**.
+Xem [STATUS](docs/progress/STATUS.md),
+[addendum/changelog7 nguồn](docs/design/Source_Inventory_7_And_TT38_Addendum_v1.0.md)
+và [báo cáo TT38](docs/reviews/Seven_Sources_TT38_Verification.md).
+Các mô tả Stage1 dưới đây ghi bối cảnh prototype tại thời điểm đó; không
+dùng các giới hạn4 nguồn/1.457 chunk làm tình trạng hiện hành của pipeline.
+
+## Tài liệu và lịch sử đợt 1
 
 - Yêu cầu đích: BRD/SRS trong `docs/requirements/`.
 - Thiết kế đích: SDD, DDD và Source Inventory trong `docs/design/`.

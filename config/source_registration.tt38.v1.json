@@ -1,0 +1,30 @@
+{
+  "contract_version": "source-registration.v1",
+  "dataset_kind": "legal_sources",
+  "snapshot_date": "2025-01-01",
+  "file_id_namespace": "6a36999d-9a98-4a12-aed9-fdbea516e54e",
+  "documents": [
+    {
+      "law_id": "38/2024/TT-BGTVT",
+      "source_id": "SRC-005",
+      "declared": {
+        "law_title": "Quy định về tốc độ và khoảng cách an toàn của xe cơ giới, xe máy chuyên dùng tham gia giao thông trên đường bộ",
+        "document_type": "circular",
+        "scope_note": "Đăng ký nguồn bổ sung; chỉ chọn phạm vi/hiệu lực ở cấp đơn vị sau. Chưa nhập corpus.",
+        "source_url_candidate": "https://vanban.chinhphu.vn/?pageid=27160&docid=211873",
+        "issued_date_candidate": "2024-11-15",
+        "inventory_ref": "docs/design/Source Inventory v0.1.docx.md"
+      }
+    }
+  ],
+  "files": [
+    {
+      "law_id": "38/2024/TT-BGTVT",
+      "source_set_id": "SRC-005-congbao-1355-1356",
+      "part_order": 1,
+      "file_role": "alternate",
+      "raw_file_ref": "data/raw/official/38-2024-TT-BGTVT/congbao-1355-1356.pdf",
+      "expected_sha256": "e27582e2bce4aee27ebc85ffc43731790f887782375ab76e52e2f61981603689"
+    }
+  ]
+}

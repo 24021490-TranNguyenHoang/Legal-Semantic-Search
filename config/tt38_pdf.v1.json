@@ -1,0 +1,61 @@
+{
+  "policy_version": "tt38-pdf-preview.v1",
+  "snapshot_date": "2025-01-01",
+  "law_id": "38/2024/TT-BGTVT",
+  "source_id": "SRC-005",
+  "extraction_manifest_ref": "staging/tt38-extraction-001/manifest.json",
+  "extraction_manifest_sha256": "c43f12871cf5d72932293fb8de2d5fe68b064273d5c66e016f81d4721f91dbb6",
+  "raw_ref": "data/raw/official/38-2024-TT-BGTVT/congbao-1355-1356.pdf",
+  "raw_sha256": "e27582e2bce4aee27ebc85ffc43731790f887782375ab76e52e2f61981603689",
+  "comparison_ref": "data/raw/38-bgtvt.pdf",
+  "comparison_sha256": "b0addaf053bd302cf17b9c07ebf5403e29a10f6164ab9112ef0e7c85190c37dc",
+  "source_url": "https://congbao.chinhphu.vn/van-ban/thong-tu-so-38-2024-tt-bgtvt-43378/53130.htm",
+  "law_title": "Quy định về tốc độ và khoảng cách an toàn của xe cơ giới, xe máy chuyên dùng tham gia giao thông trên đường bộ",
+  "encoder_config_ref": "staging/stage6-coverage-001/encoder_config.json",
+  "tokenizer_assets_ref": "staging/stage6-coverage-001/tokenizer_assets",
+  "token_limit": 256,
+  "tables": [
+    {
+      "number": 1,
+      "page": 4,
+      "detected_index": 0,
+      "bbox": [
+        63.7205,
+        106.68,
+        531.6,
+        246.12
+      ],
+      "rows": 3,
+      "columns": 3,
+      "data_start_row": 2
+    },
+    {
+      "number": 2,
+      "page": 4,
+      "detected_index": 1,
+      "bbox": [
+        63.7205,
+        318.5995,
+        531.6,
+        762.96
+      ],
+      "rows": 6,
+      "columns": 3,
+      "data_start_row": 2
+    },
+    {
+      "number": 3,
+      "page": 7,
+      "detected_index": 0,
+      "bbox": [
+        58.3205,
+        332.52,
+        537.0,
+        460.0795
+      ],
+      "rows": 5,
+      "columns": 2,
+      "data_start_row": 1
+    }
+  ]
+}

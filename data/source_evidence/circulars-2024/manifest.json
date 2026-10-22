@@ -1,0 +1,85 @@
+{
+  "manifest_type": "source-evidence-archive.v1",
+  "built_at": "2026-10-22T11:51:21.646220Z",
+  "origin": "agent_archive_copy",
+  "source_review": "pending",
+  "release_eligible": false,
+  "note": "Original capture times preserved in copied records; archive time is not retrieved_at",
+  "files": [
+    {
+      "path": "archive_receipt.json",
+      "size_bytes": 532,
+      "sha256": "d750e8845fbd026bb6345685a2f308d3f3c44825efa7c071ae1dd03f988adaa4"
+    },
+    {
+      "path": "attachment_heads.jsonl",
+      "size_bytes": 6227,
+      "sha256": "57b7947fbcaaa220362b05b0f16549b1d884bc82f7252a89fe5a6ffa8dfb93a0"
+    },
+    {
+      "path": "documents.observed.jsonl",
+      "size_bytes": 3124,
+      "sha256": "5fa3192330aca5bdaf52d3c8a9ce67bc6d70af68987a59a56d00694382b6caef"
+    },
+    {
+      "path": "gazette_metadata_html.json",
+      "size_bytes": 3699,
+      "sha256": "4b2f403a6e996047324edc3a80f488146cb379bdb01cf9a12aba17c462aa95f4"
+    },
+    {
+      "path": "gazette_pdf_capture.json",
+      "size_bytes": 54062628,
+      "sha256": "9c18604d46cf4d56e7791e0543d7ff738edf90fe4611ca3df75e1bcb69bb5ce8"
+    },
+    {
+      "path": "official_pages.success.jsonl",
+      "size_bytes": 3061,
+      "sha256": "73f087368649063610bcdf5da54972e92e4b047c08b1a617caf55ba2996f6434"
+    },
+    {
+      "path": "pdf_inspection.json",
+      "size_bytes": 131022,
+      "sha256": "30510faefee93689fff4787ec3186eb77d057ab6259c834dc753c33bad6f883c"
+    },
+    {
+      "path": "pdfplumber_samples.jsonl",
+      "size_bytes": 9807,
+      "sha256": "466ba59617de4d9e6b71f4121fc409f2f1f8b553cd50b8a4a5d633817e6d5288"
+    },
+    {
+      "path": "source_files.observed.jsonl",
+      "size_bytes": 46787811,
+      "sha256": "2d1f5e46f31925d894b425c07f91adb012961d74ce73f3b597240835f9a17999"
+    },
+    {
+      "path": "source_relationships.jsonl",
+      "size_bytes": 736,
+      "sha256": "2a73581cfcfe2321e2d94cbf9097c08e9db565c6ef8999ac5691e4bfe8475cc1"
+    },
+    {
+      "path": "tt35.html",
+      "size_bytes": 85096,
+      "sha256": "ed964c529ae64f63a2e4e16bc3feb5fc12edcbad60c336968320b6b9c910c33b"
+    },
+    {
+      "path": "tt38-congbao.html",
+      "size_bytes": 150085,
+      "sha256": "a082a2c1e44a51c9603149b7aad8b04771b1afbb9fc6aad67edb15f65a1546d6"
+    },
+    {
+      "path": "tt38.html",
+      "size_bytes": 84734,
+      "sha256": "30795951acf273caf6ed47d80de190a022210abd7305af4e164303f637d532ba"
+    },
+    {
+      "path": "tt38_remote_comparison.json",
+      "size_bytes": 1699,
+      "sha256": "1cc78ba54c7e25adddaf99ccf35c5df7c03715ecec4c6f940007e1221a13672b"
+    },
+    {
+      "path": "tt51.html",
+      "size_bytes": 83348,
+      "sha256": "ef21e9dbd9a4faa021211490d7dc8a2098f5967489f6816f501e0ff0304fc58a"
+    }
+  ]
+}

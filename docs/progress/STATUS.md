@@ -4,6 +4,11 @@
 cục bộ và venv sạch trên máy hiện tại; **chưa có URL chia sẻ** artifact.
 Snapshot sản phẩm **2025-01-01**; đây chưa phải corpus phát hành.
 
+**Cập nhật7 nguồn/TT38:** đã đăng ký7 văn bản/10 file pending;4 văn bản trong
+dataset/index v1,3 Thông tư chưa được nhập. TT38 có preview riêng, xem bảng
+cuối trang và [ingestion guide](../ingestion.md). Các mục trước cập nhật này
+được giữ làm lịch sử theo từng lượt.
+
 ## Source và binding
 
 Commit đầu lượt draft: `aee22f0173affc406cfccc443a9132c43c1c98fb`.
@@ -182,3 +187,78 @@ query/evaluation và ZIP cũ; không build index draft hoặc chuyển qrels.
 Evaluation/Dense tiếp tục trên cùng v1; nếu thử draft sau này, phải bind
 version/hash mới và rà coverage/nhãn/ranking, không dùng index v1 cho draft.
 Chi tiết: [Experimental Dataset Draft Verification](../reviews/Experimental_Dataset_Draft_Verification.md).
+
+## PDF Thông tư35/38/51 — đã kiểm tra và đăng ký pending
+
+Lượt kiểm tra bắt đầu tại commit `2aebab4e4cbc10c4b550a1571855c0fe3bd9d278`;
+đầu lượt chỉ có5 PDF người dùng thêm chưa tracked. Config mới
+`config/source_registration.circulars.v1.json` giữ Source Inventory IDs
+SRC-005=TT38, SRC-006=TT51, SRC-007=TT35. Không lẫn với Luật35/QH15.
+
+- 5 file local: TT35 chính69tr/phụ lục179tr; TT38 chính7tr; TT51 chính1tr/
+  QCVN41:2024 kèm403tr. Tên/kích thước khớp attachments chính thức.
+- TT38 local trống số/ngày, kể cả ảnh; GET attachment Chính phủ xác nhận
+  byte-identical. Bổ sung riêng Công báo8tr trong staging có số/ngày đầy đủ,
+  không ghi đè raw. Không tải lại bốn PDF35/51; remote full-hash còn chưa kiểm.
+- QCVN có100 trang PDFium không lấy được text; ảnh trang214 không trắng.
+  pdfplumber mẫu đầu có NUL. Cần xử lý reader/hình/bảng ở bước extraction,
+  chưa OCR hoặc bỏ nội dung. Lời nói đầu QCVN còn trống số thông tư.
+- Run `staging/circulars-registration-001/`:3 documents/6 files pending,
+  SQLite FK/integrity/schema/ID/hash đạt; `content.sqlite` vẫn0 bản ghi.
+- `staging/circulars-source-check-001/source_metadata.csv` và observed JSONL
+  lưu hash/IDs/URL/relationships/capture facts riêng. Năm local không có log
+  retrieved_at lịch sử; không hồi điền ngày hiện tại. Source/applicability
+  và full-content review pending, origin=agent_review, không human approval.
+
+Validate/register và18 tests Stage2 đạt; require-release-ready exit1 đúng
+chính sách.10 raw giữ nguyên hash; dataset/index v1, draft3082 và ZIP giữ
+nguyên inventory/hash. Không thay dataset nhóm dùng hoặc nạp nguồn mới vào
+chunk/index. Chi tiết: [Circulars Source Registration Verification](../reviews/Circulars_Source_Registration_Verification.md).
+
+## Đồng bộ7 nguồn và xử lý TT38 — chưa cập nhật dataset/index
+
+HEAD đầu lượt `2aebab4e4cbc10c4b550a1571855c0fe3bd9d278`; bảo toàn config,
+báo cáo, STATUS và5 PDF untracked có trước. Config tổng hợp mới là
+`config/source_registration.seven.v1.json`; snapshot vẫn2025-01-01.
+
+| Source | Law | Registered files | Extraction / parse | Dataset/index v1 |
+|---|---|---:|---|---:|
+| SRC-001 | 36/2024/QH15 | 1 | DOCX đã xử lý; PDF Điều22 riêng | 788 chunk |
+| SRC-002 | 168/2024/NĐ-CP | 1 | DOCX đã xử lý; HTML A16K2 riêng | 1.018 chunk |
+| SRC-003 | 35/2024/QH15 | 1 | DOCX đã xử lý, còn bảng/vùng deferred | 664 chunk |
+| SRC-004 | 165/2024/NĐ-CP | 1 | DOCX đã xử lý | 607 chunk |
+| SRC-005 | 38/2024/TT-BGTVT | 2 | Công báo8tr extraction/parse/preview riêng; PDF7tr đối chiếu | 0 |
+| SRC-006 | 51/2024/TT-BGTVT | 2 | Đăng ký main/QCVN, chưa pipeline extraction | 0 |
+| SRC-007 | 35/2024/TT-BGTVT | 2 | Đăng ký main/annex, chưa extraction/parse/chunk | 0 |
+
+Đăng ký7/10 là manifest tổng hợp gồm4 DOCX và6 PDF; không tính mọi PDF/HTML
+bằng chứng cũ là thêm nguồn pháp lý, không giả các nguồn đã verified. Tất
+cả source/edition review và applicability pending;4 văn bản cũ và TT38 có
+agent scope proposals, TT35/TT51 chưa assessment đơn vị.
+
+Nguồn TT38 bền vững:
+`data/raw/official/38-2024-TT-BGTVT/congbao-1355-1356.pdf`; capture/evidence
+trong `data/source_evidence/circulars-2024/`. Copy giữ nguyên SHA/file_id,
+không ghi đè bản7tr hoặc PDF trong staging cũ. Metadata mới:
+`staging/seven-sources-export-003/source_metadata.csv` và progress/crosswalk
+JSONL; CSV cũ giữ nguyên. Một alias SRC-004 ở nhánh HTML NĐ168 được map
+vềSRC-002 theo law+artifact, không thay chunk/ID hoặc alias toàn cục.
+
+TT38 run chính `staging/tt38-preview-003/`, Stage3
+`staging/tt38-extraction-001/`:12.694 code points,8 page locators,0 lỗi/
+warning extraction;59 units (1 document/3 chương/12 điều/32 khoản/11 điểm),
+180 spans. Coverage: parsed10.058; supporting1.173; unprocessed bảng1.285;
+source layout171; separator trang7, tổng đúng12.694.
+
+42 leaf candidates →38 preview/56 context,4 blocked do bảng/cross-reference:
+A6K1, A6K2, A11K2a vàA11K2b.0 over-budget,59–168 token gồm special, unknown0.
+3 bảng/33 physical cells/9 rows dẫn xuất được giữ riêng trong quarantine,
+có loại đường/xe, đơn vị/điều kiện và source slices/bbox. Chưa table chunk
+policy; không truncate hoặc tạo chunk có vẻ đủ từ phần mất bảng.
+
+BRD/SRS/SDD/DDD gốc giữ nguyên byte; chỉ thêm addendum/changelog vì bốn
+nguồn là khởi đầu, không giới hạn đích. README/AGENTS/ingestion guide cập
+nhật trạng thái thật.78 tests tập trung và9 tests Điều lá đạt; kiểm tra/tái lập/tampering và
+giới hạn chi tiết trong [Seven Sources TT38 Verification](../reviews/Seven_Sources_TT38_Verification.md).
+Dataset3077/index/evaluation/ZIP và draft3082 không được cập nhật. Chưa
+chạy embedding/index, chưa OCR TT51 hoặc yêu cầu nhóm chuyển phiên bản.

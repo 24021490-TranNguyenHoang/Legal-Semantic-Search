@@ -1,0 +1,174 @@
+{
+  "contract_version": "source-registration.v1",
+  "dataset_kind": "legal_sources",
+  "snapshot_date": "2025-01-01",
+  "file_id_namespace": "6a36999d-9a98-4a12-aed9-fdbea516e54e",
+  "documents": [
+    {
+      "source_id": "SRC-001",
+      "law_id": "36/2024/QH15",
+      "declared": {
+        "law_title": "Luật Trật tự, an toàn giao thông đường bộ",
+        "document_type": "law",
+        "scope_note": "Quy tắc giao thông, GPLX và điểm GPLX.",
+        "source_url_candidate": "https://vanban.chinhphu.vn/?pageid=27160&docid=211194",
+        "issued_date_candidate": "2024-06-27",
+        "inventory_ref": "docs/design/Source Inventory v0.1.docx.md"
+      }
+    },
+    {
+      "source_id": "SRC-002",
+      "law_id": "168/2024/NĐ-CP",
+      "declared": {
+        "law_title": "Quy định xử phạt vi phạm hành chính về trật tự, an toàn giao thông trong lĩnh vực giao thông đường bộ; trừ điểm, phục hồi điểm giấy phép lái xe",
+        "document_type": "decree",
+        "scope_note": "Hành vi vi phạm, xử phạt và điểm GPLX.",
+        "source_url_candidate": "https://vanban.chinhphu.vn/?pageid=27160&docid=212167",
+        "issued_date_candidate": "2024-12-26",
+        "inventory_ref": "docs/design/Source Inventory v0.1.docx.md"
+      }
+    },
+    {
+      "source_id": "SRC-003",
+      "law_id": "35/2024/QH15",
+      "declared": {
+        "law_title": "Luật Đường bộ",
+        "document_type": "law",
+        "scope_note": "Chọn nội dung áp dụng trực tiếp cho người tham gia giao thông.",
+        "source_url_candidate": "https://vanban.chinhphu.vn/?pageid=27160&docid=211193",
+        "issued_date_candidate": "2024-06-27",
+        "inventory_ref": "docs/design/Source Inventory v0.1.docx.md"
+      }
+    },
+    {
+      "source_id": "SRC-004",
+      "law_id": "165/2024/NĐ-CP",
+      "declared": {
+        "law_title": "Quy định chi tiết, hướng dẫn thi hành một số điều của Luật Đường bộ và Điều 77 Luật Trật tự, an toàn giao thông đường bộ",
+        "document_type": "decree",
+        "scope_note": "Khảo sát có chọn lọc; loại phần quản lý hạ tầng ngoài phạm vi.",
+        "source_url_candidate": "https://vanban.chinhphu.vn/?pageid=27160&docid=212168",
+        "issued_date_candidate": "2024-12-26",
+        "inventory_ref": "docs/design/Source Inventory v0.1.docx.md"
+      }
+    },
+    {
+      "law_id": "38/2024/TT-BGTVT",
+      "source_id": "SRC-005",
+      "declared": {
+        "law_title": "Quy định về tốc độ và khoảng cách an toàn của xe cơ giới, xe máy chuyên dùng tham gia giao thông trên đường bộ",
+        "document_type": "circular",
+        "scope_note": "Đăng ký nguồn bổ sung; chỉ chọn phạm vi/hiệu lực ở cấp đơn vị sau. Chưa nhập corpus.",
+        "source_url_candidate": "https://vanban.chinhphu.vn/?pageid=27160&docid=211873",
+        "issued_date_candidate": "2024-11-15",
+        "inventory_ref": "docs/design/Source Inventory v0.1.docx.md"
+      }
+    },
+    {
+      "law_id": "51/2024/TT-BGTVT",
+      "source_id": "SRC-006",
+      "declared": {
+        "law_title": "Ban hành Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ",
+        "document_type": "circular",
+        "scope_note": "Đăng ký nguồn bổ sung; chỉ chọn phạm vi/hiệu lực ở cấp đơn vị sau. Chưa nhập corpus.",
+        "source_url_candidate": "https://vanban.chinhphu.vn/?pageid=27160&docid=211908",
+        "issued_date_candidate": "2024-11-15",
+        "inventory_ref": "docs/design/Source Inventory v0.1.docx.md"
+      }
+    },
+    {
+      "law_id": "35/2024/TT-BGTVT",
+      "source_id": "SRC-007",
+      "declared": {
+        "law_title": "Quy định về đào tạo, sát hạch, cấp giấy phép lái xe; cấp, sử dụng giấy phép lái xe quốc tế; đào tạo, kiểm tra, cấp chứng chỉ bồi dưỡng kiến thức pháp luật về giao thông đường bộ",
+        "document_type": "circular",
+        "scope_note": "Đăng ký nguồn bổ sung; chỉ chọn phạm vi/hiệu lực ở cấp đơn vị sau. Chưa nhập corpus.",
+        "source_url_candidate": "https://vanban.chinhphu.vn/?pageid=27160&docid=211984",
+        "issued_date_candidate": "2024-11-15",
+        "inventory_ref": "docs/design/Source Inventory v0.1.docx.md"
+      }
+    }
+  ],
+  "files": [
+    {
+      "law_id": "36/2024/QH15",
+      "source_set_id": "SRC-001-local-docx-01",
+      "part_order": 1,
+      "file_role": "main",
+      "raw_file_ref": "data/raw/36.2024.QH15.docx",
+      "expected_sha256": "db16c0345afba3b6c2ce68de8223dacd1be752abc01480941f73c8fecf58f617"
+    },
+    {
+      "law_id": "168/2024/NĐ-CP",
+      "source_set_id": "SRC-002-local-docx-01",
+      "part_order": 1,
+      "file_role": "main",
+      "raw_file_ref": "data/raw/168.2024.NĐ-CP.docx",
+      "expected_sha256": "d6f009d30ba828b51e0a1a7b2dcb702c171bcddf030bac83afca1a22ece2588a"
+    },
+    {
+      "law_id": "35/2024/QH15",
+      "source_set_id": "SRC-003-local-docx-01",
+      "part_order": 1,
+      "file_role": "main",
+      "raw_file_ref": "data/raw/35.2024.QH15.docx",
+      "expected_sha256": "44cdabb0a6f5972ffbacd97b8664277f34daa63fb7e673dd4d5b6a8242d930fb"
+    },
+    {
+      "law_id": "165/2024/NĐ-CP",
+      "source_set_id": "SRC-004-local-docx-01",
+      "part_order": 1,
+      "file_role": "main",
+      "raw_file_ref": "data/raw/165.2024.NĐ-CP.docx",
+      "expected_sha256": "d29c672989ac8bb1825e938a3849f75b545eb2cd7b9d33657ac1b58ae99d6873"
+    },
+    {
+      "law_id": "38/2024/TT-BGTVT",
+      "source_set_id": "SRC-005-local-pdf-01",
+      "part_order": 1,
+      "file_role": "main",
+      "raw_file_ref": "data/raw/38-bgtvt.pdf",
+      "expected_sha256": "b0addaf053bd302cf17b9c07ebf5403e29a10f6164ab9112ef0e7c85190c37dc"
+    },
+    {
+      "law_id": "51/2024/TT-BGTVT",
+      "source_set_id": "SRC-006-local-pdf-01",
+      "part_order": 1,
+      "file_role": "main",
+      "raw_file_ref": "data/raw/51-bgtvt.pdf",
+      "expected_sha256": "dc822815eb51c6674a40ce91127b636f11a7479c76f24d9a00445dcf248b6689"
+    },
+    {
+      "law_id": "51/2024/TT-BGTVT",
+      "source_set_id": "SRC-006-local-pdf-01",
+      "part_order": 2,
+      "file_role": "annex",
+      "raw_file_ref": "data/raw/51-bgtvt-kem.pdf",
+      "expected_sha256": "b6b99d0a0aeb13fe79072831857ece15bb254d8fb7817e80e4a2739a0d2145ce"
+    },
+    {
+      "law_id": "35/2024/TT-BGTVT",
+      "source_set_id": "SRC-007-local-pdf-01",
+      "part_order": 1,
+      "file_role": "main",
+      "raw_file_ref": "data/raw/35-bgtvt.pdf",
+      "expected_sha256": "53491f393dd7e5a268451319c6d3a4e89f1f0e59718717918e71833bace18caf"
+    },
+    {
+      "law_id": "35/2024/TT-BGTVT",
+      "source_set_id": "SRC-007-local-pdf-01",
+      "part_order": 2,
+      "file_role": "annex",
+      "raw_file_ref": "data/raw/35-bgtvt-kem.pdf",
+      "expected_sha256": "a79fd735777e6948bb9cfc8aa4ec556641a616d4bfc2ee0d00e8c26d7e559a94"
+    },
+    {
+      "law_id": "38/2024/TT-BGTVT",
+      "source_set_id": "SRC-005-congbao-1355-1356",
+      "part_order": 1,
+      "file_role": "alternate",
+      "raw_file_ref": "data/raw/official/38-2024-TT-BGTVT/congbao-1355-1356.pdf",
+      "expected_sha256": "e27582e2bce4aee27ebc85ffc43731790f887782375ab76e52e2f61981603689"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "origin": "agent_archive_copy",
+  "source_inspection_manifest_sha256": "d08a24e1da0c5fe467fdaa090ce6d28a69b2e82943c4783328347f6b1390a5e1",
+  "original_capture_ref": "gazette_pdf_capture.json",
+  "durable_pdf_ref": "data/raw/official/38-2024-TT-BGTVT/congbao-1355-1356.pdf",
+  "pdf_sha256": "e27582e2bce4aee27ebc85ffc43731790f887782375ab76e52e2f61981603689",
+  "same_file_id": "1e28277a-66b1-58c1-900b-360bc4c5ffd5",
+  "historical_raw_dates_not_replaced": true,
+  "original_records_copied_unchanged_paths_are_historical": true
+}
