@@ -12,12 +12,14 @@ NĐ168, Luật35, NĐ165, TT38, TT51 và TT35; không nhầm Luật35 với TT35
 
 - **4 văn bản đầu** có dữ liệu trong dataset3.077 chunk/index BM25 bàn giao.
   Draft3.082 vẫn riêng; ứng dụng prototype chưa chuyển sang các bundle này.
-- **TT38** có extraction8 trang Công báo,59 units/180 spans và38 chunk
-  preview/56 context riêng;4 leaf candidates phụ thuộc bảng/context bị chặn.
-  TT38 chưa thuộc dataset/index hoặc draft3.082.
-- **TT35/TT51** đã đăng ký file chính/phụ lục hoặc QCVN, chưa chạy extraction/
-  parser/chunker. QCVN giữ cảnh báo100 trang text rỗng và khác biệt reader,
-  không tự bỏ trang hoặc triển khai nhận diện biển báo bằng ảnh.
+- **TT38** giữ38 chunk/56 context v1; có thêm9 preview hàng bảng có cell/spans.
+  Dẫn chiếu Điểm b Điều11K2 đủ nội dung dài279 token, tiếp tục quarantine.
+- **TT35** đã extraction69+179tr, cây thưa767 units,572 preview chunk/1070 context.
+  Phần/Chương thực giữ sidecar; phụ lục/forms,13 candidate bị chặn và4 quá budget còn chờ.
+- **TT51** đã extraction1+403tr;3 supporting chunk từ bản ban hành. QCVN partial:
+  100 trang không text,302 trang U+FFFE. Giữ trang/hình và lỗi, chưa có target QCVN.
+- Ba Thông tư **chưa thuộc dataset/index v1 hoặc draft3.082**. Preview kỹ thuật,
+  scope proposal và hiệu lực là các chiều riêng; không nhận diện biển báo bằng ảnh.
 
 PDF Công báo38 đã lưu bền vững trong `data/raw/official/38-2024-TT-BGTVT/`;
 provenance trong `data/source_evidence/circulars-2024/`. Không cần tải lại
@@ -27,7 +29,10 @@ Metadata observed và kiểm kỹ thuật không thay quyết định scope/appl
 Đường chạy mới và lệnh tái tạo: **[Ingestion guide](docs/ingestion.md)**.
 Xem [STATUS](docs/progress/STATUS.md),
 [addendum/changelog7 nguồn](docs/design/Source_Inventory_7_And_TT38_Addendum_v1.0.md)
-và [báo cáo TT38](docs/reviews/Seven_Sources_TT38_Verification.md).
+và [báo cáo hoàn thiện ba Thông tư](docs/reviews/Circulars_Ingestion_Completion_Verification.md).
+Changelog mới: [addendum ingestion v1.1](docs/design/Circulars_Ingestion_Addendum_v1.1.md).
+Metadata hiện hành `staging/seven-sources-export-006/` đã sửa URL Công báo TT38
+bị serialize thành object; export/báo cáo cũ giữ làm lịch sử.
 Các mô tả Stage1 dưới đây ghi bối cảnh prototype tại thời điểm đó; không
 dùng các giới hạn4 nguồn/1.457 chunk làm tình trạng hiện hành của pipeline.
 

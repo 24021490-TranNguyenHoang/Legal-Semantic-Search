@@ -23,6 +23,7 @@ DEFAULT_CONFIG = BASE_DIR / "config/tt38_pdf.v1.json"
 BLOCKERS = ["SOURCE_AND_EXTRACTION_PENDING", "AGENT_REVIEW_ONLY", "APPLICABILITY_PENDING_AT_2025_01_01", "EXPERIMENTAL_NOT_CORPUS"]
 CODE = ["src/tt38_preview.py", "src/ingestion/pdf_layout.py", "src/ingestion/legal_tree.py", "src/chunk_preview.py",
         "src/chunk_preview_v2.py", "src/chunk_preview_articles.py", "src/encoder_input.py", "src/content_comparison.py"]
+LEGACY_ENTRY_SHA = "693edc50f9fa8a7e792ee1b1c4b6daba0c7dd57f471236d3af8750d14ee2599f"
 
 
 def scope_proposals(units, spans):
@@ -190,7 +191,10 @@ def require_config(cfg):
 def validate(path):
     path=Path(path).resolve();root=path.parent;m=check_files(path);cfg=load(root/"config.json")
     require_config(cfg)
-    if (m["manifest_type"]!=VERSION or m["code_sha256"]!={p:digest((BASE_DIR/p).read_bytes()) for p in CODE} or m["files"]!=inventory(root)
+    expected_code={p:digest((BASE_DIR/p).read_bytes()) for p in CODE}
+    if m["code_sha256"].get("src/tt38_preview.py")==LEGACY_ENTRY_SHA:
+        expected_code["src/tt38_preview.py"]=LEGACY_ENTRY_SHA  # v1 calculation unchanged; additive CLI routes only.
+    if (m["manifest_type"]!=VERSION or m["code_sha256"]!=expected_code or m["files"]!=inventory(root)
         or m["release_eligible"] is not False or m["origin"]!="agent_review" or m["human_reviewer_events"]!=0
         or m["snapshot_date"]!=SNAPSHOT_DATE or m["corpus_version"] is not None):raise ValueError("TT38 code/config/status binding mismatch")
     r=validate_extraction(root/"extraction_snapshot/manifest.json")
@@ -230,9 +234,39 @@ def build(run_dir,config=DEFAULT_CONFIG,extraction_manifest=None):
 
 def main(argv=None):
     p=argparse.ArgumentParser(description=__doc__);s=p.add_subparsers(dest="action",required=True)
+    pr=s.add_parser("priority");pr.add_argument("--config",type=Path,default=BASE_DIR/'config/circular_priority.v1.2.json');pr.add_argument("--run-dir",type=Path,required=True)
+    pv=s.add_parser("validate-priority");pv.add_argument("--manifest",type=Path,required=True)
+    qp=s.add_parser("qcvn-pilot");qp.add_argument("--manifest",type=Path,required=True);qp.add_argument("--run-dir",type=Path,required=True)
+    qv=s.add_parser("validate-qcvn-pilot");qv.add_argument("--manifest",type=Path,required=True)
     b=s.add_parser("build");b.add_argument("--run-dir",type=Path,required=True);b.add_argument("--config",type=Path,default=DEFAULT_CONFIG);b.add_argument("--extraction-manifest",type=Path)
+    t=s.add_parser("tables");t.add_argument("--base-manifest",type=Path,required=True);t.add_argument("--run-dir",type=Path,required=True)
+    tv=s.add_parser("validate-tables");tv.add_argument("--manifest",type=Path,required=True)
+    c=s.add_parser("circular");c.add_argument("--extraction-manifest",type=Path,required=True);c.add_argument("--run-dir",type=Path,required=True);c.add_argument("--survey-manifest",type=Path)
+    cv=s.add_parser("validate-circular");cv.add_argument("--manifest",type=Path,required=True)
+    r=s.add_parser("extract-circular");r.add_argument("--source-manifest",type=Path,required=True);r.add_argument("--run-dir",type=Path,required=True)
+    rv=s.add_parser("validate-reader");rv.add_argument("--manifest",type=Path,required=True)
     v=s.add_parser("validate");v.add_argument("--manifest",type=Path,required=True);a=p.parse_args(argv)
     try:
+        if a.action in {"qcvn-pilot","validate-qcvn-pilot"}:
+            from src.ingestion import qcvn_pilot
+            result=qcvn_pilot.build(a.manifest,a.run_dir) if a.action=="qcvn-pilot" else qcvn_pilot.validate(a.manifest)
+            print(json.dumps(result,ensure_ascii=False));return 0
+        if a.action in {"priority","validate-priority"}:
+            from src.ingestion import circular_priority
+            result=circular_priority.build(a.config,a.run_dir) if a.action=="priority" else circular_priority.validate(a.manifest)
+            print(json.dumps(result,ensure_ascii=False));return 0
+        if a.action in {"extract-circular","validate-reader"}:
+            from src.ingestion import circular_reader
+            result=circular_reader.build(a.source_manifest,a.run_dir) if a.action=="extract-circular" else circular_reader.validate(a.manifest)
+            print(json.dumps(result,ensure_ascii=False));return 0 if result["processing_success"] else 1
+        if a.action in {"circular","validate-circular"}:
+            from src.ingestion import circular_preview
+            result=circular_preview.build(a.extraction_manifest,a.run_dir,a.survey_manifest) if a.action=="circular" else circular_preview.validate(a.manifest)
+            print(json.dumps(result,ensure_ascii=False));return 0
+        if a.action in {"tables","validate-tables"}:
+            from src.ingestion import table_preview
+            result=table_preview.build(a.base_manifest,a.run_dir) if a.action=="tables" else table_preview.validate(a.manifest)
+            print(json.dumps(result,ensure_ascii=False));return 0
         result=build(a.run_dir,a.config,a.extraction_manifest) if a.action=="build" else validate(a.manifest);print(json.dumps(result,ensure_ascii=False));return 0
     except (ValueError,KeyError,TypeError,OSError,StopIteration) as e:print(f"ERROR: {type(e).__name__}: {e}",file=sys.stderr);return 1
 

@@ -1,0 +1,7 @@
+{
+  "metadata": "staging/seven-sources-export-006/manifest.json",
+  "tables": "staging/tt38-tables-003/manifest.json",
+  "tt35": "staging/tt35-preview-005/manifest.json",
+  "tt51": "staging/tt51-preview-003/manifest.json",
+  "tt51_extraction": "staging/tt51-extraction-005/manifest.json"
+}

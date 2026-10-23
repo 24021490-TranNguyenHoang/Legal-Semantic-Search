@@ -1,8 +1,107 @@
-# Ingestion hiện hành — bảy nguồn, preview TT38
+# Ingestion hiện hành — bảy nguồn, preview ba Thông tư
 
 Snapshot2025-01-01.7 văn bản đã đăng ký pending; chỉ4 văn bản có dữ liệu
-trong dataset/index experimental bàn giao. TT38 preview riêng; TT35/TT51
-chưa extraction/parse/chunk. Không coi registered hoặc technical pass là verified.
+trong dataset/index experimental bàn giao. TT38/TT35 và bản ban hành TT51 có
+preview riêng; QCVN còn partial. Không coi registered/technical pass là verified.
+
+## Hiện tại — ưu tiên và pilot hẹp sau ingestion
+
+Run mới `staging/circular-priority-006/` và `staging/qcvn-pilot-002/`.
+[Contract v1.2](design/Circular_Priority_Representation_v1.2.md),
+[báo cáo](reviews/Circular_Priority_QCVN_Pilot_Verification.md).
+Đọc priority.jsonl/review.md cho46 candidate; TT35 chunks.preview/context
+trỏ source proof tương đối run này qua tt35/. TT38 text copy nguyên ID/proof
+từ binding.tables.parent/base; table records có source_proof_base_ref theo repo.
+Không nạp các record này bằng adapter dataset v1 hoặc coi graph Part là DDD v1.
+
+```powershell
+.\.venv-stage1\Scripts\python.exe -X utf8 -B -m src.tt38_preview priority --config config/circular_priority.v1.2.json --run-dir staging/circular-priority-NEW
+.\.venv-stage1\Scripts\python.exe -X utf8 -B -m src.tt38_preview validate-priority --manifest staging/circular-priority-NEW/manifest.json
+.\.venv-stage1\Scripts\python.exe -X utf8 -B -m src.tt38_preview qcvn-pilot --manifest staging/tt51-extraction-005/manifest.json --run-dir staging/qcvn-pilot-NEW
+.\.venv-stage1\Scripts\python.exe -X utf8 -B -m src.tt38_preview validate-qcvn-pilot --manifest staging/qcvn-pilot-NEW/manifest.json
+.\.venv-stage1\Scripts\python.exe -X utf8 -B -m unittest tests.test_circular_priority tests.test_circular_completion tests.test_tt38_layout tests.test_stage6_points.PointBuilderTests tests.test_leaf_articles.LeafArticleTests
+```
+
+Phiên âm QCVN nằm config/qcvn_pilot.agent_transcription.v1.json: agent đọc ảnh,
+không OCR/human review, chỉ phần chọn; không dùng offsets mới thay extraction cũ.
+Không có Tesseract/pdftotext trên máy đã thử; không cần tải model/OCR dịch vụ.
+Chưa tạo dataset mới. Các mục sau là hướng dẫn/baseline ingestion lịch sử.
+
+## Cập nhật 2026-10-23 — hoàn thiện ingestion
+
+Contract/changelog mới: [Circulars ingestion v1.1](design/Circulars_Ingestion_Addendum_v1.1.md).
+Báo cáo bàn giao: [Circulars completion verification](reviews/Circulars_Ingestion_Completion_Verification.md).
+Addendum v1.0 và các báo cáo cũ giữ nguyên để replay lịch sử.
+
+| Nguồn | Extraction | Preview hiện hành | Chưa xử lý |
+|---|---|---|---|
+| TT38 | Công báo8tr, giữ run cũ | tt38-tables-003:38 chunk v1 +9 hàng bảng dẫn xuất | Điểm b A11K2:279 token quarantine; hàng bảng chưa là chunk DDD |
+| TT35 | tt35-extraction-001:69+179tr | tt35-preview-005:767 units projection thưa,572 chunk/1070 context | 179tr phụ lục chưa grammar/forms;13 blocked,4 quá budget; Phần/Chương ở sidecar |
+| TT51 | tt51-extraction-005:1+403tr, QCVN partial | tt51-preview-003:3 supporting chunk/3 context bản ban hành | QCVN100 trang không text,302 trang U+FFFE; không target QCVN |
+
+Metadata mới dùng `staging/seven-sources-export-006/`: download_url Công báo
+TT38 là scalar252 ký tự đã đối chiếu receipt/HTML/hash. Đọc CSV bằng
+csv.DictReader mặc định, không nâng field_size_limit để né object lỗi.
+Export003/004/005 là lịch sử; manifest006 bind riêng các preview mới.
+
+Pipeline cần pypdfium2 trực tiếp (đã có bản5.14.0 trong lock Windows), ngoài
+pdfplumber/pdfminer.six/jsonschema và requirements-stage6.txt để tokenize.
+Môi trường hiện kiểm Python3.11.9/Windows; dùng lock cùng assets đã bàn giao.
+Không cần tải weights hoặc chạy encoder. Chưa thử lại cài sạch/OS khác ở lượt này.
+
+```powershell
+# Từ gốc repo; NEW là thư mục chưa tồn tại. Giữ nguyên các run cũ.
+.\.venv-stage1\Scripts\python.exe -X utf8 -B -m src.tt38_preview tables --base-manifest staging/tt38-preview-003/manifest.json --run-dir staging/tt38-tables-NEW
+.\.venv-stage1\Scripts\python.exe -X utf8 -B -m src.tt38_preview validate-tables --manifest staging/tt38-tables-NEW/manifest.json
+
+.\.venv-stage1\Scripts\python.exe -X utf8 -B -m src.source_registry register --config config/source_registration.tt35.v1.json --run-dir staging/tt35-source-NEW
+.\.venv-stage1\Scripts\python.exe -X utf8 -B -m src.extraction_pipeline extract --source-manifest staging/tt35-source-NEW/manifest.json --run-dir staging/tt35-extraction-NEW
+.\.venv-stage1\Scripts\python.exe -X utf8 -B -m src.tt38_preview circular --extraction-manifest staging/tt35-extraction-NEW/manifest.json --run-dir staging/tt35-preview-NEW
+.\.venv-stage1\Scripts\python.exe -X utf8 -B -m src.tt38_preview validate-circular --manifest staging/tt35-preview-NEW/manifest.json
+
+.\.venv-stage1\Scripts\python.exe -X utf8 -B -m src.source_registry register --config config/source_registration.tt51.v1.json --run-dir staging/tt51-source-NEW
+.\.venv-stage1\Scripts\python.exe -X utf8 -B -m src.tt38_preview extract-circular --source-manifest staging/tt51-source-NEW/manifest.json --run-dir staging/tt51-extraction-NEW
+# Dự kiến exit1: reader hoàn tất nhưng QCVN có lỗi text; xem validation_report.json.
+.\.venv-stage1\Scripts\python.exe -X utf8 -B -m src.tt38_preview validate-reader --manifest staging/tt51-extraction-NEW/manifest.json
+# Main complete tiếp tục độc lập; annex partial không thành target/context.
+.\.venv-stage1\Scripts\python.exe -X utf8 -B -m src.tt38_preview circular --extraction-manifest staging/tt51-extraction-NEW/manifest.json --run-dir staging/tt51-preview-NEW
+.\.venv-stage1\Scripts\python.exe -X utf8 -B -m src.tt38_preview validate-circular --manifest staging/tt51-preview-NEW/manifest.json
+```
+
+TT51 dùng reader adapter hẹp để tránh giữ đồ họa403tr trong RAM; core Stage3/
+parser/builder cũ giữ nguyên byte. Chưa hiệu đính NUL/U+FFFE hoặc OCR. CLI gốc
+`src.tt38_preview` có thêm subcommands, không tạo executable/framework khác.
+`--survey-manifest` chỉ là cache phép đo **cùng SHA manifest extraction**.
+Ví dụ tái dùng khảo sát TT35 có sẵn mà vẫn replay cây/chunk và kiểm nguồn:
+
+```powershell
+.\.venv-stage1\Scripts\python.exe -X utf8 -B -m src.tt38_preview circular --extraction-manifest staging/tt35-extraction-001/manifest.json --survey-manifest staging/tt35-preview-001/manifest.json --run-dir staging/tt35-preview-REPLAY
+
+.\.venv-stage1\Scripts\python.exe -X utf8 -B -m src.source_inventory export --registry-manifest staging/seven-sources-registration-001/manifest.json --dataset-manifest staging/bm25-baseline-v1-001/dataset/dataset_manifest.json --draft-manifest staging/dataset-v2-draft-001/dataset_manifest.json --preview-manifest staging/tt38-preview-003/manifest.json --circular-manifest staging/tt35-preview-005/manifest.json --circular-manifest staging/tt51-preview-003/manifest.json --table-manifest staging/tt38-tables-003/manifest.json --run-dir staging/seven-sources-export-NEW
+.\.venv-stage1\Scripts\python.exe -X utf8 -B -m src.source_inventory validate --manifest staging/seven-sources-export-NEW/manifest.json
+
+.\.venv-stage1\Scripts\python.exe -X utf8 -B -m unittest tests.test_circular_completion tests.test_tt38_layout tests.test_stage2 tests.test_stage3 tests.test_stage4 tests.test_stage6_points.PointBuilderTests tests.test_leaf_articles.LeafArticleTests
+```
+
+Đường dẫn trên là dependency thực của run hiện tại. Nếu chưa có staging cũ,
+khôi phục đúng bundle/assets đã seal hoặc dựng TT38 bằng các lệnh bên dưới
+rồi bind manifest mới; không tự chọn tokenizer/model khác. Các scope proposal
+TT35 bind unit/hash trong config/circular_scope.proposed.v1.json; đổi nội dung
+phải rà lại proposal, không mang reviewer event hoặc tự promote pending.
+
+Mở `review.md`, `page_coverage.jsonl`, `main_coverage.jsonl`, `unprocessed_regions.jsonl`,
+`unit_structure_dependencies.jsonl`, `scope.proposals.jsonl`, `region_scope.proposals.jsonl`.
+TT35 tables/cells là cấu trúc đo được, annex chưa thành target. TT51 tables=null
+trên403tr nghĩa là chưa đo layout bảng, không phải không có bảng. Hình có bbox
+không đồng nghĩa đã hiểu nội dung; root inventory bị giới hạn/nested Forms giữ issue.
+QCVN page368 chỉ trích được số trang vẫn có hình, không được coi là quy định đủ nghĩa.
+
+TT38 `tables.preview.jsonl`/`tables.quarantine.jsonl` dùng ID tp_ và biểu diễn
+dẫn xuất riêng; nguyên văn/cell/source slices không bị thay bằng text_derived.
+Đừng ghép thẳng các hàng này vào dataset DDD. Ba Thông tư vẫn ngoài dataset/index
+v1 và draft3.082; corpus chưa verified và applicability tiếp tục pending.
+
+## Đường chạy TT38 v1 và đăng ký bảy nguồn (vẫn replay được)
 
 Danh mục chuẩn và quyết định adapter:
 [addendum v1.0](design/Source_Inventory_7_And_TT38_Addendum_v1.0.md).

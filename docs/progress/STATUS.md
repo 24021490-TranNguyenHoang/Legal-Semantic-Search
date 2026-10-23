@@ -1,4 +1,32 @@
-# Trạng thái dataset và BM25 experimental
+# Hiện tại — ưu tiên TT38/TT35 và pilot QCVN (2026-10-23)
+
+**PRIORITY_PREVIEW_COMPLETE / LEGAL_REVIEW_PENDING / DATASET_ADAPTER_PENDING**.
+Snapshot2025-01-01. Dataset/index v1 **3.077** và draft **3.082** giữ riêng,
+ba Thông tư chưa nhập; evaluation/qrels/ZIP không đổi. Không stage/commit/push.
+
+Run `staging/circular-priority-006/`:46 dòng rà soát, gồm8 TT38 text,
+9 table retrieval records đạt budget,1 Điểm b279 token quarantine,
+25 TT35 text đạt71–184 token/2unknown,3 TT51 supporting conditional.
+TT35 graph mới783 nodes có7Phần/9Chương thật; crosswalk giữ root,766 unit
+đổi ID và16 ancestors mới. Graph/schema pending revision riêng, không sửa
+schema DDD v1; adapter dataset hiện hành chưa hỗ trợ Part/table records.
+Nguồn/edition/applicability pending, scope chỉ agent proposal.
+
+Pilot `staging/qcvn-pilot-002/` chỉ PDF7/214/300/368: render/reader và phiên âm
+hẹp từ ảnh,0QCVNchunk. Font chưa giải mã tự động, không có OCR executable;
+214/300/368 vẫn phụ thuộc hình/bảng, không suy ý nghĩa biển từ hình.
+Chưa có bằng chứng để mở rộng tự động toànQCVN.13+4 ca TT35 ngoài nhóm ưu
+tiên giữ backlog; chưa rà toàn463preview pending hoặc toànannex.
+
+Chi tiết: [verification](../reviews/Circular_Priority_QCVN_Pilot_Verification.md),
+[contract v1.2](../design/Circular_Priority_Representation_v1.2.md),
+[lệnh chạy](../ingestion.md). Kiểm tra kỹ thuật không xác minh pháp lý/retrieval.
+Bước tiếp: adapter draft revision cho graph/table + rà dependency có mục tiêu;
+chưa đủ đóng gói bằng adapter v1, chưa yêu cầu nhóm chuyển phiên bản.
+
+---
+
+# Lịch sử — trạng thái dataset và BM25 experimental
 
 **DEV_RUN_COMPLETE / LABELS_PENDING / SHARE_PENDING** — đã thử chạy độc lập trong clone
 cục bộ và venv sạch trên máy hiện tại; **chưa có URL chia sẻ** artifact.
@@ -262,3 +290,61 @@ nhật trạng thái thật.78 tests tập trung và9 tests Điều lá đạt; 
 giới hạn chi tiết trong [Seven Sources TT38 Verification](../reviews/Seven_Sources_TT38_Verification.md).
 Dataset3077/index/evaluation/ZIP và draft3082 không được cập nhật. Chưa
 chạy embedding/index, chưa OCR TT51 hoặc yêu cầu nhóm chuyển phiên bản.
+
+## Hoàn thiện ingestion ba Thông tư — 2026-10-23
+
+Mục này cập nhật trạng thái hiện tại; các mục phía trên là lịch sử.
+HEAD kiểm tra `3faaf98946ac24ff5abbf2bdd38e53d1c8975ecb`, có thay đổi chưa
+commit cho ingestion; không stage/commit/push. Snapshot giữ2025-01-01.
+Contract [Circulars addendum v1.1](../design/Circulars_Ingestion_Addendum_v1.1.md),
+[báo cáo và bằng chứng](../reviews/Circulars_Ingestion_Completion_Verification.md),
+[lệnh tái chạy](../ingestion.md).
+
+Metadata cuối: `staging/seven-sources-export-006/`, 7 văn bản/10 file.
+URL Công báo TT38 đã sửa thành scalar252 ký tự bằng receipt/HTML/hash;
+CSV đọc được bằng csv.DictReader mặc định và khớp JSONL. 6 download_url có
+căn cứ,4 DOCX null;9 retrieved_at lịch sử null. Export lỗi được giữ nguyên.
+
+| Nguồn | Extraction / preview hiện tại | Giới hạn | Dataset/index |
+|---|---|---|---|
+| SRC-001 Luật36 | DOCX; PDF Điều22 riêng | Pending pháp lý | v1:788 chunk, giữ nguyên |
+| SRC-002 NĐ168 | DOCX; HTML A16K2 riêng | Nhánh khôi phục chỉ trong draft | v1:1.018 chunk, giữ nguyên |
+| SRC-003 Luật35/QH15 | DOCX | Còn vùng chưa xử lý | v1:664 chunk, giữ nguyên |
+| SRC-004 NĐ165 | DOCX | Pending pháp lý | v1:607 chunk, giữ nguyên |
+| SRC-005 TT38 | Công báo8tr; tt38-tables-003:38 chunk cũ +9 preview hàng bảng | Điểm b A11K2:279 token; hàng bảng chưa biểu diễn chunk DDD | Chưa nhập |
+| SRC-006 TT51 | tt51-extraction-005:1+403tr; tt51-preview-003:3 supporting chunk | QCVN partial:100 trang không text,302 trang U+FFFE,0 target QCVN | Chưa nhập |
+| SRC-007 TT35/TT-BGTVT | tt35-extraction-001:69+179tr; tt35-preview-005:767 unit,572 chunk/1.070 context | Cây thưa Phần/Chương;13 source/context blocked,4 quá budget;179tr annex chưa grammar | Chưa nhập |
+
+TT38 đã có kết luận cho cả4 đơn vị bị bảng chặn: A6K1→1 row, A6K2→4 rows,
+A11K2a→4 rows; A11K2b giữ dependency đầy đủ và quarantine279. Chín preview
+đạt137–168 token,unknown0, giữ33 cells/spans; ID tp_ riêng, chưa phải chunk DDD.
+
+TT35 có133 unit scope proposal (25 included/27 supporting/81 excluded),634
+pending. 572 preview kỹ thuật gồm25 included,15 supporting,69 excluded,
+463 pending.11 unknown trong preview đạt budget; hai included A15K1b/A15K2b
+mỗi target có1 unknown tokenizer, không sửa nguyên văn/preprocessing.
+148 bảng/cụm ô đo được,5.541 cells,28 image objects/9 trang annex;
+3 vùng annex proposed supporting,176 trang khác pending. Phần/Chương thật
+giữ sidecar/dependencies; chưa đủ cây cha DDD chính thức.
+
+TT51 main complete độc lập; QCVN reader hoàn tất nhưng extraction partial:
+61.891 U+FFFE,402 issue, validate-reader trả1 đúng chính sách. Không xóa NUL/
+noncharacter hoặc gọi text rỗng là trang trắng.403 trang bảng chưa đo layout;
+root image inventory quan sát4.057 objects/254 trang,177 trang vector,
+59 trang inventory chưa đầy đủ. Chưa OCR/hiểu hình; toàn QCVN giữ unprocessed.
+
+98 tests liên quan đạt;11 focused tests chạy lại đạt sau bổ sung assertion.
+7 tampering cases bị từ chối;5.541 cell bindings khớp;572 TT35 ID/content
+không đổi khi thêm blocker cấu trúc.281 file baseline được bảo vệ giữ nguyên.
+Các số này là kiểm chứng kỹ thuật, không kết luận pháp lý hoặc retrieval.
+Chưa thử môi trường sạch/OS khác trong lượt này.
+
+Nguồn/edition/applicability còn pending, scope chỉ agent proposal; ngày hiệu
+lực chung có source spans nhưng chưa đánh giá ngoại lệ/sửa đổi cấp unit.
+Không human reviewer event. Bản nhóm đang dùng vẫn dataset3077/index/evaluation/
+ZIP v1; draft3082 riêng, cả ba Thông tư chưa nhập. Evaluation và Dense của nhóm
+tiếp tục trên cùng dataset v1; lượt ingestion này không chạy chúng.
+
+Ứng viên cho đợt dataset tiếp:25 TT35 proposed included (còn blocker cây cha/
+review/token), TT38 text đã có và9 hàng bảng sau khi chốt biểu diễn; TT51
+chỉ3 supporting khi có dependency cụ thể. Chưa tự ghép các preview vào dataset.

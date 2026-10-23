@@ -1,0 +1,38 @@
+{
+  "contract_version": "source-registration.v1",
+  "dataset_kind": "legal_sources",
+  "snapshot_date": "2025-01-01",
+  "file_id_namespace": "6a36999d-9a98-4a12-aed9-fdbea516e54e",
+  "documents": [
+    {
+      "law_id": "51/2024/TT-BGTVT",
+      "source_id": "SRC-006",
+      "declared": {
+        "law_title": "Ban hành Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ",
+        "document_type": "circular",
+        "scope_note": "Đăng ký nguồn bổ sung; chỉ chọn phạm vi/hiệu lực ở cấp đơn vị sau. Chưa nhập corpus.",
+        "source_url_candidate": "https://vanban.chinhphu.vn/?pageid=27160&docid=211908",
+        "issued_date_candidate": "2024-11-15",
+        "inventory_ref": "docs/design/Source Inventory v0.1.docx.md"
+      }
+    }
+  ],
+  "files": [
+    {
+      "law_id": "51/2024/TT-BGTVT",
+      "source_set_id": "SRC-006-local-pdf-01",
+      "part_order": 1,
+      "file_role": "main",
+      "raw_file_ref": "data/raw/51-bgtvt.pdf",
+      "expected_sha256": "dc822815eb51c6674a40ce91127b636f11a7479c76f24d9a00445dcf248b6689"
+    },
+    {
+      "law_id": "51/2024/TT-BGTVT",
+      "source_set_id": "SRC-006-local-pdf-01",
+      "part_order": 2,
+      "file_role": "annex",
+      "raw_file_ref": "data/raw/51-bgtvt-kem.pdf",
+      "expected_sha256": "b6b99d0a0aeb13fe79072831857ece15bb254d8fb7817e80e4a2739a0d2145ce"
+    }
+  ]
+}

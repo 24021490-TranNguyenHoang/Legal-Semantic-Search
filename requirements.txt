@@ -11,4 +11,5 @@ torch
 transformers
 python-docx
 pdfplumber
+pypdfium2
 jsonschema

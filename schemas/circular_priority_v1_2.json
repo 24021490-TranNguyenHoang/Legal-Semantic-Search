@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Pending structural graph extension v1.2; never the official DDD schema",
+  "type": "object",
+  "required": ["unit_id", "law_id", "unit_type", "parent_unit_id", "canonical_path", "title", "text_original"],
+  "properties": {
+    "unit_type": {"enum": ["document", "part", "chapter", "article", "clause", "point"]},
+    "unit_id": {"type": "string", "pattern": "^u_[0-9a-f]{64}$"},
+    "title": {"type": "string"},
+    "text_original": {"type": "string"}
+  }
+}

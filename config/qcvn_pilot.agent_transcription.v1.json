@@ -1,0 +1,11 @@
+{
+  "origin": "agent_review",
+  "method": "scoped_visual_transcription_from_pdf_render",
+  "raw_sha256": "b6b99d0a0aeb13fe79072831857ece15bb254d8fb7817e80e4a2739a0d2145ce",
+  "pages": [
+    {"pdf_page": 7, "printed_page": "7", "region": "page-level, selected Điều 4 through 4.1.6 only", "text": "Điều 4. Thứ tự hiệu lực của hệ thống báo hiệu\n4.1. Khi đồng thời có bố trí các hình thức báo hiệu có ý nghĩa khác nhau ở\ncùng một khu vực, người tham gia giao thông đường bộ phải chấp hành báo hiệu đường\nbộ theo thứ tự ưu tiên từ trên xuống dưới như sau:\n4.1.1. Hiệu lệnh của người điều khiển giao thông;\n4.1.2. Tín hiệu đèn giao thông;\n4.1.3. Biển báo hiệu đường bộ;\n4.1.4. Vạch kẻ đường và các dấu hiệu khác trên mặt đường;\n4.1.5. Cọc tiêu, tường bảo vệ, rào chắn, đinh phản quang, tiêu phản quang, cột Km,\ncọc H;\n4.1.6. Thiết bị âm thanh báo hiệu đường bộ.", "status": "agent_visual_comparison_only", "missing": "4.2 and Điều5 not transcribed; no claim of whole-page recovery"},
+    {"pdf_page": 214, "printed_page": "214", "region": "page-level, selected printed labels only", "text": "Phụ lục M\nCHI TIẾT CÁC THÔNG SỐ THIẾT KẾ BIỂN BÁO\nM.1 Nhóm biển báo cấm\nBiển số P.101: Đường cấm\nBiển số P.102: Cấm đi ngược chiều\nBiển số P.103a: Cấm xe ôtô", "status": "labels_only_figure_dependent", "missing": "Dimensions, table rows, units, all drawing geometry and remaining labels not transcribed"},
+    {"pdf_page": 300, "printed_page": "300", "region": "page-level, selected printed labels only", "text": "Phụ lục M: Nhóm biển chỉ dẫn\nBiển số I.418: Đường tránh", "status": "labels_only_figure_dependent", "missing": "Drawing, arrows, dimensions, road-type table and other labels remain image dependencies"},
+    {"pdf_page": 368, "printed_page": "368", "region": "page-level, drawing dimension labels only", "text": "A\nB\nC\nD\nE", "status": "labels_only_not_reading_order", "missing": "No source caption/sign code visible on this page; drawing and adjacent-page dependency unresolved; no inference of sign meaning"}
+  ]
+}
