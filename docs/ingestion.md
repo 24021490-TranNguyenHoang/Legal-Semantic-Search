@@ -4,7 +4,41 @@ Snapshot2025-01-01.7 văn bản đã đăng ký pending; chỉ4 văn bản có d
 trong dataset/index experimental bàn giao. TT38/TT35 và bản ban hành TT51 có
 preview riêng; QCVN còn partial. Không coi registered/technical pass là verified.
 
-## Hiện tại — ưu tiên và pilot hẹp sau ingestion
+## Hiện tại — draft experimental composition
+
+Run `staging/dataset-v3-draft-005/`, policy circular-composition.v1.
+[Contract](design/Circular_Dataset_Composition_v1.0.md),
+[báo cáo/selection/giới hạn](reviews/Circular_Dataset_Draft_Verification.md).
+Text3106/table9/context5413/required-read23, không gọi3115 là số text chunk.
+13 candidate withheld, mọi trạng thái pháp lý tiếp tục pending/proposed.
+Dataset/index v1 và draft3082 không thay đổi.
+
+```powershell
+# Build cần repo, upstream manifests/assets/dependencies hiện có; NEW chưa tồn tại
+.\.venv-stage1\Scripts\python.exe -X utf8 -B -m src.tt38_preview dataset-draft --config config/circular_dataset.v1.json --run-dir staging/dataset-v3-draft-NEW
+
+# Sau khi copy nguyên folder draft thành bundle: chỉ Python stdlib
+python -X utf8 -I bundle/validate_read.py validate --root bundle
+$sampleRecord = Get-Content bundle/table_records.jsonl -Encoding utf8 -TotalCount 1 | ConvertFrom-Json
+python -X utf8 -I bundle/validate_read.py read --root bundle --record-id $sampleRecord.retrieval_id
+# Phải exit1: consumer thiếu khả năng đọc Part/table/required-read
+python -X utf8 -I bundle/validate_read.py validate --root bundle --capabilities chunk.v1
+
+.\.venv-stage1\Scripts\python.exe -X utf8 -B -m unittest tests.test_circular_dataset tests.test_circular_priority tests.test_circular_completion tests.test_stage6_points.PointBuilderTests tests.test_leaf_articles.LeafArticleTests
+```
+
+Không cài tokenizer/model khi chỉ validate/read. Build mới vẫn replay validators
+cũ và priority với môi trường pipeline/tokenizer CPU, không encoder inference.
+Không đổi các paths trong payload: đọc membership.proof_base trước, table dùng
+manifest.mounts cho logical root. Read trả record, membership và nguyên văn/
+spans của required-read dependencies. Xem selection.jsonl, dependencies.jsonl,
+delta.jsonl, candidate_comparison.jsonl, crosswalk và review.md.
+Metadata historical evidence refs/rebuild-only được ghi trong
+evidence/dependency_roles.json; không phải path resolver runtime.
+Không nạp flat chunks vào loader v1 hoặc âm thầm bỏ table/Phần. Trên Windows
+dùng -X utf8 để tránh lỗi charmap khi xuất nguyên văn. Các mục sau là lịch sử.
+
+## Lịch sử — ưu tiên và pilot hẹp sau ingestion
 
 Run mới `staging/circular-priority-006/` và `staging/qcvn-pilot-002/`.
 [Contract v1.2](design/Circular_Priority_Representation_v1.2.md),

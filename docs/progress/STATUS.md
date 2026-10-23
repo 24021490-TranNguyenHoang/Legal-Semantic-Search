@@ -1,4 +1,33 @@
-# Hiện tại — ưu tiên TT38/TT35 và pilot QCVN (2026-10-23)
+# Hiện tại — draft composition TT38/TT35 (2026-10-23)
+
+**EXPERIMENTAL_DRAFT_BUILT / PORTABLE_VALIDATION_PASSED / LEGAL_REVIEW_PENDING**.
+Run `staging/dataset-v3-draft-005/`, version
+`vtls-coverage-experimental.v3-draft.1`, snapshot2025-01-01, draft/experimental,
+release_eligible=false, scope proposed, nguồn/edition/applicability pending.
+Không human review. Nhóm vẫn dùng dataset/index v1 **3.077**; draft cũ **3.082**
+giữ nguyên, không đổi evaluation/qrels/ZIP hoặc yêu cầu chuyển phiên bản.
+
+Draft mới: **3.106 text chunk +9 table records =3.115 retrieval records**,
+5.413 encoder contexts;23 required-read dependency bindings. Delta giữ3082,
+thêm24text (8TT38+16TT35) và9table;0replaced/removed/conflicted.13 withheld:
+9TT35 thiếu biểu diễn form/reference,1TT38 b279token,3TT51 conditional.
+Không nhậpQCVN/572previewTT35, không thay tokenizer/preprocessing/budget256.
+
+Adapter dùng composition components và resolver mounts, giữ payload/ID;
+Part/Chapter TT35 và table-retrieval.v1 có contract riêng. Required-read source
+subtrees bind chính xác; không ghép thêm vào encoder. Consumer không hỗ trợ
+Part/table/dependency phải fail. Validate/read đã thử trong folder độc lập,
+venv stdlib sạch trên cùng Windows, audit hook chặn đọc ngầm workspace khác.
+Chưa kiểm máy/OS khác. Không index/embedding/retrieval hoặc xác minh pháp lý.
+
+[Báo cáo và lệnh chạy](../reviews/Circular_Dataset_Draft_Verification.md),
+[contract](../design/Circular_Dataset_Composition_v1.0.md),
+[ingestion guide](../ingestion.md). Bước tiếp nếu được phép: consumer/index
+revision, bind version/hash và evaluation phù hợp; chưa triển khai trong phiên.
+
+---
+
+# Lịch sử — ưu tiên TT38/TT35 và pilot QCVN (2026-10-23)
 
 **PRIORITY_PREVIEW_COMPLETE / LEGAL_REVIEW_PENDING / DATASET_ADAPTER_PENDING**.
 Snapshot2025-01-01. Dataset/index v1 **3.077** và draft **3.082** giữ riêng,

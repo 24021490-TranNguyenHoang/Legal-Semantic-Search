@@ -1,0 +1,1051 @@
+{
+  "policy_version": "circular-composition.v1",
+  "dataset_version": "vtls-coverage-experimental.v3-draft.1",
+  "snapshot_date": "2025-01-01",
+  "inputs": {
+    "base": {
+      "ref": "staging/dataset-v2-draft-001/dataset_manifest.json",
+      "sha256": "42c59623d6d921429cd45f2bdfaab3deabab002efa4f13e8720b9645d8944237"
+    },
+    "priority": {
+      "ref": "staging/circular-priority-006/manifest.json",
+      "sha256": "b21366fa0c8e22b4c27a29945f0eeab7b254b1193aa7f041b02988ad92b4c20b"
+    }
+  },
+  "selection": [
+    {
+      "legacy_candidate_id": "c_4a3b77b8fc1ccba33e5909fb0c953f271f06adbbc149e083d5a36811c3f936ad",
+      "unit_id": "u_d686e971a3a35068710de8dcb7a5acd9155a83b3c13c44dc46e8922ca50fe9c8",
+      "graph_id": "tt38",
+      "citation_path": "38/2024/TT-BGTVT > Chương II > Điều 9 > Khoản 2",
+      "kind": "text",
+      "disposition": "selected",
+      "reason": "Own text and parent context read; no unresolved mandatory external content",
+      "required_dependencies": [
+        {
+          "graph_id": "tt38",
+          "root_unit_id": "u_900ef75adfdc8e28dcd187fa2555364bb674704d43c7ca578f3a3845c635bec6",
+          "unit_ids": [
+            "u_900ef75adfdc8e28dcd187fa2555364bb674704d43c7ca578f3a3845c635bec6"
+          ],
+          "required": true,
+          "representation": "source_unit_subtree_for_required_read",
+          "reason": "Bound original rule/conditions; not appended to encoder input"
+        }
+      ],
+      "scope_proposal": "included",
+      "origin": "agent_review",
+      "status": "technical_selection_not_scope_acceptance",
+      "applicability": "pending_review",
+      "release_eligible": false,
+      "reviewer_ref": null
+    },
+    {
+      "legacy_candidate_id": "c_717484ded2c5eb21ac55c9d2e93cdbbc4aaab9d222f4365e75e37c11e086e79b",
+      "unit_id": "u_d542ad7211c50400cf73263ecfe3e608ae1812a9193001a08a7051a9c8af170c",
+      "graph_id": "tt38",
+      "citation_path": "38/2024/TT-BGTVT > Chương I > Điều 4 > Khoản 1",
+      "kind": "text",
+      "disposition": "selected",
+      "reason": "Own text and parent context read; no unresolved mandatory external content",
+      "required_dependencies": [
+        {
+          "graph_id": "base-docx",
+          "root_unit_id": "u_863689187f60decf4b6ab634cdca5c545e4d5867965aca7684192f559e7d2b43",
+          "unit_ids": [
+            "u_05e8512f824a13792ec2e7f73e22a87a03cd96eaba7e122d24831a8ffa170172",
+            "u_0f41e106e5a97e3ee9cb308f74c915868b9c461ada52a8afa4ec1dfa9d08254f",
+            "u_27b8b4d4ba7a578baa23735ddb6a5e1b5fa1f98ce356e9f0b9da1625846c9435",
+            "u_2df33f6289d8c241f6c39023c05f894ff27f25c93f31fd01c10c6167fa5a1a79",
+            "u_424d4294af1754094b0516aba898b4b199835a6fbfaf5e2c419d46ba3da76a7f",
+            "u_4775e981808c9b6410c79544d5bee7980bb455653ad9fb9ec3a783dd8ff4bd37",
+            "u_556ed6ee7cb1db21c111b1d696edb4bf7bcb863f61e35a992325299a548ce58a",
+            "u_7040c6bcf7885c1f58bb33d21bfadd5d0e6abb36d176964415e43c0c97671652",
+            "u_7849f0ddd0aa9728cb7c6b60d2790a570004e66d2f53949e385907e1102e49e5",
+            "u_828f53356d2f9f2d0318ecc227bb4ee30e59493902574bd96132e129c05da14f",
+            "u_863689187f60decf4b6ab634cdca5c545e4d5867965aca7684192f559e7d2b43",
+            "u_9a9ca2185d4d88d3dca124218c86336d7de02b635321cb18b28b18ee376a3bc6",
+            "u_ae2037a9dbe2bf89461b69999c30a86fc0ea20359af6ef5643fe4ee10e364f22",
+            "u_b17dc8f3516542c6af1a18fb2abf4230bfd212b7a3db96eb69119b86db47ab18",
+            "u_d084857f0d3fea06e5a415e896b53a5f802890c01c05ecbee4b20930097e4349",
+            "u_da8b291ab69817222547f1a1d7498077fa3ad51c4a15d84903ebee339ad2929a",
+            "u_f19fda0faaba7c2e7398a8de7bd304acc7b9baf969a755470ec5b98480d04ad4",
+            "u_f5fd97229cdffc85c539a0c231229f1b8adb9460c0b591bd43d4a59f7152f67c"
+          ],
+          "required": true,
+          "representation": "source_unit_subtree_for_required_read",
+          "reason": "Bound original rule/conditions; not appended to encoder input"
+        }
+      ],
+      "scope_proposal": "included",
+      "origin": "agent_review",
+      "status": "technical_selection_not_scope_acceptance",
+      "applicability": "pending_review",
+      "release_eligible": false,
+      "reviewer_ref": null
+    },
+    {
+      "legacy_candidate_id": "c_8248e4ceabc109d2942e073a201f86717525e0afc92bab40b5dbbb40f1d36f00",
+      "unit_id": "u_b494290f982b90705069a87e9aefaced460f2aa0c4c1d57f03b6ce0b96edf19f",
+      "graph_id": "tt38",
+      "citation_path": "38/2024/TT-BGTVT > Chương II > Điều 7",
+      "kind": "text",
+      "disposition": "selected",
+      "reason": "Own text and parent context read; no unresolved mandatory external content",
+      "required_dependencies": [],
+      "scope_proposal": "included",
+      "origin": "agent_review",
+      "status": "technical_selection_not_scope_acceptance",
+      "applicability": "pending_review",
+      "release_eligible": false,
+      "reviewer_ref": null
+    },
+    {
+      "legacy_candidate_id": "c_90dbea50bf3c4885a401310a3d5c4d08da46522f1413aa0c98d99bed42ded7e3",
+      "unit_id": "u_a4c1f228febff0c92cb77487f854a90423db91eb1e03579d0a28fb5e6d1fa0eb",
+      "graph_id": "tt38",
+      "citation_path": "38/2024/TT-BGTVT > Chương I > Điều 4 > Khoản 2",
+      "kind": "text",
+      "disposition": "selected",
+      "reason": "Own text and parent context read; no unresolved mandatory external content",
+      "required_dependencies": [
+        {
+          "graph_id": "tt38",
+          "root_unit_id": "u_b648e31bcb14cde48a411838a7df59b92ee3a5cd2bb50b534886021f64e5a5ac",
+          "unit_ids": [
+            "u_00dacc93250f0475c73def61662537fe4cc4ddb846820612d7650d09c05402af",
+            "u_b24c2dc0bb0a4840bc6bf1c8c7726de7f9e64495566f099d151681e9d96995e0",
+            "u_b648e31bcb14cde48a411838a7df59b92ee3a5cd2bb50b534886021f64e5a5ac"
+          ],
+          "required": true,
+          "representation": "source_unit_subtree_for_required_read",
+          "reason": "Bound original rule/conditions; not appended to encoder input"
+        },
+        {
+          "graph_id": "tt38",
+          "root_unit_id": "u_b494290f982b90705069a87e9aefaced460f2aa0c4c1d57f03b6ce0b96edf19f",
+          "unit_ids": [
+            "u_b494290f982b90705069a87e9aefaced460f2aa0c4c1d57f03b6ce0b96edf19f"
+          ],
+          "required": true,
+          "representation": "source_unit_subtree_for_required_read",
+          "reason": "Bound original rule/conditions; not appended to encoder input"
+        },
+        {
+          "graph_id": "tt38",
+          "root_unit_id": "u_b737abb1f52ceb530d19959e50350563ce9ad4c230337ad5765a63b10906bc13",
+          "unit_ids": [
+            "u_43dcbaed67fedb41eb207195d70d5d8a8e5cf7ae613d00209c9c6592830ce8fb",
+            "u_b737abb1f52ceb530d19959e50350563ce9ad4c230337ad5765a63b10906bc13",
+            "u_f73f098e69e21d8019565ee4b25961cf839932720b2611db76ef01d61fb62cf7"
+          ],
+          "required": true,
+          "representation": "source_unit_subtree_for_required_read",
+          "reason": "Bound original rule/conditions; not appended to encoder input"
+        },
+        {
+          "graph_id": "tt38",
+          "root_unit_id": "u_1baab4cd5b98c00a809f098817bdfd3a8ef9b2b652f0ace79b8ec39fe5aa3580",
+          "unit_ids": [
+            "u_04c07058e5f2b3976fe4dd1f0694467549b935697b0a9ad0e3805b0241a23ff7",
+            "u_1baab4cd5b98c00a809f098817bdfd3a8ef9b2b652f0ace79b8ec39fe5aa3580",
+            "u_51b2787761333c4d768baf93fcfb37775ccd94dfc5af6f2b1b3e87ca6f857494",
+            "u_7f24884794d3e6380fb63261452a75c85ac58c423baa12297be57beb825cf5eb",
+            "u_f067a07a29b6521d03f2d0291503f5a3cb603fd334c85385138afe9fd23fd8e5"
+          ],
+          "required": true,
+          "representation": "source_unit_subtree_for_required_read",
+          "reason": "Bound original rule/conditions; not appended to encoder input"
+        }
+      ],
+      "scope_proposal": "included",
+      "origin": "agent_review",
+      "status": "technical_selection_not_scope_acceptance",
+      "applicability": "pending_review",
+      "release_eligible": false,
+      "reviewer_ref": null
+    },
+    {
+      "legacy_candidate_id": "c_94e9af6a8818fd0df403046d9a7468fc2d785608e9711e4e7192f5b43f4e4c32",
+      "unit_id": "u_01fdbfc85a06975998c4eb2564fdb77a7bbef15d9538127418c3f454d490afdd",
+      "graph_id": "tt38",
+      "citation_path": "38/2024/TT-BGTVT > Chương II > Điều 9 > Khoản 3",
+      "kind": "text",
+      "disposition": "selected",
+      "reason": "Own text and parent context read; no unresolved mandatory external content",
+      "required_dependencies": [
+        {
+          "graph_id": "tt38",
+          "root_unit_id": "u_900ef75adfdc8e28dcd187fa2555364bb674704d43c7ca578f3a3845c635bec6",
+          "unit_ids": [
+            "u_900ef75adfdc8e28dcd187fa2555364bb674704d43c7ca578f3a3845c635bec6"
+          ],
+          "required": true,
+          "representation": "source_unit_subtree_for_required_read",
+          "reason": "Bound original rule/conditions; not appended to encoder input"
+        }
+      ],
+      "scope_proposal": "included",
+      "origin": "agent_review",
+      "status": "technical_selection_not_scope_acceptance",
+      "applicability": "pending_review",
+      "release_eligible": false,
+      "reviewer_ref": null
+    },
+    {
+      "legacy_candidate_id": "c_ab92855d2e304336e166c7cb67d4fb72e57c0a8b9c9d2a01d4d283df02133364",
+      "unit_id": "u_7f24884794d3e6380fb63261452a75c85ac58c423baa12297be57beb825cf5eb",
+      "graph_id": "tt38",
+      "citation_path": "38/2024/TT-BGTVT > Chương II > Điều 11 > Khoản 1",
+      "kind": "text",
+      "disposition": "selected",
+      "reason": "Own text and parent context read; no unresolved mandatory external content",
+      "required_dependencies": [],
+      "scope_proposal": "included",
+      "origin": "agent_review",
+      "status": "technical_selection_not_scope_acceptance",
+      "applicability": "pending_review",
+      "release_eligible": false,
+      "reviewer_ref": null
+    },
+    {
+      "legacy_candidate_id": "c_ad69b36bd382f939f2066e0a37363756846860c302c612b7e9df4ee75e8bfd8e",
+      "unit_id": "u_f73f098e69e21d8019565ee4b25961cf839932720b2611db76ef01d61fb62cf7",
+      "graph_id": "tt38",
+      "citation_path": "38/2024/TT-BGTVT > Chương II > Điều 8 > Khoản 2",
+      "kind": "text",
+      "disposition": "selected",
+      "reason": "Own text and parent context read; no unresolved mandatory external content",
+      "required_dependencies": [],
+      "scope_proposal": "included",
+      "origin": "agent_review",
+      "status": "technical_selection_not_scope_acceptance",
+      "applicability": "pending_review",
+      "release_eligible": false,
+      "reviewer_ref": null
+    },
+    {
+      "legacy_candidate_id": "c_e010348a9ecc3f792893701cda692a13fdf186ec34eb488619d9553ecce0a6be",
+      "unit_id": "u_43dcbaed67fedb41eb207195d70d5d8a8e5cf7ae613d00209c9c6592830ce8fb",
+      "graph_id": "tt38",
+      "citation_path": "38/2024/TT-BGTVT > Chương II > Điều 8 > Khoản 1",
+      "kind": "text",
+      "disposition": "selected",
+      "reason": "Own text and parent context read; no unresolved mandatory external content",
+      "required_dependencies": [],
+      "scope_proposal": "included",
+      "origin": "agent_review",
+      "status": "technical_selection_not_scope_acceptance",
+      "applicability": "pending_review",
+      "release_eligible": false,
+      "reviewer_ref": null
+    },
+    {
+      "legacy_candidate_id": "tp_a66e2e2bd98aff3bad5ac5f9b4c77a3b21068ee443c778ee51728c285fc7585c",
+      "unit_id": "u_00dacc93250f0475c73def61662537fe4cc4ddb846820612d7650d09c05402af",
+      "graph_id": "tt38",
+      "citation_path": "38/2024/TT-BGTVT > Chương II > Điều 6 > Khoản 1",
+      "kind": "table",
+      "disposition": "selected",
+      "reason": "Own text and parent context read; no unresolved mandatory external content",
+      "required_dependencies": [
+        {
+          "graph_id": "tt38",
+          "root_unit_id": "u_b494290f982b90705069a87e9aefaced460f2aa0c4c1d57f03b6ce0b96edf19f",
+          "unit_ids": [
+            "u_b494290f982b90705069a87e9aefaced460f2aa0c4c1d57f03b6ce0b96edf19f"
+          ],
+          "required": true,
+          "representation": "source_unit_subtree_for_required_read",
+          "reason": "Bound original rule/conditions; not appended to encoder input"
+        },
+        {
+          "graph_id": "tt38",
+          "root_unit_id": "u_b737abb1f52ceb530d19959e50350563ce9ad4c230337ad5765a63b10906bc13",
+          "unit_ids": [
+            "u_43dcbaed67fedb41eb207195d70d5d8a8e5cf7ae613d00209c9c6592830ce8fb",
+            "u_b737abb1f52ceb530d19959e50350563ce9ad4c230337ad5765a63b10906bc13",
+            "u_f73f098e69e21d8019565ee4b25961cf839932720b2611db76ef01d61fb62cf7"
+          ],
+          "required": true,
+          "representation": "source_unit_subtree_for_required_read",
+          "reason": "Bound original rule/conditions; not appended to encoder input"
+        }
+      ],
+      "scope_proposal": "included",
+      "origin": "agent_review",
+      "status": "technical_selection_not_scope_acceptance",
+      "applicability": "pending_review",
+      "release_eligible": false,
+      "reviewer_ref": null
+    },
+    {
+      "legacy_candidate_id": "tp_60ac37a7031cb9a29c9a0a6efcbb567b6278faf298ebd27515492b393df34b7d",
+      "unit_id": "u_b24c2dc0bb0a4840bc6bf1c8c7726de7f9e64495566f099d151681e9d96995e0",
+      "graph_id": "tt38",
+      "citation_path": "38/2024/TT-BGTVT > Chương II > Điều 6 > Khoản 2",
+      "kind": "table",
+      "disposition": "selected",
+      "reason": "Own text and parent context read; no unresolved mandatory external content",
+      "required_dependencies": [
+        {
+          "graph_id": "tt38",
+          "root_unit_id": "u_b494290f982b90705069a87e9aefaced460f2aa0c4c1d57f03b6ce0b96edf19f",
+          "unit_ids": [
+            "u_b494290f982b90705069a87e9aefaced460f2aa0c4c1d57f03b6ce0b96edf19f"
+          ],
+          "required": true,
+          "representation": "source_unit_subtree_for_required_read",
+          "reason": "Bound original rule/conditions; not appended to encoder input"
+        },
+        {
+          "graph_id": "tt38",
+          "root_unit_id": "u_b737abb1f52ceb530d19959e50350563ce9ad4c230337ad5765a63b10906bc13",
+          "unit_ids": [
+            "u_43dcbaed67fedb41eb207195d70d5d8a8e5cf7ae613d00209c9c6592830ce8fb",
+            "u_b737abb1f52ceb530d19959e50350563ce9ad4c230337ad5765a63b10906bc13",
+            "u_f73f098e69e21d8019565ee4b25961cf839932720b2611db76ef01d61fb62cf7"
+          ],
+          "required": true,
+          "representation": "source_unit_subtree_for_required_read",
+          "reason": "Bound original rule/conditions; not appended to encoder input"
+        }
+      ],
+      "scope_proposal": "included",
+      "origin": "agent_review",
+      "status": "technical_selection_not_scope_acceptance",
+      "applicability": "pending_review",
+      "release_eligible": false,
+      "reviewer_ref": null
+    },
+    {
+      "legacy_candidate_id": "tp_a1c0956dee6ec961a551968fc55559f18b64f0f148d4906fee4d1cdbb93ba4d3",
+      "unit_id": "u_b24c2dc0bb0a4840bc6bf1c8c7726de7f9e64495566f099d151681e9d96995e0",
+      "graph_id": "tt38",
+      "citation_path": "38/2024/TT-BGTVT > Chương II > Điều 6 > Khoản 2",
+      "kind": "table",
+      "disposition": "selected",
+      "reason": "Own text and parent context read; no unresolved mandatory external content",
+      "required_dependencies": [
+        {
+          "graph_id": "tt38",
+          "root_unit_id": "u_b494290f982b90705069a87e9aefaced460f2aa0c4c1d57f03b6ce0b96edf19f",
+          "unit_ids": [
+            "u_b494290f982b90705069a87e9aefaced460f2aa0c4c1d57f03b6ce0b96edf19f"
+          ],
+          "required": true,
+          "representation": "source_unit_subtree_for_required_read",
+          "reason": "Bound original rule/conditions; not appended to encoder input"
+        },
+        {
+          "graph_id": "tt38",
+          "root_unit_id": "u_b737abb1f52ceb530d19959e50350563ce9ad4c230337ad5765a63b10906bc13",
+          "unit_ids": [
+            "u_43dcbaed67fedb41eb207195d70d5d8a8e5cf7ae613d00209c9c6592830ce8fb",
+            "u_b737abb1f52ceb530d19959e50350563ce9ad4c230337ad5765a63b10906bc13",
+            "u_f73f098e69e21d8019565ee4b25961cf839932720b2611db76ef01d61fb62cf7"
+          ],
+          "required": true,
+          "representation": "source_unit_subtree_for_required_read",
+          "reason": "Bound original rule/conditions; not appended to encoder input"
+        }
+      ],
+      "scope_proposal": "included",
+      "origin": "agent_review",
+      "status": "technical_selection_not_scope_acceptance",
+      "applicability": "pending_review",
+      "release_eligible": false,
+      "reviewer_ref": null
+    },
+    {
+      "legacy_candidate_id": "tp_c58d6da0634a4792a03699792bd91bcc552138188def8c74ff100a57016085a7",
+      "unit_id": "u_b24c2dc0bb0a4840bc6bf1c8c7726de7f9e64495566f099d151681e9d96995e0",
+      "graph_id": "tt38",
+      "citation_path": "38/2024/TT-BGTVT > Chương II > Điều 6 > Khoản 2",
+      "kind": "table",
+      "disposition": "selected",
+      "reason": "Own text and parent context read; no unresolved mandatory external content",
+      "required_dependencies": [
+        {
+          "graph_id": "tt38",
+          "root_unit_id": "u_b494290f982b90705069a87e9aefaced460f2aa0c4c1d57f03b6ce0b96edf19f",
+          "unit_ids": [
+            "u_b494290f982b90705069a87e9aefaced460f2aa0c4c1d57f03b6ce0b96edf19f"
+          ],
+          "required": true,
+          "representation": "source_unit_subtree_for_required_read",
+          "reason": "Bound original rule/conditions; not appended to encoder input"
+        },
+        {
+          "graph_id": "tt38",
+          "root_unit_id": "u_b737abb1f52ceb530d19959e50350563ce9ad4c230337ad5765a63b10906bc13",
+          "unit_ids": [
+            "u_43dcbaed67fedb41eb207195d70d5d8a8e5cf7ae613d00209c9c6592830ce8fb",
+            "u_b737abb1f52ceb530d19959e50350563ce9ad4c230337ad5765a63b10906bc13",
+            "u_f73f098e69e21d8019565ee4b25961cf839932720b2611db76ef01d61fb62cf7"
+          ],
+          "required": true,
+          "representation": "source_unit_subtree_for_required_read",
+          "reason": "Bound original rule/conditions; not appended to encoder input"
+        }
+      ],
+      "scope_proposal": "included",
+      "origin": "agent_review",
+      "status": "technical_selection_not_scope_acceptance",
+      "applicability": "pending_review",
+      "release_eligible": false,
+      "reviewer_ref": null
+    },
+    {
+      "legacy_candidate_id": "tp_763674a9fb28fa70769c64b454295c768c1fcbd802ca3b762738897d7ef291c0",
+      "unit_id": "u_b24c2dc0bb0a4840bc6bf1c8c7726de7f9e64495566f099d151681e9d96995e0",
+      "graph_id": "tt38",
+      "citation_path": "38/2024/TT-BGTVT > Chương II > Điều 6 > Khoản 2",
+      "kind": "table",
+      "disposition": "selected",
+      "reason": "Own text and parent context read; no unresolved mandatory external content",
+      "required_dependencies": [
+        {
+          "graph_id": "tt38",
+          "root_unit_id": "u_b494290f982b90705069a87e9aefaced460f2aa0c4c1d57f03b6ce0b96edf19f",
+          "unit_ids": [
+            "u_b494290f982b90705069a87e9aefaced460f2aa0c4c1d57f03b6ce0b96edf19f"
+          ],
+          "required": true,
+          "representation": "source_unit_subtree_for_required_read",
+          "reason": "Bound original rule/conditions; not appended to encoder input"
+        },
+        {
+          "graph_id": "tt38",
+          "root_unit_id": "u_b737abb1f52ceb530d19959e50350563ce9ad4c230337ad5765a63b10906bc13",
+          "unit_ids": [
+            "u_43dcbaed67fedb41eb207195d70d5d8a8e5cf7ae613d00209c9c6592830ce8fb",
+            "u_b737abb1f52ceb530d19959e50350563ce9ad4c230337ad5765a63b10906bc13",
+            "u_f73f098e69e21d8019565ee4b25961cf839932720b2611db76ef01d61fb62cf7"
+          ],
+          "required": true,
+          "representation": "source_unit_subtree_for_required_read",
+          "reason": "Bound original rule/conditions; not appended to encoder input"
+        }
+      ],
+      "scope_proposal": "included",
+      "origin": "agent_review",
+      "status": "technical_selection_not_scope_acceptance",
+      "applicability": "pending_review",
+      "release_eligible": false,
+      "reviewer_ref": null
+    },
+    {
+      "legacy_candidate_id": "tp_69a97b9d2be179740fb779e0affb897be5e761ad912186db91779be19110c904",
+      "unit_id": "u_04c07058e5f2b3976fe4dd1f0694467549b935697b0a9ad0e3805b0241a23ff7",
+      "graph_id": "tt38",
+      "citation_path": "38/2024/TT-BGTVT > Chương II > Điều 11 > Khoản 2 > Điểm a",
+      "kind": "table",
+      "disposition": "selected",
+      "reason": "Own text and parent context read; no unresolved mandatory external content",
+      "required_dependencies": [],
+      "scope_proposal": "included",
+      "origin": "agent_review",
+      "status": "technical_selection_not_scope_acceptance",
+      "applicability": "pending_review",
+      "release_eligible": false,
+      "reviewer_ref": null
+    },
+    {
+      "legacy_candidate_id": "tp_4d0ca41da5e6218ac5e83bda7d080cda54c032028947407a6c351317782d0d9d",
+      "unit_id": "u_04c07058e5f2b3976fe4dd1f0694467549b935697b0a9ad0e3805b0241a23ff7",
+      "graph_id": "tt38",
+      "citation_path": "38/2024/TT-BGTVT > Chương II > Điều 11 > Khoản 2 > Điểm a",
+      "kind": "table",
+      "disposition": "selected",
+      "reason": "Own text and parent context read; no unresolved mandatory external content",
+      "required_dependencies": [],
+      "scope_proposal": "included",
+      "origin": "agent_review",
+      "status": "technical_selection_not_scope_acceptance",
+      "applicability": "pending_review",
+      "release_eligible": false,
+      "reviewer_ref": null
+    },
+    {
+      "legacy_candidate_id": "tp_4a420a7dfef1e4ffe48c63ba896ee68316abf847b40473c015d9dd8fa572617b",
+      "unit_id": "u_04c07058e5f2b3976fe4dd1f0694467549b935697b0a9ad0e3805b0241a23ff7",
+      "graph_id": "tt38",
+      "citation_path": "38/2024/TT-BGTVT > Chương II > Điều 11 > Khoản 2 > Điểm a",
+      "kind": "table",
+      "disposition": "selected",
+      "reason": "Own text and parent context read; no unresolved mandatory external content",
+      "required_dependencies": [],
+      "scope_proposal": "included",
+      "origin": "agent_review",
+      "status": "technical_selection_not_scope_acceptance",
+      "applicability": "pending_review",
+      "release_eligible": false,
+      "reviewer_ref": null
+    },
+    {
+      "legacy_candidate_id": "tp_a47677d4c931ce0e318124e05f47c4ec347acc9f22f0d7620809d2e51fe6901b",
+      "unit_id": "u_04c07058e5f2b3976fe4dd1f0694467549b935697b0a9ad0e3805b0241a23ff7",
+      "graph_id": "tt38",
+      "citation_path": "38/2024/TT-BGTVT > Chương II > Điều 11 > Khoản 2 > Điểm a",
+      "kind": "table",
+      "disposition": "selected",
+      "reason": "Own text and parent context read; no unresolved mandatory external content",
+      "required_dependencies": [],
+      "scope_proposal": "included",
+      "origin": "agent_review",
+      "status": "technical_selection_not_scope_acceptance",
+      "applicability": "pending_review",
+      "release_eligible": false,
+      "reviewer_ref": null
+    },
+    {
+      "legacy_candidate_id": "tp_70bbcc782644c1b7251004df9a1d73a383e1dd49285c57e962bf94ecbbf66624",
+      "unit_id": "u_f067a07a29b6521d03f2d0291503f5a3cb603fd334c85385138afe9fd23fd8e5",
+      "graph_id": "tt38",
+      "citation_path": "38/2024/TT-BGTVT > Chương II > Điều 11 > Khoản 2 > Điểm b",
+      "kind": "reference",
+      "disposition": "withheld",
+      "reason": "279 token quarantine",
+      "required_dependencies": [],
+      "scope_proposal": "included",
+      "origin": "agent_review",
+      "status": "technical_selection_not_scope_acceptance",
+      "applicability": "pending_review",
+      "release_eligible": false,
+      "reviewer_ref": null
+    },
+    {
+      "legacy_candidate_id": "c_0cfcb2d7736cfb5f315eba79bc85ba38ad676389343c1012d3027b51d36cc83a",
+      "unit_id": "u_0d707b5f91b27e8c4845f29c17691afde9a1e33bb8494dc6aa48b734b2d35cb3",
+      "graph_id": "tt35",
+      "citation_path": "35/2024/TT-BGTVT > Điều 15 > Khoản 3",
+      "kind": "text",
+      "disposition": "selected",
+      "reason": "Own text and parent context read; no unresolved mandatory external content",
+      "required_dependencies": [],
+      "scope_proposal": "included",
+      "origin": "agent_review",
+      "status": "technical_selection_not_scope_acceptance",
+      "applicability": "pending_review",
+      "release_eligible": false,
+      "reviewer_ref": null
+    },
+    {
+      "legacy_candidate_id": "c_0d8046590df5b8536eac809a4718877d5a8189b06c51b98ba60b9d313f007e29",
+      "unit_id": "u_e7d3f3bd0909c4580a7f178a316883d281bbe1a4d6020b81315ed2d689aae603",
+      "graph_id": "tt35",
+      "citation_path": "35/2024/TT-BGTVT > Điều 67",
+      "kind": "text",
+      "disposition": "selected",
+      "reason": "Own text and parent context read; no unresolved mandatory external content",
+      "required_dependencies": [
+        {
+          "graph_id": "base-docx",
+          "root_unit_id": "u_4bc5105d87cc1e2d850a8196f0f526adca8f52388307f30af4aba7eab934184f",
+          "unit_ids": [
+            "u_13f2c63bd13e04efa8f8545407033ddf813ca845c3826f236da47a0d021d8022",
+            "u_1f13cf782f08c5a0fec37cf94f4bfe33a97350cf52a251801f9b2110e1af1760",
+            "u_214d3c89b28401e21b1202262f4b8f80c06e4555639615c5fdc0f3fa63bd20cd",
+            "u_376516e1e4b7f4a2d7992aeeed8106c42c7750db19d3d96bdbc58387a7b9672a",
+            "u_405fdda2c3a739524793c6547ed5a7ce2fb10ed94352ffe33570b8d8f26c4732",
+            "u_4bc5105d87cc1e2d850a8196f0f526adca8f52388307f30af4aba7eab934184f",
+            "u_4cfefca05764a00a36ad3fe973209d59b18995ad14fe62f8d8d4d3103ead08cd",
+            "u_9704eb945f358197ff48d736a3006edcf76e77ea72f9b0ffabb00cd3c79fcfa7",
+            "u_9adbe15a59ba439a06c07908331a26580b66e067031f0d07078ac579e1483051",
+            "u_a5c4a089212ba34c2c7bcfd80464d7b08252135282a678b247c4c2012fb471e0",
+            "u_a924988c2110d0453ed8c397ac310df37b7cee898be8942689796fcd26555d49",
+            "u_e9ead1afde8f7aabf0c9c47e403ace65c618431e760301e173efd471d49df768",
+            "u_eb0d55657d49c9737316b7e9c520417b2dda86b642d88ae0a7c89cf1804c0697",
+            "u_f0f5c6701a00152ef4f1951ef575d651e29601d62faefddec854b044ab422324"
+          ],
+          "required": true,
+          "representation": "source_unit_subtree_for_required_read",
+          "reason": "Bound original rule/conditions; not appended to encoder input"
+        }
+      ],
+      "scope_proposal": "included",
+      "origin": "agent_review",
+      "status": "technical_selection_not_scope_acceptance",
+      "applicability": "pending_review",
+      "release_eligible": false,
+      "reviewer_ref": null
+    },
+    {
+      "legacy_candidate_id": "c_0f2b63e334f421d7e32c20ed24051c9b28bfacaf17874c96485e269bcc9b4f13",
+      "unit_id": "u_959f0a0c8cf23c4a8cd6807b06afc08d78f425a8ee65161c04bbb35ba9edacfd",
+      "graph_id": "tt35",
+      "citation_path": "35/2024/TT-BGTVT > Điều 15 > Khoản 2 > Điểm a",
+      "kind": "text",
+      "disposition": "withheld",
+      "reason": "Reference to full A15K1 includes unresolved form XI",
+      "required_dependencies": [],
+      "scope_proposal": "included",
+      "origin": "agent_review",
+      "status": "technical_selection_not_scope_acceptance",
+      "applicability": "pending_review",
+      "release_eligible": false,
+      "reviewer_ref": null
+    },
+    {
+      "legacy_candidate_id": "c_1ada809162a0827c112a13dcb120ee5beb814e86fb076b58e721d9858487874f",
+      "unit_id": "u_ed75ca014575486484a269a6eec6726407ea1b2a7e586ce939999f3f2ad6c1cf",
+      "graph_id": "tt35",
+      "citation_path": "35/2024/TT-BGTVT > Điều 32 > Khoản 3",
+      "kind": "text",
+      "disposition": "selected",
+      "reason": "Own text and parent context read; no unresolved mandatory external content",
+      "required_dependencies": [],
+      "scope_proposal": "included",
+      "origin": "agent_review",
+      "status": "technical_selection_not_scope_acceptance",
+      "applicability": "pending_review",
+      "release_eligible": false,
+      "reviewer_ref": null
+    },
+    {
+      "legacy_candidate_id": "c_2015aa47315f34b1fcfcece242a1332fe32d9711d7042624fb69127681ea6ef6",
+      "unit_id": "u_845c7cdc625c860f5371f04bfcff884ba0f4cd22a4d493645770115c2864b607",
+      "graph_id": "tt35",
+      "citation_path": "35/2024/TT-BGTVT > Điều 28 > Khoản 3",
+      "kind": "text",
+      "disposition": "withheld",
+      "reason": "Report 1 definition/list representation not bound; keep pending",
+      "required_dependencies": [],
+      "scope_proposal": "included",
+      "origin": "agent_review",
+      "status": "technical_selection_not_scope_acceptance",
+      "applicability": "pending_review",
+      "release_eligible": false,
+      "reviewer_ref": null
+    },
+    {
+      "legacy_candidate_id": "c_239b411e5fdec7d41163d820837cfb6cdac58ee0edfe018831d7e6004664ef17",
+      "unit_id": "u_f91a3b17562e9d37ea1a88833cbdc69696a2513ee2fd949bfbd069ca7c5815b4",
+      "graph_id": "tt35",
+      "citation_path": "35/2024/TT-BGTVT > Điều 15 > Khoản 1 > Điểm a",
+      "kind": "text",
+      "disposition": "withheld",
+      "reason": "Form XI not represented for complete read",
+      "required_dependencies": [],
+      "scope_proposal": "included",
+      "origin": "agent_review",
+      "status": "technical_selection_not_scope_acceptance",
+      "applicability": "pending_review",
+      "release_eligible": false,
+      "reviewer_ref": null
+    },
+    {
+      "legacy_candidate_id": "c_3455d9a334f13dea137d578412952db209fdd339ed1d9169e3527baa03806e4c",
+      "unit_id": "u_612e810c704af9c256e85f8670ef3dda083645835f74f14f539828b74b2c8f29",
+      "graph_id": "tt35",
+      "citation_path": "35/2024/TT-BGTVT > Điều 14 > Khoản 1",
+      "kind": "text",
+      "disposition": "selected",
+      "reason": "Own text and parent context read; no unresolved mandatory external content",
+      "required_dependencies": [],
+      "scope_proposal": "included",
+      "origin": "agent_review",
+      "status": "technical_selection_not_scope_acceptance",
+      "applicability": "pending_review",
+      "release_eligible": false,
+      "reviewer_ref": null
+    },
+    {
+      "legacy_candidate_id": "c_35d160c08799b13d13da688722353d39345605be2bdf1ec808290f1906616b7a",
+      "unit_id": "u_76c5ae19c9a9cf35b92bceb4e0d67dc1257fcc4f6c38b4fc146d9c5b5e8f9d97",
+      "graph_id": "tt35",
+      "citation_path": "35/2024/TT-BGTVT > Điều 44",
+      "kind": "text",
+      "disposition": "selected",
+      "reason": "Own text and parent context read; no unresolved mandatory external content",
+      "required_dependencies": [],
+      "scope_proposal": "included",
+      "origin": "agent_review",
+      "status": "technical_selection_not_scope_acceptance",
+      "applicability": "pending_review",
+      "release_eligible": false,
+      "reviewer_ref": null
+    },
+    {
+      "legacy_candidate_id": "c_430399111154fd5d23ce26af8565d9aaade7c30d94859a2fea2238b2c81963d0",
+      "unit_id": "u_cc750212d4d1d0acedc7bf23b136a34b4c78b6b39016297bba2acbd63133f4f4",
+      "graph_id": "tt35",
+      "citation_path": "35/2024/TT-BGTVT > Điều 15 > Khoản 2 > Điểm c",
+      "kind": "text",
+      "disposition": "withheld",
+      "reason": "Form XII not represented",
+      "required_dependencies": [],
+      "scope_proposal": "included",
+      "origin": "agent_review",
+      "status": "technical_selection_not_scope_acceptance",
+      "applicability": "pending_review",
+      "release_eligible": false,
+      "reviewer_ref": null
+    },
+    {
+      "legacy_candidate_id": "c_4c7674f90e44c518ae0095db9bdc4c8017b06e30b8e6d46ab5deef62a870060b",
+      "unit_id": "u_018cd1439007ecba224d59e83b7740dc78b9b349a79a30d441e541b382f7f099",
+      "graph_id": "tt35",
+      "citation_path": "35/2024/TT-BGTVT > Điều 32 > Khoản 5",
+      "kind": "text",
+      "disposition": "selected",
+      "reason": "Own text and parent context read; no unresolved mandatory external content",
+      "required_dependencies": [],
+      "scope_proposal": "included",
+      "origin": "agent_review",
+      "status": "technical_selection_not_scope_acceptance",
+      "applicability": "pending_review",
+      "release_eligible": false,
+      "reviewer_ref": null
+    },
+    {
+      "legacy_candidate_id": "c_4d766a7498f4589fb8c07ed7b3c672b474293183ac8249ab978efae3e5ab5ad4",
+      "unit_id": "u_6b3f355ff41cd804884df04b9e23af6b6be1537bfe0d4ca1622773d1a13b384d",
+      "graph_id": "tt35",
+      "citation_path": "35/2024/TT-BGTVT > Điều 29 > Khoản 3 > Điểm a",
+      "kind": "text",
+      "disposition": "selected",
+      "reason": "Own text and parent context read; no unresolved mandatory external content",
+      "required_dependencies": [
+        {
+          "graph_id": "tt35",
+          "root_unit_id": "u_013a92fd79d6f29ed0a90ef113f5967e92164ad1a36b2c18f01bf115b9fc183b",
+          "unit_ids": [
+            "u_013a92fd79d6f29ed0a90ef113f5967e92164ad1a36b2c18f01bf115b9fc183b"
+          ],
+          "required": true,
+          "representation": "source_unit_subtree_for_required_read",
+          "reason": "Bound original rule/conditions; not appended to encoder input"
+        }
+      ],
+      "scope_proposal": "included",
+      "origin": "agent_review",
+      "status": "technical_selection_not_scope_acceptance",
+      "applicability": "pending_review",
+      "release_eligible": false,
+      "reviewer_ref": null
+    },
+    {
+      "legacy_candidate_id": "c_5ad16a9d2e0cd0fad1099b294da92128ce64f551b9a1dd48f842ac8a9a5f3e24",
+      "unit_id": "u_014eedd5d0b60abb98785eec12db168c47f7e9ce1bee21a9b845159ca50f4013",
+      "graph_id": "tt35",
+      "citation_path": "35/2024/TT-BGTVT > Điều 32 > Khoản 6 > Điểm b",
+      "kind": "text",
+      "disposition": "selected",
+      "reason": "General treaty exception is complete conditional rule, not a claim of a particular treaty content; no personal facts required",
+      "required_dependencies": [],
+      "scope_proposal": "included",
+      "origin": "agent_review",
+      "status": "technical_selection_not_scope_acceptance",
+      "applicability": "pending_review",
+      "release_eligible": false,
+      "reviewer_ref": null
+    },
+    {
+      "legacy_candidate_id": "c_5dea0e42646a2d86e30457bf523ed860d1542573636286ed3c50ca872b62c41b",
+      "unit_id": "u_65910a714146f080aa4079cae9e3b1e0e8577a73ce1986a047535cf2eb2b2108",
+      "graph_id": "tt35",
+      "citation_path": "35/2024/TT-BGTVT > Điều 28 > Khoản 1",
+      "kind": "text",
+      "disposition": "selected",
+      "reason": "Own text and parent context read; no unresolved mandatory external content",
+      "required_dependencies": [
+        {
+          "graph_id": "base-docx",
+          "root_unit_id": "u_97509a7f35446b3a6e332fa668cb8bca569884af4a4871003e6050dcb2a769f4",
+          "unit_ids": [
+            "u_342199dc58177c2f4ae70a680f1e79a9c96600bb039e68e91516e36df987f6af",
+            "u_92ceb2610f9e8a9d6c44feb27b9d7f7589f1f82abba485739fe4c5c883fe4bea",
+            "u_97509a7f35446b3a6e332fa668cb8bca569884af4a4871003e6050dcb2a769f4",
+            "u_9ea6d35e31396f4d7fa0486bf588962bf4baf1f0c1c97e2ffd01d8cd73b720c1",
+            "u_b7932ee5a8ec8b6436af661e59d17f4d8c473cb0fea8490b5553e9ac746f5419",
+            "u_cdddc3efd0ac7f8a698f43863622a7bbeccf157f53e180fb11edff17ef895c7b",
+            "u_ec539eb0b8d683bd213ba1d1c53e7ac49663ebe37242738c24d7e9554bc5bfe0"
+          ],
+          "required": true,
+          "representation": "source_unit_subtree_for_required_read",
+          "reason": "Bound original rule/conditions; not appended to encoder input"
+        },
+        {
+          "graph_id": "base-docx",
+          "root_unit_id": "u_90174d42f0c56b1232b972f1d260679e0e4e357828d98e6d80baca3bfc84485a",
+          "unit_ids": [
+            "u_90174d42f0c56b1232b972f1d260679e0e4e357828d98e6d80baca3bfc84485a"
+          ],
+          "required": true,
+          "representation": "source_unit_subtree_for_required_read",
+          "reason": "Bound original rule/conditions; not appended to encoder input"
+        }
+      ],
+      "scope_proposal": "included",
+      "origin": "agent_review",
+      "status": "technical_selection_not_scope_acceptance",
+      "applicability": "pending_review",
+      "release_eligible": false,
+      "reviewer_ref": null
+    },
+    {
+      "legacy_candidate_id": "c_63ced997968380c53d4b181959fc2e72694696d3678a87827ad3f65c3f733750",
+      "unit_id": "u_4de95ec5fc3385432dfb942b5ddda2198b86ca06ca7f377bd35a512d099f782a",
+      "graph_id": "tt35",
+      "citation_path": "35/2024/TT-BGTVT > Điều 14 > Khoản 2 > Điểm a",
+      "kind": "text",
+      "disposition": "selected",
+      "reason": "Own text and parent context read; no unresolved mandatory external content",
+      "required_dependencies": [
+        {
+          "graph_id": "base-docx",
+          "root_unit_id": "u_bfcb66fa08628b32543eedc862546a477b665de2dbc9fd9fa2ed66ea057cb409",
+          "unit_ids": [
+            "u_bfcb66fa08628b32543eedc862546a477b665de2dbc9fd9fa2ed66ea057cb409"
+          ],
+          "required": true,
+          "representation": "source_unit_subtree_for_required_read",
+          "reason": "Bound original rule/conditions; not appended to encoder input"
+        }
+      ],
+      "scope_proposal": "included",
+      "origin": "agent_review",
+      "status": "technical_selection_not_scope_acceptance",
+      "applicability": "pending_review",
+      "release_eligible": false,
+      "reviewer_ref": null
+    },
+    {
+      "legacy_candidate_id": "c_756a1d9adccd0687004f2590d4e0e42bcc425d34eb7fa8ff4418825ac400108a",
+      "unit_id": "u_b08b8dd64beef9ac539e1e4094f33d06dfee544278740875b87f518607d18545",
+      "graph_id": "tt35",
+      "citation_path": "35/2024/TT-BGTVT > Điều 14 > Khoản 2 > Điểm b",
+      "kind": "text",
+      "disposition": "selected",
+      "reason": "Own text and parent context read; no unresolved mandatory external content",
+      "required_dependencies": [
+        {
+          "graph_id": "base-docx",
+          "root_unit_id": "u_bfcb66fa08628b32543eedc862546a477b665de2dbc9fd9fa2ed66ea057cb409",
+          "unit_ids": [
+            "u_bfcb66fa08628b32543eedc862546a477b665de2dbc9fd9fa2ed66ea057cb409"
+          ],
+          "required": true,
+          "representation": "source_unit_subtree_for_required_read",
+          "reason": "Bound original rule/conditions; not appended to encoder input"
+        }
+      ],
+      "scope_proposal": "included",
+      "origin": "agent_review",
+      "status": "technical_selection_not_scope_acceptance",
+      "applicability": "pending_review",
+      "release_eligible": false,
+      "reviewer_ref": null
+    },
+    {
+      "legacy_candidate_id": "c_77b72514d6e3fcca55cd925f58fadf8df46852ded3890811173a5a2ec8c65ca4",
+      "unit_id": "u_4f24a249f3788622125900cddc0e16f4e51f51414a046b75a10fdcc5c7811238",
+      "graph_id": "tt35",
+      "citation_path": "35/2024/TT-BGTVT > Điều 45",
+      "kind": "text",
+      "disposition": "withheld",
+      "reason": "Operative treaty not identified/bound; target is pointer only",
+      "required_dependencies": [],
+      "scope_proposal": "included",
+      "origin": "agent_review",
+      "status": "technical_selection_not_scope_acceptance",
+      "applicability": "pending_review",
+      "release_eligible": false,
+      "reviewer_ref": null
+    },
+    {
+      "legacy_candidate_id": "c_8078492711b62b9e288c2c3046a50cfbf0f053a0f1830c6cc111ba4cc1f711f6",
+      "unit_id": "u_ce43a1b6b92c7d59de85412f741b34c2b1cad6b4a2a7adce811f09a2c7258c23",
+      "graph_id": "tt35",
+      "citation_path": "35/2024/TT-BGTVT > Điều 29 > Khoản 3 > Điểm c",
+      "kind": "text",
+      "disposition": "selected",
+      "reason": "Own text and parent context read; no unresolved mandatory external content",
+      "required_dependencies": [],
+      "scope_proposal": "included",
+      "origin": "agent_review",
+      "status": "technical_selection_not_scope_acceptance",
+      "applicability": "pending_review",
+      "release_eligible": false,
+      "reviewer_ref": null
+    },
+    {
+      "legacy_candidate_id": "c_8bef6504830c19639c7ab8e0657e9de99b30fcad98388457abc9b98d0d1c352e",
+      "unit_id": "u_77dc5965d68b6880fbaa315b1d5689576ec015d912ae0f54adc3a242bc625705",
+      "graph_id": "tt35",
+      "citation_path": "35/2024/TT-BGTVT > Điều 32 > Khoản 7",
+      "kind": "text",
+      "disposition": "selected",
+      "reason": "Own text and parent context read; no unresolved mandatory external content",
+      "required_dependencies": [],
+      "scope_proposal": "included",
+      "origin": "agent_review",
+      "status": "technical_selection_not_scope_acceptance",
+      "applicability": "pending_review",
+      "release_eligible": false,
+      "reviewer_ref": null
+    },
+    {
+      "legacy_candidate_id": "c_9cedc1da598d9d7992ba51011ac7eb75ffc5178eeeb00cf492072514ba163d3f",
+      "unit_id": "u_013a92fd79d6f29ed0a90ef113f5967e92164ad1a36b2c18f01bf115b9fc183b",
+      "graph_id": "tt35",
+      "citation_path": "35/2024/TT-BGTVT > Điều 15 > Khoản 1 > Điểm b",
+      "kind": "text",
+      "disposition": "selected",
+      "reason": "Own text and parent context read; no unresolved mandatory external content",
+      "required_dependencies": [],
+      "scope_proposal": "included",
+      "origin": "agent_review",
+      "status": "technical_selection_not_scope_acceptance",
+      "applicability": "pending_review",
+      "release_eligible": false,
+      "reviewer_ref": null
+    },
+    {
+      "legacy_candidate_id": "c_a66291b2999528fe9bcfc1958e87fcce6c67210f9121a36b80520e771751aa9a",
+      "unit_id": "u_2ca91948102a96f93165234f44b35b6771754977332ff24eaadcef09f563c070",
+      "graph_id": "tt35",
+      "citation_path": "35/2024/TT-BGTVT > Điều 14 > Khoản 3",
+      "kind": "text",
+      "disposition": "withheld",
+      "reason": "A15K1 includes form XI: form representation not ready",
+      "required_dependencies": [],
+      "scope_proposal": "included",
+      "origin": "agent_review",
+      "status": "technical_selection_not_scope_acceptance",
+      "applicability": "pending_review",
+      "release_eligible": false,
+      "reviewer_ref": null
+    },
+    {
+      "legacy_candidate_id": "c_d6fcab8cfcb0954b551df945380d3e8d1658fe5d23fda61e302456510c5ca3a9",
+      "unit_id": "u_82cd2e02f2125f7fd81165d4f5a84b4c8d1c7c82ff00e2fc41e53750d3bc7893",
+      "graph_id": "tt35",
+      "citation_path": "35/2024/TT-BGTVT > Điều 15 > Khoản 2 > Điểm b",
+      "kind": "text",
+      "disposition": "selected",
+      "reason": "Own text and parent context read; no unresolved mandatory external content",
+      "required_dependencies": [],
+      "scope_proposal": "included",
+      "origin": "agent_review",
+      "status": "technical_selection_not_scope_acceptance",
+      "applicability": "pending_review",
+      "release_eligible": false,
+      "reviewer_ref": null
+    },
+    {
+      "legacy_candidate_id": "c_eaa69e7e7076335ff867d3a1394ba15fda52cbc0e2e9328a32e8a2d314a8ce2d",
+      "unit_id": "u_bc0e903a60c91884409044fdd36aab1d935b121de022c7e64005757ec6641f9e",
+      "graph_id": "tt35",
+      "citation_path": "35/2024/TT-BGTVT > Điều 28 > Khoản 2",
+      "kind": "text",
+      "disposition": "withheld",
+      "reason": "Completion form XXIII not represented",
+      "required_dependencies": [],
+      "scope_proposal": "included",
+      "origin": "agent_review",
+      "status": "technical_selection_not_scope_acceptance",
+      "applicability": "pending_review",
+      "release_eligible": false,
+      "reviewer_ref": null
+    },
+    {
+      "legacy_candidate_id": "c_f1868c58ad76ef933295f4851ed04acc9828d53aa03bca32b21078fb08ca8475",
+      "unit_id": "u_f8416f6df50383e4db960ec6053f1ac74ad8b2263b927d565ae54c0896f44284",
+      "graph_id": "tt35",
+      "citation_path": "35/2024/TT-BGTVT > Điều 32 > Khoản 2",
+      "kind": "text",
+      "disposition": "withheld",
+      "reason": "Form XXVI and A36 procedure; form not represented",
+      "required_dependencies": [],
+      "scope_proposal": "included",
+      "origin": "agent_review",
+      "status": "technical_selection_not_scope_acceptance",
+      "applicability": "pending_review",
+      "release_eligible": false,
+      "reviewer_ref": null
+    },
+    {
+      "legacy_candidate_id": "c_f8549d6c3030e3e3804a629c4860426778ae69b76769a3e3f4f46888912d4caf",
+      "unit_id": "u_2472265304db17e99f27336ba02ede8225a70374add3dadd8cbba0e1292b065a",
+      "graph_id": "tt35",
+      "citation_path": "35/2024/TT-BGTVT > Điều 32 > Khoản 6 > Điểm a",
+      "kind": "text",
+      "disposition": "selected",
+      "reason": "Own text and parent context read; no unresolved mandatory external content",
+      "required_dependencies": [],
+      "scope_proposal": "included",
+      "origin": "agent_review",
+      "status": "technical_selection_not_scope_acceptance",
+      "applicability": "pending_review",
+      "release_eligible": false,
+      "reviewer_ref": null
+    },
+    {
+      "legacy_candidate_id": "c_ff6d3f583cb0ce9419979c979bd7299d06f36a6ad69280233511218f5997d883",
+      "unit_id": "u_353935d3181f5b6b35f6ced3bd1d65c0ca00be2f49ae2f5189bd8c0c532cebc0",
+      "graph_id": "tt35",
+      "citation_path": "35/2024/TT-BGTVT > Điều 29 > Khoản 3 > Điểm b",
+      "kind": "text",
+      "disposition": "withheld",
+      "reason": "Form XXVI not represented",
+      "required_dependencies": [],
+      "scope_proposal": "included",
+      "origin": "agent_review",
+      "status": "technical_selection_not_scope_acceptance",
+      "applicability": "pending_review",
+      "release_eligible": false,
+      "reviewer_ref": null
+    },
+    {
+      "legacy_candidate_id": "c_2e847969161a76dfa65b095c4e9d0e86b2b404baaf6da95aab9ac2130d79d662",
+      "unit_id": "u_3ef3c43a0f71f5f2445d7341741bbdc6b49c7b557386f294efb63c5e10c53860",
+      "graph_id": "tt38",
+      "citation_path": "51/2024/TT-BGTVT > Điều 2 > Khoản 1",
+      "kind": "supporting",
+      "disposition": "withheld",
+      "reason": "No concrete selected QCVN target dependency",
+      "required_dependencies": [],
+      "scope_proposal": "supporting",
+      "origin": "agent_review",
+      "status": "technical_selection_not_scope_acceptance",
+      "applicability": "pending_review",
+      "release_eligible": false,
+      "reviewer_ref": null
+    },
+    {
+      "legacy_candidate_id": "c_8ebd5601a1b2de131171dd2e156cff6ff568cbfc5402e80e99de948c2499007b",
+      "unit_id": "u_f554fd433aa51364ec3294a2ab49bc9364383737d181868deeb45cb3c11ae80e",
+      "graph_id": "tt38",
+      "citation_path": "51/2024/TT-BGTVT > Điều 1",
+      "kind": "supporting",
+      "disposition": "withheld",
+      "reason": "No concrete selected QCVN target dependency",
+      "required_dependencies": [],
+      "scope_proposal": "supporting",
+      "origin": "agent_review",
+      "status": "technical_selection_not_scope_acceptance",
+      "applicability": "pending_review",
+      "release_eligible": false,
+      "reviewer_ref": null
+    },
+    {
+      "legacy_candidate_id": "c_f5d52502e8d85ffbd5506aee603696ac00ba412dc6eafeac249dd7e9a03af829",
+      "unit_id": "u_cbcecced3915e95071929351b40207a7ffffe5e7e9ce752089c4fdf2809bf2c9",
+      "graph_id": "tt38",
+      "citation_path": "51/2024/TT-BGTVT > Điều 2 > Khoản 2",
+      "kind": "supporting",
+      "disposition": "withheld",
+      "reason": "No concrete selected QCVN target dependency",
+      "required_dependencies": [],
+      "scope_proposal": "supporting",
+      "origin": "agent_review",
+      "status": "technical_selection_not_scope_acceptance",
+      "applicability": "pending_review",
+      "release_eligible": false,
+      "reviewer_ref": null
+    }
+  ]
+}

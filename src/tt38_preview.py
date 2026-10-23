@@ -234,6 +234,7 @@ def build(run_dir,config=DEFAULT_CONFIG,extraction_manifest=None):
 
 def main(argv=None):
     p=argparse.ArgumentParser(description=__doc__);s=p.add_subparsers(dest="action",required=True)
+    ds=s.add_parser("dataset-draft");ds.add_argument("--config",type=Path,default=BASE_DIR/'config/circular_dataset.v1.json');ds.add_argument("--run-dir",type=Path,required=True)
     pr=s.add_parser("priority");pr.add_argument("--config",type=Path,default=BASE_DIR/'config/circular_priority.v1.2.json');pr.add_argument("--run-dir",type=Path,required=True)
     pv=s.add_parser("validate-priority");pv.add_argument("--manifest",type=Path,required=True)
     qp=s.add_parser("qcvn-pilot");qp.add_argument("--manifest",type=Path,required=True);qp.add_argument("--run-dir",type=Path,required=True)
@@ -247,6 +248,9 @@ def main(argv=None):
     rv=s.add_parser("validate-reader");rv.add_argument("--manifest",type=Path,required=True)
     v=s.add_parser("validate");v.add_argument("--manifest",type=Path,required=True);a=p.parse_args(argv)
     try:
+        if a.action=='dataset-draft':
+            from src.circular_dataset import build as build_dataset
+            print(json.dumps(build_dataset(a.config,a.run_dir),ensure_ascii=False));return 0
         if a.action in {"qcvn-pilot","validate-qcvn-pilot"}:
             from src.ingestion import qcvn_pilot
             result=qcvn_pilot.build(a.manifest,a.run_dir) if a.action=="qcvn-pilot" else qcvn_pilot.validate(a.manifest)
