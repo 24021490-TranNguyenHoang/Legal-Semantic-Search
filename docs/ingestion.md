@@ -4,7 +4,27 @@ Snapshot2025-01-01.7 văn bản đã đăng ký pending; chỉ4 văn bản có d
 trong dataset/index experimental bàn giao. TT38/TT35 và bản ban hành TT51 có
 preview riêng; QCVN còn partial. Không coi registered/technical pass là verified.
 
-## Hiện tại — draft experimental composition
+## Hiện tại — consumer/index BM25 composition riêng
+
+Index `staging/bm25-composition-001/`, dataset-v3-draft-005 vẫn bất biến.
+[Quickstart build/validate/search/read](handoff/Composition_BM25_Quickstart.md),
+[verification](reviews/Composition_BM25_Verification.md),
+[contract](design/Composition_BM25_Contract_v1.0.md).
+3.115 BM25 documents gồm3.106text +9table, không thêm dependency/quarantine;
+text_for_search/tokenizer/ranking params giữ nguyên. Search snippet chưa phải
+câu trả lời, read trả đủ source/context/required-read units/cells.
+
+```powershell
+.\.venv-stage1\Scripts\python.exe -X utf8 -B -m src.composition_bm25 validate --index-manifest staging/bm25-composition-001/index_manifest.json
+.\.venv-stage1\Scripts\python.exe -X utf8 -B -m src.composition_bm25 search --index-manifest staging/bm25-composition-001/index_manifest.json --query "Bằng B số tự động có lái được xe số sàn không?" --top-k 10
+.\.venv-stage1\Scripts\python.exe -X utf8 -B -m src.composition_evaluation --index-manifest staging/bm25-composition-001/index_manifest.json --queries-manifest staging/composition-queries-001/manifest.json --old-index staging/bm25-baseline-v1-001/index_manifest.json --old-evaluation staging/bm25-evaluation-dev-001 --run-dir staging/bm25-composition-evaluation-NEW
+```
+
+50dev/limit queries đã cố định, annotations của run mới pending, metrics=null;
+không chuyển qrels v1 hoặc suy gap từ khônghit. Nhóm vẫn dùng v1, chưa tích
+hợp ứng dụng/Dense/embedding/activate. Các mục dưới giữ lịch sử ingestion.
+
+## Lịch sử — draft experimental composition
 
 Run `staging/dataset-v3-draft-005/`, policy circular-composition.v1.
 [Contract](design/Circular_Dataset_Composition_v1.0.md),

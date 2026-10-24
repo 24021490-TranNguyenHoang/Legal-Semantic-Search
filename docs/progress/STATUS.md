@@ -1,4 +1,68 @@
-# Hiện tại — draft composition TT38/TT35 (2026-10-23)
+# Hiện tại — relevance review composition (2026-10-24)
+
+**AGENT_REVIEW_RECORDED / CALIBRATION_PENDING / METRICS_NULL**.
+Snapshot2025-01-01; dataset/index/query/ranking gốc bất biến. Run mới
+`staging/composition-relevance-review-001/`, rubric `composition-relevance-review.v1.1`.
+Đã xét500cặp/50query,313detail:497proposed (377nhãn0/57nhãn1/63nhãn2),
+3pending/null do loại xe chưa rõ;28full/35partial trong nhãn2. Khôngaccepted.
+
+33positive-pairs ngoài pool cho24devquery; thêm1dependency-only cho limitL05,
+tổng34pairs/17records.45dev tìm sâu nguyên query Top100,4.500hits chưa chấm
+toàn bộ;101record khảo sát citation. Coverage50câu là agent proposal hữu hạn,
+không chứng minh hết relevant; unjudged không là0. Source-only/withheld không
+thành target qrels.300proposal v1 có binding riêng; không chuyển nhãn cũ.
+
+Validator bundle seal exit0;27tests liên quan đạt.715file input của phiên
+giữ hash; baseline962 trước chỉ khác3tài liệu có sẵn, không sai lệch artifact
+bảo vệ. Logs `staging/composition-relevance-review-checks-001/`.
+Metricsnull/qrelsrỗng/human events0; nguồn/edition/scope/applicability pending.
+Dataset/index v1 nhóm dùng3.077, draft3.082/v3, ZIP/evaluation không đổi.
+
+Bước tiếp: rà10query/19cặp trong `calibration.md`, trả bản sao template ngoài
+bundle seal. Chấp nhận mẫu không chấp nhận500nhãn/coverage. Scorer accepted
+composition có table chưa triển khai; chỉ làm sau khi thực sự có nhãn đủ điều
+kiện. Chưa tuning, rebuild, Dense/embedding/index mới hoặc chuyển bản cho nhóm.
+
+[Rubric](../design/Composition_Relevance_Review_v1.1.md),
+[hướng dẫn phiếu](../handoff/Composition_Relevance_Review.md),
+[bằng chứng và giới hạn](../reviews/Composition_Relevance_Review_Verification.md).
+
+---
+
+# Lịch sử — BM25 composition experimental (2026-10-23)
+
+**INDEX_READY / SEARCH_READ_PASSED / V3_LABELS_PENDING**. Index riêng
+`staging/bm25-composition-001/`, version `vtls-bm25s-composition.v1`, bind
+nguyên dataset-v3-draft-005 (`vtls-coverage-experimental.v3-draft.1`), snapshot
+2025-01-01.3.106text +9table =3.115documents, không index dependency/withheld.
+BM25S Lucene/tokenizer/preprocessing/params v1 giữ nguyên; không lọc scope.
+Consumer đọc Part/table/source proof và đầy đủ required-read theo IDs/mounts.
+
+Queries đã seal trước ranking:30dev cũ nguyên byte,15dev corpus-derived mới,
+5limit. Run `staging/bm25-composition-evaluation-001/`:50query/500Top10,
+313detail,0queryerror.500annotations pending,0accepted/qrels, metrics=null.
+V1 regression30query khớp ID/score; trênv3 có12Top10 và1Top1 thay đổi, chưa
+kết luận retrieval tốt hơn. Query form/QCVN/y tế chi tiết/rain dependency có
+coverage observations từ selection/graph, không suy gap chỉ từ Top10.
+
+Index+dataset đã thử copy độc lập, venv mới cài offline đúng bm25s/numpy/scipy,
+validate/search/read đạt với audit gate chặn workspace ngoài folder thử.
+Cùng Windows/Python3.11.9, chưa OS/máy khác. Dataset validate/read stdlib;
+index search cần sparse dependencies. Tests/binding không xác minh pháp lý.
+
+Bản nhóm đang dùng vẫn dataset/index v1 **3.077**, draft3082 và draftv3 giữ
+nguyên; evaluation/qrels/ZIP cũ không đổi. Scope/source/edition/applicability
+pending/proposed; khônghumanreview, khôngindexactivate/app/Dense/embedding.
+
+[Quickstart](../handoff/Composition_BM25_Quickstart.md),
+[verification và hash](../reviews/Composition_BM25_Verification.md),
+[contract](../design/Composition_BM25_Contract_v1.0.md).
+Bước tiếp: người phụ trách evaluation rà relevance/direct-vs-dependency và
+độ phủ nhãn v3; chưa tự chuyển qrels hoặc yêu cầu nhóm đổi phiên bản.
+
+---
+
+# Lịch sử — draft composition TT38/TT35 (2026-10-23)
 
 **EXPERIMENTAL_DRAFT_BUILT / PORTABLE_VALIDATION_PASSED / LEGAL_REVIEW_PENDING**.
 Run `staging/dataset-v3-draft-005/`, version
