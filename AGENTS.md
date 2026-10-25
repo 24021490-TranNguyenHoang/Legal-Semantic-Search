@@ -1,5 +1,7 @@
 # Hướng dẫn làm việc
 
+- Phạm vi hiện hành (2026-10-24): người dùng cho phép hoàn thiện dữ liệu cả bảy nguồn, gồm toàn phụ lục TT35 và QCVN TT51; các giới hạn pilot/nhóm ưu tiên bên dưới là lịch sử. Được bổ sung reader/parser/chunker/OCR/schema pending/dataset adapter có version khi cần, không sửa hồi tố payload/code hash-bound đã phát hành. Giữ snapshot 2025-01-01, raw/evidence/run cũ và dataset/index/qrels/ZIP bất biến. Có checkpoint/resume và ledger toàn nguồn; không coi extraction hoặc render là đọc rà/verified. Được tạo dataset candidate experimental mới, chưa build index/Dense/embedding/UI/API/chuyển bản, không stage/commit/push. Scope/applicability và human decision tiếp tục tách khỏi xử lý kỹ thuật; phần không đủ căn cứ phải có blocker/locator thật và tiếp tục nhánh độc lập.
+
 - Snapshot sản phẩm đã chốt: **2025-01-01**. Không dùng ngày hiện tại thay thế.
 - SRS trong `docs/requirements/`, SDD và DDD trong `docs/design/` là yêu cầu và thiết kế đích; không phải bằng chứng đã triển khai hoặc nghiệm thu.
 - `docs/architecture.md` mô tả prototype cũ. `docs/scope.md` cũng có các tiêu chí cũ (bốn nguồn, 1.457 chunks) chưa đồng bộ thiết kế đích.

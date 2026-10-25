@@ -1,4 +1,34 @@
-# Ingestion hiện hành — bảy nguồn, preview ba Thông tư
+# Ingestion hiện hành — reader/graph/candidate bảy nguồn
+
+Cập nhật25/10/2026, snapshot2025-01-01. Candidate006/ledger009/handoff001 là
+đầu ra hiện hành của đợt hoàn thiện; **chưa hoàn tất semantics toàn bảy nguồn**.
+[Hướng dẫn đầy đủ môi trường/replay/resume/portable read](handoff/Seven_Source_Replay.md),
+[contract](design/Seven_Source_Completion_v1.0.md),
+[báo cáo thực đo và phần chưa làm](reviews/Seven_Source_Completion_Verification.md).
+
+146member trong candidate riêng:131text/9table/4whole-source/2form. Chỉ membership
+là target; archive v3 không tự thành target. Pending/excluded không được chọn,
+applicability/edition/source tiếp tục pending. Form chưa có encoder projection.
+Không nhập vào dataset/index nhóm đang dùng, không tạo embedding hoặc index.
+
+Nguồn Công báo QCVN425tr được capture với receipt thật, reader/layout đầy đủ nhưng
+nhiều vùng phụ thuộc hình. OCR203tr chỉ draft; lỗi số/ký hiệu chưa đạt gate target.
+Không bỏ bản403tr cũ, NUL/U+FFFE hoặc rỗng không được che bằng sửa hàng loạt.
+TT35 giữ44annex/148bảng/5.541cells;13blocker tách5sibling-table disposition và8owner
+bảng vẫn chặn. Hai bảng Luật35 có cả DOCX/PDF source proof, không fake Khoản/Điểm.
+
+CLI `src.full_ingestion` dùng run mới trong staging; `--resume` chỉ partial run,
+kiểm bytes/config/tool và serialization có sẵn; run sealed/outside staging bị từ
+chối. Sau rebuild phải truyền manifest rõ ràng, không tự chọn run mới nhất.
+Hiện có recipe dùng upstream cố định; dependency build được liệt kê trong handoff,
+trong khi portable read chỉ cần folder candidate và Python stdlib.
+
+[STATUS](progress/STATUS.md) ghi phần chưa xử lý và checkpoint. Các mục dưới là
+lịch sử, không sửa báo cáo cũ thành kết quả mới.
+
+---
+
+# Lịch sử ingestion — preview ba Thông tư và composition
 
 Snapshot2025-01-01.7 văn bản đã đăng ký pending; chỉ4 văn bản có dữ liệu
 trong dataset/index experimental bàn giao. TT38/TT35 và bản ban hành TT51 có

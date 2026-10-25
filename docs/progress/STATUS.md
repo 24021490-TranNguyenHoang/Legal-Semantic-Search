@@ -1,4 +1,58 @@
-# Hiện tại — relevance review composition (2026-10-24)
+# Hiện tại — hoàn thiện bảy nguồn, 2026-10-25
+
+**CANDIDATE_TECHNICAL_PASS / FULL_SOURCE_COMPLETION_PENDING**. Snapshot2025-01-01.
+Đã nối tiếp việc24/10 và hoàn thiện phần kiểm chứng/đóng gói; **chưa xử lý xong
+nội dung/scope/applicability toàn bảy nguồn**. HEAD kiểm tra
+`7a60f2d375b981092717b8b24bbc6a0a2037ab75`; worktree có thay đổi chưa commit,
+không stage/commit/push.
+
+Candidate riêng `staging/dataset-v4-candidate-006/`,
+`vtls-seven-source-experimental.v4-candidate.5`, adapter `seven-source-candidate.v1.3`:
+131text +9table +4whole-source +2form =146member, draft/experimental/release=false.
+132member giữ nguyên,14added;2.983pending/excluded bỏ membership ở candidate,
+không xóa payload v3. NĐ165 chưa có target included, không coi cả văn bản excluded.
+Form chỉ layout-read; encoder views phải đọc whole record và required dependencies.
+
+Inventory/ledger009:20file nội dung/1.354 trang PDF (gồm edition/bản đối chiếu),
+44.694 interval/6.723 unit-region rows qua các nhánh, không là số luật đã verified.
+425tr Công báo QCVN mới không NUL/U+FFFE;203 OCR draft còn lỗi số/ký hiệu và
+6.270word confidence<80, không vào target. Graph QCVN003:84Điều/416decimal rules,
+9annex headings đọc được;940continuation lines chưa xác định được ranh giới,
+không gán vào annex cuối. Chỉ3subtree text đã đối chiếu được chọn.
+
+TT35:248tr,148bảng/5.541ô,44nhóm annex;5/13blocker được gỡ vì bảng nằm ở Điểm
+anh em không dùng,8owner bảng còn chặn. 8target Điều34 đủ own text/context và
+finite dossier/form/transition dependencies; source-only backlog đã nối lại,
+không tạo qrels. NĐ168 HTML có1.309unit/55Điều, typed source spans thật; PDF111tr
+scan giữ trạng thái no-text. Công báo Luật35:69tr,2bảng/12ô so DOCX,8khớp/4whitespace.
+
+Kiểm chứng: suite167tests exit0,7skip opt-in; focused mới nhất có16ca. Negative
+8ca từ chối đúng lý do. Portable005 validate+5read,006 validate+read trong bản sao
+isolated có gate chặn workspace ngoài bundle; runtime/payload146member giữ nguyên.
+Cùng Windows/Python3.11.9, chưa máy/OS khác; clean install chỉ dry-run venv đang có.
+Baseline2.022file không đổi artifact bảo vệ; tài liệu hiện hành cập nhật riêng.
+Dataset/index v1 **3.077**, draft**3.082**/v3, evaluation/qrels/ZIP giữ nguyên.
+Không inference/embedding/index mới/activate/đổi ứng dụng. Human events0.
+
+Backlog hợp nhất5.685nhóm,5.626remaining:5.043scope;469page/visual;49nhóm ranh giới
+annex;37source region;20source/edition;8owner bảng TT35. Các nhóm có thể cùng vị trí
+nhưng khác điều kiện; không phải5.626Điều lỗi. Scope pending là phần agent cần
+đọc/rà tiếp, không yêu cầu người dùng phê duyệt mới được phát triển preview.
+
+Tiếp tục từ checkpoint, ưu tiên8owner bảng và scope/dependency của TT35, rồi vùng
+QCVN có vị trí cụ thể; chưa nâng OCR draft thành trusted text hoặc ghép dataset.
+Nguồn/edition/applicability còn pending, không dùng ngày hiệu lực chung thay kết luận
+unit. Chưa có điều kiện gọi hoàn tất toàn nguồn hay chuyển phiên bản cho nhóm.
+
+[Báo cáo/bằng chứng/giới hạn](../reviews/Seven_Source_Completion_Verification.md),
+[replay/resume/đọc độc lập](../handoff/Seven_Source_Replay.md),
+[contract revision](../design/Seven_Source_Completion_v1.0.md).
+Hồ sơ dễ đọc: `staging/seven-source-handoff-001/`; ledger009, candidate006.
+Checkpoint: `staging/seven-source-completion-001/checkpoint.json`.
+
+---
+
+# Lịch sử — relevance review composition (2026-10-24)
 
 **AGENT_REVIEW_RECORDED / CALIBRATION_PENDING / METRICS_NULL**.
 Snapshot2025-01-01; dataset/index/query/ranking gốc bất biến. Run mới

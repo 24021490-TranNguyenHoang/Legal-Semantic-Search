@@ -1,0 +1,15 @@
+# New byte-hash-bound ingestion modules: preserve their LF bytes after clone.
+# Do not renormalize historical files/policies or raw/evidence artifacts.
+src/full_ingestion.py text eol=lf
+src/seven_dataset_portable.py text eol=lf
+src/ingestion/completion_dataset.py text eol=lf
+src/ingestion/completion_ledger.py text eol=lf
+src/ingestion/completion_records.py text eol=lf
+src/ingestion/completion_repairs.py text eol=lf
+src/ingestion/encoder_views.py text eol=lf
+src/ingestion/full_graph.py text eol=lf
+src/ingestion/full_preview.py text eol=lf
+src/ingestion/full_source.py text eol=lf
+src/ingestion/ocr_pages.py text eol=lf
+src/ingestion/qcvn_graph.py text eol=lf
+src/ingestion/source_regions.py text eol=lf

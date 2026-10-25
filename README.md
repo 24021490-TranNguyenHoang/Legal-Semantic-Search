@@ -4,7 +4,21 @@ Pipeline dữ liệu experimental và ứng dụng prototype tra cứu pháp lu�
 **2025-01-01**. Corpus hiện có **chưa được xác minh pháp lý**; kiểm tra đường chạy
 hoặc schema không chứng minh nguồn, hiệu lực hay độ bao phủ đúng.
 
-## Trạng thái hiện hành — bảy nguồn
+## Hiện tại — candidate bảy nguồn, 25/10/2026
+
+Candidate riêng `staging/dataset-v4-candidate-006/` có **146member**:
+131text +9table +4whole-source +2form, draft/experimental/chưa verified.
+Bản này lọc membership theo included proposal; v3 nguyên byte vẫn là component
+nguồn, không tự nhận toàn3.115payload thành target. Form chỉ đọc layout, chưa
+có encoder/search projection. Toàn nguồn còn backlog scope/bảng/ảnh/QCVN.
+
+Đã validate/read độc lập với gate chặn truy cập staging ngoài bundle; không
+build index/embedding hoặc đổi bản nhóm. Dataset/index v1 3.077 và draft3.082/v3,
+evaluation/qrels/ZIP giữ nguyên. Xem **[STATUS](docs/progress/STATUS.md)**,
+[báo cáo kiểm chứng](docs/reviews/Seven_Source_Completion_Verification.md),
+[hướng dẫn replay/resume](docs/handoff/Seven_Source_Replay.md).
+
+## Lịch sử — ingestion trước đợt hoàn thiện 24–25/10/2026
 
 Source Inventory đã được đồng bộ qua `config/source_registration.seven.v1.json`:
 **7 văn bản/10 file có hồ sơ pending**. SRC-001…007 lần lượt là Luật36,

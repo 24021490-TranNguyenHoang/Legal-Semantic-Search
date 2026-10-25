@@ -1,0 +1,27 @@
+{
+  "policy_version": "seven-source-completion.v1",
+  "snapshot_date": "2025-01-01",
+  "metadata_manifest": "staging/seven-sources-export-006/manifest.json",
+  "base_dataset_manifest": "staging/dataset-v3-draft-005/dataset_manifest.json",
+  "docx_tree_manifest": "staging/stage4-docx-005/manifest.json",
+  "docx_coverage_manifest": "staging/stage6-coverage-001/manifest.json",
+  "scope_manifest": "staging/stage5-pilot-refinement-001/manifest.json",
+  "leaf_manifest": "staging/leaf-articles-preview-002/manifest.json",
+  "repair_manifest": "staging/blocked-source-repair-003/manifest.json",
+  "recovery_manifest": "staging/nd168-a16k2-preview-004/manifest.json",
+  "priority_manifest": "staging/circular-priority-006/manifest.json",
+  "tt38_manifest": "staging/tt38-preview-003/manifest.json",
+  "tt35_manifest": "staging/tt35-preview-005/manifest.json",
+  "tt51_manifest": "staging/tt51-extraction-005/manifest.json",
+  "relevance_manifest": "staging/composition-relevance-review-001/manifest.json",
+  "token_budget": 256,
+  "new_source_receipt_root": "staging/seven-source-completion-001/evidence",
+  "gazette_profile": {
+    "law_id": "51/2024/TT-BGTVT",
+    "source_id": "SRC-006",
+    "source_set": "SRC-006-gazette-1359-1368",
+    "official_page_url": "https://congbao.chinhphu.vn/van-ban/thong-tu-so-51-2024-tt-bgtvt-43387.htm",
+    "pdf_prefix": "tt51-gazette-part-",
+    "parts": 5
+  }
+}
