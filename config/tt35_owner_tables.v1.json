@@ -1,0 +1,353 @@
+{
+  "policy": "tt35-owned-multipage-cell-header.v1",
+  "base_run": "staging/tt35-preview-005",
+  "graph_run": "staging/circular-priority-006",
+  "physical_run": "staging/tt35-source-regions-001",
+  "owners": [
+    {
+      "owner_path": "document:35/2024/TT-BGTVT/part:II/chapter:I/article:6/clause:1",
+      "owner_unit_id": "u_424da0d4786e05d299b817ecf5709b8007e8669609b4b4e3c891bc0fc7c41943",
+      "source_sha256": "53491f393dd7e5a268451319c6d3a4e89f1f0e59718717918e71833bace18caf",
+      "tables": [
+        {
+          "table_id": "pdf-table_b74f26ae054c2d1a5f3b1b028ee9a060c6cd4bc178d439fe509abceacfc2adab",
+          "page": 5,
+          "header_rows": 2,
+          "continuation_of": null
+        },
+        {
+          "table_id": "pdf-table_49898371fc17e2bc71d724afcf1d3e3334488663957e00b18d0211a209f213c8",
+          "page": 6,
+          "header_rows": 0,
+          "continuation_of": "pdf-table_b74f26ae054c2d1a5f3b1b028ee9a060c6cd4bc178d439fe509abceacfc2adab"
+        }
+      ],
+      "required_units": [
+        "article:6/clause:2"
+      ],
+      "required_annexes": [
+        "II"
+      ],
+      "scope_proposal": "pending",
+      "scope_binding": {
+        "proposal_unit_id": "u_ef03da35ca8cba51285fcba91fd4c77839b8a7ed5feac7414e30e2c262b17766",
+        "own_text_sha256": "441ff385197acec68ca995ebcfc957616b7f54bfb484450ba871813577cc7576",
+        "proposal": {
+          "origin": "agent_review",
+          "reason": "Full source preserved; unit-specific business-object review not yet recorded",
+          "reviewer_ref": null,
+          "scope_proposal": "pending",
+          "status": "proposed",
+          "unit_id": "u_ef03da35ca8cba51285fcba91fd4c77839b8a7ed5feac7414e30e2c262b17766",
+          "unit_sha256": "44bdee5b2d3cc47727cb2435a417347fc4131758bcfeac72bb2f500aa46ed971"
+        }
+      },
+      "evidence": [
+        {
+          "ref": "staging/source-session2-001/visual/TT35-005.png",
+          "sha256": "fe14d6aa6392f017c6bff76839a35597a2d4c85ba02232c5da84ef9531a1e7ab"
+        },
+        {
+          "ref": "staging/source-session2-001/visual/TT35-006.png",
+          "sha256": "44e14b9173cc47e315b9afdf6ed5e8a4aba013b790a7cfc9c8229edaa7215dd0"
+        }
+      ]
+    },
+    {
+      "owner_path": "document:35/2024/TT-BGTVT/part:II/chapter:I/article:7/clause:1",
+      "owner_unit_id": "u_040b7ad73d95cd8efcc7a85282c0da17c67bc0dfb882c69562b4cf2249f5b19a",
+      "source_sha256": "53491f393dd7e5a268451319c6d3a4e89f1f0e59718717918e71833bace18caf",
+      "tables": [
+        {
+          "table_id": "pdf-table_e2ef6c586be9950d92c196fe54e6a2f576c2414e10968169b5e147d3c8bf0f67",
+          "page": 7,
+          "header_rows": 3,
+          "continuation_of": null
+        },
+        {
+          "table_id": "pdf-table_2ec9b54ab86db09f71ed42ece8b1c6d53594f3d789ce32c66c3f6f34aee43512",
+          "page": 8,
+          "header_rows": 0,
+          "continuation_of": "pdf-table_e2ef6c586be9950d92c196fe54e6a2f576c2414e10968169b5e147d3c8bf0f67"
+        }
+      ],
+      "required_units": [
+        "article:7/clause:2"
+      ],
+      "required_annexes": [
+        "III"
+      ],
+      "scope_proposal": "pending",
+      "scope_binding": {
+        "proposal_unit_id": "u_ce5b4f3fface0237628c1e5026072db3a544eea1cb8643fce42f26aa6533a1d1",
+        "own_text_sha256": "441ff385197acec68ca995ebcfc957616b7f54bfb484450ba871813577cc7576",
+        "proposal": {
+          "origin": "agent_review",
+          "reason": "Full source preserved; unit-specific business-object review not yet recorded",
+          "reviewer_ref": null,
+          "scope_proposal": "pending",
+          "status": "proposed",
+          "unit_id": "u_ce5b4f3fface0237628c1e5026072db3a544eea1cb8643fce42f26aa6533a1d1",
+          "unit_sha256": "6a1ea79ff8e9f4bbe2225593f5a38f8c09f0896f3c1cf30d338249845bb1052a"
+        }
+      },
+      "evidence": [
+        {
+          "ref": "staging/source-session2-001/visual/TT35-007.png",
+          "sha256": "3cb3c37a29fec16520cb3376dd5c33f8c167e5b875424e1d718c7bb235969897"
+        },
+        {
+          "ref": "staging/source-session2-001/visual/TT35-008.png",
+          "sha256": "f8033c6f62eb267cbf91b0873be3ee1ff801f3e63235e6b1c85e1598fc1c0e8b"
+        }
+      ]
+    },
+    {
+      "owner_path": "document:35/2024/TT-BGTVT/part:II/chapter:I/article:8/clause:1/point:a",
+      "owner_unit_id": "u_3b166e48f1a3f7e773c70228ba2f66727585a56dc505003bf3f85ab6bf738d91",
+      "source_sha256": "53491f393dd7e5a268451319c6d3a4e89f1f0e59718717918e71833bace18caf",
+      "tables": [
+        {
+          "table_id": "pdf-table_81fc814a805ebd647ff45d863219a55f6b5139441b38a033e1053e2563b82468",
+          "page": 9,
+          "header_rows": 2,
+          "continuation_of": null
+        },
+        {
+          "table_id": "pdf-table_e8471aa2f8467ec1e655a1d3f61d36bafae4b891f7f64b16a7a386fb439a6a12",
+          "page": 10,
+          "header_rows": 0,
+          "continuation_of": "pdf-table_81fc814a805ebd647ff45d863219a55f6b5139441b38a033e1053e2563b82468"
+        }
+      ],
+      "required_units": [
+        "article:8/clause:2"
+      ],
+      "required_annexes": [
+        "II"
+      ],
+      "scope_proposal": "pending",
+      "scope_binding": {
+        "proposal_unit_id": "u_9ed8991d632b8af682ba7e352d822848e9dc255d26224e78d86c0d4579d43427",
+        "own_text_sha256": "bb8ac512c22f84fcfd230c2e4c8b1cf76a4170abfb0b6b7f4d5711a4a291b51a",
+        "proposal": {
+          "origin": "agent_review",
+          "reason": "Full source preserved; unit-specific business-object review not yet recorded",
+          "reviewer_ref": null,
+          "scope_proposal": "pending",
+          "status": "proposed",
+          "unit_id": "u_9ed8991d632b8af682ba7e352d822848e9dc255d26224e78d86c0d4579d43427",
+          "unit_sha256": "241147a59fedd26dfe475bf0c3b0645017ab235cb82828403746561c640bb5ff"
+        }
+      },
+      "evidence": [
+        {
+          "ref": "staging/source-session2-001/visual/TT35-009.png",
+          "sha256": "d7ee1d7690923fa65fa0aa87be3c4a00555b2b69db977c76f59a5238bef299d6"
+        },
+        {
+          "ref": "staging/source-session2-001/visual/TT35-010.png",
+          "sha256": "eb0c62b0849d4d592cee188575d1091101c199a69745f131bd2f9bf816f0c8a2"
+        }
+      ]
+    },
+    {
+      "owner_path": "document:35/2024/TT-BGTVT/part:II/chapter:I/article:8/clause:1/point:b",
+      "owner_unit_id": "u_651abbb1af8cadb249a1d09a9204eb2c968a55cb87e36f327f521422223ca7af",
+      "source_sha256": "53491f393dd7e5a268451319c6d3a4e89f1f0e59718717918e71833bace18caf",
+      "tables": [
+        {
+          "table_id": "pdf-table_f7521b6c44e6595195def04c5db7471032d204fe96f24da65693d43bad2991b0",
+          "page": 11,
+          "header_rows": 2,
+          "continuation_of": null
+        }
+      ],
+      "required_units": [
+        "article:8/clause:2"
+      ],
+      "required_annexes": [
+        "II"
+      ],
+      "scope_proposal": "pending",
+      "scope_binding": {
+        "proposal_unit_id": "u_8fa8d9408f617278ed236c13923f8ac53924c8d41331f55c58e97e86febf968a",
+        "own_text_sha256": "9e79d9671f08630efd1516fa69084371e74d1aba90a5f0d86881377fd2a42eab",
+        "proposal": {
+          "origin": "agent_review",
+          "reason": "Full source preserved; unit-specific business-object review not yet recorded",
+          "reviewer_ref": null,
+          "scope_proposal": "pending",
+          "status": "proposed",
+          "unit_id": "u_8fa8d9408f617278ed236c13923f8ac53924c8d41331f55c58e97e86febf968a",
+          "unit_sha256": "3baa37c65d080e55c40c2b66aec8d8ab2760b894edc99f5574c6c93ccc6dff8b"
+        }
+      },
+      "evidence": [
+        {
+          "ref": "staging/source-session2-001/visual/TT35-011.png",
+          "sha256": "652e321917a0f4bdbc2f416e1053da13f016a54b33dce97713c31b78fa7fb560"
+        }
+      ]
+    },
+    {
+      "owner_path": "document:35/2024/TT-BGTVT/part:II/chapter:I/article:8/clause:1/point:c",
+      "owner_unit_id": "u_1589395dc51b321d686ed95a0d8dd1bc5c766d3be0e3fa5cc111b6272510164c",
+      "source_sha256": "53491f393dd7e5a268451319c6d3a4e89f1f0e59718717918e71833bace18caf",
+      "tables": [
+        {
+          "table_id": "pdf-table_f65d0544d2d8cad2d92574d172295429b4ac7fdf120db449453b42aabd2ab5d0",
+          "page": 12,
+          "header_rows": 2,
+          "continuation_of": null
+        }
+      ],
+      "required_units": [
+        "article:8/clause:2"
+      ],
+      "required_annexes": [
+        "II"
+      ],
+      "scope_proposal": "pending",
+      "scope_binding": {
+        "proposal_unit_id": "u_480eef92707d68f6629fc7a9747f8d0b405f0d32960236f84fb460df358d1997",
+        "own_text_sha256": "881ded86aae872e5a8375b7cc93263c82ea6510209d53281a0ae1485c6ee84f3",
+        "proposal": {
+          "origin": "agent_review",
+          "reason": "Full source preserved; unit-specific business-object review not yet recorded",
+          "reviewer_ref": null,
+          "scope_proposal": "pending",
+          "status": "proposed",
+          "unit_id": "u_480eef92707d68f6629fc7a9747f8d0b405f0d32960236f84fb460df358d1997",
+          "unit_sha256": "d2ad3ba633e345129398d3c9d0568dd8d6ed55ff69c89aa7edfcf26ddea190ae"
+        }
+      },
+      "evidence": [
+        {
+          "ref": "staging/source-session2-001/visual/TT35-012.png",
+          "sha256": "21ab27b513e7d59e7963980ad163aa51dacd1047e81572a2343680e652652ca6"
+        }
+      ]
+    },
+    {
+      "owner_path": "document:35/2024/TT-BGTVT/part:II/chapter:I/article:8/clause:1/point:d",
+      "owner_unit_id": "u_f880bc99911b6cae9fded2a3fb39ed858da009b14ad2b3d532e082c48eee46a0",
+      "source_sha256": "53491f393dd7e5a268451319c6d3a4e89f1f0e59718717918e71833bace18caf",
+      "tables": [
+        {
+          "table_id": "pdf-table_aaebc9199f9f58d409c7d2730972e443854d04a4ef4235df68f69883418fe964",
+          "page": 13,
+          "header_rows": 2,
+          "continuation_of": null
+        }
+      ],
+      "required_units": [
+        "article:8/clause:2"
+      ],
+      "required_annexes": [
+        "II"
+      ],
+      "scope_proposal": "pending",
+      "scope_binding": {
+        "proposal_unit_id": "u_c0287b609758e6523b604938e9d7536e9f81102c0b782e3c4ae7793b11de7f19",
+        "own_text_sha256": "df4818e68e82a04e4418f6148e8144e2a44aa0d6ae21186ba223030028014f1b",
+        "proposal": {
+          "origin": "agent_review",
+          "reason": "Full source preserved; unit-specific business-object review not yet recorded",
+          "reviewer_ref": null,
+          "scope_proposal": "pending",
+          "status": "proposed",
+          "unit_id": "u_c0287b609758e6523b604938e9d7536e9f81102c0b782e3c4ae7793b11de7f19",
+          "unit_sha256": "ae3610bbc0a76c6520473ed5d53c99378b50918384251ba34ae78f85bfe86a77"
+        }
+      },
+      "evidence": [
+        {
+          "ref": "staging/source-session2-001/visual/TT35-013.png",
+          "sha256": "af420ee6a9f80e7e7193f8a6c9a3e5b1ff5d48816e61304603f865769c8567d9"
+        }
+      ]
+    },
+    {
+      "owner_path": "document:35/2024/TT-BGTVT/part:II/chapter:II/article:21/clause:4/point:c",
+      "owner_unit_id": "u_6dfe7f91369bb78a1d8b95eb0f85957dd5a1255e4a9f01047aa4e1521bea6a3c",
+      "source_sha256": "53491f393dd7e5a268451319c6d3a4e89f1f0e59718717918e71833bace18caf",
+      "tables": [
+        {
+          "table_id": "pdf-table_5744447ff35dc518f8c81bed131cf24f20ef5d3a50215c70b0c79f98c968db6f",
+          "page": 25,
+          "header_rows": 1,
+          "continuation_of": null
+        }
+      ],
+      "required_units": [
+        "article:21/clause:4/point:a",
+        "article:21/clause:4/point:b"
+      ],
+      "required_annexes": [],
+      "scope_proposal": "pending",
+      "scope_binding": {
+        "proposal_unit_id": "u_9d47cd5155f7450165032b15093e780053a707d534d32117fd10823fb17b2ae1",
+        "own_text_sha256": "5de7da65207d2d3d8222fc6b122c4576cd8012f0b5e6add0d686a3f970379c5b",
+        "proposal": {
+          "origin": "agent_review",
+          "reason": "Full source preserved; unit-specific business-object review not yet recorded",
+          "reviewer_ref": null,
+          "scope_proposal": "pending",
+          "status": "proposed",
+          "unit_id": "u_9d47cd5155f7450165032b15093e780053a707d534d32117fd10823fb17b2ae1",
+          "unit_sha256": "6da91343a291b2e4b5b1a2186c2123cea615727bde9c1f26d759395c8a4a2278"
+        }
+      },
+      "evidence": [
+        {
+          "ref": "staging/source-session2-001/visual/TT35-025.png",
+          "sha256": "76958289d11548172e168f6b249cd932608aea86204275feb94de787c915971d"
+        }
+      ]
+    },
+    {
+      "owner_path": "document:35/2024/TT-BGTVT/part:IV/chapter:I/article:46/clause:2",
+      "owner_unit_id": "u_1ddaa70d6cc3ca7774707159ed1fa374ff694aafbe0cdf0db5fd409dd428c046",
+      "source_sha256": "53491f393dd7e5a268451319c6d3a4e89f1f0e59718717918e71833bace18caf",
+      "tables": [
+        {
+          "table_id": "pdf-table_afdc972acfd2f25e7ae9bfd4a79a0a2df0fe3910f8e8120c1a3134bc3962845e",
+          "page": 48,
+          "header_rows": 1,
+          "continuation_of": null
+        }
+      ],
+      "required_units": [
+        "article:46/clause:1"
+      ],
+      "required_annexes": [],
+      "scope_proposal": "pending",
+      "scope_binding": {
+        "proposal_unit_id": "u_496e9852ff2fa7ad26d3dc47a99ab066e30f61dd6ddbae7b5f4a58a657305f05",
+        "own_text_sha256": "18388f42a9bce8efef75e965a402975e1a7f147ef477873bcddce73825fc8c84",
+        "proposal": {
+          "origin": "agent_review",
+          "reason": "Full source preserved; unit-specific business-object review not yet recorded",
+          "reviewer_ref": null,
+          "scope_proposal": "pending",
+          "status": "proposed",
+          "unit_id": "u_496e9852ff2fa7ad26d3dc47a99ab066e30f61dd6ddbae7b5f4a58a657305f05",
+          "unit_sha256": "5ae2a59ecba9e53edb678ee9e036a504062e782d0a05bd46fd1fa0ddda31a018"
+        }
+      },
+      "evidence": [
+        {
+          "ref": "staging/source-session2-001/visual/TT35-048.png",
+          "sha256": "519273cf50dd76af8d7836d72f5fc22358ade8758d94ef4f3eee7f926df08f7a"
+        }
+      ]
+    }
+  ],
+  "input_hashes": {
+    "staging/tt35-preview-005/manifest.json": "2336ec69aa9c2927761c9c9de7aa7e696ff6c1b9fe8d5cf742cfce86bd9f1607",
+    "staging/circular-priority-006/manifest.json": "b21366fa0c8e22b4c27a29945f0eeab7b254b1193aa7f041b02988ad92b4c20b",
+    "staging/tt35-source-regions-001/manifest.json": "56c84f8446087a3a07a6b3fc78b5224f2702893984c3b04b42951c1b174d5d93",
+    "staging/seven-source-handoff-001/tt35_blockers.before_after.jsonl": "4e2980af5d2094a0ecabce39d7bef596c263aa32a6201386c47c78504c07a8a9"
+  }
+}

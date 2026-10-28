@@ -1,0 +1,396 @@
+{
+  "contract": "scoped-docx-revision.v1",
+  "law_id": "168/2024/NĐ-CP",
+  "raw_ref": "staging/nd168-docx-corrected-002/sources/168.2024.NĐ-CP.docx",
+  "official_pdf_ref": "staging/bm25-baseline-v1-001/dataset/evidence/captures/05/snapshot.pdf",
+  "official_pdf_sha256": "7bb11b939d162499ab404aa41a940cce05dbf071d9cbae7a8898b00d4b4a48bd",
+  "previous_graph_ref": "staging/nd168-docx-corrected-002/graph",
+  "corrections": [
+    {
+      "article": null,
+      "clause": null,
+      "citation": "document:168/2024/NĐ-CP",
+      "raw_sha256": "33b9c76fa3c03a7ca562d238797f308f259141fee302dbcf15d0bb736710d721",
+      "current_text_original": "Căn cứ Luật Xử lý vi phạm hành chính ngày 20 tháng 6 năm 2012; Luật sửa đổi, bổ sung một số điều của Luật Xử lý vi phạm hành chính ngày 15 tháng 11 năm 2020;",
+      "proposed_change_from": "Căn cứ Luật Xử lý vi phạm hành chính ngày 20 tháng 6 năm 2012; Luật sửa đổi, bổ sung một số điều của Luật Xử lý vi phạm hành chính ngày 15 tháng 11 năm 2020;",
+      "proposed_change_to": "Căn cứ Luật Xử lý vi phạm hành chính ngày 20 tháng 6 năm 2012; Luật sửa đổi, bổ sung một số điều của Luật Xử lý vi phạm hành chính ngày 13 tháng 11 năm 2020;",
+      "official_text_original": "Căn cứ Luật Xử lý vi phạm hành chính ngày 20 tháng 6 năm 2012; Luật sửa đổi, bổ sung một số điều của Luật Xử lý vi phạm hành chính ngày 13 tháng 11 năm 2020;",
+      "official_evidence_quotes": [
+        [
+          "ngày 15 tháng 11 năm 2020",
+          "ngày 13 tháng 11 năm 2020"
+        ]
+      ],
+      "comparison_scope": "Only listed edited substrings were compared; unchanged paragraph context is carried forward, not a new whole-paragraph transcription",
+      "evidence_image_ref": "staging/source-session2-001/visual/ND-001.png",
+      "evidence_image_sha256": "eb47d05a06e3cad69756e159b84ff89996a8cd8eb04db3e3a2f74b629a1c3a12",
+      "official_pdf_page": 1,
+      "xml_paragraph_index_1based": 4
+    },
+    {
+      "article": 6,
+      "clause": 4,
+      "citation": "document:168/2024/NĐ-CP/chapter:II/section:1/article:6/clause:4/point:a",
+      "raw_sha256": "33b9c76fa3c03a7ca562d238797f308f259141fee302dbcf15d0bb736710d721",
+      "current_text_original": "a) Điều khiển xe không đủ điều kiện đã thu phí theo hình thức điện tử tự động không dừng (xe không gắn thẻ đầu cuối) đi vào làn đường dành riêng thu phí theo hình thức điện tử tự động không dừng tại các trạm thu phí;",
+      "proposed_change_from": "a) Điều khiển xe không đủ điều kiện đã thu phí theo hình thức điện tử tự động không dừng (xe không gắn thẻ đầu cuối) đi vào làn đường dành riêng thu phí theo hình thức điện tử tự động không dừng tại các trạm thu phí;",
+      "proposed_change_to": "a) Điều khiển xe không đủ điều kiện để thu phí theo hình thức điện tử tự động không dừng (xe không gắn thẻ đầu cuối) đi vào làn đường dành riêng thu phí theo hình thức điện tử tự động không dừng tại các trạm thu phí;",
+      "official_text_original": "a) Điều khiển xe không đủ điều kiện để thu phí theo hình thức điện tử tự động không dừng (xe không gắn thẻ đầu cuối) đi vào làn đường dành riêng thu phí theo hình thức điện tử tự động không dừng tại các trạm thu phí;",
+      "official_evidence_quotes": [
+        [
+          "điều kiện đã thu phí",
+          "điều kiện để thu phí"
+        ]
+      ],
+      "comparison_scope": "Only listed edited substrings were compared; unchanged paragraph context is carried forward, not a new whole-paragraph transcription",
+      "evidence_image_ref": "staging/source-session2-001/visual/ND-010.png",
+      "evidence_image_sha256": "e891a61a3e27e0db48f7026ae51108d240c3a331292db12ec49dcaf05e5b4926",
+      "official_pdf_page": 10,
+      "xml_paragraph_index_1based": 125
+    },
+    {
+      "article": 8,
+      "clause": 7,
+      "citation": "document:168/2024/NĐ-CP/chapter:II/section:1/article:8/clause:7",
+      "raw_sha256": "33b9c76fa3c03a7ca562d238797f308f259141fee302dbcf15d0bb736710d721",
+      "current_text_original": "7. Phạt liền từ 6.000.000 đồng đến 8.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây:",
+      "proposed_change_from": "7. Phạt liền từ 6.000.000 đồng đến 8.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây:",
+      "proposed_change_to": "7. Phạt tiền từ 6.000.000 đồng đến 8.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây:",
+      "official_text_original": "7. Phạt tiền từ 6.000.000 đồng đến 8.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây:",
+      "official_evidence_quotes": [
+        [
+          "Phạt liền",
+          "Phạt tiền"
+        ]
+      ],
+      "comparison_scope": "Only listed edited substrings were compared; unchanged paragraph context is carried forward, not a new whole-paragraph transcription",
+      "evidence_image_ref": "staging/source-session2-001/visual/ND-025.png",
+      "evidence_image_sha256": "2d9476e2babd5e38823f2ba5609ff7662032580fb1e237a3c928ef3ef378e2b2",
+      "official_pdf_page": 25,
+      "xml_paragraph_index_1based": 315
+    },
+    {
+      "article": 12,
+      "clause": 9,
+      "citation": "document:168/2024/NĐ-CP/chapter:II/section:1/article:12/clause:9",
+      "raw_sha256": "33b9c76fa3c03a7ca562d238797f308f259141fee302dbcf15d0bb736710d721",
+      "current_text_original": "9. Phạt tiền từ 3.000.000 đồng đến 5.000.000 đồng đối với cá nhân, từ 6.000.000 đồng đến 10.000.000 đồng đối với tổ chức thực hiện hành vi bày, bán máy móc, thiết bị, vật tư hoặc sản xuất, gia công hàng hóa trên lòng đường, vỉa hè,",
+      "proposed_change_from": "9. Phạt tiền từ 3.000.000 đồng đến 5.000.000 đồng đối với cá nhân, từ 6.000.000 đồng đến 10.000.000 đồng đối với tổ chức thực hiện hành vi bày, bán máy móc, thiết bị, vật tư hoặc sản xuất, gia công hàng hóa trên lòng đường, vỉa hè,",
+      "proposed_change_to": "9. Phạt tiền từ 3.000.000 đồng đến 5.000.000 đồng đối với cá nhân, từ 6.000.000 đồng đến 10.000.000 đồng đối với tổ chức thực hiện hành vi bày, bán máy móc, thiết bị, vật tư hoặc sản xuất, gia công hàng hóa trên lòng đường, vỉa hè.",
+      "official_text_original": "9. Phạt tiền từ 3.000.000 đồng đến 5.000.000 đồng đối với cá nhân, từ 6.000.000 đồng đến 10.000.000 đồng đối với tổ chức thực hiện hành vi bày, bán máy móc, thiết bị, vật tư hoặc sản xuất, gia công hàng hóa trên lòng đường, vỉa hè.",
+      "official_evidence_quotes": [
+        [
+          "vỉa hè,",
+          "vỉa hè."
+        ]
+      ],
+      "comparison_scope": "Only listed edited substrings were compared; unchanged paragraph context is carried forward, not a new whole-paragraph transcription",
+      "evidence_image_ref": "staging/source-session2-001/visual/ND-032.png",
+      "evidence_image_sha256": "8fc839368e59dad5417569c81ed7f3004f31e2ce3fcffe574536117e51e48fd0",
+      "official_pdf_page": 32,
+      "xml_paragraph_index_1based": 412
+    },
+    {
+      "article": 12,
+      "clause": 15,
+      "citation": "document:168/2024/NĐ-CP/chapter:II/section:1/article:12/clause:15",
+      "raw_sha256": "33b9c76fa3c03a7ca562d238797f308f259141fee302dbcf15d0bb736710d721",
+      "current_text_original": "15. Ngoài việc bị phạt tiền, cá nhân thực hiện hành vi quy định tại khoản 14 Điều này nếu là người điều khiển phương tiện còn bị áp dụng hình thức xử phạt bổ sung tước quyền sử dụng giấy phép lát xe từ 22 tháng đến 24 tháng.",
+      "proposed_change_from": "15. Ngoài việc bị phạt tiền, cá nhân thực hiện hành vi quy định tại khoản 14 Điều này nếu là người điều khiển phương tiện còn bị áp dụng hình thức xử phạt bổ sung tước quyền sử dụng giấy phép lát xe từ 22 tháng đến 24 tháng.",
+      "proposed_change_to": "15. Ngoài việc bị phạt tiền, cá nhân thực hiện hành vi quy định tại khoản 14 Điều này nếu là người điều khiển phương tiện còn bị áp dụng hình thức xử phạt bổ sung tước quyền sử dụng giấy phép lái xe từ 22 tháng đến 24 tháng.",
+      "official_text_original": "15. Ngoài việc bị phạt tiền, cá nhân thực hiện hành vi quy định tại khoản 14 Điều này nếu là người điều khiển phương tiện còn bị áp dụng hình thức xử phạt bổ sung tước quyền sử dụng giấy phép lái xe từ 22 tháng đến 24 tháng.",
+      "official_evidence_quotes": [
+        [
+          "giấy phép lát xe",
+          "giấy phép lái xe"
+        ]
+      ],
+      "comparison_scope": "Only listed edited substrings were compared; unchanged paragraph context is carried forward, not a new whole-paragraph transcription",
+      "evidence_image_ref": "staging/source-session2-001/visual/ND-033.png",
+      "evidence_image_sha256": "67781a69dec87700c134b5eb44b1ddea225d0d3d66ad2b227a4f04c7f25bbf88",
+      "official_pdf_page": 33,
+      "xml_paragraph_index_1based": 423
+    },
+    {
+      "article": 13,
+      "clause": null,
+      "citation": "document:168/2024/NĐ-CP/chapter:II/section:2/article:13",
+      "raw_sha256": "33b9c76fa3c03a7ca562d238797f308f259141fee302dbcf15d0bb736710d721",
+      "current_text_original": "Điều 13. Xử phạt, trừ điểm giấy phép lái xe của người điều khiển xe ô tô (bao gồm cả rơ moóc hoặc sơ mi rơ moóc được kéo theo), xe chở người bốn bánh có gắn động cơ, xe chở hàng bốn bánh có gắn động cơ và các loại xe tương tư xe ô tô vi phạm quy định về điều kiện của phương tiện khi tham gia giao thông",
+      "proposed_change_from": "Điều 13. Xử phạt, trừ điểm giấy phép lái xe của người điều khiển xe ô tô (bao gồm cả rơ moóc hoặc sơ mi rơ moóc được kéo theo), xe chở người bốn bánh có gắn động cơ, xe chở hàng bốn bánh có gắn động cơ và các loại xe tương tư xe ô tô vi phạm quy định về điều kiện của phương tiện khi tham gia giao thông",
+      "proposed_change_to": "Điều 13. Xử phạt, trừ điểm giấy phép lái xe của người điều khiển xe ô tô (bao gồm cả rơ moóc hoặc sơ mi rơ moóc được kéo theo), xe chở người bốn bánh có gắn động cơ, xe chở hàng bốn bánh có gắn động cơ và các loại xe tương tự xe ô tô vi phạm quy định về điều kiện của phương tiện khi tham gia giao thông",
+      "official_text_original": "Điều 13. Xử phạt, trừ điểm giấy phép lái xe của người điều khiển xe ô tô (bao gồm cả rơ moóc hoặc sơ mi rơ moóc được kéo theo), xe chở người bốn bánh có gắn động cơ, xe chở hàng bốn bánh có gắn động cơ và các loại xe tương tự xe ô tô vi phạm quy định về điều kiện của phương tiện khi tham gia giao thông",
+      "official_evidence_quotes": [
+        [
+          "tương tư xe ô tô",
+          "tương tự xe ô tô"
+        ]
+      ],
+      "comparison_scope": "Only listed edited substrings were compared; unchanged paragraph context is carried forward, not a new whole-paragraph transcription",
+      "evidence_image_ref": "staging/source-session2-001/visual/ND-033.png",
+      "evidence_image_sha256": "67781a69dec87700c134b5eb44b1ddea225d0d3d66ad2b227a4f04c7f25bbf88",
+      "official_pdf_page": 33,
+      "xml_paragraph_index_1based": 431
+    },
+    {
+      "article": 13,
+      "clause": 2,
+      "citation": "document:168/2024/NĐ-CP/chapter:II/section:2/article:13/clause:2/point:a",
+      "raw_sha256": "33b9c76fa3c03a7ca562d238797f308f259141fee302dbcf15d0bb736710d721",
+      "current_text_original": "a) Điều khiển xe không có đủ đèn chiếu sáng, đèn soi biển số, đèn báo hãm, đèn tín hiệu, cần gạt nước, gương chiếu hậu, dây đai an toàn, dụng cụ thoát hiểm, thiết bị chữa cháy, đồng hồ báo áp lực hơi, đồng hồ báo tốc độ của xe hoặc có những thiết bị đó nhưng không có tác dụng, không đúng tiêu chuẩn thiết kế (đối với loại xe được quy định phải có những thiết bị đó), trừ các hành vi vi phạm quy định tại điểm h khoản 3 Điều 20, điểm d khoản 4 Điều 26 của Nghị định này;",
+      "proposed_change_from": "a) Điều khiển xe không có đủ đèn chiếu sáng, đèn soi biển số, đèn báo hãm, đèn tín hiệu, cần gạt nước, gương chiếu hậu, dây đai an toàn, dụng cụ thoát hiểm, thiết bị chữa cháy, đồng hồ báo áp lực hơi, đồng hồ báo tốc độ của xe hoặc có những thiết bị đó nhưng không có tác dụng, không đúng tiêu chuẩn thiết kế (đối với loại xe được quy định phải có những thiết bị đó), trừ các hành vi vi phạm quy định tại điểm h khoản 3 Điều 20, điểm d khoản 4 Điều 26 của Nghị định này;",
+      "proposed_change_to": "a) Điều khiển xe không có đủ đèn chiếu sáng, đèn soi biển số, đèn báo hãm, đèn tín hiệu, cần gạt nước, gương chiếu hậu, dây đai an toàn, dụng cụ thoát hiểm, thiết bị chữa cháy, đồng hồ báo áp lực hơi, đồng hồ báo tốc độ của xe hoặc có những thiết bị đó nhưng không có tác dụng, không đúng tiêu chuẩn thiết kế (đối với loại xe được quy định phải có những thiết bị đó), trừ các hành vi vi phạm quy định tại điểm h khoản 3 Điều 20, điểm đ khoản 4 Điều 26 của Nghị định này;",
+      "official_text_original": "a) Điều khiển xe không có đủ đèn chiếu sáng, đèn soi biển số, đèn báo hãm, đèn tín hiệu, cần gạt nước, gương chiếu hậu, dây đai an toàn, dụng cụ thoát hiểm, thiết bị chữa cháy, đồng hồ báo áp lực hơi, đồng hồ báo tốc độ của xe hoặc có những thiết bị đó nhưng không có tác dụng, không đúng tiêu chuẩn thiết kế (đối với loại xe được quy định phải có những thiết bị đó), trừ các hành vi vi phạm quy định tại điểm h khoản 3 Điều 20, điểm đ khoản 4 Điều 26 của Nghị định này;",
+      "official_evidence_quotes": [
+        [
+          "điểm d khoản 4 Điều 26",
+          "điểm đ khoản 4 Điều 26"
+        ]
+      ],
+      "comparison_scope": "Only listed edited substrings were compared; unchanged paragraph context is carried forward, not a new whole-paragraph transcription",
+      "evidence_image_ref": "staging/source-session2-001/visual/ND-033.png",
+      "evidence_image_sha256": "67781a69dec87700c134b5eb44b1ddea225d0d3d66ad2b227a4f04c7f25bbf88",
+      "official_pdf_page": 33,
+      "xml_paragraph_index_1based": 434
+    },
+    {
+      "article": 13,
+      "clause": 3,
+      "citation": "document:168/2024/NĐ-CP/chapter:II/section:2/article:13/clause:3/point:a",
+      "raw_sha256": "33b9c76fa3c03a7ca562d238797f308f259141fee302dbcf15d0bb736710d721",
+      "current_text_original": "a) Điều khiển xe lắp thêm đèn phía trước, phía sau, trên nóc, dưới gầm, một hoặc cả hai bên thành xe, trừ đèn sương mù dạng rời được lấp theo quy định;",
+      "proposed_change_from": "a) Điều khiển xe lắp thêm đèn phía trước, phía sau, trên nóc, dưới gầm, một hoặc cả hai bên thành xe, trừ đèn sương mù dạng rời được lấp theo quy định;",
+      "proposed_change_to": "a) Điều khiển xe lắp thêm đèn phía trước, phía sau, trên nóc, dưới gầm, một hoặc cả hai bên thành xe, trừ đèn sương mù dạng rời được lắp theo quy định;",
+      "official_text_original": "a) Điều khiển xe lắp thêm đèn phía trước, phía sau, trên nóc, dưới gầm, một hoặc cả hai bên thành xe, trừ đèn sương mù dạng rời được lắp theo quy định;",
+      "official_evidence_quotes": [
+        [
+          "được lấp theo",
+          "được lắp theo"
+        ]
+      ],
+      "comparison_scope": "Only listed edited substrings were compared; unchanged paragraph context is carried forward, not a new whole-paragraph transcription",
+      "evidence_image_ref": "staging/source-session2-001/visual/ND-034.png",
+      "evidence_image_sha256": "414c521425dcba74a7afaaaccd914ad5385d3ef1e5f0aae1e56c1edc30d8baca",
+      "official_pdf_page": 34,
+      "xml_paragraph_index_1based": 438
+    },
+    {
+      "article": 13,
+      "clause": 5,
+      "citation": "document:168/2024/NĐ-CP/chapter:II/section:2/article:13/clause:5/point:b",
+      "raw_sha256": "33b9c76fa3c03a7ca562d238797f308f259141fee302dbcf15d0bb736710d721",
+      "current_text_original": "b) Điều khiển xe không đủ hệ thống hàm hoặc có đủ hệ thống hãm nhưng không có tác dụng, không đúng tiêu chuẩn an toàn kỹ thuật (kể cả rơ moóc và sơ mi rơ moóc);",
+      "proposed_change_from": "b) Điều khiển xe không đủ hệ thống hàm hoặc có đủ hệ thống hãm nhưng không có tác dụng, không đúng tiêu chuẩn an toàn kỹ thuật (kể cả rơ moóc và sơ mi rơ moóc);",
+      "proposed_change_to": "b) Điều khiển xe không đủ hệ thống hãm hoặc có đủ hệ thống hãm nhưng không có tác dụng, không đúng tiêu chuẩn an toàn kỹ thuật (kể cả rơ moóc và sơ mi rơ moóc);",
+      "official_text_original": "b) Điều khiển xe không đủ hệ thống hãm hoặc có đủ hệ thống hãm nhưng không có tác dụng, không đúng tiêu chuẩn an toàn kỹ thuật (kể cả rơ moóc và sơ mi rơ moóc);",
+      "official_evidence_quotes": [
+        [
+          "hệ thống hàm",
+          "hệ thống hãm"
+        ]
+      ],
+      "comparison_scope": "Only listed edited substrings were compared; unchanged paragraph context is carried forward, not a new whole-paragraph transcription",
+      "evidence_image_ref": "staging/source-session2-001/visual/ND-035.png",
+      "evidence_image_sha256": "4139e376231d478e8139010b01589bcb510c6bd6a32ed823b2b736b326c3c537",
+      "official_pdf_page": 35,
+      "xml_paragraph_index_1based": 448
+    },
+    {
+      "article": 13,
+      "clause": 10,
+      "citation": "document:168/2024/NĐ-CP/chapter:II/section:2/article:13/clause:10/point:b",
+      "raw_sha256": "33b9c76fa3c03a7ca562d238797f308f259141fee302dbcf15d0bb736710d721",
+      "current_text_original": "b) Thực hiện hành vi quy định tại điểm a khoản 4, điểm a khoản 6 Điều này trong trường hợp không có chứng nhận đăng ký xe (hoặc bản sao chứng nhận đăng ký xe có chứng thực kèm theo bản gốc giấy biên nhận của tổ chức tín dụng, chi nhánh ngân hàng nước ngoài trong trường hợp tổ chức tín dụng, chi nhánh ngân hàng nước ngoài giữ bản gốc chứng nhận đăng ký xe) hoặc sử dụng chứng nhận đăng ký xe (hoặc bản sao chứng nhận đăng ký xe có chứng thực kèm theo bản gốc giấy biên nhận của tổ chức tín dụng, chi nhánh ngàn hàng nước ngoài trong trường hợp tổ chức tín dụng, chi nhánh ngân hàng nước ngoài giữ bản gốc chứng nhận đăng ký xe) không: do cơ quan có thẩm quyền cấp, không đúng số khung, số động cơ (số máy) của xe hoặc bị tẩy xóa (kể cả rơ moóc và sơ mi rơ moóc) mà không chứng minh được nguồn gốc xuất xứ của phương tiện (không có giấy tờ, chứng nhận nguồn gốc xe, chứng nhận quyền sở hữu hợp pháp) thì bị tịch thu phương tiện.",
+      "proposed_change_from": "b) Thực hiện hành vi quy định tại điểm a khoản 4, điểm a khoản 6 Điều này trong trường hợp không có chứng nhận đăng ký xe (hoặc bản sao chứng nhận đăng ký xe có chứng thực kèm theo bản gốc giấy biên nhận của tổ chức tín dụng, chi nhánh ngân hàng nước ngoài trong trường hợp tổ chức tín dụng, chi nhánh ngân hàng nước ngoài giữ bản gốc chứng nhận đăng ký xe) hoặc sử dụng chứng nhận đăng ký xe (hoặc bản sao chứng nhận đăng ký xe có chứng thực kèm theo bản gốc giấy biên nhận của tổ chức tín dụng, chi nhánh ngàn hàng nước ngoài trong trường hợp tổ chức tín dụng, chi nhánh ngân hàng nước ngoài giữ bản gốc chứng nhận đăng ký xe) không: do cơ quan có thẩm quyền cấp, không đúng số khung, số động cơ (số máy) của xe hoặc bị tẩy xóa (kể cả rơ moóc và sơ mi rơ moóc) mà không chứng minh được nguồn gốc xuất xứ của phương tiện (không có giấy tờ, chứng nhận nguồn gốc xe, chứng nhận quyền sở hữu hợp pháp) thì bị tịch thu phương tiện.",
+      "proposed_change_to": "b) Thực hiện hành vi quy định tại điểm a khoản 4, điểm a khoản 6 Điều này trong trường hợp không có chứng nhận đăng ký xe (hoặc bản sao chứng nhận đăng ký xe có chứng thực kèm theo bản gốc giấy biên nhận của tổ chức tín dụng, chi nhánh ngân hàng nước ngoài trong trường hợp tổ chức tín dụng, chi nhánh ngân hàng nước ngoài giữ bản gốc chứng nhận đăng ký xe) hoặc sử dụng chứng nhận đăng ký xe (hoặc bản sao chứng nhận đăng ký xe có chứng thực kèm theo bản gốc giấy biên nhận của tổ chức tín dụng, chi nhánh ngân hàng nước ngoài trong trường hợp tổ chức tín dụng, chi nhánh ngân hàng nước ngoài giữ bản gốc chứng nhận đăng ký xe) không do cơ quan có thẩm quyền cấp, không đúng số khung, số động cơ (số máy) của xe hoặc bị tẩy xóa (kể cả rơ moóc và sơ mi rơ moóc) mà không chứng minh được nguồn gốc xuất xứ của phương tiện (không có giấy tờ, chứng nhận nguồn gốc xe, chứng nhận quyền sở hữu hợp pháp) thì bị tịch thu phương tiện.",
+      "official_text_original": "b) Thực hiện hành vi quy định tại điểm a khoản 4, điểm a khoản 6 Điều này trong trường hợp không có chứng nhận đăng ký xe (hoặc bản sao chứng nhận đăng ký xe có chứng thực kèm theo bản gốc giấy biên nhận của tổ chức tín dụng, chi nhánh ngân hàng nước ngoài trong trường hợp tổ chức tín dụng, chi nhánh ngân hàng nước ngoài giữ bản gốc chứng nhận đăng ký xe) hoặc sử dụng chứng nhận đăng ký xe (hoặc bản sao chứng nhận đăng ký xe có chứng thực kèm theo bản gốc giấy biên nhận của tổ chức tín dụng, chi nhánh ngân hàng nước ngoài trong trường hợp tổ chức tín dụng, chi nhánh ngân hàng nước ngoài giữ bản gốc chứng nhận đăng ký xe) không do cơ quan có thẩm quyền cấp, không đúng số khung, số động cơ (số máy) của xe hoặc bị tẩy xóa (kể cả rơ moóc và sơ mi rơ moóc) mà không chứng minh được nguồn gốc xuất xứ của phương tiện (không có giấy tờ, chứng nhận nguồn gốc xe, chứng nhận quyền sở hữu hợp pháp) thì bị tịch thu phương tiện.",
+      "official_evidence_quotes": [
+        [
+          "chi nhánh ngàn hàng",
+          "chi nhánh ngân hàng"
+        ],
+        [
+          "không: do",
+          "không do"
+        ]
+      ],
+      "comparison_scope": "Only listed edited substrings were compared; unchanged paragraph context is carried forward, not a new whole-paragraph transcription",
+      "evidence_image_ref": "staging/source-session2-001/visual/ND-036.png",
+      "evidence_image_sha256": "1f59e41b7a6e0f76b381d097d23951f2d4712af655859a211c3091634a5e2eca",
+      "official_pdf_page": 36,
+      "xml_paragraph_index_1based": 465
+    },
+    {
+      "article": 14,
+      "clause": 5,
+      "citation": "document:168/2024/NĐ-CP/chapter:II/section:2/article:14/clause:5/point:b",
+      "raw_sha256": "33b9c76fa3c03a7ca562d238797f308f259141fee302dbcf15d0bb736710d721",
+      "current_text_original": "b) Thực hiện hành vi quy định lại điểm a, điểm b khoản 2 Điều này trong trường hợp không có chứng nhận đăng ký xe (hoặc bản sao chứng nhận đăng ký xe có chứng thực kèm theo bản gốc giấy biên nhận của tổ chức tín dụng, chi nhánh ngân hàng nước ngoài trong trường hợp tổ chức tín dụng, chi nhánh ngân hàng nước ngoài giữ bản gốc chứng nhận đăng ký xe) hoặc sử dụng chứng nhận đăng ký xe (hoặc bản sao chứng nhận đăng ký xe có chứng thực kèm theo bản gốc giấy biên nhận của tổ chức tín dụng, chi nhánh ngân hàng nước ngoài trong trường hợp tổ chức tín dụng, chi nhánh ngân hàng nước ngoài giữ bản gốc chứng nhận đăng ký xe) không do cơ quan có thẩm quyền cấp, không đúng số khung, số động cơ (số máy) của xe hoặc bị tẩy xóa mà không chứng minh được nguồn gốc xuất xứ của phương tiện (không có giấy tờ, chứng nhận nguồn gốc xe, chứng nhận quyền sở hữu hợp pháp) thì bị tịch thu phương tiện.",
+      "proposed_change_from": "b) Thực hiện hành vi quy định lại điểm a, điểm b khoản 2 Điều này trong trường hợp không có chứng nhận đăng ký xe (hoặc bản sao chứng nhận đăng ký xe có chứng thực kèm theo bản gốc giấy biên nhận của tổ chức tín dụng, chi nhánh ngân hàng nước ngoài trong trường hợp tổ chức tín dụng, chi nhánh ngân hàng nước ngoài giữ bản gốc chứng nhận đăng ký xe) hoặc sử dụng chứng nhận đăng ký xe (hoặc bản sao chứng nhận đăng ký xe có chứng thực kèm theo bản gốc giấy biên nhận của tổ chức tín dụng, chi nhánh ngân hàng nước ngoài trong trường hợp tổ chức tín dụng, chi nhánh ngân hàng nước ngoài giữ bản gốc chứng nhận đăng ký xe) không do cơ quan có thẩm quyền cấp, không đúng số khung, số động cơ (số máy) của xe hoặc bị tẩy xóa mà không chứng minh được nguồn gốc xuất xứ của phương tiện (không có giấy tờ, chứng nhận nguồn gốc xe, chứng nhận quyền sở hữu hợp pháp) thì bị tịch thu phương tiện.",
+      "proposed_change_to": "b) Thực hiện hành vi quy định tại điểm a, điểm b khoản 2 Điều này trong trường hợp không có chứng nhận đăng ký xe (hoặc bản sao chứng nhận đăng ký xe có chứng thực kèm theo bản gốc giấy biên nhận của tổ chức tín dụng, chi nhánh ngân hàng nước ngoài trong trường hợp tổ chức tín dụng, chi nhánh ngân hàng nước ngoài giữ bản gốc chứng nhận đăng ký xe) hoặc sử dụng chứng nhận đăng ký xe (hoặc bản sao chứng nhận đăng ký xe có chứng thực kèm theo bản gốc giấy biên nhận của tổ chức tín dụng, chi nhánh ngân hàng nước ngoài trong trường hợp tổ chức tín dụng, chi nhánh ngân hàng nước ngoài giữ bản gốc chứng nhận đăng ký xe) không do cơ quan có thẩm quyền cấp, không đúng số khung, số động cơ (số máy) của xe hoặc bị tẩy xóa mà không chứng minh được nguồn gốc xuất xứ của phương tiện (không có giấy tờ, chứng nhận nguồn gốc xe, chứng nhận quyền sở hữu hợp pháp) thì bị tịch thu phương tiện.",
+      "official_text_original": "b) Thực hiện hành vi quy định tại điểm a, điểm b khoản 2 Điều này trong trường hợp không có chứng nhận đăng ký xe (hoặc bản sao chứng nhận đăng ký xe có chứng thực kèm theo bản gốc giấy biên nhận của tổ chức tín dụng, chi nhánh ngân hàng nước ngoài trong trường hợp tổ chức tín dụng, chi nhánh ngân hàng nước ngoài giữ bản gốc chứng nhận đăng ký xe) hoặc sử dụng chứng nhận đăng ký xe (hoặc bản sao chứng nhận đăng ký xe có chứng thực kèm theo bản gốc giấy biên nhận của tổ chức tín dụng, chi nhánh ngân hàng nước ngoài trong trường hợp tổ chức tín dụng, chi nhánh ngân hàng nước ngoài giữ bản gốc chứng nhận đăng ký xe) không do cơ quan có thẩm quyền cấp, không đúng số khung, số động cơ (số máy) của xe hoặc bị tẩy xóa mà không chứng minh được nguồn gốc xuất xứ của phương tiện (không có giấy tờ, chứng nhận nguồn gốc xe, chứng nhận quyền sở hữu hợp pháp) thì bị tịch thu phương tiện.",
+      "official_evidence_quotes": [
+        [
+          "quy định lại điểm",
+          "quy định tại điểm"
+        ]
+      ],
+      "comparison_scope": "Only listed edited substrings were compared; unchanged paragraph context is carried forward, not a new whole-paragraph transcription",
+      "evidence_image_ref": "staging/source-session2-001/visual/ND-038.png",
+      "evidence_image_sha256": "0027284150b1ae02c263cb8b9c84b443a0354d02a22d207bffaebfe8559b3f34",
+      "official_pdf_page": 38,
+      "xml_paragraph_index_1based": 495
+    },
+    {
+      "article": 20,
+      "clause": null,
+      "citation": "document:168/2024/NĐ-CP/chapter:II/section:4/article:20",
+      "raw_sha256": "33b9c76fa3c03a7ca562d238797f308f259141fee302dbcf15d0bb736710d721",
+      "current_text_original": "Điều 20. Xử phạt, trừ điểm giấy phép lái xe của người điều khiển xe ô tô chở hành khách, ô tô chở người và các loại xe tương tự xe ô tô chở hành khách vi phạm quy định về bảo đảm trật trị, an toàn giao thông",
+      "proposed_change_from": "Điều 20. Xử phạt, trừ điểm giấy phép lái xe của người điều khiển xe ô tô chở hành khách, ô tô chở người và các loại xe tương tự xe ô tô chở hành khách vi phạm quy định về bảo đảm trật trị, an toàn giao thông",
+      "proposed_change_to": "Điều 20. Xử phạt, trừ điểm giấy phép lái xe của người điều khiển xe ô tô chở hành khách, ô tô chở người và các loại xe tương tự xe ô tô chở hành khách vi phạm quy định về bảo đảm trật tự, an toàn giao thông",
+      "official_text_original": "Điều 20. Xử phạt, trừ điểm giấy phép lái xe của người điều khiển xe ô tô chở hành khách, ô tô chở người và các loại xe tương tự xe ô tô chở hành khách vi phạm quy định về bảo đảm trật tự, an toàn giao thông",
+      "official_evidence_quotes": [
+        [
+          "trật trị,",
+          "trật tự,"
+        ]
+      ],
+      "comparison_scope": "Only listed edited substrings were compared; unchanged paragraph context is carried forward, not a new whole-paragraph transcription",
+      "evidence_image_ref": "staging/source-session2-001/visual/ND-046.png",
+      "evidence_image_sha256": "aad2afe80daaf4cc8818e2b375ea842df762455d703e12d3c432543588e54c6e",
+      "official_pdf_page": 46,
+      "xml_paragraph_index_1based": 584
+    },
+    {
+      "article": 32,
+      "clause": 18,
+      "citation": "document:168/2024/NĐ-CP/chapter:II/section:5/article:32/clause:18/point:đ",
+      "raw_sha256": "33b9c76fa3c03a7ca562d238797f308f259141fee302dbcf15d0bb736710d721",
+      "current_text_original": "đ) Thực hiện hành vi quy định tại khoản 5, khoản 6 Điều này trong trường hợp chở vượt trên 50% số người quy định được phép chở của phương tiện còn bị tước quyền sử dụng phù hiệu từ 01 tháng đến 03 tháng (nếu có). Thực hiện hành vi quy định tại điểm e, điểm g khoản 7; điểm a, điểm b khoản 11; điểm a, điểm b, điểm c, điểm đ khoản 13; điểm a, điểm b, điểm c, điểm d, điểm đ, điểm e, điểm g khoản 14; khoản 15; khoản 16 Điều này còn bị tước quyền sử dụng phù hiệu từ 01 tháng đến 03 tháng (nếu có),",
+      "proposed_change_from": "đ) Thực hiện hành vi quy định tại khoản 5, khoản 6 Điều này trong trường hợp chở vượt trên 50% số người quy định được phép chở của phương tiện còn bị tước quyền sử dụng phù hiệu từ 01 tháng đến 03 tháng (nếu có). Thực hiện hành vi quy định tại điểm e, điểm g khoản 7; điểm a, điểm b khoản 11; điểm a, điểm b, điểm c, điểm đ khoản 13; điểm a, điểm b, điểm c, điểm d, điểm đ, điểm e, điểm g khoản 14; khoản 15; khoản 16 Điều này còn bị tước quyền sử dụng phù hiệu từ 01 tháng đến 03 tháng (nếu có),",
+      "proposed_change_to": "đ) Thực hiện hành vi quy định tại khoản 5, khoản 6 Điều này trong trường hợp chở vượt trên 50% số người quy định được phép chở của phương tiện còn bị tước quyền sử dụng phù hiệu từ 01 tháng đến 03 tháng (nếu có). Thực hiện hành vi quy định tại điểm e, điểm g khoản 7; điểm a, điểm b khoản 11; điểm a, điểm b, điểm c, điểm đ khoản 13; điểm a, điểm b, điểm c, điểm d, điểm đ, điểm e, điểm g khoản 14; khoản 15; khoản 16 Điều này còn bị tước quyền sử dụng phù hiệu từ 01 tháng đến 03 tháng (nếu có).",
+      "official_text_original": "đ) Thực hiện hành vi quy định tại khoản 5, khoản 6 Điều này trong trường hợp chở vượt trên 50% số người quy định được phép chở của phương tiện còn bị tước quyền sử dụng phù hiệu từ 01 tháng đến 03 tháng (nếu có). Thực hiện hành vi quy định tại điểm e, điểm g khoản 7; điểm a, điểm b khoản 11; điểm a, điểm b, điểm c, điểm đ khoản 13; điểm a, điểm b, điểm c, điểm d, điểm đ, điểm e, điểm g khoản 14; khoản 15; khoản 16 Điều này còn bị tước quyền sử dụng phù hiệu từ 01 tháng đến 03 tháng (nếu có).",
+      "official_evidence_quotes": [
+        [
+          "(nếu có),",
+          "(nếu có)."
+        ]
+      ],
+      "comparison_scope": "Only listed edited substrings were compared; unchanged paragraph context is carried forward, not a new whole-paragraph transcription",
+      "evidence_image_ref": "staging/source-session2-001/visual/ND-073.png",
+      "evidence_image_sha256": "b9f31f71c032011d6fc3fe1f185d9d00d27b5909c1608b74246bac8b2394a500",
+      "official_pdf_page": 73,
+      "xml_paragraph_index_1based": 889
+    },
+    {
+      "article": 34,
+      "clause": 3,
+      "citation": "document:168/2024/NĐ-CP/chapter:II/section:5/article:34/clause:3/point:c",
+      "raw_sha256": "33b9c76fa3c03a7ca562d238797f308f259141fee302dbcf15d0bb736710d721",
+      "current_text_original": "c) Điều khiển xe có kích thước bao ngoài vượt quá khép giới hạn của đường bộ hoặc chở hàng vượt khổ giới hạn của đường bộ hoặc chở hàng vượt quá kích thước giới hạn xếp hàng hóa của xe tham gia giao thông, trừ trường hợp có giấy phép lưu hành còn giá trị sử dụng;",
+      "proposed_change_from": "c) Điều khiển xe có kích thước bao ngoài vượt quá khép giới hạn của đường bộ hoặc chở hàng vượt khổ giới hạn của đường bộ hoặc chở hàng vượt quá kích thước giới hạn xếp hàng hóa của xe tham gia giao thông, trừ trường hợp có giấy phép lưu hành còn giá trị sử dụng;",
+      "proposed_change_to": "c) Điều khiển xe có kích thước bao ngoài vượt quá khổ giới hạn của đường bộ hoặc chở hàng vượt khổ giới hạn của đường bộ hoặc chở hàng vượt quá kích thước giới hạn xếp hàng hóa của xe tham gia giao thông, trừ trường hợp có giấy phép lưu hành còn giá trị sử dụng;",
+      "official_text_original": "c) Điều khiển xe có kích thước bao ngoài vượt quá khổ giới hạn của đường bộ hoặc chở hàng vượt khổ giới hạn của đường bộ hoặc chở hàng vượt quá kích thước giới hạn xếp hàng hóa của xe tham gia giao thông, trừ trường hợp có giấy phép lưu hành còn giá trị sử dụng;",
+      "official_evidence_quotes": [
+        [
+          "vượt quá khép giới hạn",
+          "vượt quá khổ giới hạn"
+        ]
+      ],
+      "comparison_scope": "Only listed edited substrings were compared; unchanged paragraph context is carried forward, not a new whole-paragraph transcription",
+      "evidence_image_ref": "staging/source-session2-001/visual/ND-077.png",
+      "evidence_image_sha256": "f4feb5b9b7d466c5cbff7d2fcab9cea3d8cb6e69c30aa952e23ad22fd08b3ada",
+      "official_pdf_page": 77,
+      "xml_paragraph_index_1based": 927
+    },
+    {
+      "article": 39,
+      "clause": 4,
+      "citation": "document:168/2024/NĐ-CP/chapter:II/section:5/article:39/clause:4/point:b",
+      "raw_sha256": "33b9c76fa3c03a7ca562d238797f308f259141fee302dbcf15d0bb736710d721",
+      "current_text_original": "b) Cơ sở đào tạo lái xe tổ chức đào tạo lái xe ngoài địa điểm được ghi trong giấy phép đào tạo lái xe:",
+      "proposed_change_from": "b) Cơ sở đào tạo lái xe tổ chức đào tạo lái xe ngoài địa điểm được ghi trong giấy phép đào tạo lái xe:",
+      "proposed_change_to": "b) Cơ sở đào tạo lái xe tổ chức đào tạo lái xe ngoài địa điểm được ghi trong giấy phép đào tạo lái xe;",
+      "official_text_original": "b) Cơ sở đào tạo lái xe tổ chức đào tạo lái xe ngoài địa điểm được ghi trong giấy phép đào tạo lái xe;",
+      "official_evidence_quotes": [
+        [
+          "giấy phép đào tạo lái xe:",
+          "giấy phép đào tạo lái xe;"
+        ]
+      ],
+      "comparison_scope": "Only listed edited substrings were compared; unchanged paragraph context is carried forward, not a new whole-paragraph transcription",
+      "evidence_image_ref": "staging/source-session2-001/visual/ND-082.png",
+      "evidence_image_sha256": "22cad1bc2874422051f45783c8052232d4f8c6d2230e813ea37c88fb5e0c0e77",
+      "official_pdf_page": 82,
+      "xml_paragraph_index_1based": 1008
+    },
+    {
+      "article": 39,
+      "clause": 5,
+      "citation": "document:168/2024/NĐ-CP/chapter:II/section:5/article:39/clause:5/point:e",
+      "raw_sha256": "33b9c76fa3c03a7ca562d238797f308f259141fee302dbcf15d0bb736710d721",
+      "current_text_original": "e) Trung tâm sát hạch lái xe có trên 50% số xe sát hạch lái xe trong tỉnh được cấp phép không bảo đảm điều, kiện để sát hạch theo quy định;",
+      "proposed_change_from": "e) Trung tâm sát hạch lái xe có trên 50% số xe sát hạch lái xe trong tỉnh được cấp phép không bảo đảm điều, kiện để sát hạch theo quy định;",
+      "proposed_change_to": "e) Trung tâm sát hạch lái xe có trên 50% số xe sát hạch lái xe trong hình được cấp phép không bảo đảm điều kiện để sát hạch theo quy định;",
+      "official_text_original": "e) Trung tâm sát hạch lái xe có trên 50% số xe sát hạch lái xe trong hình được cấp phép không bảo đảm điều kiện để sát hạch theo quy định;",
+      "official_evidence_quotes": [
+        [
+          "xe trong tỉnh",
+          "xe trong hình"
+        ],
+        [
+          "điều, kiện",
+          "điều kiện"
+        ]
+      ],
+      "comparison_scope": "Only listed edited substrings were compared; unchanged paragraph context is carried forward, not a new whole-paragraph transcription",
+      "evidence_image_ref": "staging/source-session2-001/visual/ND-084.png",
+      "evidence_image_sha256": "ff844b149362ce7f406a1d242d21d13358bda3f2adde13c58d77378c8e931697",
+      "official_pdf_page": 84,
+      "xml_paragraph_index_1based": 1023
+    },
+    {
+      "article": 47,
+      "clause": 12,
+      "citation": "document:168/2024/NĐ-CP/chapter:III/section:2/article:47/clause:12",
+      "raw_sha256": "33b9c76fa3c03a7ca562d238797f308f259141fee302dbcf15d0bb736710d721",
+      "current_text_original": "12. Việc gửi quyết định xử phạt vi phạm hành chính, quyết định tạm giữ tang vật, phương tiện, giấy phép, chứng chỉ hành nghề theo thủ tục hành chính và các biểu mẫu khác trong xử phạt vi phạm hành chính thực hiện theo quy định của Luật Xử lý vi phạm hành chính và có thể gửi cho người vi phạm theo tài khoản đã đăng ký trên Cổng dịch vụ công Quốc gia, Cổng dịch vụ công Bộ Công an (sau đây viết gọn là Cổng dịch vụ công), tài khoản định danh điện tử trên ứng dụng định danh quốc gia, Ứng dụng giao thông trên thiết bị di động khi đáp ứng điều kiện về cơ sở hạ tầng kỹ thuật thông tin.",
+      "proposed_change_from": "12. Việc gửi quyết định xử phạt vi phạm hành chính, quyết định tạm giữ tang vật, phương tiện, giấy phép, chứng chỉ hành nghề theo thủ tục hành chính và các biểu mẫu khác trong xử phạt vi phạm hành chính thực hiện theo quy định của Luật Xử lý vi phạm hành chính và có thể gửi cho người vi phạm theo tài khoản đã đăng ký trên Cổng dịch vụ công Quốc gia, Cổng dịch vụ công Bộ Công an (sau đây viết gọn là Cổng dịch vụ công), tài khoản định danh điện tử trên ứng dụng định danh quốc gia, Ứng dụng giao thông trên thiết bị di động khi đáp ứng điều kiện về cơ sở hạ tầng kỹ thuật thông tin.",
+      "proposed_change_to": "12. Việc gửi quyết định xử phạt vi phạm hành chính, quyết định tạm giữ tang vật, phương tiện, giấy phép, chứng chỉ hành nghề theo thủ tục hành chính và các biểu mẫu khác trong xử phạt vi phạm hành chính thực hiện theo quy định của Luật Xử lý vi phạm hành chính và có thể gửi cho người vi phạm theo tài khoản đã đăng ký trên Cổng dịch vụ công Quốc gia, Cổng dịch vụ công Bộ Công an (sau đây viết gọn là Cổng dịch vụ công), tài khoản định danh điện tử trên ứng dụng định danh quốc gia, Ứng dụng giao thông trên thiết bị di động khi đáp ứng điều kiện về cơ sở hạ tầng, kỹ thuật, thông tin.",
+      "official_text_original": "12. Việc gửi quyết định xử phạt vi phạm hành chính, quyết định tạm giữ tang vật, phương tiện, giấy phép, chứng chỉ hành nghề theo thủ tục hành chính và các biểu mẫu khác trong xử phạt vi phạm hành chính thực hiện theo quy định của Luật Xử lý vi phạm hành chính và có thể gửi cho người vi phạm theo tài khoản đã đăng ký trên Cổng dịch vụ công Quốc gia, Cổng dịch vụ công Bộ Công an (sau đây viết gọn là Cổng dịch vụ công), tài khoản định danh điện tử trên ứng dụng định danh quốc gia, Ứng dụng giao thông trên thiết bị di động khi đáp ứng điều kiện về cơ sở hạ tầng, kỹ thuật, thông tin.",
+      "official_evidence_quotes": [
+        [
+          "hạ tầng kỹ thuật thông tin",
+          "hạ tầng, kỹ thuật, thông tin"
+        ]
+      ],
+      "comparison_scope": "Only listed edited substrings were compared; unchanged paragraph context is carried forward, not a new whole-paragraph transcription",
+      "evidence_image_ref": "staging/source-session2-001/visual/ND-100.png",
+      "evidence_image_sha256": "7b2d155b71b82c7529a54e791a990e09527707886420f994d15c5199a7940dbb",
+      "official_pdf_page": 100,
+      "xml_paragraph_index_1based": 1247
+    },
+    {
+      "article": 48,
+      "clause": 3,
+      "citation": "document:168/2024/NĐ-CP/chapter:III/section:2/article:48/clause:3/point:a",
+      "raw_sha256": "33b9c76fa3c03a7ca562d238797f308f259141fee302dbcf15d0bb736710d721",
+      "current_text_original": "a) Người cỏ thẩm quyền tiến hành lập biên bản vi phạm hành chính đối với người điều khiển phương tiện về hành vi không có giấy tờ (tương ứng với những loại giấy tờ không xuất trình được), đồng thời lập biên bản vi phạm hành chính đối với chủ phương tiện về những hành vi vi phạm tương ứng quy định tại Điều 32 của Nghị định này và tạm giữ phương tiện theo quy định;",
+      "proposed_change_from": "a) Người cỏ thẩm quyền tiến hành lập biên bản vi phạm hành chính đối với người điều khiển phương tiện về hành vi không có giấy tờ (tương ứng với những loại giấy tờ không xuất trình được), đồng thời lập biên bản vi phạm hành chính đối với chủ phương tiện về những hành vi vi phạm tương ứng quy định tại Điều 32 của Nghị định này và tạm giữ phương tiện theo quy định;",
+      "proposed_change_to": "a) Người có thẩm quyền tiến hành lập biên bản vi phạm hành chính đối với người điều khiển phương tiện về hành vi không có giấy tờ (tương ứng với những loại giấy tờ không xuất trình được), đồng thời lập biên bản vi phạm hành chính đối với chủ phương tiện về những hành vi vi phạm tương ứng quy định tại Điều 32 của Nghị định này và tạm giữ phương tiện theo quy định;",
+      "official_text_original": "a) Người có thẩm quyền tiến hành lập biên bản vi phạm hành chính đối với người điều khiển phương tiện về hành vi không có giấy tờ (tương ứng với những loại giấy tờ không xuất trình được), đồng thời lập biên bản vi phạm hành chính đối với chủ phương tiện về những hành vi vi phạm tương ứng quy định tại Điều 32 của Nghị định này và tạm giữ phương tiện theo quy định;",
+      "official_evidence_quotes": [
+        [
+          "Người cỏ thẩm quyền",
+          "Người có thẩm quyền"
+        ]
+      ],
+      "comparison_scope": "Only listed edited substrings were compared; unchanged paragraph context is carried forward, not a new whole-paragraph transcription",
+      "evidence_image_ref": "staging/source-session2-001/visual/ND-102.png",
+      "evidence_image_sha256": "b475e7b5a27e863ac39be231db4729a0b9834f90d2ba4ad9e20689bb4cdc2100",
+      "official_pdf_page": 102,
+      "xml_paragraph_index_1based": 1266
+    }
+  ]
+}

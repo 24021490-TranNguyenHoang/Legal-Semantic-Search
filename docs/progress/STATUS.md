@@ -1,3 +1,43 @@
+# Hiện tại — phiên 2 NĐ168 / bảng TT35 / QCVN, 2026-10-28
+
+**FIELD_DIFF_CLASSIFIED / EIGHT_TABLE_OWNERS_TECHNICAL_PASS / QCVN_BOUNDED_RECOVERY / LEGAL_REVIEW_PENDING**.
+Snapshot **2025-01-01**. HEAD kiểm tra `be7f661109a77dc6c0fb22d72bd6d48ed6ecfc34`,
+Git sạch đầu phiên; hiện có code/config/tests/docs mới chưa commit. Không stage/commit/push.
+
+- NĐ168: đủ86field, **67biểu diễn /18nội dung /1HTML boundary**, không phải86lỗi.
+  `nd168-field-review-003` giữ hai giá trị/spans/evidence; `nd168-docx-session2-001`
+  sửa18paragraph có ảnh PDF, graph1309unit/1351span. Root text đổi kéo theo1309ID
+  đổi, có crosswalk; không sửa ID dataset cũ. HTML Điều55 có projection bỏ widget,
+  không mặc định HTML luôn đúng. Chưa render DOCX; source/edition/legal vẫn pending.
+- TT35: đúng8owner cũ → **8typed table-owner record,11bảng/590ô,84encoder view**,
+  max248/256token, unknown0, quarantine0; `tt35-owner-tables-002`. Header/merge/
+  continuation/dependency/source proof và whole consumer read được kiểm.
+  **Cả8scope vẫn pending**; phụ lục dependency được bảo toàn, chưa full semantic review.
+  Chưa phải DDD text chunk/dataset; consumer cũ không tự hỗ trợ type mới.
+- QCVN: **đính chính4.1 phiên1: lỗi phiên âm agent, không phải khác biệt hai nguồn**.
+  Hai ảnh đều đọc “có, bố trí…”, “cùng ở…”. Đường tránh: nguồn403/PDF300 ghiI.418,
+  Công báo part4/PDF36 ghiI.416; giữ source-caption difference/edition pending,
+  không alias ID. `qcvn-region-recovery-004`:6vùng/59reader links/1bảng24ô/
+  3phiên âm hẹp mới,0text target. Gắn owner có chứng cứ cho11/940dòngB18;
+  **929dòng còn pending**. Hình/thông số nhỏ chưa phục hồi đủ nghĩa.
+
+71tests liên quan pass,13negative checks bị từ chối;17payload replay giữ hash.
+Baseline **2827file** không có thay đổi ngoài STATUS/ingestion được phép;
+không dùng các kiểm tra này thay legal review/retrieval evaluation. Chỉ Windows hiện tại.
+Raw/run cũ, dataset3077/draft3082/v3/candidate-v4-006/index/evaluation/qrels/ZIP nguyên vẹn.
+Không tạo dataset mới, embedding/index/app hoặc quyết định human reviewer.
+
+[Báo cáo phiên2](../reviews/Source_Session2_Verification.md),
+[handoff/lệnh replay](../handoff/Source_Session2_Replay.md),
+[quyết định contract additive](../design/Source_Session2_Contract_v1.0.md).
+Bước tiếp theo đề xuất: chọn nhánh ND168 có binding/crosswalk, adapter table-owner
+có capability cho dataset sau + rà scope/dependency, mở QCVN theo loại vùng đã kiểm.
+Chưa tự chuyển bản hoặc mở rộng OCR/verified.
+
+---
+
+## Lịch sử phiên 1 (giữ nguyên; nhận định4.1 đã được đính chính ở trên)
+
 # Hiện tại — phiên1 NĐ168 / DOC QCVN, 2026-10-28
 
 **SCOPED_CORRECTION_PASS / DOC_DIAGNOSTICS_COMPLETE / FULL_SOURCE_REVIEW_PENDING**.

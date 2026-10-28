@@ -1,3 +1,38 @@
+# Ingestion hiện hành — phiên 2, 28/10/2026
+
+Snapshot **2025-01-01**. Reuse kết quả phiên1, không tải lại/extraction PDF toàn
+nguồn. [Báo cáo phiên2](reviews/Source_Session2_Verification.md),
+[lệnh thực chạy/replay](handoff/Source_Session2_Replay.md),
+[contract mới](design/Source_Session2_Contract_v1.0.md).
+
+- NĐ168: `src.nd168_field_review` phân loại86field theo canonical path/type/field
+  và kiểm spans; CSV/JSONL ở `nd168-field-review-003`. `src.source_revision` cũ
+  tạo `nd168-docx-session2-001`:18paragraph sửa có ảnh,1309unit/1351span,
+  crosswalk toàn nhánh do root identity đổi. Raw/phiên1 giữ nguyên. HTML có
+  projection riêng loại RelatedNewsBox Điều55, không sửa HTML extraction.
+- TT35: `src.ingestion.tt35_owner_tables`, config finite8owner. Run chính
+  `tt35-owner-tables-002` dùng graph Part/Chapter priority006,148bảng/5541ô inventory
+  cũ; chỉ11bảng/590ô liên quan8owner. Type additive `table-owner-retrieval.v1`,
+  source cells/headers/continuation/notes/dependencies giữ riêng khỏi derived search.
+  Consumer `read_record` trả đủ nguồn phụ thuộc;84encoder views phủ kín input,
+  max248token, không truncate. Scope/source/edition/applicability vẫn pending.
+- QCVN: `src.qcvn_region_recovery`, `qcvn-region-recovery-004`:6vùng hữu hạn,
+  source hashes/pages403/425 riêng. Reader/OCR draft/agent transcription tách biệt;
+  offsets text mới không thay offsets cũ. Đính chính agent lead4.1 (hai nguồn cùng
+  câu); I.418/I.416 Đường tránh vẫn là source-caption difference cần hòa giải.
+  B18 gắn owner vùng nguồn11dòng,929dòng còn backlog có locator. Không xử lý hình
+  như text đủ nghĩa, không OCR toàn file, không tạo target mới từ nhãn hình.
+
+Không sửa DDD v1/schema chính thức, raw/evidence/run lịch sử hoặc artifact bàn giao;
+không nhập các preview vào dataset/index. Run validate/negative/replay thật ở
+`source-session2-checks-002` và003 sau cập nhật docs. Source/scope/applicability/
+human review không được suy từ technical pass. Nếu chuyển máy, phải mang đúng các
+input staging/hash dependency trong handoff; clone code không tự có nguồn đó.
+
+---
+
+## Lịch sử ingestion trước phiên2 (giữ nguyên)
+
 # Ingestion hiện hành — hiệu chỉnh nguồn hẹp / DOC QCVN
 
 Cập nhật28/10/2026; snapshot2025-01-01. Phiên1 đã tạo DOCX NĐ168 hiệu chỉnh riêng

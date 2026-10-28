@@ -1,0 +1,357 @@
+{
+  "comparison_ref": "staging/source-revision-checks-002/docx_html.full_comparison.jsonl",
+  "docx_graph": "staging/nd168-docx-corrected-002/graph",
+  "html_graph": "staging/nd168-html-full-002",
+  "expected_field_count": 86,
+  "observations": [
+    {
+      "canonical_path": "document:168/2024/NĐ-CP",
+      "field": "text_original",
+      "category": "content_difference",
+      "conclusion": "PDF image supports the stated correction in the DOCX derivative; original raw text has this difference. [('ngày 15 tháng 11 năm 2020', 'ngày 13 tháng 11 năm 2020')]",
+      "evidence": [
+        {
+          "ref": "staging/source-session2-001/visual/ND-001.png",
+          "sha256": "eb47d05a06e3cad69756e159b84ff89996a8cd8eb04db3e3a2f74b629a1c3a12",
+          "pdf_page": 1,
+          "pdf_ref": "staging/bm25-baseline-v1-001/dataset/evidence/captures/05/snapshot.pdf",
+          "pdf_sha256": "7bb11b939d162499ab404aa41a940cce05dbf071d9cbae7a8898b00d4b4a48bd"
+        }
+      ],
+      "follow_up": "Apply bounded correction to new derivative; legal edition/applicability remains pending."
+    },
+    {
+      "canonical_path": "document:168/2024/NĐ-CP/chapter:II/section:1/article:6/clause:4/point:a",
+      "field": "text_original",
+      "category": "content_difference",
+      "conclusion": "PDF image supports the stated correction in the DOCX derivative; original raw text has this difference. [('điều kiện đã thu phí', 'điều kiện để thu phí')]",
+      "evidence": [
+        {
+          "ref": "staging/source-session2-001/visual/ND-010.png",
+          "sha256": "e891a61a3e27e0db48f7026ae51108d240c3a331292db12ec49dcaf05e5b4926",
+          "pdf_page": 10,
+          "pdf_ref": "staging/bm25-baseline-v1-001/dataset/evidence/captures/05/snapshot.pdf",
+          "pdf_sha256": "7bb11b939d162499ab404aa41a940cce05dbf071d9cbae7a8898b00d4b4a48bd"
+        }
+      ],
+      "follow_up": "Apply bounded correction to new derivative; legal edition/applicability remains pending."
+    },
+    {
+      "canonical_path": "document:168/2024/NĐ-CP/chapter:II/section:1/article:8/clause:7",
+      "field": "text_original",
+      "category": "content_difference",
+      "conclusion": "PDF image supports the stated correction in the DOCX derivative; original raw text has this difference. [('Phạt liền', 'Phạt tiền')]",
+      "evidence": [
+        {
+          "ref": "staging/source-session2-001/visual/ND-025.png",
+          "sha256": "2d9476e2babd5e38823f2ba5609ff7662032580fb1e237a3c928ef3ef378e2b2",
+          "pdf_page": 25,
+          "pdf_ref": "staging/bm25-baseline-v1-001/dataset/evidence/captures/05/snapshot.pdf",
+          "pdf_sha256": "7bb11b939d162499ab404aa41a940cce05dbf071d9cbae7a8898b00d4b4a48bd"
+        }
+      ],
+      "follow_up": "Apply bounded correction to new derivative; legal edition/applicability remains pending."
+    },
+    {
+      "canonical_path": "document:168/2024/NĐ-CP/chapter:II/section:1/article:12/clause:9",
+      "field": "text_original",
+      "category": "content_difference",
+      "conclusion": "PDF image supports the stated correction in the DOCX derivative; original raw text has this difference. [('vỉa hè,', 'vỉa hè.')]",
+      "evidence": [
+        {
+          "ref": "staging/source-session2-001/visual/ND-032.png",
+          "sha256": "8fc839368e59dad5417569c81ed7f3004f31e2ce3fcffe574536117e51e48fd0",
+          "pdf_page": 32,
+          "pdf_ref": "staging/bm25-baseline-v1-001/dataset/evidence/captures/05/snapshot.pdf",
+          "pdf_sha256": "7bb11b939d162499ab404aa41a940cce05dbf071d9cbae7a8898b00d4b4a48bd"
+        }
+      ],
+      "follow_up": "Apply bounded correction to new derivative; legal edition/applicability remains pending."
+    },
+    {
+      "canonical_path": "document:168/2024/NĐ-CP/chapter:II/section:1/article:12/clause:15",
+      "field": "text_original",
+      "category": "content_difference",
+      "conclusion": "PDF image supports the stated correction in the DOCX derivative; original raw text has this difference. [('giấy phép lát xe', 'giấy phép lái xe')]",
+      "evidence": [
+        {
+          "ref": "staging/source-session2-001/visual/ND-033.png",
+          "sha256": "67781a69dec87700c134b5eb44b1ddea225d0d3d66ad2b227a4f04c7f25bbf88",
+          "pdf_page": 33,
+          "pdf_ref": "staging/bm25-baseline-v1-001/dataset/evidence/captures/05/snapshot.pdf",
+          "pdf_sha256": "7bb11b939d162499ab404aa41a940cce05dbf071d9cbae7a8898b00d4b4a48bd"
+        }
+      ],
+      "follow_up": "Apply bounded correction to new derivative; legal edition/applicability remains pending."
+    },
+    {
+      "canonical_path": "document:168/2024/NĐ-CP/chapter:II/section:2/article:13",
+      "field": "title",
+      "category": "content_difference",
+      "conclusion": "PDF image supports the stated correction in the DOCX derivative; original raw text has this difference. [('tương tư xe ô tô', 'tương tự xe ô tô')]",
+      "evidence": [
+        {
+          "ref": "staging/source-session2-001/visual/ND-033.png",
+          "sha256": "67781a69dec87700c134b5eb44b1ddea225d0d3d66ad2b227a4f04c7f25bbf88",
+          "pdf_page": 33,
+          "pdf_ref": "staging/bm25-baseline-v1-001/dataset/evidence/captures/05/snapshot.pdf",
+          "pdf_sha256": "7bb11b939d162499ab404aa41a940cce05dbf071d9cbae7a8898b00d4b4a48bd"
+        }
+      ],
+      "follow_up": "Apply bounded correction to new derivative; legal edition/applicability remains pending."
+    },
+    {
+      "canonical_path": "document:168/2024/NĐ-CP/chapter:II/section:2/article:13/clause:2/point:a",
+      "field": "text_original",
+      "category": "content_difference",
+      "conclusion": "PDF image supports the stated correction in the DOCX derivative; original raw text has this difference. [('điểm d khoản 4 Điều 26', 'điểm đ khoản 4 Điều 26')]",
+      "evidence": [
+        {
+          "ref": "staging/source-session2-001/visual/ND-033.png",
+          "sha256": "67781a69dec87700c134b5eb44b1ddea225d0d3d66ad2b227a4f04c7f25bbf88",
+          "pdf_page": 33,
+          "pdf_ref": "staging/bm25-baseline-v1-001/dataset/evidence/captures/05/snapshot.pdf",
+          "pdf_sha256": "7bb11b939d162499ab404aa41a940cce05dbf071d9cbae7a8898b00d4b4a48bd"
+        }
+      ],
+      "follow_up": "Apply bounded correction to new derivative; legal edition/applicability remains pending."
+    },
+    {
+      "canonical_path": "document:168/2024/NĐ-CP/chapter:II/section:2/article:13/clause:3/point:a",
+      "field": "text_original",
+      "category": "content_difference",
+      "conclusion": "PDF image supports the stated correction in the DOCX derivative; original raw text has this difference. [('được lấp theo', 'được lắp theo')]",
+      "evidence": [
+        {
+          "ref": "staging/source-session2-001/visual/ND-034.png",
+          "sha256": "414c521425dcba74a7afaaaccd914ad5385d3ef1e5f0aae1e56c1edc30d8baca",
+          "pdf_page": 34,
+          "pdf_ref": "staging/bm25-baseline-v1-001/dataset/evidence/captures/05/snapshot.pdf",
+          "pdf_sha256": "7bb11b939d162499ab404aa41a940cce05dbf071d9cbae7a8898b00d4b4a48bd"
+        }
+      ],
+      "follow_up": "Apply bounded correction to new derivative; legal edition/applicability remains pending."
+    },
+    {
+      "canonical_path": "document:168/2024/NĐ-CP/chapter:II/section:2/article:13/clause:5/point:b",
+      "field": "text_original",
+      "category": "content_difference",
+      "conclusion": "PDF image supports the stated correction in the DOCX derivative; original raw text has this difference. [('hệ thống hàm', 'hệ thống hãm')]",
+      "evidence": [
+        {
+          "ref": "staging/source-session2-001/visual/ND-035.png",
+          "sha256": "4139e376231d478e8139010b01589bcb510c6bd6a32ed823b2b736b326c3c537",
+          "pdf_page": 35,
+          "pdf_ref": "staging/bm25-baseline-v1-001/dataset/evidence/captures/05/snapshot.pdf",
+          "pdf_sha256": "7bb11b939d162499ab404aa41a940cce05dbf071d9cbae7a8898b00d4b4a48bd"
+        }
+      ],
+      "follow_up": "Apply bounded correction to new derivative; legal edition/applicability remains pending."
+    },
+    {
+      "canonical_path": "document:168/2024/NĐ-CP/chapter:II/section:2/article:13/clause:10/point:b",
+      "field": "text_original",
+      "category": "content_difference",
+      "conclusion": "PDF image supports the stated correction in the DOCX derivative; original raw text has this difference. [('chi nhánh ngàn hàng', 'chi nhánh ngân hàng'), ('không: do', 'không do')]",
+      "evidence": [
+        {
+          "ref": "staging/source-session2-001/visual/ND-036.png",
+          "sha256": "1f59e41b7a6e0f76b381d097d23951f2d4712af655859a211c3091634a5e2eca",
+          "pdf_page": 36,
+          "pdf_ref": "staging/bm25-baseline-v1-001/dataset/evidence/captures/05/snapshot.pdf",
+          "pdf_sha256": "7bb11b939d162499ab404aa41a940cce05dbf071d9cbae7a8898b00d4b4a48bd"
+        }
+      ],
+      "follow_up": "Apply bounded correction to new derivative; legal edition/applicability remains pending."
+    },
+    {
+      "canonical_path": "document:168/2024/NĐ-CP/chapter:II/section:2/article:14/clause:5/point:b",
+      "field": "text_original",
+      "category": "content_difference",
+      "conclusion": "PDF image supports the stated correction in the DOCX derivative; original raw text has this difference. [('quy định lại điểm', 'quy định tại điểm')]",
+      "evidence": [
+        {
+          "ref": "staging/source-session2-001/visual/ND-038.png",
+          "sha256": "0027284150b1ae02c263cb8b9c84b443a0354d02a22d207bffaebfe8559b3f34",
+          "pdf_page": 38,
+          "pdf_ref": "staging/bm25-baseline-v1-001/dataset/evidence/captures/05/snapshot.pdf",
+          "pdf_sha256": "7bb11b939d162499ab404aa41a940cce05dbf071d9cbae7a8898b00d4b4a48bd"
+        }
+      ],
+      "follow_up": "Apply bounded correction to new derivative; legal edition/applicability remains pending."
+    },
+    {
+      "canonical_path": "document:168/2024/NĐ-CP/chapter:II/section:4/article:20",
+      "field": "title",
+      "category": "content_difference",
+      "conclusion": "PDF image supports the stated correction in the DOCX derivative; original raw text has this difference. [('trật trị,', 'trật tự,')]",
+      "evidence": [
+        {
+          "ref": "staging/source-session2-001/visual/ND-046.png",
+          "sha256": "aad2afe80daaf4cc8818e2b375ea842df762455d703e12d3c432543588e54c6e",
+          "pdf_page": 46,
+          "pdf_ref": "staging/bm25-baseline-v1-001/dataset/evidence/captures/05/snapshot.pdf",
+          "pdf_sha256": "7bb11b939d162499ab404aa41a940cce05dbf071d9cbae7a8898b00d4b4a48bd"
+        }
+      ],
+      "follow_up": "Apply bounded correction to new derivative; legal edition/applicability remains pending."
+    },
+    {
+      "canonical_path": "document:168/2024/NĐ-CP/chapter:II/section:5/article:32/clause:18/point:đ",
+      "field": "text_original",
+      "category": "content_difference",
+      "conclusion": "PDF image supports the stated correction in the DOCX derivative; original raw text has this difference. [('(nếu có),', '(nếu có).')]",
+      "evidence": [
+        {
+          "ref": "staging/source-session2-001/visual/ND-073.png",
+          "sha256": "b9f31f71c032011d6fc3fe1f185d9d00d27b5909c1608b74246bac8b2394a500",
+          "pdf_page": 73,
+          "pdf_ref": "staging/bm25-baseline-v1-001/dataset/evidence/captures/05/snapshot.pdf",
+          "pdf_sha256": "7bb11b939d162499ab404aa41a940cce05dbf071d9cbae7a8898b00d4b4a48bd"
+        }
+      ],
+      "follow_up": "Apply bounded correction to new derivative; legal edition/applicability remains pending."
+    },
+    {
+      "canonical_path": "document:168/2024/NĐ-CP/chapter:II/section:5/article:34/clause:3/point:c",
+      "field": "text_original",
+      "category": "content_difference",
+      "conclusion": "PDF image supports the stated correction in the DOCX derivative; original raw text has this difference. [('vượt quá khép giới hạn', 'vượt quá khổ giới hạn')]",
+      "evidence": [
+        {
+          "ref": "staging/source-session2-001/visual/ND-077.png",
+          "sha256": "f4feb5b9b7d466c5cbff7d2fcab9cea3d8cb6e69c30aa952e23ad22fd08b3ada",
+          "pdf_page": 77,
+          "pdf_ref": "staging/bm25-baseline-v1-001/dataset/evidence/captures/05/snapshot.pdf",
+          "pdf_sha256": "7bb11b939d162499ab404aa41a940cce05dbf071d9cbae7a8898b00d4b4a48bd"
+        }
+      ],
+      "follow_up": "Apply bounded correction to new derivative; legal edition/applicability remains pending."
+    },
+    {
+      "canonical_path": "document:168/2024/NĐ-CP/chapter:II/section:5/article:39/clause:4/point:b",
+      "field": "text_original",
+      "category": "content_difference",
+      "conclusion": "PDF image supports the stated correction in the DOCX derivative; original raw text has this difference. [('giấy phép đào tạo lái xe:', 'giấy phép đào tạo lái xe;')]",
+      "evidence": [
+        {
+          "ref": "staging/source-session2-001/visual/ND-082.png",
+          "sha256": "22cad1bc2874422051f45783c8052232d4f8c6d2230e813ea37c88fb5e0c0e77",
+          "pdf_page": 82,
+          "pdf_ref": "staging/bm25-baseline-v1-001/dataset/evidence/captures/05/snapshot.pdf",
+          "pdf_sha256": "7bb11b939d162499ab404aa41a940cce05dbf071d9cbae7a8898b00d4b4a48bd"
+        }
+      ],
+      "follow_up": "Apply bounded correction to new derivative; legal edition/applicability remains pending."
+    },
+    {
+      "canonical_path": "document:168/2024/NĐ-CP/chapter:II/section:5/article:39/clause:5/point:e",
+      "field": "text_original",
+      "category": "content_difference",
+      "conclusion": "PDF image supports the stated correction in the DOCX derivative; original raw text has this difference. [('xe trong tỉnh', 'xe trong hình'), ('điều, kiện', 'điều kiện')]",
+      "evidence": [
+        {
+          "ref": "staging/source-session2-001/visual/ND-084.png",
+          "sha256": "ff844b149362ce7f406a1d242d21d13358bda3f2adde13c58d77378c8e931697",
+          "pdf_page": 84,
+          "pdf_ref": "staging/bm25-baseline-v1-001/dataset/evidence/captures/05/snapshot.pdf",
+          "pdf_sha256": "7bb11b939d162499ab404aa41a940cce05dbf071d9cbae7a8898b00d4b4a48bd"
+        }
+      ],
+      "follow_up": "Apply bounded correction to new derivative; legal edition/applicability remains pending."
+    },
+    {
+      "canonical_path": "document:168/2024/NĐ-CP/chapter:III/section:2/article:47/clause:12",
+      "field": "text_original",
+      "category": "content_difference",
+      "conclusion": "PDF image supports the stated correction in the DOCX derivative; original raw text has this difference. [('hạ tầng kỹ thuật thông tin', 'hạ tầng, kỹ thuật, thông tin')]",
+      "evidence": [
+        {
+          "ref": "staging/source-session2-001/visual/ND-100.png",
+          "sha256": "7b2d155b71b82c7529a54e791a990e09527707886420f994d15c5199a7940dbb",
+          "pdf_page": 100,
+          "pdf_ref": "staging/bm25-baseline-v1-001/dataset/evidence/captures/05/snapshot.pdf",
+          "pdf_sha256": "7bb11b939d162499ab404aa41a940cce05dbf071d9cbae7a8898b00d4b4a48bd"
+        }
+      ],
+      "follow_up": "Apply bounded correction to new derivative; legal edition/applicability remains pending."
+    },
+    {
+      "canonical_path": "document:168/2024/NĐ-CP/chapter:III/section:2/article:48/clause:3/point:a",
+      "field": "text_original",
+      "category": "content_difference",
+      "conclusion": "PDF image supports the stated correction in the DOCX derivative; original raw text has this difference. [('Người cỏ thẩm quyền', 'Người có thẩm quyền')]",
+      "evidence": [
+        {
+          "ref": "staging/source-session2-001/visual/ND-102.png",
+          "sha256": "b475e7b5a27e863ac39be231db4729a0b9834f90d2ba4ad9e20689bb4cdc2100",
+          "pdf_page": 102,
+          "pdf_ref": "staging/bm25-baseline-v1-001/dataset/evidence/captures/05/snapshot.pdf",
+          "pdf_sha256": "7bb11b939d162499ab404aa41a940cce05dbf071d9cbae7a8898b00d4b4a48bd"
+        }
+      ],
+      "follow_up": "Apply bounded correction to new derivative; legal edition/applicability remains pending."
+    },
+    {
+      "canonical_path": "document:168/2024/NĐ-CP/chapter:II/section:3/article:18/clause:4/point:a",
+      "field": "text_original",
+      "category": "representation_or_matching",
+      "conclusion": "xi- lanh versus xi-lanh: spacing at a source hyphen/line wrap; no legal-path change.",
+      "evidence": [
+        {
+          "ref": "staging/source-session2-001/visual/ND-044.png",
+          "sha256": "12835967113ac6896f24a7269e4b605af2ff067e8de9051e9ae785610f940da7",
+          "pdf_page": 44
+        }
+      ],
+      "follow_up": "No content correction in this pass; preserve spelling/formatting source history."
+    },
+    {
+      "canonical_path": "document:168/2024/NĐ-CP/chapter:II/section:4/article:21/clause:10/point:b",
+      "field": "text_original",
+      "category": "representation_or_matching",
+      "conclusion": "công-ten- nơ versus công-ten-nơ: source hyphen/line wrap, no added/removed lexical term.",
+      "evidence": [
+        {
+          "ref": "staging/source-session2-001/visual/ND-053.png",
+          "sha256": "746a10b8c19f21e5a20747aee4d6ef41f403d915f95ac500f0b5fa018c45c3ee",
+          "pdf_page": 53
+        }
+      ],
+      "follow_up": "No content correction in this pass; preserve spelling/formatting source history."
+    },
+    {
+      "canonical_path": "document:168/2024/NĐ-CP/chapter:III/section:2/article:47/clause:8/point:a",
+      "field": "text_original",
+      "category": "representation_or_matching",
+      "conclusion": "ứng/Ứng naming capitalization; PDF prints Ứng dụng. Representation difference retained, not scope/applicability.",
+      "evidence": [
+        {
+          "ref": "staging/source-session2-001/visual/ND-099.png",
+          "sha256": "797981bdc8f9ddbcbc63fc32534fd0fc7b2ad7ed063d5ca5762a1f72cfd81307",
+          "pdf_page": 99
+        }
+      ],
+      "follow_up": "No content correction in this pass; preserve spelling/formatting source history."
+    },
+    {
+      "canonical_path": "document:168/2024/NĐ-CP/chapter:IV/article:55",
+      "field": "text_original",
+      "category": "extraction_error",
+      "conclusion": "HTML-to-graph projection admitted publisher related-article widgets after the legal paragraph. This is a main-body boundary defect, not DOCX omission or proof HTML is always correct.",
+      "evidence": [
+        {
+          "ref": "staging/source-session2-001/visual/ND-111.png",
+          "sha256": "adf84416e547591d6e3ba98b7cd475ebed56385d9609f17d35ca65df2854ddd5",
+          "pdf_page": 111
+        }
+      ],
+      "follow_up": "New graph projection keeps old HTML extraction, marks related-link spans non-body and changes only Article55 unit/spans."
+    }
+  ],
+  "input_hashes": {
+    "staging/source-revision-checks-002/docx_html.full_comparison.jsonl": "d7dd73a83f95dedc8fcc827bd31a64bdd9d0c891a58970f5c85ab67dbabbf562",
+    "staging/nd168-docx-corrected-002/graph/manifest.json": "ebf299c3d884e6232724a7ceb01eb65d5d21d9775e73dd800ec1e3d4405d99a4",
+    "staging/nd168-html-full-002/manifest.json": "6d6b91345cd570c2bd2788e428b87da57cfa5a918a354132f3db3b75ce23c52e"
+  }
+}

@@ -1,0 +1,271 @@
+{
+  "policy": "qcvn-region-recovery.v1",
+  "source_run": "staging/qcvn-gazette-extraction-001",
+  "regions_run": "staging/qcvn-source-regions-001",
+  "graph_run": "staging/qcvn-rule-graph-003",
+  "input_hashes": {
+    "staging/qcvn-gazette-extraction-001/manifest.json": "56a4dfa4f6e6e9d6db9950ff2ec736ef5509b94ddb0226fbc2575d427ffd8027",
+    "staging/qcvn-source-regions-001/manifest.json": "3f5b6f8cba6e6259b9e9f0937f2db5dafd8ec038ec7956f470d73bab6a03bd5a",
+    "staging/qcvn-rule-graph-003/manifest.json": "159f0f1ae31cab2dd8a472080b74e0817e77db52c1aec926fdab5f7ea48c30d7",
+    "staging/qcvn-doc-assessment-003/manifest.json": "58b505c2a3436cdbcd1cc88b5cbfaa2e1f1f65c1701d539fa94757b99e2ad434",
+    "staging/source-revision-session1-001/qcvn_comparison.jsonl": "e4eb3229cdb0bab378e5ed0f2e53e561f4d85c6a8992d01a299fa1ebd5fe1916"
+  },
+  "regions": [
+    {
+      "key": "R-text-A4",
+      "kind": "text",
+      "part": 1,
+      "page": 8,
+      "printed_page": "9",
+      "start": "Điều 4.",
+      "stop": "Điều 5.",
+      "owner": {
+        "literal": "Điều4/4.1–4.2"
+      },
+      "agent_text": "4.1. Khi đồng thời có, bố trí các hình thức báo hiệu có ý nghĩa khác nhau cùng ở một khu vực, người tham gia giao thông đường bộ phải chấp hành báo hiệu đường bộ theo thứ tự ưu tiên từ trên xuống dưới như sau:",
+      "evidence": [
+        {
+          "ref": "staging/source-revision-session1-001/visual/gazette-1-page-008.png",
+          "sha256": "edb55b93d54793719672ef8c6cb26a334fdbc6d7555ff31a7b3570f6106565fa"
+        },
+        {
+          "ref": "staging/source-session2-001/visual/QCVN-original7-lead.png",
+          "sha256": "e4c8fdf8e4f7edcdec55cc79aa91fbc6955ae1a244907770dc7c7832a161c00e"
+        },
+        {
+          "ref": "staging/source-session2-001/visual/QCVN-gazette1-8-lead.png",
+          "sha256": "e218b4948041fadaeaea5787c062775af56ac330dbd7f5b6da404118db1a1c7b"
+        }
+      ],
+      "dependencies": [
+        {
+          "required": true,
+          "role": "read_all_six_priority_items_and_4.2",
+          "source": "same native reader regions; original403 page7 cross-check"
+        }
+      ],
+      "limits": "Whole selected Article4 text visually compared; no full-QCVN or applicability claim. Legacy agent lead transcription was wrong, not a source-edition difference.",
+      "technical_status": "bounded_text_roundtrip_and_visual_comparison"
+    },
+    {
+      "key": "R-table-G1",
+      "kind": "table",
+      "part": 2,
+      "page": 83,
+      "printed_page": "84",
+      "owner": {
+        "literal": "Phụ lụcG/BảngG.1"
+      },
+      "evidence": [
+        {
+          "ref": "staging/source-revision-session1-001/visual/gazette-2-page-083.png",
+          "sha256": "63474cd365156f61a8dd3a738fbf187a7eb995653ace380bd9d4a2a0e0b1b48a"
+        }
+      ],
+      "dependencies": [
+        {
+          "required": true,
+          "role": "G7 figure, G6 referral and V85 explanation",
+          "source": "same page native context; G6 remains explicit referral not recursively resolved"
+        }
+      ],
+      "limits": "All displayed table values/units compared. Full-page reader retains separated V/85 typography; do not flatten into independent text answer without figure/context.",
+      "technical_status": "table_cells_context_and_image_bound"
+    },
+    {
+      "key": "R-sign-W214",
+      "kind": "sign_caption",
+      "part": 2,
+      "page": 20,
+      "printed_page": "21",
+      "start": "C.14",
+      "stop": "C.15",
+      "image_index": 1,
+      "owner": {
+        "literal": "Phụ lụcC/C.14/W.214"
+      },
+      "evidence": [
+        {
+          "ref": "staging/source-revision-session1-001/visual/gazette-2-page-020.png",
+          "sha256": "a6abf14ecd5f18efcbce7716d7ffae275c9bcc44fe6744f656e40f15c5e5cd43"
+        }
+      ],
+      "dependencies": [
+        {
+          "required": true,
+          "role": "Sign graphic and caption HìnhC.16",
+          "source_image_index": 1
+        }
+      ],
+      "limits": "Reader text/caption and measured image bbox bound; no independent image recognition or image-to-meaning inference.",
+      "technical_status": "text_caption_native_image_dependency_bound"
+    },
+    {
+      "key": "R-design-M1",
+      "kind": "design_image",
+      "part": 3,
+      "page": 44,
+      "printed_page": "45",
+      "owner": {
+        "literal": "Phụ lụcM/M.1/P.101,P.102,P.103a"
+      },
+      "agent_text": "Phụ Lục M\nCHI TIẾT CÁC THÔNG SỐ THIẾT KẾ BIỂN BÁO\nM.1 Nhóm biển báo cấm\nBiển số P.101: Đường cấm\nBiển số P.102: Cấm đi ngược chiều\nBiển số P.103a: Cấm xe ôtô\nLoại đường\tĐường cao tốc\tĐường đôi ngoài đô thị\tĐường thông thường\tĐường đô thị\nz(mm)\t140\t126\t87,5\t70",
+      "ocr_draft_ref": "staging/qcvn-ocr-drafts-001/pages/fa92e7fa-70fa-5c6a-89d9-e15d507493c7/page-0044/normalized.txt",
+      "evidence": [
+        {
+          "ref": "staging/source-revision-session1-001/visual/gazette-3-page-044.png",
+          "sha256": "b7a7523325dd45f51cef4ba86dc7fb33e022dfd9ba6887b4b4097b4e614fec20"
+        }
+      ],
+      "dependencies": [
+        {
+          "required": true,
+          "role": "All design drawings and dimension glyphs remain image dependencies",
+          "source_page": 44
+        }
+      ],
+      "limits": "Only explicit headings/sign labels and bottom z(mm) row transcribed/compared. Small drawing dimensions not transcribed; full-page PDF bbox, no invented cell/glyph boxes. Not complete design recovery.",
+      "technical_status": "partial_agent_transcription_image_dependencies_pending"
+    },
+    {
+      "key": "R-transition-B18",
+      "kind": "annex_transition",
+      "part": 2,
+      "page": 1,
+      "printed_page": "2",
+      "start": "B.18",
+      "stop": "B.19",
+      "owner": {
+        "literal": "Phụ lụcB/B.18",
+        "relationship": "same Gazette serial; preceding part1 PDF94 ends B.17 and names following issue1361+1362"
+      },
+      "evidence": [
+        {
+          "ref": "staging/source-session2-001/visual/QCVN-2-001.png",
+          "sha256": "3bf2a67104782492f4b32e3f9434e562d16467f6544b957ef11a34634e9d7017"
+        },
+        {
+          "ref": "staging/source-session2-001/visual/QCVN-1-094.png",
+          "sha256": "9e071fcbb5323337aeb1d047dfbd17c912c5cca814f1bb7c5ad22409bdd2b69e"
+        }
+      ],
+      "dependencies": [
+        {
+          "required": true,
+          "role": "Previous source boundary B17/serial footer",
+          "part": 1,
+          "page": 94,
+          "raw_ref": "staging/seven-source-completion-001/evidence/tt51-gazette-part-01.pdf",
+          "raw_sha256": "0964e7bbfed0fb80733ec769e13415c532812cfca1be817e2c588f0cdac33070"
+        },
+        {
+          "required": true,
+          "role": "P118 sign graphic",
+          "part": 2,
+          "page": 1
+        }
+      ],
+      "limits": "B18 complete selected paragraph range only. B19 and other continuation ranges remain unassigned; no full-annex recovery or changes to old graph.",
+      "technical_status": "bounded_annex_owner_assignment_and_source_read"
+    },
+    {
+      "key": "R-caption-I416",
+      "kind": "cross_edition_caption",
+      "part": 4,
+      "page": 36,
+      "printed_page": "37",
+      "owner": {
+        "literal": "Phụ lụcM/Nhóm biển chỉ dẫn/Đường tránh",
+        "gazette_caption": "I.416",
+        "legacy_403_caption": "I.418",
+        "identity_reconciliation": "pending_edition_difference_no_global_ID_alias"
+      },
+      "agent_text": "Phụ lục M: Nhóm biển chỉ dẫn\nBiển số I.416 : Đường tránh",
+      "evidence": [
+        {
+          "ref": "staging/source-session2-001/visual/QCVN-original300-label.png",
+          "sha256": "4e57fee6319c67d33755fb4a4761fe480a40e91a9f08e0ed1437009554bd78e2"
+        },
+        {
+          "ref": "staging/source-session2-001/visual/QCVN-gazette4-36-label.png",
+          "sha256": "c4160c5aed92436c4d2157c2687d2ad015a3363b8951043bfd22da2e64061042"
+        }
+      ],
+      "dependencies": [
+        {
+          "required": true,
+          "role": "Full diagram and road-type z(mm) table, arrows/dimensions not transcribed",
+          "part": 4,
+          "page": 36
+        },
+        {
+          "required": true,
+          "role": "Legacy counterpart source kept separate",
+          "raw_ref": "data/raw/51-bgtvt-kem.pdf",
+          "raw_sha256": "b6b99d0a0aeb13fe79072831857ece15bb254d8fb7817e80e4a2739a0d2145ce",
+          "page": 300
+        }
+      ],
+      "limits": "Observed caption8 versus6 differs between source renderings; old403 transcription is not silently rewritten. Both diagrams correspond by labels/geometry; not an asserted legal alias or verified edition.",
+      "technical_status": "caption_difference_observed_identity_pending"
+    }
+  ],
+  "source_differences": [
+    {
+      "key": "A4.1",
+      "classification": "legacy_agent_transcription_error_not_source_difference",
+      "old_ref": "staging/qcvn-pilot-002/page-7.transcription.txt",
+      "old_sha256": "7a054887fe7a336f92a692c585604a543cc55eb61b9403e112440c3cef710cca",
+      "original_source": "data/raw/51-bgtvt-kem.pdf",
+      "original_sha256": "b6b99d0a0aeb13fe79072831857ece15bb254d8fb7817e80e4a2739a0d2145ce",
+      "original_page": 7,
+      "gazette_source": "staging/seven-source-completion-001/evidence/tt51-gazette-part-01.pdf",
+      "gazette_sha256": "0964e7bbfed0fb80733ec769e13415c532812cfca1be817e2c588f0cdac33070",
+      "gazette_page": 8,
+      "correct_literal": "4.1. Khi đồng thời có, bố trí các hình thức báo hiệu có ý nghĩa khác nhau cùng ở một khu vực, người tham gia giao thông đường bộ phải chấp hành báo hiệu đường bộ theo thứ tự ưu tiên từ trên xuống dưới như sau:",
+      "evidence": [
+        {
+          "ref": "staging/source-revision-session1-001/visual/gazette-1-page-008.png",
+          "sha256": "edb55b93d54793719672ef8c6cb26a334fdbc6d7555ff31a7b3570f6106565fa"
+        },
+        {
+          "ref": "staging/source-session2-001/visual/QCVN-original7-lead.png",
+          "sha256": "e4c8fdf8e4f7edcdec55cc79aa91fbc6955ae1a244907770dc7c7832a161c00e"
+        },
+        {
+          "ref": "staging/source-session2-001/visual/QCVN-gazette1-8-lead.png",
+          "sha256": "e218b4948041fadaeaea5787c062775af56ac330dbd7f5b6da404118db1a1c7b"
+        }
+      ],
+      "supersedes_claim": "Source_Revision_Session1_Verification source-difference claim only; keep historical file",
+      "origin": "agent_review",
+      "human_review": null
+    },
+    {
+      "key": "M-Duong-tranh",
+      "classification": "observed_source_caption_difference",
+      "original_source": "data/raw/51-bgtvt-kem.pdf",
+      "original_page": 300,
+      "original_caption": "I.418",
+      "gazette_source": "staging/seven-source-completion-001/evidence/tt51-gazette-part-04.pdf",
+      "gazette_page": 36,
+      "gazette_caption": "I.416",
+      "evidence": [
+        {
+          "ref": "staging/source-session2-001/visual/QCVN-original300-label.png",
+          "sha256": "4e57fee6319c67d33755fb4a4761fe480a40e91a9f08e0ed1437009554bd78e2"
+        },
+        {
+          "ref": "staging/source-session2-001/visual/QCVN-gazette4-36-label.png",
+          "sha256": "c4160c5aed92436c4d2157c2687d2ad015a3363b8951043bfd22da2e64061042"
+        }
+      ],
+      "ocr": "Two narrow label OCR drafts agree with observed readings; OCR is not sole content proof",
+      "action": "No source/transcription rewrite to force equivalence; no global unit-ID alias",
+      "origin": "agent_review",
+      "human_review": null,
+      "original_sha256": "b6b99d0a0aeb13fe79072831857ece15bb254d8fb7817e80e4a2739a0d2145ce",
+      "gazette_sha256": "0b34bcb003a07adb2fbaeb7d1ccfb273d63101ae44891bcef0f9b27d14251ebb"
+    }
+  ]
+}
