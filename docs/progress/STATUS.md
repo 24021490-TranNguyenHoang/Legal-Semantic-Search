@@ -1,4 +1,44 @@
-# Hiện tại — hoàn thiện bảy nguồn, 2026-10-25
+# Hiện tại — phiên1 NĐ168 / DOC QCVN, 2026-10-28
+
+**SCOPED_CORRECTION_PASS / DOC_DIAGNOSTICS_COMPLETE / FULL_SOURCE_REVIEW_PENDING**.
+Snapshot2025-01-01. HEAD đầu phiên `e5c3665bf600f5f3d37cc0f588bf4f65a546ebaa`,
+Git sạch trước sửa; có code/config/tests/docs mới chưa commit. Không stage/commit/push.
+
+NĐ168: bản dẫn xuất riêng `staging/nd168-docx-corrected-002/`, sửa đúng5chỗ theo
+ảnh PDF41/85/86; raw không đổi. Extraction/graph hiện có chạy lại:1.309unit,
+1.351span,0parser issue,4source warnings giữ nguyên. Crosswalk1.303ID giữ,
+1đổi(A39K9đ→d),5unit khôi phục từ vùng trước cách ly. Chưa render Word.
+Đối chiếu HTML đủ1.309path; ngoài vùng sửa còn86field khác ngoài whitespace,
+chưa coi DOCX/HTML tương đương toàn văn. Đề xuất HTML là một nhánh text cho
+build sau; chưa tự chọn/migrate dữ liệu hoặc nhập trùng hai nhánh.
+
+TT51: reuse5PDF Công báo425tr; capture5DOC còn thiếu từ trang53152 với receipt
+thật28/10. `staging/qcvn-doc-assessment-003/` đọc toàn5DOC bằng Antiword0.37:
+357.616code point diagnostic,0NUL/U+FFFE/U+FFFD nhưng727`[pic]`;
+part4/5 chỉ1.888/534code point, nội dung chủ yếu vẫn là ảnh. Không kết luận DOC
+hoàn thiện QCVN. Đã đọc16mẫu theo Điều/annex/sign, không phải full visual review;
+DOC diagnostic offsets không là native DOC/PDF spans. Marker Đường tránh ở
+nguồn403tr còn cần đọc chắc; câu dẫn4.1 khác Công báo được ghi riêng.
+
+62tests liên quan exit0; replay5payload NĐ168 +20payload DOC giữ hash.
+Artifact checker kiểm FK/spans/ID/sequences/reference và baseline2.226file;
+không đổi artifact bảo vệ. Chỉ Windows/Python3.11.9 hiện tại, chưa máy/OS khác.
+Không dùng số test làm kết luận pháp lý/retrieval. Human events0, release=false.
+
+Dataset/index v1 **3.077**, draft **3.082**, v3/composition index/evaluation/qrels/
+ZIP và candidate-v4-006 giữ nguyên. Chưa sửa8bảng TT35, build dataset/index,
+embedding/inference/app. Scope/edition/provenance/applicability vẫn pending;
+phiên này dừng trước phiên2, không tự yêu cầu nhóm chuyển bản.
+
+[Báo cáo và blocker](../reviews/Source_Revision_Session1_Verification.md),
+[lệnh replay](../handoff/Source_Revision_Session1_Replay.md),
+[contract bổ sung](../design/Source_Revision_DOC_Assessment_v1.0.md).
+Coordinator/evidence: `staging/source-revision-session1-001/`;
+kiểm chứng cuối `staging/source-revision-checks-002/`.
+
+---
+
+# Lịch sử — hoàn thiện bảy nguồn, 2026-10-25
 
 **CANDIDATE_TECHNICAL_PASS / FULL_SOURCE_COMPLETION_PENDING**. Snapshot2025-01-01.
 Đã nối tiếp việc24/10 và hoàn thiện phần kiểm chứng/đóng gói; **chưa xử lý xong

@@ -1,4 +1,26 @@
-# Ingestion hiện hành — reader/graph/candidate bảy nguồn
+# Ingestion hiện hành — hiệu chỉnh nguồn hẹp / DOC QCVN
+
+Cập nhật28/10/2026; snapshot2025-01-01. Phiên1 đã tạo DOCX NĐ168 hiệu chỉnh riêng
+cho5vị trí có ảnh PDF, chạy lại pipeline registration/extraction/graph hiện có.
+Run chính `staging/nd168-docx-corrected-002/`, replay003; raw không đổi.
+Không coi hết parser issue là verified hoặc toàn DOCX đã khớp HTML.
+
+TT51 có5DOC Công báo mới, inventory/diagnostic extraction ở
+`staging/qcvn-doc-assessment-003/`, raw captures/tool/ảnh ở
+`staging/source-revision-session1-001/`. Reuse5PDF đã có, không nối DOC/PDF thành
+10phần. Antiword đọc toàn file nhưng hình/bảng còn thiếu trong text, nhất là
+part4/5. Không giả DOC thành DOCX, native cell hoặc PDF source span.
+
+[Contract](design/Source_Revision_DOC_Assessment_v1.0.md),
+[replay/validator/tool dependencies](handoff/Source_Revision_Session1_Replay.md),
+[kết quả thực đo/mẫu/blocker](reviews/Source_Revision_Session1_Verification.md).
+Chưa build dataset/index hoặc chọn nguồn thay bản nhóm đang dùng; raw/evidence,
+dataset v1/draft3082/v3/candidate006/index/eval/qrels/ZIP cũ giữ nguyên.
+Không tự chuyển source/edition/scope/applicability thành verified/accepted.
+
+---
+
+# Lịch sử ingestion — reader/graph/candidate bảy nguồn
 
 Cập nhật25/10/2026, snapshot2025-01-01. Candidate006/ledger009/handoff001 là
 đầu ra hiện hành của đợt hoàn thiện; **chưa hoàn tất semantics toàn bảy nguồn**.
