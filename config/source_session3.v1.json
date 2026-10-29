@@ -1,0 +1,1823 @@
+{
+  "policy": "source-session3-membership.v1",
+  "snapshot": "2025-01-01",
+  "instruction_ref": "staging/source-session3-001/user_instruction.txt",
+  "instruction_sha256": "02ac858414e132c41e7ff42d544f41997ba244a7856e59ba5783ce912d7a0874",
+  "sources": [
+    {
+      "source_id": "SRC-001",
+      "law_id": "36/2024/QH15",
+      "graph_run": "staging/stage4-docx-005",
+      "extraction_run": "staging/stage4-docx-005/extraction_snapshot",
+      "graph_extraction_run": "staging/stage4-docx-005/extraction_snapshot",
+      "selection_origin": "user_instruction",
+      "choice_reason": "Lựa chọn nhánh xử lý theo chỉ dẫn người dùng phiên3; không phải xác minh pháp lý hoặc human unit review.",
+      "graph_units_file": "legal_units.pending.jsonl"
+    },
+    {
+      "source_id": "SRC-002",
+      "law_id": "168/2024/NĐ-CP",
+      "graph_run": "staging/nd168-docx-session2-001/graph",
+      "extraction_run": "staging/nd168-docx-session2-001/extraction",
+      "graph_extraction_run": "staging/nd168-docx-session2-001/extraction",
+      "selection_origin": "user_instruction",
+      "choice_reason": "Lựa chọn nhánh xử lý theo chỉ dẫn người dùng phiên3; không phải xác minh pháp lý hoặc human unit review.",
+      "graph_units_file": "legal_units.pending.jsonl"
+    },
+    {
+      "source_id": "SRC-003",
+      "law_id": "35/2024/QH15",
+      "graph_run": "staging/stage4-docx-005",
+      "extraction_run": "staging/stage4-docx-005/extraction_snapshot",
+      "graph_extraction_run": "staging/stage4-docx-005/extraction_snapshot",
+      "selection_origin": "user_instruction",
+      "choice_reason": "Lựa chọn nhánh xử lý theo chỉ dẫn người dùng phiên3; không phải xác minh pháp lý hoặc human unit review.",
+      "graph_units_file": "legal_units.pending.jsonl"
+    },
+    {
+      "source_id": "SRC-004",
+      "law_id": "165/2024/NĐ-CP",
+      "graph_run": "staging/stage4-docx-005",
+      "extraction_run": "staging/stage4-docx-005/extraction_snapshot",
+      "graph_extraction_run": "staging/stage4-docx-005/extraction_snapshot",
+      "selection_origin": "user_instruction",
+      "choice_reason": "Lựa chọn nhánh xử lý theo chỉ dẫn người dùng phiên3; không phải xác minh pháp lý hoặc human unit review.",
+      "graph_units_file": "legal_units.pending.jsonl"
+    },
+    {
+      "source_id": "SRC-005",
+      "law_id": "38/2024/TT-BGTVT",
+      "graph_run": "staging/tt38-preview-003",
+      "extraction_run": "staging/tt38-preview-003/extraction_snapshot",
+      "graph_extraction_run": "staging/tt38-preview-003/extraction_snapshot",
+      "selection_origin": "user_instruction",
+      "choice_reason": "TT38 Công báo 8 trang: raw bền vững, đúng extraction và proof/consumer dependencies; bản 7 trang chỉ đối chiếu.",
+      "graph_units_file": "legal_units.pending.jsonl"
+    },
+    {
+      "source_id": "SRC-006",
+      "law_id": "51/2024/TT-BGTVT",
+      "graph_run": "staging/qcvn-rule-graph-003",
+      "extraction_run": "staging/qcvn-gazette-extraction-001",
+      "graph_extraction_run": "staging/qcvn-gazette-extraction-001",
+      "selection_origin": "user_instruction",
+      "choice_reason": "Lựa chọn nhánh xử lý theo chỉ dẫn người dùng phiên3; không phải xác minh pháp lý hoặc human unit review.",
+      "graph_units_file": "region_units.pending.jsonl"
+    },
+    {
+      "source_id": "SRC-007",
+      "law_id": "35/2024/TT-BGTVT",
+      "graph_run": "staging/circular-priority-006",
+      "extraction_run": "staging/tt35-full-layout-001",
+      "graph_extraction_run": "staging/tt35-preview-005/extraction_snapshot",
+      "selection_origin": "user_instruction",
+      "choice_reason": "Lựa chọn nhánh xử lý theo chỉ dẫn người dùng phiên3; không phải xác minh pháp lý hoặc human unit review.",
+      "graph_units_file": "legal_units.pending.jsonl"
+    }
+  ],
+  "input_hashes": {
+    "config/tt35_owner_tables.v1.json": "012c9454cafc3eec20bbc34b37329b86069f4ac2b153bcb02500b2b79b26350e",
+    "docs/requirements/BRD Vietnamese Traffic Legal Semantic Search_v1.0.docx.md": "81b8fba4ab7b9d6e3b9b2dd13dda0c4ac5eade8a474e5e3742b53a13e93f4395",
+    "staging/circular-priority-006/manifest.json": "b21366fa0c8e22b4c27a29945f0eeab7b254b1193aa7f041b02988ad92b4c20b",
+    "staging/dataset-v3-draft-005/dataset_manifest.json": "1a17bbd11bfa00329c83fc1c31f4dade255f75a97df713a7a09db43f256d70b4",
+    "staging/dataset-v4-candidate-006/dataset_manifest.json": "66a5bd355c842526e8cb412cadabc588c7a35045fd2369c3660bc1c2b6d1d922",
+    "staging/nd168-docx-corrected-002/graph/manifest.json": "ebf299c3d884e6232724a7ceb01eb65d5d21d9775e73dd800ec1e3d4405d99a4",
+    "staging/nd168-docx-session2-001/extraction/manifest.json": "81651a3932fcb541c563343eee43c8529e2d8ec81c2ba84d03016d65ba5781c1",
+    "staging/nd168-docx-session2-001/graph/manifest.json": "05823eedc958ccbd09d9c65a5acddfc3f3394f99bf39e38105c78aaf5809e1e7",
+    "staging/nd168-html-full-002/manifest.json": "6d6b91345cd570c2bd2788e428b87da57cfa5a918a354132f3db3b75ce23c52e",
+    "staging/qcvn-gazette-extraction-001/manifest.json": "56a4dfa4f6e6e9d6db9950ff2ec736ef5509b94ddb0226fbc2575d427ffd8027",
+    "staging/qcvn-region-recovery-004/manifest.json": "337f1742d0c30d066ffacc752728cc6db1636bc785bd060bf634a66fba13c354",
+    "staging/qcvn-rule-graph-003/manifest.json": "159f0f1ae31cab2dd8a472080b74e0817e77db52c1aec926fdab5f7ea48c30d7",
+    "staging/seven-source-complete-records-002/manifest.json": "010022058a2c6bbbc90cf34f374d9f9abea22c5528ec37aee03a2f821fa6ba63",
+    "staging/seven-source-ledger-009/manifest.json": "1024ed609ae06b14cebcd90c0b1f7a0baf406d9492de35e276f7072055fdf608",
+    "staging/seven-source-previews-001/manifest.json": "30f3a62a056b58259cf681ea7f2535f32800013839c825eb42ff7fa9087ee599",
+    "staging/seven-source-repairs-001/manifest.json": "e8973bcb80bb556e666a230a9b8ea7b6d80a223b9a8e8c1d59966c01d86900bd",
+    "staging/stage4-docx-005/extraction_snapshot/manifest.json": "39d4895c9105e96b5e87661e2b1b65244f888bd3172478754cebfec075f145f0",
+    "staging/stage4-docx-005/manifest.json": "ca30426fea4f39e797ffa0e922010cd507cf131b86df76c9174d2a0518e1c938",
+    "staging/stage5-pilot-refinement-001/manifest.json": "bd175907e30e39dc0d7c47f452171d03ef18a09f50ac4cdbccacc60894e8616a",
+    "staging/stage5-scope-survey-001/manifest.json": "40f791c118527bb680a0a8a8c0d61f70016c6446c91164506ecdae2d29ab2894",
+    "staging/stage6-coverage-001/manifest.json": "7853192d9be1fac05befe48bbe02d488e2afa8129631474830ca359e2c0d94af",
+    "staging/tt35-full-layout-001/manifest.json": "359a37d293b309279c0af920074574e6ef6cf7e280f66df45b5e09f55098a1fa",
+    "staging/tt35-owner-tables-002/manifest.json": "192926e1c2baa85636ad19d5bc99f7182b265c85a19c89c3f1c8bf7ebb542c2d",
+    "staging/tt35-preview-005/extraction_snapshot/manifest.json": "5918313280cd4a42df9a298ef65a32bd3a190e01eb581c8a6c68d9a5e009e660",
+    "staging/tt35-preview-005/manifest.json": "2336ec69aa9c2927761c9c9de7aa7e696ff6c1b9fe8d5cf742cfce86bd9f1607",
+    "staging/tt35-source-regions-001/manifest.json": "56c84f8446087a3a07a6b3fc78b5224f2702893984c3b04b42951c1b174d5d93",
+    "staging/tt38-preview-003/extraction_snapshot/manifest.json": "c43f12871cf5d72932293fb8de2d5fe68b064273d5c66e016f81d4721f91dbb6",
+    "staging/tt38-preview-003/manifest.json": "a0b664c3bbff8850aadd1ced2d1646b299485943b515067d21ebfbf7b0b044c4",
+    "staging/stage5-pilot-refinement-001/pilot_candidates.jsonl": "043354483d4eb49546d21747d9d178367a29fd4281c17a710a28f0358979d086",
+    "staging/tt35-preview-005/scope.proposals.jsonl": "3db2f2fd1472889ec7f38f8b297f4a830cc31321746ee367a61d26ba04b30728",
+    "staging/tt38-preview-003/scope.proposals.jsonl": "034e0616dd2520f331cbf51e3bdbe38a978bc23e32fa4385ad9738e958203734",
+    "staging/seven-source-complete-records-002/scope.proposals.jsonl": "915e462872b1c25914a934a3703d56dc4fd04d2f1b222c0605a670aa7c2fa247",
+    "staging/stage5-scope-survey-001/scope_proposals.jsonl": "df384bf9e7785e52d5e37b78c97975c0df411e122fceaf2f8b89f476106b3d9d",
+    "staging/bm25-baseline-v1-001/dataset/evidence/date_rules.pending.jsonl": "f7abb4f3260e5864e9bc9177f97f3915815390a6f93ac9f2d06927e1c89f37cc",
+    "staging/nd168-docx-corrected-002/unit_crosswalk.jsonl": "ce88c9d71ffc649eb29c44f52b688e7c42842f5d8bd749d1ee0fc1baac70e4cf",
+    "staging/nd168-docx-session2-001/unit_crosswalk.jsonl": "cc4cc6a3c3eabeef95c5caf5496562800f39bdbe9821361cc1f1b83924ce8fd2",
+    "staging/nd168-docx-session2-001/span_crosswalk.jsonl": "851f3353ac746ca124d09597db403a3ff0bc5042d1054fb175554ff91b7a9452",
+    "staging/nd168-docx-session2-001/revision_manifest.json": "ca98b518119e15bf2e3d2d0b9ea0617c7eb43815993994e237119ce5f77a0b4a",
+    "staging/qcvn-region-recovery-004/remaining_940.jsonl": "6fb773d754a84986c208b593506a9095ec44209ff0a066b4b468f3df2e675fcf"
+  },
+  "manual_reviews": [
+    {
+      "unit_id": "u_ad6fa9556d640dc877b4039923992f935a665644290b54112b9014f0132e8b55",
+      "unit_sha256": "40c11aafd1f93ba62503d6af2fe75aa63d9cbad0c3100cf1b6eef4cbe890f74b",
+      "scope": "in_scope",
+      "role": "target",
+      "reason": "BRD §3.1/UC01: đã đọc nguyên văn nguồn DOCX phiên2 và đối tượng xử phạt/ngữ cảnh mức phạt; quy tắc, chế tài hoặc chuyển tiếp cho người tham gia. Không kế thừa assessment/proof theo ID cũ.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "c3e5aa91d6d479f20b4aaff2ed391780660a85ec764ed084b8b267b5407c0c33"
+    },
+    {
+      "unit_id": "u_fac636921d08f9928440872295400988b7013a46a182497a5ecda0403fc85e92",
+      "unit_sha256": "8b26f07e84b81db9d47639954bed9824982108e7ebb1367282878d7367082515",
+      "scope": "in_scope",
+      "role": "target",
+      "reason": "BRD §3.1/UC01: đã đọc nguyên văn nguồn DOCX phiên2 và đối tượng xử phạt/ngữ cảnh mức phạt; quy tắc, chế tài hoặc chuyển tiếp cho người tham gia. Không kế thừa assessment/proof theo ID cũ.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "d07c5e505afa27149af073947208372a4ed7df844cfef0631fb9ae58bd673f37"
+    },
+    {
+      "unit_id": "u_4349182f7f9c6ccb8dbb7a4327b0f9f19f96d2c6aa4f807a68ef1bef3b709543",
+      "unit_sha256": "abb24220a6ff4ef1842d71a66d90e3a64be4eb0ac9718fc2da862179b59a264f",
+      "scope": "in_scope",
+      "role": "target",
+      "reason": "BRD §3.1/UC01: đã đọc nguyên văn nguồn DOCX phiên2 và đối tượng xử phạt/ngữ cảnh mức phạt; quy tắc, chế tài hoặc chuyển tiếp cho người tham gia. Không kế thừa assessment/proof theo ID cũ.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "cd3bddf74c9515296acf53daf51772b4f47ff9ceea741733bb9623ff95cd7716"
+    },
+    {
+      "unit_id": "u_ada06dd899e6622af0dbc8226751c2fafee8557da28c7bf2f4387a371490095e",
+      "unit_sha256": "ee69820ca327ed3ccefa398730ac550c3565692897f1fdc5004a7113446a686e",
+      "scope": "in_scope",
+      "role": "target",
+      "reason": "BRD §3.1/UC01: đã đọc nguyên văn nguồn DOCX phiên2 và đối tượng xử phạt/ngữ cảnh mức phạt; quy tắc, chế tài hoặc chuyển tiếp cho người tham gia. Không kế thừa assessment/proof theo ID cũ.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "430cb064b7837c610c678dd24382e4ed9691f1fa3e5464556012ccccf5dfa00d"
+    },
+    {
+      "unit_id": "u_be4c01663805380c56e31dd69db12c93dcddb3995185ad5c63126fbef04bd89d",
+      "unit_sha256": "de24722c4c3ca8059153ed8c4263c2554602365c23f9eafff7fd2034e6715766",
+      "scope": "in_scope",
+      "role": "target",
+      "reason": "BRD §3.1/UC01: đã đọc nguyên văn nguồn DOCX phiên2 và đối tượng xử phạt/ngữ cảnh mức phạt; quy tắc, chế tài hoặc chuyển tiếp cho người tham gia. Không kế thừa assessment/proof theo ID cũ.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "2946281485128c78bc471bc3f533b21ef062df3a845108c4b4cda25c370200eb"
+    },
+    {
+      "unit_id": "u_9a7a0eccafbed73093976af6b6b4b2f8f546e054f0e022547073cfbc0cad18a6",
+      "unit_sha256": "458d12e24476aab6fbb73fc8664f4511bf9c533781cdf9e0128ba6505b831a97",
+      "scope": "in_scope",
+      "role": "target",
+      "reason": "BRD §3.1/UC01: đã đọc nguyên văn nguồn DOCX phiên2 và đối tượng xử phạt/ngữ cảnh mức phạt; quy tắc, chế tài hoặc chuyển tiếp cho người tham gia. Không kế thừa assessment/proof theo ID cũ.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "7de6c426996f68afece0dcf1af386432cabc384adae0f136285e71cc5b3a9094"
+    },
+    {
+      "unit_id": "u_890e7eeb34d083f1438cff6008e285135d8f037bcc6c181cc760da248a6ede47",
+      "unit_sha256": "75a3f06c1654125fc49f73cf4af1ebac84dad55b634bb3c11e2ac6f373d200b9",
+      "scope": "in_scope",
+      "role": "target",
+      "reason": "BRD §3.1/UC01: đã đọc nguyên văn nguồn DOCX phiên2 và đối tượng xử phạt/ngữ cảnh mức phạt; quy tắc, chế tài hoặc chuyển tiếp cho người tham gia. Không kế thừa assessment/proof theo ID cũ.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "a80f77f499ada55a660344e7c7e1549c9662bb4ecf62f7e143c4881c80ba48f5"
+    },
+    {
+      "unit_id": "u_cde11db7f21d5f06eae05af5ef41cce82df2ac21a657aa6cdee21986d59f9e05",
+      "unit_sha256": "c573b86bd2d4214917a026847c261da518156f6da58e6d5282845e6d80d064e0",
+      "scope": "in_scope",
+      "role": "target",
+      "reason": "BRD §3.1/UC01: đã đọc nguyên văn nguồn DOCX phiên2 và đối tượng xử phạt/ngữ cảnh mức phạt; quy tắc, chế tài hoặc chuyển tiếp cho người tham gia. Không kế thừa assessment/proof theo ID cũ.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "570c22efd3cd89bb3d9671d5af4e9e20f71f37380bf560afa0a88441cc77a5df"
+    },
+    {
+      "unit_id": "u_f85b4cc2b456aa951973b5c750d3a2c43acb3ff6645ba977183980eafcfa7a40",
+      "unit_sha256": "6938f7667f138c28fefd3ad66aadcf1562e0e40488aae928ff0ac162a4b422e1",
+      "scope": "in_scope",
+      "role": "target",
+      "reason": "BRD §3.1/UC01: đã đọc nguyên văn nguồn DOCX phiên2 và đối tượng xử phạt/ngữ cảnh mức phạt; quy tắc, chế tài hoặc chuyển tiếp cho người tham gia. Không kế thừa assessment/proof theo ID cũ.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "42610ee6dddb68a40a9090c139673076be32d14b65477b0b9fad813c42cf7b83"
+    },
+    {
+      "unit_id": "u_84c767db6ba646c1cf2609beb2ac44e9787c7af4318e991927ddecc6f412efd8",
+      "unit_sha256": "7fa63d518e2eb549f47049e54d7f0b94e7a0e610e184423dbf26314642896531",
+      "scope": "in_scope",
+      "role": "target",
+      "reason": "BRD §3.1/UC01: đã đọc nguyên văn nguồn DOCX phiên2 và đối tượng xử phạt/ngữ cảnh mức phạt; quy tắc, chế tài hoặc chuyển tiếp cho người tham gia. Không kế thừa assessment/proof theo ID cũ.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "9c2a45abe100a8778a21a1e60d9181d9de5dba0f6a4837de6ff1d6bf0c2a4096"
+    },
+    {
+      "unit_id": "u_f233418a8cb0b9b40156e3f10d52a83a42d82ad91c2063d5574183393606a073",
+      "unit_sha256": "00b080f4ce9bc3f2c7a48ffe188dd0b3138bcc785084a192874a556164b5ee3e",
+      "scope": "in_scope",
+      "role": "target",
+      "reason": "BRD §3.1/UC01: đã đọc nguyên văn nguồn DOCX phiên2 và đối tượng xử phạt/ngữ cảnh mức phạt; quy tắc, chế tài hoặc chuyển tiếp cho người tham gia. Không kế thừa assessment/proof theo ID cũ.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "952644e7be57d7de58950265e8fdedf66a3577986968b71f3d358dfa35a3a325"
+    },
+    {
+      "unit_id": "u_25fb43065c3058a4dfa4227565b8a74fc9c31313ad57e99a5eaf9300a204b20a",
+      "unit_sha256": "2ba15fcfa098bb21cf517e4695948749d5302b4386b506894f7fa2d1dd3f41ad",
+      "scope": "in_scope",
+      "role": "target",
+      "reason": "BRD §3.1/UC01: đã đọc nguyên văn nguồn DOCX phiên2 và đối tượng xử phạt/ngữ cảnh mức phạt; quy tắc, chế tài hoặc chuyển tiếp cho người tham gia. Không kế thừa assessment/proof theo ID cũ.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "195c6b8e0758e7a9c5db6460940fa940ebfd7393fb7bb4aa9338248666744eaf"
+    },
+    {
+      "unit_id": "u_4bec614fd643f27e83169e90b686946f996007e4a35694f3740c4249677878b1",
+      "unit_sha256": "557c817dc358060ead246df1db265251f45aab776443c4bfe08ce66ab6b00b11",
+      "scope": "in_scope",
+      "role": "target",
+      "reason": "BRD §3.1/UC01: đã đọc nguyên văn nguồn DOCX phiên2 và đối tượng xử phạt/ngữ cảnh mức phạt; quy tắc, chế tài hoặc chuyển tiếp cho người tham gia. Không kế thừa assessment/proof theo ID cũ.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "70d430ddc906cf5e3d12c5ece15ebff69a18a05223b14bcfd03599807204eb02"
+    },
+    {
+      "unit_id": "u_c24977dd87b5da668a43b7686a0082b0646288e92674adf137f8da80f1daace3",
+      "unit_sha256": "4d5d5b1d4f8ef5349d3b72013678db906cc17e821ed50852408684525a828a68",
+      "scope": "in_scope",
+      "role": "target",
+      "reason": "BRD §3.1/UC01: đã đọc nguyên văn nguồn DOCX phiên2 và đối tượng xử phạt/ngữ cảnh mức phạt; quy tắc, chế tài hoặc chuyển tiếp cho người tham gia. Không kế thừa assessment/proof theo ID cũ.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "1109b154bcffa995ca6b8cb973ac94e422d5f58605a7d7ad275cbb07aa26274a"
+    },
+    {
+      "unit_id": "u_acd0c23aa009012ab0c70f072fc8c983237d57cea8bb33bdf12ad544416a8136",
+      "unit_sha256": "d504b82e8aeccb43487b2b96c767fd4397f4f5ae1ac01e921e7703e177f2c185",
+      "scope": "in_scope",
+      "role": "target",
+      "reason": "BRD §3.1/UC01: đã đọc nguyên văn nguồn DOCX phiên2 và đối tượng xử phạt/ngữ cảnh mức phạt; quy tắc, chế tài hoặc chuyển tiếp cho người tham gia. Không kế thừa assessment/proof theo ID cũ.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "f5c401650d9682d43e789f4ecd448ba2636f494bc89d7e2cb9f54723554a1600"
+    },
+    {
+      "unit_id": "u_505edbfeb3a90924aeee42179e852adc7411a9d4b5e131366a33dd61cc98052d",
+      "unit_sha256": "b44c70f529fe89bcd37c5b788c9ac18a8f95a5117fb38ec4737ca01160b67f2f",
+      "scope": "in_scope",
+      "role": "target",
+      "reason": "BRD §3.1/UC01: đã đọc nguyên văn nguồn DOCX phiên2 và đối tượng xử phạt/ngữ cảnh mức phạt; quy tắc, chế tài hoặc chuyển tiếp cho người tham gia. Không kế thừa assessment/proof theo ID cũ.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "c2fdba4ee803531d6bdb98ba521435e0b7071f02a4a1753a42bd739076bb8df2"
+    },
+    {
+      "unit_id": "u_ec33469f7bb213f0bdd64cad6b510d24a078ceb52f3e832f085d0cb3ca77ff9d",
+      "unit_sha256": "44a4651cf1b8f9dc825ffa9cb4a1548b10d3d375b5af33af68a294270940139b",
+      "scope": "in_scope",
+      "role": "target",
+      "reason": "BRD §3.1/UC01: đã đọc nguyên văn nguồn DOCX phiên2 và đối tượng xử phạt/ngữ cảnh mức phạt; quy tắc, chế tài hoặc chuyển tiếp cho người tham gia. Không kế thừa assessment/proof theo ID cũ.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "4bf0ea734309a85b3b33bbd3d04dc8c089cd1e08e75584510caa8aa4d2aacf30"
+    },
+    {
+      "unit_id": "u_ac45192d5b2370f875ab929fbeb93b70c147ddae715adfac6a87c3caa6a2c90c",
+      "unit_sha256": "037cae30f04223cc48868ce3e27d287147bce88ab67e6c497714ead583c233fb",
+      "scope": "in_scope",
+      "role": "target",
+      "reason": "BRD §3.1/UC01: đã đọc nguyên văn nguồn DOCX phiên2 và đối tượng xử phạt/ngữ cảnh mức phạt; quy tắc, chế tài hoặc chuyển tiếp cho người tham gia. Không kế thừa assessment/proof theo ID cũ.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "6b0715826bf490570f67e54b86b1cb143ee6552f089b502c0335a531d101cac9"
+    },
+    {
+      "unit_id": "u_9c89432119aea7616ee2322c264528926acf34a4c773a70a589f01111eb8d332",
+      "unit_sha256": "f215dc621c402478e7e332c6ddb7276e70f99502413269428ed9f0febf8df54b",
+      "scope": "in_scope",
+      "role": "target",
+      "reason": "BRD §3.1/UC01: đã đọc nguyên văn nguồn DOCX phiên2 và đối tượng xử phạt/ngữ cảnh mức phạt; quy tắc, chế tài hoặc chuyển tiếp cho người tham gia. Không kế thừa assessment/proof theo ID cũ.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "40cc1d7f94e0dba853ee907103734d76ef5832a6c12cf7384ef925f3ef4dbe47"
+    },
+    {
+      "unit_id": "u_6257b2a9a54f24cc00b7f82c79949e0a8847d452e454c584216c1f637eeaf0c3",
+      "unit_sha256": "7cd67adc3455adab439e93646e4671d6b54463a6a19a10d81ac3ec9b47a69ebd",
+      "scope": "in_scope",
+      "role": "target",
+      "reason": "BRD §3.1/UC01: đã đọc nguyên văn nguồn DOCX phiên2 và đối tượng xử phạt/ngữ cảnh mức phạt; quy tắc, chế tài hoặc chuyển tiếp cho người tham gia. Không kế thừa assessment/proof theo ID cũ.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "af4e79e712834fb925e1f77bcfcc74b83065bd663a10321c2e078b2fc90abbdb"
+    },
+    {
+      "unit_id": "u_d0db56d886664d459ff2025adddf63349bc090faf241aa3a4e2ea7f52874e99c",
+      "unit_sha256": "70a26d4ab1d9cff38a1b7e083ef860bdaf7f0b44cdc2e1784afccdc3c01303e9",
+      "scope": "in_scope",
+      "role": "target",
+      "reason": "BRD §3.1/UC01: đã đọc nguyên văn nguồn DOCX phiên2 và đối tượng xử phạt/ngữ cảnh mức phạt; quy tắc, chế tài hoặc chuyển tiếp cho người tham gia. Không kế thừa assessment/proof theo ID cũ.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "a16da366e2b6c8178eb7d8d04abc7d94c289ad94e97449262aec125dbc4dc0db"
+    },
+    {
+      "unit_id": "u_fea36040d7a425b418ad7d270d711acac5c04a18f52335ccc43a6d6cbede4922",
+      "unit_sha256": "a91df929fa9c343379898f251a5c4c9239510c9f18e914afe5a6044e73ae66ce",
+      "scope": "in_scope",
+      "role": "target",
+      "reason": "BRD §3.1/UC01: đã đọc nguyên văn nguồn DOCX phiên2 và đối tượng xử phạt/ngữ cảnh mức phạt; quy tắc, chế tài hoặc chuyển tiếp cho người tham gia. Không kế thừa assessment/proof theo ID cũ.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "f3d02f589333ca9948c3077e59a56a1fb772b39b0da2754ff96f61282dd55c32"
+    },
+    {
+      "unit_id": "u_290f99b9ba207ebda67c07da9a9b87b0d03ccb671bb8b2a99e0906b62daa940b",
+      "unit_sha256": "4a443b10e8b5d6d29bb0b71c4b6db1153c2ff5569491a6adf3f9cf5ac9c20600",
+      "scope": "in_scope",
+      "role": "target",
+      "reason": "BRD §3.1/UC01: đã đọc nguyên văn nguồn DOCX phiên2 và đối tượng xử phạt/ngữ cảnh mức phạt; quy tắc, chế tài hoặc chuyển tiếp cho người tham gia. Không kế thừa assessment/proof theo ID cũ.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "8b24c5e1886cfd797d8e33287bec4086565a7e6bf9a3b2c8163e774647766609"
+    },
+    {
+      "unit_id": "u_18a0f8388859446b5c86e18d8299aa0ad108d40b1e2adf437dd2a0ec1d3eab07",
+      "unit_sha256": "ef51eb2c9aab4ce4bce8ea7b9d4c3716aaeeb643169064feafe376330943fca3",
+      "scope": "in_scope",
+      "role": "target",
+      "reason": "BRD §3.1/UC01: đã đọc nguyên văn nguồn DOCX phiên2 và đối tượng xử phạt/ngữ cảnh mức phạt; quy tắc, chế tài hoặc chuyển tiếp cho người tham gia. Không kế thừa assessment/proof theo ID cũ.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "5a129e1811e7f7ab5da361affe7577adcfa1e10e7f2026ba0394e80ecd5b0c05"
+    },
+    {
+      "unit_id": "u_4546d8b63e496111f2fb9a95e69267d9392adc2af9d57bfafe8ad77598de1fad",
+      "unit_sha256": "98e33cd4e9e8803ba1adb598bc27f385310f7ad3c967abe9a7062c01a619ecee",
+      "scope": "in_scope",
+      "role": "target",
+      "reason": "BRD §3.1/UC01: đã đọc nguyên văn nguồn DOCX phiên2 và đối tượng xử phạt/ngữ cảnh mức phạt; quy tắc, chế tài hoặc chuyển tiếp cho người tham gia. Không kế thừa assessment/proof theo ID cũ.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "db9482020469b2a2ea28e0953fb052cf21941a0ec9c109eee0eec70aac32b4f2"
+    },
+    {
+      "unit_id": "u_a6ff86c52861ab9f8c12f7121a635535f589702e7cf424a363a604559af23029",
+      "unit_sha256": "565b59b5b2deb83d78c06b5a8082a18ed32ae5b3e91c6e271060b79a8b002ef5",
+      "scope": "in_scope",
+      "role": "target",
+      "reason": "BRD §3.1/UC01: đã đọc nguyên văn nguồn DOCX phiên2 và đối tượng xử phạt/ngữ cảnh mức phạt; quy tắc, chế tài hoặc chuyển tiếp cho người tham gia. Không kế thừa assessment/proof theo ID cũ.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "bce6e81f365c1d4b2bca5168ebdb2d518bc85d7f9c63d9d1207f1eeb47dfb399"
+    },
+    {
+      "unit_id": "u_84e94aa5ead4c27e2dd8a2c7e16bdd673bf84e7ff0dba95b1941858dc54d29e2",
+      "unit_sha256": "aa667ae0722db19e1c822a401f1da7725bf463186e1586397b4014a11ae9fc17",
+      "scope": "in_scope",
+      "role": "supporting",
+      "reason": "BRD §3.1/UC01: đã đọc nguyên văn nguồn DOCX phiên2 và đối tượng xử phạt/ngữ cảnh mức phạt; quy tắc, chế tài hoặc chuyển tiếp cho người tham gia. Không kế thừa assessment/proof theo ID cũ.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "c790e31cd5bd73aa8f4b329f44ef7b350766c8e5045a083724013a5ab2e28a43"
+    },
+    {
+      "unit_id": "u_4c2c28fc624da8165d8ad97773360c4557d05a1b6620d1b0c854f80429ebc6e7",
+      "unit_sha256": "48b4244a1baae58daecdceba4fcb5ae67cb4f0a1cdb7cd5aa5b49985daeaf2bd",
+      "scope": "in_scope",
+      "role": "supporting",
+      "reason": "BRD §3.1/UC01: đã đọc nguyên văn nguồn DOCX phiên2 và đối tượng xử phạt/ngữ cảnh mức phạt; quy tắc, chế tài hoặc chuyển tiếp cho người tham gia. Không kế thừa assessment/proof theo ID cũ.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "24e16ec16017994ca92ec4792093b70069b31ae156a315759f5fff1c24544bff"
+    },
+    {
+      "unit_id": "u_5e556d79d00d239e3229900560a3ca1fc574883ae0b30d8c34e030ca16fbfe78",
+      "unit_sha256": "2102a1663e37e70fb5676231a5b4a3c49a0bd3c3f75cabaf16c9d33c9dabed22",
+      "scope": "out_of_scope",
+      "role": "structural",
+      "reason": "BRD §3.3: đã đọc đơn vị; trách nhiệm cơ quan bảo vệ công trình, thủ tục cấp phép hoặc khai thác cơ sở dữ liệu, không quy tắc/hành vi trực tiếp cho người tham gia; không loại cả NĐ165.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "d2f63371838f79301b6195d20ea4d6886d52b38f2b47ae1835106e5fedc00da2"
+    },
+    {
+      "unit_id": "u_d5591a740ead0e6ed28ec8c34a86bbc3dd3ce3043aec98a2738d9cfe09da456e",
+      "unit_sha256": "aa7d09a6724a3a96e78c9197a0ac6454d34cb417599857c2a045e837e653a6ed",
+      "scope": "out_of_scope",
+      "role": "target",
+      "reason": "BRD §3.3: đã đọc đơn vị; trách nhiệm cơ quan bảo vệ công trình, thủ tục cấp phép hoặc khai thác cơ sở dữ liệu, không quy tắc/hành vi trực tiếp cho người tham gia; không loại cả NĐ165.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "d0056c3aea0da8b21bd0d4e435a963107c6b05dde8243e5b1def335d983a7455"
+    },
+    {
+      "unit_id": "u_0e082bfc80e1c72233aec5609203991a12d2abd82e9eb0817d66c7e974cd72cd",
+      "unit_sha256": "7be6b6f5e089f86b0e8a935363124d0f87b14b8dc5f79645b1304285e1dcc32a",
+      "scope": "out_of_scope",
+      "role": "target",
+      "reason": "BRD §3.3: đã đọc đơn vị; trách nhiệm cơ quan bảo vệ công trình, thủ tục cấp phép hoặc khai thác cơ sở dữ liệu, không quy tắc/hành vi trực tiếp cho người tham gia; không loại cả NĐ165.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "9c7706e8c0d281ee3bf6c0a87c3be2a1584f62fa4fcf747c65f001953416e362"
+    },
+    {
+      "unit_id": "u_072bb89993ee50172a76b73b5873e0ee2b374f05f6320371759b1393bbef40cd",
+      "unit_sha256": "6e83187b800ef5f98e9f9d4c24450521e8b41d346fcd3d727b839c24cef60ae4",
+      "scope": "out_of_scope",
+      "role": "target",
+      "reason": "BRD §3.3: đã đọc đơn vị; trách nhiệm cơ quan bảo vệ công trình, thủ tục cấp phép hoặc khai thác cơ sở dữ liệu, không quy tắc/hành vi trực tiếp cho người tham gia; không loại cả NĐ165.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "5c5b3f24cd9d28c363dec3cc1b32965cb7e2563bf1f1406264f31a23e4d2abf3"
+    },
+    {
+      "unit_id": "u_c5892965666c6d1674967debb16e1e71aea6a4bfe2063210b618e4a27b049378",
+      "unit_sha256": "fca32ec1c066e812c0b55f0517899490e7c20d102dacf47da1af3970f65db772",
+      "scope": "out_of_scope",
+      "role": "target",
+      "reason": "BRD §3.3: đã đọc đơn vị; trách nhiệm cơ quan bảo vệ công trình, thủ tục cấp phép hoặc khai thác cơ sở dữ liệu, không quy tắc/hành vi trực tiếp cho người tham gia; không loại cả NĐ165.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "add21bacb598aa42c1838c1892ff5c20418b6f3fbafbdfcd270bb518296a0024"
+    },
+    {
+      "unit_id": "u_6f92a879861b424f0f80c33aa002328cacbe818fe6e2e1ceea4f1065c02863b6",
+      "unit_sha256": "12f055124233e57dd01e561171ed3465d95c7c32b3d6c40fc954ac617ac31775",
+      "scope": "out_of_scope",
+      "role": "target",
+      "reason": "BRD §3.3: đã đọc đơn vị; trách nhiệm cơ quan bảo vệ công trình, thủ tục cấp phép hoặc khai thác cơ sở dữ liệu, không quy tắc/hành vi trực tiếp cho người tham gia; không loại cả NĐ165.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "a98c05e8ec57cba9f57ec4ab654d92c6f97bc48debab13fae1a5945adbcce395"
+    },
+    {
+      "unit_id": "u_5ad003914aae08364f2c2679067580d565a4c5cc74646e73da193bf863df1457",
+      "unit_sha256": "45e99e8f6489037df15c947479191ad6a44835897cb70ed402a9fa6e78ad833f",
+      "scope": "out_of_scope",
+      "role": "target",
+      "reason": "BRD §3.3: đã đọc đơn vị; trách nhiệm cơ quan bảo vệ công trình, thủ tục cấp phép hoặc khai thác cơ sở dữ liệu, không quy tắc/hành vi trực tiếp cho người tham gia; không loại cả NĐ165.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "a26cb761a90632f0b8131e5424e147f8578acd1b96b87ee309598633c8403391"
+    },
+    {
+      "unit_id": "u_b5160773d0145c5038914561ff7a26951e0256ed7b5d92d8315d96f72ff3517b",
+      "unit_sha256": "3cb2bea014375298f8db9802529a8d2089848926ed94943b57635554d55e9851",
+      "scope": "out_of_scope",
+      "role": "target",
+      "reason": "BRD §3.3: đã đọc đơn vị; trách nhiệm cơ quan bảo vệ công trình, thủ tục cấp phép hoặc khai thác cơ sở dữ liệu, không quy tắc/hành vi trực tiếp cho người tham gia; không loại cả NĐ165.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "cd77f2b890a5d464ae3e433174820fad31bfd49dd8f3d9e327906018faf8a296"
+    },
+    {
+      "unit_id": "u_b3d1d98504211efc793bfccb8fd29542532b8852db365ad3116dbf5c54170be4",
+      "unit_sha256": "c6d3b387950c3bb0f295f70353636b32c1552176fdd99debbd3ed1a3fb2a8a59",
+      "scope": "out_of_scope",
+      "role": "target",
+      "reason": "BRD §3.3: đã đọc đơn vị; trách nhiệm cơ quan bảo vệ công trình, thủ tục cấp phép hoặc khai thác cơ sở dữ liệu, không quy tắc/hành vi trực tiếp cho người tham gia; không loại cả NĐ165.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "9d87c1545c7a5082a494a745f5e3abcdaf06dbd610c5d818c8c6c24a6c7b2346"
+    },
+    {
+      "unit_id": "u_96224795e04248ba9dd8bd06107c6e5cb108ea028e5ce3708f21eeed3811c847",
+      "unit_sha256": "059ab717ce766c47ac5819484f6cec8d7fd9dd8f88364bf3d315c2f1d418f284",
+      "scope": "out_of_scope",
+      "role": "target",
+      "reason": "BRD §3.3: đã đọc đơn vị; trách nhiệm cơ quan bảo vệ công trình, thủ tục cấp phép hoặc khai thác cơ sở dữ liệu, không quy tắc/hành vi trực tiếp cho người tham gia; không loại cả NĐ165.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "13ed4ba61544f0e95c348d560aeb782a6ce53a258b23588c068798fa1183254b"
+    },
+    {
+      "unit_id": "u_e25151dec1b56cef904b363e8e2158f9ad7b2e9de68d8bffdfe7cf9eea564d72",
+      "unit_sha256": "8eb521aa3df6e46f0473550a0a5f779d99aec4a41e9f9021edd1209a3ddb6394",
+      "scope": "out_of_scope",
+      "role": "target",
+      "reason": "BRD §3.3: đã đọc đơn vị; trách nhiệm cơ quan bảo vệ công trình, thủ tục cấp phép hoặc khai thác cơ sở dữ liệu, không quy tắc/hành vi trực tiếp cho người tham gia; không loại cả NĐ165.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "c86d8332419a510f2836f7063ae11491b81403f5a6cec43b5a57a761af18563a"
+    },
+    {
+      "unit_id": "u_f475b7e3e334fa15ae44c9da9641b4518bfac7ce34dd2c9668d1cf50d87722f8",
+      "unit_sha256": "91b95bc25e084ba1289d73e1d888b2764338d347fdf0bd77443c9d043e91a7f0",
+      "scope": "out_of_scope",
+      "role": "target",
+      "reason": "BRD §3.3: đã đọc đơn vị; trách nhiệm cơ quan bảo vệ công trình, thủ tục cấp phép hoặc khai thác cơ sở dữ liệu, không quy tắc/hành vi trực tiếp cho người tham gia; không loại cả NĐ165.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "d7fabed2c7ba276098f8dab2ff00e307f0b9ad68a546fc36298fafdc0bf3be93"
+    },
+    {
+      "unit_id": "u_f64ffef34b3ba7552e04c69a0e8f546de402dc91573ce0d24e0365bc45d86568",
+      "unit_sha256": "7f69a918d36ed1e0e0b5a19fd23566d65627a899e377172f1801a88e14037249",
+      "scope": "out_of_scope",
+      "role": "target",
+      "reason": "BRD §3.3: đã đọc đơn vị; trách nhiệm cơ quan bảo vệ công trình, thủ tục cấp phép hoặc khai thác cơ sở dữ liệu, không quy tắc/hành vi trực tiếp cho người tham gia; không loại cả NĐ165.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "16e932cfdcb115d3d838efc550031dc1c463cbf1e232e09e071764b18d3a657e"
+    },
+    {
+      "unit_id": "u_745bffa9d6f252bb5dc3a54a98900dd6081592ba4bf17d995c9725b30bc8be85",
+      "unit_sha256": "b6c0353738d664d53e16bdf87ca7c28ded96054b57f92a41a006d8624b6d68be",
+      "scope": "out_of_scope",
+      "role": "target",
+      "reason": "BRD §3.3: đã đọc đơn vị; trách nhiệm cơ quan bảo vệ công trình, thủ tục cấp phép hoặc khai thác cơ sở dữ liệu, không quy tắc/hành vi trực tiếp cho người tham gia; không loại cả NĐ165.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "7d2343fc4a392cd0211d26037c1424313292f1e5c44a7d1b18c983f825b75665"
+    },
+    {
+      "unit_id": "u_4f1888836317e444c2a2c1ba183d38781a9c3309548036617d279c58c37da006",
+      "unit_sha256": "e62fa77e74c3a7957ef0b91fe7927770abd69124cdbf5c51b9dde1db3c21b30e",
+      "scope": "out_of_scope",
+      "role": "target",
+      "reason": "BRD §3.3: đã đọc đơn vị; trách nhiệm cơ quan bảo vệ công trình, thủ tục cấp phép hoặc khai thác cơ sở dữ liệu, không quy tắc/hành vi trực tiếp cho người tham gia; không loại cả NĐ165.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "749311734c20d4700297ac96b066d874abe051a59702d91bcdba7d5c63476c4e"
+    },
+    {
+      "unit_id": "u_94c8000d99cdf911aa3eb8c44e5cf9760a671f768159bf3641363aa69751eb0d",
+      "unit_sha256": "89f14aeecfe81e3c277f64dfd5a05ed2be2a612a0fbdbf497baad5bb7a223eb4",
+      "scope": "out_of_scope",
+      "role": "target",
+      "reason": "BRD §3.3: đã đọc đơn vị; trách nhiệm cơ quan bảo vệ công trình, thủ tục cấp phép hoặc khai thác cơ sở dữ liệu, không quy tắc/hành vi trực tiếp cho người tham gia; không loại cả NĐ165.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "097e5a2a98ef7e44dbf362dcac962c79898e84c68c0f92f52f999991b841c079"
+    },
+    {
+      "unit_id": "u_490ae5d20ed8e0d391d3e2d5cbd88a50499ad9aaad3faaf3b74434f5cd0689c1",
+      "unit_sha256": "63c31587b9da13c02017803cc936045cb248b48a37833fb076e05b761941aa4c",
+      "scope": "out_of_scope",
+      "role": "target",
+      "reason": "BRD §3.3: đã đọc đơn vị; trách nhiệm cơ quan bảo vệ công trình, thủ tục cấp phép hoặc khai thác cơ sở dữ liệu, không quy tắc/hành vi trực tiếp cho người tham gia; không loại cả NĐ165.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "7b74d5e56d430546583208ba5c063b0fcf2e4aadddb1898abe6bb2ffce9bdb21"
+    },
+    {
+      "unit_id": "u_8e3cd0fcd3483323d8be8cfdd1ae1e77f0f0af5ba3250cb9ee313332e8a561d0",
+      "unit_sha256": "5dceb7d2fb4e41227b03bc8be23166aea3baa60d4cd543555affaf540ee58ad2",
+      "scope": "out_of_scope",
+      "role": "target",
+      "reason": "BRD §3.3: đã đọc đơn vị; trách nhiệm cơ quan bảo vệ công trình, thủ tục cấp phép hoặc khai thác cơ sở dữ liệu, không quy tắc/hành vi trực tiếp cho người tham gia; không loại cả NĐ165.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "ecd5965cceb53fb1a0130375401ff0e53e6f21a624c925f9af60bb8298f8cee9"
+    },
+    {
+      "unit_id": "u_c6a4f5154b454d74a3d970deec43bd153a1241ee0f49b11476b25ec44b6fc2c0",
+      "unit_sha256": "12708327c8c9062a7bf7177e4557bc21000f7d5a6ef055e302566854db1c42d1",
+      "scope": "out_of_scope",
+      "role": "target",
+      "reason": "BRD §3.3: đã đọc đơn vị; trách nhiệm cơ quan bảo vệ công trình, thủ tục cấp phép hoặc khai thác cơ sở dữ liệu, không quy tắc/hành vi trực tiếp cho người tham gia; không loại cả NĐ165.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "a6fcb5b20c5416850bf4715bea01ccd9564d9b9ec831c8be9c50b4105e85cd2d"
+    },
+    {
+      "unit_id": "u_cb17f3a068c82358ba71533b8fea85490bbcc54f3549dfd03342ba5e22774131",
+      "unit_sha256": "0a93ee7a45d97f4443caa35c1b6f49a2716d59247c1689344f494b21a8ce34de",
+      "scope": "out_of_scope",
+      "role": "target",
+      "reason": "BRD §3.3: đã đọc đơn vị; trách nhiệm cơ quan bảo vệ công trình, thủ tục cấp phép hoặc khai thác cơ sở dữ liệu, không quy tắc/hành vi trực tiếp cho người tham gia; không loại cả NĐ165.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "53bb41a09300eacaefb497c91138fa4779591874bcba158411f589fe07ca314a"
+    },
+    {
+      "unit_id": "u_28ebdfc63fa424fb168fcd39450e576b18d05458ff9e1b15d6a81d317ba95007",
+      "unit_sha256": "3b2811de9c4015fd51d4bc47a48b90104f00398ed5f5fbbe84eaae943477e0b5",
+      "scope": "out_of_scope",
+      "role": "structural",
+      "reason": "BRD §3.3: đã đọc đơn vị; trách nhiệm cơ quan bảo vệ công trình, thủ tục cấp phép hoặc khai thác cơ sở dữ liệu, không quy tắc/hành vi trực tiếp cho người tham gia; không loại cả NĐ165.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "unit_id": "u_8fa61ee61b3645c8e141a81f8f063834fd82c6753b28ffe7176f28cca79ed06a",
+      "unit_sha256": "1b6ad512d59f537aea9f7c591fc88e2b9f883ec6c6a1dd8f523b91910adda7c3",
+      "scope": "in_scope",
+      "role": "supporting",
+      "reason": "Điều kiện mục đích/loại đường/phương án/trách nhiệm khi sử dụng tạm lòng đường: supporting hữu hạn cho NĐ168 A12K12, không target hạ tầng độc lập.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "b5f4ad26eac5168a083a08588a12a3ac540f2573e05bd04bb30b3f91e96a4c7a"
+    },
+    {
+      "unit_id": "u_26cd28578850b0ef16a1eed7e0b7a36405c05c33a7320767c5329005a464971c",
+      "unit_sha256": "af1811f9f49f850de71c24dc46512bbaa8e75e6c6ccbc4c5f13b04af5cdf3563",
+      "scope": "in_scope",
+      "role": "supporting",
+      "reason": "Điều kiện mục đích/loại đường/phương án/trách nhiệm khi sử dụng tạm lòng đường: supporting hữu hạn cho NĐ168 A12K12, không target hạ tầng độc lập.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "05e8b546420bb6d99a54cba881e65cb2ae5000e13338c64efb5b3d1a13c1a899"
+    },
+    {
+      "unit_id": "u_1d2e5b08e018d13124ec8ffa5935cd71882a02f8c59ec7c23d2070bbbe510b56",
+      "unit_sha256": "846d8300a10aaf93288042486dee78eab4053b1121564bd1b91685327745df2b",
+      "scope": "in_scope",
+      "role": "supporting",
+      "reason": "Điều kiện mục đích/loại đường/phương án/trách nhiệm khi sử dụng tạm lòng đường: supporting hữu hạn cho NĐ168 A12K12, không target hạ tầng độc lập.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "9bc00edfd7995fcff6cd52c77d9ef19cfb500898078d148f8260b3829c622b11"
+    },
+    {
+      "unit_id": "u_45748136016badee374ebd0ca2e0753d20087b5b423b7a43f09b71e48a520c8c",
+      "unit_sha256": "4afac501e2570af368fcf4d3479eb9a51bedcafc94d71fcab13a17a529b4fd40",
+      "scope": "in_scope",
+      "role": "supporting",
+      "reason": "Điều kiện mục đích/loại đường/phương án/trách nhiệm khi sử dụng tạm lòng đường: supporting hữu hạn cho NĐ168 A12K12, không target hạ tầng độc lập.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "5c143c0335c33ea1c5d580539419b06459d0de34aa4e057ce5a8ce3ca6a147b9"
+    },
+    {
+      "unit_id": "u_4de3fb32538ee3fe8dd8d9e40c4b68cf0998739cd271131bd9243e96bdd134cf",
+      "unit_sha256": "fcc45930d53e3bb086f210fd12f2808a2cb9276234f527376db0d16b786733c9",
+      "scope": "in_scope",
+      "role": "supporting",
+      "reason": "Điều kiện mục đích/loại đường/phương án/trách nhiệm khi sử dụng tạm lòng đường: supporting hữu hạn cho NĐ168 A12K12, không target hạ tầng độc lập.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "6a89ba3dc903972665661b14634271d9ee7d0df93559440190c811840c4e07f9"
+    },
+    {
+      "unit_id": "u_36c7bd78421b65731c93845480da100056dd8cc59aa7c41329af9dfdaef7451a",
+      "unit_sha256": "6c6424992204609d00a84fee0820325f6202182c6b7830336d81fec923b4f777",
+      "scope": "in_scope",
+      "role": "supporting",
+      "reason": "Điều kiện mục đích/loại đường/phương án/trách nhiệm khi sử dụng tạm lòng đường: supporting hữu hạn cho NĐ168 A12K12, không target hạ tầng độc lập.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "dac3b822804a226baecb9f9653e1b406fde713a2e42d5361fa192c531c02dc84"
+    },
+    {
+      "unit_id": "u_ba38895f38543254ff0ed2c0869f51c729741d1beeb5bd27ac242d8e56d8f9cf",
+      "unit_sha256": "c0cb1003e3420b0a03d76739e5bea1a5ae522afe5cafd83d14803f1d81e35665",
+      "scope": "in_scope",
+      "role": "supporting",
+      "reason": "Điều kiện mục đích/loại đường/phương án/trách nhiệm khi sử dụng tạm lòng đường: supporting hữu hạn cho NĐ168 A12K12, không target hạ tầng độc lập.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "251ee55b0c65e7313e4ff3b3f7238d6c387ff5a69b7405151f90e49f563b6e5c"
+    },
+    {
+      "unit_id": "u_9418e67bb7ae99315430231b9d33e881751a05c9510622a81caab09ae4853798",
+      "unit_sha256": "9d3a31362be828fd12d426df051aca4a093b3ee193f0a8263800b228c310ea72",
+      "scope": "in_scope",
+      "role": "supporting",
+      "reason": "Điều kiện mục đích/loại đường/phương án/trách nhiệm khi sử dụng tạm lòng đường: supporting hữu hạn cho NĐ168 A12K12, không target hạ tầng độc lập.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "f546762e7a53f33eac331f9e20b4ada3dfb801374cf2f631a06a207c222e45f2"
+    },
+    {
+      "unit_id": "u_f6c8d1502600f0d8352b803f9e7589ff63b5d3aebff5e719b668fd4db8a5ab8c",
+      "unit_sha256": "6a9ab030a43b7249b53915272c96cdf08d9d872e34be6779dba3221fadd7c978",
+      "scope": "in_scope",
+      "role": "supporting",
+      "reason": "Điều kiện mục đích/loại đường/phương án/trách nhiệm khi sử dụng tạm lòng đường: supporting hữu hạn cho NĐ168 A12K12, không target hạ tầng độc lập.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "b57b97758094e0b5850167162192c47b9f9338dcb1228507b61bb11d611e40eb"
+    },
+    {
+      "unit_id": "u_8e4b7f262481c6f9620a8ec1fa818c1f328eee7ccbcde240b46c0ff18454358b",
+      "unit_sha256": "2b8610058e2607fde6e1cdf73732dfe01f4b1ec12aa845b249bab064d072a027",
+      "scope": "in_scope",
+      "role": "supporting",
+      "reason": "Điều kiện mục đích/loại đường/phương án/trách nhiệm khi sử dụng tạm lòng đường: supporting hữu hạn cho NĐ168 A12K12, không target hạ tầng độc lập.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "7249e0565e9523fd2f3618fc6421e6560df28bc3f65aedf07f011b1484b31827"
+    },
+    {
+      "unit_id": "u_44a2d1d371b6e093e8f7d061d775e60253c3e4d493dd214b9eb246f65b92812f",
+      "unit_sha256": "64e7faf327f93eac9bbf52eba4681c1a39ac9ec129655a71b1fb73d9258c3678",
+      "scope": "out_of_scope",
+      "role": "target",
+      "reason": "BRD §3.3: đã đọc đơn vị; trách nhiệm cơ quan bảo vệ công trình, thủ tục cấp phép hoặc khai thác cơ sở dữ liệu, không quy tắc/hành vi trực tiếp cho người tham gia; không loại cả NĐ165.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "9bb106f01efd45222ade1ac55351165fc3166748a2303854546ffb9b8a32edc9"
+    },
+    {
+      "unit_id": "u_3010d4979fcc1a6bf4cdb09a4b1921e4d95b6ffbd002ac31ac3c8a4b3a0e2531",
+      "unit_sha256": "893787739e21289ee99145e54be67bbd57df9690d65b4f9a5219adf30a7c6699",
+      "scope": "out_of_scope",
+      "role": "target",
+      "reason": "BRD §3.3: đã đọc đơn vị; trách nhiệm cơ quan bảo vệ công trình, thủ tục cấp phép hoặc khai thác cơ sở dữ liệu, không quy tắc/hành vi trực tiếp cho người tham gia; không loại cả NĐ165.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "e5c0b11a957e5fd9e18480f7cc8d2bcc8878f83ac465be3383fe2dde9c7b3156"
+    },
+    {
+      "unit_id": "u_5d0e69b61fa1a7f960f70824824933b863c7039ec2fef8b9cd8b05d2bf57a4ac",
+      "unit_sha256": "8db6f44710df3fc0bfa980a1bec29b4edb991b70093cfa5e76f1be7f9c4ea216",
+      "scope": "out_of_scope",
+      "role": "target",
+      "reason": "BRD §3.3: đã đọc đơn vị; trách nhiệm cơ quan bảo vệ công trình, thủ tục cấp phép hoặc khai thác cơ sở dữ liệu, không quy tắc/hành vi trực tiếp cho người tham gia; không loại cả NĐ165.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "f100e9ca48646456ddebdf849eb87070961bbf0f1317aa692907c062af91c8d6"
+    },
+    {
+      "unit_id": "u_4c72bcfe0fe28af03f3bedad06cce133958daf9ee6ee18d122e229e13f7d84a3",
+      "unit_sha256": "e4391846f5af4adad1ac476a89964b548a8edf243e59dd06769de6a36a8ec979",
+      "scope": "out_of_scope",
+      "role": "target",
+      "reason": "BRD §3.3: đã đọc đơn vị; trách nhiệm cơ quan bảo vệ công trình, thủ tục cấp phép hoặc khai thác cơ sở dữ liệu, không quy tắc/hành vi trực tiếp cho người tham gia; không loại cả NĐ165.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "4bb70812a55d916833392d114fe0bd1f01e5792070d8e715cd5624ba4103755e"
+    },
+    {
+      "unit_id": "u_f065cd30ff44689c7c0b8fe64561d7d46eb5d898bc13d7c3af7f60e82269164a",
+      "unit_sha256": "fbf939c5dd22582d433800d817e67452ceee7513ed24049645921e867947132f",
+      "scope": "out_of_scope",
+      "role": "target",
+      "reason": "BRD §3.3: đã đọc đơn vị; trách nhiệm cơ quan bảo vệ công trình, thủ tục cấp phép hoặc khai thác cơ sở dữ liệu, không quy tắc/hành vi trực tiếp cho người tham gia; không loại cả NĐ165.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "417774bb4de7482f93e0d17b38839e149e9202099bd84f90a99d42c0298ac173"
+    },
+    {
+      "unit_id": "u_496bac8eeb92f1a87bb845998df612bac125263e05a4d29feac2e8e6b63ef1b9",
+      "unit_sha256": "782e686e110e6e1b72c1aabd6049320f9f1995b5322877895d800c25a4131d6c",
+      "scope": "out_of_scope",
+      "role": "target",
+      "reason": "BRD §3.3: đã đọc đơn vị; trách nhiệm cơ quan bảo vệ công trình, thủ tục cấp phép hoặc khai thác cơ sở dữ liệu, không quy tắc/hành vi trực tiếp cho người tham gia; không loại cả NĐ165.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "0c5e51ee237ad9ae0e5949b06e6bf03ab1cc9bdf8cbd17737111de1749374fe3"
+    },
+    {
+      "unit_id": "u_00585259bc61ae7c9f92241f67a2b9aaa521bb2982dd12f78473626604825366",
+      "unit_sha256": "7051a92c23abe7538377d573df5b49d78341037080afd3c8f9c5fd345bb720e3",
+      "scope": "out_of_scope",
+      "role": "target",
+      "reason": "BRD §3.3: đã đọc đơn vị; trách nhiệm cơ quan bảo vệ công trình, thủ tục cấp phép hoặc khai thác cơ sở dữ liệu, không quy tắc/hành vi trực tiếp cho người tham gia; không loại cả NĐ165.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "f90320e098ca6c36454fbf15d4550ee8aab24ef64fb9ee2808bc7ec8fd6c4ed5"
+    },
+    {
+      "unit_id": "u_045f9c108c1a55a2e5d7d970c4dc61d292534967863fbd4ed6649622e807f95f",
+      "unit_sha256": "48d65d61a8b2a107aaa54c85d03523b190a92613b4b529de4d604e1934a1d36f",
+      "scope": "out_of_scope",
+      "role": "target",
+      "reason": "BRD §3.3: đã đọc đơn vị; trách nhiệm cơ quan bảo vệ công trình, thủ tục cấp phép hoặc khai thác cơ sở dữ liệu, không quy tắc/hành vi trực tiếp cho người tham gia; không loại cả NĐ165.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "aadda56c5ba6384e4011dc7404927f1ddd4ab9b248f88e08d3c0b44195536ecd"
+    },
+    {
+      "unit_id": "u_5148f1283e065e4ef5bee8356351473a0fd4058b7b71d003a0789010d36f443b",
+      "unit_sha256": "465475db7f87e4f3b177dd35f5f1413686815bb9c40a16273c62b5002a28640e",
+      "scope": "out_of_scope",
+      "role": "target",
+      "reason": "BRD §3.3: đã đọc đơn vị; trách nhiệm cơ quan bảo vệ công trình, thủ tục cấp phép hoặc khai thác cơ sở dữ liệu, không quy tắc/hành vi trực tiếp cho người tham gia; không loại cả NĐ165.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "48062192ea3b977b0d3a14eeeaec456e87b277d2cd4ff8311ddc672602ef052b"
+    },
+    {
+      "unit_id": "u_446081913d12dcf12b065e29c86cec877678d04bc342cd0086f537943a04d6f2",
+      "unit_sha256": "5dd0f291daf3704d9586956c1d5a2de55f153bf394567378f49d9553634de121",
+      "scope": "out_of_scope",
+      "role": "target",
+      "reason": "BRD §3.3: đã đọc đơn vị; trách nhiệm cơ quan bảo vệ công trình, thủ tục cấp phép hoặc khai thác cơ sở dữ liệu, không quy tắc/hành vi trực tiếp cho người tham gia; không loại cả NĐ165.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "fdd3ee7f7babd385d5a3bc8587ee201178fc958f2d885208855eab6b80ce177d"
+    },
+    {
+      "unit_id": "u_6e5b13ac56f39c7be1777b221690d0ddeaa156775edc8314876743dd97a65797",
+      "unit_sha256": "80135e49c0e0daf75088b658c23e8cb59de71b3a2149fbf9972f934c99ffb607",
+      "scope": "out_of_scope",
+      "role": "target",
+      "reason": "BRD §3.3: đã đọc đơn vị; trách nhiệm cơ quan bảo vệ công trình, thủ tục cấp phép hoặc khai thác cơ sở dữ liệu, không quy tắc/hành vi trực tiếp cho người tham gia; không loại cả NĐ165.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "71fe923b2cf53f1eb07bf5b8a4a0b197fa487530807539ef1dcd77328e9759f6"
+    },
+    {
+      "unit_id": "u_f78d6d262a3d133b63d29e9112f22146acbde876e2752554e234bf132cdd23f2",
+      "unit_sha256": "eda527133ccd3654d48372b4af01e59dc1a204363efc97726071ebf1f10bfde6",
+      "scope": "out_of_scope",
+      "role": "target",
+      "reason": "BRD §3.3: đã đọc đơn vị; trách nhiệm cơ quan bảo vệ công trình, thủ tục cấp phép hoặc khai thác cơ sở dữ liệu, không quy tắc/hành vi trực tiếp cho người tham gia; không loại cả NĐ165.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "b350a274133c19d452cb3991a8327e084ae4ebf81adeb6a34cdafba58d9ad9b9"
+    },
+    {
+      "unit_id": "u_06ad71e61d1714b949d4945695285d6d436691d63fee7fe01fa37e858f990afe",
+      "unit_sha256": "3acb157051ed1e2cb60310cd63b2684abf6db98c4c865de33f85d5557e664422",
+      "scope": "out_of_scope",
+      "role": "target",
+      "reason": "BRD §3.3: đã đọc đơn vị; trách nhiệm cơ quan bảo vệ công trình, thủ tục cấp phép hoặc khai thác cơ sở dữ liệu, không quy tắc/hành vi trực tiếp cho người tham gia; không loại cả NĐ165.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "6181ebf8ba8a1e8752a901b882ba1e7e9948729d876602d44748d56be1e06a67"
+    },
+    {
+      "unit_id": "u_da16630f2ff7bcb6d3dde2e11d505d39f03af299325665eaea8bc5064c671036",
+      "unit_sha256": "9fc6628d76da7c17a5c7f2fbb5b7fcd4dc6dfb3b1357603064c8b98c9907c4c6",
+      "scope": "out_of_scope",
+      "role": "target",
+      "reason": "BRD §3.3: đã đọc đơn vị; trách nhiệm cơ quan bảo vệ công trình, thủ tục cấp phép hoặc khai thác cơ sở dữ liệu, không quy tắc/hành vi trực tiếp cho người tham gia; không loại cả NĐ165.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "d915b3759958c4954c6b91a4f7e4f7e382e391529492de5e483a11ade443b472"
+    },
+    {
+      "unit_id": "u_42608585847435adc070dabaf122a1992eb5a412cb7c33f965148e72d5f100dd",
+      "unit_sha256": "0e3188f2e130b4a0f287c8bcfc7e7c902947719e243516e330cc4cdf64b27e9d",
+      "scope": "out_of_scope",
+      "role": "target",
+      "reason": "BRD §3.3: đã đọc đơn vị; trách nhiệm cơ quan bảo vệ công trình, thủ tục cấp phép hoặc khai thác cơ sở dữ liệu, không quy tắc/hành vi trực tiếp cho người tham gia; không loại cả NĐ165.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "047bff452945e07e67020351402209ea895818f0167eef83a2bc00b498ccf1ae"
+    },
+    {
+      "unit_id": "u_362e5eb8562b95b1a43cbde48f8ceb5d03595d994e8e558d4617a820546f6e08",
+      "unit_sha256": "3c2794c34e2f1dc1032a9a30d2a43c9cddd2c51294a6f7148df50885a3adafce",
+      "scope": "out_of_scope",
+      "role": "target",
+      "reason": "BRD §3.3: đã đọc đơn vị; trách nhiệm cơ quan bảo vệ công trình, thủ tục cấp phép hoặc khai thác cơ sở dữ liệu, không quy tắc/hành vi trực tiếp cho người tham gia; không loại cả NĐ165.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "cefce8d1cde545516d59498bbf9a4ba5619acdc538f85f328798aadfe5b45672"
+    },
+    {
+      "unit_id": "u_5824db28138b34ebd21aaf86c25b13af5872bf31757654d105e642cd28710a2a",
+      "unit_sha256": "d560b1bba56218b233ae10064e3b16cddc6ee5366f5698f9bfee7665e5fa8926",
+      "scope": "out_of_scope",
+      "role": "target",
+      "reason": "BRD §3.3: đã đọc đơn vị; trách nhiệm cơ quan bảo vệ công trình, thủ tục cấp phép hoặc khai thác cơ sở dữ liệu, không quy tắc/hành vi trực tiếp cho người tham gia; không loại cả NĐ165.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "6345c08c30d8a35354b84ab57aa7d07e3d3db4ea9cb1bf870b496a2056aca6a2"
+    },
+    {
+      "unit_id": "u_5e6c9572f6c9a5d1d29b9938a3471d6c63c98ff19c1315a551b1dd9f0872ec35",
+      "unit_sha256": "c736e91b8276deb026093c3eb07c8533e3fa36d7cab9ad11996cabfbbe9f9f32",
+      "scope": "out_of_scope",
+      "role": "target",
+      "reason": "BRD §3.3: đã đọc đơn vị; trách nhiệm cơ quan bảo vệ công trình, thủ tục cấp phép hoặc khai thác cơ sở dữ liệu, không quy tắc/hành vi trực tiếp cho người tham gia; không loại cả NĐ165.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "7051be28af61ba23c3553ff2a7d657a32985a7e63f4900fc71cc82922a04a29a"
+    },
+    {
+      "unit_id": "u_0e4becbb083dfb8a6713441bae4b975c82077ee8a1cc0d57f503a00b1f9e5a72",
+      "unit_sha256": "b86032c4e9d0d26cc29697899252ec784b17f1954b1bcfc2ddd6ec2ae62850dc",
+      "scope": "in_scope",
+      "role": "supporting",
+      "reason": "Điều kiện mục đích/loại đường/phương án/trách nhiệm khi sử dụng tạm lòng đường: supporting hữu hạn cho NĐ168 A12K12, không target hạ tầng độc lập.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "7f9eb21b9b89d1ed7d7efdb878a193a5a54a01e1dd9ce6c9c5c52a00fa966563"
+    },
+    {
+      "unit_id": "u_39528dd05863eb75b9eaddc5f5ddc8f6161729032e1141972b4ae8b5e5d7751f",
+      "unit_sha256": "e2c4ccf9dabbe2cbac34d17c141fe39cac49a3fd8ff042634c410e4912000aa7",
+      "scope": "in_scope",
+      "role": "supporting",
+      "reason": "Điều kiện mục đích/loại đường/phương án/trách nhiệm khi sử dụng tạm lòng đường: supporting hữu hạn cho NĐ168 A12K12, không target hạ tầng độc lập.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "202c00ed0d626c3f2442741d7319d2db3b84196b8346101e28986ddfd05aa9f7"
+    },
+    {
+      "unit_id": "u_d70152d5e02b30710517f4ead7ecec759a0cfb8e388e89a9cc976f866e7d1700",
+      "unit_sha256": "6b37381d263f1eb51bd7c7f0544e3c0ea3b8186e498204089e8e3f9eaae4952b",
+      "scope": "in_scope",
+      "role": "supporting",
+      "reason": "Điều kiện mục đích/loại đường/phương án/trách nhiệm khi sử dụng tạm lòng đường: supporting hữu hạn cho NĐ168 A12K12, không target hạ tầng độc lập.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "b5f4de672bb8ecd7202b06270ea780d3309afa045aa4cf5687c33581348a01e7"
+    },
+    {
+      "unit_id": "u_414d7afd779f6e2c8579f6604c4815652d77a7a0c9bc3b7d028c2b436df4c79f",
+      "unit_sha256": "144bc01416a93d0156b76817d693f5baf165b772092f05111aa5f9d1ad6709cc",
+      "scope": "in_scope",
+      "role": "supporting",
+      "reason": "Điều kiện mục đích/loại đường/phương án/trách nhiệm khi sử dụng tạm lòng đường: supporting hữu hạn cho NĐ168 A12K12, không target hạ tầng độc lập.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "67b646d5840c8774728612a762e96e0ba965bf00009a2a0f07bf7fbb532c9872"
+    },
+    {
+      "unit_id": "u_356a8ea5708427e707719c2a24fc8cdb22bd78958f341742ceefd2fc9d953bd8",
+      "unit_sha256": "35c0529f00327afdc0412e829ad2f32c08a3f6be85f535e3c0f881a25ac39950",
+      "scope": "in_scope",
+      "role": "supporting",
+      "reason": "Điều kiện mục đích/loại đường/phương án/trách nhiệm khi sử dụng tạm lòng đường: supporting hữu hạn cho NĐ168 A12K12, không target hạ tầng độc lập.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "c366112c41d49afa18a87407508d28961887af6f7555314d67d347beb345806d"
+    },
+    {
+      "unit_id": "u_0b909a412d4311528081c335b1f9dd1cfecf0858f213b15f44a027c11abb13c3",
+      "unit_sha256": "cc384ce6a6e102c6cf07c15224351572a9ff6eb458dc504a86ad32b31a972386",
+      "scope": "in_scope",
+      "role": "supporting",
+      "reason": "Điều kiện mục đích/loại đường/phương án/trách nhiệm khi sử dụng tạm lòng đường: supporting hữu hạn cho NĐ168 A12K12, không target hạ tầng độc lập.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "3008422f22a2e4fe269d4882df1f179ad1d72f7fcfe061cdac83fb37a98d173d"
+    },
+    {
+      "unit_id": "u_0940c7c0750708dba3e4933125a29a84a5f62d45e3416f86d25ed7d2c29710c1",
+      "unit_sha256": "20ea471041beeb0859e91f71d4b644b00ecca53c8f76cba77bee6da8590fd7b5",
+      "scope": "out_of_scope",
+      "role": "target",
+      "reason": "BRD §3.3: đã đọc đơn vị; trách nhiệm cơ quan bảo vệ công trình, thủ tục cấp phép hoặc khai thác cơ sở dữ liệu, không quy tắc/hành vi trực tiếp cho người tham gia; không loại cả NĐ165.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "4bd8b323c96d12962c36739ea2fa7095365a928f3f48d28da343f7b944e2fdf6"
+    },
+    {
+      "unit_id": "u_18c0f3dfe5a5db4f87ac31be32db72ab03daec1cc3b35fd1bac0978380962767",
+      "unit_sha256": "f1121375f13e7da09e0a506aec9e89b2905ed265ed228c571873de9fac28b357",
+      "scope": "out_of_scope",
+      "role": "structural",
+      "reason": "BRD §3.3: đã đọc đơn vị; trách nhiệm cơ quan bảo vệ công trình, thủ tục cấp phép hoặc khai thác cơ sở dữ liệu, không quy tắc/hành vi trực tiếp cho người tham gia; không loại cả NĐ165.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "unit_id": "u_4161e15e169481a20f334197760036370272219502e39f98636f5018604e9f47",
+      "unit_sha256": "158c226c72c5459132dc46a5335804ab632f117227d55f12df7e16dea3728e3c",
+      "scope": "out_of_scope",
+      "role": "target",
+      "reason": "BRD §3.3: đã đọc đơn vị; trách nhiệm cơ quan bảo vệ công trình, thủ tục cấp phép hoặc khai thác cơ sở dữ liệu, không quy tắc/hành vi trực tiếp cho người tham gia; không loại cả NĐ165.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "1b720ff1f9f1fa1b5f2a58e4f303d5ac646b8b2f1d31fcf7dd531175cbe8a73b"
+    },
+    {
+      "unit_id": "u_a250b66db98f81c23614914b98eece8b99c8adc21894a6feb01f27377f8e229a",
+      "unit_sha256": "bda67bdbdb8400c23c02385d492f35bfd5f9a4d9e987c4208de1f6e49fd18183",
+      "scope": "out_of_scope",
+      "role": "target",
+      "reason": "BRD §3.3: đã đọc đơn vị; trách nhiệm cơ quan bảo vệ công trình, thủ tục cấp phép hoặc khai thác cơ sở dữ liệu, không quy tắc/hành vi trực tiếp cho người tham gia; không loại cả NĐ165.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "0fe0a69c0fcaf4eeb4c4f0e8672258dc4f15c12d265e7d348c2cf6b031b31d22"
+    },
+    {
+      "unit_id": "u_2248904ea60f2bc0130ad39265859bd14c34f4f5b8bcd92fc9e0d1ad72213252",
+      "unit_sha256": "cb7e65bcd14dae5be5f89ebe7c02bc8c3df33497e4e65176d203c8d1d2d76e2e",
+      "scope": "out_of_scope",
+      "role": "target",
+      "reason": "BRD §3.3: đã đọc đơn vị; trách nhiệm cơ quan bảo vệ công trình, thủ tục cấp phép hoặc khai thác cơ sở dữ liệu, không quy tắc/hành vi trực tiếp cho người tham gia; không loại cả NĐ165.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "4b1e28d1f569eb8384ce2c4fabc8261208bcd303b88ac3084ebf87ec985b8b54"
+    },
+    {
+      "unit_id": "u_e794845c36ea54661f8928739b51ef8ae3bd4440c1c8d01492cd74205f0bad96",
+      "unit_sha256": "2faaba4936a8a4df35d5cc28053bc5c1acdd113d8a253cedd77e0753a2dae7e1",
+      "scope": "out_of_scope",
+      "role": "target",
+      "reason": "BRD §3.3: đã đọc đơn vị; trách nhiệm cơ quan bảo vệ công trình, thủ tục cấp phép hoặc khai thác cơ sở dữ liệu, không quy tắc/hành vi trực tiếp cho người tham gia; không loại cả NĐ165.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "d5a619a536fc76fc760373af05641356baeb9db0eacc949b55f594474c0b266b"
+    },
+    {
+      "unit_id": "u_17c3e511b24cc32084fee92fae99f053c2048aeeda6c4a3f320955513f4c550c",
+      "unit_sha256": "3427f3d20a11b916900ce06aa5417936cf3f66e304e68c45e875f95901c503de",
+      "scope": "out_of_scope",
+      "role": "target",
+      "reason": "BRD §3.3: đã đọc đơn vị; trách nhiệm cơ quan bảo vệ công trình, thủ tục cấp phép hoặc khai thác cơ sở dữ liệu, không quy tắc/hành vi trực tiếp cho người tham gia; không loại cả NĐ165.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "7b557afa00de8703a4decd4c77cdb0715451c7d411bd90414b0330e96628cffe"
+    },
+    {
+      "unit_id": "u_ec293ca81147d147d03c3d95d668019fb49a0865c3bfc47919c7b5c71b0573ca",
+      "unit_sha256": "2692d7824cea049487b4eef64c2d02329b738755145334eef71567416ba4f57f",
+      "scope": "out_of_scope",
+      "role": "target",
+      "reason": "BRD §3.3: đã đọc đơn vị; trách nhiệm cơ quan bảo vệ công trình, thủ tục cấp phép hoặc khai thác cơ sở dữ liệu, không quy tắc/hành vi trực tiếp cho người tham gia; không loại cả NĐ165.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "42bb17686f8e8da262d6b30a42843c13c60e8b4af3f00c0925fd06b9879ada89"
+    },
+    {
+      "unit_id": "u_86da1f1e964d01ff4439822ee13d5a17759b65af9f1cba8ca276e3e80e2c9fa9",
+      "unit_sha256": "20ae0d6fc54477823114e32b48e4056ceddb7930b3e804539851b4e9cf9a6dfc",
+      "scope": "out_of_scope",
+      "role": "target",
+      "reason": "BRD §3.3: đã đọc đơn vị; trách nhiệm cơ quan bảo vệ công trình, thủ tục cấp phép hoặc khai thác cơ sở dữ liệu, không quy tắc/hành vi trực tiếp cho người tham gia; không loại cả NĐ165.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "d7af16095ba3b4b5ff6f77c360634ffc690c1dba79c27a8d154d2c75e3d2cf01"
+    },
+    {
+      "unit_id": "u_04ae36396f5b3a7211c354ff206e45400676fb84714dbfb2a6d15e2edf09991a",
+      "unit_sha256": "dfc61b1e4c8e79d2f76594d3e7e9d52404ca2d9d3fa84580ac893cfd0977ce85",
+      "scope": "out_of_scope",
+      "role": "target",
+      "reason": "BRD §3.3: đã đọc đơn vị; trách nhiệm cơ quan bảo vệ công trình, thủ tục cấp phép hoặc khai thác cơ sở dữ liệu, không quy tắc/hành vi trực tiếp cho người tham gia; không loại cả NĐ165.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "37b1c2043a754d3cf51254837c09a15f243649eee0b1245a0339263fa71f5c27"
+    },
+    {
+      "unit_id": "u_a36c5fc46ac7320413bf51a896588be8829dc5858014eaabbb341ce896a689a1",
+      "unit_sha256": "548f6786296535e25c72deb45066f7f3a28aceb6fec2bd376abef4746268b4a8",
+      "scope": "out_of_scope",
+      "role": "target",
+      "reason": "BRD §3.3: đã đọc đơn vị; trách nhiệm cơ quan bảo vệ công trình, thủ tục cấp phép hoặc khai thác cơ sở dữ liệu, không quy tắc/hành vi trực tiếp cho người tham gia; không loại cả NĐ165.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "1874965b45b73ab4dd0471b8d77c8422af4843817a6ad504683ea8a77bc878c3"
+    },
+    {
+      "unit_id": "u_bac61128c0635ba0174265c0dc08b582ccf9a941873b22f82cb7e4140bc30f1b",
+      "unit_sha256": "4472f9082cbef0e4601fd11a7a02d402434e7db2b0cfdaad671029ea4b1ecf5a",
+      "scope": "out_of_scope",
+      "role": "target",
+      "reason": "BRD §3.3: đã đọc đơn vị; trách nhiệm cơ quan bảo vệ công trình, thủ tục cấp phép hoặc khai thác cơ sở dữ liệu, không quy tắc/hành vi trực tiếp cho người tham gia; không loại cả NĐ165.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "2b5a32522eafdc6b52a76815f30ffc77928e87587e82ace2e73cc7ab9e8e24bb"
+    },
+    {
+      "unit_id": "u_612e810c704af9c256e85f8670ef3dda083645835f74f14f539828b74b2c8f29",
+      "unit_sha256": "dedaa8592500e177fc82e67bfad8d5ccc8162df4874da3d76514cb8461b6ae05",
+      "scope": "in_scope",
+      "role": "target",
+      "reason": "BRD §3.1/UC03: đã đọc lại nội dung cá nhân người học/người có GPLX, điều kiện dự sát hạch/sử dụng GPLX; không suy included toàn đào tạo hay toàn cha. Dẫn chiếu hồ sơ/chương trình/điều ước thiếu phải pending dependency.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "f5ecf9ac69e4c7f76ee21c2c71d10e01f210df77b0aa945dde7663d0adf02f23"
+    },
+    {
+      "unit_id": "u_4de95ec5fc3385432dfb942b5ddda2198b86ca06ca7f377bd35a512d099f782a",
+      "unit_sha256": "ed1256be4a9e1d9ef669bfac7fb116001d55f64cf936adb510ec1d8cec751e66",
+      "scope": "in_scope",
+      "role": "target",
+      "reason": "BRD §3.1/UC03: đã đọc lại nội dung cá nhân người học/người có GPLX, điều kiện dự sát hạch/sử dụng GPLX; không suy included toàn đào tạo hay toàn cha. Dẫn chiếu hồ sơ/chương trình/điều ước thiếu phải pending dependency.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "f7610acd2f950dcd2c5213206524763f5c5feb52864f2b1c4e700fa3099d3d3e"
+    },
+    {
+      "unit_id": "u_b08b8dd64beef9ac539e1e4094f33d06dfee544278740875b87f518607d18545",
+      "unit_sha256": "f4a2b673fb6d26bd93e7a421485476ccdd076e49786a694b656191b7dee0fea6",
+      "scope": "in_scope",
+      "role": "target",
+      "reason": "BRD §3.1/UC03: đã đọc lại nội dung cá nhân người học/người có GPLX, điều kiện dự sát hạch/sử dụng GPLX; không suy included toàn đào tạo hay toàn cha. Dẫn chiếu hồ sơ/chương trình/điều ước thiếu phải pending dependency.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "79cd53343f8a0c36130969c8665dd78ce651bf4342361aabd36003df418988ea"
+    },
+    {
+      "unit_id": "u_2ca91948102a96f93165234f44b35b6771754977332ff24eaadcef09f563c070",
+      "unit_sha256": "37f0353abbd4d650763cd38e145d0c7e69523f844cc0a7f9a652b51ebba73533",
+      "scope": "in_scope",
+      "role": "target",
+      "reason": "BRD §3.1/UC03: đã đọc lại nội dung cá nhân người học/người có GPLX, điều kiện dự sát hạch/sử dụng GPLX; không suy included toàn đào tạo hay toàn cha. Dẫn chiếu hồ sơ/chương trình/điều ước thiếu phải pending dependency.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "f1fc2b9baed0cde031a96b908bf2f196d3c5305ddb3c2aa7a1aac8d94bc69d24"
+    },
+    {
+      "unit_id": "u_f91a3b17562e9d37ea1a88833cbdc69696a2513ee2fd949bfbd069ca7c5815b4",
+      "unit_sha256": "7bec58e74ec334b49b480ca1e0070b3a92cb2005c31dc74a4cc010a078adbea9",
+      "scope": "in_scope",
+      "role": "target",
+      "reason": "BRD §3.1/UC03: đã đọc lại nội dung cá nhân người học/người có GPLX, điều kiện dự sát hạch/sử dụng GPLX; không suy included toàn đào tạo hay toàn cha. Dẫn chiếu hồ sơ/chương trình/điều ước thiếu phải pending dependency.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "0d1fade984e0e250f5c5cec9948c6f0aa0bbf7a50fc54b8664740b76dfa62614"
+    },
+    {
+      "unit_id": "u_013a92fd79d6f29ed0a90ef113f5967e92164ad1a36b2c18f01bf115b9fc183b",
+      "unit_sha256": "1afcfba50aaf2b2d594ddc9ebac428896a02348f9ada48cd318b3c505cabd080",
+      "scope": "in_scope",
+      "role": "target",
+      "reason": "BRD §3.1/UC03: đã đọc lại nội dung cá nhân người học/người có GPLX, điều kiện dự sát hạch/sử dụng GPLX; không suy included toàn đào tạo hay toàn cha. Dẫn chiếu hồ sơ/chương trình/điều ước thiếu phải pending dependency.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "7c08a72a60c893454026606c3aa13e9f165c097c9ad882ba6216c2038193fe1a"
+    },
+    {
+      "unit_id": "u_959f0a0c8cf23c4a8cd6807b06afc08d78f425a8ee65161c04bbb35ba9edacfd",
+      "unit_sha256": "87198fd190fa211552094baec3199dc8b6edb981409ef525fb08049f53073066",
+      "scope": "in_scope",
+      "role": "target",
+      "reason": "BRD §3.1/UC03: đã đọc lại nội dung cá nhân người học/người có GPLX, điều kiện dự sát hạch/sử dụng GPLX; không suy included toàn đào tạo hay toàn cha. Dẫn chiếu hồ sơ/chương trình/điều ước thiếu phải pending dependency.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "601e9870fa995aea9c2f3e79f56bdcbc982332ee87d48ce88799c831bc074f2f"
+    },
+    {
+      "unit_id": "u_82cd2e02f2125f7fd81165d4f5a84b4c8d1c7c82ff00e2fc41e53750d3bc7893",
+      "unit_sha256": "086c25e887e9d3460705b6384f2ddb790bb3cea5012e57079cf540e73e6a0cd5",
+      "scope": "in_scope",
+      "role": "target",
+      "reason": "BRD §3.1/UC03: đã đọc lại nội dung cá nhân người học/người có GPLX, điều kiện dự sát hạch/sử dụng GPLX; không suy included toàn đào tạo hay toàn cha. Dẫn chiếu hồ sơ/chương trình/điều ước thiếu phải pending dependency.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "90b7865226c27f0859aa6b605164a93a0000c3e62e55ce387dc361ce7ab610cd"
+    },
+    {
+      "unit_id": "u_cc750212d4d1d0acedc7bf23b136a34b4c78b6b39016297bba2acbd63133f4f4",
+      "unit_sha256": "5f93d2a275c4478a92738d9b93334e5e3b21f18628a7171e54bce3353735fe5a",
+      "scope": "in_scope",
+      "role": "target",
+      "reason": "BRD §3.1/UC03: đã đọc lại nội dung cá nhân người học/người có GPLX, điều kiện dự sát hạch/sử dụng GPLX; không suy included toàn đào tạo hay toàn cha. Dẫn chiếu hồ sơ/chương trình/điều ước thiếu phải pending dependency.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "2fa896c7f800f9286fc66bcf671c1a882d1cda346119ada1c088975f7e8a55c7"
+    },
+    {
+      "unit_id": "u_0d707b5f91b27e8c4845f29c17691afde9a1e33bb8494dc6aa48b734b2d35cb3",
+      "unit_sha256": "d3b2cf6f8b02191a2a94d737a8802e84021e66b77c59d1403add0fa940dc2371",
+      "scope": "in_scope",
+      "role": "target",
+      "reason": "BRD §3.1/UC03: đã đọc lại nội dung cá nhân người học/người có GPLX, điều kiện dự sát hạch/sử dụng GPLX; không suy included toàn đào tạo hay toàn cha. Dẫn chiếu hồ sơ/chương trình/điều ước thiếu phải pending dependency.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "67ad62332b696593c2f45393baee293a9a9cff2135f8b69439f95d8b9f41e846"
+    },
+    {
+      "unit_id": "u_65910a714146f080aa4079cae9e3b1e0e8577a73ce1986a047535cf2eb2b2108",
+      "unit_sha256": "bcf2d81a398450962b0b47393fe9a974b5302bc07c17d4100d0969ab276e9c62",
+      "scope": "in_scope",
+      "role": "target",
+      "reason": "BRD §3.1/UC03: đã đọc lại nội dung cá nhân người học/người có GPLX, điều kiện dự sát hạch/sử dụng GPLX; không suy included toàn đào tạo hay toàn cha. Dẫn chiếu hồ sơ/chương trình/điều ước thiếu phải pending dependency.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "ba5f4ffa146a84aa9223363c8659657280dff53c9f0e9491db4bf49b75c6aeee"
+    },
+    {
+      "unit_id": "u_bc0e903a60c91884409044fdd36aab1d935b121de022c7e64005757ec6641f9e",
+      "unit_sha256": "76c78c1a87f5d6b506b64797cca564f17f09579d7e57aff8f414aeb349ee4a52",
+      "scope": "in_scope",
+      "role": "target",
+      "reason": "BRD §3.1/UC03: đã đọc lại nội dung cá nhân người học/người có GPLX, điều kiện dự sát hạch/sử dụng GPLX; không suy included toàn đào tạo hay toàn cha. Dẫn chiếu hồ sơ/chương trình/điều ước thiếu phải pending dependency.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "0aadaeab966b3629197a2c6d45797d2fd5087c66df5dd53ed117698bb44a4528"
+    },
+    {
+      "unit_id": "u_845c7cdc625c860f5371f04bfcff884ba0f4cd22a4d493645770115c2864b607",
+      "unit_sha256": "9ec08228dfe25ea3efdc77ff3f61fc7185717bfbdaa951f1ead9509f7df55908",
+      "scope": "in_scope",
+      "role": "target",
+      "reason": "BRD §3.1/UC03: đã đọc lại nội dung cá nhân người học/người có GPLX, điều kiện dự sát hạch/sử dụng GPLX; không suy included toàn đào tạo hay toàn cha. Dẫn chiếu hồ sơ/chương trình/điều ước thiếu phải pending dependency.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "381d6f6fee3db53c37f5e80278cc1d382b0076ce83ff2ca64c8706e7a8f1cd50"
+    },
+    {
+      "unit_id": "u_6b3f355ff41cd804884df04b9e23af6b6be1537bfe0d4ca1622773d1a13b384d",
+      "unit_sha256": "4d89e84b9b11ec406e47103d9e89bee1323b58b0e1f2cfcd6e32f9978e2e82d6",
+      "scope": "in_scope",
+      "role": "target",
+      "reason": "BRD §3.1/UC03: đã đọc lại nội dung cá nhân người học/người có GPLX, điều kiện dự sát hạch/sử dụng GPLX; không suy included toàn đào tạo hay toàn cha. Dẫn chiếu hồ sơ/chương trình/điều ước thiếu phải pending dependency.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "196c29d5f5776729d325beec62f27095775e67ea8133a22d7d73dadd01863772"
+    },
+    {
+      "unit_id": "u_353935d3181f5b6b35f6ced3bd1d65c0ca00be2f49ae2f5189bd8c0c532cebc0",
+      "unit_sha256": "8d96d129d73a6e308e76ca784d978fb118dfbe09a1c4718d900ac2aac597881b",
+      "scope": "in_scope",
+      "role": "target",
+      "reason": "BRD §3.1/UC03: đã đọc lại nội dung cá nhân người học/người có GPLX, điều kiện dự sát hạch/sử dụng GPLX; không suy included toàn đào tạo hay toàn cha. Dẫn chiếu hồ sơ/chương trình/điều ước thiếu phải pending dependency.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "6f79f50cee761f842d0663f5362424b58e1f3484605e9de615527f48993330b2"
+    },
+    {
+      "unit_id": "u_ce43a1b6b92c7d59de85412f741b34c2b1cad6b4a2a7adce811f09a2c7258c23",
+      "unit_sha256": "4248f4953ed9f9184b059f7740f3d18cf134ce7179a82c3b4ae25a8c573547bf",
+      "scope": "in_scope",
+      "role": "target",
+      "reason": "BRD §3.1/UC03: đã đọc lại nội dung cá nhân người học/người có GPLX, điều kiện dự sát hạch/sử dụng GPLX; không suy included toàn đào tạo hay toàn cha. Dẫn chiếu hồ sơ/chương trình/điều ước thiếu phải pending dependency.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "264ce9e16cc94a9ed9b8aeff974d1efc676c717c99cf17248ab17821bdbe714d"
+    },
+    {
+      "unit_id": "u_f8416f6df50383e4db960ec6053f1ac74ad8b2263b927d565ae54c0896f44284",
+      "unit_sha256": "6e0b7d29ee94ffd79d712387d024eb1e18c792d45d51bfd0fb1a0fe4dd88fba6",
+      "scope": "in_scope",
+      "role": "target",
+      "reason": "BRD §3.1/UC03: đã đọc lại nội dung cá nhân người học/người có GPLX, điều kiện dự sát hạch/sử dụng GPLX; không suy included toàn đào tạo hay toàn cha. Dẫn chiếu hồ sơ/chương trình/điều ước thiếu phải pending dependency.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "275ddea8ec97fe90488169a2d9197aea54d7b7f683f4f7f898aa02c3b315ac4a"
+    },
+    {
+      "unit_id": "u_ed75ca014575486484a269a6eec6726407ea1b2a7e586ce939999f3f2ad6c1cf",
+      "unit_sha256": "e3d94a1077ec9b4f3d8f8bae6a9de436174de991ce78e2d07801f3d69ac97e3b",
+      "scope": "in_scope",
+      "role": "target",
+      "reason": "BRD §3.1/UC03: đã đọc lại nội dung cá nhân người học/người có GPLX, điều kiện dự sát hạch/sử dụng GPLX; không suy included toàn đào tạo hay toàn cha. Dẫn chiếu hồ sơ/chương trình/điều ước thiếu phải pending dependency.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "4f3c4447f8b664d5ba81108c096b63f5f06c402b2f0fb3b51dd5b957daba7c41"
+    },
+    {
+      "unit_id": "u_018cd1439007ecba224d59e83b7740dc78b9b349a79a30d441e541b382f7f099",
+      "unit_sha256": "e5bd43bffc629ea46e4fe4352fdcaf6b489a05389f44cac718e02ebaf77de2a9",
+      "scope": "in_scope",
+      "role": "target",
+      "reason": "BRD §3.1/UC03: đã đọc lại nội dung cá nhân người học/người có GPLX, điều kiện dự sát hạch/sử dụng GPLX; không suy included toàn đào tạo hay toàn cha. Dẫn chiếu hồ sơ/chương trình/điều ước thiếu phải pending dependency.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "d905245fba921745655541b301de52c6929c05cfde56884681a003d45a03c83b"
+    },
+    {
+      "unit_id": "u_2472265304db17e99f27336ba02ede8225a70374add3dadd8cbba0e1292b065a",
+      "unit_sha256": "fdde04a853b56ea089dc8351c2d3b0645b113a11a16d3badd748ff5906df86bd",
+      "scope": "in_scope",
+      "role": "target",
+      "reason": "BRD §3.1/UC03: đã đọc lại nội dung cá nhân người học/người có GPLX, điều kiện dự sát hạch/sử dụng GPLX; không suy included toàn đào tạo hay toàn cha. Dẫn chiếu hồ sơ/chương trình/điều ước thiếu phải pending dependency.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "68f41f23cb156cc48dd83ca597a95dcfc4c6c5abf42c5376d97f3e415b7733f0"
+    },
+    {
+      "unit_id": "u_014eedd5d0b60abb98785eec12db168c47f7e9ce1bee21a9b845159ca50f4013",
+      "unit_sha256": "245d3b45c6e26357c86fa187fc6a2ed3cb19773690976c3fd5bad5a5354481a4",
+      "scope": "in_scope",
+      "role": "target",
+      "reason": "BRD §3.1/UC03: đã đọc lại nội dung cá nhân người học/người có GPLX, điều kiện dự sát hạch/sử dụng GPLX; không suy included toàn đào tạo hay toàn cha. Dẫn chiếu hồ sơ/chương trình/điều ước thiếu phải pending dependency.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "ce3b41995b440db23b8ce7bbeb9cdabbe9e9ca86db1fc4b8ab82c9e21eff3c1a"
+    },
+    {
+      "unit_id": "u_77dc5965d68b6880fbaa315b1d5689576ec015d912ae0f54adc3a242bc625705",
+      "unit_sha256": "3d608f021bcd7f57b0bf4c710a842ae9652b4d784fd32848a2e5eecee7f82639",
+      "scope": "in_scope",
+      "role": "target",
+      "reason": "BRD §3.1/UC03: đã đọc lại nội dung cá nhân người học/người có GPLX, điều kiện dự sát hạch/sử dụng GPLX; không suy included toàn đào tạo hay toàn cha. Dẫn chiếu hồ sơ/chương trình/điều ước thiếu phải pending dependency.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "3a9063db22a222cebcd3562f474f4063ba279a1b125ae835444da6acf6a5e145"
+    },
+    {
+      "unit_id": "u_76c5ae19c9a9cf35b92bceb4e0d67dc1257fcc4f6c38b4fc146d9c5b5e8f9d97",
+      "unit_sha256": "59d8126cfa65a8f822864188967d559d5fc23a6c5368fd2ae5795b2622ffa8ac",
+      "scope": "in_scope",
+      "role": "target",
+      "reason": "BRD §3.1/UC03: đã đọc lại nội dung cá nhân người học/người có GPLX, điều kiện dự sát hạch/sử dụng GPLX; không suy included toàn đào tạo hay toàn cha. Dẫn chiếu hồ sơ/chương trình/điều ước thiếu phải pending dependency.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "7dc83195c1f6f539f7c9c785b5bcd79ef3c985dc8427e7849bdb60081ffe6fe2"
+    },
+    {
+      "unit_id": "u_4f24a249f3788622125900cddc0e16f4e51f51414a046b75a10fdcc5c7811238",
+      "unit_sha256": "cf67aa141b50e07e3455b47d64291e729e9b95b276547fd773a7787e7cae5eba",
+      "scope": "in_scope",
+      "role": "target",
+      "reason": "BRD §3.1/UC03: đã đọc lại nội dung cá nhân người học/người có GPLX, điều kiện dự sát hạch/sử dụng GPLX; không suy included toàn đào tạo hay toàn cha. Dẫn chiếu hồ sơ/chương trình/điều ước thiếu phải pending dependency.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "7688b9a4bdca47ef3297c3b03519b7aa5a0c3dfc7da70a850de0c746d9018263"
+    },
+    {
+      "unit_id": "u_e7d3f3bd0909c4580a7f178a316883d281bbe1a4d6020b81315ed2d689aae603",
+      "unit_sha256": "16ecdb8425b7a2e3cd53852953630ddffaac33f59835695b7f6e0b9735cdcc1e",
+      "scope": "in_scope",
+      "role": "supporting",
+      "reason": "BRD §3.1/UC03: đã đọc lại nội dung cá nhân người học/người có GPLX, điều kiện dự sát hạch/sử dụng GPLX; không suy included toàn đào tạo hay toàn cha. Dẫn chiếu hồ sơ/chương trình/điều ước thiếu phải pending dependency.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "004111388a55de2ca12ce48f4d489c192e472c30198ad58d2353e90f0f70f2fe"
+    },
+    {
+      "unit_id": "u_424da0d4786e05d299b817ecf5709b8007e8669609b4b4e3c891bc0fc7c41943",
+      "unit_sha256": "ecf0892f54356a1541322666b1e464cb05045c86418be50b1acf54c47fc93c77",
+      "scope": "in_scope",
+      "role": "supporting",
+      "reason": "Supporting hữu hạn cho TT35 A28K2: điều kiện học đủ chương trình theo hạng B1/B/C1/các hạng nâng, cần bảng chương trình A6–8 tương ứng; không target tra cứu chương trình độc lập. A28K2 vẫn pending vì mẫu XXIII/chứng nhận hoàn thành chưa có representation được kiểm đủ.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "441ff385197acec68ca995ebcfc957616b7f54bfb484450ba871813577cc7576"
+    },
+    {
+      "unit_id": "u_040b7ad73d95cd8efcc7a85282c0da17c67bc0dfb882c69562b4cf2249f5b19a",
+      "unit_sha256": "81132213221baef9d0aac9aecffda508039d1c8c0077f0221e4520406ea68002",
+      "scope": "in_scope",
+      "role": "supporting",
+      "reason": "Supporting hữu hạn cho TT35 A28K2: điều kiện học đủ chương trình theo hạng B1/B/C1/các hạng nâng, cần bảng chương trình A6–8 tương ứng; không target tra cứu chương trình độc lập. A28K2 vẫn pending vì mẫu XXIII/chứng nhận hoàn thành chưa có representation được kiểm đủ.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "441ff385197acec68ca995ebcfc957616b7f54bfb484450ba871813577cc7576"
+    },
+    {
+      "unit_id": "u_3b166e48f1a3f7e773c70228ba2f66727585a56dc505003bf3f85ab6bf738d91",
+      "unit_sha256": "65deb7cb90fb3e3e6d8a9be1c5db8a4f3dc96cd70927aa0cd76edb1f0e773d0a",
+      "scope": "in_scope",
+      "role": "supporting",
+      "reason": "Supporting hữu hạn cho TT35 A28K2: điều kiện học đủ chương trình theo hạng B1/B/C1/các hạng nâng, cần bảng chương trình A6–8 tương ứng; không target tra cứu chương trình độc lập. A28K2 vẫn pending vì mẫu XXIII/chứng nhận hoàn thành chưa có representation được kiểm đủ.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "bb8ac512c22f84fcfd230c2e4c8b1cf76a4170abfb0b6b7f4d5711a4a291b51a"
+    },
+    {
+      "unit_id": "u_651abbb1af8cadb249a1d09a9204eb2c968a55cb87e36f327f521422223ca7af",
+      "unit_sha256": "8394885682d226501ee9a63f8da072fa3b754c7f0d997db6a3e93b4da27a13d4",
+      "scope": "in_scope",
+      "role": "supporting",
+      "reason": "Supporting hữu hạn cho TT35 A28K2: điều kiện học đủ chương trình theo hạng B1/B/C1/các hạng nâng, cần bảng chương trình A6–8 tương ứng; không target tra cứu chương trình độc lập. A28K2 vẫn pending vì mẫu XXIII/chứng nhận hoàn thành chưa có representation được kiểm đủ.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "9e79d9671f08630efd1516fa69084371e74d1aba90a5f0d86881377fd2a42eab"
+    },
+    {
+      "unit_id": "u_1589395dc51b321d686ed95a0d8dd1bc5c766d3be0e3fa5cc111b6272510164c",
+      "unit_sha256": "e8c047c5f9e7a0cd39619004cfc40c20c404dfb341e5dd244441138257ef4bc7",
+      "scope": "in_scope",
+      "role": "supporting",
+      "reason": "Supporting hữu hạn cho TT35 A28K2: điều kiện học đủ chương trình theo hạng B1/B/C1/các hạng nâng, cần bảng chương trình A6–8 tương ứng; không target tra cứu chương trình độc lập. A28K2 vẫn pending vì mẫu XXIII/chứng nhận hoàn thành chưa có representation được kiểm đủ.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "881ded86aae872e5a8375b7cc93263c82ea6510209d53281a0ae1485c6ee84f3"
+    },
+    {
+      "unit_id": "u_f880bc99911b6cae9fded2a3fb39ed858da009b14ad2b3d532e082c48eee46a0",
+      "unit_sha256": "c95a0e429a17b52262a4b59cfd0310f0ee06fbe1eab79d0d4fa8a876f373caf5",
+      "scope": "in_scope",
+      "role": "supporting",
+      "reason": "Supporting hữu hạn cho TT35 A28K2: điều kiện học đủ chương trình theo hạng B1/B/C1/các hạng nâng, cần bảng chương trình A6–8 tương ứng; không target tra cứu chương trình độc lập. A28K2 vẫn pending vì mẫu XXIII/chứng nhận hoàn thành chưa có representation được kiểm đủ.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "df4818e68e82a04e4418f6148e8144e2a44aa0d6ae21186ba223030028014f1b"
+    },
+    {
+      "unit_id": "u_6dfe7f91369bb78a1d8b95eb0f85957dd5a1255e4a9f01047aa4e1521bea6a3c",
+      "unit_sha256": "efe3acd75308c2378f165ae3318fa8128f45527c0b55877281e08df5f0838716",
+      "scope": "out_of_scope",
+      "role": "target",
+      "reason": "Đã rà owner, bảng/header/continuation và điều kiện tổ chức: chương trình giờ/km đào tạo hoặc tập huấn sát hạch viên, không quy tắc/hành vi/chế tài người đang tham gia giao thông. Không có target cụ thể cần bảng này làm supporting trong proposal hiện tại; BRD §3.1/3.3 và phạm vi phiên3.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "5de7da65207d2d3d8222fc6b122c4576cd8012f0b5e6add0d686a3f970379c5b"
+    },
+    {
+      "unit_id": "u_1ddaa70d6cc3ca7774707159ed1fa374ff694aafbe0cdf0db5fd409dd428c046",
+      "unit_sha256": "1df3217670819ef84eb57e8a57812795c038880d1a7afc493447c4ef2e281a11",
+      "scope": "out_of_scope",
+      "role": "target",
+      "reason": "Đã rà owner, bảng/header/continuation và điều kiện tổ chức: chương trình giờ/km đào tạo hoặc tập huấn sát hạch viên, không quy tắc/hành vi/chế tài người đang tham gia giao thông. Không có target cụ thể cần bảng này làm supporting trong proposal hiện tại; BRD §3.1/3.3 và phạm vi phiên3.",
+      "reviewed_fields": [
+        "title",
+        "text_original"
+      ],
+      "review_method": "agent_read_current_fields",
+      "text_sha256": "18388f42a9bce8efef75e965a402975e1a7f147ef477873bcddce73825fc8c84"
+    }
+  ],
+  "table_owner": {
+    "source_run": "staging/tt35-owner-tables-002",
+    "source_config": "config/tt35_owner_tables.v1.json",
+    "overrides": [
+      {
+        "owner_unit_id": "u_040b7ad73d95cd8efcc7a85282c0da17c67bc0dfb882c69562b4cf2249f5b19a",
+        "evidence_unit_id": "u_001a3d384ee907df3a2e5a5b590666130654c9ed9fcb6403744b09bd7ad20dd7",
+        "evidence_unit_sha256": "f0a3dc02cdfb66c436e78c868b5307acd6f2f211e77cf443df48a3f2ac402ed8",
+        "literal": "Phụ lục II",
+        "before_annexes": [
+          "III"
+        ],
+        "after_annexes": [
+          "II"
+        ],
+        "image_ref": "staging/source-session2-001/visual/TT35-008.png",
+        "image_sha256": "f8033c6f62eb267cbf91b0873be3ee1ff801f3e63235e6b1c85e1598fc1c0e8b",
+        "reason": "A7K2a và PDF8 dẫn Phụ lục II, không phải III; đính chính dependency phiên2, không sửa source/payload cũ."
+      }
+    ]
+  },
+  "v3": "staging/dataset-v3-draft-005",
+  "v4": "staging/dataset-v4-candidate-006",
+  "baseline_ref": "staging/source-session3-001/preservation.baseline.json",
+  "semantic_blockers": [
+    {
+      "unit_id": "u_2ca91948102a96f93165234f44b35b6771754977332ff24eaadcef09f563c070",
+      "reason": "Dẫn chiếu chương trình/hồ sơ hoặc điều ước cần xác định phạm vi nội dung bắt buộc; chưa có closure đủ nghĩa cho target này."
+    },
+    {
+      "unit_id": "u_bc0e903a60c91884409044fdd36aab1d935b121de022c7e64005757ec6641f9e",
+      "reason": "Mẫu xác nhận hoàn thành Phụ lục XXIII chưa có checked form representation; dependency chương trình được liệt kê nhưng chưa đủ để nhận target."
+    },
+    {
+      "unit_id": "u_4f24a249f3788622125900cddc0e16f4e51f51414a046b75a10fdcc5c7811238",
+      "reason": "Dẫn chiếu chương trình/hồ sơ hoặc điều ước cần xác định phạm vi nội dung bắt buộc; chưa có closure đủ nghĩa cho target này."
+    }
+  ]
+}

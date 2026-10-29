@@ -1,3 +1,44 @@
+# Ingestion hiện hành — phiên 3, 28/10/2026
+
+Snapshot **2025-01-01**. [Báo cáo](reviews/Source_Session3_Verification.md),
+[handoff/CLI](handoff/Source_Session3_Replay.md),
+[contract](design/Source_Session3_Membership_Contract_v1.0.md).
+
+`src.membership_proposal build/validate --config config/source_session3.v1.json`
+chỉ tạo/kiểm source selection và membership proposal trong staging. Run chính
+`source-session3-proposal-009`, replay010. Lựa chọn nhánh nguồn có origin
+user_instruction;128scope review mới và membership originagent_review, không
+human decision/accepted/verified.5375node được inventory, scope còn5013unresolved.
+
+NĐ168 chọn DOCX phiên2, không áp lại edits hoặc tự đưa HTML thành target trùng.
+1309phase1→2 mapping/1351span giữ nguồn mới; Stage4DOCX/HTML mapping riêng. Old
+record cần rebuild proof/chunk, không đổi ID trong qrels/assessment. Luật36 dùng
+DOCX, lead22/26 còn đủ trong6chunk/context đã kiểm. Luật35/QH15 giữ2bảng/12ô/proofPDF.
+NĐ165 có supporting hữu hạn cho A12K12NĐ168, không loại cả846unit.
+
+TT38 dùng Công báo8tr raw bền vững SHAe27582e2…, bản7tr chỉ đối chiếu. Giữ Điểmb
+A11K2whole279token/2view237–44 và đủ Điểma/bảng3/source cells.9table-row proposal
+riêng với ID thật. TT35 dùng graphPart/Chapter và nativePDF; adapter
+`src.ingestion.table_owner_adapter` tái dùng compose/read/encoder-view, sửa **A7
+AnnexIII→II** bằng A7K2a/PDF8.8full read,1tableID/viewID đổi,7record không đổi.
+Sáu bảng supporting A28K2;2bảng excluded target; A28K2 còn thiếu checked formXXIII
+trang127phụ lục. Không biến bảng thành chunk hay view thành target.
+
+QCVN giữ3whole-subtree đã có proof, nguồn Công báo theo page/hash thật;6recovery
+region và11dòngB18 không là target.929dòng còn pending; captionI418/I416 không
+nhập thống nhất. Không thay toàn QCVN bằng Antiword/OCR. Chưa parse/khôi phục
+hình hoặc mở rộng OCR trong phiên3.
+
+116retrieval record được đề xuất xét packaging, **chưa tạo dataset**. Source/
+edition/applicability, scope và technical tách riêng. Consumer compositionv1/
+raw/evidence/code hash-bound/dataset/index/qrels/ZIP giữ nguyên. Validate kiểm
+CSV/JSONL, source/dependency/ID/view/capability; thiếu file/hash phải fail.
+Word có file thực nhưng COM render lỗi logon session; không tuyên bố đã rà bố cục.
+
+---
+
+## Lịch sử ingestion trước phiên3 (giữ nguyên)
+
 # Ingestion hiện hành — phiên 2, 28/10/2026
 
 Snapshot **2025-01-01**. Reuse kết quả phiên1, không tải lại/extraction PDF toàn

@@ -1,3 +1,51 @@
+# Hiện tại — phiên 3 source selection / membership, 2026-10-28
+
+**PROPOSAL_ONLY / SOURCE_SELECTED / SCOPE_REVIEW_PARTIAL**. Snapshot **2025-01-01**.
+HEAD đầu phiên `2afb65c3f955d149da5a3b25f17c0436d1dcb792`, Git sạch; hiện có code/
+config/tests/docs mới chưa commit. Không stage/commit/push hoặc tạo dataset/index.
+
+Lựa chọn nguồn từ chỉ dẫn người dùng, không là human review/verified: Luật36,
+Luật35/QH15,NĐ165 dùng DOCX; NĐ168 dùng **nd168-docx-session2-001**, không áp lại
+corrections; TT38 chọn **Công báo8tr SHAe27582e2…**, bản7tr chỉ đối chiếu; TT35
+hai PDF/native +graphPart/Chapter; QCVN dùng Công báo theo vùng, không thay bằng
+Antiword. Full path/hash/file/extraction binding của7nhánh/12file ở
+`staging/source-session3-proposal-009/source_selection.jsonl`.
+
+- Inventory **5375node**,128scope review mới/327reuse đúng binding/3subtree cũ.
+  **5013scope unresolved** (4917chưa có review unit,96đã xét chưa kết luận), không
+  đổi hàng loạt thành excluded. Raw/source/edition/applicability vẫn pending.
+- **116record đề xuất để xét packaging**:103chunk,9table-row,4whole-source.
+  Chưa build dataset/chuyển bản. NĐ165 có16unit supporting cụ thể cho NĐ168A12K12,
+  không loại cả nguồn; nhiều đơn vị ngoài v4 đã được inventory/rà mới.
+- NĐ168:1309unit/1351span đúng nguồn mới;1309phase1→2 mapping đầy đủ. Mapping
+  Stage4DOCX1304 dùng chuỗi locator qua phiên1; HTMLfull1309 và sparsev3=10 tách
+  riêng. Không mang assessment/proof/qrels cũ sang chỉ bằng đổiID. Cần dựng preview
+  nguồn mới;27record NĐ168 của v4 đang chờ đổi nguồn/ID, chưa nhận tự động.
+- TT35:8owner có quyết định riêng:6supporting choA28K2,2excluded target. **A7K2a
+  và PDF8 dẫn AnnexII; mapping AnnexIII phiên2 được đính chính sidecar mới**.
+  Một tableID/view-wrapperID đổi do dependency;7record khác/search/token giữ nguyên.
+  A28K2 vẫn pending **mẫuXXIII/PDFannex127**, không coi XI/XXVI là thay thế.
+- QCVN giữ3text subtree4.1/4.2/6.4, không chọn6recovery region/11dòngB18 thành
+  target.929dòng chưa gắn owner giữ pending. I.418/I.416 ngoài membership thống
+  nhất;4.1là đính chính lỗi phiên âm agent, không xung đột nguồn.
+
+41tests pass; checker12negative bị từ chối,31payload replay giữ hash. Baseline
+3381file nguyên vẹn ngoài STATUS/ingestion được phép; không coi đây là legal/
+retrieval quality. Word có trong registry nhưng DispatchEx ẩn/read-only-copy lỗi
+logon session(-2147023584), **chưa kiểm bố cục render**. Chỉ Windows hiện tại.
+Dataset3077/draft3082/v3/v4/index/evaluation/qrels/ZIP và mọi run cũ giữ nguyên.
+
+[Báo cáo phiên3](../reviews/Source_Session3_Verification.md),
+[lệnh replay/validate](../handoff/Source_Session3_Replay.md),
+[contract](../design/Source_Session3_Membership_Contract_v1.0.md).
+Run009 chính,010replay; checks003 là kiểm cuối sau cập nhật docs. Bước tiếp:
+packaging subset116 cùng supporting closure khi được giao; dựng lại previewNĐ168
+và xử lý blockers có vị trí, chưa tự tạo corpus/index hoặc human decision.
+
+---
+
+## Lịch sử phiên 2 (giữ nguyên; dependency A7→AnnexIII được đính chính ở trên)
+
 # Hiện tại — phiên 2 NĐ168 / bảng TT35 / QCVN, 2026-10-28
 
 **FIELD_DIFF_CLASSIFIED / EIGHT_TABLE_OWNERS_TECHNICAL_PASS / QCVN_BOUNDED_RECOVERY / LEGAL_REVIEW_PENDING**.
