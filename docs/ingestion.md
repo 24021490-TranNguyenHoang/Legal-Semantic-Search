@@ -1,3 +1,48 @@
+# Ingestion hiện hành — phiên 4, 29/10/2026
+
+Snapshot **2025-01-01**. [Báo cáo](reviews/Source_Session4_Verification.md),
+[handoff/lệnh](handoff/Source_Session4_Replay.md),
+[contract](design/Source_Session4_Record_Preparation_v1.0.md).
+
+`src.source_session4 build/validate --config config/source_session4.v1.json`
+tạo **preview + packaging plan**, không dataset. Ghim run009 phiên3 và20input/hash;
+main `source-session4-preview-007`, replay008, checks002. Không áp corrections
+lần nữa lên `nd168-docx-session2-001`, không đổi parser/builder/encoder cũ.
+
+27record v4 cần đổi nguồn:22chunk mới đủ kỹ thuật,5A16K2 còn scope unresolved.
+Proof/context bind extraction DOCX mới; unit_id và contexts đổi trong identity,
+không mang assessment/qrels/offsets. Giữ đầy đủ ngoại lệ/chế tài bổ sung/trừ điểm,
+Luật36A27 và các required-read có lý do hữu hạn. NĐ165/Luật36 choA12K12 kiểm riêng,
+không thành target ngoài27seed. Budget256 giữ nguyên,88–239token/unknown0.
+
+TT35 mẫuXXIII xác định đúng PDF127 qua title/nội dung/ảnh126–128.18dòng có bbox/
+source spans,0bảng vật lý, không cell giả/trường đã điền/chunk giả. Sáu table-owner
+A6K1/A7K1/A8K1a–d đọc bằng adapter phiên3, A7→AnnexII. A28K2 target/mẫu có thể đọc,
+nhưng **closure blocked** vì chấm thi XV/XVI/XVII (PDF48–96,49trang) chưa đủ kiểm
+whole-read/layout; completion18unit có nguyên văn/proof riêng. A21K4c/A46K2 ngoài
+target. Không gỡ blocker chỉ vì mẫu đã ready.
+
+116record gốc được kiểm từng ID/type/source/context/dep. Plan138target (125chunk,
+9table-row,4whole-source),132unit; closure238supporting unit reads +1formXXVI,
+35unit trùng vai trò target/required-read. Plan chỉ lấy dependency của target đã
+chọn, không toàn inventory supporting_only. XXIII/sáu course tables ở hồ sơA28,
+chưa vào plan. TT38A11K2b whole279token/2view237+44 giữ đủ; view không là target.
+Các caption QCVN I.418/I.416 không được hợp nhất hoặc thêm target.
+
+Validate kiểm config/code/source/hash/offset/identity/closure/form completeness/
+capability/view coverage và budget, CSV/JSONL, replay. Portable probe5type có copy
+source assets và reader stdlib, audit gate cấm workspace gốc; **cùng máy Windows**,
+chưa là bundle di động toàn138. Self artifact ND tương đối `this_run`; khi packaging
+phải copy/mount các historical source refs theo hash, không ngầm đọc workspace cũ.
+
+Chưa tạo dataset/chuyển bản/index/embedding/app. Source/edition/applicability vẫn
+pending; scope là proposal, human_review=null, release=false. Word render copy vẫn
+COM lỗi logon session; kiểm layout chưa thực hiện được. Artifact cũ giữ nguyên.
+
+---
+
+## Lịch sử ingestion phiên 3 (giữ nguyên)
+
 # Ingestion hiện hành — phiên 3, 28/10/2026
 
 Snapshot **2025-01-01**. [Báo cáo](reviews/Source_Session3_Verification.md),

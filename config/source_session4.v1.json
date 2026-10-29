@@ -1,0 +1,146 @@
+{
+  "policy": "source-session4-record-preparation.v1",
+  "snapshot": "2025-01-01",
+  "proposal_run": "staging/source-session3-proposal-009",
+  "source_config": "config/source_session3.v1.json",
+  "nd_graph": "staging/nd168-docx-session2-001/graph",
+  "encoder_base": "staging/tt35-preview-005",
+  "baseline_ref": "staging/source-session4-001/preservation.baseline.json",
+  "input_hashes": {
+    "config/source_session3.v1.json": "04a5b4410ee83492908491f0db339ff22f1e9fe663bf60cfd927de623051093d",
+    "staging/source-session3-proposal-009/manifest.json": "c2a09db620e28aa69a803724fced61bbf24ea001e23334baca2d378bde15f6ed",
+    "staging/nd168-docx-session2-001/graph/manifest.json": "05823eedc958ccbd09d9c65a5acddfc3f3394f99bf39e38105c78aaf5809e1e7",
+    "staging/tt35-full-layout-001/manifest.json": "359a37d293b309279c0af920074574e6ef6cf7e280f66df45b5e09f55098a1fa",
+    "staging/tt35-source-regions-001/manifest.json": "56c84f8446087a3a07a6b3fc78b5224f2702893984c3b04b42951c1b174d5d93",
+    "staging/tt35-preview-005/manifest.json": "2336ec69aa9c2927761c9c9de7aa7e696ff6c1b9fe8d5cf742cfce86bd9f1607",
+    "staging/circular-priority-006/manifest.json": "b21366fa0c8e22b4c27a29945f0eeab7b254b1193aa7f041b02988ad92b4c20b",
+    "staging/dataset-v3-draft-005/dataset_manifest.json": "1a17bbd11bfa00329c83fc1c31f4dade255f75a97df713a7a09db43f256d70b4",
+    "staging/dataset-v4-candidate-006/dataset_manifest.json": "66a5bd355c842526e8cb412cadabc588c7a35045fd2369c3660bc1c2b6d1d922",
+    "config/stage6_points.v1.json": "73b05c6d944588e90f5a2a964c2db9b8d03ce9f5a1eec17c41b35135af5a1492",
+    "staging/tt35-preview-005/encoder_config.json": "5cdb067603051f388fdc96675a3fd1c2a5f5cfb89a311e5ffda005a75ac0ac5a",
+    "staging/source-session3-proposal-009/source_selection.jsonl": "981ab45211f9c3ff181a03b383e788786e8e6222258d419523eb00b2041730df",
+    "staging/source-session3-proposal-009/membership.proposals.jsonl": "65b7230b0cdeadc3225d99f3eb79ab2fb0cb1a9f90215201941a2d32b1386f28",
+    "staging/source-session3-proposal-009/table_row.membership.proposals.jsonl": "1041a8dc24257e4def50f330ab4f5c5dc64e8d74266524768678643125acc485",
+    "staging/source-session3-proposal-009/nonunit.membership.proposals.jsonl": "b22a9550e9000eedbf0cb9bd685d415f7260ed416d01d1b1e5354a4ddb5996c8",
+    "staging/source-session3-proposal-009/dependencies.jsonl": "92a5d3a0821adf524811d7a88fd92bdc0ec1403d13833ce78772b380f4985665",
+    "staging/source-session3-proposal-009/v3.comparison.jsonl": "7788db648317c041856341b4d76293fa1dc656c04039e712878e87cb72ac5205",
+    "staging/source-session3-proposal-009/v4.comparison.jsonl": "9d0040c68c1cc1be5001ec4d1e9b6764f42a044dc5497ebd4144ea67dd0c3d23",
+    "staging/source-session3-proposal-009/record_inventory.jsonl": "5e3d26bdec2f623eebb8a776aae48329eb91a05740a6360fc419f19884bb1e7a",
+    "staging/tt38-full-layout-001/manifest.json": "e5b97dbef20b2474cd21c41c2a36c077102d6d3555cebcbcbfa46a89e73c3371"
+  },
+  "form": {
+    "annex": "XXIII",
+    "file_id": "c8487856-c82d-56c7-a66d-2a662a5e70e0",
+    "pdf_page": 127,
+    "printed_page": null,
+    "source_raw_ref": "data/raw/35-bgtvt-kem.pdf",
+    "source_raw_sha256": "a79fd735777e6948bb9cfc8aa4ec556641a616d4bfc2ee0d00e8c26d7e559a94",
+    "image_proofs": [
+      {
+        "ref": "staging/source-session4-001/visual/TT35-annex-126.png",
+        "sha256": "7b4ab8956708700fa6ce276d765dc5baf54bff90196afba89e42d58f02d82b9b",
+        "pdf_page": 126,
+        "render_scale": 1.6
+      },
+      {
+        "ref": "staging/source-session4-001/visual/TT35-annex-127.png",
+        "sha256": "2bfcc0701ecd00cce042f5669bef506253f9292d1bee0392e2e36dc075eeea44",
+        "pdf_page": 127,
+        "render_scale": 1.6
+      },
+      {
+        "ref": "staging/source-session4-001/visual/TT35-annex-128.png",
+        "sha256": "6ad1a254bd7bca1daaa298223d5f26179a08aff6eda3368015e79db530215a1c",
+        "pdf_page": 128,
+        "render_scale": 1.6
+      }
+    ]
+  },
+  "nd_exception_clauses": {
+    "6": {
+      "2": [
+        "a",
+        "c",
+        "d",
+        "đ"
+      ],
+      "3": [
+        "a",
+        "d",
+        "đ",
+        "e",
+        "n",
+        "o"
+      ],
+      "4": [
+        "a",
+        "b",
+        "đ",
+        "e",
+        "i",
+        "k",
+        "l"
+      ],
+      "5": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "đ",
+        "i",
+        "k"
+      ],
+      "6": [
+        "a"
+      ],
+      "7": null,
+      "9": [
+        "b",
+        "d"
+      ],
+      "10": [
+        "a"
+      ],
+      "11": [
+        "đ"
+      ]
+    },
+    "7": {
+      "2": [
+        "b",
+        "d",
+        "e"
+      ],
+      "3": [
+        "a",
+        "c",
+        "d",
+        "h"
+      ],
+      "4": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "6": [
+        "b",
+        "d"
+      ],
+      "7": [
+        "a",
+        "b",
+        "c"
+      ],
+      "8": [
+        "a"
+      ],
+      "9": [
+        "b"
+      ],
+      "10": [
+        "a"
+      ]
+    }
+  }
+}

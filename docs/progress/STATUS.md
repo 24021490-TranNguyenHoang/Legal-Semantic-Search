@@ -1,3 +1,61 @@
+# Hiện tại — phiên 4 record preparation, 2026-10-29
+
+**PREVIEW_AND_PLAN_ONLY / TECHNICAL_SUBSET_IDENTIFIED / LEGAL_REVIEW_PENDING**.
+Snapshot **2025-01-01**. HEAD đầu phiên `f63d4b629f4b5e44e46f8200a52986cada59cfc4`,
+Git sạch; có code/config/tests/docs mới chưa commit. Không stage/commit/push.
+
+Nguồn/proposal ghim **source-session3-proposal-009** và config/hash thật, không
+chọn latest, không sửa DOCX session2 hoặc chạy lại corrections/parser toàn nguồn.
+Run chính **source-session4-preview-007**, replay008; checks002. Run development
+trước đó giữ lịch sử, không dùng thay run chính.
+
+- **27 record NĐ168 cũ / 27 unit khác nhau → 22 chunk mới ready, 5 blocked**.
+  Năm A16K2 a/b/c/d/đ có scope unresolved trên nguồn DOCX run009; không nhận
+  scope từ HTML. 22 record được dựng lại từ graph/extraction mới, đủ own text,
+  context, exceptions/modifiers/required-read và proof mới. Identity đổi đúng
+  unit_id + contexts; không chuyển assessment/qrels/offsets. Token **88–239**,
+  unknown0, không truncate hoặc đổi budget256. A12K12/NĐ165/Luật36 chỉ probe
+  dependency, không tự thêm target ngoài27seed.
+- **Mẫu XXIII ready kỹ thuật**: đúng PDF phụ lục **127**,18dòng native/0bảng vật
+  lý, đủ nhãn/trường trống/hướng dẫn/ký, bbox/spans. Xem cả126/128 để chốt ranh
+  giới XXII/XXIV, không nhầm XI/XXVI. Không điền giá trị giả hoặc tạo chunk từ mẫu.
+- **A28K2 còn blocked**, dù target kỹ thuật/mẫu/sáu course owners đã có. A7 dùng
+  **Phụ lục II**. Đã đưa18completion units A6K4/A7K4–5/A8K4–5 vào hồ sơ; A7K4d/
+  A8K4d yêu cầu chấm thi XV/XVI/XVII ở PDF48–96 (**49trang**) chưa đủ kiểm layout/
+  nội dung/whole-read. A21K4c/A46K2 không thành target. Không gọi ảnh/native là đã
+  hoàn thiện closure.
+- Đã kiểm thực tế **116 record phiên3** (103chunk/9table-row/4whole-source),
+  giữ payload/ID. Packaging plan **138target =125chunk+9row+4whole-source**,
+  **132unit pháp lý**, chỉ thêm22NĐ. Closure có **238supporting unit reads +
+  1formXXVI**;35supporting units cũng là target ở record khác, không cộng số
+  record thành số unit. Không lấy toàn supporting_only trong inventory.
+- **Chưa tạo dataset**. Tập138 đủ kỹ thuật để giao phiên packaging experimental
+  riêng cùng đúng closure/capability/source assets; source/edition/applicability
+  pending, scope proposal, human_review=null, release=false. Không nhận nămA16/
+  A28 hoặc chuẩn hóa gộp QCVN I.418/I.416 vì technical preview chạy được.
+
+27test pass; suite builder/circular46collected/39pass/7skip (opt-in pilot manifest
+chưa truyền). Checker19negative từ chối,58payload replay giống byte. Năm typed
+read-probe đọc được trên bản sao, audit hook cấm workspace gốc; chỉ cùng Windows,
+chưa máy khác/chưa package toàn138. Baseline3488file kiểm hash, ngoài hai tài liệu
+STATUS/ingestion được phép prepend lịch sử nguyên byte. Không dùng các số này
+thay xác minh pháp lý hoặc chất lượng retrieval.
+
+Word retry private/ẩn/read-only-copy vẫn lỗi COM logon session; chưa render/kiểm
+bố cục. Raw/run cũ/dataset3077/draft3082/v3/v4/index/evaluation/qrels/ZIP giữ nguyên.
+Không chạy embedding/inference/index/app hoặc mở rộng5013unresolved/QCVN OCR.
+
+[Báo cáo phiên4](../reviews/Source_Session4_Verification.md),
+[handoff và lệnh](../handoff/Source_Session4_Replay.md),
+[contract additive](../design/Source_Session4_Record_Preparation_v1.0.md).
+Bảng đủ27ca, form review và packaging plan dễ đọc tại
+`staging/source-session4-checks-002/`. Dừng sau preview/plan; chưa yêu cầu nhóm
+chuyển phiên bản.
+
+---
+
+## Lịch sử phiên 3 (giữ nguyên; mẫu XXIII đã xử lý, closure A28 còn thiếu ở trên)
+
 # Hiện tại — phiên 3 source selection / membership, 2026-10-28
 
 **PROPOSAL_ONLY / SOURCE_SELECTED / SCOPE_REVIEW_PARTIAL**. Snapshot **2025-01-01**.
