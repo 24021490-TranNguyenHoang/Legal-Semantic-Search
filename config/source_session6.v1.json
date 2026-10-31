@@ -1,0 +1,21 @@
+{
+  "policy_version": "subset-bm25-build.v1",
+  "dataset_ref": "staging/dataset-v5-subset-006",
+  "dataset_version": "vtls-subset-experimental.v5-candidate.1",
+  "dataset_manifest_sha256": "2a33d8fa503b54c574c453c33297c153074b2c3c08cdfb8a08b558d613e2d897",
+  "dataset_content_sha256": "708d3c40fbd6e5a384792b4a717f595aa5edb8023c32fb4efb6ef136a3aa2be4",
+  "consumer_sha256": "c96add34342a48af9db1fc6d72da78d3904a50135d81570d8b80dc9ebb1ecd60",
+  "dataset_zip_ref": "staging/vtls-subset-experimental-v5-candidate1-002.zip",
+  "dataset_zip_sha256": "b1965b3df6373a068a328a8200a9a01d8345e16e73c79e675575a3b7c57fa822",
+  "queries_ref": "staging/composition-queries-001",
+  "queries_manifest_sha256": "f8cc9257c410c8eb578d43a0bd1912e3aa5c572829be5e33d7ee0a2045e546f0",
+  "baseline_ref": "staging/source-session6-001/preservation.baseline.json",
+  "frozen_code_sha256": {
+    "src/bm25_baseline.py": "429b56d14b4d15eabc96da4b809391e9b19bee8ae99eacc49084af33aae73798",
+    "src/bm25_tokenizer.py": "8953a6c893b85fa69875da94b147c7c43ebed59e3aa4be8fab15d2fc3df069a6",
+    "src/composition_bm25.py": "3cc2c11b41cd70fc39e1c47d0367d9f3bdecd2433ff1f600b34af013d1b1c79b",
+    "src/composition_consumer.py": "e9fba6d26531b92a300d3a00e0fbd575d5497c4bca5221b14f1e986b5c65aaae",
+    "config/bm25_baseline.v1.json": "39c8125b9ef70346cf9dc0fb931ddba873db721cc0d4be992f53277496b0ceb6",
+    "requirements-bm25.txt": "e59b27533d52a815196248fdb83a98b022a828a1240b9e8a4a32a855614cd1b5"
+  }
+}

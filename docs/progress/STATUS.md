@@ -1,3 +1,49 @@
+# Hiện tại — phiên 6 BM25 subset v5, 2026-10-31
+
+**BM25_BUILT_BATCH_READ_AND_PORTABLE_VERIFIED / EXPERIMENTAL / PENDING_LABELS**.
+Snapshot **2025-01-01**. HEAD đầu phiên **441efbea1fbecc9a0d61e6c3962661862beb74ec**,
+Git sạch. Không stage/commit/push/merge hoặc chuyển phiên bản cho nhóm.
+
+- Dataset **vtls-subset-experimental.v5-candidate.1**, candidate006/ZIPv5-002
+  giữ nguyên. Index mới **vtls-bm25s-subset.v1**, main
+  `staging/bm25-subset-v5-003/`, replay004; không dùng candidate-v4/v3 thay thế.
+- **138document =125chunk+9table-row+4whole-source**, một target/document,
+  giữ ID/type/full search text. Không index238supporting, XXVI,30structural nodes
+  hoặc6encoder views độc lập;7nguồn inventory/6nguồn có target, NĐ165 target0.
+- Tái dùng BM25S0.3.13 Lucene/k1=1.2/b=.75/lexical v1, NumPy2.4.6/SciPy1.17.1.
+  Không tuning/preprocessing/model mới. Source/type/law filter trước Top-k,
+  stable score-desc/record-ID-asc; empty sai input, OOV trả[], không pad/fallback.
+- **50query ghim (30old+15new+5limit) →500hit,117unique details**,220supporting
+  units+XXVI trong hit pool. Full-read riêng **138target/238supporting/XXVI**.
+  Read giữ nguyên context/proof/required_read/proposal/pending. Metrics **null**,
+  eligible0/PENDING_LABELS, không chuyển qrels v1/v3 hoặc ghi human decisions.
+- **42test pass/4skip** (46 chạy),12private mutation và9input error bị từ chối;
+  103payload/manifest replay giống byte, ZIP replay cùng SHA. Core checks002;
+  final report `staging/source-session6-portable-003/validation_report.json`.
+- ZIP giải nén +venv sạch cài3pins offline từwheel cache,5CLI exit0,
+  rebatch/read117hit/full-read138, ranking/response hashes giống main/replay.
+  Audit4deny probes đúng/0unexpected/0foreign module; chỉ cho os.devnull ngoài
+  root, chặn network/subprocess. Cùng Windows/CPython3.11.9, chưa máy/OS khác.
+- ZIP giao **staging/vtls-bm25s-subset-v1-002.zip**,19.212.146byte,
+  SHA **ddf9e5c2f90439ea5b057792a609ea05e99e43e223bf64e327c2ff492023a759**
+  +.sha256. Không dùng ZIP001/index001/002 development; các lần thử giữ lịch sử.
+
+Source/edition/applicability pending, scope proposal, release=false/corpus=null.
+Không gọi lexical hits/technical tests là legal verification hoặc chất lượng
+retrieval. Dataset3077/draft3082/v3/v4/v5,index/evaluation/qrels/ZIP nhóm dùng
+bất biến. Chưa UI/API/merge Hùng, Dense/embedding/Qdrant hoặc yêu cầu đổi bản.
+
+[Báo cáo phiên6](../reviews/Source_Session6_BM25_Verification.md),
+[Quickstart search→read](../handoff/Source_Session6_BM25_Quickstart.md),
+[Replay](../handoff/Source_Session6_Replay.md),
+[contract](../design/Source_Session6_BM25_Contract_v1.0.md).
+Bước sau: nhóm rà nhãn v5 có bằng chứng trước metrics; tích hợp typed consumer
+khi được giao, giữ notices/pending và required-read. Không tự chạy tiếp.
+
+---
+
+## Lịch sử phiên 5 (giữ nguyên; index subset riêng đã được tạo ở phiên6)
+
 # Hiện tại — phiên 5 subset candidate portable, 2026-10-30
 
 **PACKAGED_AND_FULL_PORTABLE_READ_VERIFIED / EXPERIMENTAL_CANDIDATE / LEGAL_REVIEW_PENDING**.

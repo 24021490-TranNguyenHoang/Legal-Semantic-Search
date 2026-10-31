@@ -1,3 +1,45 @@
+# Ingestion hiện hành — phiên 6 BM25 subset v5, 31/10/2026
+
+Snapshot **2025-01-01**. [Verification](reviews/Source_Session6_BM25_Verification.md),
+[Quickstart](handoff/Source_Session6_BM25_Quickstart.md),
+[replay](handoff/Source_Session6_Replay.md),
+[contract](design/Source_Session6_BM25_Contract_v1.0.md).
+
+`src.subset_bm25` dùng config source_session6.v1.json ghim candidate006/ZIPv5-002/
+consumer và composition-queries-001. Validate dataset trước build. Index riêng
+**vtls-bm25s-subset.v1** tại **bm25-subset-v5-003**, replay004; dataset không đổi.
+**138target/125chunk+9table+4whole**, không hỗ trợ/structural/form/view độc lập.
+Search projection là text_for_search nguyên record, table dẫn xuất khác original,
+whole giữ đủ input. BM25 không chịu encoder256; không truncate hoặc split target.
+
+Tái dùng baseline/composition BM25S Lucene0.3.13/k1=1.2/b=.75/lexical v1 và pins
+numpy2.4.6/scipy1.17.1, không đổi engine/query preprocessing. Runtime index cần
+3deps; dataset consumer riêng chỉ stdlib. Source/type/law filter trước Top-k,
+AND exact và tie ổn định. Load kiểm full binding/consumer/mapping/engine; search
+readonly, missing index lỗi, không build/fallback. Read trả dataset_response
+nguyên trạng cùng required_read/proof/pending; không dùng title để join/dedup.
+
+Batch002 giữ đúng50query cũ,500hit/117unique details/220supporting+XXVI trong
+hit pool; full-read138/238/XXVI. Qrels0/accepted0/metrics=null.42tests pass/4skip,
+12mutation+9input-error probes bị từ chối.103payload/manifest và ZIP replay giống.
+ZIP **vtls-bm25s-subset-v1-002.zip** chứa cả dataset/runtime/config/queries,
+19.212.146byte, SHA **ddf9e5c2f90439ea5b057792a609ea05e99e43e223bf64e327c2ff492023a759**.
+Chưa URL chia sẻ. Portable003 giải nén/venv sạch/pip offline3wheels, audit cấm
+repo/staging/cache/network/subprocess gốc,5CLI đạt; rebatch/full-read hash giống.
+Chỉ os.devnull được phép ngoài root; Windows metadata subprocess bị chặn/fallback.
+Cùng Windows/CPython3.11.9, không gọi là kiểm máy khác hoặc benchmark.
+
+Core checkpoints ở source-session6-checks-002, final portable003. Development
+index001/002/ZIP001 và failed gate receipts giữ nguyên, không là bản giao cuối.
+Dataset/index/evaluation/qrels/ZIP cũ và candidate006 bất biến. Source/edition/
+applicability pending, scope proposal, không human review/verified; không thay
+ứng dụng/merge Hùng/chuyển bản hoặc chạy Dense/embedding/Qdrant. Lệnh tái tạo dùng
+output mới theo replay guide, không chọn latest hoặc sửa manifest để pass.
+
+---
+
+## Lịch sử ingestion phiên 5 (giữ nguyên)
+
 # Ingestion hiện hành — phiên 5 subset packaging, 30/10/2026
 
 Snapshot **2025-01-01**. [Báo cáo](reviews/Source_Session5_Verification.md),
