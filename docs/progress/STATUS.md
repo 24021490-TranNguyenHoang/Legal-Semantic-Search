@@ -1,3 +1,56 @@
+# Hiện tại — phiên 5 subset candidate portable, 2026-10-30
+
+**PACKAGED_AND_FULL_PORTABLE_READ_VERIFIED / EXPERIMENTAL_CANDIDATE / LEGAL_REVIEW_PENDING**.
+Snapshot **2025-01-01**. HEAD đầu phiên `c759aa496cb560a984b76a599305d863d9c117d8`;
+Git đã có review Hùng chưa commit, giữ nguyên. Không stage/commit/push/merge.
+
+Đã đóng gói **vtls-subset-experimental.v5-candidate.1** từ đúng plan phiên4,
+không còn chỉ là packaging plan. Main `staging/dataset-v5-subset-006/`, replay007;
+checks `staging/source-session5-checks-002/`. Bản giao là
+`staging/vtls-subset-experimental-v5-candidate1-002.zip` + `.sha256`,19.038.752byte,
+SHA **b1965b3df6373a068a328a8200a9a01d8345e16e73c79e675575a3b7c57fa822**.
+Các bản thử/ZIP trước đó giữ lịch sử, không phải bản giao cuối.
+
+- **138 target** giữ nguyên ID/type/payload/search/context theo plan:
+  **125chunk +9table-row +4whole-source**. Có22NĐ168 đúng DOCX hiệu chỉnh phiên2,
+  source/spans/lineage mới; không chuyển qrels/assessment từ nhánh cũ.
+- **132 target unit IDs** =129DDD+3QCVN-reader-region; **238unique supporting
+  unit reads +1formXXVI**,35unit trùng vai trò. Union335selected IDs; graph
+  **365node** gồm346unit.v1+19qg_ và30ancestor structural_only. **542DDD spans**,
+  embedded QCVN proofs,33unique cells và23field nguồn củaXXVI giữ đủ.
+- **6encoder views** gắn4whole records, không tăng target. Không tokenize/model/
+  truncate lại. Runtime có typed consumer, required-read, graph Part/Chapter,
+  source resolver/mount, cells/header và form layout; không fallback workspace.
+- **7nguồn inventory /6nguồn có target-supporting**. NĐ165 target0/support0/
+  graph0/raw0, không đóng gói ngầm. Đây không phải full coverage bảy nguồn.
+- Không nhận5A16K2 unresolved, A28K2/XXIII/sáuprogramme tables hoặc QCVN caption
+  xung đột/recovery/OCR inventory. Raw/text đầy đủ có vùng ngoài subset để giữ
+  source hash, không đồng nghĩa admission. XXVI payload scope=included lịch sử
+  giữ nguyên nhưng membership role=supporting, không thành target.
+
+**35tests pass,20negative bị từ chối**,71payload/manifest replay giống byte,ZIP
+replay cùng SHA. Từ ZIP giải nén khác build root: venv sạch CPython3.11.9,
+distributions=[], chỉ stdlib;7CLI exit0 (validate/list/4read/full-read), đọc đủ
+**138responses/238supporting/XXVI**. Audit cấm repo/staging/dev venv/cache gốc,
+4denial probes đúng/0unexpected, không foreign module. Chỉ cùng Windows/máy này,
+không gọi là kiểm máy khác hoặc benchmark. Baseline4023file giữ nguyên ngoài
+STATUS/ingestion được phép prepend lịch sử; review Hùng nguyên bytes.
+
+Source/edition/applicability pending, scope proposal, human_review=null,
+release=false/corpus_version=null. Word layout DOCX chưa kiểm; technical pass
+không legal verification. Dataset3077/draft3082/v3/v4/index/evaluation/qrels/ZIP
+cũ bất biến; chưa build index/embedding, chạy evaluation hoặc đổi ứng dụng/nhóm.
+
+[Báo cáo phiên5](../reviews/Source_Session5_Verification.md),
+[Quickstart ZIP và replay](../handoff/Source_Session5_Replay.md),
+[contract](../design/Source_Session5_Candidate_Contract_v1.0.md).
+Bước sau có thể tích hợp experimental riêng theo typed consumer/capabilities
+khi được giao; chưa tự thay artifact nhóm dùng hoặc merge hung-feature.
+
+---
+
+## Lịch sử phiên 4 (giữ nguyên; plan138 đã được đóng gói ở phiên5)
+
 # Hiện tại — phiên 4 record preparation, 2026-10-29
 
 **PREVIEW_AND_PLAN_ONLY / TECHNICAL_SUBSET_IDENTIFIED / LEGAL_REVIEW_PENDING**.

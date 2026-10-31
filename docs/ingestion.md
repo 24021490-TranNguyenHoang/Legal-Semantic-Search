@@ -1,3 +1,50 @@
+# Ingestion hiện hành — phiên 5 subset packaging, 30/10/2026
+
+Snapshot **2025-01-01**. [Báo cáo](reviews/Source_Session5_Verification.md),
+[Quickstart/replay](handoff/Source_Session5_Replay.md),
+[contract](design/Source_Session5_Candidate_Contract_v1.0.md).
+
+`src.subset_candidate` build/validate/zip dùng config source_session5.v1.json,
+ghim source-session4-preview-007/checks002/source-session3-proposal-009. Không
+chọn latest, correction/extraction/parser hoặc tokenization lại. Frozen readers/
+helpers v1 được copy nguyên byte; DDD/schema và artifact lịch sử giữ nguyên.
+
+Bản chính `staging/dataset-v5-subset-006/`, replay007, version
+**vtls-subset-experimental.v5-candidate.1**; ZIP giao
+**vtls-subset-experimental-v5-candidate1-002.zip** + SHA. Đã kiểm138target nguyên
+ID/type/hash/context (125chunk/9table-row/4whole),238supporting reads/XXVI,
+132target unit IDs,365graph nodes/30structural ancestors/542DDD spans/6views.
+Graph Part/Chapter thật và qg_ khác DDD được giữ, không làm Khoản giả.
+
+Package có41content-addressed assets và explicit mounts: this_run ND168 khác
+source_artifact lịch sử; original locator khác package locator. Source spans
+trỏ extraction Unicode NFC/LF, context offsets theo field, view offsets theo
+search text. Consumer trả whole record, context và required-read đủ, không chỉ
+snippet. FormXXVI là supporting layout; payload scope=included lịch sử không
+thành target. Historical blocker labels giữ trong payload, technical_admission
+mới không là legal decision. Read bị chặn nếu validation toàn gói chưa đạt.
+
+Seven-source selection inventory vẫn đủ7; chỉ6nguồn có content được chọn.
+NĐ165 không có target/support/raw trong package. Không đưa5A16K2, A28K2/XXIII/
+sáuprogramme tables hoặc caption QCVN I.418/I.416/recovery/OCR vào membership.
+Raw files có thể chứa vùng ngoài subset; không gọi là đã rà/toàn nguồn verified.
+
+35tests/20negative,71payload replay/ZIP SHA giống nhau. ZIP được giải nén directory
+riêng, CPython3.11.9 venv --without-pip, distributions=[], full validate và full-read
+138target/238supporting/XXVI dưới audit gate cấm workspace/cache gốc.7CLI exit0,
+4denial probes đúng. **Cùng Windows**, chưa OS/máy khác. Quickstart nằm ngay trong
+ZIP, runtime chỉ stdlib; không cần repo/model/cache để đọc. Output đặt ngoài
+candidate/; không fallback fixture hoặc sửa manifest để làm lệnh pass.
+
+Experimental/candidate, release=false/corpus_version=null; source/edition/
+applicability pending, scope proposal, không human review/accepted/qrels.
+Word layout DOCX còn chưa kiểm. Chưa BM25/Dense/index/embedding/evaluation/app,
+chưa đổi bản nhóm. Dataset/index/ZIP cũ và review Hùng giữ nguyên.
+
+---
+
+## Lịch sử ingestion phiên 4 (giữ nguyên)
+
 # Ingestion hiện hành — phiên 4, 29/10/2026
 
 Snapshot **2025-01-01**. [Báo cáo](reviews/Source_Session4_Verification.md),

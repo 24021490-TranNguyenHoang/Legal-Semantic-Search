@@ -1,0 +1,19 @@
+{
+  "policy_version": "subset-candidate.v1",
+  "dataset_version": "vtls-subset-experimental.v5-candidate.1",
+  "snapshot_date": "2025-01-01",
+  "session4_run": "staging/source-session4-preview-007",
+  "session4_checks": "staging/source-session4-checks-002",
+  "session4_config": "config/source_session4.v1.json",
+  "source_proposal_run": "staging/source-session3-proposal-009",
+  "baseline_ref": "staging/source-session5-001/preservation.baseline.json",
+  "input_hashes": {
+    "config/source_session4.v1.json": "f53ed70af974595dda0a1a55d75b19e886bab0e31028e20e05fac87552ada9a7",
+    "src/source_session4.py": "f050c430044fa93c63829cdbb937ae469a9774dd46a164232a4bfc2ea9411d20",
+    "src/preview_read_check.py": "85690fb4f582f997de3362d8086a08bada48aad1577f6086fc960c4d552613d5",
+    "src/circular_dataset_portable.py": "ac6ba82dd3c99e8f23d9f18de982a23f022966b53416b12b577d7559d0f8a08b",
+    "staging/source-session4-preview-007/manifest.json": "991b4c71f6683c02935c8b16d7e4806974b8e8f3a4e239a6980a4ae3ffa0b8d0",
+    "staging/source-session4-checks-002/manifest.json": "0fa76e84ec4240d109411d4bb7f2b42c0bb7a26df8bdfee90cd27a11bae06ee0",
+    "staging/source-session3-proposal-009/manifest.json": "c2a09db620e28aa69a803724fced61bbf24ea001e23334baca2d378bde15f6ed"
+  }
+}
