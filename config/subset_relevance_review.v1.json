@@ -1,0 +1,4012 @@
+{
+  "policy": "subset-v5-relevance.v1.2",
+  "inputs": {
+    "index": {
+      "path": "staging/bm25-subset-v5-003/index_manifest.json",
+      "sha256": "657ababc157e3e509c874628bd695b20220baeec514d3f201c2d53bcfc7138af"
+    },
+    "batch": {
+      "path": "staging/bm25-subset-v5-batch-002/manifest.json",
+      "sha256": "baa811c55622580eb081b21e2df1868a3dba3d12f6f2a63acd532e6ca6b2fa09"
+    },
+    "dataset": {
+      "path": "staging/dataset-v5-subset-006/dataset_manifest.json",
+      "sha256": "2a33d8fa503b54c574c453c33297c153074b2c3c08cdfb8a08b558d613e2d897"
+    },
+    "queries": {
+      "path": "staging/composition-queries-001/manifest.json",
+      "sha256": "f8cc9257c410c8eb578d43a0bd1912e3aa5c572829be5e33d7ee0a2045e546f0"
+    }
+  },
+  "work_ref": "staging/source-session7-work-001",
+  "binding": {
+    "dataset_version": "vtls-subset-experimental.v5-candidate.1",
+    "dataset_manifest_sha256": "2a33d8fa503b54c574c453c33297c153074b2c3c08cdfb8a08b558d613e2d897",
+    "dataset_content_sha256": "708d3c40fbd6e5a384792b4a717f595aa5edb8023c32fb4efb6ef136a3aa2be4",
+    "consumer_sha256": "c96add34342a48af9db1fc6d72da78d3904a50135d81570d8b80dc9ebb1ecd60",
+    "queries_manifest_sha256": "f8cc9257c410c8eb578d43a0bd1912e3aa5c572829be5e33d7ee0a2045e546f0",
+    "index_version": "vtls-bm25s-subset.v1",
+    "index_content_sha256": "359b93ec8834f6388dc8bd129371ba8a7f8133ff0c9c25ccb56d0913f488d9f8",
+    "index_manifest_sha256": "657ababc157e3e509c874628bd695b20220baeec514d3f201c2d53bcfc7138af",
+    "batch_manifest_sha256": "baa811c55622580eb081b21e2df1868a3dba3d12f6f2a63acd532e6ca6b2fa09"
+  },
+  "judgments": [
+    {
+      "query_id": "dev-roundabout-1",
+      "record_id": "c_1f8a8945b35274e7c6cf37b5ae9401c76134ca01d5ef00cc68c637dbd5f9e5a5",
+      "code": "D"
+    },
+    {
+      "query_id": "dev-roundabout-1",
+      "record_id": "c_f7345c550d1ee006180b4d5f436441958be30ab2c59a6d91a2ab020c55e42951",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-roundabout-1",
+      "record_id": "c_6401c148a019a86e51eedfe8f2691ec951e42bd1b1005147997d7048a10ebecc",
+      "code": "S"
+    },
+    {
+      "query_id": "dev-roundabout-1",
+      "record_id": "c_8d174e7b1e79f466d5c6eb978e454edb55e9cfc823351b462fc1e13b9f9a5983",
+      "code": "Y"
+    },
+    {
+      "query_id": "dev-roundabout-1",
+      "record_id": "c_d49e727bde79f36957900587609bb5eb815ab14e19206d401a182d1f99e26712",
+      "code": "S"
+    },
+    {
+      "query_id": "dev-roundabout-1",
+      "record_id": "c_1ff2dec1c17ca85bd8f42f077b918553448c0f4cbe41d35e73d58c8182042f4c",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-roundabout-1",
+      "record_id": "rv_073f041e0382ecd951764ed2e4de64e9d301875f78fddaf33d28d8e57d8da2f1",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-roundabout-1",
+      "record_id": "c_d31a21db95899ebbc1e094d969d226a38d1511d26a2e1b97c7f13a8d5af6e217",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-roundabout-1",
+      "record_id": "c_90dbea50bf3c4885a401310a3d5c4d08da46522f1413aa0c98d99bed42ded7e3",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-roundabout-1",
+      "record_id": "c_8815c976e9feb3d3620bf4f87f7f681c0438462ae5de9c4ac376f99fdb65b956",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-roundabout-2",
+      "record_id": "c_6401c148a019a86e51eedfe8f2691ec951e42bd1b1005147997d7048a10ebecc",
+      "code": "S"
+    },
+    {
+      "query_id": "dev-roundabout-2",
+      "record_id": "c_f7345c550d1ee006180b4d5f436441958be30ab2c59a6d91a2ab020c55e42951",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-roundabout-2",
+      "record_id": "c_1f8a8945b35274e7c6cf37b5ae9401c76134ca01d5ef00cc68c637dbd5f9e5a5",
+      "code": "D"
+    },
+    {
+      "query_id": "dev-roundabout-2",
+      "record_id": "rv_073f041e0382ecd951764ed2e4de64e9d301875f78fddaf33d28d8e57d8da2f1",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-roundabout-2",
+      "record_id": "c_73b8382e94a64f8458f4f85272a82e608a03f8dc5daa438b2cc4b8b561a52bf8",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-roundabout-2",
+      "record_id": "c_b67c6f9758e0662e3a7b2080ae2fe98b97d8b9f53dbe96b1308bcb7acb8eefe0",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-roundabout-2",
+      "record_id": "c_23a644847306d2607cf3835025484748fd6b21df76c93791a04505c9fc00f7cb",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-roundabout-2",
+      "record_id": "c_9a0a220f85e304fe8b0d7e49df8dd4bf83eed6f106c9af051f9a55fc9f4f8258",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-roundabout-2",
+      "record_id": "c_10e4a26a4c3badbc421bfcce203b4e6a7816a533bd11c8f134ea04ac83a65c98",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-roundabout-2",
+      "record_id": "c_83a78f6167a7c6ebd8902459d71a04e72b6598ada5beee3bcbfb7744a259a6b0",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-roundabout-3",
+      "record_id": "c_1f8a8945b35274e7c6cf37b5ae9401c76134ca01d5ef00cc68c637dbd5f9e5a5",
+      "code": "D"
+    },
+    {
+      "query_id": "dev-roundabout-3",
+      "record_id": "c_f7345c550d1ee006180b4d5f436441958be30ab2c59a6d91a2ab020c55e42951",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-roundabout-3",
+      "record_id": "c_73b8382e94a64f8458f4f85272a82e608a03f8dc5daa438b2cc4b8b561a52bf8",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-roundabout-3",
+      "record_id": "c_10e4a26a4c3badbc421bfcce203b4e6a7816a533bd11c8f134ea04ac83a65c98",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-roundabout-3",
+      "record_id": "c_6401c148a019a86e51eedfe8f2691ec951e42bd1b1005147997d7048a10ebecc",
+      "code": "S"
+    },
+    {
+      "query_id": "dev-roundabout-3",
+      "record_id": "rv_073f041e0382ecd951764ed2e4de64e9d301875f78fddaf33d28d8e57d8da2f1",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-roundabout-3",
+      "record_id": "c_23a644847306d2607cf3835025484748fd6b21df76c93791a04505c9fc00f7cb",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-roundabout-3",
+      "record_id": "c_f40b4dc8a194af86f8c532e89b170ee49c88d9024b32fd5576431c13776c1dec",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-roundabout-3",
+      "record_id": "c_d9a10806713add63791c602960e1d35631b87fd626a11db59b144baf13f439ff",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-roundabout-3",
+      "record_id": "c_0a65158b909b765b5c14eddc1a13a61fb10b5a813a3ac04e0b9b68224c3256ef",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-motorcycle_stop-1",
+      "record_id": "c_83a78f6167a7c6ebd8902459d71a04e72b6598ada5beee3bcbfb7744a259a6b0",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-motorcycle_stop-1",
+      "record_id": "c_02518e61c539b1125f75129ccadf097042be490c8bc57445a21f5ee44f592e17",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-motorcycle_stop-1",
+      "record_id": "rv_5f69ac751c5ca55278c0f07ef6a5a913ee56afcba8b1ef81070db8f1be372f9f",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-motorcycle_stop-1",
+      "record_id": "c_90dbea50bf3c4885a401310a3d5c4d08da46522f1413aa0c98d99bed42ded7e3",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-motorcycle_stop-1",
+      "record_id": "c_b2dc0676755880863fdf5ff1bd359dfea6e52264c59b09e8a62f321199a89952",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-motorcycle_stop-1",
+      "record_id": "rv_073f041e0382ecd951764ed2e4de64e9d301875f78fddaf33d28d8e57d8da2f1",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-motorcycle_stop-1",
+      "record_id": "rv_63a7fc38930d3e3f7ba34b3a34f3c65c6b6813869ea3a31ace91ee5de334213f",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-motorcycle_stop-1",
+      "record_id": "c_8a1cf72ce208377f72ea146256dfd48c6a2dd3861d1315067c81683efc218647",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-motorcycle_stop-1",
+      "record_id": "c_9a0a220f85e304fe8b0d7e49df8dd4bf83eed6f106c9af051f9a55fc9f4f8258",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-motorcycle_stop-1",
+      "record_id": "c_8ffb7b4abe31575d7a8cc17b222354483e45a38e6d8619236cc53da43aced9b5",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-motorcycle_stop-2",
+      "record_id": "c_83a78f6167a7c6ebd8902459d71a04e72b6598ada5beee3bcbfb7744a259a6b0",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-motorcycle_stop-2",
+      "record_id": "c_b2dc0676755880863fdf5ff1bd359dfea6e52264c59b09e8a62f321199a89952",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-motorcycle_stop-2",
+      "record_id": "c_f7345c550d1ee006180b4d5f436441958be30ab2c59a6d91a2ab020c55e42951",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-motorcycle_stop-2",
+      "record_id": "rv_073f041e0382ecd951764ed2e4de64e9d301875f78fddaf33d28d8e57d8da2f1",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-motorcycle_stop-2",
+      "record_id": "c_23a644847306d2607cf3835025484748fd6b21df76c93791a04505c9fc00f7cb",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-motorcycle_stop-2",
+      "record_id": "c_1f8a8945b35274e7c6cf37b5ae9401c76134ca01d5ef00cc68c637dbd5f9e5a5",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-motorcycle_stop-2",
+      "record_id": "c_02518e61c539b1125f75129ccadf097042be490c8bc57445a21f5ee44f592e17",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-motorcycle_stop-2",
+      "record_id": "tr_19906379710bf99bdcdbbccecfe41baea5354436a130b8e811920c3d82e34c12",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-motorcycle_stop-2",
+      "record_id": "c_af9284ce6da72a38ba97bb9288233c86b29d4b37d4a62c54d9db6d2fd740c310",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-motorcycle_stop-2",
+      "record_id": "c_ea171e5aaf2a322cbedb2862b704d611ee9b0f483de44bb05421072930b41f81",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-motorcycle_stop-3",
+      "record_id": "c_02518e61c539b1125f75129ccadf097042be490c8bc57445a21f5ee44f592e17",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-motorcycle_stop-3",
+      "record_id": "c_5e638f3fa56c0b786e729a38870966a56c064a63c651f877532d4af1c6226515",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-motorcycle_stop-3",
+      "record_id": "c_b2dc0676755880863fdf5ff1bd359dfea6e52264c59b09e8a62f321199a89952",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-motorcycle_stop-3",
+      "record_id": "c_9a0a220f85e304fe8b0d7e49df8dd4bf83eed6f106c9af051f9a55fc9f4f8258",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-motorcycle_stop-3",
+      "record_id": "c_b0d8794e639a6d7d4ced2e6d1fbd874664172f4d2d3a5d34fbfbf3a6d1e746ab",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-motorcycle_stop-3",
+      "record_id": "rv_073f041e0382ecd951764ed2e4de64e9d301875f78fddaf33d28d8e57d8da2f1",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-motorcycle_stop-3",
+      "record_id": "c_ed53e3781e51ce7bc834693e514d98c63eddcdfccaa52b8a504fcc9dbe0944a1",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-motorcycle_stop-3",
+      "record_id": "c_bfe6057f8fe2fc697e076a33ea326803ed06fe7922437948f0fd4e605ddcbac0",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-motorcycle_stop-3",
+      "record_id": "c_f40b4dc8a194af86f8c532e89b170ee49c88d9024b32fd5576431c13776c1dec",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-motorcycle_stop-3",
+      "record_id": "c_ea171e5aaf2a322cbedb2862b704d611ee9b0f483de44bb05421072930b41f81",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-night_horn-1",
+      "record_id": "c_1a62de0c691cf366786bf2b871f8e2d045512204f3ac91e4a17e8d6ebc009802",
+      "code": "P"
+    },
+    {
+      "query_id": "dev-night_horn-1",
+      "record_id": "c_e3a8378dba6ee24993fd9644e90c241460eef4030df6c12189202b60f4e26b5e",
+      "code": "S"
+    },
+    {
+      "query_id": "dev-night_horn-1",
+      "record_id": "c_117472bfc1140dc121ddbc771ebccff34e2427c7e05062335a1b00613e555e2e",
+      "code": "S"
+    },
+    {
+      "query_id": "dev-night_horn-1",
+      "record_id": "c_7d321d92e47f247f27586cf710d2e5ec47cfcb3dcb4d2c22954994e14541cb21",
+      "code": "S"
+    },
+    {
+      "query_id": "dev-night_horn-1",
+      "record_id": "c_0a65158b909b765b5c14eddc1a13a61fb10b5a813a3ac04e0b9b68224c3256ef",
+      "code": "S"
+    },
+    {
+      "query_id": "dev-night_horn-1",
+      "record_id": "c_0d0ba8a960d1e91bb7870a0257442700f6edd792b6293eb72183986dbef82e1c",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-night_horn-1",
+      "record_id": "c_fda605ed35c236b7f06027f15f4a0576755554bd5c1807c7bab97a57d09e89fe",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-night_horn-1",
+      "record_id": "c_8248e4ceabc109d2942e073a201f86717525e0afc92bab40b5dbbb40f1d36f00",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-night_horn-1",
+      "record_id": "c_12a74257f985829878c547b2bb0d93aa7308d37f3ad7d55afefd0876fb0415bd",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-night_horn-1",
+      "record_id": "c_a2f1d9a5c9f5eaf53ce677e7a6e58b1bbcf9394750ad354a1ef9f04003b7afb6",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-night_horn-2",
+      "record_id": "c_1a62de0c691cf366786bf2b871f8e2d045512204f3ac91e4a17e8d6ebc009802",
+      "code": "P"
+    },
+    {
+      "query_id": "dev-night_horn-2",
+      "record_id": "c_0a65158b909b765b5c14eddc1a13a61fb10b5a813a3ac04e0b9b68224c3256ef",
+      "code": "S"
+    },
+    {
+      "query_id": "dev-night_horn-2",
+      "record_id": "c_7d321d92e47f247f27586cf710d2e5ec47cfcb3dcb4d2c22954994e14541cb21",
+      "code": "S"
+    },
+    {
+      "query_id": "dev-night_horn-2",
+      "record_id": "c_0d3bf4670ba96c89ccf2c97a8264dd1409a136e2f7d2290f62486da9d6bbfbb3",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-night_horn-2",
+      "record_id": "c_24def7c44a8779c22d56de6b763880addc81bee7d6be4d19d6b9ea586f62d07e",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-night_horn-2",
+      "record_id": "tr_03f3ae425e4a1930d6081703c72e22aba780a4cdfd1402625e9ce8081e6308e6",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-night_horn-2",
+      "record_id": "tr_19906379710bf99bdcdbbccecfe41baea5354436a130b8e811920c3d82e34c12",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-night_horn-2",
+      "record_id": "c_1ff2dec1c17ca85bd8f42f077b918553448c0f4cbe41d35e73d58c8182042f4c",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-night_horn-2",
+      "record_id": "c_117472bfc1140dc121ddbc771ebccff34e2427c7e05062335a1b00613e555e2e",
+      "code": "S"
+    },
+    {
+      "query_id": "dev-night_horn-2",
+      "record_id": "tr_df936e34fbd59d10813357ce52c96e8299d2480b78e0934c1b519bf7b910424b",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-night_horn-3",
+      "record_id": "c_1a62de0c691cf366786bf2b871f8e2d045512204f3ac91e4a17e8d6ebc009802",
+      "code": "D"
+    },
+    {
+      "query_id": "dev-night_horn-3",
+      "record_id": "c_0a65158b909b765b5c14eddc1a13a61fb10b5a813a3ac04e0b9b68224c3256ef",
+      "code": "P"
+    },
+    {
+      "query_id": "dev-night_horn-3",
+      "record_id": "c_7d321d92e47f247f27586cf710d2e5ec47cfcb3dcb4d2c22954994e14541cb21",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-night_horn-3",
+      "record_id": "c_24def7c44a8779c22d56de6b763880addc81bee7d6be4d19d6b9ea586f62d07e",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-night_horn-3",
+      "record_id": "tr_268d7ec2a87e5f4f716c80b84a79e3e2a9600de6b8d4d437fbc1577b0a0808ec",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-night_horn-3",
+      "record_id": "tr_090bd1839f3130d3e8d67a5956fa3bf91e3f658f53ee632a62138f9cdf6dfa8f",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-night_horn-3",
+      "record_id": "tr_df936e34fbd59d10813357ce52c96e8299d2480b78e0934c1b519bf7b910424b",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-night_horn-3",
+      "record_id": "tr_19906379710bf99bdcdbbccecfe41baea5354436a130b8e811920c3d82e34c12",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-night_horn-3",
+      "record_id": "c_1ff2dec1c17ca85bd8f42f077b918553448c0f4cbe41d35e73d58c8182042f4c",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-night_horn-3",
+      "record_id": "c_0d3bf4670ba96c89ccf2c97a8264dd1409a136e2f7d2290f62486da9d6bbfbb3",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-driving_age-1",
+      "record_id": "c_3fe959be975eb9c4c24188e5023bbdaac7e82cf97cc8aacaa371a25ba1b8b060",
+      "code": "S"
+    },
+    {
+      "query_id": "dev-driving_age-1",
+      "record_id": "c_d769841628fd619c0afeb56b2f0bf1bc1ce5c534a4890f7692f8626308c8d660",
+      "code": "S"
+    },
+    {
+      "query_id": "dev-driving_age-1",
+      "record_id": "c_776b5db122d8b4df1ac2ad92b8cc1427009b59b72d8d32a871cb7ef273529214",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-driving_age-1",
+      "record_id": "c_846a48879946cff79d159b769c1c98c6164140a29ac36bc659ceae1a1e6ed23b",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-driving_age-1",
+      "record_id": "c_af9284ce6da72a38ba97bb9288233c86b29d4b37d4a62c54d9db6d2fd740c310",
+      "code": "P"
+    },
+    {
+      "query_id": "dev-driving_age-1",
+      "record_id": "c_af933b511ee76f29f6a4e4d727ec05f06d5635831ae8e1742081b46a9443b2bb",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-driving_age-1",
+      "record_id": "c_00b1a2058c63a7b87a631277ef4c2795960e049197f8190897224fe47745bd7d",
+      "code": "P"
+    },
+    {
+      "query_id": "dev-driving_age-1",
+      "record_id": "c_d8dc7ae5a20823d8593d1180cd347ccfa85f2954a90d4a13be251857021dec4d",
+      "code": "P"
+    },
+    {
+      "query_id": "dev-driving_age-1",
+      "record_id": "c_ff8053b69343c49d8f924d104b4446d46cd8688f6dd2d1662012165fae762806",
+      "code": "P"
+    },
+    {
+      "query_id": "dev-driving_age-1",
+      "record_id": "c_b857d45ca868f4f439ce874d699631f265c8c38cc7c68756d29452d3f2110535",
+      "code": "P"
+    },
+    {
+      "query_id": "dev-driving_age-2",
+      "record_id": "c_d769841628fd619c0afeb56b2f0bf1bc1ce5c534a4890f7692f8626308c8d660",
+      "code": "S"
+    },
+    {
+      "query_id": "dev-driving_age-2",
+      "record_id": "c_af9284ce6da72a38ba97bb9288233c86b29d4b37d4a62c54d9db6d2fd740c310",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-driving_age-2",
+      "record_id": "c_50c22c82f7066f19a6cdb234cc021e0d7550a177956340a022471a583351e43d",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-driving_age-2",
+      "record_id": "c_ed53e3781e51ce7bc834693e514d98c63eddcdfccaa52b8a504fcc9dbe0944a1",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-driving_age-2",
+      "record_id": "c_bfe6057f8fe2fc697e076a33ea326803ed06fe7922437948f0fd4e605ddcbac0",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-driving_age-2",
+      "record_id": "c_9a0a220f85e304fe8b0d7e49df8dd4bf83eed6f106c9af051f9a55fc9f4f8258",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-driving_age-2",
+      "record_id": "c_10e4a26a4c3badbc421bfcce203b4e6a7816a533bd11c8f134ea04ac83a65c98",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-driving_age-2",
+      "record_id": "c_97a531c42490905f84320904a6e89837c25db670f8a9ca58d25c5cf51909568f",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-driving_age-2",
+      "record_id": "c_b857d45ca868f4f439ce874d699631f265c8c38cc7c68756d29452d3f2110535",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-driving_age-2",
+      "record_id": "c_6e528e8e23ce2f5cc4bae2425091aca0d5f0082073d9f6cec57c6139b81ea4d6",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-driving_age-3",
+      "record_id": "c_1ff2dec1c17ca85bd8f42f077b918553448c0f4cbe41d35e73d58c8182042f4c",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-driving_age-3",
+      "record_id": "c_50c22c82f7066f19a6cdb234cc021e0d7550a177956340a022471a583351e43d",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-driving_age-3",
+      "record_id": "c_6e8a21dc26caa8da5d0c53918ec2d2aa7ff609da280a47daee1b0e7ba8636a61",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-driving_age-3",
+      "record_id": "rv_073f041e0382ecd951764ed2e4de64e9d301875f78fddaf33d28d8e57d8da2f1",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-driving_age-3",
+      "record_id": "c_404e4875f39114e380a3d730d89a6a490d2055faf6667f841c882f3db3057e7e",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-driving_age-3",
+      "record_id": "c_016762e4db1a100f3d007b9e5b88fcc213358b310a9ae2c351f4e35b2c4643a4",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-driving_age-3",
+      "record_id": "c_d769841628fd619c0afeb56b2f0bf1bc1ce5c534a4890f7692f8626308c8d660",
+      "code": "P"
+    },
+    {
+      "query_id": "dev-driving_age-3",
+      "record_id": "c_af9284ce6da72a38ba97bb9288233c86b29d4b37d4a62c54d9db6d2fd740c310",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-driving_age-3",
+      "record_id": "c_33bddc4e3ba24cc9388f9b41610c17b8cca82492122c3b64e93c64218eac5714",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-driving_age-3",
+      "record_id": "c_7d321d92e47f247f27586cf710d2e5ec47cfcb3dcb4d2c22954994e14541cb21",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-licence_points-1",
+      "record_id": "c_ddc994db1f2a9ead62340a7fd64d23497bfcd604a2d1db7ed5e2993da328f927",
+      "code": "P"
+    },
+    {
+      "query_id": "dev-licence_points-1",
+      "record_id": "c_d4573fc5f81471e4cf38befe13b970ccc2b596075d8831f0e841fb4185cbe263",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-licence_points-1",
+      "record_id": "c_298b8c2865cabcaf0dc28f4e06b3f1fc1708fbbdf15f5b29d5852abe87ef2fad",
+      "code": "P"
+    },
+    {
+      "query_id": "dev-licence_points-1",
+      "record_id": "c_3ee9ba9754d850f0b5e8e7eca31bdf6adbaedbf04f7cdafc2ba1c5c2d24c66b9",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-licence_points-1",
+      "record_id": "c_4d5e161c062ab86b31aa35c168b4996a98fdf85a3202c797b6d7418a674fd154",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-licence_points-1",
+      "record_id": "c_4f2923e72ceacd50e4f2f2000181ec9a6d23244678b571fc75737d8b2ac04c48",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-licence_points-1",
+      "record_id": "c_64504dccc76cd16e68d3bfca11b122249472cbdfca1e798e0cd04287e97d2d30",
+      "code": "P"
+    },
+    {
+      "query_id": "dev-licence_points-1",
+      "record_id": "c_8fb0e2e3bae25ead6618ee3a95ddfb0cfa69f542c0fa4a8c4aca4252d6a71b17",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-licence_points-1",
+      "record_id": "c_66603c4c82714a4dc21725cff6a3aa0dde5d4f94d53d1bddeeebda5e1df55c35",
+      "code": "P"
+    },
+    {
+      "query_id": "dev-licence_points-1",
+      "record_id": "c_ce3b071b3f447c01b7e7b5af133a5af6c3e2d342c00fc6a396c4ed88a59cdd57",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-licence_points-2",
+      "record_id": "c_64504dccc76cd16e68d3bfca11b122249472cbdfca1e798e0cd04287e97d2d30",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-licence_points-2",
+      "record_id": "c_298b8c2865cabcaf0dc28f4e06b3f1fc1708fbbdf15f5b29d5852abe87ef2fad",
+      "code": "D"
+    },
+    {
+      "query_id": "dev-licence_points-2",
+      "record_id": "c_5e638f3fa56c0b786e729a38870966a56c064a63c651f877532d4af1c6226515",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-licence_points-2",
+      "record_id": "c_1a12822b19bc1daf8144866099d6fa3b665514dd69479870e87987ef4b7c212d",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-licence_points-2",
+      "record_id": "rv_073f041e0382ecd951764ed2e4de64e9d301875f78fddaf33d28d8e57d8da2f1",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-licence_points-2",
+      "record_id": "c_2ae0fdc5615b18b03995107dbf725626424f62ae3201f57049bfbd47c8b71a4d",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-licence_points-2",
+      "record_id": "c_66603c4c82714a4dc21725cff6a3aa0dde5d4f94d53d1bddeeebda5e1df55c35",
+      "code": "S"
+    },
+    {
+      "query_id": "dev-licence_points-2",
+      "record_id": "c_7be2e8d7ae296d8b22c47845f907781007b0eeb8739b3924e761b390f45fae76",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-licence_points-2",
+      "record_id": "c_ce3b071b3f447c01b7e7b5af133a5af6c3e2d342c00fc6a396c4ed88a59cdd57",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-licence_points-2",
+      "record_id": "c_6401c148a019a86e51eedfe8f2691ec951e42bd1b1005147997d7048a10ebecc",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-licence_points-3",
+      "record_id": "c_f06dbea794e0bc15f11f3b0ea8e72e57bcdbc18d2c3d434036ca51bf1f849b7f",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-licence_points-3",
+      "record_id": "c_85c9a243c0bf7b7d27bbe1f55ea182e18a607898b4607b7c9902f2ef15085b39",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-licence_points-3",
+      "record_id": "c_298b8c2865cabcaf0dc28f4e06b3f1fc1708fbbdf15f5b29d5852abe87ef2fad",
+      "code": "D"
+    },
+    {
+      "query_id": "dev-licence_points-3",
+      "record_id": "c_33bddc4e3ba24cc9388f9b41610c17b8cca82492122c3b64e93c64218eac5714",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-licence_points-3",
+      "record_id": "c_50c22c82f7066f19a6cdb234cc021e0d7550a177956340a022471a583351e43d",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-licence_points-3",
+      "record_id": "c_6e8a21dc26caa8da5d0c53918ec2d2aa7ff609da280a47daee1b0e7ba8636a61",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-licence_points-3",
+      "record_id": "c_8fb0e2e3bae25ead6618ee3a95ddfb0cfa69f542c0fa4a8c4aca4252d6a71b17",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-licence_points-3",
+      "record_id": "c_0ab24a7375b340af37c20b10295bc5bb6e6a5aa2c67e8c9e7ff1a5c109cfffb8",
+      "code": "S"
+    },
+    {
+      "query_id": "dev-licence_points-3",
+      "record_id": "c_64504dccc76cd16e68d3bfca11b122249472cbdfca1e798e0cd04287e97d2d30",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-licence_points-3",
+      "record_id": "c_bfe6057f8fe2fc697e076a33ea326803ed06fe7922437948f0fd4e605ddcbac0",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-alcohol-1",
+      "record_id": "c_6e528e8e23ce2f5cc4bae2425091aca0d5f0082073d9f6cec57c6139b81ea4d6",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-alcohol-1",
+      "record_id": "c_ed53e3781e51ce7bc834693e514d98c63eddcdfccaa52b8a504fcc9dbe0944a1",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-alcohol-1",
+      "record_id": "c_d769841628fd619c0afeb56b2f0bf1bc1ce5c534a4890f7692f8626308c8d660",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-alcohol-1",
+      "record_id": "c_b0d8794e639a6d7d4ced2e6d1fbd874664172f4d2d3a5d34fbfbf3a6d1e746ab",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-alcohol-1",
+      "record_id": "c_97a531c42490905f84320904a6e89837c25db670f8a9ca58d25c5cf51909568f",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-alcohol-1",
+      "record_id": "c_016762e4db1a100f3d007b9e5b88fcc213358b310a9ae2c351f4e35b2c4643a4",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-alcohol-1",
+      "record_id": "c_bfe6057f8fe2fc697e076a33ea326803ed06fe7922437948f0fd4e605ddcbac0",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-alcohol-1",
+      "record_id": "c_8d174e7b1e79f466d5c6eb978e454edb55e9cfc823351b462fc1e13b9f9a5983",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-alcohol-1",
+      "record_id": "c_7d321d92e47f247f27586cf710d2e5ec47cfcb3dcb4d2c22954994e14541cb21",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-alcohol-1",
+      "record_id": "c_1ff2dec1c17ca85bd8f42f077b918553448c0f4cbe41d35e73d58c8182042f4c",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-alcohol-2",
+      "record_id": "c_6401c148a019a86e51eedfe8f2691ec951e42bd1b1005147997d7048a10ebecc",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-alcohol-2",
+      "record_id": "rv_073f041e0382ecd951764ed2e4de64e9d301875f78fddaf33d28d8e57d8da2f1",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-alcohol-2",
+      "record_id": "c_1ff2dec1c17ca85bd8f42f077b918553448c0f4cbe41d35e73d58c8182042f4c",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-alcohol-2",
+      "record_id": "c_f40b4dc8a194af86f8c532e89b170ee49c88d9024b32fd5576431c13776c1dec",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-alcohol-2",
+      "record_id": "c_5e638f3fa56c0b786e729a38870966a56c064a63c651f877532d4af1c6226515",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-alcohol-2",
+      "record_id": "c_7d321d92e47f247f27586cf710d2e5ec47cfcb3dcb4d2c22954994e14541cb21",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-alcohol-2",
+      "record_id": "c_7be2e8d7ae296d8b22c47845f907781007b0eeb8739b3924e761b390f45fae76",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-alcohol-2",
+      "record_id": "c_f1de50f62b25ad12f150b63638c4ca4d1e151da23bd68792686b16a40156ea0e",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-alcohol-2",
+      "record_id": "c_93074cc2888d209c84963b2f397eda782d643a6ad7b8a3661f743578b4752d9b",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-alcohol-2",
+      "record_id": "c_1f8a8945b35274e7c6cf37b5ae9401c76134ca01d5ef00cc68c637dbd5f9e5a5",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-alcohol-3",
+      "record_id": "c_b8d9b1c266db45adace6ecc952027c656215fc4036ac431bce9867202c095ad7",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-alcohol-3",
+      "record_id": "c_1ff2dec1c17ca85bd8f42f077b918553448c0f4cbe41d35e73d58c8182042f4c",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-alcohol-3",
+      "record_id": "c_6e528e8e23ce2f5cc4bae2425091aca0d5f0082073d9f6cec57c6139b81ea4d6",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-alcohol-3",
+      "record_id": "c_f40b4dc8a194af86f8c532e89b170ee49c88d9024b32fd5576431c13776c1dec",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-alcohol-3",
+      "record_id": "c_7be2e8d7ae296d8b22c47845f907781007b0eeb8739b3924e761b390f45fae76",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-alcohol-3",
+      "record_id": "c_7d321d92e47f247f27586cf710d2e5ec47cfcb3dcb4d2c22954994e14541cb21",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-alcohol-3",
+      "record_id": "c_f1de50f62b25ad12f150b63638c4ca4d1e151da23bd68792686b16a40156ea0e",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-alcohol-3",
+      "record_id": "c_93074cc2888d209c84963b2f397eda782d643a6ad7b8a3661f743578b4752d9b",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-alcohol-3",
+      "record_id": "c_c0ecc166d13634062ca3341ac0c235484a1ebdd2e4ad7b91787938ccfeefb4c2",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-alcohol-3",
+      "record_id": "c_5e638f3fa56c0b786e729a38870966a56c064a63c651f877532d4af1c6226515",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-red_light-1",
+      "record_id": "c_ea171e5aaf2a322cbedb2862b704d611ee9b0f483de44bb05421072930b41f81",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-red_light-1",
+      "record_id": "rv_63a7fc38930d3e3f7ba34b3a34f3c65c6b6813869ea3a31ace91ee5de334213f",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-red_light-1",
+      "record_id": "rv_073f041e0382ecd951764ed2e4de64e9d301875f78fddaf33d28d8e57d8da2f1",
+      "code": "S"
+    },
+    {
+      "query_id": "dev-red_light-1",
+      "record_id": "c_074becd80c086435d57eb4866344068af71fb547e639a562312d7d11d58ad32b",
+      "code": "Y"
+    },
+    {
+      "query_id": "dev-red_light-1",
+      "record_id": "c_02518e61c539b1125f75129ccadf097042be490c8bc57445a21f5ee44f592e17",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-red_light-1",
+      "record_id": "rv_5f69ac751c5ca55278c0f07ef6a5a913ee56afcba8b1ef81070db8f1be372f9f",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-red_light-1",
+      "record_id": "c_b2dc0676755880863fdf5ff1bd359dfea6e52264c59b09e8a62f321199a89952",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-red_light-1",
+      "record_id": "c_b0d8794e639a6d7d4ced2e6d1fbd874664172f4d2d3a5d34fbfbf3a6d1e746ab",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-red_light-1",
+      "record_id": "c_b9da00142e54df6781d4c69997d041024947f262c757b181e32bc7f15e943c96",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-red_light-1",
+      "record_id": "c_9cff443d4ac670a8fbe24cdf8f02db2e7c6c8c6060dc15afa4ea4e6d8c5a880b",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-red_light-2",
+      "record_id": "c_02518e61c539b1125f75129ccadf097042be490c8bc57445a21f5ee44f592e17",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-red_light-2",
+      "record_id": "rv_073f041e0382ecd951764ed2e4de64e9d301875f78fddaf33d28d8e57d8da2f1",
+      "code": "S"
+    },
+    {
+      "query_id": "dev-red_light-2",
+      "record_id": "c_b0d8794e639a6d7d4ced2e6d1fbd874664172f4d2d3a5d34fbfbf3a6d1e746ab",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-red_light-2",
+      "record_id": "c_5e638f3fa56c0b786e729a38870966a56c064a63c651f877532d4af1c6226515",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-red_light-2",
+      "record_id": "c_2e8266e59b29bc4915eeff115d35f5f549838d14948e6112ffa4603d723691d9",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-red_light-2",
+      "record_id": "c_b2dc0676755880863fdf5ff1bd359dfea6e52264c59b09e8a62f321199a89952",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-red_light-2",
+      "record_id": "c_d769841628fd619c0afeb56b2f0bf1bc1ce5c534a4890f7692f8626308c8d660",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-red_light-2",
+      "record_id": "c_e3a8378dba6ee24993fd9644e90c241460eef4030df6c12189202b60f4e26b5e",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-red_light-2",
+      "record_id": "c_9e3fac961667f30d6e3fd30a3c98b5ad40646cced4bb87814a8971e55f44629b",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-red_light-2",
+      "record_id": "c_1a12822b19bc1daf8144866099d6fa3b665514dd69479870e87987ef4b7c212d",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-red_light-3",
+      "record_id": "rv_073f041e0382ecd951764ed2e4de64e9d301875f78fddaf33d28d8e57d8da2f1",
+      "code": "S"
+    },
+    {
+      "query_id": "dev-red_light-3",
+      "record_id": "c_1ff2dec1c17ca85bd8f42f077b918553448c0f4cbe41d35e73d58c8182042f4c",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-red_light-3",
+      "record_id": "c_bfe6057f8fe2fc697e076a33ea326803ed06fe7922437948f0fd4e605ddcbac0",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-red_light-3",
+      "record_id": "c_b2dc0676755880863fdf5ff1bd359dfea6e52264c59b09e8a62f321199a89952",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-red_light-3",
+      "record_id": "c_d769841628fd619c0afeb56b2f0bf1bc1ce5c534a4890f7692f8626308c8d660",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-red_light-3",
+      "record_id": "c_b0d8794e639a6d7d4ced2e6d1fbd874664172f4d2d3a5d34fbfbf3a6d1e746ab",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-red_light-3",
+      "record_id": "c_f40b4dc8a194af86f8c532e89b170ee49c88d9024b32fd5576431c13776c1dec",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-red_light-3",
+      "record_id": "c_02518e61c539b1125f75129ccadf097042be490c8bc57445a21f5ee44f592e17",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-red_light-3",
+      "record_id": "c_9cff443d4ac670a8fbe24cdf8f02db2e7c6c8c6060dc15afa4ea4e6d8c5a880b",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-red_light-3",
+      "record_id": "c_97a531c42490905f84320904a6e89837c25db670f8a9ca58d25c5cf51909568f",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-helmet-1",
+      "record_id": "c_1ff2dec1c17ca85bd8f42f077b918553448c0f4cbe41d35e73d58c8182042f4c",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-helmet-1",
+      "record_id": "c_b321a78b09857dc08caf06139703e28e85a6d34a43324332469338d1be7fbcf8",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-helmet-1",
+      "record_id": "c_7d321d92e47f247f27586cf710d2e5ec47cfcb3dcb4d2c22954994e14541cb21",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-helmet-1",
+      "record_id": "c_b0d8794e639a6d7d4ced2e6d1fbd874664172f4d2d3a5d34fbfbf3a6d1e746ab",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-helmet-1",
+      "record_id": "c_ed53e3781e51ce7bc834693e514d98c63eddcdfccaa52b8a504fcc9dbe0944a1",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-helmet-1",
+      "record_id": "c_016762e4db1a100f3d007b9e5b88fcc213358b310a9ae2c351f4e35b2c4643a4",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-helmet-1",
+      "record_id": "c_d9a10806713add63791c602960e1d35631b87fd626a11db59b144baf13f439ff",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-helmet-1",
+      "record_id": "c_d769841628fd619c0afeb56b2f0bf1bc1ce5c534a4890f7692f8626308c8d660",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-helmet-1",
+      "record_id": "c_846a48879946cff79d159b769c1c98c6164140a29ac36bc659ceae1a1e6ed23b",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-helmet-1",
+      "record_id": "c_8cefc5a329679174721bb0285a55a65174b4df35bfd204a19ba5e3af510c7509",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-helmet-2",
+      "record_id": "c_12a74257f985829878c547b2bb0d93aa7308d37f3ad7d55afefd0876fb0415bd",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-helmet-2",
+      "record_id": "c_846a48879946cff79d159b769c1c98c6164140a29ac36bc659ceae1a1e6ed23b",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-helmet-2",
+      "record_id": "c_8cefc5a329679174721bb0285a55a65174b4df35bfd204a19ba5e3af510c7509",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-helmet-2",
+      "record_id": "c_b321a78b09857dc08caf06139703e28e85a6d34a43324332469338d1be7fbcf8",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-helmet-2",
+      "record_id": "c_83a78f6167a7c6ebd8902459d71a04e72b6598ada5beee3bcbfb7744a259a6b0",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-helmet-2",
+      "record_id": "c_97a531c42490905f84320904a6e89837c25db670f8a9ca58d25c5cf51909568f",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-helmet-2",
+      "record_id": "tr_824017275f85f56315730a69283f12135b509778b1c64c9655d38392ecc83beb",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-helmet-2",
+      "record_id": "tr_48dd2c5f29cc0f090f1f8a3a0ed9d37e3a56b637804beb2331d0355d6fad40be",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-helmet-2",
+      "record_id": "tr_7d96624a118ba37e1ec17a7d886fe612582b69cccbf29fe261e13a0e0d2ad64d",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-helmet-2",
+      "record_id": "tr_ac4f3afd92e8ae309f157b9f601c5d3d69adf93094bc9e29e2780c321e91e021",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-helmet-3",
+      "record_id": "rv_073f041e0382ecd951764ed2e4de64e9d301875f78fddaf33d28d8e57d8da2f1",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-helmet-3",
+      "record_id": "c_97a531c42490905f84320904a6e89837c25db670f8a9ca58d25c5cf51909568f",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-helmet-3",
+      "record_id": "tr_19906379710bf99bdcdbbccecfe41baea5354436a130b8e811920c3d82e34c12",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-helmet-3",
+      "record_id": "c_12a74257f985829878c547b2bb0d93aa7308d37f3ad7d55afefd0876fb0415bd",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-helmet-3",
+      "record_id": "rv_0916941b9b7db992fc538429b284e82378867ea9f955c146dfd3cad46fedb6f9",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-helmet-3",
+      "record_id": "c_846a48879946cff79d159b769c1c98c6164140a29ac36bc659ceae1a1e6ed23b",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-helmet-3",
+      "record_id": "c_6401c148a019a86e51eedfe8f2691ec951e42bd1b1005147997d7048a10ebecc",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-helmet-3",
+      "record_id": "c_af9284ce6da72a38ba97bb9288233c86b29d4b37d4a62c54d9db6d2fd740c310",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-helmet-3",
+      "record_id": "c_b321a78b09857dc08caf06139703e28e85a6d34a43324332469338d1be7fbcf8",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-helmet-3",
+      "record_id": "c_8cefc5a329679174721bb0285a55a65174b4df35bfd204a19ba5e3af510c7509",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-pedestrian-1",
+      "record_id": "c_f40b4dc8a194af86f8c532e89b170ee49c88d9024b32fd5576431c13776c1dec",
+      "code": "S"
+    },
+    {
+      "query_id": "dev-pedestrian-1",
+      "record_id": "c_1ff2dec1c17ca85bd8f42f077b918553448c0f4cbe41d35e73d58c8182042f4c",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-pedestrian-1",
+      "record_id": "c_d31a21db95899ebbc1e094d969d226a38d1511d26a2e1b97c7f13a8d5af6e217",
+      "code": "S"
+    },
+    {
+      "query_id": "dev-pedestrian-1",
+      "record_id": "c_23a644847306d2607cf3835025484748fd6b21df76c93791a04505c9fc00f7cb",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-pedestrian-1",
+      "record_id": "c_40b2b82f71c770094d360ba02b657c69025cd13dd6f908d86baf645247be0193",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-pedestrian-1",
+      "record_id": "c_24def7c44a8779c22d56de6b763880addc81bee7d6be4d19d6b9ea586f62d07e",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-pedestrian-1",
+      "record_id": "c_c0ecc166d13634062ca3341ac0c235484a1ebdd2e4ad7b91787938ccfeefb4c2",
+      "code": "S"
+    },
+    {
+      "query_id": "dev-pedestrian-1",
+      "record_id": "c_7be2e8d7ae296d8b22c47845f907781007b0eeb8739b3924e761b390f45fae76",
+      "code": "S"
+    },
+    {
+      "query_id": "dev-pedestrian-1",
+      "record_id": "c_ea171e5aaf2a322cbedb2862b704d611ee9b0f483de44bb05421072930b41f81",
+      "code": "S"
+    },
+    {
+      "query_id": "dev-pedestrian-1",
+      "record_id": "c_f1de50f62b25ad12f150b63638c4ca4d1e151da23bd68792686b16a40156ea0e",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-pedestrian-2",
+      "record_id": "c_10e4a26a4c3badbc421bfcce203b4e6a7816a533bd11c8f134ea04ac83a65c98",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-pedestrian-2",
+      "record_id": "c_8fb0e2e3bae25ead6618ee3a95ddfb0cfa69f542c0fa4a8c4aca4252d6a71b17",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-pedestrian-2",
+      "record_id": "c_1b4ee402bf5a18392bfcba4847c78bd68f0b31adc9e549f7d9a08796d65b0baf",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-pedestrian-2",
+      "record_id": "c_23a644847306d2607cf3835025484748fd6b21df76c93791a04505c9fc00f7cb",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-pedestrian-2",
+      "record_id": "rv_5f69ac751c5ca55278c0f07ef6a5a913ee56afcba8b1ef81070db8f1be372f9f",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-pedestrian-2",
+      "record_id": "c_b67c6f9758e0662e3a7b2080ae2fe98b97d8b9f53dbe96b1308bcb7acb8eefe0",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-pedestrian-2",
+      "record_id": "c_f7345c550d1ee006180b4d5f436441958be30ab2c59a6d91a2ab020c55e42951",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-pedestrian-2",
+      "record_id": "c_daa79b6e4d18cc02846864fe504c53b627cf344a18d7110402d36a9d0ac0f985",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-pedestrian-2",
+      "record_id": "c_73b8382e94a64f8458f4f85272a82e608a03f8dc5daa438b2cc4b8b561a52bf8",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-pedestrian-2",
+      "record_id": "c_ab92855d2e304336e166c7cb67d4fb72e57c0a8b9c9d2a01d4d283df02133364",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-pedestrian-3",
+      "record_id": "c_f40b4dc8a194af86f8c532e89b170ee49c88d9024b32fd5576431c13776c1dec",
+      "code": "S"
+    },
+    {
+      "query_id": "dev-pedestrian-3",
+      "record_id": "c_1ff2dec1c17ca85bd8f42f077b918553448c0f4cbe41d35e73d58c8182042f4c",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-pedestrian-3",
+      "record_id": "c_d31a21db95899ebbc1e094d969d226a38d1511d26a2e1b97c7f13a8d5af6e217",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-pedestrian-3",
+      "record_id": "c_7ee5e6bf160eec9b621a6e7f22404181ecd82c33edc1d33b1fab73549993ce25",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-pedestrian-3",
+      "record_id": "c_24def7c44a8779c22d56de6b763880addc81bee7d6be4d19d6b9ea586f62d07e",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-pedestrian-3",
+      "record_id": "rv_073f041e0382ecd951764ed2e4de64e9d301875f78fddaf33d28d8e57d8da2f1",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-pedestrian-3",
+      "record_id": "c_d9a10806713add63791c602960e1d35631b87fd626a11db59b144baf13f439ff",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-pedestrian-3",
+      "record_id": "c_f7345c550d1ee006180b4d5f436441958be30ab2c59a6d91a2ab020c55e42951",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-pedestrian-3",
+      "record_id": "c_1f8a8945b35274e7c6cf37b5ae9401c76134ca01d5ef00cc68c637dbd5f9e5a5",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-pedestrian-3",
+      "record_id": "c_10e4a26a4c3badbc421bfcce203b4e6a7816a533bd11c8f134ea04ac83a65c98",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-licence_exchange-1",
+      "record_id": "c_ce3b071b3f447c01b7e7b5af133a5af6c3e2d342c00fc6a396c4ed88a59cdd57",
+      "code": "P"
+    },
+    {
+      "query_id": "dev-licence_exchange-1",
+      "record_id": "c_5e638f3fa56c0b786e729a38870966a56c064a63c651f877532d4af1c6226515",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-licence_exchange-1",
+      "record_id": "c_1a12822b19bc1daf8144866099d6fa3b665514dd69479870e87987ef4b7c212d",
+      "code": "S"
+    },
+    {
+      "query_id": "dev-licence_exchange-1",
+      "record_id": "c_4d5e161c062ab86b31aa35c168b4996a98fdf85a3202c797b6d7418a674fd154",
+      "code": "S"
+    },
+    {
+      "query_id": "dev-licence_exchange-1",
+      "record_id": "c_2ae0fdc5615b18b03995107dbf725626424f62ae3201f57049bfbd47c8b71a4d",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-licence_exchange-1",
+      "record_id": "c_64504dccc76cd16e68d3bfca11b122249472cbdfca1e798e0cd04287e97d2d30",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-licence_exchange-1",
+      "record_id": "c_d4573fc5f81471e4cf38befe13b970ccc2b596075d8831f0e841fb4185cbe263",
+      "code": "S"
+    },
+    {
+      "query_id": "dev-licence_exchange-1",
+      "record_id": "c_f06dbea794e0bc15f11f3b0ea8e72e57bcdbc18d2c3d434036ca51bf1f849b7f",
+      "code": "S"
+    },
+    {
+      "query_id": "dev-licence_exchange-1",
+      "record_id": "c_298b8c2865cabcaf0dc28f4e06b3f1fc1708fbbdf15f5b29d5852abe87ef2fad",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-licence_exchange-1",
+      "record_id": "c_8fb0e2e3bae25ead6618ee3a95ddfb0cfa69f542c0fa4a8c4aca4252d6a71b17",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-licence_exchange-2",
+      "record_id": "c_5e638f3fa56c0b786e729a38870966a56c064a63c651f877532d4af1c6226515",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-licence_exchange-2",
+      "record_id": "c_2ae0fdc5615b18b03995107dbf725626424f62ae3201f57049bfbd47c8b71a4d",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-licence_exchange-2",
+      "record_id": "c_298b8c2865cabcaf0dc28f4e06b3f1fc1708fbbdf15f5b29d5852abe87ef2fad",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-licence_exchange-2",
+      "record_id": "c_64504dccc76cd16e68d3bfca11b122249472cbdfca1e798e0cd04287e97d2d30",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-licence_exchange-2",
+      "record_id": "c_ce3b071b3f447c01b7e7b5af133a5af6c3e2d342c00fc6a396c4ed88a59cdd57",
+      "code": "P"
+    },
+    {
+      "query_id": "dev-licence_exchange-2",
+      "record_id": "c_ddc994db1f2a9ead62340a7fd64d23497bfcd604a2d1db7ed5e2993da328f927",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-licence_exchange-2",
+      "record_id": "c_1a12822b19bc1daf8144866099d6fa3b665514dd69479870e87987ef4b7c212d",
+      "code": "S"
+    },
+    {
+      "query_id": "dev-licence_exchange-2",
+      "record_id": "c_4d5e161c062ab86b31aa35c168b4996a98fdf85a3202c797b6d7418a674fd154",
+      "code": "S"
+    },
+    {
+      "query_id": "dev-licence_exchange-2",
+      "record_id": "c_be3e625e5f65a8e1b15c1ffc58b94b0747a8277cad95bd99cd80ae3e52a6477f",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-licence_exchange-2",
+      "record_id": "c_f06dbea794e0bc15f11f3b0ea8e72e57bcdbc18d2c3d434036ca51bf1f849b7f",
+      "code": "S"
+    },
+    {
+      "query_id": "dev-licence_exchange-3",
+      "record_id": "c_5e638f3fa56c0b786e729a38870966a56c064a63c651f877532d4af1c6226515",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-licence_exchange-3",
+      "record_id": "c_2ae0fdc5615b18b03995107dbf725626424f62ae3201f57049bfbd47c8b71a4d",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-licence_exchange-3",
+      "record_id": "c_ce3b071b3f447c01b7e7b5af133a5af6c3e2d342c00fc6a396c4ed88a59cdd57",
+      "code": "P"
+    },
+    {
+      "query_id": "dev-licence_exchange-3",
+      "record_id": "c_ddc994db1f2a9ead62340a7fd64d23497bfcd604a2d1db7ed5e2993da328f927",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-licence_exchange-3",
+      "record_id": "c_1a12822b19bc1daf8144866099d6fa3b665514dd69479870e87987ef4b7c212d",
+      "code": "S"
+    },
+    {
+      "query_id": "dev-licence_exchange-3",
+      "record_id": "c_3ee9ba9754d850f0b5e8e7eca31bdf6adbaedbf04f7cdafc2ba1c5c2d24c66b9",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-licence_exchange-3",
+      "record_id": "c_016762e4db1a100f3d007b9e5b88fcc213358b310a9ae2c351f4e35b2c4643a4",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-licence_exchange-3",
+      "record_id": "c_64504dccc76cd16e68d3bfca11b122249472cbdfca1e798e0cd04287e97d2d30",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-licence_exchange-3",
+      "record_id": "rv_073f041e0382ecd951764ed2e4de64e9d301875f78fddaf33d28d8e57d8da2f1",
+      "code": "0"
+    },
+    {
+      "query_id": "dev-licence_exchange-3",
+      "record_id": "c_d769841628fd619c0afeb56b2f0bf1bc1ce5c534a4890f7692f8626308c8d660",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-D01",
+      "record_id": "tr_268d7ec2a87e5f4f716c80b84a79e3e2a9600de6b8d4d437fbc1577b0a0808ec",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-D01",
+      "record_id": "tr_090bd1839f3130d3e8d67a5956fa3bf91e3f658f53ee632a62138f9cdf6dfa8f",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-D01",
+      "record_id": "tr_df936e34fbd59d10813357ce52c96e8299d2480b78e0934c1b519bf7b910424b",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-D01",
+      "record_id": "tr_19906379710bf99bdcdbbccecfe41baea5354436a130b8e811920c3d82e34c12",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-D01",
+      "record_id": "tr_03f3ae425e4a1930d6081703c72e22aba780a4cdfd1402625e9ce8081e6308e6",
+      "code": "P"
+    },
+    {
+      "query_id": "V3-D01",
+      "record_id": "c_0a65158b909b765b5c14eddc1a13a61fb10b5a813a3ac04e0b9b68224c3256ef",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-D01",
+      "record_id": "c_24def7c44a8779c22d56de6b763880addc81bee7d6be4d19d6b9ea586f62d07e",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-D01",
+      "record_id": "c_7d321d92e47f247f27586cf710d2e5ec47cfcb3dcb4d2c22954994e14541cb21",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-D01",
+      "record_id": "c_1a62de0c691cf366786bf2b871f8e2d045512204f3ac91e4a17e8d6ebc009802",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-D01",
+      "record_id": "c_0d3bf4670ba96c89ccf2c97a8264dd1409a136e2f7d2290f62486da9d6bbfbb3",
+      "code": "S"
+    },
+    {
+      "query_id": "V3-D02",
+      "record_id": "tr_19906379710bf99bdcdbbccecfe41baea5354436a130b8e811920c3d82e34c12",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-D02",
+      "record_id": "tr_df936e34fbd59d10813357ce52c96e8299d2480b78e0934c1b519bf7b910424b",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-D02",
+      "record_id": "tr_03f3ae425e4a1930d6081703c72e22aba780a4cdfd1402625e9ce8081e6308e6",
+      "code": "P"
+    },
+    {
+      "query_id": "V3-D02",
+      "record_id": "tr_090bd1839f3130d3e8d67a5956fa3bf91e3f658f53ee632a62138f9cdf6dfa8f",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-D02",
+      "record_id": "tr_268d7ec2a87e5f4f716c80b84a79e3e2a9600de6b8d4d437fbc1577b0a0808ec",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-D02",
+      "record_id": "c_94e9af6a8818fd0df403046d9a7468fc2d785608e9711e4e7192f5b43f4e4c32",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-D02",
+      "record_id": "c_4a3b77b8fc1ccba33e5909fb0c953f271f06adbbc149e083d5a36811c3f936ad",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-D02",
+      "record_id": "c_ad69b36bd382f939f2066e0a37363756846860c302c612b7e9df4ee75e8bfd8e",
+      "code": "U"
+    },
+    {
+      "query_id": "V3-D02",
+      "record_id": "c_e010348a9ecc3f792893701cda692a13fdf186ec34eb488619d9553ecce0a6be",
+      "code": "U"
+    },
+    {
+      "query_id": "V3-D02",
+      "record_id": "c_8248e4ceabc109d2942e073a201f86717525e0afc92bab40b5dbbb40f1d36f00",
+      "code": "U"
+    },
+    {
+      "query_id": "V3-D03",
+      "record_id": "tr_df936e34fbd59d10813357ce52c96e8299d2480b78e0934c1b519bf7b910424b",
+      "code": "P"
+    },
+    {
+      "query_id": "V3-D03",
+      "record_id": "tr_19906379710bf99bdcdbbccecfe41baea5354436a130b8e811920c3d82e34c12",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-D03",
+      "record_id": "tr_090bd1839f3130d3e8d67a5956fa3bf91e3f658f53ee632a62138f9cdf6dfa8f",
+      "code": "U"
+    },
+    {
+      "query_id": "V3-D03",
+      "record_id": "tr_268d7ec2a87e5f4f716c80b84a79e3e2a9600de6b8d4d437fbc1577b0a0808ec",
+      "code": "U"
+    },
+    {
+      "query_id": "V3-D03",
+      "record_id": "tr_03f3ae425e4a1930d6081703c72e22aba780a4cdfd1402625e9ce8081e6308e6",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-D03",
+      "record_id": "c_0d3bf4670ba96c89ccf2c97a8264dd1409a136e2f7d2290f62486da9d6bbfbb3",
+      "code": "S"
+    },
+    {
+      "query_id": "V3-D03",
+      "record_id": "rv_0916941b9b7db992fc538429b284e82378867ea9f955c146dfd3cad46fedb6f9",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-D03",
+      "record_id": "tr_824017275f85f56315730a69283f12135b509778b1c64c9655d38392ecc83beb",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-D03",
+      "record_id": "tr_48dd2c5f29cc0f090f1f8a3a0ed9d37e3a56b637804beb2331d0355d6fad40be",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-D03",
+      "record_id": "tr_7d96624a118ba37e1ec17a7d886fe612582b69cccbf29fe261e13a0e0d2ad64d",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-D04",
+      "record_id": "tr_19906379710bf99bdcdbbccecfe41baea5354436a130b8e811920c3d82e34c12",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-D04",
+      "record_id": "tr_df936e34fbd59d10813357ce52c96e8299d2480b78e0934c1b519bf7b910424b",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-D04",
+      "record_id": "tr_090bd1839f3130d3e8d67a5956fa3bf91e3f658f53ee632a62138f9cdf6dfa8f",
+      "code": "D"
+    },
+    {
+      "query_id": "V3-D04",
+      "record_id": "tr_268d7ec2a87e5f4f716c80b84a79e3e2a9600de6b8d4d437fbc1577b0a0808ec",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-D04",
+      "record_id": "tr_03f3ae425e4a1930d6081703c72e22aba780a4cdfd1402625e9ce8081e6308e6",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-D04",
+      "record_id": "c_24def7c44a8779c22d56de6b763880addc81bee7d6be4d19d6b9ea586f62d07e",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-D04",
+      "record_id": "c_393f637868e0bc105b9f90653fd0993ec08e1192ab02badd265ff8a807610e8d",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-D04",
+      "record_id": "rv_073f041e0382ecd951764ed2e4de64e9d301875f78fddaf33d28d8e57d8da2f1",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-D04",
+      "record_id": "c_1a62de0c691cf366786bf2b871f8e2d045512204f3ac91e4a17e8d6ebc009802",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-D04",
+      "record_id": "c_8fb0e2e3bae25ead6618ee3a95ddfb0cfa69f542c0fa4a8c4aca4252d6a71b17",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-D05",
+      "record_id": "rv_0916941b9b7db992fc538429b284e82378867ea9f955c146dfd3cad46fedb6f9",
+      "code": "Y"
+    },
+    {
+      "query_id": "V3-D05",
+      "record_id": "tr_824017275f85f56315730a69283f12135b509778b1c64c9655d38392ecc83beb",
+      "code": "P"
+    },
+    {
+      "query_id": "V3-D05",
+      "record_id": "tr_7d96624a118ba37e1ec17a7d886fe612582b69cccbf29fe261e13a0e0d2ad64d",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-D05",
+      "record_id": "c_94e9af6a8818fd0df403046d9a7468fc2d785608e9711e4e7192f5b43f4e4c32",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-D05",
+      "record_id": "tr_48dd2c5f29cc0f090f1f8a3a0ed9d37e3a56b637804beb2331d0355d6fad40be",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-D05",
+      "record_id": "tr_ac4f3afd92e8ae309f157b9f601c5d3d69adf93094bc9e29e2780c321e91e021",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-D05",
+      "record_id": "tr_03f3ae425e4a1930d6081703c72e22aba780a4cdfd1402625e9ce8081e6308e6",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-D05",
+      "record_id": "tr_090bd1839f3130d3e8d67a5956fa3bf91e3f658f53ee632a62138f9cdf6dfa8f",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-D05",
+      "record_id": "tr_268d7ec2a87e5f4f716c80b84a79e3e2a9600de6b8d4d437fbc1577b0a0808ec",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-D05",
+      "record_id": "c_ab92855d2e304336e166c7cb67d4fb72e57c0a8b9c9d2a01d4d283df02133364",
+      "code": "S"
+    },
+    {
+      "query_id": "V3-D06",
+      "record_id": "tr_7d96624a118ba37e1ec17a7d886fe612582b69cccbf29fe261e13a0e0d2ad64d",
+      "code": "D"
+    },
+    {
+      "query_id": "V3-D06",
+      "record_id": "tr_ac4f3afd92e8ae309f157b9f601c5d3d69adf93094bc9e29e2780c321e91e021",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-D06",
+      "record_id": "rv_0916941b9b7db992fc538429b284e82378867ea9f955c146dfd3cad46fedb6f9",
+      "code": "Y"
+    },
+    {
+      "query_id": "V3-D06",
+      "record_id": "tr_824017275f85f56315730a69283f12135b509778b1c64c9655d38392ecc83beb",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-D06",
+      "record_id": "tr_48dd2c5f29cc0f090f1f8a3a0ed9d37e3a56b637804beb2331d0355d6fad40be",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-D06",
+      "record_id": "c_ab92855d2e304336e166c7cb67d4fb72e57c0a8b9c9d2a01d4d283df02133364",
+      "code": "S"
+    },
+    {
+      "query_id": "V3-D06",
+      "record_id": "c_94e9af6a8818fd0df403046d9a7468fc2d785608e9711e4e7192f5b43f4e4c32",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-D06",
+      "record_id": "c_4a3b77b8fc1ccba33e5909fb0c953f271f06adbbc149e083d5a36811c3f936ad",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-D06",
+      "record_id": "tr_df936e34fbd59d10813357ce52c96e8299d2480b78e0934c1b519bf7b910424b",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-D06",
+      "record_id": "tr_19906379710bf99bdcdbbccecfe41baea5354436a130b8e811920c3d82e34c12",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-D07",
+      "record_id": "rv_0916941b9b7db992fc538429b284e82378867ea9f955c146dfd3cad46fedb6f9",
+      "code": "Y"
+    },
+    {
+      "query_id": "V3-D07",
+      "record_id": "tr_7d96624a118ba37e1ec17a7d886fe612582b69cccbf29fe261e13a0e0d2ad64d",
+      "code": "P"
+    },
+    {
+      "query_id": "V3-D07",
+      "record_id": "tr_ac4f3afd92e8ae309f157b9f601c5d3d69adf93094bc9e29e2780c321e91e021",
+      "code": "P"
+    },
+    {
+      "query_id": "V3-D07",
+      "record_id": "rv_073f041e0382ecd951764ed2e4de64e9d301875f78fddaf33d28d8e57d8da2f1",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-D07",
+      "record_id": "tr_824017275f85f56315730a69283f12135b509778b1c64c9655d38392ecc83beb",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-D07",
+      "record_id": "tr_48dd2c5f29cc0f090f1f8a3a0ed9d37e3a56b637804beb2331d0355d6fad40be",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-D07",
+      "record_id": "c_ab92855d2e304336e166c7cb67d4fb72e57c0a8b9c9d2a01d4d283df02133364",
+      "code": "S"
+    },
+    {
+      "query_id": "V3-D07",
+      "record_id": "c_106d4f03daf7303e0d866aa313d7714d5ae03b21b364a38057ba181f0a43c8cc",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-D07",
+      "record_id": "c_94e9af6a8818fd0df403046d9a7468fc2d785608e9711e4e7192f5b43f4e4c32",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-D07",
+      "record_id": "tr_19906379710bf99bdcdbbccecfe41baea5354436a130b8e811920c3d82e34c12",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-D08",
+      "record_id": "rv_0916941b9b7db992fc538429b284e82378867ea9f955c146dfd3cad46fedb6f9",
+      "code": "Y"
+    },
+    {
+      "query_id": "V3-D08",
+      "record_id": "tr_48dd2c5f29cc0f090f1f8a3a0ed9d37e3a56b637804beb2331d0355d6fad40be",
+      "code": "P"
+    },
+    {
+      "query_id": "V3-D08",
+      "record_id": "tr_ac4f3afd92e8ae309f157b9f601c5d3d69adf93094bc9e29e2780c321e91e021",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-D08",
+      "record_id": "tr_19906379710bf99bdcdbbccecfe41baea5354436a130b8e811920c3d82e34c12",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-D08",
+      "record_id": "tr_824017275f85f56315730a69283f12135b509778b1c64c9655d38392ecc83beb",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-D08",
+      "record_id": "tr_7d96624a118ba37e1ec17a7d886fe612582b69cccbf29fe261e13a0e0d2ad64d",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-D08",
+      "record_id": "c_ab92855d2e304336e166c7cb67d4fb72e57c0a8b9c9d2a01d4d283df02133364",
+      "code": "S"
+    },
+    {
+      "query_id": "V3-D08",
+      "record_id": "c_4a3b77b8fc1ccba33e5909fb0c953f271f06adbbc149e083d5a36811c3f936ad",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-D08",
+      "record_id": "c_90dbea50bf3c4885a401310a3d5c4d08da46522f1413aa0c98d99bed42ded7e3",
+      "code": "Y"
+    },
+    {
+      "query_id": "V3-D08",
+      "record_id": "tr_03f3ae425e4a1930d6081703c72e22aba780a4cdfd1402625e9ce8081e6308e6",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-D09",
+      "record_id": "c_94e9af6a8818fd0df403046d9a7468fc2d785608e9711e4e7192f5b43f4e4c32",
+      "code": "D"
+    },
+    {
+      "query_id": "V3-D09",
+      "record_id": "c_4a3b77b8fc1ccba33e5909fb0c953f271f06adbbc149e083d5a36811c3f936ad",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-D09",
+      "record_id": "tr_03f3ae425e4a1930d6081703c72e22aba780a4cdfd1402625e9ce8081e6308e6",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-D09",
+      "record_id": "tr_268d7ec2a87e5f4f716c80b84a79e3e2a9600de6b8d4d437fbc1577b0a0808ec",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-D09",
+      "record_id": "tr_090bd1839f3130d3e8d67a5956fa3bf91e3f658f53ee632a62138f9cdf6dfa8f",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-D09",
+      "record_id": "tr_19906379710bf99bdcdbbccecfe41baea5354436a130b8e811920c3d82e34c12",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-D09",
+      "record_id": "tr_df936e34fbd59d10813357ce52c96e8299d2480b78e0934c1b519bf7b910424b",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-D09",
+      "record_id": "c_ad69b36bd382f939f2066e0a37363756846860c302c612b7e9df4ee75e8bfd8e",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-D09",
+      "record_id": "c_e010348a9ecc3f792893701cda692a13fdf186ec34eb488619d9553ecce0a6be",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-D09",
+      "record_id": "c_8248e4ceabc109d2942e073a201f86717525e0afc92bab40b5dbbb40f1d36f00",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-D10",
+      "record_id": "c_9e3fac961667f30d6e3fd30a3c98b5ad40646cced4bb87814a8971e55f44629b",
+      "code": "D"
+    },
+    {
+      "query_id": "V3-D10",
+      "record_id": "rv_0916941b9b7db992fc538429b284e82378867ea9f955c146dfd3cad46fedb6f9",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-D10",
+      "record_id": "c_2ae0fdc5615b18b03995107dbf725626424f62ae3201f57049bfbd47c8b71a4d",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-D10",
+      "record_id": "c_ddc994db1f2a9ead62340a7fd64d23497bfcd604a2d1db7ed5e2993da328f927",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-D10",
+      "record_id": "c_66603c4c82714a4dc21725cff6a3aa0dde5d4f94d53d1bddeeebda5e1df55c35",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-D10",
+      "record_id": "c_b2dc0676755880863fdf5ff1bd359dfea6e52264c59b09e8a62f321199a89952",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-D10",
+      "record_id": "c_ab92855d2e304336e166c7cb67d4fb72e57c0a8b9c9d2a01d4d283df02133364",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-D10",
+      "record_id": "c_50c22c82f7066f19a6cdb234cc021e0d7550a177956340a022471a583351e43d",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-D10",
+      "record_id": "c_02518e61c539b1125f75129ccadf097042be490c8bc57445a21f5ee44f592e17",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-D10",
+      "record_id": "c_9cff443d4ac670a8fbe24cdf8f02db2e7c6c8c6060dc15afa4ea4e6d8c5a880b",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-D11",
+      "record_id": "c_b10ac26248d538e57b3d7f2a64bdcc74bb0555c7335a7fdf96806449d54f8020",
+      "code": "D"
+    },
+    {
+      "query_id": "V3-D11",
+      "record_id": "c_f63acc66584cce1cd3b8731c1e58d75dd74aa4ee0c4a17d9459bc707e2ec2df0",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-D11",
+      "record_id": "c_6e8a21dc26caa8da5d0c53918ec2d2aa7ff609da280a47daee1b0e7ba8636a61",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-D11",
+      "record_id": "rv_073f041e0382ecd951764ed2e4de64e9d301875f78fddaf33d28d8e57d8da2f1",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-D11",
+      "record_id": "c_1a12822b19bc1daf8144866099d6fa3b665514dd69479870e87987ef4b7c212d",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-D11",
+      "record_id": "c_ce3b071b3f447c01b7e7b5af133a5af6c3e2d342c00fc6a396c4ed88a59cdd57",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-D11",
+      "record_id": "c_00b1a2058c63a7b87a631277ef4c2795960e049197f8190897224fe47745bd7d",
+      "code": "S"
+    },
+    {
+      "query_id": "V3-D11",
+      "record_id": "c_ddc994db1f2a9ead62340a7fd64d23497bfcd604a2d1db7ed5e2993da328f927",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-D11",
+      "record_id": "c_85c9a243c0bf7b7d27bbe1f55ea182e18a607898b4607b7c9902f2ef15085b39",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-D11",
+      "record_id": "c_b9da00142e54df6781d4c69997d041024947f262c757b181e32bc7f15e943c96",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-D12",
+      "record_id": "c_33bddc4e3ba24cc9388f9b41610c17b8cca82492122c3b64e93c64218eac5714",
+      "code": "D"
+    },
+    {
+      "query_id": "V3-D12",
+      "record_id": "c_393f637868e0bc105b9f90653fd0993ec08e1192ab02badd265ff8a807610e8d",
+      "code": "S"
+    },
+    {
+      "query_id": "V3-D12",
+      "record_id": "c_8fb0e2e3bae25ead6618ee3a95ddfb0cfa69f542c0fa4a8c4aca4252d6a71b17",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-D12",
+      "record_id": "c_daa79b6e4d18cc02846864fe504c53b627cf344a18d7110402d36a9d0ac0f985",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-D12",
+      "record_id": "c_0ab24a7375b340af37c20b10295bc5bb6e6a5aa2c67e8c9e7ff1a5c109cfffb8",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-D12",
+      "record_id": "c_5d1189b2c379ea8350d69258bdb371249d4c1a8637abfaab29d5c2518dc93e46",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-D12",
+      "record_id": "c_50c22c82f7066f19a6cdb234cc021e0d7550a177956340a022471a583351e43d",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-D12",
+      "record_id": "c_6e8a21dc26caa8da5d0c53918ec2d2aa7ff609da280a47daee1b0e7ba8636a61",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-D12",
+      "record_id": "c_be3e625e5f65a8e1b15c1ffc58b94b0747a8277cad95bd99cd80ae3e52a6477f",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-D12",
+      "record_id": "tr_090bd1839f3130d3e8d67a5956fa3bf91e3f658f53ee632a62138f9cdf6dfa8f",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-D13",
+      "record_id": "c_0118969cca65ceb9e2adb44c539587098fa16cdf7f6e4e6ee4264d7d650b7015",
+      "code": "D"
+    },
+    {
+      "query_id": "V3-D13",
+      "record_id": "c_daa79b6e4d18cc02846864fe504c53b627cf344a18d7110402d36a9d0ac0f985",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-D13",
+      "record_id": "c_8fb0e2e3bae25ead6618ee3a95ddfb0cfa69f542c0fa4a8c4aca4252d6a71b17",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-D13",
+      "record_id": "c_393f637868e0bc105b9f90653fd0993ec08e1192ab02badd265ff8a807610e8d",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-D13",
+      "record_id": "c_50c22c82f7066f19a6cdb234cc021e0d7550a177956340a022471a583351e43d",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-D13",
+      "record_id": "c_4d5e161c062ab86b31aa35c168b4996a98fdf85a3202c797b6d7418a674fd154",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-D13",
+      "record_id": "c_2ae0fdc5615b18b03995107dbf725626424f62ae3201f57049bfbd47c8b71a4d",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-D13",
+      "record_id": "c_be3e625e5f65a8e1b15c1ffc58b94b0747a8277cad95bd99cd80ae3e52a6477f",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-D13",
+      "record_id": "c_1b54c5d2047bc608b0dfdb6d38e82e3efaab78e35af7171d773682ceb57a5982",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-D13",
+      "record_id": "c_33bddc4e3ba24cc9388f9b41610c17b8cca82492122c3b64e93c64218eac5714",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-D14",
+      "record_id": "c_63df8007bfa884f48c1b2ed26d4fab6f58daba1c73d6e1a71d2590aa4fd20468",
+      "code": "D"
+    },
+    {
+      "query_id": "V3-D14",
+      "record_id": "c_58630b7a2dcf753e53553ed4c6a489636384731e750c69927beba25624ea4026",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-D14",
+      "record_id": "c_1a12822b19bc1daf8144866099d6fa3b665514dd69479870e87987ef4b7c212d",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-D14",
+      "record_id": "c_be3e625e5f65a8e1b15c1ffc58b94b0747a8277cad95bd99cd80ae3e52a6477f",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-D14",
+      "record_id": "c_85c9a243c0bf7b7d27bbe1f55ea182e18a607898b4607b7c9902f2ef15085b39",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-D14",
+      "record_id": "c_0ab24a7375b340af37c20b10295bc5bb6e6a5aa2c67e8c9e7ff1a5c109cfffb8",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-D14",
+      "record_id": "c_8815c976e9feb3d3620bf4f87f7f681c0438462ae5de9c4ac376f99fdb65b956",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-D14",
+      "record_id": "c_ce3b071b3f447c01b7e7b5af133a5af6c3e2d342c00fc6a396c4ed88a59cdd57",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-D14",
+      "record_id": "c_3ee9ba9754d850f0b5e8e7eca31bdf6adbaedbf04f7cdafc2ba1c5c2d24c66b9",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-D14",
+      "record_id": "c_4f2923e72ceacd50e4f2f2000181ec9a6d23244678b571fc75737d8b2ac04c48",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-D15",
+      "record_id": "c_2ae0fdc5615b18b03995107dbf725626424f62ae3201f57049bfbd47c8b71a4d",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-D15",
+      "record_id": "c_3ee9ba9754d850f0b5e8e7eca31bdf6adbaedbf04f7cdafc2ba1c5c2d24c66b9",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-D15",
+      "record_id": "c_4d5e161c062ab86b31aa35c168b4996a98fdf85a3202c797b6d7418a674fd154",
+      "code": "Y"
+    },
+    {
+      "query_id": "V3-D15",
+      "record_id": "c_5e638f3fa56c0b786e729a38870966a56c064a63c651f877532d4af1c6226515",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-D15",
+      "record_id": "c_298b8c2865cabcaf0dc28f4e06b3f1fc1708fbbdf15f5b29d5852abe87ef2fad",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-D15",
+      "record_id": "c_ab92855d2e304336e166c7cb67d4fb72e57c0a8b9c9d2a01d4d283df02133364",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-D15",
+      "record_id": "rv_073f041e0382ecd951764ed2e4de64e9d301875f78fddaf33d28d8e57d8da2f1",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-D15",
+      "record_id": "rv_0916941b9b7db992fc538429b284e82378867ea9f955c146dfd3cad46fedb6f9",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-D15",
+      "record_id": "c_ddc994db1f2a9ead62340a7fd64d23497bfcd604a2d1db7ed5e2993da328f927",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-D15",
+      "record_id": "c_4f2923e72ceacd50e4f2f2000181ec9a6d23244678b571fc75737d8b2ac04c48",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-L01",
+      "record_id": "c_f63acc66584cce1cd3b8731c1e58d75dd74aa4ee0c4a17d9459bc707e2ec2df0",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-L01",
+      "record_id": "c_393f637868e0bc105b9f90653fd0993ec08e1192ab02badd265ff8a807610e8d",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-L01",
+      "record_id": "c_b10ac26248d538e57b3d7f2a64bdcc74bb0555c7335a7fdf96806449d54f8020",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-L01",
+      "record_id": "c_6e8a21dc26caa8da5d0c53918ec2d2aa7ff609da280a47daee1b0e7ba8636a61",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-L01",
+      "record_id": "c_50c22c82f7066f19a6cdb234cc021e0d7550a177956340a022471a583351e43d",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-L01",
+      "record_id": "c_33bddc4e3ba24cc9388f9b41610c17b8cca82492122c3b64e93c64218eac5714",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-L01",
+      "record_id": "c_4f2923e72ceacd50e4f2f2000181ec9a6d23244678b571fc75737d8b2ac04c48",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-L01",
+      "record_id": "tr_268d7ec2a87e5f4f716c80b84a79e3e2a9600de6b8d4d437fbc1577b0a0808ec",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-L01",
+      "record_id": "c_63df8007bfa884f48c1b2ed26d4fab6f58daba1c73d6e1a71d2590aa4fd20468",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-L01",
+      "record_id": "c_be3e625e5f65a8e1b15c1ffc58b94b0747a8277cad95bd99cd80ae3e52a6477f",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-L02",
+      "record_id": "c_ddc994db1f2a9ead62340a7fd64d23497bfcd604a2d1db7ed5e2993da328f927",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-L02",
+      "record_id": "rv_073f041e0382ecd951764ed2e4de64e9d301875f78fddaf33d28d8e57d8da2f1",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-L02",
+      "record_id": "c_5e638f3fa56c0b786e729a38870966a56c064a63c651f877532d4af1c6226515",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-L02",
+      "record_id": "c_8fb0e2e3bae25ead6618ee3a95ddfb0cfa69f542c0fa4a8c4aca4252d6a71b17",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-L02",
+      "record_id": "c_9e3fac961667f30d6e3fd30a3c98b5ad40646cced4bb87814a8971e55f44629b",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-L02",
+      "record_id": "c_4d5e161c062ab86b31aa35c168b4996a98fdf85a3202c797b6d7418a674fd154",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-L02",
+      "record_id": "c_be3e625e5f65a8e1b15c1ffc58b94b0747a8277cad95bd99cd80ae3e52a6477f",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-L02",
+      "record_id": "c_2e8266e59b29bc4915eeff115d35f5f549838d14948e6112ffa4603d723691d9",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-L02",
+      "record_id": "c_2ae0fdc5615b18b03995107dbf725626424f62ae3201f57049bfbd47c8b71a4d",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-L02",
+      "record_id": "c_b2dc0676755880863fdf5ff1bd359dfea6e52264c59b09e8a62f321199a89952",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-L03",
+      "record_id": "rv_5f69ac751c5ca55278c0f07ef6a5a913ee56afcba8b1ef81070db8f1be372f9f",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-L03",
+      "record_id": "rv_63a7fc38930d3e3f7ba34b3a34f3c65c6b6813869ea3a31ace91ee5de334213f",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-L03",
+      "record_id": "c_6e8a21dc26caa8da5d0c53918ec2d2aa7ff609da280a47daee1b0e7ba8636a61",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-L03",
+      "record_id": "c_33bddc4e3ba24cc9388f9b41610c17b8cca82492122c3b64e93c64218eac5714",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-L03",
+      "record_id": "rv_073f041e0382ecd951764ed2e4de64e9d301875f78fddaf33d28d8e57d8da2f1",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-L03",
+      "record_id": "c_90dbea50bf3c4885a401310a3d5c4d08da46522f1413aa0c98d99bed42ded7e3",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-L03",
+      "record_id": "c_074becd80c086435d57eb4866344068af71fb547e639a562312d7d11d58ad32b",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-L03",
+      "record_id": "c_02518e61c539b1125f75129ccadf097042be490c8bc57445a21f5ee44f592e17",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-L03",
+      "record_id": "c_8ffb7b4abe31575d7a8cc17b222354483e45a38e6d8619236cc53da43aced9b5",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-L03",
+      "record_id": "c_393f637868e0bc105b9f90653fd0993ec08e1192ab02badd265ff8a807610e8d",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-L04",
+      "record_id": "c_9e3fac961667f30d6e3fd30a3c98b5ad40646cced4bb87814a8971e55f44629b",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-L04",
+      "record_id": "c_5e638f3fa56c0b786e729a38870966a56c064a63c651f877532d4af1c6226515",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-L04",
+      "record_id": "c_58630b7a2dcf753e53553ed4c6a489636384731e750c69927beba25624ea4026",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-L04",
+      "record_id": "c_3a7f1f954474890e293dd56e6c0549d86bfd962b9b479d4ba0a76226c2075ce2",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-L04",
+      "record_id": "c_af9284ce6da72a38ba97bb9288233c86b29d4b37d4a62c54d9db6d2fd740c310",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-L04",
+      "record_id": "c_b2dc0676755880863fdf5ff1bd359dfea6e52264c59b09e8a62f321199a89952",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-L04",
+      "record_id": "tr_df936e34fbd59d10813357ce52c96e8299d2480b78e0934c1b519bf7b910424b",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-L04",
+      "record_id": "tr_19906379710bf99bdcdbbccecfe41baea5354436a130b8e811920c3d82e34c12",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-L04",
+      "record_id": "tr_268d7ec2a87e5f4f716c80b84a79e3e2a9600de6b8d4d437fbc1577b0a0808ec",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-L04",
+      "record_id": "tr_090bd1839f3130d3e8d67a5956fa3bf91e3f658f53ee632a62138f9cdf6dfa8f",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-L05",
+      "record_id": "rv_0916941b9b7db992fc538429b284e82378867ea9f955c146dfd3cad46fedb6f9",
+      "code": "D"
+    },
+    {
+      "query_id": "V3-L05",
+      "record_id": "tr_824017275f85f56315730a69283f12135b509778b1c64c9655d38392ecc83beb",
+      "code": "S"
+    },
+    {
+      "query_id": "V3-L05",
+      "record_id": "tr_48dd2c5f29cc0f090f1f8a3a0ed9d37e3a56b637804beb2331d0355d6fad40be",
+      "code": "S"
+    },
+    {
+      "query_id": "V3-L05",
+      "record_id": "tr_7d96624a118ba37e1ec17a7d886fe612582b69cccbf29fe261e13a0e0d2ad64d",
+      "code": "S"
+    },
+    {
+      "query_id": "V3-L05",
+      "record_id": "tr_ac4f3afd92e8ae309f157b9f601c5d3d69adf93094bc9e29e2780c321e91e021",
+      "code": "S"
+    },
+    {
+      "query_id": "V3-L05",
+      "record_id": "c_284bf36675d4e5ae7d8aef4bbf96333226d57b43fec09523b0dad58fd5a92ae1",
+      "code": "S"
+    },
+    {
+      "query_id": "V3-L05",
+      "record_id": "rv_073f041e0382ecd951764ed2e4de64e9d301875f78fddaf33d28d8e57d8da2f1",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-L05",
+      "record_id": "c_2fdce067240e45b64061fc6f7be47a7fc74a528516aa308e26ae0098d7770b31",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-L05",
+      "record_id": "c_016762e4db1a100f3d007b9e5b88fcc213358b310a9ae2c351f4e35b2c4643a4",
+      "code": "0"
+    },
+    {
+      "query_id": "V3-L05",
+      "record_id": "c_10e4a26a4c3badbc421bfcce203b4e6a7816a533bd11c8f134ea04ac83a65c98",
+      "code": "0"
+    }
+  ],
+  "outside_judgments": [
+    {
+      "query_id": "dev-driving_age-2",
+      "record_id": "c_30a64fc1bea93d7860d4f3821af382006956ca7dcbdc7770e636782e97fb1d9e",
+      "code": "P"
+    },
+    {
+      "query_id": "dev-driving_age-2",
+      "record_id": "c_63df8007bfa884f48c1b2ed26d4fab6f58daba1c73d6e1a71d2590aa4fd20468",
+      "code": "Y"
+    },
+    {
+      "query_id": "dev-driving_age-3",
+      "record_id": "c_30a64fc1bea93d7860d4f3821af382006956ca7dcbdc7770e636782e97fb1d9e",
+      "code": "P"
+    },
+    {
+      "query_id": "dev-driving_age-3",
+      "record_id": "c_63df8007bfa884f48c1b2ed26d4fab6f58daba1c73d6e1a71d2590aa4fd20468",
+      "code": "Y"
+    },
+    {
+      "query_id": "dev-red_light-2",
+      "record_id": "c_074becd80c086435d57eb4866344068af71fb547e639a562312d7d11d58ad32b",
+      "code": "Y"
+    },
+    {
+      "query_id": "dev-pedestrian-2",
+      "record_id": "c_f40b4dc8a194af86f8c532e89b170ee49c88d9024b32fd5576431c13776c1dec",
+      "code": "S"
+    },
+    {
+      "query_id": "V3-D15",
+      "record_id": "c_ce3b071b3f447c01b7e7b5af133a5af6c3e2d342c00fc6a396c4ed88a59cdd57",
+      "code": "Y"
+    },
+    {
+      "query_id": "V3-D15",
+      "record_id": "c_1a12822b19bc1daf8144866099d6fa3b665514dd69479870e87987ef4b7c212d",
+      "code": "Y"
+    },
+    {
+      "query_id": "V3-D15",
+      "record_id": "c_be3e625e5f65a8e1b15c1ffc58b94b0747a8277cad95bd99cd80ae3e52a6477f",
+      "code": "Y"
+    },
+    {
+      "query_id": "V3-L02",
+      "record_id": "c_ce3b071b3f447c01b7e7b5af133a5af6c3e2d342c00fc6a396c4ed88a59cdd57",
+      "code": "Y"
+    },
+    {
+      "query_id": "V3-L02",
+      "record_id": "c_1a12822b19bc1daf8144866099d6fa3b665514dd69479870e87987ef4b7c212d",
+      "code": "Y"
+    }
+  ],
+  "calibration": [
+    {
+      "query_id": "dev-night_horn-3",
+      "record_id": "c_1a62de0c691cf366786bf2b871f8e2d045512204f3ac91e4a17e8d6ebc009802"
+    },
+    {
+      "query_id": "dev-night_horn-3",
+      "record_id": "c_7d321d92e47f247f27586cf710d2e5ec47cfcb3dcb4d2c22954994e14541cb21"
+    },
+    {
+      "query_id": "dev-night_horn-3",
+      "record_id": "c_0a65158b909b765b5c14eddc1a13a61fb10b5a813a3ac04e0b9b68224c3256ef"
+    },
+    {
+      "query_id": "dev-driving_age-2",
+      "record_id": "c_30a64fc1bea93d7860d4f3821af382006956ca7dcbdc7770e636782e97fb1d9e"
+    },
+    {
+      "query_id": "dev-driving_age-2",
+      "record_id": "c_b857d45ca868f4f439ce874d699631f265c8c38cc7c68756d29452d3f2110535"
+    },
+    {
+      "query_id": "dev-driving_age-2",
+      "record_id": "c_d769841628fd619c0afeb56b2f0bf1bc1ce5c534a4890f7692f8626308c8d660"
+    },
+    {
+      "query_id": "dev-red_light-2",
+      "record_id": "c_074becd80c086435d57eb4866344068af71fb547e639a562312d7d11d58ad32b"
+    },
+    {
+      "query_id": "dev-red_light-2",
+      "record_id": "rv_073f041e0382ecd951764ed2e4de64e9d301875f78fddaf33d28d8e57d8da2f1"
+    },
+    {
+      "query_id": "dev-red_light-2",
+      "record_id": "c_02518e61c539b1125f75129ccadf097042be490c8bc57445a21f5ee44f592e17"
+    },
+    {
+      "query_id": "V3-D01",
+      "record_id": "tr_03f3ae425e4a1930d6081703c72e22aba780a4cdfd1402625e9ce8081e6308e6"
+    },
+    {
+      "query_id": "V3-D01",
+      "record_id": "tr_19906379710bf99bdcdbbccecfe41baea5354436a130b8e811920c3d82e34c12"
+    },
+    {
+      "query_id": "V3-D02",
+      "record_id": "c_ad69b36bd382f939f2066e0a37363756846860c302c612b7e9df4ee75e8bfd8e"
+    },
+    {
+      "query_id": "V3-D02",
+      "record_id": "tr_03f3ae425e4a1930d6081703c72e22aba780a4cdfd1402625e9ce8081e6308e6"
+    },
+    {
+      "query_id": "V3-D05",
+      "record_id": "tr_824017275f85f56315730a69283f12135b509778b1c64c9655d38392ecc83beb"
+    },
+    {
+      "query_id": "V3-D05",
+      "record_id": "tr_7d96624a118ba37e1ec17a7d886fe612582b69cccbf29fe261e13a0e0d2ad64d"
+    },
+    {
+      "query_id": "V3-D05",
+      "record_id": "rv_0916941b9b7db992fc538429b284e82378867ea9f955c146dfd3cad46fedb6f9"
+    },
+    {
+      "query_id": "V3-D07",
+      "record_id": "tr_7d96624a118ba37e1ec17a7d886fe612582b69cccbf29fe261e13a0e0d2ad64d"
+    },
+    {
+      "query_id": "V3-D07",
+      "record_id": "tr_ac4f3afd92e8ae309f157b9f601c5d3d69adf93094bc9e29e2780c321e91e021"
+    },
+    {
+      "query_id": "V3-D15",
+      "record_id": "c_ce3b071b3f447c01b7e7b5af133a5af6c3e2d342c00fc6a396c4ed88a59cdd57"
+    },
+    {
+      "query_id": "V3-D15",
+      "record_id": "c_2ae0fdc5615b18b03995107dbf725626424f62ae3201f57049bfbd47c8b71a4d"
+    },
+    {
+      "query_id": "V3-L02",
+      "record_id": "c_1a12822b19bc1daf8144866099d6fa3b665514dd69479870e87987ef4b7c212d"
+    },
+    {
+      "query_id": "V3-L03",
+      "record_id": "rv_5f69ac751c5ca55278c0f07ef6a5a913ee56afcba8b1ef81070db8f1be372f9f"
+    }
+  ],
+  "origin": "agent_review",
+  "label_method": "explicit pair-by-pair agent table after reading v5 payload; no score/keyword labeling or old-label transfer",
+  "coverage": [
+    {
+      "query_id": "dev-roundabout-1",
+      "category": "sufficient_content",
+      "reason": "Vòng xuyến có báo hiệu: Điều22 khoản3 nhường bên trái; phân biệt khoản2 không vòng xuyến và khoản1 đường ưu tiên.",
+      "missing_or_condition": "Cần xác định báo hiệu/đường ưu tiên nếu áp dụng tình huống khác.",
+      "origin": "agent_review",
+      "status": "proposed",
+      "coverage_approved": false,
+      "reviewed_target_inventory": 138,
+      "reviewed_supporting_inventory": 238,
+      "legal_status": "source/edition/applicability pending; scope proposal",
+      "qrels_complete": false
+    },
+    {
+      "query_id": "dev-roundabout-2",
+      "category": "sufficient_content",
+      "reason": "Vòng xuyến có báo hiệu: Điều22 khoản3 nhường bên trái; phân biệt khoản2 không vòng xuyến và khoản1 đường ưu tiên.",
+      "missing_or_condition": "Cần xác định báo hiệu/đường ưu tiên nếu áp dụng tình huống khác.",
+      "origin": "agent_review",
+      "status": "proposed",
+      "coverage_approved": false,
+      "reviewed_target_inventory": 138,
+      "reviewed_supporting_inventory": 238,
+      "legal_status": "source/edition/applicability pending; scope proposal",
+      "qrels_complete": false
+    },
+    {
+      "query_id": "dev-roundabout-3",
+      "category": "sufficient_content",
+      "reason": "Vòng xuyến có báo hiệu: Điều22 khoản3 nhường bên trái; phân biệt khoản2 không vòng xuyến và khoản1 đường ưu tiên.",
+      "missing_or_condition": "Cần xác định báo hiệu/đường ưu tiên nếu áp dụng tình huống khác.",
+      "origin": "agent_review",
+      "status": "proposed",
+      "coverage_approved": false,
+      "reviewed_target_inventory": 138,
+      "reviewed_supporting_inventory": 238,
+      "legal_status": "source/edition/applicability pending; scope proposal",
+      "qrels_complete": false
+    },
+    {
+      "query_id": "dev-motorcycle_stop-1",
+      "category": "no_matching_target_in_reviewed_subset",
+      "reason": "138target/closure đã đối chiếu không có quy tắc hoặc chế tài đúng mô tô ra/vào vị trí dừng đỗ; Điều6 khoản1b là ô tô.",
+      "missing_or_condition": "Thiếu nội dung đúng loại xe; không dùng chunk ô tô thế chỗ mô tô.",
+      "origin": "agent_review",
+      "status": "proposed",
+      "coverage_approved": false,
+      "reviewed_target_inventory": 138,
+      "reviewed_supporting_inventory": 238,
+      "legal_status": "source/edition/applicability pending; scope proposal",
+      "qrels_complete": false
+    },
+    {
+      "query_id": "dev-motorcycle_stop-2",
+      "category": "no_matching_target_in_reviewed_subset",
+      "reason": "138target/closure đã đối chiếu không có quy tắc hoặc chế tài đúng mô tô ra/vào vị trí dừng đỗ; Điều6 khoản1b là ô tô.",
+      "missing_or_condition": "Thiếu nội dung đúng loại xe; không dùng chunk ô tô thế chỗ mô tô.",
+      "origin": "agent_review",
+      "status": "proposed",
+      "coverage_approved": false,
+      "reviewed_target_inventory": 138,
+      "reviewed_supporting_inventory": 238,
+      "legal_status": "source/edition/applicability pending; scope proposal",
+      "qrels_complete": false
+    },
+    {
+      "query_id": "dev-motorcycle_stop-3",
+      "category": "no_matching_target_in_reviewed_subset",
+      "reason": "138target/closure đã đối chiếu không có quy tắc hoặc chế tài đúng mô tô ra/vào vị trí dừng đỗ; Điều6 khoản1b là ô tô.",
+      "missing_or_condition": "Thiếu nội dung đúng loại xe; không dùng chunk ô tô thế chỗ mô tô.",
+      "origin": "agent_review",
+      "status": "proposed",
+      "coverage_approved": false,
+      "reviewed_target_inventory": 138,
+      "reviewed_supporting_inventory": 238,
+      "legal_status": "source/edition/applicability pending; scope proposal",
+      "qrels_complete": false
+    },
+    {
+      "query_id": "dev-night_horn-1",
+      "category": "partial_conditional",
+      "reason": "Điều21 khoản2 Luật36 có22h–05h/khu đông dân/cơ sở khám chữa bệnh/trừxeưu tiên; NĐ168 tách ô tô/mô tô.",
+      "missing_or_condition": "Cần giờ, khu vực, loại xe, tình huống còi và xe ưu tiên.",
+      "origin": "agent_review",
+      "status": "proposed",
+      "coverage_approved": false,
+      "reviewed_target_inventory": 138,
+      "reviewed_supporting_inventory": 238,
+      "legal_status": "source/edition/applicability pending; scope proposal",
+      "qrels_complete": false
+    },
+    {
+      "query_id": "dev-night_horn-2",
+      "category": "partial_conditional",
+      "reason": "Điều21 khoản2 Luật36 có22h–05h/khu đông dân/cơ sở khám chữa bệnh/trừxeưu tiên; NĐ168 tách ô tô/mô tô.",
+      "missing_or_condition": "Cần giờ, khu vực, loại xe, tình huống còi và xe ưu tiên.",
+      "origin": "agent_review",
+      "status": "proposed",
+      "coverage_approved": false,
+      "reviewed_target_inventory": 138,
+      "reviewed_supporting_inventory": 238,
+      "legal_status": "source/edition/applicability pending; scope proposal",
+      "qrels_complete": false
+    },
+    {
+      "query_id": "dev-night_horn-3",
+      "category": "partial_conditional",
+      "reason": "Điều21 khoản2 Luật36 có22h–05h/khu đông dân/cơ sở khám chữa bệnh/trừxeưu tiên; NĐ168 tách ô tô/mô tô.",
+      "missing_or_condition": "Cần giờ, khu vực, loại xe, tình huống còi và xe ưu tiên.",
+      "origin": "agent_review",
+      "status": "proposed",
+      "coverage_approved": false,
+      "reviewed_target_inventory": 138,
+      "reviewed_supporting_inventory": 238,
+      "legal_status": "source/edition/applicability pending; scope proposal",
+      "qrels_complete": false
+    },
+    {
+      "query_id": "dev-driving_age-1",
+      "category": "partial_conditional",
+      "reason": "Luật36 Điều59 có tuổi các hạng; Điều56 khoản4 nói xe gắn máy; NĐ168 Điều18 khoản1 cảnh cáo14–<16.",
+      "missing_or_condition": "Phải phân biệt mô tô/gắn máy; không có unit phân loại110cm3/hạngA1 Điều57 trong closure gói này.",
+      "origin": "agent_review",
+      "status": "proposed",
+      "coverage_approved": false,
+      "reviewed_target_inventory": 138,
+      "reviewed_supporting_inventory": 238,
+      "legal_status": "source/edition/applicability pending; scope proposal",
+      "qrels_complete": false
+    },
+    {
+      "query_id": "dev-driving_age-2",
+      "category": "partial_conditional",
+      "reason": "Luật36 Điều59 có tuổi các hạng; Điều56 khoản4 nói xe gắn máy; NĐ168 Điều18 khoản1 cảnh cáo14–<16.",
+      "missing_or_condition": "Phải phân biệt mô tô/gắn máy; không có unit phân loại110cm3/hạngA1 Điều57 trong closure gói này.",
+      "origin": "agent_review",
+      "status": "proposed",
+      "coverage_approved": false,
+      "reviewed_target_inventory": 138,
+      "reviewed_supporting_inventory": 238,
+      "legal_status": "source/edition/applicability pending; scope proposal",
+      "qrels_complete": false
+    },
+    {
+      "query_id": "dev-driving_age-3",
+      "category": "partial_conditional",
+      "reason": "Luật36 Điều59 có tuổi các hạng; Điều56 khoản4 nói xe gắn máy; NĐ168 Điều18 khoản1 cảnh cáo14–<16.",
+      "missing_or_condition": "Phải phân biệt mô tô/gắn máy; không có unit phân loại110cm3/hạngA1 Điều57 trong closure gói này.",
+      "origin": "agent_review",
+      "status": "proposed",
+      "coverage_approved": false,
+      "reviewed_target_inventory": 138,
+      "reviewed_supporting_inventory": 238,
+      "legal_status": "source/edition/applicability pending; scope proposal",
+      "qrels_complete": false
+    },
+    {
+      "query_id": "dev-licence_points-1",
+      "category": "sufficient_content",
+      "reason": "Luật36 Điều58 có12điểm, phục hồi khi chưa hết/đã hết, chờít nhất6tháng+kiểmtra; không nhầm hết hạn.",
+      "missing_or_condition": "Không dùng Điều58 khoản2 khi đã hếtđiểm; nguồn/hiệu lực vẫn pending.",
+      "origin": "agent_review",
+      "status": "proposed",
+      "coverage_approved": false,
+      "reviewed_target_inventory": 138,
+      "reviewed_supporting_inventory": 238,
+      "legal_status": "source/edition/applicability pending; scope proposal",
+      "qrels_complete": false
+    },
+    {
+      "query_id": "dev-licence_points-2",
+      "category": "sufficient_content",
+      "reason": "Luật36 Điều58 có12điểm, phục hồi khi chưa hết/đã hết, chờít nhất6tháng+kiểmtra; không nhầm hết hạn.",
+      "missing_or_condition": "Không dùng Điều58 khoản2 khi đã hếtđiểm; nguồn/hiệu lực vẫn pending.",
+      "origin": "agent_review",
+      "status": "proposed",
+      "coverage_approved": false,
+      "reviewed_target_inventory": 138,
+      "reviewed_supporting_inventory": 238,
+      "legal_status": "source/edition/applicability pending; scope proposal",
+      "qrels_complete": false
+    },
+    {
+      "query_id": "dev-licence_points-3",
+      "category": "sufficient_content",
+      "reason": "Luật36 Điều58 có12điểm, phục hồi khi chưa hết/đã hết, chờít nhất6tháng+kiểmtra; không nhầm hết hạn.",
+      "missing_or_condition": "Không dùng Điều58 khoản2 khi đã hếtđiểm; nguồn/hiệu lực vẫn pending.",
+      "origin": "agent_review",
+      "status": "proposed",
+      "coverage_approved": false,
+      "reviewed_target_inventory": 138,
+      "reviewed_supporting_inventory": 238,
+      "legal_status": "source/edition/applicability pending; scope proposal",
+      "qrels_complete": false
+    },
+    {
+      "query_id": "dev-alcohol-1",
+      "category": "outside_membership_or_blocked",
+      "reason": "Không có target hay required-read trong subset138/238 nêu mức cồn/mức phạt tương ứng; nhiều hit có chung xe mô tô nhưng là hành vi khác.",
+      "missing_or_condition": "Cần nhóm quy định cồn chưa admitted; không kết luận raw/toàn luật thiếu.",
+      "origin": "agent_review",
+      "status": "proposed",
+      "coverage_approved": false,
+      "reviewed_target_inventory": 138,
+      "reviewed_supporting_inventory": 238,
+      "legal_status": "source/edition/applicability pending; scope proposal",
+      "qrels_complete": false
+    },
+    {
+      "query_id": "dev-alcohol-2",
+      "category": "outside_membership_or_blocked",
+      "reason": "Không có target hay required-read trong subset138/238 nêu mức cồn/mức phạt tương ứng; nhiều hit có chung xe mô tô nhưng là hành vi khác.",
+      "missing_or_condition": "Cần nhóm quy định cồn chưa admitted; không kết luận raw/toàn luật thiếu.",
+      "origin": "agent_review",
+      "status": "proposed",
+      "coverage_approved": false,
+      "reviewed_target_inventory": 138,
+      "reviewed_supporting_inventory": 238,
+      "legal_status": "source/edition/applicability pending; scope proposal",
+      "qrels_complete": false
+    },
+    {
+      "query_id": "dev-alcohol-3",
+      "category": "outside_membership_or_blocked",
+      "reason": "Không có target hay required-read trong subset138/238 nêu mức cồn/mức phạt tương ứng; nhiều hit có chung xe mô tô nhưng là hành vi khác.",
+      "missing_or_condition": "Cần nhóm quy định cồn chưa admitted; không kết luận raw/toàn luật thiếu.",
+      "origin": "agent_review",
+      "status": "proposed",
+      "coverage_approved": false,
+      "reviewed_target_inventory": 138,
+      "reviewed_supporting_inventory": 238,
+      "legal_status": "source/edition/applicability pending; scope proposal",
+      "qrels_complete": false
+    },
+    {
+      "query_id": "dev-red_light-1",
+      "category": "partial_conditional",
+      "reason": "NĐ168 Điều6 khoản9b và dẫn mức18–20triệu có trong closureR006, không là target riêng; QCVN6.4 có ngoại lệ đèn mũi tên.",
+      "missing_or_condition": "Không dùng phạt người đi bộ/mô tô cho ô tô; cần hướng đi/tín hiệu và thời điểm vi phạm.",
+      "origin": "agent_review",
+      "status": "proposed",
+      "coverage_approved": false,
+      "reviewed_target_inventory": 138,
+      "reviewed_supporting_inventory": 238,
+      "legal_status": "source/edition/applicability pending; scope proposal",
+      "qrels_complete": false
+    },
+    {
+      "query_id": "dev-red_light-2",
+      "category": "partial_conditional",
+      "reason": "NĐ168 Điều6 khoản9b và dẫn mức18–20triệu có trong closureR006, không là target riêng; QCVN6.4 có ngoại lệ đèn mũi tên.",
+      "missing_or_condition": "Không dùng phạt người đi bộ/mô tô cho ô tô; cần hướng đi/tín hiệu và thời điểm vi phạm.",
+      "origin": "agent_review",
+      "status": "proposed",
+      "coverage_approved": false,
+      "reviewed_target_inventory": 138,
+      "reviewed_supporting_inventory": 238,
+      "legal_status": "source/edition/applicability pending; scope proposal",
+      "qrels_complete": false
+    },
+    {
+      "query_id": "dev-red_light-3",
+      "category": "partial_conditional",
+      "reason": "NĐ168 Điều6 khoản9b và dẫn mức18–20triệu có trong closureR006, không là target riêng; QCVN6.4 có ngoại lệ đèn mũi tên.",
+      "missing_or_condition": "Không dùng phạt người đi bộ/mô tô cho ô tô; cần hướng đi/tín hiệu và thời điểm vi phạm.",
+      "origin": "agent_review",
+      "status": "proposed",
+      "coverage_approved": false,
+      "reviewed_target_inventory": 138,
+      "reviewed_supporting_inventory": 238,
+      "legal_status": "source/edition/applicability pending; scope proposal",
+      "qrels_complete": false
+    },
+    {
+      "query_id": "dev-helmet-1",
+      "category": "outside_membership_or_blocked",
+      "reason": "Inventory138/closure238 không chứa nội dung đội mũ/cài quai cho người ngồi sau; không suy từ Top10 riêng.",
+      "missing_or_condition": "Cần đúng rule/chế tài đội mũ chưa được chọn, không mở scope hay thêm dữ liệu phiên này.",
+      "origin": "agent_review",
+      "status": "proposed",
+      "coverage_approved": false,
+      "reviewed_target_inventory": 138,
+      "reviewed_supporting_inventory": 238,
+      "legal_status": "source/edition/applicability pending; scope proposal",
+      "qrels_complete": false
+    },
+    {
+      "query_id": "dev-helmet-2",
+      "category": "outside_membership_or_blocked",
+      "reason": "Inventory138/closure238 không chứa nội dung đội mũ/cài quai cho người ngồi sau; không suy từ Top10 riêng.",
+      "missing_or_condition": "Cần đúng rule/chế tài đội mũ chưa được chọn, không mở scope hay thêm dữ liệu phiên này.",
+      "origin": "agent_review",
+      "status": "proposed",
+      "coverage_approved": false,
+      "reviewed_target_inventory": 138,
+      "reviewed_supporting_inventory": 238,
+      "legal_status": "source/edition/applicability pending; scope proposal",
+      "qrels_complete": false
+    },
+    {
+      "query_id": "dev-helmet-3",
+      "category": "outside_membership_or_blocked",
+      "reason": "Inventory138/closure238 không chứa nội dung đội mũ/cài quai cho người ngồi sau; không suy từ Top10 riêng.",
+      "missing_or_condition": "Cần đúng rule/chế tài đội mũ chưa được chọn, không mở scope hay thêm dữ liệu phiên này.",
+      "origin": "agent_review",
+      "status": "proposed",
+      "coverage_approved": false,
+      "reviewed_target_inventory": 138,
+      "reviewed_supporting_inventory": 238,
+      "legal_status": "source/edition/applicability pending; scope proposal",
+      "qrels_complete": false
+    },
+    {
+      "query_id": "dev-pedestrian-1",
+      "category": "partial_conditional",
+      "reason": "Có phạt đi qua đường sai nơi, không chấp hành hiệu lệnh; driver phải giảm tốc nơi người đi bộ.",
+      "missing_or_condition": "Chưa có unit quy tắc vị trí qua đường/cầu vượt đúng đối tượng; không suy ra phải/được băng lòng đường từ phạt chung.",
+      "origin": "agent_review",
+      "status": "proposed",
+      "coverage_approved": false,
+      "reviewed_target_inventory": 138,
+      "reviewed_supporting_inventory": 238,
+      "legal_status": "source/edition/applicability pending; scope proposal",
+      "qrels_complete": false
+    },
+    {
+      "query_id": "dev-pedestrian-2",
+      "category": "partial_conditional",
+      "reason": "Có phạt đi qua đường sai nơi, không chấp hành hiệu lệnh; driver phải giảm tốc nơi người đi bộ.",
+      "missing_or_condition": "Chưa có unit quy tắc vị trí qua đường/cầu vượt đúng đối tượng; không suy ra phải/được băng lòng đường từ phạt chung.",
+      "origin": "agent_review",
+      "status": "proposed",
+      "coverage_approved": false,
+      "reviewed_target_inventory": 138,
+      "reviewed_supporting_inventory": 238,
+      "legal_status": "source/edition/applicability pending; scope proposal",
+      "qrels_complete": false
+    },
+    {
+      "query_id": "dev-pedestrian-3",
+      "category": "partial_conditional",
+      "reason": "Có phạt đi qua đường sai nơi, không chấp hành hiệu lệnh; driver phải giảm tốc nơi người đi bộ.",
+      "missing_or_condition": "Chưa có unit quy tắc vị trí qua đường/cầu vượt đúng đối tượng; không suy ra phải/được băng lòng đường từ phạt chung.",
+      "origin": "agent_review",
+      "status": "proposed",
+      "coverage_approved": false,
+      "reviewed_target_inventory": 138,
+      "reviewed_supporting_inventory": 238,
+      "legal_status": "source/edition/applicability pending; scope proposal",
+      "qrels_complete": false
+    },
+    {
+      "query_id": "dev-licence_exchange-1",
+      "category": "partial_conditional",
+      "reason": "TT35 Điều34 khoản2a/b phân biệt hết hạn, mất+hết hạn; hồ sơ/sát hạch/mẫuXXVI trong closure.",
+      "missing_or_condition": "Thiếu hạng GPLX, thời gian quá hạn, có mất/thu giữ hay không; không kết luận cứ hết hạn là đổi trực tiếp.",
+      "origin": "agent_review",
+      "status": "proposed",
+      "coverage_approved": false,
+      "reviewed_target_inventory": 138,
+      "reviewed_supporting_inventory": 238,
+      "legal_status": "source/edition/applicability pending; scope proposal",
+      "qrels_complete": false
+    },
+    {
+      "query_id": "dev-licence_exchange-2",
+      "category": "partial_conditional",
+      "reason": "TT35 Điều34 khoản2a/b phân biệt hết hạn, mất+hết hạn; hồ sơ/sát hạch/mẫuXXVI trong closure.",
+      "missing_or_condition": "Thiếu hạng GPLX, thời gian quá hạn, có mất/thu giữ hay không; không kết luận cứ hết hạn là đổi trực tiếp.",
+      "origin": "agent_review",
+      "status": "proposed",
+      "coverage_approved": false,
+      "reviewed_target_inventory": 138,
+      "reviewed_supporting_inventory": 238,
+      "legal_status": "source/edition/applicability pending; scope proposal",
+      "qrels_complete": false
+    },
+    {
+      "query_id": "dev-licence_exchange-3",
+      "category": "partial_conditional",
+      "reason": "TT35 Điều34 khoản2a/b phân biệt hết hạn, mất+hết hạn; hồ sơ/sát hạch/mẫuXXVI trong closure.",
+      "missing_or_condition": "Thiếu hạng GPLX, thời gian quá hạn, có mất/thu giữ hay không; không kết luận cứ hết hạn là đổi trực tiếp.",
+      "origin": "agent_review",
+      "status": "proposed",
+      "coverage_approved": false,
+      "reviewed_target_inventory": 138,
+      "reviewed_supporting_inventory": 238,
+      "legal_status": "source/edition/applicability pending; scope proposal",
+      "qrels_complete": false
+    },
+    {
+      "query_id": "V3-D01",
+      "category": "partial_conditional",
+      "reason": "HàngTT38 Điều6 khoản1 cho xe phù hợp trong khu đông dân cư: đường đôi60; ngoại lệĐiều7/8 và biển báo cần giữ.",
+      "missing_or_condition": "Không dùng các hàng ngoài khu đông dân cư90/80/70/60 thay hàng trong khu.",
+      "origin": "agent_review",
+      "status": "proposed",
+      "coverage_approved": false,
+      "reviewed_target_inventory": 138,
+      "reviewed_supporting_inventory": 238,
+      "legal_status": "source/edition/applicability pending; scope proposal",
+      "qrels_complete": false
+    },
+    {
+      "query_id": "V3-D02",
+      "category": "query_ambiguous",
+      "reason": "Thành phố không tự đồng nghĩa khu đông dân cư; chưa nêu loại xe. Hàngphổthông50 và ngoại lệ30/40/50 cần phân biệt.",
+      "missing_or_condition": "Cần loại xe, biển/khu đông dân cư; ba cặp ngoại lệ giữnull.",
+      "origin": "agent_review",
+      "status": "proposed",
+      "coverage_approved": false,
+      "reviewed_target_inventory": 138,
+      "reviewed_supporting_inventory": 238,
+      "legal_status": "source/edition/applicability pending; scope proposal",
+      "qrels_complete": false
+    },
+    {
+      "query_id": "V3-D03",
+      "category": "query_ambiguous",
+      "reason": "Hàngxe tải>3,5t trừxitếc có80/70; các nhómkéo/xi téc khác.",
+      "missing_or_condition": "Cần loại đường, xe thường/xi téc/kéo; hai cặp giữnull, không tự chọn70/80.",
+      "origin": "agent_review",
+      "status": "proposed",
+      "coverage_approved": false,
+      "reviewed_target_inventory": 138,
+      "reviewed_supporting_inventory": 238,
+      "legal_status": "source/edition/applicability pending; scope proposal",
+      "qrels_complete": false
+    },
+    {
+      "query_id": "V3-D04",
+      "category": "sufficient_content",
+      "reason": "Hàngxe buýt ngoài khu đông dân cư đường đôi70, phân biệt hàng loại trừxe buýt.",
+      "missing_or_condition": "Điều kiện biển báo/ngoại lệ và trạng thái hiệu lực chung vẫn cần giữ.",
+      "origin": "agent_review",
+      "status": "proposed",
+      "coverage_approved": false,
+      "reviewed_target_inventory": 138,
+      "reviewed_supporting_inventory": 238,
+      "legal_status": "source/edition/applicability pending; scope proposal",
+      "qrels_complete": false
+    },
+    {
+      "query_id": "V3-D05",
+      "category": "partial_conditional",
+      "reason": "V=60 đúng hàng35m khi khô ráo; không lấy60<V≤80/55m. WholeĐiểmb cho mưa cần lớn hơn.",
+      "missing_or_condition": "Chưa nêu thời tiết/biển báo; không chốt35m cho mọi hoàn cảnh.",
+      "origin": "agent_review",
+      "status": "proposed",
+      "coverage_approved": false,
+      "reviewed_target_inventory": 138,
+      "reviewed_supporting_inventory": 238,
+      "legal_status": "source/edition/applicability pending; scope proposal",
+      "qrels_complete": false
+    },
+    {
+      "query_id": "V3-D06",
+      "category": "sufficient_content",
+      "reason": "60<V≤80/55m gồmđúng80; đã nêu khô ráo, cần giữ các điều kiệnbảng/biển báo.",
+      "missing_or_condition": "Không dùng hàng80<V≤100/70m chođúng80.",
+      "origin": "agent_review",
+      "status": "proposed",
+      "coverage_approved": false,
+      "reviewed_target_inventory": 138,
+      "reviewed_supporting_inventory": 238,
+      "legal_status": "source/edition/applicability pending; scope proposal",
+      "qrels_complete": false
+    },
+    {
+      "query_id": "V3-D07",
+      "category": "partial_conditional",
+      "reason": "Cần hai hàng:80 thuộc55m,81 thuộc70m trong điều kiệnbảng khô ráo.",
+      "missing_or_condition": "Chưa nêu thời tiết; một hàng không đủ trả lời cả phép so sánh.",
+      "origin": "agent_review",
+      "status": "proposed",
+      "coverage_approved": false,
+      "reviewed_target_inventory": 138,
+      "reviewed_supporting_inventory": 238,
+      "legal_status": "source/edition/applicability pending; scope proposal",
+      "qrels_complete": false
+    },
+    {
+      "query_id": "V3-D08",
+      "category": "partial_conditional",
+      "reason": "100<V≤120 ứng100m trong bảng khô ráo; các hàng khác có ranh giới khác.",
+      "missing_or_condition": "Cần điều kiện/biển báo, không dùng100m như quy định mọi thời tiết.",
+      "origin": "agent_review",
+      "status": "proposed",
+      "coverage_approved": false,
+      "reviewed_target_inventory": 138,
+      "reviewed_supporting_inventory": 238,
+      "legal_status": "source/edition/applicability pending; scope proposal",
+      "qrels_complete": false
+    },
+    {
+      "query_id": "V3-D09",
+      "category": "sufficient_content",
+      "reason": "TT38 Điều9 khoản3: với thiết kế60, tối thiểu theo phương án tổ chức giao thông được duyệt.",
+      "missing_or_condition": "Không suy tối thiểu cố định60 từ câu đầu hoặc dùng tối đa120.",
+      "origin": "agent_review",
+      "status": "proposed",
+      "coverage_approved": false,
+      "reviewed_target_inventory": 138,
+      "reviewed_supporting_inventory": 238,
+      "legal_status": "source/edition/applicability pending; scope proposal",
+      "qrels_complete": false
+    },
+    {
+      "query_id": "V3-D10",
+      "category": "sufficient_content",
+      "reason": "TT35 Điều32 khoản5: B số tự động không lái ô tô số cơ khí.",
+      "missing_or_condition": "Khác quy tắc điểm/PET; applicability pháp lý pending.",
+      "origin": "agent_review",
+      "status": "proposed",
+      "coverage_approved": false,
+      "reviewed_target_inventory": 138,
+      "reviewed_supporting_inventory": 238,
+      "legal_status": "source/edition/applicability pending; scope proposal",
+      "qrels_complete": false
+    },
+    {
+      "query_id": "V3-D11",
+      "category": "sufficient_content",
+      "reason": "TT35 Điều14 khoản2a liệt kêB lênC: từ2năm an toàn; cha/Điều60 khoản4 giữ điều kiện GPLX còn hiệu lực.",
+      "missing_or_condition": "Không lấy3năm của B lênD2/C lênCE/D; tuổiC là điều kiện hỗ trợ.",
+      "origin": "agent_review",
+      "status": "proposed",
+      "coverage_approved": false,
+      "reviewed_target_inventory": 138,
+      "reviewed_supporting_inventory": 238,
+      "legal_status": "source/edition/applicability pending; scope proposal",
+      "qrels_complete": false
+    },
+    {
+      "query_id": "V3-D12",
+      "category": "sufficient_content",
+      "reason": "TT35 Điều15 khoản1b liệt kê giấy cư trú/ngoại giao/công vụ và hình thức bản sao cho người nước ngoài học lần đầu.",
+      "missing_or_condition": "Không nhầm đổi GPLX quốc gia nước ngoài, hồ sơ nângD hoặc hồ sơ thi lại.",
+      "origin": "agent_review",
+      "status": "proposed",
+      "coverage_approved": false,
+      "reviewed_target_inventory": 138,
+      "reviewed_supporting_inventory": 238,
+      "legal_status": "source/edition/applicability pending; scope proposal",
+      "qrels_complete": false
+    },
+    {
+      "query_id": "V3-D13",
+      "category": "sufficient_content",
+      "reason": "TT35 Điều44 own text nêuIDP Việt Nam không giá trị trong lãnh thổ Việt Nam.",
+      "missing_or_condition": "Khác trường hợp đổi GPLX quốc gia hoặc điều ước cho loại giấy khác.",
+      "origin": "agent_review",
+      "status": "proposed",
+      "coverage_approved": false,
+      "reviewed_target_inventory": 138,
+      "reviewed_supporting_inventory": 238,
+      "legal_status": "source/edition/applicability pending; scope proposal",
+      "qrels_complete": false
+    },
+    {
+      "query_id": "V3-D14",
+      "category": "sufficient_content",
+      "reason": "TT35 Điều28 khoản1 dẫnLuật36 Điều59 khoản1/2 và đủ tuổi tính ngày sát hạch; closure có tuổi/hạng.",
+      "missing_or_condition": "Cần hạng cụ thể nếu tính tuổi số; không suy tuổi từ thời hạn cấp.",
+      "origin": "agent_review",
+      "status": "proposed",
+      "coverage_approved": false,
+      "reviewed_target_inventory": 138,
+      "reviewed_supporting_inventory": 238,
+      "legal_status": "source/edition/applicability pending; scope proposal",
+      "qrels_complete": false
+    },
+    {
+      "query_id": "V3-D15",
+      "category": "sufficient_content",
+      "reason": "TT35 Điều67 có trong closureR045/R104/R018/R099: bảo lưu phầnđạt trước hiệu lực; dẫnĐiều89 khoản3 đổi hạng.",
+      "missing_or_condition": "Targetown text không nói bảo lưu; phải readdependency. Không trả lời chỉ bằng ngày cấp/PET.",
+      "origin": "agent_review",
+      "status": "proposed",
+      "coverage_approved": false,
+      "reviewed_target_inventory": 138,
+      "reviewed_supporting_inventory": 238,
+      "legal_status": "source/edition/applicability pending; scope proposal",
+      "qrels_complete": false
+    },
+    {
+      "query_id": "V3-L01",
+      "category": "outside_membership_or_blocked",
+      "reason": "Subset không có target/form supportingXI; inventory và chỉ có supportingXXVI đã đối chiếu.",
+      "missing_or_condition": "Raw phụ lục có thể chứaXI nhưng chưa admitted, không đủ toànmẫu để trả lời trong subset.",
+      "origin": "agent_review",
+      "status": "proposed",
+      "coverage_approved": false,
+      "reviewed_target_inventory": 138,
+      "reviewed_supporting_inventory": 238,
+      "legal_status": "source/edition/applicability pending; scope proposal",
+      "qrels_complete": false
+    },
+    {
+      "query_id": "V3-L02",
+      "category": "sufficient_content",
+      "reason": "Supporting formXXVI đủ23field/line trong closureR104/R018, không là retrieval target.",
+      "missing_or_condition": "Top10 không chứa record cóform, phải tìm/readđúng closure ngoài pool; không tự điền thông tin.",
+      "origin": "agent_review",
+      "status": "proposed",
+      "coverage_approved": false,
+      "reviewed_target_inventory": 138,
+      "reviewed_supporting_inventory": 238,
+      "legal_status": "source/edition/applicability pending; scope proposal",
+      "qrels_complete": false
+    },
+    {
+      "query_id": "V3-L03",
+      "category": "outside_membership_or_blocked",
+      "reason": "Chỉ3record quy tắcQCVN4.1/4.2/6.4 admitted; không có vùng thiết kế/kích thướcI.418.",
+      "missing_or_condition": "Vùng xung độtI.418/I.416 không admitted; không suy kích thước/ý nghĩa từ ảnh không có trong pack.",
+      "origin": "agent_review",
+      "status": "proposed",
+      "coverage_approved": false,
+      "reviewed_target_inventory": 138,
+      "reviewed_supporting_inventory": 238,
+      "legal_status": "source/edition/applicability pending; scope proposal",
+      "qrels_complete": false
+    },
+    {
+      "query_id": "V3-L04",
+      "category": "outside_membership_or_blocked",
+      "reason": "Không có tiêu chuẩn y tế về ngưỡng cậnthị5độ trong membership/closure, dù có yêu cầu sức khỏe chung.",
+      "missing_or_condition": "Cần nguồn/loại GPLX và tiêu chuẩn y tế chưa admitted; không tự kết luận sức khỏe đủ/khôngđủ.",
+      "origin": "agent_review",
+      "status": "proposed",
+      "coverage_approved": false,
+      "reviewed_target_inventory": 138,
+      "reviewed_supporting_inventory": 238,
+      "legal_status": "source/edition/applicability pending; scope proposal",
+      "qrels_complete": false
+    },
+    {
+      "query_id": "V3-L05",
+      "category": "sufficient_content",
+      "reason": "WholeTT38 Điều11 khoản2b nêu khi mưa khoảng cách lớn hơn trị sốbiển/điểma; source/rows/conditions đầy đủ.",
+      "missing_or_condition": "Không trả các hàng khô ráo như mức khoảng cách trực tiếp cho mưa.",
+      "origin": "agent_review",
+      "status": "proposed",
+      "coverage_approved": false,
+      "reviewed_target_inventory": 138,
+      "reviewed_supporting_inventory": 238,
+      "legal_status": "source/edition/applicability pending; scope proposal",
+      "qrels_complete": false
+    }
+  ],
+  "deep_selection": {
+    "selected_at": "2026-10-31T15:04:36.896055Z",
+    "origin": "agent_review",
+    "binding": {
+      "dataset_version": "vtls-subset-experimental.v5-candidate.1",
+      "dataset_manifest_sha256": "2a33d8fa503b54c574c453c33297c153074b2c3c08cdfb8a08b558d613e2d897",
+      "dataset_content_sha256": "708d3c40fbd6e5a384792b4a717f595aa5edb8023c32fb4efb6ef136a3aa2be4",
+      "consumer_sha256": "c96add34342a48af9db1fc6d72da78d3904a50135d81570d8b80dc9ebb1ecd60",
+      "queries_manifest_sha256": "f8cc9257c410c8eb578d43a0bd1912e3aa5c572829be5e33d7ee0a2045e546f0",
+      "index_version": "vtls-bm25s-subset.v1",
+      "index_content_sha256": "359b93ec8834f6388dc8bd129371ba8a7f8133ff0c9c25ccb56d0913f488d9f8",
+      "index_manifest_sha256": "657ababc157e3e509c874628bd695b20220baeec514d3f201c2d53bcfc7138af",
+      "batch_manifest_sha256": "baa811c55622580eb081b21e2df1868a3dba3d12f6f2a63acd532e6ca6b2fa09"
+    },
+    "top_k": 138,
+    "query_expansion": false,
+    "selection": [
+      {
+        "query_id": "dev-motorcycle_stop-1",
+        "reason": "Top10 chủ yếu khác loại xe hoặc khác hành vi; kiểm gap mô tô ra/vào chỗ đỗ."
+      },
+      {
+        "query_id": "dev-driving_age-2",
+        "reason": "Top10 chưa có tuổi cấp A1/A; tìm đúng tuổi, không dùng16tuổi xe gắn máy thay mô tô."
+      },
+      {
+        "query_id": "dev-driving_age-3",
+        "reason": "Cần liên kết tuổi, loại110cm3 và xử phạt người15tuổi; kiểm phần thiếu."
+      },
+      {
+        "query_id": "dev-alcohol-3",
+        "reason": "0,3mg/l là tình tiết cụ thể; xác định có target thật hay thiếu subset."
+      },
+      {
+        "query_id": "dev-red_light-2",
+        "reason": "Chế tài ô tô có thể chỉ trong dependency Điều6 khoản9; không lấy Điều7 mô tô."
+      },
+      {
+        "query_id": "dev-helmet-2",
+        "reason": "Cần người ngồi sau/cài quai; không suy gap chỉ từ lexical misses."
+      },
+      {
+        "query_id": "dev-pedestrian-2",
+        "reason": "Top10 chưa trả lời vị trí qua đường; đối chiếu inventory/fine khác rule."
+      },
+      {
+        "query_id": "dev-licence_exchange-2",
+        "reason": "Expired khác hết điểm/bịthu hồi; cần hạng/thời gian quá hạn và closure."
+      },
+      {
+        "query_id": "V3-D02",
+        "reason": "Thiếu loại xe và khu đông dân cư; kiểm ngoại lệĐiều7/8."
+      },
+      {
+        "query_id": "V3-D03",
+        "reason": "Xe tải>3,5t còn khác xi téc/kéo/loại đường; không chọn hàng tùy ý."
+      },
+      {
+        "query_id": "V3-D07",
+        "reason": "Câu so80với81 cần hai hàng/điều kiện thời tiết."
+      },
+      {
+        "query_id": "V3-D15",
+        "reason": "Nội dung bảo lưu có thể nằm trong closureĐiều67 thay vì own text của target."
+      },
+      {
+        "query_id": "V3-L01",
+        "reason": "Yêu cầu toàn mẫuXI; kiểm membership/form supporting."
+      },
+      {
+        "query_id": "V3-L02",
+        "reason": "MẫuXXVI supporting có thể nằm ngoài Top10; tìm đúng closure."
+      },
+      {
+        "query_id": "V3-L03",
+        "reason": "Thiết kếI.418 khác quy tắcQCVN4/6; kiểm vùng blocked/membership."
+      }
+    ]
+  },
+  "agent_reviewed_at": "2026-10-31T15:11:31.090240Z",
+  "inspection_basis": [
+    {
+      "ref": "staging/source-session7-work-001/inspect-168_2024_NĐ-CP.txt",
+      "sha256": "74c9d6936ece4a2bbdd206c8e754b9dd44a01d5e0a81e9389470c32093bc24da"
+    },
+    {
+      "ref": "staging/source-session7-work-001/inspect-35_2024_QH15.txt",
+      "sha256": "d11a03af106929d652699c1dc68f5519fd93e56daa29a7cd50399ce97ed929e8"
+    },
+    {
+      "ref": "staging/source-session7-work-001/inspect-35_2024_TT-BGTVT.txt",
+      "sha256": "809d378ad1cf6d16d46b28715e6f1e8b19532d6afafe2d6af9c38292a1e1846b"
+    },
+    {
+      "ref": "staging/source-session7-work-001/inspect-36_2024_QH15.txt",
+      "sha256": "99be98199c060b00b6ccf4e29a4d361d379a06470aef8df7c1e7d1b4c33db11b"
+    },
+    {
+      "ref": "staging/source-session7-work-001/inspect-38_2024_TT-BGTVT.txt",
+      "sha256": "199a8ce3891578b10f1a994048799771aa68a79f17a8518c8bb65c480d055b5a"
+    },
+    {
+      "ref": "staging/source-session7-work-001/inspect-51_2024_TT-BGTVT.txt",
+      "sha256": "85d1cb9651f4d06698e94fd52a7e3453d05ebd3e15dddd8c0c9721a38f18302e"
+    }
+  ],
+  "facts": {
+    "c_1f8a8945b35274e7c6cf37b5ae9401c76134ca01d5ef00cc68c637dbd5f9e5a5": "Điều22 khoản3 quy định tại giao nhau có báo hiệu vòng xuyến nhường xe từ bên trái.",
+    "c_6401c148a019a86e51eedfe8f2691ec951e42bd1b1005147997d7048a10ebecc": "Khoản1 điều chỉnh đường không ưu tiên/đường nhánh gặp đường ưu tiên/đường chính; cần phân biệt với hướng nhường theo vòng xuyến.",
+    "c_8d174e7b1e79f466d5c6eb978e454edb55e9cfc823351b462fc1e13b9f9a5983": "Own text xử phạt nhường đường chung; required-read Điều7 khoản6d mới ghi hướng trái/phải theo báo hiệu vòng xuyến.",
+    "c_d49e727bde79f36957900587609bb5eb815ab14e19206d401a182d1f99e26712": "Điều12 khoản3d thuộc đoạn dẫn yêu cầu quan sát, giảm tốc hoặc dừng tại giao nhau; chỉ hỗ trợ tiếp cận nút giao.",
+    "c_1a62de0c691cf366786bf2b871f8e2d045512204f3ac91e4a17e8d6ebc009802": "Điều21 khoản2 cấm còi22h–05h trong khu đông dân/cơ sở khám chữa bệnh, trừxe ưu tiên; không đồng nghĩa mọi giờ ban đêm đều bị cấm.",
+    "c_e3a8378dba6ee24993fd9644e90c241460eef4030df6c12189202b60f4e26b5e": "Điều21 khoản1b cho còi báo vượt; phải đọc cùng hạn chế khoản2, không là ngoại lệ tự động cho ban đêm.",
+    "c_117472bfc1140dc121ddbc771ebccff34e2427c7e05062335a1b00613e555e2e": "Điều21 khoản1a nêu còi khi tình huống có thể mất an toàn; cần ghép khoản2/xeưu tiên trước kết luận tình huống ban đêm.",
+    "c_7d321d92e47f247f27586cf710d2e5ec47cfcb3dcb4d2c22954994e14541cb21": "Điều7 khoản1i NĐ168 áp mô tô/xe gắn máy, dẫn mức200–400nghìn và ngoại lệ xeưu tiên; không dùng thay ô tô.",
+    "c_0a65158b909b765b5c14eddc1a13a61fb10b5a813a3ac04e0b9b68224c3256ef": "Điều6 khoản1đ NĐ168 áp ô tô/nhómxe tương ứng, dẫn mức400–600nghìn, cấm còi22h–05h ở khu vực đã nêu, có ngoại lệ ưu tiên.",
+    "c_3fe959be975eb9c4c24188e5023bbdaac7e82cf97cc8aacaa371a25ba1b8b060": "Điều56 khoản4 là xe gắn máy, dẫn tuổi theoĐiều59 khoản1a; khác xe mô tô110cm3.",
+    "c_d769841628fd619c0afeb56b2f0bf1bc1ce5c534a4890f7692f8626308c8d660": "Điều18 khoản1 cảnh cáo người14đến dưới16 tuổi điều khiển các loại xe nêu rõ; hỗ trợ vấn đề15tuổi, không là quy định tuổi cấpA1.",
+    "c_af9284ce6da72a38ba97bb9288233c86b29d4b37d4a62c54d9db6d2fd740c310": "Điều59 khoản1e giới hạn tuổi tối đa nam57/nữ55 cho ô tô khách trên29chỗ/xe giường nằm, khác tuổi mô tô.",
+    "c_00b1a2058c63a7b87a631277ef4c2795960e049197f8190897224fe47745bd7d": "Điều59 khoản1c nêu đủ21tuổi được cấp GPLX C/BE; không phải mốc mô tô.",
+    "c_d8dc7ae5a20823d8593d1180cd347ccfa85f2954a90d4a13be251857021dec4d": "Điều59 khoản1đ nêu đủ27tuổi với D/D1E/D2E/DE, chỉ một nhánh tuổi.",
+    "c_ff8053b69343c49d8f924d104b4446d46cd8688f6dd2d1662012165fae762806": "Điều59 khoản1d nêu đủ24tuổi với D1/D2/C1E/CE, không áp cho mọi xe.",
+    "c_b857d45ca868f4f439ce874d699631f265c8c38cc7c68756d29452d3f2110535": "Điều59 khoản1a nêu đủ16tuổi cho xe gắn máy; không thay tuổi mô tô.",
+    "c_30a64fc1bea93d7860d4f3821af382006956ca7dcbdc7770e636782e97fb1d9e": "Điều59 khoản1b nêu đủ18tuổi cấpA1/A/B1/B/C1; cần phân loại đúng xe/hạng, riêng unit không mô tả110cm3.",
+    "c_ddc994db1f2a9ead62340a7fd64d23497bfcd604a2d1db7ed5e2993da328f927": "Điều58 khoản4 giữ nguyên điểm sau đổi/cấp lại/nâng hạng, không là quy trình hết hạn.",
+    "c_298b8c2865cabcaf0dc28f4e06b3f1fc1708fbbdf15f5b29d5852abe87ef2fad": "Điều58 khoản3 không được lái theo GPLX hếtđiểm; sauít nhất6tháng và kiểmtra đạt mới phục hồi12điểm.",
+    "c_64504dccc76cd16e68d3bfca11b122249472cbdfca1e798e0cd04287e97d2d30": "Điều58 khoản2 chỉ phục hồi sau12tháng khi chưa bị trừ hếtđiểm; không áp thay khoản3 khi đã hết.",
+    "c_66603c4c82714a4dc21725cff6a3aa0dde5d4f94d53d1bddeeebda5e1df55c35": "Điều58 khoản1 định nghĩa12điểm và dữ liệu trừ sau quyết định xử phạt có hiệu lực; chỉ một phần cơ chế.",
+    "c_0ab24a7375b340af37c20b10295bc5bb6e6a5aa2c67e8c9e7ff1a5c109cfffb8": "Own text là giấy đăng ký xe; context khoản1Điều56 yêu cầu GPLX đang cònđiểm/cònhiệulực, nên chỉ hỗ trợ điều kiện hếtđiểm qua context.",
+    "c_074becd80c086435d57eb4866344068af71fb547e639a562312d7d11d58ad32b": "Điều6 khoản1a loại trừ nhiều hành vi; closure có khoản9b không chấp hành đèn, dẫnmức18–20triệu và khoản16b trừ4điểm; đáp án không nằm trong own text/400–600nghìn.",
+    "rv_073f041e0382ecd951764ed2e4de64e9d301875f78fddaf33d28d8e57d8da2f1": "Whole QCVN6.4 nói đèn mũi tên/phương tiện và điều kiện vẫn được đi khi có tín hiệu khác; giúp xét tình huống đènđỏ, không nêu mức phạt.",
+    "c_f40b4dc8a194af86f8c532e89b170ee49c88d9024b32fd5576431c13776c1dec": "NĐ168 Điều10 khoản1a xử phạt người đi bộ qua đường sai nơi; không chỉ ra đầy đủ nơi hợp lệ/cầu vượt.",
+    "c_d31a21db95899ebbc1e094d969d226a38d1511d26a2e1b97c7f13a8d5af6e217": "Luật36 Điều12 khoản3a yêu cầu người điều khiển giảm tốc/dừng ở nơi người đi bộ qua đường; hỗ trợ an toàn, không là quy tắc riêng của người đi bộ.",
+    "c_c0ecc166d13634062ca3341ac0c235484a1ebdd2e4ad7b91787938ccfeefb4c2": "Điều10 khoản1c NĐ168 nói người đi bộ chấp hành người điều khiển/kiểmsoát giao thông; chỉ phần hiệu lệnh.",
+    "c_7be2e8d7ae296d8b22c47845f907781007b0eeb8739b3924e761b390f45fae76": "Điều10 khoản2a NĐ168 cấm người đi bộ vào cao tốc trừ quảnlý/bảo trì; chỉ giới hạn khu vực.",
+    "c_ea171e5aaf2a322cbedb2862b704d611ee9b0f483de44bb05421072930b41f81": "Điều10 khoản1b NĐ168 xử phạt người đi bộ không chấp hành đèn/biển/vạch; không dùng chế tài này cho ô tô.",
+    "c_ce3b071b3f447c01b7e7b5af133a5af6c3e2d342c00fc6a396c4ed88a59cdd57": "TT35 Điều34 khoản2a: quá hạn dưới1năm thi lýthuyết, từ1năm thi lýthuyết/thựchành; hồsơĐiều29 và các hạng ghi cụ thể. Không khẳng định đổi trực tiếp mọi GPLX hết hạn.",
+    "c_1a12822b19bc1daf8144866099d6fa3b665514dd69479870e87987ef4b7c212d": "Điều34 khoản2b là mất+quáhạn, có tên hồsơ/không bị thu giữ, cần thi theo thời hạn; trường hợp khác hết hạn đơn thuần.",
+    "c_4d5e161c062ab86b31aa35c168b4996a98fdf85a3202c797b6d7418a674fd154": "Điều34 khoản2đ yêu cầu đăng ký sát hạch lại khi không đạt cấpGPLX quáhạn; closure cònĐiều67 về bảo lưu kết quả trước hiệu lực.",
+    "c_be3e625e5f65a8e1b15c1ffc58b94b0747a8277cad95bd99cd80ae3e52a6477f": "Điều34 khoản2d là đăng ký ôn tập không học lại; closure cóĐiều67 bảo lưu, own text không phải quy tắc bảo lưu.",
+    "c_d4573fc5f81471e4cf38befe13b970ccc2b596075d8831f0e841fb4185cbe263": "Điều34 khoản2c giữ ngày trúng tuyểnGPLX cũ; chỉ hỗ trợ thủ tục sau quáhạn, không quyết định điều kiện được đổi.",
+    "c_f06dbea794e0bc15f11f3b0ea8e72e57bcdbc18d2c3d434036ca51bf1f849b7f": "Luật36 Điều89 khoản1 chỉ tiếp tục GPLX cũ theo thời hạn ghi trên giấy; không cho phép dùng quá hạn.",
+    "tr_03f3ae425e4a1930d6081703c72e22aba780a4cdfd1402625e9ce8081e6308e6": "HàngĐiều6 khoản1 TT38 áp khu đông dân cư: đườngđôi/1chiều≥2làn60, đường2chiều/1chiều1làn50km/h; trừĐiều7/8 và giữ biển báo/điều kiện.",
+    "c_0d3bf4670ba96c89ccf2c97a8264dd1409a136e2f7d2290f62486da9d6bbfbb3": "Điều12 khoản3e giữ điều kiện giảm tốc nơi đông dân/công trình/trườnghọc; không đưa ra giá trị tối đa thay bảng.",
+    "c_ad69b36bd382f939f2066e0a37363756846860c302c612b7e9df4ee75e8bfd8e": "TT38 Điều8 khoản2 dành xe chởhàng4bánh gắnđộngcơ tốiđa50 trong phạm vi/thời gian được hoạt động; cần biết đúng loại xe.",
+    "c_e010348a9ecc3f792893701cda692a13fdf186ec34eb488619d9553ecce0a6be": "TT38 Điều8 khoản1 dành xe chởngười4bánh gắnđộngcơ tốiđa30 trong phạm vi/thời gian được hoạt động; cần biết đúng loại xe.",
+    "c_8248e4ceabc109d2942e073a201f86717525e0afc92bab40b5dbbb40f1d36f00": "TT38 Điều7 dành xe máy chuyên dùng/xe gắn máy và tươngtự tốiđa40; không tự áp cho ô tô hoặc xe mô tô.",
+    "tr_df936e34fbd59d10813357ce52c96e8299d2480b78e0934c1b519bf7b910424b": "HàngĐiều6 khoản2: xe tải>3,5t trừxitếc/xe khách>28chỗ trừbuýt, đườngđôi80/đường2chiều70 ngoài khu đông dân.",
+    "tr_090bd1839f3130d3e8d67a5956fa3bf91e3f658f53ee632a62138f9cdf6dfa8f": "HàngĐiều6 khoản2 có xe buýt/đầu kéo sơmirơmoóc trừxitếc/môtô/ô tô chuyên dùng trừtrộn; ngoàiđôngdân đườngđôi70/2chiều60.",
+    "tr_268d7ec2a87e5f4f716c80b84a79e3e2a9600de6b8d4d437fbc1577b0a0808ec": "HàngĐiều6 khoản2 riêng xe kéo/rơmoóc/xi téc/trộn, đườngđôi60/2chiều50 ngoàiđôngdân; query chưa nêu có thuộc nhóm này.",
+    "rv_0916941b9b7db992fc538429b284e82378867ea9f955c146dfd3cad46fedb6f9": "Whole TT38 Điểmb own text là mưa/sương/trơn phải lớn hơn biển/bảnga; full source_record còn đủ bảnga vàcells35/55/70/100. Với câu hỏi đườngkhô, căn cứ chỉ qua dependency bảnga, không gọi own Điểmb là quy tắc khô.",
+    "tr_824017275f85f56315730a69283f12135b509778b1c64c9655d38392ecc83beb": "Bảng3 đúngV=60 ứng35m, cùng lead khôráo/tầmnhìn/địa hình, không phải hàng60<V≤80.",
+    "tr_7d96624a118ba37e1ec17a7d886fe612582b69cccbf29fe261e13a0e0d2ad64d": "Bảng3 ghi60<V≤80 ứng55m; bao gồmđúng80, không bao gồm60 hoặc81.",
+    "tr_ac4f3afd92e8ae309f157b9f601c5d3d69adf93094bc9e29e2780c321e91e021": "Bảng3 ghi80<V≤100 ứng70m; bao gồm81, không bao gồmđúng80.",
+    "tr_48dd2c5f29cc0f090f1f8a3a0ed9d37e3a56b637804beb2331d0355d6fad40be": "Bảng3 ghi100<V≤120 ứng100m; không áp hàng này chođúng60/80.",
+    "c_ab92855d2e304336e166c7cb67d4fb72e57c0a8b9c9d2a01d4d283df02133364": "Điều11 khoản1 yêu cầu giữkhoảngcách với xe trước cùnglàn/cùngchiều; nơi có biển phải khôngnhỏ hơn trị số biển.",
+    "c_90dbea50bf3c4885a401310a3d5c4d08da46522f1413aa0c98d99bed42ded7e3": "OwnĐiều4 khoản2 chỉ dẫnĐiều6/7/8/11; closure cóĐiều11b về điều kiệnmưa, không tự biến thành target số mét.",
+    "c_94e9af6a8818fd0df403046d9a7468fc2d785608e9711e4e7192f5b43f4e4c32": "Điều9 khoản3 TT38: cao tốc thiết kế60 thì tối thiểu theo phương án tổ chức giao thông được duyệt; không tự trả lời60cốđịnh.",
+    "c_9e3fac961667f30d6e3fd30a3c98b5ad40646cced4bb87814a8971e55f44629b": "Điều32 khoản5 TT35 cấmB sốtựđộng lái ô tô sốcơkhí/sốsàn.",
+    "c_b10ac26248d538e57b3d7f2a64bdcc74bb0555c7335a7fdf96806449d54f8020": "Điều14 khoản2a TT35 liệt kêB lênC từ2năm láixeantoàn; cha/Điều60 khoản4 giữGPLX còn hiệu lực.",
+    "c_f63acc66584cce1cd3b8731c1e58d75dd74aa4ee0c4a17d9459bc707e2ec2df0": "Điều14 khoản2b làB lênD2/C lênCE/C lênD từ3năm, không phảiB lênC.",
+    "c_33bddc4e3ba24cc9388f9b41610c17b8cca82492122c3b64e93c64218eac5714": "Điều15 khoản1b TT35 có thẻtạmtrú/thườngtrú/chứngminhthưngoạigiao/côngvụ và hìnhthứcbảnsao cho người nướcngoài học lầnđầu.",
+    "c_393f637868e0bc105b9f90653fd0993ec08e1192ab02badd265ff8a807610e8d": "Điều14 khoản1 chỉ điều kiệnngười nướcngoài được cưtrú/làmviệc/họctập, không liệt kê đủ giấy tờ hồsơ.",
+    "c_0118969cca65ceb9e2adb44c539587098fa16cdf7f6e4e6ee4264d7d650b7015": "Điều44 TT35 own text nêuIDP doViệtNam cấp không cógiátrị sửdụng tronglãnhthổViệtNam.",
+    "c_63df8007bfa884f48c1b2ed26d4fab6f58daba1c73d6e1a71d2590aa4fd20468": "Điều28 khoản1 TT35 yêu cầu đủtuổi tínhngày sát hạch vàsứckhỏe; closureLuật36Điều59 có tuổi theohạng.",
+    "c_284bf36675d4e5ae7d8aef4bbf96333226d57b43fec09523b0dad58fd5a92ae1": "Điều12 khoản3m Luật36 yêu cầu quan sát/giảm tốc/dừng khi mưa/trơn; chỉ hỗ trợ an toàn, không cho sốmét thayĐiều11b."
+  },
+  "display_aliases": {
+    "c_00b1a2058c63a7b87a631277ef4c2795960e049197f8190897224fe47745bd7d": "R001",
+    "c_0118969cca65ceb9e2adb44c539587098fa16cdf7f6e4e6ee4264d7d650b7015": "R002",
+    "c_016762e4db1a100f3d007b9e5b88fcc213358b310a9ae2c351f4e35b2c4643a4": "R003",
+    "c_02518e61c539b1125f75129ccadf097042be490c8bc57445a21f5ee44f592e17": "R004",
+    "c_04a5b0581eda7254cd86b2d2a351b9cac2bf786dcafa24c7049b3dd6e974ff8d": "R005",
+    "c_074becd80c086435d57eb4866344068af71fb547e639a562312d7d11d58ad32b": "R006",
+    "c_0a65158b909b765b5c14eddc1a13a61fb10b5a813a3ac04e0b9b68224c3256ef": "R007",
+    "c_0ab24a7375b340af37c20b10295bc5bb6e6a5aa2c67e8c9e7ff1a5c109cfffb8": "R008",
+    "c_0d0ba8a960d1e91bb7870a0257442700f6edd792b6293eb72183986dbef82e1c": "R009",
+    "c_0d1652e4df5ad7697c21a8f7481733a8589acfe33b431fd5958ccd91503fd47a": "R010",
+    "c_0d3bf4670ba96c89ccf2c97a8264dd1409a136e2f7d2290f62486da9d6bbfbb3": "R011",
+    "c_0e316aafa7aa67ab418751ca1c2a9750aaceeb1d71e4ceb03c64eac7e1690a38": "R012",
+    "c_106d4f03daf7303e0d866aa313d7714d5ae03b21b364a38057ba181f0a43c8cc": "R013",
+    "c_10e4a26a4c3badbc421bfcce203b4e6a7816a533bd11c8f134ea04ac83a65c98": "R014",
+    "c_117472bfc1140dc121ddbc771ebccff34e2427c7e05062335a1b00613e555e2e": "R015",
+    "c_12a74257f985829878c547b2bb0d93aa7308d37f3ad7d55afefd0876fb0415bd": "R016",
+    "c_140908d9e20bc3b78c3288226fff895523c966bcaa92c712fe87762053eeb460": "R017",
+    "c_1a12822b19bc1daf8144866099d6fa3b665514dd69479870e87987ef4b7c212d": "R018",
+    "c_1a62de0c691cf366786bf2b871f8e2d045512204f3ac91e4a17e8d6ebc009802": "R019",
+    "c_1afb7751e1425b75a222e7692817f3263973a74c1ee10a75f8e1a2bc6d039212": "R020",
+    "c_1b4ee402bf5a18392bfcba4847c78bd68f0b31adc9e549f7d9a08796d65b0baf": "R021",
+    "c_1b54c5d2047bc608b0dfdb6d38e82e3efaab78e35af7171d773682ceb57a5982": "R022",
+    "c_1f8a8945b35274e7c6cf37b5ae9401c76134ca01d5ef00cc68c637dbd5f9e5a5": "R023",
+    "c_1ff2dec1c17ca85bd8f42f077b918553448c0f4cbe41d35e73d58c8182042f4c": "R024",
+    "c_23a644847306d2607cf3835025484748fd6b21df76c93791a04505c9fc00f7cb": "R025",
+    "c_24def7c44a8779c22d56de6b763880addc81bee7d6be4d19d6b9ea586f62d07e": "R026",
+    "c_284bf36675d4e5ae7d8aef4bbf96333226d57b43fec09523b0dad58fd5a92ae1": "R027",
+    "c_286beef186d3b6b5b3551411303ecd00f8f69e9fec2b5b5f46207cf71231e035": "R028",
+    "c_298b8c2865cabcaf0dc28f4e06b3f1fc1708fbbdf15f5b29d5852abe87ef2fad": "R029",
+    "c_2ae0fdc5615b18b03995107dbf725626424f62ae3201f57049bfbd47c8b71a4d": "R030",
+    "c_2e8266e59b29bc4915eeff115d35f5f549838d14948e6112ffa4603d723691d9": "R031",
+    "c_2fdce067240e45b64061fc6f7be47a7fc74a528516aa308e26ae0098d7770b31": "R032",
+    "c_30a64fc1bea93d7860d4f3821af382006956ca7dcbdc7770e636782e97fb1d9e": "R033",
+    "c_33bddc4e3ba24cc9388f9b41610c17b8cca82492122c3b64e93c64218eac5714": "R034",
+    "c_393f637868e0bc105b9f90653fd0993ec08e1192ab02badd265ff8a807610e8d": "R035",
+    "c_3949eff156644ce34f79dfe9133b1f27969ec8f1fe9fdb70c7608f426225c253": "R036",
+    "c_3a7f1f954474890e293dd56e6c0549d86bfd962b9b479d4ba0a76226c2075ce2": "R037",
+    "c_3ab1cc98e7f48616461bd88ae01ed6f443f307939479c5d4ca3f7338efcc1776": "R038",
+    "c_3ee9ba9754d850f0b5e8e7eca31bdf6adbaedbf04f7cdafc2ba1c5c2d24c66b9": "R039",
+    "c_3fe959be975eb9c4c24188e5023bbdaac7e82cf97cc8aacaa371a25ba1b8b060": "R040",
+    "c_404e4875f39114e380a3d730d89a6a490d2055faf6667f841c882f3db3057e7e": "R041",
+    "c_40b2b82f71c770094d360ba02b657c69025cd13dd6f908d86baf645247be0193": "R042",
+    "c_41124b6f10db14c324b0aefc02c560bec5f32408f437ff6e6b44dfb9d9a6cac1": "R043",
+    "c_4a3b77b8fc1ccba33e5909fb0c953f271f06adbbc149e083d5a36811c3f936ad": "R044",
+    "c_4d5e161c062ab86b31aa35c168b4996a98fdf85a3202c797b6d7418a674fd154": "R045",
+    "c_4f2923e72ceacd50e4f2f2000181ec9a6d23244678b571fc75737d8b2ac04c48": "R046",
+    "c_50c22c82f7066f19a6cdb234cc021e0d7550a177956340a022471a583351e43d": "R047",
+    "c_58630b7a2dcf753e53553ed4c6a489636384731e750c69927beba25624ea4026": "R048",
+    "c_5d1189b2c379ea8350d69258bdb371249d4c1a8637abfaab29d5c2518dc93e46": "R049",
+    "c_5e638f3fa56c0b786e729a38870966a56c064a63c651f877532d4af1c6226515": "R050",
+    "c_63df8007bfa884f48c1b2ed26d4fab6f58daba1c73d6e1a71d2590aa4fd20468": "R051",
+    "c_6401c148a019a86e51eedfe8f2691ec951e42bd1b1005147997d7048a10ebecc": "R052",
+    "c_64504dccc76cd16e68d3bfca11b122249472cbdfca1e798e0cd04287e97d2d30": "R053",
+    "c_64b4ddedf4847ab1d063ff92217daec018b01e24af313487ecd97dd1dbf5954e": "R054",
+    "c_66603c4c82714a4dc21725cff6a3aa0dde5d4f94d53d1bddeeebda5e1df55c35": "R055",
+    "c_6e528e8e23ce2f5cc4bae2425091aca0d5f0082073d9f6cec57c6139b81ea4d6": "R056",
+    "c_6e8a21dc26caa8da5d0c53918ec2d2aa7ff609da280a47daee1b0e7ba8636a61": "R057",
+    "c_717484ded2c5eb21ac55c9d2e93cdbbc4aaab9d222f4365e75e37c11e086e79b": "R058",
+    "c_72ec2c301edf30061f74fc72bf32c6cc46f27024a84a63b5e56956c31378313d": "R059",
+    "c_73b8382e94a64f8458f4f85272a82e608a03f8dc5daa438b2cc4b8b561a52bf8": "R060",
+    "c_76b1fdd760b8d67c4fab4f15587cf345b31f52cd4ee176f8c449d8c957f0ff6d": "R061",
+    "c_776b5db122d8b4df1ac2ad92b8cc1427009b59b72d8d32a871cb7ef273529214": "R062",
+    "c_7be2e8d7ae296d8b22c47845f907781007b0eeb8739b3924e761b390f45fae76": "R063",
+    "c_7d321d92e47f247f27586cf710d2e5ec47cfcb3dcb4d2c22954994e14541cb21": "R064",
+    "c_7ee5e6bf160eec9b621a6e7f22404181ecd82c33edc1d33b1fab73549993ce25": "R065",
+    "c_8248e4ceabc109d2942e073a201f86717525e0afc92bab40b5dbbb40f1d36f00": "R066",
+    "c_83a78f6167a7c6ebd8902459d71a04e72b6598ada5beee3bcbfb7744a259a6b0": "R067",
+    "c_846a48879946cff79d159b769c1c98c6164140a29ac36bc659ceae1a1e6ed23b": "R068",
+    "c_85c9a243c0bf7b7d27bbe1f55ea182e18a607898b4607b7c9902f2ef15085b39": "R069",
+    "c_8815c976e9feb3d3620bf4f87f7f681c0438462ae5de9c4ac376f99fdb65b956": "R070",
+    "c_898c2d9a0c4b369621d8ad78b0985881b3b5cb786e8e3b4299a28930c5c99dbf": "R071",
+    "c_8a06a0554b0bc4c4ef0f4df480d58d673b5067c4c0c61ab9458a9e1e9318bde6": "R072",
+    "c_8a1cf72ce208377f72ea146256dfd48c6a2dd3861d1315067c81683efc218647": "R073",
+    "c_8cefc5a329679174721bb0285a55a65174b4df35bfd204a19ba5e3af510c7509": "R074",
+    "c_8d174e7b1e79f466d5c6eb978e454edb55e9cfc823351b462fc1e13b9f9a5983": "R075",
+    "c_8fb0e2e3bae25ead6618ee3a95ddfb0cfa69f542c0fa4a8c4aca4252d6a71b17": "R076",
+    "c_8ffb7b4abe31575d7a8cc17b222354483e45a38e6d8619236cc53da43aced9b5": "R077",
+    "c_90dbea50bf3c4885a401310a3d5c4d08da46522f1413aa0c98d99bed42ded7e3": "R078",
+    "c_93074cc2888d209c84963b2f397eda782d643a6ad7b8a3661f743578b4752d9b": "R079",
+    "c_94e9af6a8818fd0df403046d9a7468fc2d785608e9711e4e7192f5b43f4e4c32": "R080",
+    "c_97a531c42490905f84320904a6e89837c25db670f8a9ca58d25c5cf51909568f": "R081",
+    "c_9a0a220f85e304fe8b0d7e49df8dd4bf83eed6f106c9af051f9a55fc9f4f8258": "R082",
+    "c_9cff443d4ac670a8fbe24cdf8f02db2e7c6c8c6060dc15afa4ea4e6d8c5a880b": "R083",
+    "c_9e3fac961667f30d6e3fd30a3c98b5ad40646cced4bb87814a8971e55f44629b": "R084",
+    "c_a2f1d9a5c9f5eaf53ce677e7a6e58b1bbcf9394750ad354a1ef9f04003b7afb6": "R085",
+    "c_a68311fee48563c71f4c2c9ffba03d74628386155daf19d200e38223439680a7": "R086",
+    "c_ab92855d2e304336e166c7cb67d4fb72e57c0a8b9c9d2a01d4d283df02133364": "R087",
+    "c_ad69b36bd382f939f2066e0a37363756846860c302c612b7e9df4ee75e8bfd8e": "R088",
+    "c_af9284ce6da72a38ba97bb9288233c86b29d4b37d4a62c54d9db6d2fd740c310": "R089",
+    "c_af933b511ee76f29f6a4e4d727ec05f06d5635831ae8e1742081b46a9443b2bb": "R090",
+    "c_b0d8794e639a6d7d4ced2e6d1fbd874664172f4d2d3a5d34fbfbf3a6d1e746ab": "R091",
+    "c_b10ac26248d538e57b3d7f2a64bdcc74bb0555c7335a7fdf96806449d54f8020": "R092",
+    "c_b2dc0676755880863fdf5ff1bd359dfea6e52264c59b09e8a62f321199a89952": "R093",
+    "c_b321a78b09857dc08caf06139703e28e85a6d34a43324332469338d1be7fbcf8": "R094",
+    "c_b67c6f9758e0662e3a7b2080ae2fe98b97d8b9f53dbe96b1308bcb7acb8eefe0": "R095",
+    "c_b857d45ca868f4f439ce874d699631f265c8c38cc7c68756d29452d3f2110535": "R096",
+    "c_b8d9b1c266db45adace6ecc952027c656215fc4036ac431bce9867202c095ad7": "R097",
+    "c_b9da00142e54df6781d4c69997d041024947f262c757b181e32bc7f15e943c96": "R098",
+    "c_be3e625e5f65a8e1b15c1ffc58b94b0747a8277cad95bd99cd80ae3e52a6477f": "R099",
+    "c_bfe6057f8fe2fc697e076a33ea326803ed06fe7922437948f0fd4e605ddcbac0": "R100",
+    "c_c0ecc166d13634062ca3341ac0c235484a1ebdd2e4ad7b91787938ccfeefb4c2": "R101",
+    "c_c16b826d6a2aa6b27ee17f80850430e0b090049929090648387308a941a82fde": "R102",
+    "c_c6670ec8baa8253ce521b897cba2dea7f57e9a5ac99cc77f7c73a4f5e72ca7d5": "R103",
+    "c_ce3b071b3f447c01b7e7b5af133a5af6c3e2d342c00fc6a396c4ed88a59cdd57": "R104",
+    "c_d31a21db95899ebbc1e094d969d226a38d1511d26a2e1b97c7f13a8d5af6e217": "R105",
+    "c_d4573fc5f81471e4cf38befe13b970ccc2b596075d8831f0e841fb4185cbe263": "R106",
+    "c_d49e727bde79f36957900587609bb5eb815ab14e19206d401a182d1f99e26712": "R107",
+    "c_d769841628fd619c0afeb56b2f0bf1bc1ce5c534a4890f7692f8626308c8d660": "R108",
+    "c_d8dc7ae5a20823d8593d1180cd347ccfa85f2954a90d4a13be251857021dec4d": "R109",
+    "c_d93c18360aaf9d63a1c8fe2a0d97311938b23467fe4135d45a0300af8faef3ce": "R110",
+    "c_d9a10806713add63791c602960e1d35631b87fd626a11db59b144baf13f439ff": "R111",
+    "c_daa79b6e4d18cc02846864fe504c53b627cf344a18d7110402d36a9d0ac0f985": "R112",
+    "c_ddc994db1f2a9ead62340a7fd64d23497bfcd604a2d1db7ed5e2993da328f927": "R113",
+    "c_e010348a9ecc3f792893701cda692a13fdf186ec34eb488619d9553ecce0a6be": "R114",
+    "c_e3a8378dba6ee24993fd9644e90c241460eef4030df6c12189202b60f4e26b5e": "R115",
+    "c_ea171e5aaf2a322cbedb2862b704d611ee9b0f483de44bb05421072930b41f81": "R116",
+    "c_ed53e3781e51ce7bc834693e514d98c63eddcdfccaa52b8a504fcc9dbe0944a1": "R117",
+    "c_f06dbea794e0bc15f11f3b0ea8e72e57bcdbc18d2c3d434036ca51bf1f849b7f": "R118",
+    "c_f1de50f62b25ad12f150b63638c4ca4d1e151da23bd68792686b16a40156ea0e": "R119",
+    "c_f40b4dc8a194af86f8c532e89b170ee49c88d9024b32fd5576431c13776c1dec": "R120",
+    "c_f629580ea0115cf1b63911003f3b26707c148564bd9a8ae761b03904a5328bae": "R121",
+    "c_f63acc66584cce1cd3b8731c1e58d75dd74aa4ee0c4a17d9459bc707e2ec2df0": "R122",
+    "c_f7345c550d1ee006180b4d5f436441958be30ab2c59a6d91a2ab020c55e42951": "R123",
+    "c_fda605ed35c236b7f06027f15f4a0576755554bd5c1807c7bab97a57d09e89fe": "R124",
+    "c_ff8053b69343c49d8f924d104b4446d46cd8688f6dd2d1662012165fae762806": "R125",
+    "rv_073f041e0382ecd951764ed2e4de64e9d301875f78fddaf33d28d8e57d8da2f1": "R126",
+    "rv_0916941b9b7db992fc538429b284e82378867ea9f955c146dfd3cad46fedb6f9": "R127",
+    "rv_5f69ac751c5ca55278c0f07ef6a5a913ee56afcba8b1ef81070db8f1be372f9f": "R128",
+    "rv_63a7fc38930d3e3f7ba34b3a34f3c65c6b6813869ea3a31ace91ee5de334213f": "R129",
+    "tr_03f3ae425e4a1930d6081703c72e22aba780a4cdfd1402625e9ce8081e6308e6": "R130",
+    "tr_090bd1839f3130d3e8d67a5956fa3bf91e3f658f53ee632a62138f9cdf6dfa8f": "R131",
+    "tr_19906379710bf99bdcdbbccecfe41baea5354436a130b8e811920c3d82e34c12": "R132",
+    "tr_268d7ec2a87e5f4f716c80b84a79e3e2a9600de6b8d4d437fbc1577b0a0808ec": "R133",
+    "tr_48dd2c5f29cc0f090f1f8a3a0ed9d37e3a56b637804beb2331d0355d6fad40be": "R134",
+    "tr_7d96624a118ba37e1ec17a7d886fe612582b69cccbf29fe261e13a0e0d2ad64d": "R135",
+    "tr_824017275f85f56315730a69283f12135b509778b1c64c9655d38392ecc83beb": "R136",
+    "tr_ac4f3afd92e8ae309f157b9f601c5d3d69adf93094bc9e29e2780c321e91e021": "R137",
+    "tr_df936e34fbd59d10813357ce52c96e8299d2480b78e0934c1b519bf7b910424b": "R138"
+  },
+  "focus": {
+    "dev-roundabout-1|c_8d174e7b1e79f466d5c6eb978e454edb55e9cfc823351b462fc1e13b9f9a5983": [
+      "/dataset_response/required_read/unit_reads/16/unit/text_original"
+    ],
+    "dev-motorcycle_stop-2|tr_19906379710bf99bdcdbbccecfe41baea5354436a130b8e811920c3d82e34c12": [
+      "/dataset_response/record/source_original",
+      "/dataset_response/record/derived_text"
+    ],
+    "dev-night_horn-2|tr_03f3ae425e4a1930d6081703c72e22aba780a4cdfd1402625e9ce8081e6308e6": [
+      "/dataset_response/record/source_original",
+      "/dataset_response/record/derived_text"
+    ],
+    "dev-night_horn-2|tr_19906379710bf99bdcdbbccecfe41baea5354436a130b8e811920c3d82e34c12": [
+      "/dataset_response/record/source_original",
+      "/dataset_response/record/derived_text"
+    ],
+    "dev-night_horn-2|tr_df936e34fbd59d10813357ce52c96e8299d2480b78e0934c1b519bf7b910424b": [
+      "/dataset_response/record/source_original",
+      "/dataset_response/record/derived_text"
+    ],
+    "dev-night_horn-3|tr_268d7ec2a87e5f4f716c80b84a79e3e2a9600de6b8d4d437fbc1577b0a0808ec": [
+      "/dataset_response/record/source_original",
+      "/dataset_response/record/derived_text"
+    ],
+    "dev-night_horn-3|tr_090bd1839f3130d3e8d67a5956fa3bf91e3f658f53ee632a62138f9cdf6dfa8f": [
+      "/dataset_response/record/source_original",
+      "/dataset_response/record/derived_text"
+    ],
+    "dev-night_horn-3|tr_df936e34fbd59d10813357ce52c96e8299d2480b78e0934c1b519bf7b910424b": [
+      "/dataset_response/record/source_original",
+      "/dataset_response/record/derived_text"
+    ],
+    "dev-night_horn-3|tr_19906379710bf99bdcdbbccecfe41baea5354436a130b8e811920c3d82e34c12": [
+      "/dataset_response/record/source_original",
+      "/dataset_response/record/derived_text"
+    ],
+    "dev-licence_points-3|c_0ab24a7375b340af37c20b10295bc5bb6e6a5aa2c67e8c9e7ff1a5c109cfffb8": [
+      "/dataset_response/record/context_text"
+    ],
+    "dev-red_light-1|c_074becd80c086435d57eb4866344068af71fb547e639a562312d7d11d58ad32b": [
+      "/dataset_response/required_read/unit_reads/51/unit/text_original",
+      "/dataset_response/required_read/unit_reads/34/unit/text_original",
+      "/dataset_response/required_read/unit_reads/15/unit/text_original"
+    ],
+    "dev-helmet-2|tr_824017275f85f56315730a69283f12135b509778b1c64c9655d38392ecc83beb": [
+      "/dataset_response/record/source_original",
+      "/dataset_response/record/derived_text"
+    ],
+    "dev-helmet-2|tr_48dd2c5f29cc0f090f1f8a3a0ed9d37e3a56b637804beb2331d0355d6fad40be": [
+      "/dataset_response/record/source_original",
+      "/dataset_response/record/derived_text"
+    ],
+    "dev-helmet-2|tr_7d96624a118ba37e1ec17a7d886fe612582b69cccbf29fe261e13a0e0d2ad64d": [
+      "/dataset_response/record/source_original",
+      "/dataset_response/record/derived_text"
+    ],
+    "dev-helmet-2|tr_ac4f3afd92e8ae309f157b9f601c5d3d69adf93094bc9e29e2780c321e91e021": [
+      "/dataset_response/record/source_original",
+      "/dataset_response/record/derived_text"
+    ],
+    "dev-helmet-3|tr_19906379710bf99bdcdbbccecfe41baea5354436a130b8e811920c3d82e34c12": [
+      "/dataset_response/record/source_original",
+      "/dataset_response/record/derived_text"
+    ],
+    "V3-D01|tr_268d7ec2a87e5f4f716c80b84a79e3e2a9600de6b8d4d437fbc1577b0a0808ec": [
+      "/dataset_response/record/source_original",
+      "/dataset_response/record/derived_text"
+    ],
+    "V3-D01|tr_090bd1839f3130d3e8d67a5956fa3bf91e3f658f53ee632a62138f9cdf6dfa8f": [
+      "/dataset_response/record/source_original",
+      "/dataset_response/record/derived_text"
+    ],
+    "V3-D01|tr_df936e34fbd59d10813357ce52c96e8299d2480b78e0934c1b519bf7b910424b": [
+      "/dataset_response/record/source_original",
+      "/dataset_response/record/derived_text"
+    ],
+    "V3-D01|tr_19906379710bf99bdcdbbccecfe41baea5354436a130b8e811920c3d82e34c12": [
+      "/dataset_response/record/source_original",
+      "/dataset_response/record/derived_text"
+    ],
+    "V3-D01|tr_03f3ae425e4a1930d6081703c72e22aba780a4cdfd1402625e9ce8081e6308e6": [
+      "/dataset_response/record/source_original",
+      "/dataset_response/record/derived_text"
+    ],
+    "V3-D02|tr_19906379710bf99bdcdbbccecfe41baea5354436a130b8e811920c3d82e34c12": [
+      "/dataset_response/record/source_original",
+      "/dataset_response/record/derived_text"
+    ],
+    "V3-D02|tr_df936e34fbd59d10813357ce52c96e8299d2480b78e0934c1b519bf7b910424b": [
+      "/dataset_response/record/source_original",
+      "/dataset_response/record/derived_text"
+    ],
+    "V3-D02|tr_03f3ae425e4a1930d6081703c72e22aba780a4cdfd1402625e9ce8081e6308e6": [
+      "/dataset_response/record/source_original",
+      "/dataset_response/record/derived_text"
+    ],
+    "V3-D02|tr_090bd1839f3130d3e8d67a5956fa3bf91e3f658f53ee632a62138f9cdf6dfa8f": [
+      "/dataset_response/record/source_original",
+      "/dataset_response/record/derived_text"
+    ],
+    "V3-D02|tr_268d7ec2a87e5f4f716c80b84a79e3e2a9600de6b8d4d437fbc1577b0a0808ec": [
+      "/dataset_response/record/source_original",
+      "/dataset_response/record/derived_text"
+    ],
+    "V3-D03|tr_df936e34fbd59d10813357ce52c96e8299d2480b78e0934c1b519bf7b910424b": [
+      "/dataset_response/record/source_original",
+      "/dataset_response/record/derived_text"
+    ],
+    "V3-D03|tr_19906379710bf99bdcdbbccecfe41baea5354436a130b8e811920c3d82e34c12": [
+      "/dataset_response/record/source_original",
+      "/dataset_response/record/derived_text"
+    ],
+    "V3-D03|tr_090bd1839f3130d3e8d67a5956fa3bf91e3f658f53ee632a62138f9cdf6dfa8f": [
+      "/dataset_response/record/source_original",
+      "/dataset_response/record/derived_text"
+    ],
+    "V3-D03|tr_268d7ec2a87e5f4f716c80b84a79e3e2a9600de6b8d4d437fbc1577b0a0808ec": [
+      "/dataset_response/record/source_original",
+      "/dataset_response/record/derived_text"
+    ],
+    "V3-D03|tr_03f3ae425e4a1930d6081703c72e22aba780a4cdfd1402625e9ce8081e6308e6": [
+      "/dataset_response/record/source_original",
+      "/dataset_response/record/derived_text"
+    ],
+    "V3-D03|tr_824017275f85f56315730a69283f12135b509778b1c64c9655d38392ecc83beb": [
+      "/dataset_response/record/source_original",
+      "/dataset_response/record/derived_text"
+    ],
+    "V3-D03|tr_48dd2c5f29cc0f090f1f8a3a0ed9d37e3a56b637804beb2331d0355d6fad40be": [
+      "/dataset_response/record/source_original",
+      "/dataset_response/record/derived_text"
+    ],
+    "V3-D03|tr_7d96624a118ba37e1ec17a7d886fe612582b69cccbf29fe261e13a0e0d2ad64d": [
+      "/dataset_response/record/source_original",
+      "/dataset_response/record/derived_text"
+    ],
+    "V3-D04|tr_19906379710bf99bdcdbbccecfe41baea5354436a130b8e811920c3d82e34c12": [
+      "/dataset_response/record/source_original",
+      "/dataset_response/record/derived_text"
+    ],
+    "V3-D04|tr_df936e34fbd59d10813357ce52c96e8299d2480b78e0934c1b519bf7b910424b": [
+      "/dataset_response/record/source_original",
+      "/dataset_response/record/derived_text"
+    ],
+    "V3-D04|tr_090bd1839f3130d3e8d67a5956fa3bf91e3f658f53ee632a62138f9cdf6dfa8f": [
+      "/dataset_response/record/source_original",
+      "/dataset_response/record/derived_text"
+    ],
+    "V3-D04|tr_268d7ec2a87e5f4f716c80b84a79e3e2a9600de6b8d4d437fbc1577b0a0808ec": [
+      "/dataset_response/record/source_original",
+      "/dataset_response/record/derived_text"
+    ],
+    "V3-D04|tr_03f3ae425e4a1930d6081703c72e22aba780a4cdfd1402625e9ce8081e6308e6": [
+      "/dataset_response/record/source_original",
+      "/dataset_response/record/derived_text"
+    ],
+    "V3-D05|rv_0916941b9b7db992fc538429b284e82378867ea9f955c146dfd3cad46fedb6f9": [
+      "/dataset_response/record/source_record/text_derived",
+      "/dataset_response/required_read/unit_reads/0/unit/text_original"
+    ],
+    "V3-D05|tr_824017275f85f56315730a69283f12135b509778b1c64c9655d38392ecc83beb": [
+      "/dataset_response/record/source_original",
+      "/dataset_response/record/derived_text"
+    ],
+    "V3-D05|tr_7d96624a118ba37e1ec17a7d886fe612582b69cccbf29fe261e13a0e0d2ad64d": [
+      "/dataset_response/record/source_original",
+      "/dataset_response/record/derived_text"
+    ],
+    "V3-D05|tr_48dd2c5f29cc0f090f1f8a3a0ed9d37e3a56b637804beb2331d0355d6fad40be": [
+      "/dataset_response/record/source_original",
+      "/dataset_response/record/derived_text"
+    ],
+    "V3-D05|tr_ac4f3afd92e8ae309f157b9f601c5d3d69adf93094bc9e29e2780c321e91e021": [
+      "/dataset_response/record/source_original",
+      "/dataset_response/record/derived_text"
+    ],
+    "V3-D05|tr_03f3ae425e4a1930d6081703c72e22aba780a4cdfd1402625e9ce8081e6308e6": [
+      "/dataset_response/record/source_original",
+      "/dataset_response/record/derived_text"
+    ],
+    "V3-D05|tr_090bd1839f3130d3e8d67a5956fa3bf91e3f658f53ee632a62138f9cdf6dfa8f": [
+      "/dataset_response/record/source_original",
+      "/dataset_response/record/derived_text"
+    ],
+    "V3-D05|tr_268d7ec2a87e5f4f716c80b84a79e3e2a9600de6b8d4d437fbc1577b0a0808ec": [
+      "/dataset_response/record/source_original",
+      "/dataset_response/record/derived_text"
+    ],
+    "V3-D06|tr_7d96624a118ba37e1ec17a7d886fe612582b69cccbf29fe261e13a0e0d2ad64d": [
+      "/dataset_response/record/source_original",
+      "/dataset_response/record/derived_text"
+    ],
+    "V3-D06|tr_ac4f3afd92e8ae309f157b9f601c5d3d69adf93094bc9e29e2780c321e91e021": [
+      "/dataset_response/record/source_original",
+      "/dataset_response/record/derived_text"
+    ],
+    "V3-D06|rv_0916941b9b7db992fc538429b284e82378867ea9f955c146dfd3cad46fedb6f9": [
+      "/dataset_response/record/source_record/text_derived",
+      "/dataset_response/required_read/unit_reads/0/unit/text_original"
+    ],
+    "V3-D06|tr_824017275f85f56315730a69283f12135b509778b1c64c9655d38392ecc83beb": [
+      "/dataset_response/record/source_original",
+      "/dataset_response/record/derived_text"
+    ],
+    "V3-D06|tr_48dd2c5f29cc0f090f1f8a3a0ed9d37e3a56b637804beb2331d0355d6fad40be": [
+      "/dataset_response/record/source_original",
+      "/dataset_response/record/derived_text"
+    ],
+    "V3-D06|tr_df936e34fbd59d10813357ce52c96e8299d2480b78e0934c1b519bf7b910424b": [
+      "/dataset_response/record/source_original",
+      "/dataset_response/record/derived_text"
+    ],
+    "V3-D06|tr_19906379710bf99bdcdbbccecfe41baea5354436a130b8e811920c3d82e34c12": [
+      "/dataset_response/record/source_original",
+      "/dataset_response/record/derived_text"
+    ],
+    "V3-D07|rv_0916941b9b7db992fc538429b284e82378867ea9f955c146dfd3cad46fedb6f9": [
+      "/dataset_response/record/source_record/text_derived",
+      "/dataset_response/required_read/unit_reads/0/unit/text_original"
+    ],
+    "V3-D07|tr_7d96624a118ba37e1ec17a7d886fe612582b69cccbf29fe261e13a0e0d2ad64d": [
+      "/dataset_response/record/source_original",
+      "/dataset_response/record/derived_text"
+    ],
+    "V3-D07|tr_ac4f3afd92e8ae309f157b9f601c5d3d69adf93094bc9e29e2780c321e91e021": [
+      "/dataset_response/record/source_original",
+      "/dataset_response/record/derived_text"
+    ],
+    "V3-D07|tr_824017275f85f56315730a69283f12135b509778b1c64c9655d38392ecc83beb": [
+      "/dataset_response/record/source_original",
+      "/dataset_response/record/derived_text"
+    ],
+    "V3-D07|tr_48dd2c5f29cc0f090f1f8a3a0ed9d37e3a56b637804beb2331d0355d6fad40be": [
+      "/dataset_response/record/source_original",
+      "/dataset_response/record/derived_text"
+    ],
+    "V3-D07|tr_19906379710bf99bdcdbbccecfe41baea5354436a130b8e811920c3d82e34c12": [
+      "/dataset_response/record/source_original",
+      "/dataset_response/record/derived_text"
+    ],
+    "V3-D08|rv_0916941b9b7db992fc538429b284e82378867ea9f955c146dfd3cad46fedb6f9": [
+      "/dataset_response/record/source_record/text_derived",
+      "/dataset_response/required_read/unit_reads/0/unit/text_original"
+    ],
+    "V3-D08|tr_48dd2c5f29cc0f090f1f8a3a0ed9d37e3a56b637804beb2331d0355d6fad40be": [
+      "/dataset_response/record/source_original",
+      "/dataset_response/record/derived_text"
+    ],
+    "V3-D08|tr_ac4f3afd92e8ae309f157b9f601c5d3d69adf93094bc9e29e2780c321e91e021": [
+      "/dataset_response/record/source_original",
+      "/dataset_response/record/derived_text"
+    ],
+    "V3-D08|tr_19906379710bf99bdcdbbccecfe41baea5354436a130b8e811920c3d82e34c12": [
+      "/dataset_response/record/source_original",
+      "/dataset_response/record/derived_text"
+    ],
+    "V3-D08|tr_824017275f85f56315730a69283f12135b509778b1c64c9655d38392ecc83beb": [
+      "/dataset_response/record/source_original",
+      "/dataset_response/record/derived_text"
+    ],
+    "V3-D08|tr_7d96624a118ba37e1ec17a7d886fe612582b69cccbf29fe261e13a0e0d2ad64d": [
+      "/dataset_response/record/source_original",
+      "/dataset_response/record/derived_text"
+    ],
+    "V3-D08|c_90dbea50bf3c4885a401310a3d5c4d08da46522f1413aa0c98d99bed42ded7e3": [
+      "/dataset_response/required_read/unit_reads/11/unit/text_original"
+    ],
+    "V3-D08|tr_03f3ae425e4a1930d6081703c72e22aba780a4cdfd1402625e9ce8081e6308e6": [
+      "/dataset_response/record/source_original",
+      "/dataset_response/record/derived_text"
+    ],
+    "V3-D09|tr_03f3ae425e4a1930d6081703c72e22aba780a4cdfd1402625e9ce8081e6308e6": [
+      "/dataset_response/record/source_original",
+      "/dataset_response/record/derived_text"
+    ],
+    "V3-D09|tr_268d7ec2a87e5f4f716c80b84a79e3e2a9600de6b8d4d437fbc1577b0a0808ec": [
+      "/dataset_response/record/source_original",
+      "/dataset_response/record/derived_text"
+    ],
+    "V3-D09|tr_090bd1839f3130d3e8d67a5956fa3bf91e3f658f53ee632a62138f9cdf6dfa8f": [
+      "/dataset_response/record/source_original",
+      "/dataset_response/record/derived_text"
+    ],
+    "V3-D09|tr_19906379710bf99bdcdbbccecfe41baea5354436a130b8e811920c3d82e34c12": [
+      "/dataset_response/record/source_original",
+      "/dataset_response/record/derived_text"
+    ],
+    "V3-D09|tr_df936e34fbd59d10813357ce52c96e8299d2480b78e0934c1b519bf7b910424b": [
+      "/dataset_response/record/source_original",
+      "/dataset_response/record/derived_text"
+    ],
+    "V3-D12|tr_090bd1839f3130d3e8d67a5956fa3bf91e3f658f53ee632a62138f9cdf6dfa8f": [
+      "/dataset_response/record/source_original",
+      "/dataset_response/record/derived_text"
+    ],
+    "V3-D15|c_4d5e161c062ab86b31aa35c168b4996a98fdf85a3202c797b6d7418a674fd154": [
+      "/dataset_response/required_read/unit_reads/15/unit/text_original"
+    ],
+    "V3-L01|tr_268d7ec2a87e5f4f716c80b84a79e3e2a9600de6b8d4d437fbc1577b0a0808ec": [
+      "/dataset_response/record/source_original",
+      "/dataset_response/record/derived_text"
+    ],
+    "V3-L04|tr_df936e34fbd59d10813357ce52c96e8299d2480b78e0934c1b519bf7b910424b": [
+      "/dataset_response/record/source_original",
+      "/dataset_response/record/derived_text"
+    ],
+    "V3-L04|tr_19906379710bf99bdcdbbccecfe41baea5354436a130b8e811920c3d82e34c12": [
+      "/dataset_response/record/source_original",
+      "/dataset_response/record/derived_text"
+    ],
+    "V3-L04|tr_268d7ec2a87e5f4f716c80b84a79e3e2a9600de6b8d4d437fbc1577b0a0808ec": [
+      "/dataset_response/record/source_original",
+      "/dataset_response/record/derived_text"
+    ],
+    "V3-L04|tr_090bd1839f3130d3e8d67a5956fa3bf91e3f658f53ee632a62138f9cdf6dfa8f": [
+      "/dataset_response/record/source_original",
+      "/dataset_response/record/derived_text"
+    ],
+    "V3-L05|tr_824017275f85f56315730a69283f12135b509778b1c64c9655d38392ecc83beb": [
+      "/dataset_response/record/source_original",
+      "/dataset_response/record/derived_text"
+    ],
+    "V3-L05|tr_48dd2c5f29cc0f090f1f8a3a0ed9d37e3a56b637804beb2331d0355d6fad40be": [
+      "/dataset_response/record/source_original",
+      "/dataset_response/record/derived_text"
+    ],
+    "V3-L05|tr_7d96624a118ba37e1ec17a7d886fe612582b69cccbf29fe261e13a0e0d2ad64d": [
+      "/dataset_response/record/source_original",
+      "/dataset_response/record/derived_text"
+    ],
+    "V3-L05|tr_ac4f3afd92e8ae309f157b9f601c5d3d69adf93094bc9e29e2780c321e91e021": [
+      "/dataset_response/record/source_original",
+      "/dataset_response/record/derived_text"
+    ],
+    "dev-driving_age-2|c_63df8007bfa884f48c1b2ed26d4fab6f58daba1c73d6e1a71d2590aa4fd20468": [
+      "/dataset_response/required_read/unit_reads/0/unit/text_original"
+    ],
+    "dev-driving_age-3|c_63df8007bfa884f48c1b2ed26d4fab6f58daba1c73d6e1a71d2590aa4fd20468": [
+      "/dataset_response/required_read/unit_reads/0/unit/text_original"
+    ],
+    "dev-red_light-2|c_074becd80c086435d57eb4866344068af71fb547e639a562312d7d11d58ad32b": [
+      "/dataset_response/required_read/unit_reads/51/unit/text_original",
+      "/dataset_response/required_read/unit_reads/34/unit/text_original",
+      "/dataset_response/required_read/unit_reads/15/unit/text_original"
+    ],
+    "V3-D15|c_ce3b071b3f447c01b7e7b5af133a5af6c3e2d342c00fc6a396c4ed88a59cdd57": [
+      "/dataset_response/required_read/unit_reads/35/unit/text_original"
+    ],
+    "V3-D15|c_1a12822b19bc1daf8144866099d6fa3b665514dd69479870e87987ef4b7c212d": [
+      "/dataset_response/required_read/unit_reads/35/unit/text_original"
+    ],
+    "V3-D15|c_be3e625e5f65a8e1b15c1ffc58b94b0747a8277cad95bd99cd80ae3e52a6477f": [
+      "/dataset_response/required_read/unit_reads/15/unit/text_original"
+    ],
+    "V3-L02|c_ce3b071b3f447c01b7e7b5af133a5af6c3e2d342c00fc6a396c4ed88a59cdd57": [
+      "/dataset_response/required_read/supporting_records/0/record/text_original"
+    ],
+    "V3-L02|c_1a12822b19bc1daf8144866099d6fa3b665514dd69479870e87987ef4b7c212d": [
+      "/dataset_response/required_read/supporting_records/0/record/text_original"
+    ]
+  },
+  "combine": {
+    "V3-D07|tr_7d96624a118ba37e1ec17a7d886fe612582b69cccbf29fe261e13a0e0d2ad64d": [
+      "tr_ac4f3afd92e8ae309f157b9f601c5d3d69adf93094bc9e29e2780c321e91e021"
+    ],
+    "V3-D07|tr_ac4f3afd92e8ae309f157b9f601c5d3d69adf93094bc9e29e2780c321e91e021": [
+      "tr_7d96624a118ba37e1ec17a7d886fe612582b69cccbf29fe261e13a0e0d2ad64d"
+    ]
+  }
+}

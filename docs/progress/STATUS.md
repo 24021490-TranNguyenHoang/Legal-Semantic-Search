@@ -1,3 +1,47 @@
+# Hiện tại — phiên 7 relevance subset v5, 2026-10-31
+
+**AGENT_REVIEW_PROPOSALS_READY / CALIBRATION_PENDING / METRICS_NULL**.
+Snapshot **2025-01-01**. HEAD đầu phiên **4144437306340901c62a27c04850480c5b5bcd17**,
+Git sạch. Giữ nguyên index003/batch002/candidate006/query set; không rebuild/tuning,
+đổi tokenizer/ranking, sửa ứng dụng, stage/commit/push hoặc chuyển bản nhóm.
+
+- Main **staging/subset-v5-relevance-002/**, replay003; companion
+  **subset-v5-relevance-handoff-001/**; checks **subset-v5-relevance-checks-001/**.
+- Đọc/rà **500cặp/50query**, re-read117detail Top10 bằng consumer và inventory
+ 138target/238supporting. Có **495proposed +5pending/null**; nhãn2/1/0/null
+  **38/54/403/5**, gồm8dependency-only trong Top10. Không kế thừa nhãn v1/v3.
+- Chọn **15query trước tìm sâu**, dùng câu gốc Top138: **1.980cặp retrieved**,
+  chỉ **11positive ngoài Top10** được đọc/gán proposal (6query/7record).
+  Tổng118detail dùng trong nhãn; không gọi toàn deep pool đã được chấm.
+- Coverage đề xuất50query: **17đủ nội dung /19partial-conditional /2mơ hồ /
+  3chưa có target phù hợp /9ngoài membership hoặc blocked**, theo inventory đã rà.
+  Không suy scope excluded hoặc toàn raw thiếu từ gap subset.
+- Calibration **10query/22cặp** có nguyên văn/context/dependency/proof,
+  ẩn rank/score/nhãn agent, crosswalk riêng, template reviewer/time/labels trống.
+  Mở calibration.md trước proposal; điền bản sao ngoài seal, không sửa bundle.
+- **35tests đạt/0skip;15negative bị từ chối**, CLI validate đạt; replay payload/
+  nhãn/evidence/calibration/deep ranking giống, chỉ receipt build time khác.
+- **Portability backlog riêng:** index inventory native Path sort khác Windows/
+  POSIX dù cùng file/hash (đã mô phỏng PureWindowsPath/PurePosixPath, chưa Linux).
+  CPython minor/Unicode/pins là ràng buộc khác. Không sửa code/index để bypass.
+  Dataset consumer POSIX sort riêng; Linux full-read là thông tin người dùng
+  cung cấp, chưa có thực nghiệm Linux của agent trong phiên này.
+
+Qrels accepted rỗng, metrics=null, human events0; source/edition/applicability
+pending, scope proposal. Không dùng thống kê nhãn/tests làm xác minh pháp lý hoặc
+kết luận chất lượng retrieval. Raw/dataset/index/evaluation/qrels/ZIP/run cũ giữ
+nguyên; các mục lịch sử dưới đây không được viết lại.
+
+[Báo cáo phiên7](../reviews/Source_Session7_Relevance_Verification.md),
+[hướng dẫn calibration/replay](../handoff/Subset_V5_Relevance_Calibration.md),
+[rubric v1.2](../design/Subset_V5_Relevance_Review_v1.2.md).
+Việc tiếp theo cần nhóm evaluation xem:5null, điều kiện/loại xe, dependency-only,
+phản hồi mẫu thực tế và completeness nhãn; chưa tự accepted hoặc tính metrics.
+
+---
+
+## Lịch sử phiên 6 (giữ nguyên; giới hạn portability được ghi thêm ở phiên7)
+
 # Hiện tại — phiên 6 BM25 subset v5, 2026-10-31
 
 **BM25_BUILT_BATCH_READ_AND_PORTABLE_VERIFIED / EXPERIMENTAL / PENDING_LABELS**.
