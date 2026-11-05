@@ -1,3 +1,39 @@
+# Hiện tại — phiên 8 phản hồi calibration subset v5, 2026-11-04
+
+**USER_REVIEWED_AI_ASSISTED / AWAITING_REVIEWER_METADATA / ACCEPTED_IMPORT_NOT_RUN**.
+Snapshot **2025-01-01**. HEAD đầu phiên **f75ab698aa1dd3e8acb97d946916c55c8dc7e0b8**,
+Git sạch. Phản hồi người dùng xác nhận đã đọc lại, ChatGPT hỗ trợ đề xuất/diễn đạt;
+**không phải chấm độc lập hoặc blind**. Chỉ22cặp, không duyệt500nhãn/coverage50query,
+chất lượng dataset hoặc hiệu lực nguồn. Gói blind/proposal/template cũ bất biến.
+
+- Response mới **staging/subset-v5-calibration-submission-001/**, checks
+  **source-session8-checks-001/**.22ID đủ/không trùng; relevance/reason nguyên văn.
+- Nhãn **2/1/0/null =7/6/7/2**.7nhãn2 có1full/6partial;6nhãn1 có2supporting và
+  4dependency-only. Hai null là quyết định giữpending, không đổi0.
+- **Bất đồng CAL-b69c61257d: proposal2 → response null**; giữ nguyên phản hồi và
+  lịch sử. CAL-a46415f601 vẫnnull.21bộ nhãn/quan hệ/mức đầy đủ giống,1khác;
+  không báo inter-annotator agreement vì AI hỗ trợ.
+- Nội dung/binding/evidence/enum đạt; CLI **exit2 đúng dự kiến**, thiếu chính xác
+  **reviewer_ref, reviewed_at**. Đểnull, không dùng tên Git/Windows/giờ chạy thay.
+  Provenance chỉ ghi agent_recorded_at thực tế; accepted imported0, metrics=null.
+- **46tests pass/0skip,21private mutations bị từ chối**. Existing review validator
+  exit0; filled-copy reader riêng, không nới blank-template validator hash-bound.
+
+Cần người dùng cung cấp tên/mã reviewer và thời điểm rà thực tế kèm múi giờ,
+sau đó tạo snapshot mới và kiểm đường nhập typed labels. Hai null vẫnpending;
+20nhãn số chưa được nhập. Không dùng scorer v1 chunk-only thay table/whole v5.
+Raw/dataset/index/query/evaluation/qrels/ZIP/run cũ giữ nguyên; không tuning,
+rebuild/model/embedding/UI/API hoặc stage/commit/push.
+
+[Báo cáo phiên8](../reviews/Source_Session8_Calibration_Verification.md),
+[contract response](../design/Subset_V5_Calibration_Submission_v1.0.md).
+Lịch sử phía dưới giữ nguyên bytes; CALIBRATION_PENDING trong mục cũ là trạng
+thái tại thời điểm phiên7, không phủ nhận phản hồi mới đã nhận.
+
+---
+
+## Lịch sử phiên 7 (giữ nguyên)
+
 # Hiện tại — phiên 7 relevance subset v5, 2026-10-31
 
 **AGENT_REVIEW_PROPOSALS_READY / CALIBRATION_PENDING / METRICS_NULL**.
