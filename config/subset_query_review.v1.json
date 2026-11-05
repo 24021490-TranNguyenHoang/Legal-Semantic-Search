@@ -1,0 +1,529 @@
+{
+  "policy": "subset-v5-five-query-review.v1",
+  "query_ids": [
+    "dev-night_horn-3",
+    "dev-driving_age-2",
+    "dev-red_light-2",
+    "V3-D05",
+    "V3-D07"
+  ],
+  "binding": {
+    "dataset_version": "vtls-subset-experimental.v5-candidate.1",
+    "dataset_manifest_sha256": "2a33d8fa503b54c574c453c33297c153074b2c3c08cdfb8a08b558d613e2d897",
+    "dataset_content_sha256": "708d3c40fbd6e5a384792b4a717f595aa5edb8023c32fb4efb6ef136a3aa2be4",
+    "consumer_sha256": "c96add34342a48af9db1fc6d72da78d3904a50135d81570d8b80dc9ebb1ecd60",
+    "queries_manifest_sha256": "f8cc9257c410c8eb578d43a0bd1912e3aa5c572829be5e33d7ee0a2045e546f0",
+    "index_version": "vtls-bm25s-subset.v1",
+    "index_content_sha256": "359b93ec8834f6388dc8bd129371ba8a7f8133ff0c9c25ccb56d0913f488d9f8",
+    "index_manifest_sha256": "657ababc157e3e509c874628bd695b20220baeec514d3f201c2d53bcfc7138af",
+    "batch_manifest_sha256": "baa811c55622580eb081b21e2df1868a3dba3d12f6f2a63acd532e6ca6b2fa09"
+  },
+  "inputs": {
+    "index": {
+      "path": "staging/bm25-subset-v5-003/index_manifest.json",
+      "sha256": "657ababc157e3e509c874628bd695b20220baeec514d3f201c2d53bcfc7138af"
+    },
+    "batch": {
+      "path": "staging/bm25-subset-v5-batch-002/manifest.json",
+      "sha256": "baa811c55622580eb081b21e2df1868a3dba3d12f6f2a63acd532e6ca6b2fa09"
+    },
+    "dataset": {
+      "path": "staging/dataset-v5-subset-006/dataset_manifest.json",
+      "sha256": "2a33d8fa503b54c574c453c33297c153074b2c3c08cdfb8a08b558d613e2d897"
+    },
+    "queries": {
+      "path": "staging/composition-queries-001/manifest.json",
+      "sha256": "f8cc9257c410c8eb578d43a0bd1912e3aa5c572829be5e33d7ee0a2045e546f0"
+    },
+    "review": {
+      "path": "staging/subset-v5-relevance-002/manifest.json",
+      "sha256": "25ad1481015179b782a466af9edb689e21d493a935202a57dfdc1bb938e73d2b"
+    },
+    "accepted": {
+      "path": "staging/subset-v5-accepted-labels-002/manifest.json",
+      "sha256": "8a14c067ed5165fb757ad55f7508f27fea8cb3fa8af33b7f861aea291cf9b9a8"
+    }
+  },
+  "max_pairs_per_sheet": 20,
+  "agent_reviewed_at": "2026-11-05T01:35:57.330534Z",
+  "judgments": [
+    {
+      "query_id": "dev-night_horn-3",
+      "record_id": "c_0d3bf4670ba96c89ccf2c97a8264dd1409a136e2f7d2290f62486da9d6bbfbb3",
+      "code": "0",
+      "reason": "Điểm e cùng đoạn dẫn yêu cầu quan sát, giảm tốc độ hoặc dừng tại khu đông người; không quy định dùng còi lúc 23 giờ.",
+      "missing_part": "Không cung cấp căn cứ trả lời câu hỏi này trong target/context/closure đã đọc.",
+      "uncertainty": "Proposal nội dung trong gói experimental; source/edition/applicability vẫn pending. Chưa phải quyết định người dùng hoặc xác minh pháp lý.",
+      "evidence_pointers": [
+        "/dataset_response/record/text_original",
+        "/dataset_response/record/context_text"
+      ]
+    },
+    {
+      "query_id": "dev-night_horn-3",
+      "record_id": "c_1ff2dec1c17ca85bd8f42f077b918553448c0f4cbe41d35e73d58c8182042f4c",
+      "code": "0",
+      "reason": "Điểm h xử lý tránh xe, đèn chiếu xa và nhường đường đối với mô tô/xe gắn máy; khác hành vi còi và khác đối tượng ô tô.",
+      "missing_part": "Không cung cấp căn cứ trả lời câu hỏi này trong target/context/closure đã đọc.",
+      "uncertainty": "Proposal nội dung trong gói experimental; source/edition/applicability vẫn pending. Chưa phải quyết định người dùng hoặc xác minh pháp lý.",
+      "evidence_pointers": [
+        "/dataset_response/record/text_original",
+        "/dataset_response/record/context_text"
+      ]
+    },
+    {
+      "query_id": "dev-night_horn-3",
+      "record_id": "c_24def7c44a8779c22d56de6b763880addc81bee7d6be4d19d6b9ea586f62d07e",
+      "code": "0",
+      "reason": "Đây là trường hợp phải tắt đèn chiếu xa, bật đèn chiếu gần trong khu đông dân cư có chiếu sáng; không phải quy định sử dụng còi.",
+      "missing_part": "Không cung cấp căn cứ trả lời câu hỏi này trong target/context/closure đã đọc.",
+      "uncertainty": "Proposal nội dung trong gói experimental; source/edition/applicability vẫn pending. Chưa phải quyết định người dùng hoặc xác minh pháp lý.",
+      "evidence_pointers": [
+        "/dataset_response/record/text_original",
+        "/dataset_response/record/context_text"
+      ]
+    },
+    {
+      "query_id": "dev-night_horn-3",
+      "record_id": "tr_090bd1839f3130d3e8d67a5956fa3bf91e3f658f53ee632a62138f9cdf6dfa8f",
+      "code": "0",
+      "reason": "Hàng 70/60 km/h áp dụng tốc độ ngoài khu đông dân cư cho nhóm buýt/đầu kéo/mô tô/xe chuyên dùng; header, cells và Điều 7–8 không trả lời việc bấm còi ban đêm.",
+      "missing_part": "Không cung cấp căn cứ trả lời câu hỏi này trong target/context/closure đã đọc.",
+      "uncertainty": "Proposal nội dung trong gói experimental; source/edition/applicability vẫn pending. Chưa phải quyết định người dùng hoặc xác minh pháp lý.",
+      "evidence_pointers": [
+        "/dataset_response/record/source_original",
+        "/dataset_response/record/derived_text"
+      ]
+    },
+    {
+      "query_id": "dev-night_horn-3",
+      "record_id": "tr_19906379710bf99bdcdbbccecfe41baea5354436a130b8e811920c3d82e34c12",
+      "code": "0",
+      "reason": "Hàng 90/80 km/h là giới hạn tốc độ ngoài khu đông dân cư của nhóm ô tô đến 28 chỗ/tải không quá 3,5 tấn; không nêu hành vi sử dụng còi.",
+      "missing_part": "Không cung cấp căn cứ trả lời câu hỏi này trong target/context/closure đã đọc.",
+      "uncertainty": "Proposal nội dung trong gói experimental; source/edition/applicability vẫn pending. Chưa phải quyết định người dùng hoặc xác minh pháp lý.",
+      "evidence_pointers": [
+        "/dataset_response/record/source_original",
+        "/dataset_response/record/derived_text"
+      ]
+    },
+    {
+      "query_id": "dev-night_horn-3",
+      "record_id": "tr_268d7ec2a87e5f4f716c80b84a79e3e2a9600de6b8d4d437fbc1577b0a0808ec",
+      "code": "0",
+      "reason": "Hàng 60/50 km/h dành cho nhóm kéo xe, trộn vữa/bê tông và xi téc ngoài khu đông dân cư; không có căn cứ dùng còi lúc 23 giờ.",
+      "missing_part": "Không cung cấp căn cứ trả lời câu hỏi này trong target/context/closure đã đọc.",
+      "uncertainty": "Proposal nội dung trong gói experimental; source/edition/applicability vẫn pending. Chưa phải quyết định người dùng hoặc xác minh pháp lý.",
+      "evidence_pointers": [
+        "/dataset_response/record/source_original",
+        "/dataset_response/record/derived_text"
+      ]
+    },
+    {
+      "query_id": "dev-night_horn-3",
+      "record_id": "tr_df936e34fbd59d10813357ce52c96e8299d2480b78e0934c1b519bf7b910424b",
+      "code": "0",
+      "reason": "Hàng 80/70 km/h quy định tốc độ nhóm ô tô trên 28 chỗ/tải trên 3,5 tấn ngoài khu đông dân cư; không điều chỉnh việc bấm còi ban đêm.",
+      "missing_part": "Không cung cấp căn cứ trả lời câu hỏi này trong target/context/closure đã đọc.",
+      "uncertainty": "Proposal nội dung trong gói experimental; source/edition/applicability vẫn pending. Chưa phải quyết định người dùng hoặc xác minh pháp lý.",
+      "evidence_pointers": [
+        "/dataset_response/record/source_original",
+        "/dataset_response/record/derived_text"
+      ]
+    },
+    {
+      "query_id": "dev-driving_age-2",
+      "record_id": "c_10e4a26a4c3badbc421bfcce203b4e6a7816a533bd11c8f134ea04ac83a65c98",
+      "code": "0",
+      "reason": "Khoản 2 Điều 13 quy định giữ làn/chuyển làn và tín hiệu; không xác định độ tuổi lái mô tô.",
+      "missing_part": "Không cung cấp căn cứ trả lời câu hỏi này trong target/context/closure đã đọc.",
+      "uncertainty": "Proposal nội dung trong gói experimental; source/edition/applicability vẫn pending. Chưa phải quyết định người dùng hoặc xác minh pháp lý.",
+      "evidence_pointers": [
+        "/dataset_response/record/text_original",
+        "/dataset_response/record/context_text"
+      ]
+    },
+    {
+      "query_id": "dev-driving_age-2",
+      "record_id": "c_50c22c82f7066f19a6cdb234cc021e0d7550a177956340a022471a583351e43d",
+      "code": "0",
+      "reason": "Khoản 3 Điều 15 quy định hồ sơ/giấy khám sức khỏe cho người dân tộc thiểu số học A1; required-read chỉ là tiêu đề Điều, không cung cấp mốc tuổi.",
+      "missing_part": "Không cung cấp căn cứ trả lời câu hỏi này trong target/context/closure đã đọc.",
+      "uncertainty": "Proposal nội dung trong gói experimental; source/edition/applicability vẫn pending. Chưa phải quyết định người dùng hoặc xác minh pháp lý.",
+      "evidence_pointers": [
+        "/dataset_response/record/text_original",
+        "/dataset_response/record/context_text"
+      ]
+    },
+    {
+      "query_id": "dev-driving_age-2",
+      "record_id": "c_63df8007bfa884f48c1b2ed26d4fab6f58daba1c73d6e1a71d2590aa4fd20468",
+      "code": "Y",
+      "reason": "Target chỉ yêu cầu đủ tuổi và sức khỏe để dự sát hạch, dẫn Điều 59 Luật 36. Mốc đủ 18 tuổi cho A1/A nằm trong required-read Điều 59 khoản 1 điểm b; đáp án qua dependency, cần phân biệt tuổi dự thi với loại xe/hạng GPLX.",
+      "missing_part": "Cần căn cứ trực tiếp/điều kiện bổ sung đã nêu trong reason; không coi record này đủ trả lời toàn câu.",
+      "uncertainty": "Proposal nội dung trong gói experimental; source/edition/applicability vẫn pending. Chưa phải quyết định người dùng hoặc xác minh pháp lý.",
+      "evidence_pointers": [
+        "/dataset_response/required_read/unit_reads/0/unit/text_original",
+        "/dataset_response/record/context_text"
+      ]
+    },
+    {
+      "query_id": "dev-driving_age-2",
+      "record_id": "c_6e528e8e23ce2f5cc4bae2425091aca0d5f0082073d9f6cec57c6139b81ea4d6",
+      "code": "0",
+      "reason": "Điểm k Điều 7 khoản 1 xử lý chạy dưới tốc độ tối thiểu; lead/biện pháp kèm theo không xác định tuổi tối thiểu lái mô tô.",
+      "missing_part": "Không cung cấp căn cứ trả lời câu hỏi này trong target/context/closure đã đọc.",
+      "uncertainty": "Proposal nội dung trong gói experimental; source/edition/applicability vẫn pending. Chưa phải quyết định người dùng hoặc xác minh pháp lý.",
+      "evidence_pointers": [
+        "/dataset_response/record/text_original",
+        "/dataset_response/record/context_text"
+      ]
+    },
+    {
+      "query_id": "dev-driving_age-2",
+      "record_id": "c_97a531c42490905f84320904a6e89837c25db670f8a9ca58d25c5cf51909568f",
+      "code": "0",
+      "reason": "Điểm d Điều 7 khoản 1 xử lý chở người dùng ô; không nêu điều kiện độ tuổi người lái mô tô.",
+      "missing_part": "Không cung cấp căn cứ trả lời câu hỏi này trong target/context/closure đã đọc.",
+      "uncertainty": "Proposal nội dung trong gói experimental; source/edition/applicability vẫn pending. Chưa phải quyết định người dùng hoặc xác minh pháp lý.",
+      "evidence_pointers": [
+        "/dataset_response/record/text_original",
+        "/dataset_response/record/context_text"
+      ]
+    },
+    {
+      "query_id": "dev-driving_age-2",
+      "record_id": "c_9a0a220f85e304fe8b0d7e49df8dd4bf83eed6f106c9af051f9a55fc9f4f8258",
+      "code": "0",
+      "reason": "Khoản 2 Điều 19 là yêu cầu quan sát, mở cửa xe an toàn; không có quy tắc độ tuổi lái mô tô.",
+      "missing_part": "Không cung cấp căn cứ trả lời câu hỏi này trong target/context/closure đã đọc.",
+      "uncertainty": "Proposal nội dung trong gói experimental; source/edition/applicability vẫn pending. Chưa phải quyết định người dùng hoặc xác minh pháp lý.",
+      "evidence_pointers": [
+        "/dataset_response/record/text_original",
+        "/dataset_response/record/context_text"
+      ]
+    },
+    {
+      "query_id": "dev-driving_age-2",
+      "record_id": "c_af9284ce6da72a38ba97bb9288233c86b29d4b37d4a62c54d9db6d2fd740c310",
+      "code": "0",
+      "reason": "Điểm e Điều 59 khoản 1 đặt tuổi tối đa cho ô tô chở trên 29 chỗ/giường nằm, khác tuổi tối thiểu điều khiển mô tô; cha chỉ là đoạn dẫn, không chứa đáp án A1/A.",
+      "missing_part": "Không cung cấp căn cứ trả lời câu hỏi này trong target/context/closure đã đọc.",
+      "uncertainty": "Proposal nội dung trong gói experimental; source/edition/applicability vẫn pending. Chưa phải quyết định người dùng hoặc xác minh pháp lý.",
+      "evidence_pointers": [
+        "/dataset_response/record/text_original",
+        "/dataset_response/record/context_text"
+      ]
+    },
+    {
+      "query_id": "dev-driving_age-2",
+      "record_id": "c_bfe6057f8fe2fc697e076a33ea326803ed06fe7922437948f0fd4e605ddcbac0",
+      "code": "0",
+      "reason": "Điểm e Điều 7 khoản 1 quy định vi phạm chuyển làn mô tô/xe gắn máy; lead và modifiers không trả lời tuổi được điều khiển.",
+      "missing_part": "Không cung cấp căn cứ trả lời câu hỏi này trong target/context/closure đã đọc.",
+      "uncertainty": "Proposal nội dung trong gói experimental; source/edition/applicability vẫn pending. Chưa phải quyết định người dùng hoặc xác minh pháp lý.",
+      "evidence_pointers": [
+        "/dataset_response/record/text_original",
+        "/dataset_response/record/context_text"
+      ]
+    },
+    {
+      "query_id": "dev-driving_age-2",
+      "record_id": "c_ed53e3781e51ce7bc834693e514d98c63eddcdfccaa52b8a504fcc9dbe0944a1",
+      "code": "0",
+      "reason": "Điểm c Điều 7 khoản 1 quy định quan sát/tín hiệu khi lùi mô tô ba bánh; không phải quy định tuổi người lái.",
+      "missing_part": "Không cung cấp căn cứ trả lời câu hỏi này trong target/context/closure đã đọc.",
+      "uncertainty": "Proposal nội dung trong gói experimental; source/edition/applicability vẫn pending. Chưa phải quyết định người dùng hoặc xác minh pháp lý.",
+      "evidence_pointers": [
+        "/dataset_response/record/text_original",
+        "/dataset_response/record/context_text"
+      ]
+    },
+    {
+      "query_id": "dev-red_light-2",
+      "record_id": "c_1a12822b19bc1daf8144866099d6fa3b665514dd69479870e87987ef4b7c212d",
+      "code": "0",
+      "reason": "Target và closure nói GPLX mất/quá hạn, thi lại, hồ sơ/mẫu XXVI và chuyển tiếp; không nêu chế tài ô tô vượt đèn đỏ. Không lấy điều kiện bị thu giữ GPLX làm mức phạt đèn đỏ.",
+      "missing_part": "Không cung cấp căn cứ trả lời câu hỏi này trong target/context/closure đã đọc.",
+      "uncertainty": "Proposal nội dung trong gói experimental; source/edition/applicability vẫn pending. Chưa phải quyết định người dùng hoặc xác minh pháp lý.",
+      "evidence_pointers": [
+        "/dataset_response/record/text_original",
+        "/dataset_response/record/context_text"
+      ]
+    },
+    {
+      "query_id": "dev-red_light-2",
+      "record_id": "c_2e8266e59b29bc4915eeff115d35f5f549838d14948e6112ffa4603d723691d9",
+      "code": "0",
+      "reason": "Khoản 2 Điều 10 yêu cầu thắt dây đai an toàn trên ô tô; không quy định hành vi hay chế tài vượt đèn đỏ.",
+      "missing_part": "Không cung cấp căn cứ trả lời câu hỏi này trong target/context/closure đã đọc.",
+      "uncertainty": "Proposal nội dung trong gói experimental; source/edition/applicability vẫn pending. Chưa phải quyết định người dùng hoặc xác minh pháp lý.",
+      "evidence_pointers": [
+        "/dataset_response/record/text_original",
+        "/dataset_response/record/context_text"
+      ]
+    },
+    {
+      "query_id": "dev-red_light-2",
+      "record_id": "c_5e638f3fa56c0b786e729a38870966a56c064a63c651f877532d4af1c6226515",
+      "code": "0",
+      "reason": "Điểm c Điều 62 khoản 5 quy định thu hồi GPLX khi hết hạn tạm giữ/thời hiệu mà không đến nhận; không phải chế tài áp dụng ngay cho vượt đèn đỏ.",
+      "missing_part": "Không cung cấp căn cứ trả lời câu hỏi này trong target/context/closure đã đọc.",
+      "uncertainty": "Proposal nội dung trong gói experimental; source/edition/applicability vẫn pending. Chưa phải quyết định người dùng hoặc xác minh pháp lý.",
+      "evidence_pointers": [
+        "/dataset_response/record/text_original",
+        "/dataset_response/record/context_text"
+      ]
+    },
+    {
+      "query_id": "dev-red_light-2",
+      "record_id": "c_9e3fac961667f30d6e3fd30a3c98b5ad40646cced4bb87814a8971e55f44629b",
+      "code": "0",
+      "reason": "Khoản 5 Điều 32 giới hạn GPLX B số tự động không lái xe số sàn; không cung cấp chế tài vượt đèn đỏ.",
+      "missing_part": "Không cung cấp căn cứ trả lời câu hỏi này trong target/context/closure đã đọc.",
+      "uncertainty": "Proposal nội dung trong gói experimental; source/edition/applicability vẫn pending. Chưa phải quyết định người dùng hoặc xác minh pháp lý.",
+      "evidence_pointers": [
+        "/dataset_response/record/text_original",
+        "/dataset_response/record/context_text"
+      ]
+    },
+    {
+      "query_id": "dev-red_light-2",
+      "record_id": "c_b0d8794e639a6d7d4ced2e6d1fbd874664172f4d2d3a5d34fbfbf3a6d1e746ab",
+      "code": "0",
+      "reason": "Điểm b Điều 7 khoản 1 xử lý tín hiệu trước/trong khi vượt xe của mô tô/xe gắn máy; khác đèn tín hiệu giao thông và khác nhóm ô tô.",
+      "missing_part": "Không cung cấp căn cứ trả lời câu hỏi này trong target/context/closure đã đọc.",
+      "uncertainty": "Proposal nội dung trong gói experimental; source/edition/applicability vẫn pending. Chưa phải quyết định người dùng hoặc xác minh pháp lý.",
+      "evidence_pointers": [
+        "/dataset_response/record/text_original",
+        "/dataset_response/record/context_text"
+      ]
+    },
+    {
+      "query_id": "dev-red_light-2",
+      "record_id": "c_b2dc0676755880863fdf5ff1bd359dfea6e52264c59b09e8a62f321199a89952",
+      "code": "0",
+      "reason": "Điểm c Điều 6 khoản 1 và ngoại lệ khoản 7 điểm c liên quan cảnh báo khi xe sự cố/đỗ; không chứa hành vi vượt đèn đỏ hay khung phạt tương ứng trong closure này.",
+      "missing_part": "Không cung cấp căn cứ trả lời câu hỏi này trong target/context/closure đã đọc.",
+      "uncertainty": "Proposal nội dung trong gói experimental; source/edition/applicability vẫn pending. Chưa phải quyết định người dùng hoặc xác minh pháp lý.",
+      "evidence_pointers": [
+        "/dataset_response/record/text_original",
+        "/dataset_response/record/context_text"
+      ]
+    },
+    {
+      "query_id": "dev-red_light-2",
+      "record_id": "c_d769841628fd619c0afeb56b2f0bf1bc1ce5c534a4890f7692f8626308c8d660",
+      "code": "0",
+      "reason": "Khoản 1 Điều 18 là cảnh cáo người từ 14 đến dưới 16 tuổi điều khiển xe; không nêu chế tài riêng cho hành vi ô tô vượt đèn đỏ.",
+      "missing_part": "Không cung cấp căn cứ trả lời câu hỏi này trong target/context/closure đã đọc.",
+      "uncertainty": "Proposal nội dung trong gói experimental; source/edition/applicability vẫn pending. Chưa phải quyết định người dùng hoặc xác minh pháp lý.",
+      "evidence_pointers": [
+        "/dataset_response/record/text_original",
+        "/dataset_response/record/context_text"
+      ]
+    },
+    {
+      "query_id": "dev-red_light-2",
+      "record_id": "c_e3a8378dba6ee24993fd9644e90c241460eef4030df6c12189202b60f4e26b5e",
+      "code": "0",
+      "reason": "Điểm b Điều 21 khoản 1 cho phép dùng còi báo hiệu chuẩn bị vượt xe; không phải vượt đèn đỏ hoặc chế tài hành vi này.",
+      "missing_part": "Không cung cấp căn cứ trả lời câu hỏi này trong target/context/closure đã đọc.",
+      "uncertainty": "Proposal nội dung trong gói experimental; source/edition/applicability vẫn pending. Chưa phải quyết định người dùng hoặc xác minh pháp lý.",
+      "evidence_pointers": [
+        "/dataset_response/record/text_original",
+        "/dataset_response/record/context_text"
+      ]
+    },
+    {
+      "query_id": "V3-D05",
+      "record_id": "c_94e9af6a8818fd0df403046d9a7468fc2d785608e9711e4e7192f5b43f4e4c32",
+      "code": "0",
+      "reason": "Khoản 3 Điều 9 và biển báo cao tốc quy định tốc độ khai thác tối thiểu 60 km/h cùng ngoại lệ phương án tổ chức; không nêu khoảng cách xe tại V=60.",
+      "missing_part": "Không cung cấp căn cứ trả lời câu hỏi này trong target/context/closure đã đọc.",
+      "uncertainty": "Proposal nội dung trong gói experimental; source/edition/applicability vẫn pending. Chưa phải quyết định người dùng hoặc xác minh pháp lý.",
+      "evidence_pointers": [
+        "/dataset_response/record/text_original",
+        "/dataset_response/record/context_text"
+      ]
+    },
+    {
+      "query_id": "V3-D05",
+      "record_id": "c_ab92855d2e304336e166c7cb67d4fb72e57c0a8b9c9d2a01d4d283df02133364",
+      "code": "S",
+      "reason": "Khoản 1 Điều 11 yêu cầu giữ khoảng cách an toàn và không nhỏ hơn trị số biển Cự ly tối thiểu giữa hai xe. Đây là điều kiện hỗ trợ, không trực tiếp cho con số mét tại đúng 60 km/h.",
+      "missing_part": "Cần căn cứ trực tiếp/điều kiện bổ sung đã nêu trong reason; không coi record này đủ trả lời toàn câu.",
+      "uncertainty": "Proposal nội dung trong gói experimental; source/edition/applicability vẫn pending. Chưa phải quyết định người dùng hoặc xác minh pháp lý.",
+      "evidence_pointers": [
+        "/dataset_response/record/text_original",
+        "/dataset_response/record/context_text"
+      ]
+    },
+    {
+      "query_id": "V3-D05",
+      "record_id": "tr_03f3ae425e4a1930d6081703c72e22aba780a4cdfd1402625e9ce8081e6308e6",
+      "code": "0",
+      "reason": "Bảng 60/50 km/h là tốc độ tối đa trong khu đông dân cư, không phải khoảng cách mét giữa hai xe; Điều 7–8 đi kèm cũng chỉ quy định tốc độ.",
+      "missing_part": "Không cung cấp căn cứ trả lời câu hỏi này trong target/context/closure đã đọc.",
+      "uncertainty": "Proposal nội dung trong gói experimental; source/edition/applicability vẫn pending. Chưa phải quyết định người dùng hoặc xác minh pháp lý.",
+      "evidence_pointers": [
+        "/dataset_response/record/source_original",
+        "/dataset_response/record/derived_text"
+      ]
+    },
+    {
+      "query_id": "V3-D05",
+      "record_id": "tr_090bd1839f3130d3e8d67a5956fa3bf91e3f658f53ee632a62138f9cdf6dfa8f",
+      "code": "0",
+      "reason": "Hàng tốc độ tối đa 70/60 km/h ngoài khu đông dân cư không cung cấp khoảng cách mét tại V=60; không nhầm ô tốc độ với ô khoảng cách.",
+      "missing_part": "Không cung cấp căn cứ trả lời câu hỏi này trong target/context/closure đã đọc.",
+      "uncertainty": "Proposal nội dung trong gói experimental; source/edition/applicability vẫn pending. Chưa phải quyết định người dùng hoặc xác minh pháp lý.",
+      "evidence_pointers": [
+        "/dataset_response/record/source_original",
+        "/dataset_response/record/derived_text"
+      ]
+    },
+    {
+      "query_id": "V3-D05",
+      "record_id": "tr_268d7ec2a87e5f4f716c80b84a79e3e2a9600de6b8d4d437fbc1577b0a0808ec",
+      "code": "0",
+      "reason": "Hàng tốc độ tối đa 60/50 km/h cho nhóm kéo/xi téc ngoài khu đông dân cư không phải hàng khoảng cách an toàn.",
+      "missing_part": "Không cung cấp căn cứ trả lời câu hỏi này trong target/context/closure đã đọc.",
+      "uncertainty": "Proposal nội dung trong gói experimental; source/edition/applicability vẫn pending. Chưa phải quyết định người dùng hoặc xác minh pháp lý.",
+      "evidence_pointers": [
+        "/dataset_response/record/source_original",
+        "/dataset_response/record/derived_text"
+      ]
+    },
+    {
+      "query_id": "V3-D05",
+      "record_id": "tr_48dd2c5f29cc0f090f1f8a3a0ed9d37e3a56b637804beb2331d0355d6fad40be",
+      "code": "0",
+      "reason": "Hàng 100 m chỉ áp dụng 100 < V ≤ 120; không bao gồm đúng 60 km/h, dù phần dẫn cùng nêu điều kiện đường khô ráo.",
+      "missing_part": "Không cung cấp căn cứ trả lời câu hỏi này trong target/context/closure đã đọc.",
+      "uncertainty": "Proposal nội dung trong gói experimental; source/edition/applicability vẫn pending. Chưa phải quyết định người dùng hoặc xác minh pháp lý.",
+      "evidence_pointers": [
+        "/dataset_response/record/source_original",
+        "/dataset_response/record/derived_text"
+      ]
+    },
+    {
+      "query_id": "V3-D05",
+      "record_id": "tr_ac4f3afd92e8ae309f157b9f601c5d3d69adf93094bc9e29e2780c321e91e021",
+      "code": "0",
+      "reason": "Hàng 70 m chỉ áp dụng 80 < V ≤ 100; không bao gồm đúng 60 km/h, không dùng thay hàng V=60.",
+      "missing_part": "Không cung cấp căn cứ trả lời câu hỏi này trong target/context/closure đã đọc.",
+      "uncertainty": "Proposal nội dung trong gói experimental; source/edition/applicability vẫn pending. Chưa phải quyết định người dùng hoặc xác minh pháp lý.",
+      "evidence_pointers": [
+        "/dataset_response/record/source_original",
+        "/dataset_response/record/derived_text"
+      ]
+    },
+    {
+      "query_id": "V3-D07",
+      "record_id": "c_106d4f03daf7303e0d866aa313d7714d5ae03b21b364a38057ba181f0a43c8cc",
+      "code": "0",
+      "reason": "Điểm c Điều 12 khoản 3 yêu cầu quan sát, giảm tốc độ hoặc dừng khi chuyển hướng/tầm nhìn hạn chế; không cung cấp hai khoảng cách ở 80 và 81 km/h.",
+      "missing_part": "Không cung cấp căn cứ trả lời câu hỏi này trong target/context/closure đã đọc.",
+      "uncertainty": "Proposal nội dung trong gói experimental; source/edition/applicability vẫn pending. Chưa phải quyết định người dùng hoặc xác minh pháp lý.",
+      "evidence_pointers": [
+        "/dataset_response/record/text_original",
+        "/dataset_response/record/context_text"
+      ]
+    },
+    {
+      "query_id": "V3-D07",
+      "record_id": "c_94e9af6a8818fd0df403046d9a7468fc2d785608e9711e4e7192f5b43f4e4c32",
+      "code": "0",
+      "reason": "Khoản 3 Điều 9 quy định tốc độ tối thiểu cao tốc/ngoại lệ thiết kế 60; không so sánh khoảng cách an toàn ở 80 và 81.",
+      "missing_part": "Không cung cấp căn cứ trả lời câu hỏi này trong target/context/closure đã đọc.",
+      "uncertainty": "Proposal nội dung trong gói experimental; source/edition/applicability vẫn pending. Chưa phải quyết định người dùng hoặc xác minh pháp lý.",
+      "evidence_pointers": [
+        "/dataset_response/record/text_original",
+        "/dataset_response/record/context_text"
+      ]
+    },
+    {
+      "query_id": "V3-D07",
+      "record_id": "c_ab92855d2e304336e166c7cb67d4fb72e57c0a8b9c9d2a01d4d283df02133364",
+      "code": "S",
+      "reason": "Khoản 1 Điều 11 bổ sung điều kiện giữ khoảng cách và trị số biển báo; hỗ trợ diễn giải nhưng không đưa các mức 55 m và 70 m để so 80/81.",
+      "missing_part": "Cần căn cứ trực tiếp/điều kiện bổ sung đã nêu trong reason; không coi record này đủ trả lời toàn câu.",
+      "uncertainty": "Proposal nội dung trong gói experimental; source/edition/applicability vẫn pending. Chưa phải quyết định người dùng hoặc xác minh pháp lý.",
+      "evidence_pointers": [
+        "/dataset_response/record/text_original",
+        "/dataset_response/record/context_text"
+      ]
+    },
+    {
+      "query_id": "V3-D07",
+      "record_id": "rv_073f041e0382ecd951764ed2e4de64e9d301875f78fddaf33d28d8e57d8da2f1",
+      "code": "0",
+      "reason": "Whole-source 6.4 nói ý nghĩa đèn mũi tên, giữ đầy đủ các tiểu mục nhưng không có quy định khoảng cách theo tốc độ 80/81.",
+      "missing_part": "Không cung cấp căn cứ trả lời câu hỏi này trong target/context/closure đã đọc.",
+      "uncertainty": "Proposal nội dung trong gói experimental; source/edition/applicability vẫn pending. Chưa phải quyết định người dùng hoặc xác minh pháp lý.",
+      "evidence_pointers": [
+        "/dataset_response/record/text_original"
+      ]
+    },
+    {
+      "query_id": "V3-D07",
+      "record_id": "rv_0916941b9b7db992fc538429b284e82378867ea9f955c146dfd3cad46fedb6f9",
+      "code": "Y",
+      "reason": "Own text điểm b yêu cầu tăng khoảng cách khi điều kiện bất lợi. Hai hàng 60 < V ≤ 80 =55 m và 80 < V ≤ 100 =70 m nằm trong bảng của điểm a được nhúng/required-read; hỗ trợ so sánh qua dependency, không dùng bảng khô ráo làm trị số cố định khi mưa.",
+      "missing_part": "Cần căn cứ trực tiếp/điều kiện bổ sung đã nêu trong reason; không coi record này đủ trả lời toàn câu.",
+      "uncertainty": "Proposal nội dung trong gói experimental; source/edition/applicability vẫn pending. Chưa phải quyết định người dùng hoặc xác minh pháp lý.",
+      "evidence_pointers": [
+        "/dataset_response/record/source_record/text_derived",
+        "/dataset_response/required_read/unit_reads/0/unit/text_original"
+      ]
+    },
+    {
+      "query_id": "V3-D07",
+      "record_id": "tr_19906379710bf99bdcdbbccecfe41baea5354436a130b8e811920c3d82e34c12",
+      "code": "0",
+      "reason": "Hàng 90/80 km/h giới hạn tốc độ tối đa ngoài khu đông dân cư cho nhóm xe; không phải trị số khoảng cách khi xe chạy 80 hoặc 81.",
+      "missing_part": "Không cung cấp căn cứ trả lời câu hỏi này trong target/context/closure đã đọc.",
+      "uncertainty": "Proposal nội dung trong gói experimental; source/edition/applicability vẫn pending. Chưa phải quyết định người dùng hoặc xác minh pháp lý.",
+      "evidence_pointers": [
+        "/dataset_response/record/source_original",
+        "/dataset_response/record/derived_text"
+      ]
+    },
+    {
+      "query_id": "V3-D07",
+      "record_id": "tr_48dd2c5f29cc0f090f1f8a3a0ed9d37e3a56b637804beb2331d0355d6fad40be",
+      "code": "0",
+      "reason": "Hàng 100 < V ≤ 120 →100 m không chứa cả 80 lẫn 81 km/h; điều kiện/header chung không biến nó thành đáp án so sánh.",
+      "missing_part": "Không cung cấp căn cứ trả lời câu hỏi này trong target/context/closure đã đọc.",
+      "uncertainty": "Proposal nội dung trong gói experimental; source/edition/applicability vẫn pending. Chưa phải quyết định người dùng hoặc xác minh pháp lý.",
+      "evidence_pointers": [
+        "/dataset_response/record/source_original",
+        "/dataset_response/record/derived_text"
+      ]
+    },
+    {
+      "query_id": "V3-D07",
+      "record_id": "tr_824017275f85f56315730a69283f12135b509778b1c64c9655d38392ecc83beb",
+      "code": "0",
+      "reason": "Hàng V=60 →35 m không áp dụng 80/81; cần hai hàng khác. Không chuyển hàng này thành positive chỉ vì cùng bảng khoảng cách.",
+      "missing_part": "Không cung cấp căn cứ trả lời câu hỏi này trong target/context/closure đã đọc.",
+      "uncertainty": "Proposal nội dung trong gói experimental; source/edition/applicability vẫn pending. Chưa phải quyết định người dùng hoặc xác minh pháp lý.",
+      "evidence_pointers": [
+        "/dataset_response/record/source_original",
+        "/dataset_response/record/derived_text"
+      ]
+    }
+  ],
+  "query_limits": {
+    "dev-night_horn-3": "Pool hữu hạn về còi ô tô ban đêm; không coi đã tìm đủ mọi căn cứ hoặc rà hiệu lực toàn nguồn.",
+    "dev-driving_age-2": "Có mốc tuổi A1/A trong target/closure nhưng chưa có đầy đủ unit phân loại xe/hạng GPLX cho mọi loại mô tô; không tự bổ sung dung tích xe vào query.",
+    "dev-red_light-2": "Phải đọc đúng Điều 6 khoản 9 điểm b, đoạn dẫn khoản 9 và modifier khoản 16 điểm b trong closure của record đã accepted; không lấy khung phạt khoản 1.",
+    "V3-D05": "Trị số V=60 có điều kiện mặt đường/tầm nhìn; biển báo và điều kiện bất lợi cần giữ riêng. Không khẳng định35m vô điều kiện.",
+    "V3-D07": "Cần kết hợp hai hàng55m/70m để so80/81, giữ điều kiện đường khô ráo/biển báo; whole record cung cấp bảng qua dependency. Pool chưa chứng minh đủ mọi positive."
+  },
+  "inspection_packet": {
+    "path": "staging/source-session9-checks-001/inspection.full.txt",
+    "sha256": "c37d49d2b801061224e57ecf190b9be0aaef3329d586edb9f672da4f6c4dfadb"
+  }
+}

@@ -1,3 +1,81 @@
+# Hiện tại — phiên 9: pool review năm query subset v5, 2026-11-05
+
+**REVIEW_POOL_READY / 14 ACCEPTED INHERITED / 39 AWAITING USER REVIEW**.
+Snapshot pháp luật **2025-01-01**. HEAD đầu phiên **c77447bc1ae8b2d5a3369d37d1bf06ed504379c4**;
+Git có STATUS modified và5file untracked từ phiên8, được giữ nguyên. Không nhận
+các thay đổi có trước là implementation mới; lịch sử STATUS giữ nguyên bytes.
+
+- Run giao **staging/subset-v5-query-review-002/**; checks/replay
+  **staging/source-session9-checks-001/artifacts-001/**. Run001 là prototype trước
+  khi sửa bảng progress Markdown, giữ source/payload lịch sử; không dùng làm bản giao.
+- Đúng5query đã ghim: dev-night_horn-3, dev-driving_age-2, dev-red_light-2,
+  V3-D05, V3-D07. Câu chữ/query object/hash nguyên trạng, không chạy retrieval lại.
+- Pool **53cặp/41record**: đủ50Top10,14accepted memberships và3outside-positive
+  phiên7 của đúng query, khử trùng theo cặp. Không lấy toàn deep_run hoặc suy đủ
+  mọi positive. **14accepted kế thừa nguyên quyết định/provenance,0nhãn mới**.
+- Từng query pool/accepted/chưa rà: **10/3/7;12/3/9;11/3/8;10/3/7;10/2/8**.
+  Có5phiếu A và5template trống, **7/9/8/7/8cặp**, tối đa20/phiếu; đủ toàn pool.
+- **39proposal mới**:35nhãn0,4nhãn1 (2supporting_target/2dependency_only).
+  Đây là phán đoán agent, không accepted. Agent null0 nhưng **39cặp vẫn chờ
+  quyết định người dùng**. Hai pending V3-D02/CAL-a46415f601/CAL-b69c61257d giữ
+  nguyên ngoài lô, không có template hoặc nhãn mới cho chúng.
+- A có nguyên văn/context/cells/required-read/proof, không rank/score/nhãn đề xuất.
+  B riêng để đối chiếu sau. Nếu dùng B/AI khi quyết định, ghi AI-assisted,
+  independent=false/blind=false; template không tự tạo reviewer hoặc phương pháp rà.
+- **68tests pass/0skip,14resealed mutations bị từ chối**; CLI validate đạt;
+  replay giữ toàn payload/manifest giống byte. Dataset consumer đọc đúng nguồn,
+  không load model/engine, không build hoặc đổi ranking/index/query.
+
+[Bắt đầu phiếu đầu tiên và CLI](../handoff/Subset_V5_Five_Query_Review.md),
+[báo cáo/binding/giới hạn](../reviews/Source_Session9_Query_Review_Verification.md),
+[contract pool](../design/Subset_V5_Five_Query_Review_v1.0.md).
+Metrics50query=null, coverage chưa approved; source/edition/applicability pending,
+scope proposal. Không nhập accepted/qrels mới, sửa old bundles/raw/ZIP, model/
+embedding/UI/API hoặc stage/commit/push. Bước sau: người dùng rà các phiếu và
+cung cấp response thật ngoài seal; chưa tự coi kết quả chuẩn bị là đã review xong.
+
+---
+
+## Lịch sử tiếp tục phiên 8 — accepted calibration (giữ nguyên)
+
+# Hiện tại — tiếp tục phiên 8: accepted calibration subset v5, 2026-11-05
+
+**SCOPED_LABELS_ACCEPTED / 20 ACCEPTED + 2 PENDING / METRICS_NULL**.
+Snapshot pháp luật **2025-01-01**. HEAD đầu phiên **c77447bc1ae8b2d5a3369d37d1bf06ed504379c4**,
+Git sạch. Người dùng đã cung cấp metadata và xác nhận22phản hồi có ChatGPT hỗ trợ;
+không phải chấm độc lập/blind, không duyệt500cặp/coverage50query hoặc nguồn pháp lý.
+
+- Snapshot mới **staging/subset-v5-calibration-submission-002/** từ001, giữ22items
+  nguyên vẹn; chỉ reviewer_ref/reviewed_at của submission đổi. Lineage/hash có đủ.
+- Giữ đúng reviewer_ref **`## CAL-039998018b`** (tham chiếu mờ người dùng cung cấp,
+  không suy tên hoặc thu hẹp chỉ một cặp); reviewed_at **2026-11-05T01:00:00Z**
+  (=08:00GMT+7 ngày05/11/2026), tách giờ agent tạo/import.
+- Artifact nhận nhãn cuối **staging/subset-v5-accepted-labels-002/**:
+  **20accepted =7nhãn2+6nhãn1+7nhãn0**, đúng **11chunk/6table-row/3whole-source**.
+  Nhãn1 giữ2supporting_target/4dependency_only;7nhãn2 có1full/6partial.
+- **CAL-a46415f601, CAL-b69c61257d** cònnull/pending, không vào qrels typed mới.
+  Bất đồng proposal2→null của cặp sau giữ nguyên. Qrels lịch sử không đổi.
+- Adapter hẹp mới src.subset_labels snapshot/admit/validate, dùng validators cũ;
+  không dùng scorer chunk-only. **59tests đạt/0skip,20mutation bị từ chối**;
+  cùngrun nhập lại no-op/newly_imported0, prior trùng bị chặn trước ghi, replay
+  payload giống byte. Prototype001 giữ code/payload cũ, không cộng thành40nhãn.
+
+Checks/bảng dễ đọc: **staging/source-session8-acceptance-checks-001/**,
+negative/replay cuối artifacts-001/. Scope chỉ22cặp có AI hỗ trợ; metrics vẫnnull,
+coverage chưa approved, source/edition/applicability pending. Raw/dataset/index/
+query/evaluation/qrels/ZIP và snapshot001/run cũ giữ nguyên. Không model/index/
+ranking/UI/API hoặc stage/commit/push. Lịch sử dưới đây giữ nguyên bytes.
+
+[Báo cáo nhập nhãn](../reviews/Source_Session8_Accepted_Labels_Verification.md),
+[handoff/replay](../handoff/Subset_V5_Accepted_Labels.md),
+[contract typed accepted](../design/Subset_V5_Accepted_Annotations_v1.0.md).
+Bước sau về evaluation cần rà completeness nhãn/coverage theo query; không suy
+20accepted đủ điều kiện tính metrics cho50query hoặc corpus đã verified.
+
+---
+
+## Lịch sử phiên 8 trước metadata (giữ nguyên)
+
 # Hiện tại — phiên 8 phản hồi calibration subset v5, 2026-11-04
 
 **USER_REVIEWED_AI_ASSISTED / AWAITING_REVIEWER_METADATA / ACCEPTED_IMPORT_NOT_RUN**.
