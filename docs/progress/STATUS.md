@@ -1,3 +1,36 @@
+# Hiện tại — phiên 10: nhập 39 phản hồi năm query subset v5, 2026-11-05
+
+**39 NEW ACCEPTED / 59 UNIQUE ACCEPTED / 53 OF 53 POOL DECISIONS / 2 PENDING**.
+Snapshot pháp luật **2025-01-01**. HEAD đầu phiên
+**8ad0c2ff01244219eef0fe2496d2be24f0bde7fc**, Git sạch; không stage/commit/push.
+
+- Submission **staging/subset-v5-query-submission-002/**, accepted mới
+  **staging/subset-v5-query-accepted-001/**, aggregate tham chiếu hai batch
+  **staging/subset-v5-label-aggregate-001/**. Không nhập lại14 inherited/20 cũ.
+- **39 mới =35 nhãn0+4 nhãn1**, type25chunk/12table-row/2whole-source;
+  nhãn1 giữ2supporting_target/2dependency_only, partial. Tổng59 duy nhất:
+  **7 nhãn2/10 nhãn1/42 nhãn0**. Không cộng replay làm nhãn mới.
+- Năm query pool/accepted: **10/10;12/12;11/11;10/10;10/10**. Hai pending
+  V3-D02/CAL-a46415f601/CAL-b69c61257d vẫn null, nguyên batch cũ.
+- Người dùng xác nhận có ChatGPT hỗ trợ, reviewer_ref opaque giữ nguyên;
+  reviewed_at **2026-11-05T09:07:00+07:00**. Không independent/blind.
+  Đã xem đề xuất ChatGPT=true; bảng B/từng file đã mở=null. Evidence do agent
+  liên kết không được ghi là người dùng mở từng locator.
+- **53 tests pass/0skip**,25 resealed mutations bị từ chối; CLI validate cả ba
+  artifact đạt. Replay submission12file byte-identical; accepted3payload giống
+  byte, import cùng run no-op0. Đây là kiểm kỹ thuật, không chất lượng pháp lý.
+- Dataset/index/query/ranking/qrels/ZIP lịch sử giữ nguyên. Đủ pool không đồng
+  nghĩa đủ mọi positive. **Metrics chính thức50query=null**, source/edition/
+  applicability pending; chưa duyệt500 nhãn, không build/index/model/UI/API.
+
+[Hướng dẫn validate/replay](../handoff/Subset_V5_Query_Acceptance.md),
+[báo cáo và binding](../reviews/Source_Session10_Query_Acceptance_Verification.md).
+Chi tiết39 quyết định/evidence: **staging/source-session10-checks-001/reviewed_decisions.md**.
+Bước tiếp theo đề xuất: rà hai pending khi đủ thông tin và chọn lô query tiếp;
+chưa thực hiện mở rộng trong phiên10. Lịch sử bên dưới giữ nguyên.
+
+---
+
 # Hiện tại — phiên 9: pool review năm query subset v5, 2026-11-05
 
 **REVIEW_POOL_READY / 14 ACCEPTED INHERITED / 39 AWAITING USER REVIEW**.
