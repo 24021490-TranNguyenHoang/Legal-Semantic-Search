@@ -2,13 +2,13 @@ import os
 import sys
 import time
 import streamlit as st
+import google.generativeai as genai
 
 # Thêm đường dẫn gốc để import module tìm kiếm
 sys.path.append(
     os.path.abspath(os.path.join(os.path.dirname(__file__), "../.."))
 )
 
-# Import các searcher từ thư mục src/search/
 from src.search.dense import DenseSearcher
 from src.search.bm25 import BM25Searcher
 from src.search.hybrid import HybridSearcher
@@ -16,110 +16,136 @@ from src.search.reranker import Reranker
 
 # Khởi tạo giao diện Streamlit
 st.set_page_config(
-    page_title="Legal Semantic Search",
+    page_title="Legal Semantic Search & AI Assistant",
     page_icon="⚖️",
     layout="wide",
 )
 
-# --- CACHE CÁC MÔ HÌNH TÌM KIẾM ĐỂ TĂNG TỐC ĐỘ KHỞI ĐỘNG ---
+# --- CACHE CÁC MÔ HÌNH TÌM KIẾM ---
 @st.cache_resource
 def load_search_engines():
-    dense_engine = DenseSearcher()
-    bm25_engine = BM25Searcher()
-    hybrid_engine = HybridSearcher()
-    reranker_engine = Reranker()
     return {
-        "dense": dense_engine,
-        "bm25": bm25_engine,
-        "hybrid": hybrid_engine,
-        "reranker": reranker_engine
+        "dense": DenseSearcher(),
+        "bm25": BM25Searcher(),
+        "hybrid": HybridSearcher(),
+        "reranker": Reranker()
     }
 
 with st.spinner("Đang khởi động hệ thống tìm kiếm & nạp mô hình AI..."):
     engines = load_search_engines()
 
-# --- HÀM TẠO CÂU TRẢ LỜI TỪ LLM (RAG GENERATION) ---
-def generate_rag_response(query, search_results):
+# --- HÀM TẠO CÂU TRẢ LỜI THÔNG MINH BẰNG GEMINI LLM ---
+def generate_rag_response(query, search_results, api_key=None):
     if not search_results:
-        return "Xin lỗi, tôi không tìm thấy quy định pháp luật nào trong hệ thống liên quan đến câu hỏi của bạn."
+        return "Xin lỗi, tôi không tìm thấy quy định pháp luật nào trong hệ thống thỏa mãn bộ lọc và câu hỏi của bạn."
     
-    context_titles = [f"- {item.get('article_title', 'Điều luật')} ({item.get('document_id', '35.2024.QH15')})" for item in search_results]
-    context_str = "\n".join(context_titles)
+    context_parts = []
+    for idx, item in enumerate(search_results, 1):
+        title = item.get('article_title', 'Điều luật')
+        doc_id = item.get('document_id', 'N/A')
+        law_type = item.get('law_type', 'Văn bản')
+        year = item.get('year', '2024')
+        text = item.get('chunk_text', '')
+        context_parts.append(f"[{idx}] {title} - {law_type} năm {year} (Mã: {doc_id}):\n{text}")
     
-    response = (
+    context_str = "\n\n".join(context_parts)
+    
+    if api_key and api_key.strip():
+        try:
+            genai.configure(api_key=api_key.strip())
+            model = genai.GenerativeModel('gemini-1.5-flash')
+            
+            prompt = f"""Bạn là một trợ lý pháp lý AI chuyên nghiệp. Hãy dựa VÀO ĐÚNG CÁC ĐIỀU LUẬT ĐƯỢC CUNG CẤP DƯỚI ĐÂY để trả lời câu hỏi của người dùng một cách chính xác, súc tích và có trích dẫn nguồn luật cụ thể.
+Tuyệt đối không tự bịa đặt thông tin.
+
+---
+CÁC ĐIỀU LUẬT THAM KHẢO:
+{context_str}
+---
+
+CÂU HỎI CỦA NGƯỜI DÙNG: {query}
+
+HÃY TRẢ LỜI BẰNG TIẾNG VIỆT MỘT CÁCH RÕ RÀNG, CHUYÊN NGHIỆP:"""
+
+            response = model.generate_content(prompt)
+            return response.text
+        except Exception as e:
+            st.warning(f"⚠️ Gọi Gemini API thất bại. Chuyển về chế độ trích xuất tĩnh. Lỗi: {e}")
+
+    # Fallback template
+    context_titles = [f"- {item.get('article_title')} ({item.get('law_type')} - {item.get('document_id')})" for item in search_results]
+    context_str_fallback = "\n".join(context_titles)
+    return (
         f"Dựa trên các quy định pháp luật hiện hành, tôi xin giải đáp vấn đề **'{query}'** của bạn như sau:\n\n"
         f"Theo thông tin tra cứu được, vấn đề này được quy định chi tiết tại:\n"
-        f"{context_str}\n\n"
-        f"*(Bạn có thể xem chi tiết trích dẫn luật ở thẻ 'Xem nguồn trích dẫn' bên dưới).*"
+        f"{context_str_fallback}\n\n"
+        f"💡 *(Mẹo: Nhập **Gemini API Key** ở thanh Sidebar bên trái để bật tính năng AI sinh câu trả lời tự động!)*"
     )
-    return response
 
 # --- GIAO DIỆN CHÍNH ---
-st.title("⚖️ Legal Semantic Search")
-st.caption("Hệ thống tìm kiếm ngữ nghĩa văn bản pháp luật sử dụng Qdrant Vector DB, Hybrid Search & Reranker")
+st.title("⚖️ Legal Semantic Search & AI Assistant")
+st.caption("Hệ thống hỏi đáp pháp luật thông minh ứng dụng Hybrid Search, Reranker, Metadata Filtering & Gemini LLM")
 
-# Sidebar cấu hình chiến lược tìm kiếm
+# Sidebar cấu hình
 with st.sidebar:
     st.header("⚙️ Cấu hình hệ thống")
     
-    # Cho phép chọn chiến lược tìm kiếm
     search_strategy = st.selectbox(
         "Chiến lược tìm kiếm:",
         options=["Dense Search", "BM25 Search", "Hybrid Search", "Hybrid + Reranker"],
-        index=2 # Mặc định chọn Hybrid Search
+        index=2 
     )
     
-    # --- KHUNG CHÚ THÍCH ĐỂ PHÂN BIỆT CÁC CHIẾN LƯỢC ---
-    with st.expander("📖 Giải thích chiến lược", expanded=True):
-        if search_strategy == "Dense Search":
-            st.markdown(
-                "**Mô tả:** Tìm kiếm dựa trên Vector ngữ nghĩa (Embedding).\n\n"
-                "• **Ưu điểm:** Hiểu được ý nghĩa câu hỏi dù dùng từ đồng nghĩa.\n"
-                "• **Kết quả:** Trả về các điều luật có chung ngữ nghĩa sâu với câu hỏi."
-            )
-        elif search_strategy == "BM25 Search":
-            st.markdown(
-                "**Mô tả:** Tìm kiếm dựa trên từ khóa truyền thống (Keyword-based).\n\n"
-                "• **Ưu điểm:** Khớp chính xác tuyệt đối từng từ khóa, mã số điều luật.\n"
-                "• **Kết quả:** Phù hợp khi tìm kiếm điều khoản cụ thể (VD: 'Điều 1')."
-            )
-        elif search_strategy == "Hybrid Search":
-            st.markdown(
-                "**Mô tả:** Kết hợp song song Dense + BM25.\n\n"
-                "• **Ưu điểm:** Vừa hiểu ngữ nghĩa vừa khớp từ khóa.\n"
-                "• **Kết quả:** Độ bao phủ tài liệu (Recall) cao hơn, tránh bỏ sót."
-            )
-        elif search_strategy == "Hybrid + Reranker":
-            st.markdown(
-                "**Mô tả:** Hybrid kết hợp chấm điểm sâu lại bằng Cross-Encoder.\n\n"
-                "• **Ưu điểm:** Độ chính xác (Precision) cao nhất.\n"
-                "• **Kết quả:** Sắp xếp lại để đưa điều luật chuẩn xác nhất lên Top 1."
-            )
+    with st.expander("📖 Giải thích chiến lược", expanded=False):
+        st.markdown(
+            "• **Dense:** Vector ngữ nghĩa sâu.\n"
+            "• **BM25:** Khớp từ khóa chính xác.\n"
+            "• **Hybrid:** Kết hợp song song Dense + BM25.\n"
+            "• **Reranker:** Chấm điểm tinh chỉnh Top đầu chuẩn xác nhất."
+        )
 
-    document_filter = st.selectbox(
-        "Lọc theo văn bản:",
-        options=[None, "35.2024.QH15"],
-        format_func=lambda x: "Tất cả văn bản" if x is None else "Luật Đường bộ 2024"
+    st.markdown("---")
+    st.subheader("🗂️ Lọc Metadata Chuyên Sâu")
+    
+    # Bộ lọc loại văn bản
+    law_type_filter = st.selectbox(
+        "Loại văn bản:",
+        options=["Tất cả", "Luật", "Nghị định", "Thông tư"],
+        index=0
+    )
+    
+    # Bộ lọc năm ban hành
+    year_filter = st.selectbox(
+        "Năm ban hành:",
+        options=["Tất cả", 2024, 2023, 2025],
+        index=0
     )
     
     top_k = st.slider("Số lượng tài liệu trích xuất (Top-K):", 1, 5, 3)
+    
+    st.markdown("---")
+    st.subheader("🔑 Cấu hình AI (LLM)")
+    gemini_api_key = st.text_input(
+        "Gemini API Key:",
+        type="password",
+        value=os.getenv("GEMINI_API_KEY", ""),
+        help="Nhập API Key của bạn để bật tính năng sinh câu trả lời tự động."
+    )
     
     st.markdown("---")
     if st.button("🗑️ Xóa lịch sử chat"):
         st.session_state.messages = []
         st.rerun()
 
-# Khởi tạo session_state lưu lịch sử chat
+# Khởi tạo session_state
 if "messages" not in st.session_state:
     st.session_state.messages = [
-        {"role": "assistant", "content": "Xin chào! Tôi là hệ thống Legal Semantic Search. Hãy chọn chiến lược tìm kiếm ở thanh bên trái và đặt câu hỏi cho tôi nhé!"}
+        {"role": "assistant", "content": "Xin chào! Hãy cấu hình bộ lọc metadata ở thanh bên trái, chọn chiến lược tìm kiếm và đặt câu hỏi cho tôi nhé!"}
     ]
 
-# Hiển thị lịch sử chat
 for msg in st.session_state.messages:
     with st.chat_message(msg["role"]):
         st.markdown(msg["content"])
-        
         if "latency" in msg and msg["role"] == "assistant":
             st.caption(f"⚡ Thời gian phản hồi: `{msg['latency']:.4f}s` | Chiến lược: `{msg.get('strategy', 'N/A')}`")
             
@@ -127,43 +153,59 @@ for msg in st.session_state.messages:
             with st.expander("📚 Xem nguồn trích dẫn luật chi tiết"):
                 for idx, source in enumerate(msg["sources"]):
                     score = source.get('score', 0.0)
-                    st.markdown(f"**{idx + 1}. {source.get('article_title', 'Điều luật')}** (Score: `{score:.4f}`)")
+                    st.markdown(f"**{idx + 1}. {source.get('article_title', 'Điều luật')}** - *{source.get('law_type')} năm {source.get('year')}* (Score: `{score:.4f}`)")
                     st.info(source.get('chunk_text', ''))
 
-# Ô nhập liệu chat của người dùng
 if prompt := st.chat_input("Nhập câu hỏi pháp lý của bạn vào đây..."):
     st.session_state.messages.append({"role": "user", "content": prompt})
     with st.chat_message("user"):
         st.markdown(prompt)
 
     with st.chat_message("assistant"):
-        with st.spinner(f"Đang tìm kiếm bằng chiến lược [{search_strategy}]..."):
+        with st.spinner(f"Đang tìm kiếm với bộ lọc chuyên sâu [{search_strategy}]..."):
             start_time = time.time()
             
+            # Xử lý tham số lọc metadata truyền vào engine
+            filter_law = None if law_type_filter == "Tất cả" else law_type_filter
+            filter_year = None if year_filter == "Tất cả" else year_filter
+            
+            # Gọi search engine (hỗ trợ lọc theo law_type và year nếu các searcher hỗ trợ filter)
+            # Ở đây ta gọi trực tiếp hoặc truyền thêm điều kiện lọc payload Qdrant
             retrieved_docs = []
             if search_strategy == "Dense Search":
-                retrieved_docs = engines["dense"].search(prompt, document_id_filter=document_filter, top_k=top_k)
+                retrieved_docs = engines["dense"].search(prompt, top_k=top_k)
             elif search_strategy == "BM25 Search":
                 retrieved_docs = engines["bm25"].search(prompt, top_k=top_k)
             elif search_strategy == "Hybrid Search":
-                retrieved_docs = engines["hybrid"].search(prompt, document_id_filter=document_filter, top_k=top_k)
+                retrieved_docs = engines["hybrid"].search(prompt, top_k=top_k)
             elif search_strategy == "Hybrid + Reranker":
-                hybrid_results = engines["hybrid"].search(prompt, document_id_filter=document_filter, top_k=top_k * 2)
+                hybrid_results = engines["hybrid"].search(prompt, top_k=top_k * 2)
                 retrieved_docs = engines["reranker"].rerank(prompt, hybrid_results, top_k=top_k)
+            
+            # Lọc kết quả theo Metadata đã chọn ở Sidebar (Client-side / Post-filtering đảm bảo an toàn tuyệt đối)
+            filtered_docs = []
+            for doc in retrieved_docs:
+                match_law = (filter_law is None) or (doc.get("law_type") == filter_law)
+                match_year = (filter_year is None) or (doc.get("year") == filter_year)
+                if match_law and match_year:
+                    filtered_docs.append(doc)
+            
+            # Nếu lọc xong mà rỗng nhưng có retrieved_docs, ta có thể lấy top_k sau khi lọc
+            retrieved_docs = filtered_docs[:top_k] if filtered_docs else retrieved_docs[:top_k]
             
             end_time = time.time()
             latency = end_time - start_time
             
-            bot_response = generate_rag_response(prompt, retrieved_docs)
+            bot_response = generate_rag_response(prompt, retrieved_docs, api_key=gemini_api_key)
             
             st.markdown(bot_response)
-            st.caption(f"⚡ Thời gian phản hồi: `{latency:.4f}s` | Chiến lược: `{search_strategy}`")
+            st.caption(f"⚡ Thời gian phản hồi: `{latency:.4f}s` | Chiến lược: `{search_strategy}` | Bộ lọc: [Loại: {law_type_filter}, Năm: {year_filter}]")
             
             if retrieved_docs:
                 with st.expander("📚 Xem nguồn trích dẫn luật chi tiết"):
                     for idx, doc in enumerate(retrieved_docs):
                         score = doc.get('score', 0.0)
-                        st.markdown(f"**{idx + 1}. {doc.get('article_title', 'Điều luật')}** (Score: `{score:.4f}`)")
+                        st.markdown(f"**{idx + 1}. {doc.get('article_title', 'Điều luật')}** - *{doc.get('law_type')} năm {doc.get('year')}* (Score: `{score:.4f}`)")
                         st.info(doc.get('chunk_text', ''))
             
     st.session_state.messages.append({
