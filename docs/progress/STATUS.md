@@ -1,3 +1,25 @@
+# Hiện tại — phiên14: BM25 experimental v6, 2026-11-18
+
+**BUILT / 50 QUERY COMPARED / PORTABLE READ VERIFIED / NO VERSION SWITCH**.
+HEAD e9b98249a1297ccecc5e232b1444c577fb7a2bea; đầu phiên Git sạch, hiện có thay đổi chưa commit.
+Snapshot2025-01-01; dataset vtls-subset-experimental.v6-candidate.1, index **vtls-bm25s-subset.v2**.
+Run index staging/bm25-subset-v6-001; batch bm25-subset-v6-batch-001; comparison bm25-v5-v6-comparison-001.
+
+- 139target=126chunk/9table/4whole; full-read139/250support/1form,6views khôngtarget.
+- 50query ghim,500hit/118unique detail/0error. V5 replayexact; Top1đổi1/50,Top10đổi13/50.
+- Đènđỏ mới rank4,closure7; tuổi rank15→15,closure2→16,giữpayload/context/ID.
+- 43tests:39pass/4skip baseline opt-in; negative/portable/replay đạt theo report, không metrics mới.
+- Index manifestSHA 58c05ef0f6c2bb39d4a6af8d62d5520843c028e538a0b5d8abeb2ce5d3589c5f.
+- ZIP staging/vtls-bm25s-subset-v2-001.zip, SHA 00e966c92a655f6405a64f4cb352eef89252508ecb75e1bd6bce6f66a63538cb, 26376034bytes; chưa URL chia sẻ.
+- Experimental/releasefalse/scopeproposal/source-edition-applicabilitypending. 59accepted/2pending/evaluation11 vẫnv5.
+- Ứng dụng Hùng và indexv5 nguyên trạng. Không chuyển bản nhóm, tuning, Dense/embedding hoặc UIAPI.
+
+[Báo cáo14](../reviews/Source_Session14_BM25_Verification.md) · [Quickstart](../handoff/Source_Session14_BM25_Quickstart.md) · [Bốn query](../handoff/Source_Session14_Deep_Checks.md).
+Kiểm trên cùng Windows/Python3.11.9; chưa BM25Linux/máy khác. Kết quả kỹ thuật không xác minh pháp lý/chất lượngretrieval.
+Lịch sử bên dưới giữ nguyên byte.
+
+---
+
 # Hiện tại — phiên 13: candidate v6 từ preview phiên 12, 2026-11-17
 
 **EXPERIMENTAL CANDIDATE PACKAGED / PORTABLE READ VALIDATED / NO INDEX OR LABEL TRANSFER**.

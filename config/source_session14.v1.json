@@ -1,0 +1,28 @@
+{
+  "policy_version": "subset-bm25-build.v2",
+  "dataset_ref": "staging/dataset-v6-gap-002",
+  "dataset_version": "vtls-subset-experimental.v6-candidate.1",
+  "dataset_manifest_sha256": "47b23b4f8742a308f32b4c1efd0d7749a81a8aae792459b95e7035490802bdfc",
+  "dataset_content_sha256": "02440b59ca37c71e6e39683e8d741cfd4ccdfae50d8fb3b1aabc625d644b5cab",
+  "consumer_sha256": "f42bcc914ee1b4b8bf9c313fccc38bff6511e9199ccab5676bf1901037fe3f5c",
+  "dataset_zip_ref": "staging/dataset-v6-gap-002.zip",
+  "dataset_zip_sha256": "8c9f3a50157bdf5ccc7e6df3dae8be0124ba8f7c469e436de410f6849e60b844",
+  "queries_ref": "staging/composition-queries-001",
+  "queries_manifest_sha256": "f8cc9257c410c8eb578d43a0bd1912e3aa5c572829be5e33d7ee0a2045e546f0",
+  "baseline_ref": "staging/source-session14-checks-001/preservation.baseline.json",
+  "frozen_code_sha256": {
+    "src/bm25_baseline.py": "429b56d14b4d15eabc96da4b809391e9b19bee8ae99eacc49084af33aae73798",
+    "src/bm25_tokenizer.py": "8953a6c893b85fa69875da94b147c7c43ebed59e3aa4be8fab15d2fc3df069a6",
+    "src/composition_bm25.py": "3cc2c11b41cd70fc39e1c47d0367d9f3bdecd2433ff1f600b34af013d1b1c79b",
+    "src/composition_consumer.py": "e9fba6d26531b92a300d3a00e0fbd575d5497c4bca5221b14f1e986b5c65aaae",
+    "config/bm25_baseline.v1.json": "39c8125b9ef70346cf9dc0fb931ddba873db721cc0d4be992f53277496b0ceb6",
+    "requirements-bm25.txt": "e59b27533d52a815196248fdb83a98b022a828a1240b9e8a4a32a855614cd1b5",
+    "src/subset_bm25.py": "76f0943695efa53a149b98a1a821f116c4b9a2c78dfe07a913660b564054258a"
+  },
+  "v5_comparison": {
+    "index_ref": "staging/bm25-subset-v5-003",
+    "index_manifest_sha256": "657ababc157e3e509c874628bd695b20220baeec514d3f201c2d53bcfc7138af",
+    "batch_ref": "staging/bm25-subset-v5-batch-002",
+    "batch_manifest_sha256": "baa811c55622580eb081b21e2df1868a3dba3d12f6f2a63acd532e6ca6b2fa09"
+  }
+}
