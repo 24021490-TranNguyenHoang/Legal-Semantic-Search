@@ -1,0 +1,49 @@
+{
+  "policy": "subset-five-query-diagnostic.v1",
+  "evaluation_scope": "five_query_development_diagnostic",
+  "snapshot": "2025-01-01",
+  "query_ids": [
+    "dev-night_horn-3",
+    "dev-driving_age-2",
+    "dev-red_light-2",
+    "V3-D05",
+    "V3-D07"
+  ],
+  "inputs": {
+    "batch": {
+      "ref": "staging/bm25-subset-v5-batch-002/manifest.json",
+      "sha256": "baa811c55622580eb081b21e2df1868a3dba3d12f6f2a63acd532e6ca6b2fa09"
+    },
+    "review": {
+      "ref": "staging/subset-v5-query-review-002/manifest.json",
+      "sha256": "04ad32955c1443aedcc7b6f6f82e4e63e1bcd9a8adfe903159ff93463444b2f2"
+    },
+    "aggregate": {
+      "ref": "staging/subset-v5-label-aggregate-001/manifest.json",
+      "sha256": "7c4dbee482e5bc7d38e96b12e4a75684b3756a47b48d4385c713e2fd846cd56e"
+    }
+  },
+  "metrics_policy": {
+    "cutoffs": [
+      1,
+      3,
+      5,
+      10
+    ],
+    "direct_positive": "relevance == 2",
+    "useful_positive": "relevance >= 1",
+    "precision_denominator": "k",
+    "hit": "any positive in first k positions",
+    "rr_cutoff": 10,
+    "macro_queries": "all five, including zero",
+    "ndcg_pool": {
+      "gain": "2^relevance - 1",
+      "discount": "log2(rank + 1)",
+      "ideal": "accepted pool per query",
+      "zero_idcg": null
+    },
+    "corpus_recall": null,
+    "corpus_ap_map": null,
+    "official_50_query_metrics": null
+  }
+}

@@ -1,3 +1,119 @@
+# Hiện tại — phiên 13: candidate v6 từ preview phiên 12, 2026-11-17
+
+**EXPERIMENTAL CANDIDATE PACKAGED / PORTABLE READ VALIDATED / NO INDEX OR LABEL TRANSFER**.
+Snapshot **2025-01-01**. Dataset mới **vtls-subset-experimental.v6-candidate.1**,
+run `staging/dataset-v6-gap-002/`; ZIP/checksum cùng tên cạnh thư mục.
+Release=false; nguồn/edition/applicability pending, scope proposal, origin=agent_review.
+
+- **139 target** đo từ membership:126chunk/9table-row/4whole-source. Giữ nguyên
+  ID/type/payload/context của138target v5; thêm NĐ168 A6K9b với đúng leadK9
+  và7required own-unit reads. Không sửa/correction nguồn hoặc tạo extraction mới.
+- Target tuổi A59K1b giữ ID/payload/context; closure2→16. Hợp dataset tăng12
+  supporting membership (238→250),11graph nodes (365→376),11spans (542→553).
+  Một nút mới là ChươngIII Luật36 structural_only; không biến cha thành target.
+  1form XXVI và6encoder views giữ nguyên; không nâng budget/truncate.
+- **137frame cũ không đổi**,1frame tuổi mở closure. Response hashes thay theo
+  dataset/adapter/package locator mới; tuổi còn đổi required-read. Không chuyển
+  59accepted/2pending/qrels/evaluation phiên11 sang v6 chỉ vì target ID giống.
+- Replay112file cảmanifest/sidecar giống byte; ZIP replay giống SHA-256.
+  ZIP26.200.261bytes, SHA `8c9f3a50157bdf5ccc7e6df3dae8be0124ba8f7c469e436de410f6849e60b844`.
+- ZIP giải nén ngoài repo: validate/list/read/full-read exit0 dưới audit gate
+  chặn repo/cache/mạng/subprocess;139target/250support/1form đọc đầy đủ.
+  Hai truy cập thử bị chặn. Cùng máy/Windows, chưa kiểm trên máy hoặc OS khác.
+- Code mới dùng lại frozen consumer/reader/validator; kiểm negative payload,
+  proof, dependency, type/header/view, identity, budget và báo cáo delta.
+  **14tests pass/0skip, native exit0**, gồm16mutation reseal bị từ chối.
+  Preservation7.912file: chỉ STATUS prepend,13untracked có trước nguyên vẹn.
+  Kết quả tests/exit-code/preservation chi tiết trong báo cáo và checks.
+- Đầu phiên HEAD `c9c33b1371622d6fd90338d5fb98d2e951fb10b8`, STATUS modified
+  và13file untracked phiên11–12; giữ nguyên. Không stage/commit/push.
+
+[Mở báo cáo phiên13](../reviews/Source_Session13_Candidate_Verification.md),
+[hướng dẫn nhận ZIP/replay](../handoff/Development_Gap_Candidate.md),
+[disposition trước–sau](../../staging/source-session13-checks-001/disposition.md).
+Candidate chưa gắn index/labels mới, chưa kích hoạt ứng dụng/chuyển bản cho nhóm.
+Technical pass không xác minh pháp lý hoặc chất lượng retrieval. Lịch sử nguyên
+byte bên dưới; bản v5/index/evaluation hiện hành không bị thay thế.
+
+---
+
+# Hiện tại — phiên 12: preview khoảng trống development, 2026-11-16
+
+**PREVIEW_ONLY / 1 NEW TARGET PROPOSED / AGE CLOSURE EXTENDED / EVIDENCE CHECKER READY**.
+Snapshot pháp luật **2025-01-01**. HEAD **c9c33b1371622d6fd90338d5fb98d2e951fb10b8**.
+Đầu phiên có STATUS modified và6file untracked từ phiên11; giữ nguyên, không
+nhận là thay đổi mới. Không stage/commit/push hoặc thay dataset/index/ranking.
+
+- Run giao **staging/development-gap-preview-002/**:2read frames,31graph nodes,
+  41spans,23supporting own-unit reads. Run001 giữ lỗi adapter gọi absolute path;
+  đã sửa cách gọi relative đúng contract, không sửa source/parser/builder cũ.
+- **NĐ168 A6K9b**: target đề xuất mới,120tokens/0unknown; context titleA6+leadK9.
+  Required-read7unit giữ K16b/lead cùng điều kiện gây tai nạn K10b/lead/K16d.
+  PDF chính thức đã có được nhìn lại trang14–16; không download mới, không đổi
+  DOCX session2-001. Khác dấu phẩy trongK10b ghi rõ, không âm thầm correction.
+- **Luật36 A59K1b**: target/ID/payload/context cũ giữ nguyên,96tokens/0unknown;
+  required-read2→16unit,14thêm, gồm A1/A/B1, mô tô/xe gắn máy và lead/title cha.
+  Rank15 là retrieval miss cũ; thêm dependency không tự đổi ranking/metrics.
+- **Checker80/81**:11ca,2đủ yêu cầu khai báo/9không đủ; hai hàng55/70m hoặc
+  bảng nhúng phải có header/đơn vị/normal+adverse conditions/proof. Không sửa
+  completeness accepted hoặc dùng Hit/label1 suy đủ câu trả lời/pháp lý.
+  Hai hàng168tokens; whole279 giữ hai views237/44, tất cả0unknown; budget256
+  không đổi, không truncate hoặc tạo view target.
+- **70tests pass/0skip**,11resealed preview mutations bị từ chối; validate đạt,
+  replay17file cảmanifest/sidecar giống byte. Lần test đầu thiếu import path
+  helper cũ; chạy lại đúng PYTHONPATH, không sửa helper hoặc giấu log lỗi.
+- Đề xuất candidate sau: thêm1target đỏ, mở closure tuổi và graph/proof mounts
+  còn thiếu; consumer type hiện có đủ. Chưa build candidate/index, đổi nguồn/
+  scope/applicability sang verified, nhập nhãn hoặc tính lại metrics.
+  **59accepted/2pending/qrels/evaluation phiên11/raw/ZIP giữ nguyên**.
+
+[Đọc preview](../../staging/development-gap-preview-002/preview.md),
+[báo cáo/disposition/binding](../reviews/Source_Session12_Gap_Preview_Verification.md),
+[lệnh validate/replay](../handoff/Development_Gap_Preview.md).
+Các proposal chỉ đủ kỹ thuật trong phạm vi khai báo, origin=agent_review,
+human_review=null; legal/source/edition/applicability và lựa chọn member mới
+vẫn tách riêng. Lịch sử phiên11 và trước đó giữ nguyên bên dưới.
+
+---
+
+# Hiện tại — phiên 11: BM25 diagnostic năm query accepted, 2026-11-16
+
+**FIVE_QUERY_DEVELOPMENT_DIAGNOSTIC / 5 QUERY / 50 TOP10 JUDGED / NO NEW LABELS**.
+Snapshot pháp luật **2025-01-01**. HEAD đầu phiên
+**c9c33b1371622d6fd90338d5fb98d2e951fb10b8**, Git sạch. Không stage/commit/push.
+
+- Run mới **staging/subset-v5-five-query-evaluation-001/**; config
+  **config/subset_five_query_evaluation.v1.json** ghim trước tính toán.
+  Dùng đúng batch002/review002/aggregate001; dataset/index/query/ranking giữ
+  nguyên. Validate59accepted (7/10/42),53pool và50Top10 đủ nhãn,2pending
+  V3-D02 ngoài scope; không nhập nhãn/proposal hoặc sửa completeness.
+- **Direct (rel=2): MRR@10=0.40, P@1/3/5/10=0.20/0.333333/0.20/0.10,
+  Hit@1/3/5/10=0.20/0.60/0.60/0.60.**
+- **Useful (rel>=1): MRR@10=0.90, P@1/3/5/10=0.80/0.60/0.36/0.22,
+  Hit@1/3/5/10=0.80/1/1/1.** Macro đúng5query, giữ cả số0.
+- nDCG@10_pool graded **0.642149**,5valid/0null, ideal chỉ pool hữu hạn.
+  **Recall/AP/MAP corpus=null; metrics chính thức50query=null.** Đây là5query
+  được chọn với nhãn user-reviewed AI-assisted, không independent/blind,
+  không chất lượng toàn corpus/so sánh phiên bản công bằng hoặc legal verified.
+- Tuổi mô tô: direct partial rank15, dependency-only rank49 (deep cũ), miss
+  Top10. Đèn đỏ Direct0 vì pool không nhãn2; Useful có đèn mũi tên rank2 và
+  dependency-only rank20. Không nâng dependency thành direct. Câu80/81 có
+  hai hàng direct partial rank2/3, cần ghép và giữ điều kiện đường/tầm nhìn.
+- **90tests pass/0skip**,12resealed mutations bị từ chối; CLI validate đạt.
+  Replay13file cả manifest/sidecar giống byte; kiểm Fraction5query×2cách đọc
+  độc lập khớp. Không chạy ranking/model/index lại, không cài dependency mới.
+- Raw, dataset/index/query, accepted/pending/qrels/ZIP và run lịch sử giữ nguyên.
+  Scope/nguồn/edition/applicability pending riêng, chưa quyết định coverage
+  toàn corpus. Giữ lịch sử STATUS nguyên byte bên dưới.
+
+[Mở kết quả5query](../../staging/subset-v5-five-query-evaluation-001/results.md),
+[báo cáo/binding/giới hạn](../reviews/Source_Session11_Five_Query_Evaluation_Verification.md),
+[lệnh validate/replay](../handoff/Subset_Five_Query_Evaluation.md).
+Bước tiếp theo chỉ đề xuất: rà membership trực tiếp đèn đỏ, dependency hạng GPLX,
+chọn lô nhãn tiếp và protocol trả đủ nhiều record; chưa tuning/thực hiện mở rộng.
+
+---
+
 # Hiện tại — phiên 10: nhập 39 phản hồi năm query subset v5, 2026-11-05
 
 **39 NEW ACCEPTED / 59 UNIQUE ACCEPTED / 53 OF 53 POOL DECISIONS / 2 PENDING**.

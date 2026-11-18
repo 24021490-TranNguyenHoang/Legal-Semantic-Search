@@ -1,0 +1,8 @@
+{
+  "policy_version": "development-gap-candidate.v1",
+  "dataset_version": "vtls-subset-experimental.v6-candidate.1",
+  "inputs": {
+    "base": {"ref": "staging/dataset-v5-subset-006/dataset_manifest.json", "sha256": "2a33d8fa503b54c574c453c33297c153074b2c3c08cdfb8a08b558d613e2d897"},
+    "preview": {"ref": "staging/development-gap-preview-002/manifest.json", "sha256": "cf14e7c9dce927e4400ea925e4f68c8cedf0c95691eca5980007d039aa83a469"}
+  }
+}

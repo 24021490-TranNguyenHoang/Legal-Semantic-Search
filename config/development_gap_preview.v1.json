@@ -1,0 +1,74 @@
+{
+  "policy": "development-gap-preview.v1",
+  "snapshot": "2025-01-01",
+  "inputs": {
+    "dataset": {
+      "ref": "staging/dataset-v5-subset-006/dataset_manifest.json",
+      "sha256": "2a33d8fa503b54c574c453c33297c153074b2c3c08cdfb8a08b558d613e2d897"
+    },
+    "aggregate": {
+      "ref": "staging/subset-v5-label-aggregate-001/manifest.json",
+      "sha256": "7c4dbee482e5bc7d38e96b12e4a75684b3756a47b48d4385c713e2fd846cd56e"
+    },
+    "evaluation": {
+      "ref": "staging/subset-v5-five-query-evaluation-001/manifest.json",
+      "sha256": "71b249f6626120cf2137ab86675874f6e6131438758df8ca64e9faa0dbbff4d1"
+    },
+    "source_proposal": {
+      "ref": "staging/source-session3-proposal-009/manifest.json",
+      "sha256": "c2a09db620e28aa69a803724fced61bbf24ea001e23334baca2d378bde15f6ed"
+    },
+    "source_selection": {
+      "ref": "staging/source-session3-proposal-009/source_selection.jsonl",
+      "sha256": "981ab45211f9c3ff181a03b383e788786e8e6222258d419523eb00b2041730df"
+    },
+    "nd_revision": {
+      "ref": "staging/nd168-docx-session2-001/revision_manifest.json",
+      "sha256": "ca98b518119e15bf2e3d2d0b9ea0617c7eb43815993994e237119ce5f77a0b4a"
+    },
+    "nd_graph": {
+      "ref": "staging/nd168-docx-session2-001/graph/manifest.json",
+      "sha256": "05823eedc958ccbd09d9c65a5acddfc3f3394f99bf39e38105c78aaf5809e1e7"
+    },
+    "law_graph": {
+      "ref": "staging/stage4-docx-005/manifest.json",
+      "sha256": "ca30426fea4f39e797ffa0e922010cd507cf131b86df76c9174d2a0518e1c938"
+    },
+    "encoder_config": {
+      "ref": "staging/tt35-preview-005/encoder_config.json",
+      "sha256": "5cdb067603051f388fdc96675a3fd1c2a5f5cfb89a311e5ffda005a75ac0ac5a"
+    },
+    "builder_config": {
+      "ref": "config/stage6_points.v1.json",
+      "sha256": "73b05c6d944588e90f5a2a964c2db9b8d03ce9f5a1eec17c41b35135af5a1492"
+    },
+    "official_agent_review": {
+      "ref": "staging/source-session12-checks-001/official/agent_review.json",
+      "sha256": "7998c87165101be8a8bbd16ee29cf9dd24f5d38578c99a9a790981873a98b260"
+    }
+  },
+  "encoder_base": "staging/tt35-preview-005",
+  "red_target": "article:6/clause:9/point:b",
+  "red_required": [
+    "article:6/clause:16/point:b",
+    "article:6/clause:10/point:b",
+    "article:6/clause:16/point:d"
+  ],
+  "age_target": "article:59/clause:1/point:b",
+  "age_support": [
+    "article:57/clause:1/point:a",
+    "article:57/clause:1/point:b",
+    "article:57/clause:1/point:c",
+    "article:34/clause:1/point:e",
+    "article:34/clause:1/point:g",
+    "article:56/clause:1",
+    "article:56/clause:1/point:b",
+    "article:56/clause:4",
+    "article:59/clause:1/point:a"
+  ],
+  "distance_records": {
+    "80": "tr_7d96624a118ba37e1ec17a7d886fe612582b69cccbf29fe261e13a0e0d2ad64d",
+    "81": "tr_ac4f3afd92e8ae309f157b9f601c5d3d69adf93094bc9e29e2780c321e91e021",
+    "adverse": "rv_0916941b9b7db992fc538429b284e82378867ea9f955c146dfd3cad46fedb6f9"
+  }
+}
