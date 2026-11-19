@@ -1,0 +1,168 @@
+{
+  "queries_total": 30,
+  "queries_eligible": 0,
+  "queries_excluded": 30,
+  "excluded": [
+    {
+      "query_id": "dev-roundabout-1",
+      "reason": "JUDGMENT_COMPLETENESS_PENDING"
+    },
+    {
+      "query_id": "dev-roundabout-2",
+      "reason": "JUDGMENT_COMPLETENESS_PENDING"
+    },
+    {
+      "query_id": "dev-roundabout-3",
+      "reason": "JUDGMENT_COMPLETENESS_PENDING"
+    },
+    {
+      "query_id": "dev-motorcycle_stop-1",
+      "reason": "JUDGMENT_COMPLETENESS_PENDING"
+    },
+    {
+      "query_id": "dev-motorcycle_stop-2",
+      "reason": "JUDGMENT_COMPLETENESS_PENDING"
+    },
+    {
+      "query_id": "dev-motorcycle_stop-3",
+      "reason": "JUDGMENT_COMPLETENESS_PENDING"
+    },
+    {
+      "query_id": "dev-night_horn-1",
+      "reason": "JUDGMENT_COMPLETENESS_PENDING"
+    },
+    {
+      "query_id": "dev-night_horn-2",
+      "reason": "JUDGMENT_COMPLETENESS_PENDING"
+    },
+    {
+      "query_id": "dev-night_horn-3",
+      "reason": "JUDGMENT_COMPLETENESS_PENDING"
+    },
+    {
+      "query_id": "dev-driving_age-1",
+      "reason": "JUDGMENT_COMPLETENESS_PENDING"
+    },
+    {
+      "query_id": "dev-driving_age-2",
+      "reason": "JUDGMENT_COMPLETENESS_PENDING"
+    },
+    {
+      "query_id": "dev-driving_age-3",
+      "reason": "JUDGMENT_COMPLETENESS_PENDING"
+    },
+    {
+      "query_id": "dev-licence_points-1",
+      "reason": "JUDGMENT_COMPLETENESS_PENDING"
+    },
+    {
+      "query_id": "dev-licence_points-2",
+      "reason": "JUDGMENT_COMPLETENESS_PENDING"
+    },
+    {
+      "query_id": "dev-licence_points-3",
+      "reason": "JUDGMENT_COMPLETENESS_PENDING"
+    },
+    {
+      "query_id": "dev-alcohol-1",
+      "reason": "JUDGMENT_COMPLETENESS_PENDING"
+    },
+    {
+      "query_id": "dev-alcohol-2",
+      "reason": "JUDGMENT_COMPLETENESS_PENDING"
+    },
+    {
+      "query_id": "dev-alcohol-3",
+      "reason": "JUDGMENT_COMPLETENESS_PENDING"
+    },
+    {
+      "query_id": "dev-red_light-1",
+      "reason": "JUDGMENT_COMPLETENESS_PENDING"
+    },
+    {
+      "query_id": "dev-red_light-2",
+      "reason": "JUDGMENT_COMPLETENESS_PENDING"
+    },
+    {
+      "query_id": "dev-red_light-3",
+      "reason": "JUDGMENT_COMPLETENESS_PENDING"
+    },
+    {
+      "query_id": "dev-helmet-1",
+      "reason": "JUDGMENT_COMPLETENESS_PENDING"
+    },
+    {
+      "query_id": "dev-helmet-2",
+      "reason": "JUDGMENT_COMPLETENESS_PENDING"
+    },
+    {
+      "query_id": "dev-helmet-3",
+      "reason": "JUDGMENT_COMPLETENESS_PENDING"
+    },
+    {
+      "query_id": "dev-pedestrian-1",
+      "reason": "JUDGMENT_COMPLETENESS_PENDING"
+    },
+    {
+      "query_id": "dev-pedestrian-2",
+      "reason": "JUDGMENT_COMPLETENESS_PENDING"
+    },
+    {
+      "query_id": "dev-pedestrian-3",
+      "reason": "JUDGMENT_COMPLETENESS_PENDING"
+    },
+    {
+      "query_id": "dev-licence_exchange-1",
+      "reason": "JUDGMENT_COMPLETENESS_PENDING"
+    },
+    {
+      "query_id": "dev-licence_exchange-2",
+      "reason": "JUDGMENT_COMPLETENESS_PENDING"
+    },
+    {
+      "query_id": "dev-licence_exchange-3",
+      "reason": "JUDGMENT_COMPLETENESS_PENDING"
+    }
+  ],
+  "per_query": [],
+  "metrics": null,
+  "status": "PENDING_LABELS",
+  "annotation_status": {
+    "pending": 300
+  },
+  "errors": [],
+  "coverage_gaps": [],
+  "coverage_pending": [
+    "dev-roundabout-1",
+    "dev-roundabout-2",
+    "dev-roundabout-3",
+    "dev-motorcycle_stop-1",
+    "dev-motorcycle_stop-2",
+    "dev-motorcycle_stop-3",
+    "dev-night_horn-1",
+    "dev-night_horn-2",
+    "dev-night_horn-3",
+    "dev-driving_age-1",
+    "dev-driving_age-2",
+    "dev-driving_age-3",
+    "dev-licence_points-1",
+    "dev-licence_points-2",
+    "dev-licence_points-3",
+    "dev-alcohol-1",
+    "dev-alcohol-2",
+    "dev-alcohol-3",
+    "dev-red_light-1",
+    "dev-red_light-2",
+    "dev-red_light-3",
+    "dev-helmet-1",
+    "dev-helmet-2",
+    "dev-helmet-3",
+    "dev-pedestrian-1",
+    "dev-pedestrian-2",
+    "dev-pedestrian-3",
+    "dev-licence_exchange-1",
+    "dev-licence_exchange-2",
+    "dev-licence_exchange-3"
+  ],
+  "legal_quality_verified": false
+}

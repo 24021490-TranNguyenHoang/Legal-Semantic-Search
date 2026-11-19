@@ -1,0 +1,233 @@
+{
+  "status": "PROVISIONAL_DO_NOT_TREAT_AS_ACCEPTED_METRICS",
+  "evaluation_version": "bm25-development-evaluation.v1",
+  "queries_scored": 30,
+  "qrels_source": "assistant proposals from visible Top-10 plus phrase-search leads across 3,077 chunks",
+  "coverage_complete": false,
+  "annotation_accepted": false,
+  "limitations": [
+    "Proposed relevance labels have not been accepted by Long or a second reviewer.",
+    "Full-corpus text sweeps are leads, not proof that all relevant chunks were found.",
+    "The corpus manifest says legal_verification=false, experimental=true, release_eligible=false, corpus_version=null.",
+    "Recall denominators include only currently known proposed positives, so reported recall is not final recall.",
+    "MRR and nDCG also depend on complete qrels and are provisional."
+  ],
+  "metrics": {
+    "Recall@5_known_positive": 0.504167,
+    "Recall@10_known_positive": 0.658333,
+    "MRR@10": 0.498466,
+    "nDCG@10": 0.48542
+  },
+  "per_query": {
+    "dev-alcohol-1": {
+      "known_relevant_count": 4,
+      "known_hits_at_5": 3,
+      "known_hits_at_10": 3,
+      "reciprocal_rank_at_10": 0.5,
+      "ndcg_at_10_known_qrels": 0.6865746908316516
+    },
+    "dev-alcohol-2": {
+      "known_relevant_count": 4,
+      "known_hits_at_5": 0,
+      "known_hits_at_10": 0,
+      "reciprocal_rank_at_10": 0.0,
+      "ndcg_at_10_known_qrels": 0.0
+    },
+    "dev-alcohol-3": {
+      "known_relevant_count": 1,
+      "known_hits_at_5": 0,
+      "known_hits_at_10": 1,
+      "reciprocal_rank_at_10": 0.1111111111111111,
+      "ndcg_at_10_known_qrels": 0.3010299956639812
+    },
+    "dev-driving_age-1": {
+      "known_relevant_count": 8,
+      "known_hits_at_5": 3,
+      "known_hits_at_10": 8,
+      "reciprocal_rank_at_10": 0.5,
+      "ndcg_at_10_known_qrels": 0.6199772288329056
+    },
+    "dev-driving_age-2": {
+      "known_relevant_count": 3,
+      "known_hits_at_5": 2,
+      "known_hits_at_10": 2,
+      "reciprocal_rank_at_10": 1.0,
+      "ndcg_at_10_known_qrels": 0.3357241323301412
+    },
+    "dev-driving_age-3": {
+      "known_relevant_count": 3,
+      "known_hits_at_5": 0,
+      "known_hits_at_10": 0,
+      "reciprocal_rank_at_10": 0.0,
+      "ndcg_at_10_known_qrels": 0.0
+    },
+    "dev-helmet-1": {
+      "known_relevant_count": 3,
+      "known_hits_at_5": 2,
+      "known_hits_at_10": 3,
+      "reciprocal_rank_at_10": 1.0,
+      "ndcg_at_10_known_qrels": 0.8343174379488818
+    },
+    "dev-helmet-2": {
+      "known_relevant_count": 2,
+      "known_hits_at_5": 2,
+      "known_hits_at_10": 2,
+      "reciprocal_rank_at_10": 0.3333333333333333,
+      "ndcg_at_10_known_qrels": 0.5706417189553201
+    },
+    "dev-helmet-3": {
+      "known_relevant_count": 2,
+      "known_hits_at_5": 1,
+      "known_hits_at_10": 2,
+      "reciprocal_rank_at_10": 0.5,
+      "ndcg_at_10_known_qrels": 0.5912352048230277
+    },
+    "dev-licence_exchange-1": {
+      "known_relevant_count": 2,
+      "known_hits_at_5": 1,
+      "known_hits_at_10": 1,
+      "reciprocal_rank_at_10": 1.0,
+      "ndcg_at_10_known_qrels": 0.6131471927654584
+    },
+    "dev-licence_exchange-2": {
+      "known_relevant_count": 2,
+      "known_hits_at_5": 1,
+      "known_hits_at_10": 1,
+      "reciprocal_rank_at_10": 0.2,
+      "ndcg_at_10_known_qrels": 0.23719771276929622
+    },
+    "dev-licence_exchange-3": {
+      "known_relevant_count": 4,
+      "known_hits_at_5": 2,
+      "known_hits_at_10": 2,
+      "reciprocal_rank_at_10": 0.5,
+      "ndcg_at_10_known_qrels": 0.4144299250118475
+    },
+    "dev-licence_points-1": {
+      "known_relevant_count": 3,
+      "known_hits_at_5": 0,
+      "known_hits_at_10": 0,
+      "reciprocal_rank_at_10": 0.0,
+      "ndcg_at_10_known_qrels": 0.0
+    },
+    "dev-licence_points-2": {
+      "known_relevant_count": 2,
+      "known_hits_at_5": 2,
+      "known_hits_at_10": 2,
+      "reciprocal_rank_at_10": 0.5,
+      "ndcg_at_10_known_qrels": 0.5296052411645183
+    },
+    "dev-licence_points-3": {
+      "known_relevant_count": 1,
+      "known_hits_at_5": 0,
+      "known_hits_at_10": 0,
+      "reciprocal_rank_at_10": 0.0,
+      "ndcg_at_10_known_qrels": 0.0
+    },
+    "dev-motorcycle_stop-1": {
+      "known_relevant_count": 1,
+      "known_hits_at_5": 1,
+      "known_hits_at_10": 1,
+      "reciprocal_rank_at_10": 1.0,
+      "ndcg_at_10_known_qrels": 1.0
+    },
+    "dev-motorcycle_stop-2": {
+      "known_relevant_count": 1,
+      "known_hits_at_5": 0,
+      "known_hits_at_10": 0,
+      "reciprocal_rank_at_10": 0.0,
+      "ndcg_at_10_known_qrels": 0.0
+    },
+    "dev-motorcycle_stop-3": {
+      "known_relevant_count": 1,
+      "known_hits_at_5": 0,
+      "known_hits_at_10": 0,
+      "reciprocal_rank_at_10": 0.0,
+      "ndcg_at_10_known_qrels": 0.0
+    },
+    "dev-night_horn-1": {
+      "known_relevant_count": 3,
+      "known_hits_at_5": 1,
+      "known_hits_at_10": 1,
+      "reciprocal_rank_at_10": 0.25,
+      "ndcg_at_10_known_qrels": 0.3127697035039474
+    },
+    "dev-night_horn-2": {
+      "known_relevant_count": 3,
+      "known_hits_at_5": 2,
+      "known_hits_at_10": 3,
+      "reciprocal_rank_at_10": 1.0,
+      "ndcg_at_10_known_qrels": 0.9111774142739887
+    },
+    "dev-night_horn-3": {
+      "known_relevant_count": 3,
+      "known_hits_at_5": 3,
+      "known_hits_at_10": 3,
+      "reciprocal_rank_at_10": 1.0,
+      "ndcg_at_10_known_qrels": 1.0
+    },
+    "dev-pedestrian-1": {
+      "known_relevant_count": 3,
+      "known_hits_at_5": 2,
+      "known_hits_at_10": 3,
+      "reciprocal_rank_at_10": 1.0,
+      "ndcg_at_10_known_qrels": 0.8587262601390819
+    },
+    "dev-pedestrian-2": {
+      "known_relevant_count": 1,
+      "known_hits_at_5": 1,
+      "known_hits_at_10": 1,
+      "reciprocal_rank_at_10": 0.25,
+      "ndcg_at_10_known_qrels": 0.4306765580733931
+    },
+    "dev-pedestrian-3": {
+      "known_relevant_count": 1,
+      "known_hits_at_5": 1,
+      "known_hits_at_10": 1,
+      "reciprocal_rank_at_10": 1.0,
+      "ndcg_at_10_known_qrels": 1.0
+    },
+    "dev-red_light-1": {
+      "known_relevant_count": 3,
+      "known_hits_at_5": 3,
+      "known_hits_at_10": 3,
+      "reciprocal_rank_at_10": 1.0,
+      "ndcg_at_10_known_qrels": 1.0
+    },
+    "dev-red_light-2": {
+      "known_relevant_count": 2,
+      "known_hits_at_5": 0,
+      "known_hits_at_10": 1,
+      "reciprocal_rank_at_10": 0.14285714285714285,
+      "ndcg_at_10_known_qrels": 0.20438239758848614
+    },
+    "dev-red_light-3": {
+      "known_relevant_count": 2,
+      "known_hits_at_5": 0,
+      "known_hits_at_10": 0,
+      "reciprocal_rank_at_10": 0.0,
+      "ndcg_at_10_known_qrels": 0.0
+    },
+    "dev-roundabout-1": {
+      "known_relevant_count": 3,
+      "known_hits_at_5": 3,
+      "known_hits_at_10": 3,
+      "reciprocal_rank_at_10": 1.0,
+      "ndcg_at_10_known_qrels": 0.9515234565959557
+    },
+    "dev-roundabout-2": {
+      "known_relevant_count": 3,
+      "known_hits_at_5": 0,
+      "known_hits_at_10": 3,
+      "reciprocal_rank_at_10": 0.16666666666666666,
+      "ndcg_at_10_known_qrels": 0.40153584840600776
+    },
+    "dev-roundabout-3": {
+      "known_relevant_count": 3,
+      "known_hits_at_5": 3,
+      "known_hits_at_10": 3,
+      "reciprocal_rank_at_10": 1.0,
+      "ndcg_at_10_known_qrels": 0.7579237460681981
+    }
+  }
+}

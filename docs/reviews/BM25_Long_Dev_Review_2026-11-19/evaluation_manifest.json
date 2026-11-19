@@ -1,0 +1,28 @@
+{
+  "evaluation_version": "bm25-development-evaluation.v1",
+  "binding": {
+    "index_version": "vtls-bm25s-lucene.v1",
+    "index_content_sha256": "629f0214096d7ea013039af9253a5ed8f10f273f89da16f8cd56c69ff7130d18",
+    "dataset_version": "vtls-coverage-experimental.v1",
+    "dataset_content_sha256": "2534731881e493a9b1b47b07470cc5d7f4fabbd9553d4e4d6c59e27359b313b5",
+    "dataset_manifest_sha256": "2aa5dc595dab7614920ce94317b85c7b21e188cc35b16b54bef9e81f3ccf1b0a",
+    "index_manifest_sha256": "47df11b0fa7bd95aaa05ac84f9ac43900df2931215c144e2af81fe5e9c04534d"
+  },
+  "state": "PENDING_LABELS",
+  "created_at": "2026-10-20T14:31:13.519696+00:00",
+  "corpus_version": null,
+  "experimental": true,
+  "release_eligible": false,
+  "files": {
+    "annotation_sheet.md": "ac97c53c432677c31d7d24df9f147f2acfda36e33e53c456d250a13e184ea8a4",
+    "annotations.jsonl": "fc5beae1515332e22e03c49677d57e34b21f0b49dfdae3e5944afbf755796c80",
+    "outcomes.jsonl": "15d21b802e3bb00d1a966d374f1f68bc0c10aff4e134ffaab15d8c1fcaa75f92",
+    "qrels.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "queries.jsonl": "ef2a1feeca67eb05df8caddbd6d7bec49bdc1f7fd742df80cea8e1f8ce770316",
+    "query_reviews.jsonl": "631ad4b766ff5bf9f4a3fd7726dc6cedb9f16f782de6ff7688486bdf43c2cfb0",
+    "report.json": "df9ea83a4b39987983f687c28fc2232d538d0391d550f8155475a8653f26e9b9",
+    "run.jsonl": "6955ea048918fb30149a1d7d3ac9dbb8b66389c711091890e8183023028ee3cf",
+    "timings.json": "b66b9ccfd7ce35e96c073f6d95aaa588f4c46788405b356e153baa9fec123222"
+  },
+  "input_queries_sha256": "9be259e67ad005ef154806a4afcddc200a452a066732b593010ab8e42fd00d5d"
+}
