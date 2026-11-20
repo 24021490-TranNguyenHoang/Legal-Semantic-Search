@@ -1,0 +1,59 @@
+{
+  "contract": "subset-v6-binding-review.v1",
+  "snapshot": "2025-01-01",
+  "query_ids": [
+    "dev-night_horn-3",
+    "dev-driving_age-2",
+    "dev-red_light-2",
+    "V3-D05",
+    "V3-D07"
+  ],
+  "agent_recorded_at": "2026-11-18T14:28:18.101048+00:00",
+  "inputs": {
+    "dataset": {
+      "ref": "staging/dataset-v6-gap-002/dataset_manifest.json",
+      "sha256": "47b23b4f8742a308f32b4c1efd0d7749a81a8aae792459b95e7035490802bdfc"
+    },
+    "index": {
+      "ref": "staging/bm25-subset-v6-001/index_manifest.json",
+      "sha256": "58c05ef0f6c2bb39d4a6af8d62d5520843c028e538a0b5d8abeb2ce5d3589c5f"
+    },
+    "batch": {
+      "ref": "staging/bm25-subset-v6-batch-001/manifest.json",
+      "sha256": "43cda4d3c35b416c56d8c7da1bdefbec2e2ab1a8910b04c574d54a75d649bef2"
+    },
+    "comparison": {
+      "ref": "staging/bm25-v5-v6-comparison-001/manifest.json",
+      "sha256": "67f9fc847bf6e19c023d1d3bd3e53d81f7b4761d8f26ce0d3cfbdfda4c4cdfda"
+    },
+    "aggregate": {
+      "ref": "staging/subset-v5-label-aggregate-001/manifest.json",
+      "sha256": "7c4dbee482e5bc7d38e96b12e4a75684b3756a47b48d4385c713e2fd846cd56e"
+    },
+    "v5_review": {
+      "ref": "staging/subset-v5-query-review-002/manifest.json",
+      "sha256": "04ad32955c1443aedcc7b6f6f82e4e63e1bcd9a8adfe903159ff93463444b2f2"
+    },
+    "evaluation": {
+      "ref": "staging/subset-v5-five-query-evaluation-001/manifest.json",
+      "sha256": "71b249f6626120cf2137ab86675874f6e6131438758df8ca64e9faa0dbbff4d1"
+    },
+    "evaluation_config": {
+      "ref": "config/subset_five_query_evaluation.v1.json",
+      "sha256": "2479c09fc22b497bb9a17eb4da8dbb3efe7721645ba6dbee610b1742a78d91ed"
+    },
+    "v14_config": {
+      "ref": "config/source_session14.v1.json",
+      "sha256": "c962d0e4ebabd6787cef09384e84f64cdc42c55099c5e0247fbfdb77f268204e"
+    }
+  },
+  "new_pair_judgments": [
+    {
+      "query_id": "dev-red_light-2",
+      "record_id": "c_fcaa52f3e09aa9b0719e84d05d9d13a9bd68343ff44f596fd379553ded82f4c6",
+      "code": "P",
+      "reason": "Own target nêu hành vi không chấp hành đèn tín hiệu, title Điều 6 xác định ô tô và lead Khoản 9 nêu khung phạt. Required-read giữ trừ điểm Khoản 16 và nhánh gây tai nạn Khoản 10. Đề xuất 2/direct_target/partial theo nội dung đã đọc, không dựa rank 4; cần người dùng rà điều kiện, ngoại lệ và phạm vi câu hỏi trước khi quyết định completeness.",
+      "missing_part": "Giữ partial; câu hỏi xử lý ra sao rộng, cần rà riêng tình huống gây tai nạn và các điều kiện trong 7 required-read, không suy active hoặc đủ mọi tình huống pháp lý."
+    }
+  ]
+}

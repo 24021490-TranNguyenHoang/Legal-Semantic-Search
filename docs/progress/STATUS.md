@@ -1,3 +1,35 @@
+# Hiện tại — phiên 16 nhập nhãn relevance v6, 2026-11-20
+
+Đã nhập 54 nhãn cho năm query trong packet review 008. Có 52 quyết định giữ nhãn cũ, 2 quyết định có lý do v6 riêng. Phân bố relevance 2/1/0 là 7/8/39. Metrics v6 vẫn null.
+
+- Capture nguyên byte tại `staging/subset-v6-response-capture-001/`. Nhãn và receipt tại `staging/subset-v6-accepted-labels-001/`.
+- Người dùng tiếp nhận đề xuất ChatGPT và xác nhận lúc `2026-11-20T08:08:00+07:00`. Evidence EV6 thuộc quá trình rà của trợ lý. Snapshot sản phẩm 2025-01-01, nguồn/edition/applicability pending, scope proposal.
+- Nhập lặp trả 0 nhãn mới. Replay giữ byte nhãn và import ID. ZIP độc lập đã validate trên Windows.
+- 59 accepted và 2 pending v5 giữ nguyên. Gói relevance v5 có thư mục phản hồi thêm vào ngoài inventory gốc. Các hash file đã seal đều khớp.
+
+[Hướng dẫn bàn giao](../handoff/Subset_V6_Accepted_Labels.md) · [Báo cáo kiểm chứng](../reviews/Source_Session16_V6_Acceptance_Verification.md)
+
+---
+
+# Hiện tại — phiên 15: gói review relevance v6, 2026-11-18
+
+**PREPARED / 54 PAIRS / NO V6 ACCEPTANCE OR METRICS**. Snapshot 2025-01-01.
+HEAD đầu phiên `b19452367cbea036d3949e0cdb05b35ff14a7115`, Git sạch; hiện có thay đổi chưa commit.
+
+- Gói giao `staging/subset-v6-binding-review-008/`, replay009; 54cặp/42record cho đúng năm query.
+- Phân loại kỹ thuật:52A tương đương,1B tuổi closure2→16,1C đèn đỏ own target mới,0D. Chưa chuyển accepted.
+- Aggregate v5 validate59accepted/2pending;53trongscope,6ngoài chỉinventory. Pending V3-D02 giữ nguyên.
+- Có5phiếu, danh sách exact52A, proposal/evidence, template mới hoàn toàn trống. Review cóAI hỗ trợ, không blind/independent.
+- Core reviewSHA `343956e65fd82a3834ecb3059833ad3b31b7575486fc6d5eb3749c791c8af53a`; ZIP `.zip` cùng run, SHA `3f1c975ab6758474e01487824f440f4ed01b68488e2ad4646b1cbfec28192cd5`, 11344945bytes. Chưa URL chia sẻ.
+- Replay134file/ZIP giống byte; suite mới11pass/0skip; hồi quy có7skip opt-in đã ghi lý do. Portable stdlib validate+blankresponse đạt, accepted_v6=0.
+- Dataset/index/query/ranking/v5labels/evaluation và worktreeHùng không đổi; không model/UIAPI/stage/commit/push.
+
+[Bắt đầu rà](../handoff/Subset_V6_Binding_Review.md) · [Báo cáo15](../reviews/Source_Session15_Binding_Review_Verification.md).
+Còn thiếu phản hồi/metadata/evidence thực tế; chưa có đường admitv6 ởphiênnày. Metrics mới vẫnnull, source/edition/applicabilitypending, scopeproposal.
+Lịch sử bên dưới giữ nguyên byte.
+
+---
+
 # Hiện tại — phiên14: BM25 experimental v6, 2026-11-18
 
 **BUILT / 50 QUERY COMPARED / PORTABLE READ VERIFIED / NO VERSION SWITCH**.
