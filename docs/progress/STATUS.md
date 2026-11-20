@@ -1,3 +1,16 @@
+# Hiện tại — phiên 17 chẩn đoán BM25 v6 trên năm query
+
+Đã đối chiếu 50 hit đã lưu của mỗi phiên bản với pool 53 cặp v5 và 54 cặp v6. Dùng đúng nhãn accepted theo binding của từng phiên bản. Gói relevance v5 đã trả validator exit 0 sau khi thư mục phản hồi được chuyển ra ngoài.
+
+- Direct MRR@10 từ 0,400 lên 0,450. Useful MRR@10 giữ 0,900. nDCG@10_pool từ 0,642149 lên 0,657879.
+- Chỉ query đèn đỏ đổi điểm sau khi v6 thêm target A6K9b ở hạng 4. Tuổi giữ hạng 15, với required-read tăng 2→16.
+- Recall, AP, MAP toàn corpus và metrics chính thức 50 query giữ null. Phạm vi kết luận là năm query đã rà.
+- Artifact giao tại `staging/subset-v6-five-query-evaluation-001/`. Replay khớp byte 11 tệp. Kiểm thử đạt 40/40.
+
+[Báo cáo và lệnh tái chạy](../reviews/Source_Session17_V6_Five_Query_Evaluation_Verification.md)
+
+---
+
 # Hiện tại — phiên 16 nhập nhãn relevance v6, 2026-11-20
 
 Đã nhập 54 nhãn cho năm query trong packet review 008. Có 52 quyết định giữ nhãn cũ, 2 quyết định có lý do v6 riêng. Phân bố relevance 2/1/0 là 7/8/39. Metrics v6 vẫn null.
