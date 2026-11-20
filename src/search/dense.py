@@ -1,54 +1,78 @@
 import os
 import sys
-from sentence_transformers import SentenceTransformer
+from typing import Any, Callable, Dict, List, Optional
 
 sys.path.append(
     os.path.abspath(os.path.join(os.path.dirname(__file__), "../.."))
 )
+from src.config import get_config
 from src.database.qdrant_client import LegalQdrantManager
 
 
 class DenseSearcher:
+  """Tìm kiếm ngữ nghĩa vector trên Qdrant."""
 
-  def __init__(self, model_name="all-MiniLM-L6-v2"):
-    print(f"Đang tải mô hình embedding cho tìm kiếm: {model_name}...")
-    self.model = SentenceTransformer(model_name)
-    self.qdrant_manager = LegalQdrantManager()
+  def __init__(
+      self,
+      model_name: str = "bkai-foundation-models/vietnamese-bi-encoder",
+      qdrant_manager: Optional[LegalQdrantManager] = None,
+      embed_fn: Optional[Callable[[str], List[float]]] = None,
+  ):
+    cfg = get_config()
+    self.model_name = model_name
+    self.vector_size = cfg.qdrant_vector_size
+    self.qdrant_manager = qdrant_manager or LegalQdrantManager(
+        host=cfg.qdrant_host,
+        port=cfg.qdrant_port,
+        collection_name=cfg.qdrant_collection,
+        vector_size=cfg.qdrant_vector_size,
+        create_if_missing=False,
+    )
+    self._embed_fn = embed_fn
+    self._model: Any = None
 
-  def search(self, query_text, document_id_filter=None, top_k=3):
-    # 1. Chuyển câu hỏi của người dùng thành vector
-    query_vector = self.model.encode(query_text).tolist()
+  def _encode_query(self, query_text: str) -> List[float]:
+    if self._embed_fn is not None:
+      vec = self._embed_fn(query_text)
+      return [float(x) for x in vec]
 
-    # 2. Tìm kiếm trong Qdrant (có hỗ trợ lọc metadata)
-    results = self.qdrant_manager.search_with_filter(
+    if self._model is None:
+      from sentence_transformers import SentenceTransformer
+
+      self._model = SentenceTransformer(self.model_name)
+
+    vec = self._model.encode(query_text, normalize_embeddings=True)
+    if hasattr(vec, "tolist"):
+      vec = vec.tolist()
+    return [float(x) for x in vec]
+
+  def search(
+      self,
+      query_text: str,
+      document_id_filter: Optional[str] = None,
+      law_type_filter: Optional[str] = None,
+      year_filter: Optional[int] = None,
+      top_k: int = 3,
+  ) -> List[Dict[str, Any]]:
+    if not query_text or not query_text.strip() or top_k <= 0:
+      return []
+
+    query_vector = self._encode_query(query_text)
+    points = self.qdrant_manager.search_with_filter(
         query_vector=query_vector,
         document_id_filter=document_id_filter,
+        law_type_filter=law_type_filter,
+        year_filter=year_filter,
         top_k=top_k,
     )
 
-    # 3. Định dạng lại kết quả trả về cho dễ đọc
-    formatted_results = []
-    for res in results:
+    formatted_results: List[Dict[str, Any]] = []
+    for pt in points:
+      payload = pt.payload if isinstance(pt.payload, dict) else {}
       formatted_results.append({
-          "score": res.score,
-          "chunk_id": res.payload.get("chunk_id"),
-          "document_id": res.payload.get("document_id"),
-          "document_name": res.payload.get("document_name"),
-          "article_number": res.payload.get("article_number"),
-          "article_title": res.payload.get("article_title"),
-          "chunk_text": res.payload.get("chunk_text"),
+          **payload,
+          "id": pt.id,
+          "score": float(pt.score) if pt.score is not None else 0.0,
+          "search_mode": "dense",
       })
     return formatted_results
-
-
-if __name__ == "__main__":
-  searcher = DenseSearcher()
-  query = "Quy định về phạm vi điều chỉnh giao thông"
-  print(f"\nĐang tìm kiếm với câu hỏi: '{query}'")
-  res = searcher.search(query)
-  for idx, item in enumerate(res):
-    print(
-        f"\n[Kết quả {idx+1}] (Score: {item['score']:.4f}) -"
-        f" {item['article_title']}"
-    )
-    print(f"Nội dung: {item['chunk_text']}")
