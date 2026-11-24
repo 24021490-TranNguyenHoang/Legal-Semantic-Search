@@ -1,0 +1,60 @@
+{
+  "manifest_type": "vtls-dense-index.v1",
+  "created_at": "2026-11-24T15:57:28.073509+00:00",
+  "python_version": "3.12.7",
+  "torch_version": "2.15.0+cpu",
+  "device": "cpu",
+  "model_id": "BAAI/bge-m3",
+  "model_revision_sha": null,
+  "pooling": "cls",
+  "normalized_l2": true,
+  "embedding_dim": 1024,
+  "max_length": 2048,
+  "encode_elapsed_sec": 192.873,
+  "dataset_version": "vtls-subset-experimental.v6-candidate.1",
+  "index_version": "vtls-bm25s-subset.v2",
+  "dataset_manifest_sha256": "47b23b4f8742a308f32b4c1efd0d7749a81a8aae792459b95e7035490802bdfc",
+  "index_manifest_sha256": "58c05ef0f6c2bb39d4a6af8d62d5520843c028e538a0b5d8abeb2ce5d3589c5f",
+  "search_inputs_sha256": "df81b2f229f54497c14e6f30bcfbe5676bcdd1c7c670133660893f51ebb1b861",
+  "total_targets_encoded": 139,
+  "missing_targets": 0,
+  "duplicate_record_ids": 0,
+  "record_counts": {
+    "chunk.v1": 126,
+    "source-retrieval.v1": 4,
+    "table-retrieval.v1": 9
+  },
+  "embeddings_npy_sha256": "7887c71c334cf4b289c79bd3ad52c8b342b517af753b81d479bd3f6dcb2f9685",
+  "tokenizer_audit_summary": {
+    "total_targets": 139,
+    "min_tokens": 46,
+    "median_tokens": 127,
+    "p95_tokens": 236,
+    "max_tokens": 373,
+    "gt_512_count": 0,
+    "gt_1024_count": 0,
+    "gt_2048_count": 0,
+    "configured_max_length": 2048,
+    "truncated_records": 0,
+    "by_record_type": {
+      "chunk.v1": {
+        "count": 126,
+        "min_tokens": 46,
+        "max_tokens": 287,
+        "mean_tokens": 129.4
+      },
+      "source-retrieval.v1": {
+        "count": 4,
+        "min_tokens": 94,
+        "max_tokens": 373,
+        "mean_tokens": 236.25
+      },
+      "table-retrieval.v1": {
+        "count": 9,
+        "min_tokens": 184,
+        "max_tokens": 230,
+        "mean_tokens": 216.22
+      }
+    }
+  }
+}
