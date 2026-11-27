@@ -29,3 +29,7 @@ This folder is a review pack for the 30-query development evaluation. It is not 
 - `query_crosswalk.md`, `corpus_and_label_status.md`, `error_analysis.md` — comparison, coverage limits, and issue triage.
 - `metrics.provisional.json`, `compute_provisional_metrics.py` — provisional calculation and its reproducible calculator.
 - `HANDOVER.md` — steps remaining for Long and Huy.
+
+## Separate v6 candidate run
+
+A separate 50-query BM25 v6 development/limit run is recorded in [`v6-candidate-run-001/`](v6-candidate-run-001/README.md). It contains 500 Top-10 candidates, frozen query inputs, per-query timing, a review queue and a manifest. All labels remain pending, so official metrics remain unavailable. This run does not replace or merge with the original 30-query pack.
