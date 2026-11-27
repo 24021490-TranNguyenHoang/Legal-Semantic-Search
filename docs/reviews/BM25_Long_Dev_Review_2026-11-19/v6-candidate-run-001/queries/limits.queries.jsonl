@@ -1,0 +1,5 @@
+{"query_id":"V3-L01","intent_group_id":"v3-form-XI","query":"Cho tôi toàn bộ mẫu đơn học và sát hạch lái xe tại Phụ lục XI.","query_type":"direct","topic":"withheld_form","split":"dev"}
+{"query_id":"V3-L02","intent_group_id":"v3-form-XXVI","query":"Mẫu đơn đổi cấp lại giấy phép lái xe có những ô nào cần điền?","query_type":"paraphrase","topic":"withheld_form","split":"dev"}
+{"query_id":"V3-L03","intent_group_id":"v3-qcvn-sign","query":"Biển I.418 trong QCVN 41:2024 có cấu tạo và kích thước ra sao?","query_type":"direct","topic":"qcvn_no_target","split":"dev"}
+{"query_id":"V3-L04","intent_group_id":"v3-health-detail","query":"Cận thị 5 độ có được thi bằng lái ô tô không?","query_type":"scenario","topic":"medical_detail_not_packaged","split":"dev"}
+{"query_id":"V3-L05","intent_group_id":"v3-rain-distance","query":"Trời mưa thì khoảng cách an toàn có được lấy bằng bảng đường khô ráo không?","query_type":"scenario","topic":"quarantine_target_readable_dependency","split":"dev"}

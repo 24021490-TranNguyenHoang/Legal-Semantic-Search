@@ -1,0 +1,126 @@
+{
+  "run_id": "v6-bm25-candidate-run-001",
+  "files": {
+    "README.md": {
+      "path": "docs/reviews/BM25_Long_Dev_Review_2026-11-19/v6-candidate-run-001/README.md",
+      "sha256": "e22441abb10885c5e58359fd1287fc7829aaec67c1fe6c406871e10426fa2d43",
+      "bytes": 2791
+    },
+    "run.jsonl": {
+      "path": "docs/reviews/BM25_Long_Dev_Review_2026-11-19/v6-candidate-run-001/run.jsonl",
+      "sha256": "139df953426761ce2c4c9d6245e25710c9855443faf8c08db572f12a9fcf0cd4",
+      "bytes": 454917
+    },
+    "timings.jsonl": {
+      "path": "docs/reviews/BM25_Long_Dev_Review_2026-11-19/v6-candidate-run-001/timings.jsonl",
+      "sha256": "3957361cafa73f6df8ab01cc1837952995ab848f4d653a92d3771259c5b56c0d",
+      "bytes": 10346
+    },
+    "summary.json": {
+      "path": "docs/reviews/BM25_Long_Dev_Review_2026-11-19/v6-candidate-run-001/summary.json",
+      "sha256": "08855c3fe2a648f9e6f88a91471fdda58ffb5553616a308708b8f6c8be1b16f6",
+      "bytes": 2605
+    },
+    "review_queue.jsonl": {
+      "path": "docs/reviews/BM25_Long_Dev_Review_2026-11-19/v6-candidate-run-001/review_queue.jsonl",
+      "sha256": "1408328e082d834d426101544814377f1cd39496d94cf25a5d7c8d5d6cfcfbdc",
+      "bytes": 513417
+    },
+    "review_queue.csv": {
+      "path": "docs/reviews/BM25_Long_Dev_Review_2026-11-19/v6-candidate-run-001/review_queue.csv",
+      "sha256": "6d69015511bebda50cc5c0abc55d496778c91b57b1f8809f74e3e19d144928b1",
+      "bytes": 211903
+    },
+    "review_queue.xlsx": {
+      "path": "docs/reviews/BM25_Long_Dev_Review_2026-11-19/v6-candidate-run-001/review_queue.xlsx",
+      "sha256": "36b26b8e967c1ed38bbc3006732b0df23939348995a9f68343faae3dd95fd54d",
+      "bytes": 72559
+    },
+    "rubric.md": {
+      "path": "docs/reviews/BM25_Long_Dev_Review_2026-11-19/v6-candidate-run-001/rubric.md",
+      "sha256": "99a47ae89a19296154b1e8f82f74818a38975fd886f14e4413d62e76edd48cbe",
+      "bytes": 2762
+    },
+    "queries/manifest.json": {
+      "path": "docs/reviews/BM25_Long_Dev_Review_2026-11-19/v6-candidate-run-001/queries/manifest.json",
+      "sha256": "f8cc9257c410c8eb578d43a0bd1912e3aa5c572829be5e33d7ee0a2045e546f0",
+      "bytes": 827
+    },
+    "queries/old-dev.queries.jsonl": {
+      "path": "docs/reviews/BM25_Long_Dev_Review_2026-11-19/v6-candidate-run-001/queries/old-dev.queries.jsonl",
+      "sha256": "ef2a1feeca67eb05df8caddbd6d7bec49bdc1f7fd742df80cea8e1f8ce770316",
+      "bytes": 6178
+    },
+    "queries/new-dev.queries.jsonl": {
+      "path": "docs/reviews/BM25_Long_Dev_Review_2026-11-19/v6-candidate-run-001/queries/new-dev.queries.jsonl",
+      "sha256": "66f2d5c2e2124caa56042ce6ad0a2cb6f47d5cd8dbca1891079e756beb4c509f",
+      "bytes": 3218
+    },
+    "queries/limits.queries.jsonl": {
+      "path": "docs/reviews/BM25_Long_Dev_Review_2026-11-19/v6-candidate-run-001/queries/limits.queries.jsonl",
+      "sha256": "d154ec56e282fcaa634e42b4b2e8c15dbd02ed365dc7e79115058947292ae1a3",
+      "bytes": 1090
+    }
+  },
+  "query_files": {
+    "old-dev.queries.jsonl": {
+      "sha256": "ef2a1feeca67eb05df8caddbd6d7bec49bdc1f7fd742df80cea8e1f8ce770316",
+      "bytes": 6178,
+      "count": 30,
+      "path": "queries/old-dev.queries.jsonl"
+    },
+    "new-dev.queries.jsonl": {
+      "sha256": "66f2d5c2e2124caa56042ce6ad0a2cb6f47d5cd8dbca1891079e756beb4c509f",
+      "bytes": 3218,
+      "count": 15,
+      "path": "queries/new-dev.queries.jsonl"
+    },
+    "limits.queries.jsonl": {
+      "sha256": "d154ec56e282fcaa634e42b4b2e8c15dbd02ed365dc7e79115058947292ae1a3",
+      "bytes": 1090,
+      "count": 5,
+      "path": "queries/limits.queries.jsonl"
+    }
+  },
+  "binding": {
+    "index_version": "vtls-bm25s-subset.v2",
+    "index_manifest_sha256": "58c05ef0f6c2bb39d4a6af8d62d5520843c028e538a0b5d8abeb2ce5d3589c5f",
+    "dataset_version": "vtls-subset-experimental.v6-candidate.1",
+    "dataset_manifest_sha256": "47b23b4f8742a308f32b4c1efd0d7749a81a8aae792459b95e7035490802bdfc",
+    "snapshot_date": "2025-01-01",
+    "experimental": true,
+    "release_eligible": false,
+    "source_status": "pending",
+    "edition_status": "pending",
+    "applicability": "pending_review",
+    "scope_status": "proposal_only",
+    "legal_verified": false
+  },
+  "query_set_role": "corpus_derived_development_not_independent_test",
+  "ranking_rows": 500,
+  "measured_queries": 50,
+  "runtime": {
+    "python": "3.11.9",
+    "packages": {
+      "bm25s": "0.3.13",
+      "numpy": "2.4.6",
+      "scipy": "1.17.1"
+    }
+  },
+  "latency_ms": {
+    "p50": 1.239999895915389,
+    "p95": 1.6419449355453248,
+    "min": 1.025599893182516,
+    "max": 1.7550000920891762,
+    "mean": 1.2692959979176521,
+    "internal_query_preprocess_rank_filter_p50": 0.6579000037163496,
+    "internal_query_preprocess_rank_filter_p95": 0.8234949316829443
+  },
+  "index_load_validation_ms_service": 137224.46030005813,
+  "source_drive_folder": "https://drive.google.com/drive/folders/16tSZALHShIrWXSmJGZ7qpwgZZH9A9bsv",
+  "input_index_archive_sha256": "00e966c92a655f6405a64f4cb352eef89252508ecb75e1bd6bce6f66a63538cb",
+  "integration_source_sha256": {
+    "app_integration/service.py": "e6523e73eb1d8f3eaf9945b8d5f750f5aa3655c792b185ae9495d8f8babca0be",
+    "config/app_bm25_v6.json": "afd12e7e65e87367eee4b71816b07b9db3531fc34d7f1896a2b707c8cc084bf7"
+  }
+}

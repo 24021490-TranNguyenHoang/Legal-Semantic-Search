@@ -13,3 +13,7 @@ src/ingestion/full_source.py text eol=lf
 src/ingestion/ocr_pages.py text eol=lf
 src/ingestion/qcvn_graph.py text eol=lf
 src/ingestion/source_regions.py text eol=lf
+
+# Preserve bytes recorded by the v6 candidate run manifest.
+docs/reviews/BM25_Long_Dev_Review_2026-11-19/v6-candidate-run-001/** text eol=lf
+docs/reviews/BM25_Long_Dev_Review_2026-11-19/v6-candidate-run-001/review_queue.xlsx binary

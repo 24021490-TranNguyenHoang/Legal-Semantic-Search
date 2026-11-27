@@ -1,0 +1,63 @@
+{
+  "run_id": "v6-bm25-candidate-run-001",
+  "status": "candidate_unjudged",
+  "query_set_role": "corpus_derived_development_not_independent_test",
+  "n_queries": 50,
+  "n_result_rows": 500,
+  "top_k": 10,
+  "groups": {
+    "old-dev": 30,
+    "new-dev": 15,
+    "limits": 5
+  },
+  "mode": "bm25",
+  "warmup_calls": 1,
+  "measured_concurrency": 1,
+  "timing_method": "one sequential measured pass after one unmeasured warmup; external service.search wall time; linear interpolation at (n-1)*p",
+  "latency_ms": {
+    "p50": 1.239999895915389,
+    "p95": 1.6419449355453248,
+    "min": 1.025599893182516,
+    "max": 1.7550000920891762,
+    "mean": 1.2692959979176521,
+    "internal_query_preprocess_rank_filter_p50": 0.6579000037163496,
+    "internal_query_preprocess_rank_filter_p95": 0.8234949316829443
+  },
+  "index_load_validation_ms_service": 137224.46030005813,
+  "index_load_wall_ms_process": 137224.46900000796,
+  "python": "3.11.9",
+  "packages": {
+    "bm25s": "0.3.13",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1"
+  },
+  "binding": {
+    "index_version": "vtls-bm25s-subset.v2",
+    "index_manifest_sha256": "58c05ef0f6c2bb39d4a6af8d62d5520843c028e538a0b5d8abeb2ce5d3589c5f",
+    "dataset_version": "vtls-subset-experimental.v6-candidate.1",
+    "dataset_manifest_sha256": "47b23b4f8742a308f32b4c1efd0d7749a81a8aae792459b95e7035490802bdfc",
+    "snapshot_date": "2025-01-01",
+    "experimental": true,
+    "release_eligible": false,
+    "source_status": "pending",
+    "edition_status": "pending",
+    "applicability": "pending_review",
+    "scope_status": "proposal_only",
+    "legal_verified": false
+  },
+  "qrels_status": "no accepted qrels included in Drive package; all retrieved records unjudged",
+  "official_metrics": null,
+  "warnings": [
+    "All 50 questions are development/limit inputs, not an independent test set.",
+    "No accepted human qrels; do not interpret provisional precision/recall/nDCG.",
+    "Corpus and legal source applicability remain unverified."
+  ],
+  "input_index_archive_sha256": "00e966c92a655f6405a64f4cb352eef89252508ecb75e1bd6bce6f66a63538cb",
+  "input_query_manifest_sha256": "f8cc9257c410c8eb578d43a0bd1912e3aa5c572829be5e33d7ee0a2045e546f0",
+  "source_drive_folder": "https://drive.google.com/drive/folders/16tSZALHShIrWXSmJGZ7qpwgZZH9A9bsv",
+  "integration_source_sha256": {
+    "app_integration/service.py": "e6523e73eb1d8f3eaf9945b8d5f750f5aa3655c792b185ae9495d8f8babca0be",
+    "config/app_bm25_v6.json": "afd12e7e65e87367eee4b71816b07b9db3531fc34d7f1896a2b707c8cc084bf7"
+  },
+  "repository_base_commit": "07c9e31329eeb2cd0a3019f77edbf38c7d68ed97"
+}

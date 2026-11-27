@@ -1,0 +1,28 @@
+{
+  "manifest_type": "composition-dev-queries.v1",
+  "created_at": "2026-10-23T15:45:15.604991Z",
+  "frozen_before_new_ranking": true,
+  "old_queries": 30,
+  "new_queries": 15,
+  "limit_queries": 5,
+  "origin": "agent_review",
+  "query_set_role": "corpus_derived_development_not_independent_test",
+  "release_eligible": false,
+  "files": [
+    {
+      "path": "limits.queries.jsonl",
+      "size_bytes": 1090,
+      "sha256": "d154ec56e282fcaa634e42b4b2e8c15dbd02ed365dc7e79115058947292ae1a3"
+    },
+    {
+      "path": "new-dev.queries.jsonl",
+      "size_bytes": 3218,
+      "sha256": "66f2d5c2e2124caa56042ce6ad0a2cb6f47d5cd8dbca1891079e756beb4c509f"
+    },
+    {
+      "path": "old-dev.queries.jsonl",
+      "size_bytes": 6178,
+      "sha256": "ef2a1feeca67eb05df8caddbd6d7bec49bdc1f7fd742df80cea8e1f8ce770316"
+    }
+  ]
+}

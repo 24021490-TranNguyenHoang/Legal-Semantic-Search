@@ -1,0 +1,15 @@
+{"query_id":"V3-D01","intent_group_id":"v3-speed-urban","query":"Ô tô con đi đường đôi trong khu đông dân cư được chạy tối đa bao nhiêu?","query_type":"scenario","topic":"speed","split":"dev"}
+{"query_id":"V3-D02","intent_group_id":"v3-speed-urban","query":"Trong thành phố, đường hai chiều không có dải phân cách thì tốc độ tối đa là bao nhiêu?","query_type":"paraphrase","topic":"speed","split":"dev"}
+{"query_id":"V3-D03","intent_group_id":"v3-speed-truck","query":"Xe tải trên 3,5 tấn chạy ngoài khu dân cư có giới hạn tốc độ thế nào?","query_type":"direct","topic":"speed","split":"dev"}
+{"query_id":"V3-D04","intent_group_id":"v3-speed-bus","query":"Xe buýt ra ngoài khu dân cư đi đường đôi thì được chạy bao nhiêu km/h?","query_type":"scenario","topic":"speed","split":"dev"}
+{"query_id":"V3-D05","intent_group_id":"v3-distance-60","query":"Ở tốc độ đúng 60 km/h cần cách xe trước ít nhất bao nhiêu mét?","query_type":"direct","topic":"distance","split":"dev"}
+{"query_id":"V3-D06","intent_group_id":"v3-distance-80","query":"Tôi chạy đúng 80 km/h trên đường khô ráo, nên giữ khoảng cách tối thiểu nào?","query_type":"scenario","topic":"distance","split":"dev"}
+{"query_id":"V3-D07","intent_group_id":"v3-distance-81","query":"Chạy 81 km/h thì khoảng cách an toàn khác lúc chạy 80 thế nào?","query_type":"paraphrase","topic":"distance","split":"dev"}
+{"query_id":"V3-D08","intent_group_id":"v3-distance-100","query":"Khoảng cách giữa hai xe khi tốc độ lớn hơn 100 đến 120 km/h","query_type":"direct","topic":"distance","split":"dev"}
+{"query_id":"V3-D09","intent_group_id":"v3-highway","query":"Đường cao tốc có tốc độ thiết kế 60 km/h thì tốc độ tối thiểu theo quy định nào?","query_type":"scenario","topic":"speed","split":"dev"}
+{"query_id":"V3-D10","intent_group_id":"v3-license-auto","query":"Bằng B số tự động có lái được xe số sàn không?","query_type":"paraphrase","topic":"license","split":"dev"}
+{"query_id":"V3-D11","intent_group_id":"v3-license-upgrade","query":"Muốn nâng bằng B lên C thì cần bao nhiêu năm lái xe an toàn?","query_type":"direct","topic":"license","split":"dev"}
+{"query_id":"V3-D12","intent_group_id":"v3-foreign-resident","query":"Người nước ngoài học lái xe lần đầu cần nộp giấy tờ cư trú gì?","query_type":"scenario","topic":"license","split":"dev"}
+{"query_id":"V3-D13","intent_group_id":"v3-idp-vietnam","query":"Giấy phép lái xe quốc tế do Việt Nam cấp có dùng để lái xe trong nước được không?","query_type":"paraphrase","topic":"license","split":"dev"}
+{"query_id":"V3-D14","intent_group_id":"v3-exam-age","query":"Điều kiện tuổi dự sát hạch lái xe được xác định theo đâu?","query_type":"direct","topic":"dependency","split":"dev"}
+{"query_id":"V3-D15","intent_group_id":"v3-exam-transition","query":"Thi trượt trước năm 2025 nhưng đã đỗ một số phần thì có được giữ kết quả không?","query_type":"scenario","topic":"dependency","split":"dev"}
